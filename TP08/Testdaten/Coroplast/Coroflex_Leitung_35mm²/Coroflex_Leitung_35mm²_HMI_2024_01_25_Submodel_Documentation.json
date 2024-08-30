@@ -1,0 +1,309 @@
+{
+  "idShort": "Documentation",
+  "id": "www.coroplast.de/ids/sm/3064_6032_1032_6637",
+  "kind": "Instance",
+  "semanticId": {
+    "type": "ExternalReference",
+    "keys": [
+      {
+        "type": "Submodel",
+        "value": "http://admin-shell.io/vdi/2770/1/0/Documentation"
+      }
+    ]
+  },
+  "submodelElements": [
+    {
+      "category": "CONSTANT",
+      "idShort": "Document01",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "http://admin-shell.io/vdi/2770/1/0/Document"
+          }
+        ]
+      },
+      "value": [
+        {
+          "category": "CONSTANT",
+          "idShort": "DocumentId",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "http://admin-shell.io/vdi/2770/1/0/DocumentId/Id"
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "Technical Information",
+          "modelType": "Property"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "IsPrimary",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "http://admin-shell.io/vdi/2770/1/0/DocumentId/isPrimary"
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "",
+          "modelType": "Property"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "ClassId",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "http://admin-shell.io/vdi/2770/1/0/DocumentClassification/ClassId"
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "",
+          "modelType": "Property"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "ClassName",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "http://admin-shell.io/vdi/2770/1/0/DocumentClassification/ClassName"
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "",
+          "modelType": "Property"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "ClassificationSystem",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "http://admin-shell.io/vdi/2770/1/0/DocumentClassification/ClassificationSystem"
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "VDI2770:2018",
+          "modelType": "Property"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "ReferencedObject",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "http://admin-shell.io/vdi/2770/1/0/Document/ReferencedObject"
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "Shielded cable for automotive electric powertrain FHLR2GCB2G 35 mm\u00B2 / 0.21 T180 0.6/1.0 kV",
+          "modelType": "Property"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "DocumentVersion01",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "http://admin-shell.io/vdi/2770/1/0/DocumentVersion"
+              }
+            ]
+          },
+          "value": [
+            {
+              "category": "CONSTANT",
+              "idShort": "DocumentVersionId",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "http://admin-shell.io/vdi/2770/1/0/DocumentVersionId/Val"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "",
+              "modelType": "Property"
+            },
+            {
+              "category": "CONSTANT",
+              "idShort": "Language1",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "http://admin-shell.io/vdi/2770/1/0/DocumentVersion/Language"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "Deutsch",
+              "modelType": "Property"
+            },
+            {
+              "category": "CONSTANT",
+              "idShort": "Language2",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "http://admin-shell.io/vdi/2770/1/0/DocumentVersion/Language"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "English",
+              "modelType": "Property"
+            },
+            {
+              "category": "CONSTANT",
+              "idShort": "Title",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "http://admin-shell.io/vdi/2770/1/0/Description/Title"
+                  }
+                ]
+              },
+              "value": [
+                {
+                  "language": "en",
+                  "text": "Technical Information"
+                }
+              ],
+              "modelType": "MultiLanguageProperty"
+            },
+            {
+              "category": "CONSTANT",
+              "idShort": "DigitalFile01",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "http://admin-shell.io/vdi/2770/1/0/StoredDocumentRepresentation/DigitalFile"
+                  }
+                ]
+              },
+              "value": "/aasx/files/Coroflex_TI_9-2611_FHLR2GCB2G_35_dce283c9.pdf",
+              "contentType": "application/pdf",
+              "modelType": "File"
+            },
+            {
+              "category": "CONSTANT",
+              "idShort": "SetDate",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "http://admin-shell.io/vdi/2770/1/0/LifeCycleStatus/SetDate"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "",
+              "modelType": "Property"
+            },
+            {
+              "category": "CONSTANT",
+              "idShort": "StatusValue",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "http://admin-shell.io/vdi/2770/1/0/LifeCycleStatus/StatusValue"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "",
+              "modelType": "Property"
+            },
+            {
+              "category": "CONSTANT",
+              "idShort": "Role",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "http://admin-shell.io/vdi/2770/1/0/Party/Role"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "",
+              "modelType": "Property"
+            },
+            {
+              "category": "CONSTANT",
+              "idShort": "OrganizationName",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "http://admin-shell.io/vdi/2770/1/0/Organization/OrganizationName"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "Coroflex",
+              "modelType": "Property"
+            },
+            {
+              "category": "CONSTANT",
+              "idShort": "OrganizationOfficialName",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "http://admin-shell.io/vdi/2770/1/0/Organization/OrganizationOfficialName"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "",
+              "modelType": "Property"
+            }
+          ],
+          "modelType": "SubmodelElementCollection"
+        }
+      ],
+      "modelType": "SubmodelElementCollection"
+    }
+  ],
+  "modelType": "Submodel"
+}

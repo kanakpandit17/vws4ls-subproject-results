@@ -1,0 +1,235 @@
+{
+  "idShort": "ProductDesign",
+  "id": "www.coroplast.de/ids/sm/2423_6032_1032_5794",
+  "kind": "Instance",
+  "submodelElements": [
+    {
+      "category": "CONSTANT",
+      "idShort": "Core50mm\u00B2",
+      "value": [
+        {
+          "category": "CONSTANT",
+          "idShort": "ConductorMaterial",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/SemanticIdNotAvailable /1/1 "
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "E-Cu ETP1 according DIN EN 13602",
+          "modelType": "Property"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "ConductorDesign",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/SemanticIdNotAvailable /1/1 "
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "stranded bare copper 1070 (\u00B15%) x max. 0.21 mm",
+          "modelType": "Property"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "ConductorDiameter",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/SemanticIdNotAvailable /1/1 "
+              }
+            ]
+          },
+          "valueType": "xs:float",
+          "value": "10",
+          "modelType": "Property"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "CoreInsulation",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/SemanticIdNotAvailable /1/1 "
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "mod. Silicon rubber SiR",
+          "modelType": "Property"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "CoreDiameter",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/SemanticIdNotAvailable /1/1 "
+              }
+            ]
+          },
+          "valueType": "xs:float",
+          "value": "12,2 (-0.7)",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "InsulationWallThickness",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/SemanticIdNotAvailable /1/1 "
+              }
+            ]
+          },
+          "valueType": "xs:float",
+          "min": "0.64",
+          "modelType": "Range"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "ColourCode",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/SemanticIdNotAvailable /1/1 "
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "orange similar RAL 2003",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "SubmodelElementCollection"
+    },
+    {
+      "idShort": "Shielding",
+      "value": [
+        {
+          "category": "CONSTANT",
+          "idShort": "ScreeningBraid",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/SemanticIdNotAvailable /1/1 "
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "Tinned copper max. 0.21mm optical covering min. 85 %",
+          "modelType": "Property"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "FoildedShielding",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/SemanticIdNotAvailable /1/1 "
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "ALU-PET foil Metal-side in contact to screen overlap min. 20 %",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "SubmodelElementCollection"
+    },
+    {
+      "category": "CONSTANT",
+      "idShort": "OuterSheath",
+      "value": [
+        {
+          "category": "CONSTANT",
+          "idShort": "SheathMaterial",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/SemanticIdNotAvailable /1/1 "
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "mod. Silicon rubber SiR",
+          "modelType": "Property"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "OuterDiameter",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/SemanticIdNotAvailable /1/1 "
+              }
+            ]
+          },
+          "valueType": "xs:float",
+          "value": "15,8 (-0.6)",
+          "modelType": "Property"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "InsulationWallThickness",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/SemanticIdNotAvailable /1/1 "
+              }
+            ]
+          },
+          "valueType": "xs:float",
+          "value": "min. 0.8",
+          "modelType": "Property"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "ColourCode",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/SemanticIdNotAvailable /1/1 "
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "orange similar RAL 2003",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "SubmodelElementCollection"
+    }
+  ],
+  "modelType": "Submodel"
+}

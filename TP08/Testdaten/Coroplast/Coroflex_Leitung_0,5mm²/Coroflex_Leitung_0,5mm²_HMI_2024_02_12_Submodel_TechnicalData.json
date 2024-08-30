@@ -1,0 +1,500 @@
+{
+  "idShort": "TechnicalData",
+  "id": "www.coroplast.de/ids/sm/9215_6140_3042_8754",
+  "kind": "Instance",
+  "semanticId": {
+    "type": "ExternalReference",
+    "keys": [
+      {
+        "type": "Submodel",
+        "value": "http://admin-shell.io/sandbox/SG2/TechnicalData/Submodel/1/1"
+      }
+    ]
+  },
+  "submodelElements": [
+    {
+      "category": "CONSTANT",
+      "idShort": "GeneralInformation",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/GeneralInformation/1/1"
+          }
+        ]
+      },
+      "value": [
+        {
+          "category": "CONSTANT",
+          "idShort": "ManufacturerName",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/ManufacturerName/1/1"
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "Coroflex",
+          "modelType": "Property"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "ManufacturerLogo",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/ManufacturerLogo/1/1"
+              }
+            ]
+          },
+          "value": "",
+          "contentType": "",
+          "modelType": "File"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "ManufacturerProductDesignation",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/ManufacturerProductDesignation/1/1"
+              }
+            ]
+          },
+          "value": [
+            {
+              "language": "en",
+              "text": "Shielded cable for automotive electric powertrain"
+            },
+            {
+              "language": "de",
+              "text": "Automotive Leitung geschirmt f\u00FCr elektrische Fahrzeugantriebe"
+            }
+          ],
+          "modelType": "MultiLanguageProperty"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "ManufacturerPartNumber",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/ManufacturerPartNumber/1/1"
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "8-9051",
+          "modelType": "Property"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "ManufacturerOrderCode",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/ManufacturerOrderCode/1/1"
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "FLR31Y11Y 2x0.5/0.11/T120",
+          "modelType": "Property"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "ProductImage01",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/ProductImage/1/1"
+              }
+            ]
+          },
+          "value": "",
+          "contentType": "",
+          "modelType": "File"
+        }
+      ],
+      "modelType": "SubmodelElementCollection"
+    },
+    {
+      "category": "CONSTANT",
+      "idShort": "ProductClassifications",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/ProductClassifications/1/1"
+          }
+        ]
+      },
+      "value": [
+        {
+          "category": "CONSTANT",
+          "idShort": "ProductClassificationItem101",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/ProductClassificationItem/1/1"
+              }
+            ]
+          },
+          "value": [
+            {
+              "category": "CONSTANT",
+              "idShort": "ProductClassificationSystem",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/ProductClassificationSystem/1/1"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "",
+              "modelType": "Property"
+            },
+            {
+              "category": "CONSTANT",
+              "idShort": "ClassificationSystemVersion",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/ClassificationSystemVersion/1/1"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "",
+              "modelType": "Property"
+            },
+            {
+              "category": "CONSTANT",
+              "idShort": "ProductClassId",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/ProductClassId/1/1"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "",
+              "modelType": "Property"
+            }
+          ],
+          "modelType": "SubmodelElementCollection"
+        }
+      ],
+      "modelType": "SubmodelElementCollection"
+    },
+    {
+      "category": "CONSTANT",
+      "idShort": "TechnicalProperties",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/TechnicalProperties/1/1"
+          }
+        ]
+      },
+      "value": [
+        {
+          "category": "CONSTANT",
+          "idShort": "ElectricalProperties",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/MainSection/1/1"
+              }
+            ]
+          },
+          "value": [
+            {
+              "category": "CONSTANT",
+              "idShort": "ConductorResistanceConductor",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://example.com/ids/cd/3125_2150_4032_7352"
+                  }
+                ]
+              },
+              "valueType": "xs:float",
+              "value": "38.18",
+              "modelType": "Property"
+            },
+            {
+              "category": "CONSTANT",
+              "idShort": "NominalVoltage(DC)",
+              "description": [],
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://example.com/ids/cd/4445_2150_4032_4549"
+                  }
+                ]
+              },
+              "valueType": "xs:int",
+              "value": "60",
+              "modelType": "Property"
+            }
+          ],
+          "modelType": "SubmodelElementCollection"
+        },
+        {
+          "idShort": "MechanicalProperties",
+          "value": [
+            {
+              "category": "CONSTANT",
+              "idShort": "WeightOfCable",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "ConceptDescription",
+                    "value": "https://example.com/ids/cd/0395_2150_4032_6841"
+                  }
+                ]
+              },
+              "embeddedDataSpecifications": [],
+              "valueType": "xs:int",
+              "value": "41",
+              "valueId": {
+                "type": "ModelReference",
+                "keys": []
+              },
+              "modelType": "Property"
+            },
+            {
+              "idShort": "Sheath material",
+              "valueType": "xs:string",
+              "value": "TPU, PUR Shore A90 (\u00B1 7)",
+              "modelType": "Property"
+            },
+            {
+              "idShort": "OuterDiameter",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "ConceptDescription",
+                    "value": "https://example.com/ids/cd/8360_7021_2042_2565"
+                  }
+                ]
+              },
+              "supplementalSemanticIds": [
+                {
+                  "type": "ExternalReference",
+                  "keys": []
+                }
+              ],
+              "qualifiers": [],
+              "embeddedDataSpecifications": [
+                {
+                  "dataSpecification": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": ""
+                      }
+                    ]
+                  },
+                  "dataSpecificationContent": {
+                    "preferredName": [],
+                    "modelType": "DataSpecificationIec61360"
+                  }
+                }
+              ],
+              "valueType": "xs:string",
+              "value": "6.2",
+              "valueId": {
+                "type": "ModelReference",
+                "keys": []
+              },
+              "modelType": "Property"
+            },
+            {
+              "extensions": [],
+              "idShort": "WallThickness",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "ConceptDescription",
+                    "value": "https://example.com/ids/cd/6401_7021_2042_6619"
+                  }
+                ]
+              },
+              "supplementalSemanticIds": [
+                {
+                  "type": "ModelReference",
+                  "keys": []
+                }
+              ],
+              "qualifiers": [],
+              "valueType": "xs:string",
+              "value": "1.1",
+              "valueId": {
+                "type": "ExternalReference",
+                "keys": []
+              },
+              "modelType": "Property"
+            },
+            {
+              "idShort": "Separator",
+              "valueType": "xs:string",
+              "value": "Talc powder",
+              "modelType": "Property"
+            },
+            {
+              "idShort": "LengthStripes",
+              "valueType": "xs:string",
+              "value": "2 white stripes, each min. 7 % of the surface, both max. 35 % of the surface",
+              "modelType": "Property"
+            }
+          ],
+          "modelType": "SubmodelElementCollection"
+        },
+        {
+          "idShort": "ThermalProperties",
+          "value": [
+            {
+              "category": "CONSTANT",
+              "idShort": "OperatingTemperature Shealth",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://example.com/ids/cd/8100_3150_4032_6358"
+                  }
+                ]
+              },
+              "valueType": "xs:int",
+              "min": "-40",
+              "max": "120",
+              "modelType": "Range"
+            },
+            {
+              "category": "CONSTANT",
+              "idShort": "OperatingTemperatureCores ",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://example.com/ids/cd/8100_3150_4032_6358"
+                  }
+                ]
+              },
+              "valueType": "xs:int",
+              "min": "-40",
+              "max": "125",
+              "modelType": "Range"
+            },
+            {
+              "category": "CONSTANT",
+              "idShort": "Short-termAgeing",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://example.com/ids/cd/2400_3150_4032_5719"
+                  }
+                ]
+              },
+              "valueType": "xs:int",
+              "min": "",
+              "max": "145",
+              "modelType": "Range"
+            }
+          ],
+          "modelType": "SubmodelElementCollection"
+        }
+      ],
+      "modelType": "SubmodelElementCollection"
+    },
+    {
+      "category": "CONSTANT",
+      "idShort": "FurtherInformation",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/FurtherInformation/1/1"
+          }
+        ]
+      },
+      "value": [
+        {
+          "category": "CONSTANT",
+          "idShort": "TextStatement01",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/TextStatement/1/1"
+              }
+            ]
+          },
+          "modelType": "MultiLanguageProperty"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "ValidDate",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/ValidDate/1/1"
+              }
+            ]
+          },
+          "valueType": "xs:date",
+          "value": "",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "SubmodelElementCollection"
+    }
+  ],
+  "modelType": "Submodel"
+}

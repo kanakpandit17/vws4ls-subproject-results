@@ -1,0 +1,546 @@
+{
+  "idShort": "TechnicalData",
+  "id": "www.coroplast.de/ids/sm/5352_0222_1032_3953",
+  "kind": "Instance",
+  "semanticId": {
+    "type": "ExternalReference",
+    "keys": [
+      {
+        "type": "Submodel",
+        "value": "http://admin-shell.io/sandbox/SG2/TechnicalData/Submodel/1/1"
+      }
+    ]
+  },
+  "submodelElements": [
+    {
+      "category": "CONSTANT",
+      "idShort": "GeneralInformation",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/GeneralInformation/1/1"
+          }
+        ]
+      },
+      "value": [
+        {
+          "category": "CONSTANT",
+          "idShort": "ManufacturerName",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/ManufacturerName/1/1"
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "Coroflex",
+          "modelType": "Property"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "ManufacturerLogo",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/ManufacturerLogo/1/1"
+              }
+            ]
+          },
+          "value": "",
+          "contentType": "",
+          "modelType": "File"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "ManufacturerProductDesignation",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/ManufacturerProductDesignation/1/1"
+              }
+            ]
+          },
+          "value": [
+            {
+              "language": "en",
+              "text": "Shielded cable for automotive electric powertrain"
+            },
+            {
+              "language": "de",
+              "text": "Automotive Leitung geschirmt f\u00FCr elektrische Fahrzeugantriebe"
+            }
+          ],
+          "modelType": "MultiLanguageProperty"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "ManufacturerPartNumber",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/ManufacturerPartNumber/1/1"
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "9-2611 / 35 ",
+          "modelType": "Property"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "ManufacturerOrderCode",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/ManufacturerOrderCode/1/1"
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "FHLR2GCB2G",
+          "modelType": "Property"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "ProductImage01",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/ProductImage/1/1"
+              }
+            ]
+          },
+          "value": "",
+          "contentType": "",
+          "modelType": "File"
+        }
+      ],
+      "modelType": "SubmodelElementCollection"
+    },
+    {
+      "category": "CONSTANT",
+      "idShort": "ProductClassifications",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/ProductClassifications/1/1"
+          }
+        ]
+      },
+      "value": [
+        {
+          "category": "CONSTANT",
+          "idShort": "ProductClassificationItem101",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/ProductClassificationItem/1/1"
+              }
+            ]
+          },
+          "value": [
+            {
+              "category": "CONSTANT",
+              "idShort": "ProductClassificationSystem",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/ProductClassificationSystem/1/1"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "",
+              "modelType": "Property"
+            },
+            {
+              "category": "CONSTANT",
+              "idShort": "ClassificationSystemVersion",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/ClassificationSystemVersion/1/1"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "",
+              "modelType": "Property"
+            },
+            {
+              "category": "CONSTANT",
+              "idShort": "ProductClassId",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/ProductClassId/1/1"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "",
+              "modelType": "Property"
+            }
+          ],
+          "modelType": "SubmodelElementCollection"
+        }
+      ],
+      "modelType": "SubmodelElementCollection"
+    },
+    {
+      "category": "CONSTANT",
+      "idShort": "TechnicalProperties",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/TechnicalProperties/1/1"
+          }
+        ]
+      },
+      "value": [
+        {
+          "category": "CONSTANT",
+          "idShort": "ElectricalProperties",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/MainSection/1/1"
+              }
+            ]
+          },
+          "value": [
+            {
+              "category": "CONSTANT",
+              "idShort": "ConductorResistanceShielding",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://example.com/ids/cd/7120_3103_3032_1743"
+                  }
+                ]
+              },
+              "valueType": "xs:float",
+              "value": "3.8",
+              "modelType": "Property"
+            },
+            {
+              "category": "CONSTANT",
+              "idShort": "ConductorResistanceConductor",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://example.com/ids/cd/3125_2150_4032_7352"
+                  }
+                ]
+              },
+              "valueType": "xs:float",
+              "value": "0.527",
+              "modelType": "Property"
+            },
+            {
+              "category": "CONSTANT",
+              "idShort": "TestVoltageSparkTest",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://example.com/ids/cd/7215_2150_4032_6569"
+                  }
+                ]
+              },
+              "valueType": "xs:float",
+              "value": "8.0",
+              "modelType": "Property"
+            },
+            {
+              "category": "CONSTANT",
+              "idShort": "TestVoltage5Min",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://example.com/ids/cd/4135_2150_4032_2569"
+                  }
+                ]
+              },
+              "valueType": "xs:float",
+              "value": "5.0",
+              "modelType": "Property"
+            },
+            {
+              "category": "CONSTANT",
+              "idShort": "NominalVoltage(AC)",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://example.com/ids/cd/7045_2150_4032_3943"
+                  }
+                ]
+              },
+              "valueType": "xs:int",
+              "value": "600",
+              "modelType": "Property"
+            },
+            {
+              "category": "CONSTANT",
+              "idShort": "NominalVoltage(DC)",
+              "description": [],
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://example.com/ids/cd/4445_2150_4032_4549"
+                  }
+                ]
+              },
+              "valueType": "xs:int",
+              "value": "1000",
+              "modelType": "Property"
+            },
+            {
+              "category": "CONSTANT",
+              "idShort": "Capacitance",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://example.com/ids/cd/0165_2150_4032_3017"
+                  }
+                ]
+              },
+              "valueType": "xs:int",
+              "value": "600",
+              "modelType": "Property"
+            },
+            {
+              "category": "CONSTANT",
+              "idShort": "Inductance",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://example.com/ids/cd/6565_2150_4032_9160"
+                  }
+                ]
+              },
+              "valueType": "xs:int",
+              "value": "100",
+              "modelType": "Property"
+            },
+            {
+              "category": "CONSTANT",
+              "idShort": "Impedance",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://example.com/ids/cd/5275_2150_4032_3351"
+                  }
+                ]
+              },
+              "valueType": "xs:int",
+              "value": "10",
+              "modelType": "Property"
+            }
+          ],
+          "modelType": "SubmodelElementCollection"
+        },
+        {
+          "idShort": "MechanicalProperties",
+          "value": [
+            {
+              "category": "CONSTANT",
+              "idShort": "BendRadiusStatic",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "3 x cable diameter"
+                }
+              ],
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://example.com/ids/cd/5185_2150_4032_7755"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "105",
+              "modelType": "Property"
+            },
+            {
+              "category": "CONSTANT",
+              "idShort": "BendRadiusDynamic",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "6 x cable diameter"
+                }
+              ],
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://example.com/ids/cd/0485_2150_4032_4248"
+                  }
+                ]
+              },
+              "valueType": "xs:int",
+              "value": "210 ",
+              "modelType": "Property"
+            },
+            {
+              "category": "CONSTANT",
+              "idShort": "WeightOfCable",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://example.com/ids/cd/0395_2150_4032_6891"
+                  }
+                ]
+              },
+              "valueType": "xs:int",
+              "value": "485",
+              "modelType": "Property"
+            }
+          ],
+          "modelType": "SubmodelElementCollection"
+        },
+        {
+          "idShort": "ThermalProperties",
+          "value": [
+            {
+              "category": "CONSTANT",
+              "idShort": "OperatingTemperature",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://example.com/ids/cd/8100_3150_4032_6358"
+                  }
+                ]
+              },
+              "valueType": "xs:int",
+              "min": "-40",
+              "max": "180",
+              "modelType": "Range"
+            },
+            {
+              "category": "CONSTANT",
+              "idShort": "Short-termAgeing",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://example.com/ids/cd/2400_3150_4032_5719"
+                  }
+                ]
+              },
+              "valueType": "xs:int",
+              "min": "",
+              "max": "205",
+              "modelType": "Range"
+            }
+          ],
+          "modelType": "SubmodelElementCollection"
+        }
+      ],
+      "modelType": "SubmodelElementCollection"
+    },
+    {
+      "category": "CONSTANT",
+      "idShort": "FurtherInformation",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/FurtherInformation/1/1"
+          }
+        ]
+      },
+      "value": [
+        {
+          "category": "CONSTANT",
+          "idShort": "TextStatement01",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/TextStatement/1/1"
+              }
+            ]
+          },
+          "modelType": "MultiLanguageProperty"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "ValidDate",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/ValidDate/1/1"
+              }
+            ]
+          },
+          "valueType": "xs:date",
+          "value": "",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "SubmodelElementCollection"
+    }
+  ],
+  "modelType": "Submodel"
+}

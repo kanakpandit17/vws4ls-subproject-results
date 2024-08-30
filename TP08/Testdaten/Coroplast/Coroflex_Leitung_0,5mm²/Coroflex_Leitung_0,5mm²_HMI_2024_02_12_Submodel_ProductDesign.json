@@ -1,0 +1,181 @@
+{
+  "idShort": "ProductDesign",
+  "id": "www.coroplast.de/ids/sm/7515_6140_3042_6617",
+  "kind": "Instance",
+  "submodelElements": [
+    {
+      "category": "CONSTANT",
+      "idShort": "Core35mm\u00B2",
+      "value": [
+        {
+          "category": "CONSTANT",
+          "idShort": "ConductorMaterial",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/SemanticIdNotAvailable /1/1 "
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "E-Cu ETP1 according DIN EN 13602",
+          "modelType": "Property"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "ConductorDesign",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/SemanticIdNotAvailable /1/1 "
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "stranded bare copper 64 (\u00B15%) x max. 0.11 mm",
+          "modelType": "Property"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "CoreInsulation",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/SemanticIdNotAvailable /1/1 "
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "TPE-S Shore D51 (\u00B1 5)",
+          "modelType": "Property"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "CoreDiameter",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/SemanticIdNotAvailable /1/1 "
+              }
+            ]
+          },
+          "valueType": "xs:float",
+          "value": "1.6",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "InsulationWallThickness",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/SemanticIdNotAvailable /1/1 "
+              }
+            ]
+          },
+          "valueType": "xs:float",
+          "min": "0.18",
+          "modelType": "Range"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "ColourCode",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/SemanticIdNotAvailable /1/1 "
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "according to the order",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "SubmodelElementCollection"
+    },
+    {
+      "category": "CONSTANT",
+      "idShort": "OuterSheath",
+      "value": [
+        {
+          "category": "CONSTANT",
+          "idShort": "SheathMaterial",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/SemanticIdNotAvailable /1/1 "
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "TPU, PUR Shore A90 (\u00B1 7)",
+          "modelType": "Property"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "OuterDiameter",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/SemanticIdNotAvailable /1/1 "
+              }
+            ]
+          },
+          "valueType": "xs:float",
+          "value": "6.2 mm (\u00B1 0.2)",
+          "modelType": "Property"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "InsulationWallThickness",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/SemanticIdNotAvailable /1/1 "
+              }
+            ]
+          },
+          "valueType": "xs:float",
+          "value": "0.18",
+          "modelType": "Property"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "ColourCode",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/SemanticIdNotAvailable /1/1 "
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "according to the order",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "SubmodelElementCollection"
+    }
+  ],
+  "modelType": "Submodel"
+}
