@@ -1,0 +1,726 @@
+{
+  "idShort": "TechnicalData",
+  "description": [
+    {
+      "language": "DE",
+      "text": "Submodel f\u00FCr technische Daten eines Assets und zugeh\u00F6rige Konformit\u00E4ten zu Produktklassifikationen"
+    },
+    {
+      "language": "EN",
+      "text": "Submodel containing techical data to the asset and associated product classificatons"
+    }
+  ],
+  "administration": {
+    "version": "1",
+    "revision": "1"
+  },
+  "id": "www.kostal.com/sm/6025_8002_2042_2432",
+  "kind": "Instance",
+  "semanticId": {
+    "type": "ExternalReference",
+    "keys": [
+      {
+        "type": "Submodel",
+        "value": "http://admin-shell.io/sandbox/SG2/TechnicalData/Submodel/1/1"
+      }
+    ]
+  },
+  "submodelElements": [
+    {
+      "category": "PARAMETER",
+      "idShort": "GeneralInformation",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/GeneralInformation/1/1"
+          }
+        ]
+      },
+      "value": [
+        {
+          "category": "PARAMETER",
+          "idShort": "ManufacturerName",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/ManufacturerName/1/1"
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "KOSTAL Connectors",
+          "modelType": "Property"
+        },
+        {
+          "category": "PARAMETER",
+          "idShort": "ManufacturerProductDesignation",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/ManufacturerProductDesignation/1/1"
+              }
+            ]
+          },
+          "modelType": "MultiLanguageProperty"
+        },
+        {
+          "category": "PARAMETER",
+          "idShort": "ManufacturerPartNumber",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/ManufacturerPartNumber/1/1"
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "32140734113",
+          "modelType": "Property"
+        },
+        {
+          "category": "PARAMETER",
+          "idShort": "ManufacturerOrderCode",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/ManufacturerOrderCode/1/1"
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "32140734113",
+          "modelType": "Property"
+        },
+        {
+          "category": "PARAMETER",
+          "idShort": "ProductImage",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/ProductImage/1/1"
+              }
+            ]
+          },
+          "value": "/aasx/files/Terminal_MLK_1-2_5c3cc63b.JPG",
+          "contentType": "image/jpeg",
+          "modelType": "File"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "ManufacturerLogo",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/ManufacturerLogo/1/1"
+              }
+            ]
+          },
+          "value": "/aasx/files/HellermannTyton-Logo.svg.png",
+          "contentType": "image/png",
+          "modelType": "File"
+        },
+        {
+          "category": "PARAMETER",
+          "idShort": "DrawingNumberIndexDate",
+          "description": [
+            {
+              "language": "de",
+              "text": "Zeichnungsnummer und Datum des Prouktes"
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": []
+          },
+          "valueType": "xs:string",
+          "value": "10304894-1 0002A / 12.10.2012",
+          "modelType": "Property"
+        },
+        {
+          "category": "PARAMETER",
+          "idShort": "MaterialCharge",
+          "description": [
+            {
+              "language": "de",
+              "text": "Chargennummer in der das Produkt produziert wurde"
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": []
+          },
+          "valueType": "xs:int",
+          "value": "15531",
+          "modelType": "Property"
+        },
+        {
+          "category": "PARAMETER",
+          "idShort": "CoilCarton",
+          "description": [
+            {
+              "language": "de",
+              "text": "Nummer der Spule, die f\u00FCr die Produktion der Leitung verwendet wurde."
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": []
+          },
+          "valueType": "xs:int",
+          "value": "3703 - 300",
+          "modelType": "Property"
+        },
+        {
+          "category": "PARAMETER",
+          "idShort": "ArticleNumberRealPackageing",
+          "description": [
+            {
+              "language": "de",
+              "text": ""
+            }
+          ],
+          "valueType": "xs:int",
+          "value": "32140734123",
+          "modelType": "Property"
+        },
+        {
+          "category": "PARAMETER",
+          "idShort": "ArticleNumberSinglePartGoods",
+          "valueType": "xs:int",
+          "value": "32140734123",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "SubmodelElementCollection"
+    },
+    {
+      "category": "PARAMETER",
+      "idShort": "ProductClassifications",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/ProductClassifications/1/1"
+          }
+        ]
+      },
+      "value": [
+        {
+          "category": "CONSTANT",
+          "idShort": "ProductClassificationItem01",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/ProductClassificationItem/1/1"
+              }
+            ]
+          },
+          "value": [
+            {
+              "category": "PARAMETER",
+              "idShort": "ProductClassificationSystem",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/ProductClassificationSystem/1/1"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "ECLASS",
+              "modelType": "Property"
+            },
+            {
+              "category": "PARAMETER",
+              "idShort": "ClassificationSystemVersion",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/ClassificationSystemVersion/1/1"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "12.0 (BASIC)",
+              "modelType": "Property"
+            },
+            {
+              "category": "PARAMETER",
+              "idShort": "ProductClassId",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/ProductClassId/1/1"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "27-27-49-01",
+              "modelType": "Property"
+            }
+          ],
+          "modelType": "SubmodelElementCollection"
+        }
+      ],
+      "modelType": "SubmodelElementCollection"
+    },
+    {
+      "category": "PARAMETER",
+      "idShort": "TechnicalProperties",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://example.com/ids/cd/2323_0111_5022_1146"
+          }
+        ]
+      },
+      "value": [
+        {
+          "category": "PARAMETER",
+          "idShort": "ConnectionTechnologie",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://smart.festo.com/ids/mychar/MYCHAR_3012_01"
+              }
+            ]
+          },
+          "value": [
+            {
+              "language": "de",
+              "text": "Crimping"
+            }
+          ],
+          "modelType": "MultiLanguageProperty"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "Surface",
+          "description": [
+            {
+              "language": "de",
+              "text": "Beschaffenheit der Oberfl\u00E4che"
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://example.com/ids/cd/8175_5161_5022_4564"
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "Sn",
+          "modelType": "Property"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "ProductLength",
+          "description": [
+            {
+              "language": "de",
+              "text": "Produktl\u00E4nge"
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://example.com/ids/cd/1092_8011_5022_9593"
+              }
+            ]
+          },
+          "valueType": "xs:int",
+          "value": "17",
+          "modelType": "Property"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "MaxWorkingTemperatur",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://example.com/ids/cd/1524_0111_5022_8494"
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "170",
+          "modelType": "Property"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "ProductWidth",
+          "description": [
+            {
+              "language": "de",
+              "text": "Produktbreite"
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://example.com/ids/cd/9103_8011_5022_0068"
+              }
+            ]
+          },
+          "valueType": "xs:int",
+          "value": "1.8",
+          "modelType": "Property"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "WireSize",
+          "description": [
+            {
+              "language": "de",
+              "text": "Leitungsgr\u00F6\u00DFe"
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://example.com/ids/cd/5423_8011_5022_6785"
+              }
+            ]
+          },
+          "valueType": "xs:int",
+          "value": "0,35",
+          "modelType": "Property"
+        },
+        {
+          "category": "PARAMETER",
+          "idShort": "Mating/UnmatingForce",
+          "description": [
+            {
+              "language": "de",
+              "text": "Frequenzreichweite"
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://example.com/ids/cd/6543_8011_5022_1467"
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "5.0\u002B-1.0",
+          "modelType": "Property"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "MatingCycle",
+          "description": [
+            {
+              "language": "de",
+              "text": "Paarungscyclus"
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://example.com/ids/cd/0403_0111_5022_7486"
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "20",
+          "modelType": "Property"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "Availability",
+          "description": [
+            {
+              "language": "de",
+              "text": "Verf\u00FCgbarkeit"
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://example.com/ids/cd/2333_0111_5022_3767"
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "Verf\u00FCgbar",
+          "modelType": "Property"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "CurrentCarryingCapabilityAt80\u00B0C ",
+          "description": [
+            {
+              "language": "de",
+              "text": "Strombelastbarkeit bei 80\u00B0C"
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://example.com/ids/cd/2553_0111_5022_7953"
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "5",
+          "modelType": "Property"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "WireCrossSection",
+          "description": [
+            {
+              "language": "de",
+              "text": "Leitungs-\u00D8  [mm] f\u00FCr Isocrimp in Anlehnung an ISO 6722 / LV216-2"
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://example.com/ids/cd/6283_0111_5022_4590"
+              }
+            ]
+          },
+          "valueType": "xs:int",
+          "value": "9,8-11,5",
+          "modelType": "Property"
+        },
+        {
+          "category": "PARAMETER",
+          "idShort": "MaschinenCrimp-WKZF\u00FCrCrimppresse",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://smart.festo.com/ids/mychar/MYCHAR_5436_01"
+              }
+            ]
+          },
+          "valueType": "xs:int",
+          "value": "10019253",
+          "modelType": "Property"
+        },
+        {
+          "category": "PARAMETER",
+          "idShort": "CrimpPressForce",
+          "description": [
+            {
+              "language": "de",
+              "text": "Um den prozess auszuf\u00FCrhrende Presskraft"
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://smart.festo.com/ids/mychar/MYCHAR_3002_01"
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "1",
+          "modelType": "Property"
+        },
+        {
+          "category": "PARAMETER",
+          "idShort": "CrimpEinsatzSet",
+          "description": [
+            {
+              "language": "de",
+              "text": "Crimp-Einsatz-Set f\u00FCr Hand-Crimpger\u00E4t EHC10 f\u00FCr Einzelware"
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://smart.festo.com/ids/mychar/MYCHAR_3079_01"
+              }
+            ]
+          },
+          "value": [
+            {
+              "language": "de",
+              "text": "10013859"
+            }
+          ],
+          "modelType": "MultiLanguageProperty"
+        },
+        {
+          "category": "PARAMETER",
+          "idShort": "Cr",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://smart.festo.com/ids/mychar/MYCHAR_3010_01"
+              }
+            ]
+          },
+          "valueType": "xs:int",
+          "value": "mit ISO - Crimp",
+          "modelType": "Property"
+        },
+        {
+          "category": "PARAMETER",
+          "idShort": "ProductWeight",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://smart.festo.com/ids/mychar/MYCHAR_3038_01"
+              }
+            ]
+          },
+          "valueType": "xs:int",
+          "value": "0,16",
+          "modelType": "Property"
+        },
+        {
+          "category": "PARAMETER",
+          "idShort": "ULAmbientTemperature",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://smart.festo.com/ids/mychar/MYCHAR_8207_01"
+              }
+            ]
+          },
+          "valueType": "xs:int",
+          "value": "-40 - 120",
+          "modelType": "Property"
+        },
+        {
+          "category": "PARAMETER",
+          "idShort": "ControllerNominalOutput",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://smart.festo.com/ids/mychar/MYCHAR_4762_01"
+              }
+            ]
+          },
+          "valueType": "xs:int",
+          "value": "",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "SubmodelElementCollection"
+    },
+    {
+      "category": "PARAMETER",
+      "idShort": "FurtherInformation",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/FurtherInformation/1/1"
+          }
+        ]
+      },
+      "value": [
+        {
+          "category": "PARAMETER",
+          "idShort": "ValidDate",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/ValidDate/1/1"
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "2020-12-10",
+          "modelType": "Property"
+        },
+        {
+          "category": "PARAMETER",
+          "idShort": "TextStatement",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/TextStatement/1/1"
+              }
+            ]
+          },
+          "value": [
+            {
+              "language": "de",
+              "text": "Prototypische Umsetzung. KOSTAL KKS \u00FCbernimmt keine Haftung f\u00FCr die Richtigkeit der Informationen."
+            },
+            {
+              "language": "en",
+              "text": "Prototypical implementation. KOSTAL KKS assumes no liability for the accuracy of the information."
+            }
+          ],
+          "modelType": "MultiLanguageProperty"
+        }
+      ],
+      "modelType": "SubmodelElementCollection"
+    }
+  ],
+  "modelType": "Submodel"
+}
