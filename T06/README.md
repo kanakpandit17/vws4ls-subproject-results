@@ -1,6 +1,6 @@
 ## Zielsetzung 
 
-Das TP 6 "Automatisierte Verhandlungsprozesse" fokussiert sich auf die Entwicklung eines Konzepts, dass eine automatisierbare Verhandlung zwischen verschiedenen Systemen (z.B. Maschine zu Maschine, Leitungssatz zu Maschine oder Leitstand (MES) zu Maschine) ermöglicht. Die Verhandlung zwischen den Systemen soll autonom durch die sog. "I4.0-Komponenten" geführt werden, die anhand von Daten und Informationen Entscheidungen treffen.  
+Das Teilprojekt 6 "**Automatisierte Verhandlungsprozesse**" fokussierte sich auf die Entwicklung eines Konzepts, dass eine automatisierbare Verhandlung zwischen verschiedenen Systemen (z.B. Maschine zu Maschine, Leitungssatz zu Maschine oder Leitstand (MES) zu Maschine) ermöglicht. Die Verhandlung zwischen den Systemen soll autonom durch die sog. "I4.0-Komponenten" geführt werden, die anhand von Daten und Informationen Entscheidungen treffen.  
 
 In dem Konzept werden Randbedingungen für das eigenständige Entscheiden definiert und Wege für die Kommunikation und Interaktion zwischen autonomen I4.0-Komponenten aufgezeigt.  
 
