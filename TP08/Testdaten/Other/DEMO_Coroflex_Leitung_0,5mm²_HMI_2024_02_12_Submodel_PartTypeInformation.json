@@ -1,0 +1,339 @@
+{
+  "idShort": "PartTypeInformation",
+  "description": [
+    {
+      "language": "en",
+      "text": "A Part Type Information represents an item in the Catena-X Bill of Material (BOM) on a type level in a specific version."
+    }
+  ],
+  "administration": {},
+  "id": "urn:samm:io.catenax.part_type_information:1.0.0#PartTypeInformation/submodel",
+  "kind": "Template",
+  "semanticId": {
+    "type": "ModelReference",
+    "keys": [
+      {
+        "type": "ConceptDescription",
+        "value": "urn:samm:io.catenax.part_type_information:1.0.0#PartTypeInformation"
+      }
+    ]
+  },
+  "submodelElements": [
+    {
+      "idShort": "catenaXId",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "Catena-X ID"
+        }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "ConceptDescription",
+            "value": "urn:samm:io.catenax.part_type_information:1.0.0#catenaXId"
+          }
+        ]
+      },
+      "valueType": "xs:string",
+      "value": "",
+      "modelType": "Property"
+    },
+    {
+      "idShort": "PartTypeInformationEntity",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "Part Type Information Entity"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Encapsulation for data related to the part type."
+        }
+      ],
+      "value": [
+        {
+          "idShort": "manufacturerPartId",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "Manufacturer Part ID"
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "ConceptDescription",
+                "value": "urn:samm:io.catenax.part_type_information:1.0.0#manufacturerPartId"
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "nameAtManufacturer",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "Name at manufacturer"
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "ConceptDescription",
+                "value": "urn:samm:io.catenax.part_type_information:1.0.0#nameAtManufacturer"
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "partClassification",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "Part Classification"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Property describing the classification of a part."
+            }
+          ],
+          "orderRelevant": true,
+          "typeValueListElement": "DataElement",
+          "value": [
+            {
+              "idShort": "ClassificationEntity",
+              "displayName": [
+                {
+                  "language": "en",
+                  "text": "ClassificationEntity"
+                }
+              ],
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Encapsulates data related to the classification of the part."
+                }
+              ],
+              "value": [
+                {
+                  "idShort": "classificationStandard",
+                  "displayName": [
+                    {
+                      "language": "en",
+                      "text": "Classification Standard"
+                    }
+                  ],
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "ConceptDescription",
+                        "value": "urn:samm:io.catenax.shared.part_classification:1.0.0#classificationStandard"
+                      }
+                    ]
+                  },
+                  "valueType": "xs:string",
+                  "value": "",
+                  "modelType": "Property"
+                },
+                {
+                  "idShort": "classificationID",
+                  "displayName": [
+                    {
+                      "language": "en",
+                      "text": "Classification ID"
+                    }
+                  ],
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "ConceptDescription",
+                        "value": "urn:samm:io.catenax.shared.part_classification:1.0.0#classificationID"
+                      }
+                    ]
+                  },
+                  "valueType": "xs:string",
+                  "value": "",
+                  "modelType": "Property"
+                },
+                {
+                  "idShort": "classificationDescription",
+                  "displayName": [
+                    {
+                      "language": "en",
+                      "text": "Classification Description"
+                    }
+                  ],
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "ConceptDescription",
+                        "value": "urn:samm:io.catenax.shared.part_classification:1.0.0#classificationDescription"
+                      }
+                    ]
+                  },
+                  "valueType": "xs:string",
+                  "value": "",
+                  "modelType": "Property"
+                }
+              ],
+              "modelType": "SubmodelElementCollection"
+            }
+          ],
+          "modelType": "SubmodelElementList"
+        }
+      ],
+      "modelType": "SubmodelElementCollection"
+    },
+    {
+      "idShort": "partSitesInformationAsPlanned",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "Part Sites Information as Planned"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "A site is a delimited geographical area where a legal entity does business (geographical address with geo coordinates). A site always has a primary physical address. It is possible that further physical addresses are specified for the site. P.O. box details are only possible in addition to the physical address. A site has a 1:n relation to addresses, means at least one address is necessary and multiple addresses are possible."
+        }
+      ],
+      "supplementalSemanticIds": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://confluence.catena-x.net/x/QkBHAw"
+            }
+          ]
+        }
+      ],
+      "orderRelevant": true,
+      "typeValueListElement": "DataElement",
+      "value": [
+        {
+          "idShort": "partSitesInformationAsPlannedEntity",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "Part Sites Information as Planned Entity"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Describes the ID, function and validity date of a site for the associated part in the AsPlanned context."
+            }
+          ],
+          "value": [
+            {
+              "idShort": "catenaXsiteId",
+              "displayName": [
+                {
+                  "language": "en",
+                  "text": "Catena-X site identifier"
+                }
+              ],
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "ConceptDescription",
+                    "value": "urn:samm:io.catenax.part_type_information:1.0.0#catenaXsiteId"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "",
+              "modelType": "Property"
+            },
+            {
+              "idShort": "function",
+              "displayName": [
+                {
+                  "language": "en",
+                  "text": "Function"
+                }
+              ],
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "ConceptDescription",
+                    "value": "urn:samm:io.catenax.part_type_information:1.0.0#function"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "",
+              "modelType": "Property"
+            },
+            {
+              "idShort": "functionValidFrom",
+              "displayName": [
+                {
+                  "language": "en",
+                  "text": "Function valid from"
+                }
+              ],
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "ConceptDescription",
+                    "value": "urn:samm:io.catenax.part_type_information:1.0.0#functionValidFrom"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "",
+              "modelType": "Property"
+            },
+            {
+              "idShort": "functionValidUntil",
+              "displayName": [
+                {
+                  "language": "en",
+                  "text": "Function valid until"
+                }
+              ],
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "ConceptDescription",
+                    "value": "urn:samm:io.catenax.part_type_information:1.0.0#functionValidUntil"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "",
+              "modelType": "Property"
+            }
+          ],
+          "modelType": "SubmodelElementCollection"
+        }
+      ],
+      "modelType": "SubmodelElementList"
+    }
+  ],
+  "modelType": "Submodel"
+}
