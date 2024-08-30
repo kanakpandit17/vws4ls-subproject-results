@@ -1,5 +1,5 @@
 ## Zielsetzung
-Das Ziel des Teilprojekts 5 " Integration von Verwaltungsschalen (Verbundkomponente)" bestand darin, ausgehend vom Prinzip der Verbundkomponente der Plattform Industrie 4.0, Umsetzungskonzepte zu definieren, wie die Verwaltungsschale einer Teilkomponente, z.B. Steckverbinder, in die Verwaltungs-schale des gesamten Leitungssatz einfließt („Matroschka-Prinzip“).
+Das Ziel des Teilprojekts 5 "**Integration von Verwaltungsschalen (Verbundkomponente)**" bestand darin, ausgehend vom Prinzip der Verbundkomponente der Plattform Industrie 4.0, Umsetzungskonzepte zu definieren, wie die Verwaltungsschale einer Teilkomponente, z.B. Steckverbinder, in die Verwaltungsschale des gesamten Leitungssatz einfließt („Matroschka-Prinzip“).
 
 Das Teilprojekt wurde in folgende Arbeitspakete aufgeteilt, deren Resultate in diesem Dokument zusammenfassend erläutert werden:
 
