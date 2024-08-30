@@ -1,0 +1,303 @@
+{
+  "idShort": "3D Data (MCAD)",
+  "id": "https://example.com/ids/sm/0195_7050_4032_3227",
+  "kind": "Instance",
+  "semanticId": {
+    "type": "ExternalReference",
+    "keys": [
+      {
+        "type": "Submodel",
+        "value": "https://admin-shell.io/sandbox/idta/handover/MCAD/0/1/"
+      }
+    ]
+  },
+  "submodelElements": [
+    {
+      "category": "CONSTANT",
+      "idShort": "Document01",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/vdi/2770/1/0/Document"
+          }
+        ]
+      },
+      "value": [
+        {
+          "category": "CONSTANT",
+          "idShort": "DocumentIdDomain01",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/vdi/2770/1/0/DocumentId"
+              }
+            ]
+          },
+          "value": [
+            {
+              "category": "CONSTANT",
+              "idShort": "DocumentDomainId",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/vdi/2770/1/0/DocumentId/DocumentDomainId"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "3D STEP AP214 (stp)",
+              "modelType": "Property"
+            },
+            {
+              "category": "CONSTANT",
+              "idShort": "DocumentId",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/vdi/2770/1/0/DocumentId/ValueId"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "3D STEP AP214 (stp)",
+              "modelType": "Property"
+            }
+          ],
+          "modelType": "SubmodelElementCollection"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "DocumentVersion01",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/vdi/2770/1/0/DocumentVersion"
+              }
+            ]
+          },
+          "value": [
+            {
+              "category": "CONSTANT",
+              "idShort": "Language01",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/vdi/2770/1/0/DocumentDescription/Language"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "",
+              "modelType": "Property"
+            },
+            {
+              "category": "CONSTANT",
+              "idShort": "DocumentVersionId",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/vdi/2770/1/0/DocumentVersion/DocumentVersionId"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "",
+              "modelType": "Property"
+            },
+            {
+              "category": "CONSTANT",
+              "idShort": "SetDate",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/vdi/2770/1/0/LifeCycleStatus/SetDate"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "",
+              "modelType": "Property"
+            },
+            {
+              "category": "CONSTANT",
+              "idShort": "StatusValue",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/vdi/2770/1/0/LifeCycleStatus/StatusValue"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "",
+              "modelType": "Property"
+            },
+            {
+              "category": "CONSTANT",
+              "idShort": "OrganizationName",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/vdi/2770/1/0/Organization/OrganizationName"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "KOSTAL Kontakt Systeme GmbH",
+              "modelType": "Property"
+            },
+            {
+              "category": "CONSTANT",
+              "idShort": "OrganizationOfficialName",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/vdi/2770/1/0/Organization/OrganizationOfficialName"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "KOSTAL Connectors",
+              "modelType": "Property"
+            },
+            {
+              "category": "CONSTANT",
+              "idShort": "DigitalFile01",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/vdi/2770/1/0/StoredDocumentRepresentation/DigitalFile"
+                  }
+                ]
+              },
+              "value": "/aasx/files/10019942-13-0008A_d52538ca.stp",
+              "contentType": "application/step",
+              "modelType": "File"
+            },
+            {
+              "category": "CONSTANT",
+              "idShort": "PreviewFile01",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/vdi/2770/1/0/StoredDocumentRepresentation/PreviewFile"
+                  }
+                ]
+              },
+              "value": "/aasx/files/10224118-1_PACKAGING_DATA_e80e2344.JPG",
+              "contentType": "image/jpeg",
+              "modelType": "File"
+            },
+            {
+              "category": "CONSTANT",
+              "idShort": "Title",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/vdi/2770/1/0/DocumentDescription/Title"
+                  }
+                ]
+              },
+              "modelType": "MultiLanguageProperty"
+            }
+          ],
+          "modelType": "SubmodelElementCollection"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "DocumentClassification01",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/vdi/2770/1/0/DocumentClassification"
+              }
+            ]
+          },
+          "value": [
+            {
+              "category": "CONSTANT",
+              "idShort": "ClassificationSystem",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/vdi/2770/1/0/DocumentClassification/ClassificationSystem"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "",
+              "modelType": "Property"
+            },
+            {
+              "category": "CONSTANT",
+              "idShort": "ClassId",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/vdi/2770/1/0/DocumentClassification/ClassId"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "02-02",
+              "modelType": "Property"
+            },
+            {
+              "category": "CONSTANT",
+              "idShort": "ClassName",
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/vdi/2770/1/0/DocumentClassification/ClassName"
+                  }
+                ]
+              },
+              "valueType": "xs:string",
+              "value": "Drawings, plans",
+              "modelType": "Property"
+            }
+          ],
+          "modelType": "SubmodelElementCollection"
+        }
+      ],
+      "modelType": "SubmodelElementCollection"
+    }
+  ],
+  "modelType": "Submodel"
+}
