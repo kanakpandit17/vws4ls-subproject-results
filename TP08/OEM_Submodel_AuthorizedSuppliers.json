@@ -1,0 +1,51 @@
+{
+  "idShort": "AuthorizedSuppliers",
+  "id": "https://oem.arena2036.com/ids/sm/1332_8062_8042_4712",
+  "kind": "Instance",
+  "submodelElements": [
+    {
+      "idShort": "AuthorizedSuppliersList",
+      "typeValueListElement": "SubmodelElement",
+      "value": [
+        {
+          "idShort": "AuthorizedSupplierListEntity",
+          "value": [
+            {
+              "idShort": "bpn",
+              "valueType": "xs:string",
+              "value": "BPNL00000003B2OM",
+              "modelType": "Property"
+            }
+          ],
+          "modelType": "SubmodelElementCollection"
+        },
+        {
+          "idShort": "AuthorizedSupplierListEntity",
+          "value": [
+            {
+              "idShort": "bpn",
+              "valueType": "xs:string",
+              "value": "BPNL00000003CSGV",
+              "modelType": "Property"
+            }
+          ],
+          "modelType": "SubmodelElementCollection"
+        },
+        {
+          "idShort": "AuthorizedSupplierListEntity",
+          "value": [
+            {
+              "idShort": "bpn",
+              "valueType": "xs:string",
+              "value": "BPNL00000003B5MJ",
+              "modelType": "Property"
+            }
+          ],
+          "modelType": "SubmodelElementCollection"
+        }
+      ],
+      "modelType": "SubmodelElementList"
+    }
+  ],
+  "modelType": "Submodel"
+}
