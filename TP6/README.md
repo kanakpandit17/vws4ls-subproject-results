@@ -1,17 +1,7 @@
 ## Zielsetzung 
 
-Im Teilprojekt 5 "Integration von Verwaltungsschalen (Verbundkomponente)" wurden ausgehend vom Prinzip der Verbundkomponente der Plattform Industrie 4.0, Umsetzungskonzepte zu definieren, wie die Verwaltungsschale einer Teilkomponente, z.B. Steckverbinder, in die Verwaltungsschale des gesamten Leitungssatz einfließt („Matroschka-Prinzip“). 
+Das TP 6 "Automatisierte Verhandlungsprozesse" fokussiert sich auf die Entwicklung eines Konzepts, dass eine automatisierbare Verhandlung zwischen verschiedenen Systemen (z.B. Maschine zu Maschine, Leitungssatz zu Maschine oder Leitstand (MES) zu Maschine) ermöglicht. Die Verhandlung zwischen den Systemen soll autonom durch die sog. "I4.0-Komponenten" geführt werden, die anhand von Daten und Informationen Entscheidungen treffen.  
 
-Das Teilprojekt wurde in folgende Arbeitspakete aufgeteilt, deren Resultate in diesem Dokument zusammenfassend erläutert werden: 
+In dem Konzept werden Randbedingungen für das eigenständige Entscheiden definiert und Wege für die Kommunikation und Interaktion zwischen autonomen I4.0-Komponenten aufgezeigt.  
 
-AP 5.1 – Anforderungsdefinition 
-
-AP 5.2 – Verbundkomponente Produkt (Leitungssatz) 
-
-AP 5.3 – Verbundkomponente Ressource (Produktionsmittel) und VIBN 
-
-AP 5.4 – Integration der Verwaltungsschalen 
-
-AP 5.5 – Mapping zwischen Produktionsressource und Leitungssatz 
-
-AP 5.6 – Erfassung von Qualitätsdaten 
+Ein erster Ansatz der aktiven Verwaltungsschale könnte in Verbindung mit dem sog. Komponentenmanager sein. Der Komponentenmanager soll anhand von Algorithmen ein zielgerichtetes Verhalten einer I4.0-Komponente (VWS und dazugehörendes Asset) beschreiben. Es wird ein Vorschlag für die Umsetzung eines Komponentenmanagers unter Verwendung von Low-Code-Plattformen skizziert.
