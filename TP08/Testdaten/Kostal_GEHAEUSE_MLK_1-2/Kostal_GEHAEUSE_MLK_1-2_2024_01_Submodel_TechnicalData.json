@@ -1,0 +1,161 @@
+{
+  "idShort": "TechnicalData",
+  "id": "https://example.com/ids/sm/8021_6050_4032_9411",
+  "kind": "Instance",
+  "semanticId": {
+    "type": "ExternalReference",
+    "keys": [
+      {
+        "type": "Submodel",
+        "value": "http://admin-shell.io/sandbox/SG2/TechnicalData/Submodel/1/1"
+      }
+    ]
+  },
+  "submodelElements": [
+    {
+      "category": "CONSTANT",
+      "idShort": "GeneralInformation",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/GeneralInformation/1/1"
+          }
+        ]
+      },
+      "value": [
+        {
+          "category": "CONSTANT",
+          "idShort": "ManufacturerName",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/ManufacturerName/1/1"
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "KOSTAL Connectors",
+          "modelType": "Property"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "ProductImage01",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/ProductImage/1/1"
+              }
+            ]
+          },
+          "value": "/aasx/files/HOUSING_MLK1_2_10224118_8ad581b6.png",
+          "contentType": "image/png",
+          "modelType": "File"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "ManufacturerLogo",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/ManufacturerLogo/1/1"
+              }
+            ]
+          },
+          "value": "/aasx/files/Kostal_KS_Logo_Connectors_Blue_c73d8d47.jpg",
+          "contentType": "image/jpeg",
+          "modelType": "File"
+        }
+      ],
+      "modelType": "SubmodelElementCollection"
+    },
+    {
+      "category": "CONSTANT",
+      "idShort": "FurtherInformation",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/FurtherInformation/1/1"
+          }
+        ]
+      },
+      "value": [
+        {
+          "category": "CONSTANT",
+          "idShort": "ValidDate",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/ValidDate/1/1"
+              }
+            ]
+          },
+          "valueType": "xs:date",
+          "value": "06/2022",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "SubmodelElementCollection"
+    },
+    {
+      "category": "CONSTANT",
+      "idShort": "TechnicalProperties",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/sandbox/SG2/TechnicalData/TechnicalProperties/1/1"
+          }
+        ]
+      },
+      "value": [
+        {
+          "category": "CONSTANT",
+          "idShort": "Temperature",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/SemanticIdNotAvailable /1/1 "
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "-40 /\u002B180",
+          "modelType": "Property"
+        },
+        {
+          "category": "CONSTANT",
+          "idShort": "Material Group",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/SemanticIdNotAvailable /1/1 "
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "PA6.6-GF30",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "SubmodelElementCollection"
+    }
+  ],
+  "modelType": "Submodel"
+}
