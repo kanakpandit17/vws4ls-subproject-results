@@ -21,3 +21,10 @@ Für die Darstellung des Use Cases wird das vereinfachte Beispiel eines Leitungs
 ![image](https://github.com/user-attachments/assets/b05ac68d-f96c-4a5e-879a-bedafc687761)
  
 Abbildung 2: Vereinfachte Darstellung des Leitungssatzes
+
+## Umsetzung des Use Cases
+### [Catena-X Anforderungen](https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP08/CX-Anforderungen.md)
+### Testdaten
+### Zugriffskontrolle
+### Datenzugriffsmechanismen
+### Sequentieller Ablauf
