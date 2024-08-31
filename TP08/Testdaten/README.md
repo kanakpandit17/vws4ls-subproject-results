@@ -1,5 +1,5 @@
 ## Testdaten
-Dieser Abschnitt beschreibt die für den Use Case in TP 8 verwendeten Testdaten.
+Dieser Abschnitt beschreibt die für den [Use Case in TP 8](https://github.com/VWS4LS/vws4ls-subproject-results/edit/main/TP08/README.md#use-case) verwendeten Testdaten.
 
 ### OEM-Anforderungen
 Der OEM ist mit seinen Anforderungen der Trigger für einen Entwicklungsauftrag beim Tier 1. Für die vereinfachte Demonstration in diesem Projekt sind die Anforderungen eine Liste an autorisierten Entwicklern. Hierfür wurde hier eine Dummy-AAS "**[OEM_SupplierRequirements](https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP08/Testdaten/OEM)**" mit dem speziell dafür definierten Submodel "**AuthorizedSuppliers**" erstellt. Dort sind die BPNs der vom OEM autorisierten Business Partner hinterlegt:
@@ -7,7 +7,7 @@ Der OEM ist mit seinen Anforderungen der Trigger für einen Entwicklungsauftrag 
 ![image](https://github.com/user-attachments/assets/a8dfcdf0-5478-4f74-9e28-f9ea3dcdc7e0)
 
 ### Aggregierter Digitaler Zwilling 
-Nachdem der Tier 1 sowohl Zugriff auf die Anforderungen des OEMs als auch auf die bereitgestellten Angebote der Tier 2 hat, erstellt dieser nun einen aggregierten Digitalen Zwilling **[ZusammenbauLeitungssatz](https://github.com/VWS4LS/vws4ls-subproject-results/tree/main/TP08/Testdaten/Tier%201%20(Aggregation))**. Dieser  basiert auf den Submodels des Industry Cores von Catena-X (Details siehe Abschnitt zum Industry Core):
+Nachdem der Tier 1 sowohl Zugriff auf die Anforderungen des OEMs als auch auf die bereitgestellten Angebote der Tier 2 hat, erstellt dieser nun einen aggregierten Digitalen Zwilling mittel der AAS "**[ZusammenbauLeitungssatz](https://github.com/VWS4LS/vws4ls-subproject-results/tree/main/TP08/Testdaten/Tier%201%20(Aggregation))**". Dieser  basiert auf den Submodels des Industry Cores von Catena-X (Details siehe Abschnitt zum Industry Core):
 -	[PartTypeInformation](https://github.com/eclipse-tractusx/sldt-semantic-models/tree/main/io.catenax.part_type_information/1.0.0/gen) 
 -	[SingleLevelBomAsPlanned](https://github.com/eclipse-tractusx/sldt-semantic-models/tree/main/io.catenax.single_level_bom_as_planned/3.0.0/gen)
   
