@@ -1,5 +1,5 @@
 ## Testdaten
-Dieser Abschnitt beschreibt die für den [Use Case in TP 8](https://github.com/VWS4LS/vws4ls-subproject-results/edit/main/TP08/readme) verwendeten Testdaten.
+Dieser Abschnitt beschreibt die für den [Use Case in TP 8](https://github.com/VWS4LS/vws4ls-subproject-results/tree/main/TP08#use-case) verwendeten Testdaten.
 
 ### OEM-Anforderungen
 Der OEM ist mit seinen Anforderungen der Trigger für einen Entwicklungsauftrag beim Tier 1. Für die vereinfachte Demonstration in diesem Projekt sind die Anforderungen eine Liste an autorisierten Entwicklern. Hierfür wurde hier eine Dummy-AAS "**[OEM_SupplierRequirements](https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP08/Testdaten/OEM)**" mit dem speziell dafür definierten Submodel "**AuthorizedSuppliers**" erstellt. Dort sind die BPNs der vom OEM autorisierten Business Partner hinterlegt:
