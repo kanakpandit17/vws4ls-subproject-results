@@ -1,10 +1,13 @@
 ## Catena-X Anforderungen an die VWS des Leitungssatzes
-Catena-X ist hauptsächlich Use-Case getrieben. Möchte man an einem Use Case von Catena-X teilnehmen, müssen die jeweiligen [Standards](https://catena-x.net/de/angebote-standards/catena-x-standards) eingehalten werden. Die Use Cases standardisieren ihre Anforderungen an Submodels in Aspektmodellen. Der Standardisierungsprozess wird vom Catena-X Verein vorgenommen.
+Für die Modellierung der Digitalen Zwillinge wurden im Projekt VWS4LS standardisierte Submodelltemplates der IDTA verwendet. 
 
-###	IDTA Submodelle & Catena-X Aspektmodelle
-Für die Beschreibung der Digitalen Zwillinge wurden im Projekt VWS4LS standardisierte Submodel Templates der IDTA verwendet. Im Folgenden gilt es zu klären, welche Unterschiede sich zu den Aspektmodellen aus Catena-X ergeben und ob diese für eine Anwendung in Catena-X angepasst werden müssen.
+Catena-X ist hauptsächlich Use-Case getrieben. Möchte man an einem Use Case von Catena-X teilnehmen, müssen die jeweiligen [Standards](https://catena-x.net/de/angebote-standards/catena-x-standards) eingehalten werden. Die Use Cases standardisieren ihre Anforderungen an Submodels in sog. "Aspektmodellen". Der Standardisierungsprozess wird vom Catena-X Verein vorgenommen.
 
-#### Aspektmodelle
+Beide Modellierungskonzepte zielen darauf ab, Daten und Prozesse innerhalb eines Ökosystems zu standardisieren und damit die Interoperabilität und den Datenaustausch zwischen verschiedenen Akteuren und Systemen zu gewährleisten.
+
+Im Folgenden gilt es daher zu klären, welche Unterschiede sich zwischen den IDTA-Submodellen und den Catena-X-Aspektmodellen ergeben und wie diese für eine Anwendung in Catena-X angepasst werden müssen.
+
+### Catena-X Aspektmodelle
 Catena-X beschreibt das Konzept der "[Aspektmodelle](https://catena-x.net/fileadmin/user_upload/Standard-Bibliothek/Archiv/8_PC_Semantics_v2.1/SEM-002_BAMM_PlatformCapabilitySemantics_v2.1.pdf)", um domänenspezifische Sichten oder Aspekte eines digitalen Zwillings zu definieren, die für verschiedene Anwendungsfälle innerhalb des Catena-X-Ökosystems wesentlich sind. Aspektmodelle bieten eine strukturierte Möglichkeit zur Erfassung spezifischer Geschäftsprozesse und Datenanforderungen.
 
 Um ein Datenmodell zu spezifizieren, wird das [Semantic Aspect Meta Model (SAMM)](https://eclipse-esmf.github.io/samm-specification/2.1.0/index.html) verwendet, welches unter Verwendung des Resource Description Format (RDF, [rdf11]) und der Terse RDF Triple Language Syntax (TTL, [turtle]) spezifiziert, zusammen mit Validierungsregeln in der Shapes Constraint Langu-age (SHACL, [shacl]). Aspektmodelle werden ebenfalls in RDF/Turtle spezifiziert, wobei die SAMM-Semantik befolgt wird. 
@@ -19,13 +22,10 @@ Abbildung: Grafische Darstellung des Aspektmodells PartTypeInformation.ttl
 
 Abbildung: Eigenschaften eines Submodells als JSON
 
-#### Submodel Templates der IDTA
+### IDTA Submodelle
 Die IDTA verwendet "Submodel Templates", um die Darstellung von Informationen innerhalb einer Asset Administration Shell (AAS), einer digitalen Darstellung von Assets, zu standardisieren. Das Sub-model-Konzept der IDTA ist breiter angelegt, um verschiedene Industriebereiche abzudecken. Die Templates definieren spezifische Datenstrukturen und Semantiken für verschiedene Arten von Informa-tionen (z. B. technische Daten, Wartungspläne), wodurch der Austausch und die Interpretation von Da-ten über verschiedene Plattformen und Branchen hinweg erleichtert wird. Die Schablonen sollen die Interoperabilität erleichtern, indem sie einen gemeinsamen Rahmen bieten, der an die verschiedenen industriellen Bedürfnisse angepasst werden kann. Alle registrierten AAS Submodel Templates werden auf der IDTA-Website gelistet .
 
-####	Gemeinsamkeiten
-Beide Konzepte zielen darauf ab, Daten und Prozesse innerhalb eines Ökosystems zu standardisieren und damit die Interoperabilität und den Datenaustausch zwischen verschiedenen Akteuren und Systemen zu gewährleisten.
-
-####	Verwendung von Submodel Templates der IDTA in Catena-X
+###	Verwendung von Submodel Templates der IDTA in Catena-X
 Catena-X schreibt dazu:
 > “In Catena-X the semantics of a Submodel is described via an Aspect Model conformant to standard CX-0003, preferrable by using standardized properties conformant to standard CX-0044.”
 
