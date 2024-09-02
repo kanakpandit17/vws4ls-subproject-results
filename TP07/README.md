@@ -1,3 +1,4 @@
+# TP 7 – Data Business Policy, Data Governance, Monetarisierung
 ## Zielsetzung
 Das Teilprojekt 7 "**Data Business Policy, Data Governance, Monetarisierung**" fokussierte auf die effiziente Nutzung von Daten in der Wertschöpfungskette, der Gewährleistung der Datensicherheit und der Schaffung von Mehrwert für Unternehmen, d.h. damit Unternehmen, die innovative Geschäftsmodelle entwickeln damit auch neue Einkommensquellen generieren können, basierend auf dem Zugang zu Informationen und Diensten über die VWS.
 
