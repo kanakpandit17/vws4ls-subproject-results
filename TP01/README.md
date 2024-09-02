@@ -1,6 +1,6 @@
-# TP 1 – „Konzept, Informationsmodelle und Produktbeschreibung“
+# TP 1 – Konzept, Informationsmodelle und Produktbeschreibung
 
-# <a name="_toc174347896"></a><a name="_toc130858691"></a><a name="_toc172726606"></a>**Inhalt**
+# <a name="_toc172726606"></a>**Inhalt**
 
 [1	Zielsetzung](#_toc174347897)
 
@@ -71,7 +71,7 @@
 [Abkürzungsverzeichnis](#_toc174347930)
 
 
-# <a name="_toc174347897"></a><a name="_ref174348561"></a>**1. Zielsetzung**
+# <a name="_toc174347897"></a><a name="_ref174348561"></a>1. Zielsetzung
 Das Ziel des Teilprojekts 1 bestand darin, Konzepte rund um das Informationsmodell und die Produktbeschreibung der Leitungssatzherstellung für die Automobilindustrie mittels Verwaltungsschalen (VWS) zu beschreiben.
 
 Die VWS ist ein Schlüsselkonzept der Industrie 4.0 und bietet eine standardisierte Struktur für die Beschreibung von Assets (z.B. Maschinen, Komponenten oder Software) in einer digitalen Umgebung. Damit wird ein effizienter Datenaustausch zwischen verschiedenen Systemen und Anbietern ermöglicht.
@@ -95,7 +95,7 @@ Das Teilprojekt wurde in sechs Arbeitspakete aufgeteilt, die in den folgenden Ka
 - AP 1.5 – Validierung der Standards
 - AP 1.6 – Dokumentation der Ergebnisse
 
-# <a name="_toc174347898"></a>**2. AP 1.1 - Zielbeschreibung des Gesamtkonzepts**
+# <a name="_toc174347898"></a>2. AP 1.1 - Zielbeschreibung des Gesamtkonzepts
 Das Hauptziel des AP 1.1 "Zielbeschreibung des Gesamtkonzepts" war die einheitliche Beschreibung der Komponenten des Leitungssatzes. Dies beinhaltet die Definition und Standardisierung der Terminologie und Spezifikationen, die für die Beschreibung der verschiedenen Komponenten des Leitungssatzes verwendet werden.
 
 Dies soll dazu beitragen, Missverständnisse und Inkonsistenzen zu vermeiden und eine klare und konsistente Kommunikation zwischen den verschiedenen Teams und Stakeholdern zu ermöglichen, die an der Entwicklung und Produktion des Leitungssatzes beteiligt sind. 
@@ -176,7 +176,7 @@ Ein effektiver Ansatz, um die Anforderungen der Produkte an die Montageautomatis
 ## <a name="_toc174347903"></a>2.5 Fazit
 Im Arbeitspaket 1.1 wurden die grundlegenden Anforderungen an die Leitungssatzproduktion erfasst und analysiert. Dies beinhaltete eine Zusammenstellung der typischen Materialklassen, Produktionsprozesse und Produktionsequipment in der Leitungssatzindustrie. Mit den gesammelten Informationen konnte ein umfassendes Verständnis der spezifischen Anforderungen und Herausforderungen dieser Branche erlangt werden. Anschliessend wurde das Produkt-Prozess-Ressourcen (PPR) Modell zur Erstellung von detaillierten Datenmodellen ausgewählt. So ist eine hinreichend genaue Datenmodellierung der realen Produktionsprozesse in der Leitungssatzindustrie als Grundlage für die Umsetzung von Automatisierungslösungen in diesem Umfeld möglich.
 
-# <a name="_toc174347904"></a>**3. AP 1.2 - Entwicklung von Informationsmodellen und Zuweisung der Daten**
+# <a name="_toc174347904"></a>3. AP 1.2 - Entwicklung von Informationsmodellen und Zuweisung der Daten
 Im AP 1.2 „Entwicklung von Informationsmodellen und Zuweisung der Daten“ wurde basierend auf den folgenden vorhandenen Standards die Datenmodellierung untersucht. 
 
 **KBL (Kabelbaumliste**) [4] wurde als XML-basiertes Datenaustauschformat entwickelt, nachdem sich die bis dahin übliche Verwendung von Konstruktionszeichnungen als nicht mehr hinreichend erwiesen hatte. Die Zielsetzung der KBL ist die digitale Beschreibung der Produktspezifikation eines Kabelbaums als Grundlage für den Austausch zwischen OEM und Konfektionär. 
