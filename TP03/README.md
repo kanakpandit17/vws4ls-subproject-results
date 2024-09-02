@@ -1,4 +1,4 @@
-# Teilprojekt 3 "Produktionsprozesse des Leitungssatzes"
+# TP 3 - Produktionsprozesse des Leitungssatzes
 ## Zielsetzung
 Im Teilprojekt 3 "**Produktionsprozesse des Leitungssatzes**" wurde die Entstehung des Digitalen Zwillings entlang der Anwendungsfälle analysiert, mit dem Ziel, die Produktionsprozesse in der Verwaltungsschale abzubilden.
 
