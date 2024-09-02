@@ -72,7 +72,7 @@ SM	"PartTypeInformation"
 "manufacturerPartId": "9-2611 / 50"
 "nameAtManufacturer": "COROFLEX_9_2611_50"
 ```
-### ARENA2036 (Gehäuse)
+### ARENA2036 (Supplier Gehäuse)
 **[Kostal_GEHAEUSE_MLK_1-2]()**
 
 SM	"PartTypeInformation"
