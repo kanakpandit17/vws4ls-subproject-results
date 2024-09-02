@@ -1,5 +1,6 @@
+# TP 10 - Transfer und Koordination
 ## Zielsetzung
-Im TP 10 "**Transfer und Koordination**" wurden Aktivitäten durchgeführt, den im Projekt VWS4LS erarbeiteten Funktions- und Nutzennachweis des Konzepts der Verwaltungsschale auf nationaler und per-spektivisch internationaler Ebene zu generieren. Dieses Teilprojekt verfolgte daher das Ziel, dieses Projekt und dessen Ergebnisse möglichst bekannt zu machen. 
+Im Teilprojekt "**Transfer und Koordination**" wurden Aktivitäten durchgeführt, um den im Projekt VWS4LS erarbeiteten Funktions- und Nutzennachweis des Konzepts der Verwaltungsschale auf nationaler und perspektivisch internationaler Ebene zu generieren. Dieses Teilprojekt verfolgte daher das Ziel, dieses Projekt und dessen Ergebnisse möglichst bekannt zu machen. 
 
 * AP 10.1 - Kontinuierlicher Basistransfer
  
