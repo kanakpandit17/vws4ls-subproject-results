@@ -222,14 +222,14 @@ Die KBL ist Stand heute das verwendete Standardformat an der Schnittstelle OEM /
 
 Der VEC wird bei verschiedenen OEMs für die Bereitstellung von Kabelbaum-Komponentendaten verwendet. Außerdem gibt es im Einsatz befindliche Implementierungen für den Austausch von Geometrie und Systemschaltplandaten. Außerdem wird er von verschiedenen Unternehmen für die Bereitstellung eines „digitalen Zwillings“ des physischen Bordnetzes an Folgeprozess (z.B. Kundendienst) genutzt. Neue Umsetzungsprojekte kommen hinzu.
 
-### **<a name="_toc174347908"></a>3.1.3 Abdeckung Anforderungen im Kontext VWS4LS
+### <a name="_toc174347908"></a>3.1.3 Abdeckung Anforderungen im Kontext VWS4LS
 Im Kontext des Projekts VWS4LS gibt es verschiedene Anwendungsfälle bei denen VEC bzw. teilweise auch KBL in Frage kommen. Im Folgenden drei Beispiele:
 
 - 1. Produktspezifikation Leitungssatz: Dieser Anwendungsfall ist grundsätzlich sowohl mit KBL als auch VEC abbildbar. Fraglich ist dabei aber, ob die KBL für Anwendungsszenarien die notwendige detailtiefe beinhaltet, zum Beispiel Kontaktierungssituationen an HV-Leitungen.
 - 2. Bereitstellung von Komponentendaten: Zur Parametrisierung von Fertigungsprozessen sind detaillierte Informationen über Kabelbaumkomponenten notwendig, bspw. Terminalmaße oder Kammerkoordinaten in Steckern. Diese Information können nur mit dem VEC bereitgestellt werden.
 - 3. Definition von Halbprodukten: Für eine Abbildung des Herstellungsprozesses ist die Definition von Halb-/Zwischenprodukten notwendig, beispielsweise eine geschnittene & abisolierte Leitung. Durch die flexiblere Modellierung können solche Produkte mit dem VEC abgebildet werden. Mit der KBL ist dies nicht immer möglich, oder nur durch sehr „individuelle“ Interpretation der Modellelemente.
 
-### **<a name="_toc174347909"></a>3.1.4 Bewertung
+### <a name="_toc174347909"></a>3.1.4 Bewertung
 Zusammenfassend lässt sich sagen, dass die KBL derzeit für die Beschreibung des Produkts „Leitungssatz“ aufgrund der längeren Historie und der Stabilität etablierter Prozesse die breitere Verwendung hat. Allerdings lassen sich gewisse Anwendungsfälle im Projektkontext mit der KBL gar nicht abbilden.
 
 Der VEC hingegen ist aufgrund der Umsetzung neuer Anforderungen, sowohl fachlich wie auch technologisch (z.B. Unterstützung von Ontologien), der kontinuierlichen Weiterentwicklung und der zunehmenden Anzahl an Umsetzungen die Wahl der Zukunft.
@@ -291,7 +291,7 @@ Insgesamt zielen diese Entscheidungen darauf ab, die Leitungssatzfertigung effiz
 # <a name="_toc174347914"></a>4. AP 1.3 - Erfassen der Geschäftsmodelle für das Informationsmodell
 Im Arbeitspaket 1.3 „Erfassen der Geschäftsmodelle für das Informationsmodell“ sollen die bestehenden Geschäftsmodelle und ihre wirtschaftlichen Auswirkungen untersucht werden, um festzustellen, wie sie effektiv in das Informationsmodell integriert werden können. Dabei werden sowohl kurzfristige als auch langfristige wirtschaftliche Aspekte berücksichtigt, um sicherzustellen, dass das Modell nachhaltig und zukunftsorientiert ist.
 
-_**Es wurde die Entscheidung getroffen, AP 1.3 in das TP 7 zu überführen, um eine fokussierte und spezialisierte Behandlung des Themas Geschäftsmodelle zu gewährleisten, in enger Abstimmung mit den Anforderungen des Informationsmodells.**_
+_**Es wurde die Entscheidung getroffen, AP 1.3 in das [TP 7](/TP07/README.md) zu überführen, um eine fokussierte und spezialisierte Behandlung des Themas Geschäftsmodelle zu gewährleisten, in enger Abstimmung mit den Anforderungen des Informationsmodells.**_
 
 # <a name="_toc174347915"></a>5. AP 1.4 - Beschreibung der Tiefe der Informationsmodelle
 Das Arbeitspaket 1.4 „Beschreibung der Tiefe der Informationsmodelle“ beschäftigte sich mit der detaillierten Beschreibung von Informations- und Datenmodellen für die Leitungssatzfertigung. 
