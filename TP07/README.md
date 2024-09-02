@@ -12,3 +12,6 @@ Im Rahmen des AP 7.2 "**Fachliche Konzeption der Daten-Policy entlang der Wertke
 
 ##	AP 7.3 - Pilotierung und Erprobung: Erstellung Implementierungsguideline
 Das AP 7.3 „**Pilotierung und Erprobung**“ wurde ursprünglich definiert, um die Architektur der Catena-X-Plattform zu untersuchen in Bezug auf Interoperabilität mit der Verwaltungsschale. Darüberhinaus sollte eine Implementierungsguideline bereitgestellt werden. Diese Aktivitäten wurden dann im Wesentlichen in [TP8](/TP08) abgewickelt und sind dort dokumentiert.
+
+##	Fazit
+Im Rahmen von VWS4LS-TP7 wurde ...
