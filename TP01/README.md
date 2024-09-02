@@ -544,7 +544,7 @@ Dieses Dokument beschreibt den Hergang der im Verlauf des Teilprojekt 1 getroffe
 
 Durch die Bemühungen in diesen Bereichen hat VWS4LS maßgeblich zur Weiterentwicklung und Standardisierung in der Kabelbaumindustrie beigetragen und damit die Grundlage für eine erfolgreichere und effizientere Implementierung von Industrie 4.0 in diesem Sektor geschaffen ([Abbildung 17](#_ref174093980)).
 
-![image](https://github.com/user-attachments/assets/40392c55-3c73-4695-88a7-d4ca426d2f57)
+![image](https://github.com/user-attachments/assets/390b3544-0d6c-44f2-a813-78c9b6485c0c)
 
 <a name="_ref174093980"></a><a name="_toc174347947"></a>*Abbildung 17: Im Rahmen von VWS4LS erstellte neue Standards*
 
