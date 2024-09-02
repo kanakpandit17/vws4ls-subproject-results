@@ -298,7 +298,7 @@ Das Arbeitspaket 1.4 „Beschreibung der Tiefe der Informationsmodelle“ besch�
 
 Ein modellbasiertes Engineering erfasst das Fachwissen durch Designregeln, um die Qualität des Produktes zu verbessern, die Effizienz der Produktion zu steigern, sowie den automatisierten Datenaustausch zu unterstützen. Das digitale Leitungssatz-Modell soll daher als Grundlage dienen, um automatisiert detaillierte Arbeitsanweisungen zu generieren und eine präzise und effiziente Produktion in der Leitungssatzfertigung zu ermöglichen.
 
-## ><a name="_toc174347916"></a>5.1 Grundlagen
+## <a name="_toc174347916"></a>5.1 Grundlagen
 Die Entwicklung des Leitungssatzes erfolgt durch den OEM (Original Equipment Manufacturer), typischerweise unter Verwendung der etablierten Modellierungsstandards KBL (Kabelbaumliste) und VEC (Vehicle Electric Container).
 
 ![image](https://github.com/user-attachments/assets/e9a11a7a-63f4-48db-8800-611f5c372492)
@@ -362,7 +362,6 @@ Neben der Teileliste ist auch eine Liste der durchzuführenden Prozesse erforder
 
 Schließlich wird eine Arbeitsantwort erstellt, die eine Zusammenfassung der Produktionsergebnisse enthält. Diese Zusammenfassung bietet einen Überblick über die durchgeführten Arbeiten und die erreichten Ergebnisse. Sie dient als Nachweis (sog. „Audit Trail“) für die Einhaltung der Spezifikationen und als Qualitätsdokumentation. Die Arbeitsantwort ist somit ein wesentlicher Bestandteil des gesamten Produktionsprozesses und ermöglicht eine kontinuierliche Verbesserung und Optimierung der Arbeitsabläufe.
 
-<a name="_toc172726629"></a>
 ## <a name="_toc174347919"></a><a name="_ref174348579"></a>5.4 VEC als Produktdatenmodell
 [Abbildung 10](#_ref173157831) skizziert die Nutzung des VEC-Modells im Kontext des Projekts. Jede Komponente, Terminal, Wire, Connector usw. kann mit ihren technischen Attributen im VEC-Modell beschrieben werden. Unter Verwendung dieser Komponenten wird dann eine Artikelbeschreibung aufgebaut, wobei dabei jede einzelne Verwendung greifbar sein muss, da diese einerseits unterschiedliche Eigenschaften erhalten können, vergleiche bspw. die *StrippingLength* in der Grafik, oder die Länge der Leitungen. Anderseits unterscheiden die Verwendung sich im Beziehungsgeflecht, das diese mit anderen Komponenten eingehen. Vergleiche bspw. Terminal „X“ an roter bzw. grüner Leitung.
 
