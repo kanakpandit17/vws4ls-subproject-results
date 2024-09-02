@@ -1,3 +1,4 @@
+# TP2 - Data Business Policy, Data Governance, Monetarisierung
 ## Zielsetzung
 
 Im Teilprojekt 2 "Entwicklungsprozesse des Leitungssatzes“ wurde die Entstehung des Digitalen Zwillings entlang der Anwendungsfälle analysiert, um die Abläufe auf die Verwaltungsschale und die Erzeugung interoperabler Daten und Formate für den gesamten weiteren Lebenszyklus auszurichten.
