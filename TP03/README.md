@@ -6,11 +6,11 @@ Die Produktionsprozesse wurden systematisch erfasst, gegliedert und digital besc
 
 Das Teilprojekt wurde in folgende Arbeitspakete aufgeteilt, deren Resultate in den jeweiligen Dokumenten erläutert werden:
 
-## [AP 3.1 – Untersuchung von Anforderungen](AP3.1/README.md)
+## [AP 3.1 – Untersuchung von Anforderungen](AP3.1.md)
 
-## [AP 3.2 – Erforschung eines Referenzmodells](AP3.2/README.md)
+## [AP 3.2 – Erforschung eines Referenzmodells](AP3.2.md)
 
-## [AP 3.3 – Erforschung von Teilmodelle für Rückmeldedaten](AP3.3/README.md)
+## [AP 3.3 – Erforschung von Teilmodelle für Rückmeldedaten](AP3.3.md)
 
 ## [AP 3.4 – Proof of Concept](AP3.4/README.md)
 
