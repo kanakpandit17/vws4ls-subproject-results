@@ -36,10 +36,10 @@ Und der Catena-X Standard [CX-0003](https://catenax-ev.github.io/docs/next/stand
 
 >	“Every aspect of a digital twin registered in a digital twin registry (see standard CX-0002) accessible in the Catena-X data space MUST have a semantic description (semantic ID) that is con-formant to the unique identifier of the SAMM aspect model associated to it.”
 
-**Wenn das Projekt VWS4LS einen eigenen Use Case für Catena-X definieren möchte, sollten die verwendeten Submodelle in Catena-X gemäß des Standardisierungsprozesses standardisiert werden. Dann müssen diese dem Standard CX-0003 folgen (s.o.). Für den Demonstrationszweck können die VWS4LS Submodelle für diesen Use Case technisch übertragen werden, entsprechen aber (außer dem Submodel „Nameplate“) nicht den Catena-X-Spezifikationen und können so nicht von Catena-X Lösungen interpretiert werden.**
+**_Wenn das Projekt VWS4LS einen eigenen Use Case für Catena-X definieren möchte, sollten die verwendeten Submodelle in Catena-X gemäß des Standardisierungsprozesses standardisiert werden. Dann müssen diese dem Standard CX-0003 folgen (s.o.). Für den Demonstrationszweck können die VWS4LS Submodelle für diesen Use Case technisch übertragen werden, entsprechen aber (außer dem Submodel „Nameplate“) nicht den Catena-X-Spezifikationen und können so nicht von Catena-X Lösungen interpretiert werden._**
 
 ### Digitale Zwillinge und AAS in Catena-X 
-In Catena-X basieren die APIs auf den Spezifikationen der Asset Administration Shell (AAS) Spezifikationen der IDTA . Die Besonderheit von Catena-X ist es, dass dort nicht auf die AAS an sich zugegriffen wird, sondern direkt auf die Submodels. Die Registrierung eines Digitalen Zwillings in der DTR entspricht einer „Erstellung“ eines Digitalen Zwillings. Das JSON-Beispiel im Digital Twin KIT verdeutlicht das. Die AAS an sich wird nicht angesprochen. In der DTR steht lediglich ein AAS-Descriptor. Dieser enthält wiederum die verschiedenen Submodel-Descriptors mit den entsprechenden Endpunkten.
+In Catena-X basieren die APIs auf den Spezifikationen der Asset Administration Shell (AAS) Spezifikationen der IDTA. Um Catena-X konform zu sein, werden in der Demonstrator-Umsetzung die einzelnen Submodelle in der DTR registriert. Diese Registrierung zählt im Kontext von Catena-X als „Erschaffung eines Digitalen Zwillings“. Grundsätzlich wird zum aktuellen Entwicklungsstand nicht auf Asset-Ebene zugegriffen, sondern auf die einzelnen Submodelle, die in der DTR zu einem Asset “gebündelt“ werden können. Das JSON-Beispiel im [Digital Twin KIT](https://eclipse-tractusx.github.io/docs-kits/kits/Digital%20Twin%20Kit/Software%20Development%20View/dt-kit-software-development-view#registering-a-new-twin) verdeutlicht das. Die AAS an sich wird daher nicht angesprochen. In der DTR steht lediglich der AAS-Descriptor, der wiederum die verschiedenen Submodel-Descriptoren mit den entsprechenden Endpunkten enthält.
 
  ![image](https://github.com/user-attachments/assets/8795d7ff-1a12-41a0-ad8e-8abd3bd8ed9b)
  
@@ -48,7 +48,7 @@ Abbildung: [Tractus-X Digital Twin Registry - Asset Administration Shell Domain 
 Im [Digital Twin KIT](https://eclipse-tractusx.github.io/docs-kits/kits/Digital%20Twin%20Kit/Software%20Development%20View/dt-kit-software-development-view#submodel-as-edc-data-asset) von Tractus-X wird zwar ausgeführt , dass ein Data Provider ein Daten Asset per Submodel oder Bundle erstellen kann, gleichzeitig wird aber ausgesagt:
 >“There is no normative guidance on how to register multiple Submodels bundled together yet. These bundles may include all the Submodels of a specific semanticId, all Submodels of an asset or any other arbitrary quality. This may be added to [CX-0002](https://catenax-ev.github.io/docs/standards/CX-0002-DigitalTwinsInCatenaX) in future iterations.“  
 
-**Als Konsequenz werden auch für den Demonstrator die Submodels als einzelne Assets angelegt.**
+**_Als Konsequenz werden auch für den Demonstrator die Submodels als einzelne Assets angelegt._**
 
 ####	Der Industry Core von Catena-X
 Um zu verhindern, dass jeder Use-Case in Catena-X seine Digitalen Zwillinge (Teile/Komponenten) unterschiedlich beschreibt, wurde der Industry Core ins Leben gerufen. „Core“ deshalb, weil er den Kern der Industrie, nämlich die Teile/Komponenten betrifft.
@@ -66,6 +66,6 @@ Zusätzlich müssen folgende Punkte aus dem Standard CX-0126 beachtet werden:
 
 Da auch im Projekt VWS4LS physikalische Komponenten betrachtet werden (bspw. Leitungen und Stecker), ist es zu empfehlen, diese mittels der Industry Core Standards zu beschreiben, falls eine Teilnahme an Catena-X angestrebt wird.
 
-**Für den Demonstrator werden daher die Digitalen Zwillinge mit den Submodellen „PartTypeInformation“ und „SingleLevelBomAsPlanned“ ergänzt.**
+**_Für den Demonstrator werden daher die Digitalen Zwillinge mit den Submodellen „PartTypeInformation“ und „SingleLevelBomAsPlanned“ ergänzt._**
 
  
