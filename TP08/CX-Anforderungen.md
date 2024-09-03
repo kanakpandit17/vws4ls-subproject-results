@@ -1,7 +1,7 @@
 ## Catena-X Anforderungen an die VWS des Leitungssatzes
 Für die Modellierung der Digitalen Zwillinge wurden im Projekt VWS4LS standardisierte Submodelltemplates der IDTA verwendet. 
 
-Catena-X ist hauptsächlich Use-Case getrieben. Möchte man an einem Use Case von Catena-X teilnehmen, müssen die jeweiligen [Standards](https://catena-x.net/de/angebote-standards/catena-x-standards) eingehalten werden. Die Use Cases standardisieren ihre Anforderungen an Submodels in sog. "Aspektmodellen". Der Standardisierungsprozess wird vom Catena-X Verein vorgenommen.
+Catena-X ist hauptsächlich Use-Case getrieben. Die Use Cases beschreiben ihre Anforderungen an Submodels in sog. "Aspektmodellen". Möchte man an einem Use Case von Catena-X teilnehmen, müssen die jeweiligen [Catena-X-Standards](https://catena-x.net/de/angebote-standards/catena-x-standards) eingehalten werden. Der Standardisierungsprozess wird vom Catena-X Verein vorgenommen.
 
 Beide Modellierungskonzepte zielen darauf ab, Daten und Prozesse innerhalb eines Ökosystems zu standardisieren und damit die Interoperabilität und den Datenaustausch zwischen verschiedenen Akteuren und Systemen zu gewährleisten.
 
@@ -23,7 +23,7 @@ Abbildung: Grafische Darstellung des Aspektmodells PartTypeInformation.ttl
 Abbildung: Eigenschaften eines Submodells als JSON
 
 ### IDTA Submodelle
-Die IDTA verwendet "Submodel Templates", um die Darstellung von Informationen innerhalb einer Asset Administration Shell (AAS), einer digitalen Darstellung von Assets, zu standardisieren. Das Sub-model-Konzept der IDTA ist breiter angelegt, um verschiedene Industriebereiche abzudecken. Die Templates definieren spezifische Datenstrukturen und Semantiken für verschiedene Arten von Informa-tionen (z. B. technische Daten, Wartungspläne), wodurch der Austausch und die Interpretation von Da-ten über verschiedene Plattformen und Branchen hinweg erleichtert wird. Die Schablonen sollen die Interoperabilität erleichtern, indem sie einen gemeinsamen Rahmen bieten, der an die verschiedenen industriellen Bedürfnisse angepasst werden kann. Alle registrierten AAS Submodel Templates werden auf der IDTA-Website gelistet .
+Die IDTA verwendet "[Submodel Templates](https://industrialdigitaltwin.org/en/content-hub/submodels)", um die Darstellung von Informationen innerhalb einer Asset Administration Shell (AAS), einer digitalen Darstellung von Assets, zu standardisieren. Das Submodel-Konzept der IDTA ist breiter angelegt, um verschiedene Industriebereiche abzudecken. Die Templates definieren spezifische Datenstrukturen und Semantiken für verschiedene Arten von Informationen (z. B. technische Daten, Wartungspläne), wodurch der Austausch und die Interpretation von Daten über verschiedene Plattformen und Branchen hinweg erleichtert wird. Die Schablonen sollen die Interoperabilität erleichtern, indem sie einen gemeinsamen Rahmen bieten, der an die verschiedenen industriellen Bedürfnisse angepasst werden kann. Alle registrierten AAS Submodel Templates werden auf der [IDTA-Website](https://industrialdigitaltwin.org/en/content-hub/submodels) gelistet und im [IDTA-Github](https://github.com/admin-shell-io/submodel-templates/tree/main/published) bereitgestellt.
 
 ###	Verwendung von Submodel Templates der IDTA in Catena-X
 Catena-X schreibt dazu:
