@@ -8,3 +8,5 @@ Das Zielbild war, die automatisierte Montage des Leitungssatzes im Fahrzeug mög
 
 Von der Vorgehensweise her wird der Montageprozess in Teilprozesse unterteilt, die in den weiteren Kapiteln einzeln betrachtet und analysiert werden. Dabei soll der Fokus auf notwendige Informationsbedarfe und Fähigkeiten gelegt werden, die für die einzelnen Prozessschritte benötigt und anschließend in einem Submodell der Verwaltungsschale standardisiert werden sollen. 
 Für die Vereinfachung des Prozesses werden aufgrund der Komplexität einige Annahmen getroffen, die im folgenden Kapitel erläutert und anschließend in den einzelnen Kapiteln berücksichtigt werden. 
+
+https://github.com/VWS4LS/vws4ls-bidding-process
