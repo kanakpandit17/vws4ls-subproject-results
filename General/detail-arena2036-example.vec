@@ -1,0 +1,358 @@
+<?xml version="1.0" ?>
+<vec:VecContent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:vec="http://www.prostep.org/ecad-if/2011/vec" id="Content_00000" xsi:schemaLocation="">
+  <VecVersion>2.0.2</VecVersion>
+  <GeneratingSystemName>VEC Samples</GeneratingSystemName>
+  <DateOfCreation>2023-06-01T00:00:00</DateOfCreation>
+  <GeneratingSystemVersion>0.0.1</GeneratingSystemVersion>
+  <DocumentVersion id="DocumentVersion_00001">
+    <CompanyName>Acme Inc.</CompanyName>
+    <DocumentNumber>5-928999-1</DocumentNumber>
+    <DocumentType>PartMaster</DocumentType>
+    <DocumentVersion>1</DocumentVersion>
+    <ReferencedPart>PartVersion_00078</ReferencedPart>
+    <Specification xsi:type="vec:GeneralTechnicalPartSpecification" id="GeneralTechnicalPartSpecification_00002">
+      <Identification>GTPS-5-928999-1</Identification>
+      <DescribedPart>PartVersion_00078</DescribedPart>
+    </Specification>
+    <Specification xsi:type="vec:WireReceptionSpecification" id="WireReceptionSpecification_00003">
+<!-- Workaround until KBLFRM-1085 is resolved. (Multiple entries with CoreCrimpDetails possible) -->
+      <CustomProperty xsi:type="vec:ComplexProperty" id="ComplexProperty_00008">
+        <PropertyType>CoreCrimpDetails</PropertyType>
+        <CustomProperty xsi:type="vec:NumericalValueProperty" id="NumericalValueProperty_00009">
+          <PropertyType>CoreCrossSectionArea</PropertyType>
+          <Value id="NumericalValue_00010">
+            <UnitComponent>SIUnit_00081</UnitComponent>
+            <ValueComponent>0.35</ValueComponent>
+          </Value>
+        </CustomProperty>
+        <CustomProperty xsi:type="vec:NumericalValueProperty" id="NumericalValueProperty_00011">
+          <PropertyType>CrimpHeight</PropertyType>
+          <Value id="NumericalValue_00012">
+            <UnitComponent>SIUnit_00080</UnitComponent>
+            <ValueComponent>0.76</ValueComponent>
+            <Tolerance id="Tolerance_00013">
+              <LowerBoundary>-0.03</LowerBoundary>
+              <UpperBoundary>0.03</UpperBoundary>
+            </Tolerance>
+          </Value>
+        </CustomProperty>
+        <CustomProperty xsi:type="vec:NumericalValueProperty" id="NumericalValueProperty_00014">
+          <PropertyType>CrimpWidth</PropertyType>
+          <Value id="NumericalValue_00015">
+            <UnitComponent>SIUnit_00080</UnitComponent>
+            <ValueComponent>1.07</ValueComponent>
+            <Tolerance id="Tolerance_00016">
+              <LowerBoundary>0.0</LowerBoundary>
+              <UpperBoundary>0.1</UpperBoundary>
+            </Tolerance>
+          </Value>
+        </CustomProperty>
+        <CustomProperty xsi:type="vec:SimpleValueProperty" id="SimpleValueProperty_00017">
+          <PropertyType>CoreMaterial</PropertyType>
+          <Value>Cu-ETP1</Value>
+        </CustomProperty>
+        <CustomProperty xsi:type="vec:SimpleValueProperty" id="SimpleValueProperty_00018">
+          <PropertyType>WireType</PropertyType>
+          <Value>FLRY-A</Value>
+        </CustomProperty>
+      </CustomProperty>
+<!-- Workaround until KBLFRM-1085 is resolved. (Multiple entries with InsulationCrimpDetails possible)-->
+      <CustomProperty xsi:type="vec:ComplexProperty" id="ComplexProperty_00019">
+        <PropertyType>InsulationCrimpDetails</PropertyType>
+        <CustomProperty xsi:type="vec:NumericalValueProperty" id="NumericalValueProperty_00020">
+          <PropertyType>WireElementOutsideDiameter</PropertyType>
+          <Value id="NumericalValue_00021">
+            <UnitComponent>SIUnit_00080</UnitComponent>
+            <ValueComponent>1.3</ValueComponent>
+          </Value>
+        </CustomProperty>
+        <CustomProperty xsi:type="vec:NumericalValueProperty" id="NumericalValueProperty_00022">
+          <PropertyType>CrimpHeight</PropertyType>
+          <Value id="NumericalValue_00023">
+            <UnitComponent>SIUnit_00080</UnitComponent>
+            <ValueComponent>1.5</ValueComponent>
+            <Tolerance id="Tolerance_00024">
+              <LowerBoundary>-0.1</LowerBoundary>
+              <UpperBoundary>0.1</UpperBoundary>
+            </Tolerance>
+          </Value>
+        </CustomProperty>
+        <CustomProperty xsi:type="vec:NumericalValueProperty" id="NumericalValueProperty_00025">
+          <PropertyType>CrimpWidth</PropertyType>
+          <Value id="NumericalValue_00026">
+            <UnitComponent>SIUnit_00080</UnitComponent>
+            <ValueComponent>1.07</ValueComponent>
+            <Tolerance id="Tolerance_00027">
+              <LowerBoundary>0.0</LowerBoundary>
+              <UpperBoundary>0.1</UpperBoundary>
+            </Tolerance>
+          </Value>
+        </CustomProperty>
+        <CustomProperty xsi:type="vec:SimpleValueProperty" id="SimpleValueProperty_00028">
+          <PropertyType>InsulationMaterial</PropertyType>
+          <Value>PVC</Value>
+        </CustomProperty>
+        <CustomProperty xsi:type="vec:SimpleValueProperty" id="SimpleValueProperty_00029">
+          <PropertyType>WireType</PropertyType>
+          <Value>FLRY-A</Value>
+        </CustomProperty>
+      </CustomProperty>
+<!-- Workaround until KBLFRM-1176 is resolved.-->
+      <CustomProperty xsi:type="vec:NumericalValueProperty" id="NumericalValueProperty_00030">
+        <PropertyType>PullOffForce</PropertyType>
+        <Value id="NumericalValue_00031">
+          <UnitComponent>SIUnit_00082</UnitComponent>
+          <ValueComponent>50.0</ValueComponent>
+        </Value>
+      </CustomProperty>
+      <Identification>WireRec-5-928999-1</Identification>
+      <InsulationDisplacementLength id="NumericalValue_00004">
+        <UnitComponent>SIUnit_00080</UnitComponent>
+        <ValueComponent>3.6</ValueComponent>
+        <Tolerance id="Tolerance_00005">
+          <LowerBoundary>-0.15</LowerBoundary>
+          <UpperBoundary>0.15</UpperBoundary>
+        </Tolerance>
+      </InsulationDisplacementLength>
+      <Sealable>false</Sealable>
+<!-- Excelsheet has Min- & MaxBackBellmouth. How is this connected?-->
+      <RearBellMouthLength id="NumericalValue_00006">
+        <UnitComponent>SIUnit_00080</UnitComponent>
+        <ValueComponent>0.55</ValueComponent>
+      </RearBellMouthLength>
+      <ConnectionBLength id="NumericalValue_00007">
+        <UnitComponent>SIUnit_00080</UnitComponent>
+        <ValueComponent>5.6</ValueComponent>
+      </ConnectionBLength>
+    </Specification>
+    <Specification xsi:type="vec:TerminalReceptionSpecification" id="TerminalReceptionSpecification_00032">
+      <Identification>TermRec-5-928999-1</Identification>
+    </Specification>
+<!-- The following attributes are currently not mapped in the VEC, issues should be created (custom properties would be possible): 
+SealPosition + Tolerance, ShapeOfInsulationCrimp, ThicknessOfTerminalMaterial, LegLengthOfInsulationCrimp, MaxTerminalWidthMinWireTipProtrusionMaxWiretipProtrusion -->
+    <Specification xsi:type="vec:PluggableTerminalSpecification" id="PluggableTerminalSpecification_00033">
+<!-- Can be calculated from: TerminalReceptionSpecification.ContactRangeLength + TerminalSpecification.ConnectionALength WireReceptionSpecification.CrimpConnectionLength-->
+      <CustomProperty xsi:type="vec:NumericalValueProperty" id="NumericalValueProperty_00037">
+        <PropertyType>TerminalLengthOverall</PropertyType>
+        <Value id="NumericalValue_00038">
+          <UnitComponent>SIUnit_00080</UnitComponent>
+          <ValueComponent>13.7</ValueComponent>
+        </Value>
+      </CustomProperty>
+      <Identification>PTS-5-928999-1</Identification>
+      <DescribedPart>PartVersion_00078</DescribedPart>
+      <InternalTerminalConnection id="InternalTerminalConnection_00034">
+        <Identification>IntCon-5-928999-1</Identification>
+        <TerminalReception>TerminalReception_00035</TerminalReception>
+        <WireReception>WireReception_00036</WireReception>
+      </InternalTerminalConnection>
+      <TerminalReception id="TerminalReception_00035">
+        <Identification>TR1</Identification>
+        <TerminalReceptionSpecification>TerminalReceptionSpecification_00032</TerminalReceptionSpecification>
+      </TerminalReception>
+      <WireReception id="WireReception_00036">
+        <Identification>WR1</Identification>
+        <WireReceptionSpecification>WireReceptionSpecification_00003</WireReceptionSpecification>
+      </WireReception>
+      <TerminalType>Standard</TerminalType>
+    </Specification>
+  </DocumentVersion>
+<!-- DocumentType to be verified (KBLFRM-1194).-->
+  <DocumentVersion id="DocumentVersion_00039">
+    <CompanyName>Acme Inc.</CompanyName>
+    <DocumentNumber>114-18021</DocumentNumber>
+    <DocumentType>ApplicationSpecification</DocumentType>
+    <DocumentVersion>V</DocumentVersion>
+    <ReferencedPart>PartVersion_00078</ReferencedPart>
+  </DocumentVersion>
+  <DocumentVersion id="DocumentVersion_00040">
+    <CompanyName>Acme Inc.</CompanyName>
+    <DocumentNumber>DRAW-WIRE</DocumentNumber>
+    <DocumentType>PartMaster</DocumentType>
+    <DocumentVersion>1</DocumentVersion>
+    <ReferencedPart>PartVersion_00079</ReferencedPart>
+    <Specification xsi:type="vec:GeneralTechnicalPartSpecification" id="GeneralTechnicalPartSpecification_00041">
+      <Identification>GTPS-WIRE</Identification>
+      <DescribedPart>PartVersion_00079</DescribedPart>
+      <MassInformation id="MassInformation_00042">
+        <DeterminationType>Measured</DeterminationType>
+        <Value id="NumericalValue_00043">
+          <UnitComponent>CompositeUnit_00085</UnitComponent>
+          <ValueComponent>4.6</ValueComponent>
+        </Value>
+        <ValueSource>Series</ValueSource>
+      </MassInformation>
+    </Specification>
+    <Specification xsi:type="vec:CoreSpecification" id="CoreSpecification_00044">
+      <Identification>Core-WIRE</Identification>
+      <CrossSectionArea id="NumericalValue_00045">
+        <UnitComponent>SIUnit_00081</UnitComponent>
+        <ValueComponent>0.35</ValueComponent>
+      </CrossSectionArea>
+<!-- Unit `piece`, see: https://prostep-ivip.atlassian.net/browse/KBLFRM-1192 -->
+      <NumberOfStrands id="NumericalValue_00046">
+        <UnitComponent>OtherUnit_00086</UnitComponent>
+        <ValueComponent>7.0</ValueComponent>
+      </NumberOfStrands>
+      <StrandDiameter id="NumericalValue_00047">
+        <UnitComponent>SIUnit_00080</UnitComponent>
+        <ValueComponent>0.27</ValueComponent>
+      </StrandDiameter>
+    </Specification>
+    <Specification xsi:type="vec:WireSpecification" id="WireSpecification_00048">
+      <Identification>WS-WIRE</Identification>
+      <DescribedPart>PartVersion_00079</DescribedPart>
+      <WireElementSpecification>WireElementSpecification_00050</WireElementSpecification>
+      <WireElement id="WireElement_00049">
+        <Identification>1</Identification>
+        <WireElementSpecification>WireElementSpecification_00050</WireElementSpecification>
+      </WireElement>
+    </Specification>
+    <Specification xsi:type="vec:WireElementSpecification" id="WireElementSpecification_00050">
+      <Identification>1</Identification>
+      <Type id="WireType_00051">
+        <Type>FLRY-A</Type>
+        <ReferenceSystem>DIN 76722</ReferenceSystem>
+      </Type>
+      <OutsideDiameter id="NumericalValue_00052">
+        <UnitComponent>SIUnit_00080</UnitComponent>
+        <ValueComponent>1.3</ValueComponent>
+        <Tolerance id="Tolerance_00053">
+          <LowerBoundary>-0.1</LowerBoundary>
+          <UpperBoundary>0.0</UpperBoundary>
+        </Tolerance>
+      </OutsideDiameter>
+      <ConductorSpecification>CoreSpecification_00044</ConductorSpecification>
+      <InsulationSpecification>InsulationSpecification_00054</InsulationSpecification>
+    </Specification>
+    <Specification xsi:type="vec:InsulationSpecification" id="InsulationSpecification_00054">
+      <Identification>Ins-WIRE</Identification>
+      <Thickness id="NumericalValue_00055">
+        <UnitComponent>SIUnit_00080</UnitComponent>
+        <ValueComponent>0.2</ValueComponent>
+      </Thickness>
+    </Specification>
+  </DocumentVersion>
+  <DocumentVersion id="DocumentVersion_00056">
+    <CompanyName>Acme Inc.</CompanyName>
+    <DocumentNumber>LEADSET</DocumentNumber>
+    <DocumentType>HarnessDescription</DocumentType>
+    <DocumentVersion>1</DocumentVersion>
+    <Specification xsi:type="vec:CompositionSpecification" id="CompositionSpecification_00057">
+      <Identification>COMPONENTS</Identification>
+      <Component id="PartOccurrence_00058">
+        <Identification>W1</Identification>
+        <Role xsi:type="vec:WireRole" id="WireRole_00059">
+          <Identification>W1</Identification>
+          <WireSpecification>WireSpecification_00048</WireSpecification>
+          <WireElementReference id="WireElementReference_00060">
+            <Identification>W1</Identification>
+            <ReferencedWireElement>WireElement_00049</ReferencedWireElement>
+            <WireEnd id="WireEnd_00061">
+              <Identification>W1-T1</Identification>
+              <PositionOnWire>0.0</PositionOnWire>
+            </WireEnd>
+            <WireEnd id="WireEnd_00062">
+              <Identification>W1-T2</Identification>
+              <PositionOnWire>1.0</PositionOnWire>
+            </WireEnd>
+            <WireLength id="WireLength_00063">
+              <LengthType>DMU</LengthType>
+              <LengthValue id="NumericalValue_00064">
+                <UnitComponent>SIUnit_00080</UnitComponent>
+                <ValueComponent>1000.0</ValueComponent>
+              </LengthValue>
+            </WireLength>
+          </WireElementReference>
+        </Role>
+        <Part>PartVersion_00079</Part>
+      </Component>
+      <Component id="PartOccurrence_00065">
+        <Identification>T1</Identification>
+        <Role xsi:type="vec:PluggableTerminalRole" id="PluggableTerminalRole_00066">
+          <Identification>T1</Identification>
+          <TerminalSpecification>PluggableTerminalSpecification_00033</TerminalSpecification>
+          <TerminalReceptionReference id="TerminalReceptionReference_00067">
+            <Identification>TR1</Identification>
+            <TerminalReception>TerminalReception_00035</TerminalReception>
+          </TerminalReceptionReference>
+          <WireReceptionReference id="WireReceptionReference_00068">
+            <Identification>WR1</Identification>
+            <WireReception>WireReception_00036</WireReception>
+          </WireReceptionReference>
+        </Role>
+        <Part>PartVersion_00078</Part>
+      </Component>
+      <Component id="PartOccurrence_00069">
+        <Identification>T2</Identification>
+        <Role xsi:type="vec:PluggableTerminalRole" id="PluggableTerminalRole_00070">
+          <Identification>T2</Identification>
+          <TerminalSpecification>PluggableTerminalSpecification_00033</TerminalSpecification>
+          <TerminalReceptionReference id="TerminalReceptionReference_00071">
+            <Identification>TR1</Identification>
+            <TerminalReception>TerminalReception_00035</TerminalReception>
+          </TerminalReceptionReference>
+          <WireReceptionReference id="WireReceptionReference_00072">
+            <Identification>WR1</Identification>
+            <WireReception>WireReception_00036</WireReception>
+          </WireReceptionReference>
+        </Role>
+        <Part>PartVersion_00078</Part>
+      </Component>
+    </Specification>
+    <Specification xsi:type="vec:ContactingSpecification" id="ContactingSpecification_00073">
+      <Identification>LEADSET</Identification>
+      <ContactPoint id="ContactPoint_00074">
+        <Identification>W1-T1</Identification>
+        <MountedTerminal>PluggableTerminalRole_00066</MountedTerminal>
+        <WireMounting id="WireMounting_00075">
+          <ReferencedWireEnd>WireEnd_00061</ReferencedWireEnd>
+        </WireMounting>
+      </ContactPoint>
+      <ContactPoint id="ContactPoint_00076">
+        <Identification>W1-T2</Identification>
+        <MountedTerminal>PluggableTerminalRole_00070</MountedTerminal>
+        <WireMounting id="WireMounting_00077">
+          <ReferencedWireEnd>WireEnd_00062</ReferencedWireEnd>
+        </WireMounting>
+      </ContactPoint>
+    </Specification>
+  </DocumentVersion>
+  <PartVersion id="PartVersion_00078">
+    <CompanyName>Acme Inc.</CompanyName>
+    <PartNumber>5-928999-1</PartNumber>
+    <PartVersion>1</PartVersion>
+    <PrimaryPartType>PluggableTerminal</PrimaryPartType>
+  </PartVersion>
+  <PartVersion id="PartVersion_00079">
+    <CompanyName>Acme Inc.</CompanyName>
+    <PartNumber>WIRE</PartNumber>
+    <PartVersion>1</PartVersion>
+    <PrimaryPartType>Wire</PrimaryPartType>
+  </PartVersion>
+  <Unit xsi:type="vec:SIUnit" id="SIUnit_00080">
+    <SiUnitName>Metre</SiUnitName>
+    <SiPrefix>Milli</SiPrefix>
+  </Unit>
+  <Unit xsi:type="vec:SIUnit" id="SIUnit_00081">
+    <Exponent>2</Exponent>
+    <SiUnitName>Metre</SiUnitName>
+    <SiPrefix>Milli</SiPrefix>
+  </Unit>
+  <Unit xsi:type="vec:SIUnit" id="SIUnit_00082">
+    <SiUnitName>Newton</SiUnitName>
+  </Unit>
+  <Unit xsi:type="vec:SIUnit" id="SIUnit_00083">
+    <SiUnitName>Gram</SiUnitName>
+  </Unit>
+  <Unit xsi:type="vec:SIUnit" id="SIUnit_00084">
+    <Exponent>-1</Exponent>
+    <SiUnitName>Metre</SiUnitName>
+  </Unit>
+  <Unit xsi:type="vec:CompositeUnit" id="CompositeUnit_00085">
+    <Factors>SIUnit_00083 SIUnit_00084</Factors>
+  </Unit>
+  <Unit xsi:type="vec:OtherUnit" id="OtherUnit_00086">
+    <OtherUnitName>Piece</OtherUnitName>
+  </Unit>
+</vec:VecContent>
