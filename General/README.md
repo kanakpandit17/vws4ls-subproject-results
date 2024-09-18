@@ -27,3 +27,5 @@ Aus dieser Positionierung ergeben sich für das Projekt relevante Chancen, aber 
 -	Gibt es im System nur ein einziges unternehmensübergreifendes VWS-Repository (Konsortium- oder OEM-spezifisch) oder eher ein dezentrales System, in dem jedes beteiligte Unternehmen ein eigenes VWS-Repository betreiben kann? 
 -	Was sind die Herausforderungen des Identity Managements? 
 
+![image](https://github.com/user-attachments/assets/ddfb002d-23e7-431a-a9d7-d8eedbc45910)
+
