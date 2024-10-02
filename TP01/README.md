@@ -72,13 +72,13 @@
 
 
 ## <a name="_toc174347897"></a><a name="_ref174348561"></a>1. Zielsetzung
-Das Ziel des Teilprojekts 1 bestand darin, Konzepte rund um das Informationsmodell und die Produktbeschreibung der Leitungssatzherstellung für die Automobilindustrie mittels Verwaltungsschalen (VWS) zu beschreiben.
+Im Teilprojekts 1 „Konzept, Informationsmodelle und Produktbeschreibung“ wurden Konzepte rund um das Informationsmodell und die Produktbeschreibung der Leitungssatzherstellung für die Automobilin-dustrie mittels Verwaltungsschalen (VWS) erarbeitet.
 
-Die VWS ist ein Schlüsselkonzept der Industrie 4.0 und bietet eine standardisierte Struktur für die Beschreibung von Assets (z.B. Maschinen, Komponenten oder Software) in einer digitalen Umgebung. Damit wird ein effizienter Datenaustausch zwischen verschiedenen Systemen und Anbietern ermöglicht.
+Die VWS bietet als Schlüsselkonzept der Industrie 4.0 eine standardisierte Struktur für die Beschreibung von Assets (z.B. Maschinen, Komponenten oder Software) in einer digitalen Umgebung. Damit wird ein effizienter Datenaustausch zwischen verschiedenen Systemen und Anbietern ermöglicht.
 
-In diesem Teilprojekt wird basierend auf der VWS ein detailliertes und umfassendes Informationsmodell des Leitungssatzes beschrieben. Das Modell soll dabei sowohl in der Entwicklungs- als auch in der Fertigungsphase des Leitungssatzes eingesetzt werden.
+Es wurde daher basierend auf der VWS ein detailliertes und umfassendes Informationsmodell des Lei-tungssatzes spezifiziert, welches auch die Produktmodellierung des Leitungssatzes umfasst. Dies bein-haltet die detaillierten Anforderungen, die der Leitungssatz erfüllen muss.
 
-Darüber hinaus wird auch die Produktmodellierung des Leitungssatzes spezifiziert. Dies beinhaltet die detaillierten Anforderungen, die der Leitungssatz erfüllen muss.
+Das Modell soll dabei sowohl in der Entwicklungs- als auch in der Fertigungsphase des Leitungssatzes eingesetzt werden.
 
 In der **Entwicklungsphase** soll das Modell eine hinreichend detaillierte Darstellung des Leitungssatzes ermöglichen, einschließlich aller Komponenten und Eigenschaften. Damit soll die Planung und Optimierung des Designs erleichtert und sichergestellt werden, dass der Leitungssatz alle erforderlichen Spezifikationen und Standards erfüllt.
 
@@ -88,19 +88,24 @@ Durch die derartige Nutzung des Modells in Entwicklung und Fertigung soll ein ho
 
 Das Teilprojekt wurde in sechs Arbeitspakete aufgeteilt, die in den folgenden Kapiteln näher erläutert werden:
 
-- AP 1.1 – Zielbeschreibung des Gesamtkonzepts
-- AP 1.2 – Entwicklung von Informationsmodellen und Zuweisung der Daten
-- AP 1.3 – Erfassung der Geschäftsmodelle für das Informationsmodell
-- AP 1.4 – Beschreibung der Tiefe der Informationsmodelle
-- AP 1.5 – Validierung der Standards
-- AP 1.6 – Dokumentation der Ergebnisse
+[	AP 1.1 - Zielbeschreibung des Gesamtkonzepts](#_toc174347898)
+
+[	AP 1.2 - Entwicklung von Informationsmodellen und Zuweisung der Daten](#_toc174347904)
+
+[	AP 1.3 - Erfassen der Geschäftsmodelle für das Informationsmodell](#_toc174347914)
+
+[	AP 1.4 - Beschreibung der Tiefe der Informationsmodelle](#_toc174347915)
+
+[	AP 1.5 - Validierung der Standards](#_toc174347926)
+
+[	AP 1.6 - Dokumentation der Ergebnisse](#_toc174347927)
 
 ## <a name="_toc174347898"></a>2. AP 1.1 - Zielbeschreibung des Gesamtkonzepts
-Das Hauptziel des AP 1.1 "Zielbeschreibung des Gesamtkonzepts" war die einheitliche Beschreibung der Komponenten des Leitungssatzes. Dies beinhaltet die Definition und Standardisierung der Terminologie und Spezifikationen, die für die Beschreibung der verschiedenen Komponenten des Leitungssatzes verwendet werden.
+Das Hauptziel des AP 1.1 "Zielbeschreibung des Gesamtkonzepts" war die Entwicklung eines Konzepts für die einheitliche Beschreibung der Komponenten des Leitungssatzes. Dies beinhaltet die Definition und Standardisierung der Terminologie und der Spezifikationen, die für die Beschreibung der verschiedenen Komponenten des Leitungssatzes verwendet werden.
 
-Dies soll dazu beitragen, Missverständnisse und Inkonsistenzen zu vermeiden und eine klare und konsistente Kommunikation zwischen den verschiedenen Teams und Stakeholdern zu ermöglichen, die an der Entwicklung und Produktion des Leitungssatzes beteiligt sind. 
+Dies soll dazu beitragen, Missverständnisse und Inkonsistenzen zu vermeiden und eine klare und konsistente Kommunikation zwischen den verschiedenen Teams und Stakeholdern zu ermöglichen, die an der Entwicklung und Produktion des Leitungssatzes beteiligt sind.
 
-Darüber hinaus soll dieses Arbeitspaket auch die Grundlage für die kollaborative Entwicklung legen, indem es klare Richtlinien und Prozesse für die Zusammenarbeit und den Informationsaustausch zwischen den verschiedenen Stakeholdern und Teams bereitstellt, um die Effizienz und Effektivität der kollaborativen Entwicklung zu verbessern und letztendlich zu einem hochwertigen und effizient produzierten Leitungssatz zu führen. Von der Vorgehensmethodik her wurde im AP 1.1 zuerst eine Anforderungserhebung durchgeführt, um die dort identifizierten Anwendungsfälle und Parameter als Basis für die Definition einer Prozess- und Resourcenübersicht für das anschließende Mapping auf das PPR-Modell heranziehen zu können.
+Darüber hinaus soll dieses Arbeitspaket auch die Grundlage für die kollaborative Entwicklung legen, indem es klare Richtlinien und Prozesse für die Zusammenarbeit und den Informationsaustausch zwischen den verschiedenen Stakeholdern und Teams bereitstellt, um die Effizienz und Effektivität der kollaborativen Entwicklung zu verbessern und letztendlich zu einem hochwertigen und effizient produzierten Leitungssatz zu führen. Von der Vorgehensmethodik her wurde im AP 1.1 zuerst eine Anforderungserhebung durchgeführt, um die dort identifizierten Anwendungsfälle und Parameter als Basis für die Definition einer Prozess- und Ressourcenübersicht für das anschließende Mapping auf das Produkt-Prozess-Ressource-Modell (PPR-Modell) heranziehen zu können. 
 
 ### <a name="_toc174347899"></a>2.1 Anforderungserhebung
 Im ersten Schritt wurde eine Liste von Anwendungsfällen zusammen mit Teilnehmern des Teilprojekts TP3 gesammelt, um ein umfassendes Verständnis der verschiedenen Szenarien zu erlangen, in denen der Leitungssatz in der Automobilindustrie eingesetzt wird. Durch die Zusammenarbeit mit den TP3-Teilnehmern konnte eine breite Palette von Anwendungsfällen identifiziert und erfasst werden, die die Vielfalt und Komplexität der Herausforderungen widerspiegeln, welche bei der Entwicklung und Produktion von Leitungssätzen auftreten können. 
@@ -133,6 +138,7 @@ In der Herstellung von Leitungssätzen werden verschiedene Materialklassen verwe
 \- **Sleeve**: Schutzhüllen dienen dazu, die Drähte vor physischen Schäden und Umwelteinflüssen wie Hitze oder Abrieb zu schützen. Materialien wie Nylon oder Polyester werden oft für diese Schutzhüllen verwendet, da sie eine hohe Widerstandsfähigkeit bieten.
 
 \- **Housing**: Gehäuse sind die äußeren Komponenten, die die elektrischen Verbindungen eines Leitungssatzes umschließen. Sie sind in der Regel aus Kunststoff oder Metall gefertigt und dienen dazu, die inneren Komponenten zu schützen und zu organisieren.
+
 ## <a name="_toc174347901"></a>2.3 Prozessübersicht
 Die Leitungssatzindustrie zeichnet sich durch eine Reihe von spezialisierten und komplexen Prozessen aus, die die Produktion von hochwertigen und funktionalen Leitungssätzen ermöglichen. Diese Prozesse sind integraler Bestandteil des Fertigungsablaufs und sind sorgfältig darauf ausgelegt, präzise Designanforderungen zu erfüllen.
 
@@ -159,7 +165,7 @@ Hierbei gibt es Maschinen, die mehrere dieser Fertigungsschritte kombinieren kö
 ### <a name="_toc174347902"></a>2.4 PPR-Modell
 Ein etablierter methodischer Ansatz für die Fertigungsdatenmodellierung ist das "Produkt-Prozess-Ressourcen" (PPR) Modell [1] [2]. Es ermöglicht eine ganzheitliche Sicht auf ein Fertigungsprojekt aus unterschiedlichen Sichtweisen und einen Datenaustausch über Fachbereichsgrenzen hinweg. Dieser Ansatz erlaubt damit eine effiziente Gestaltung und Rekonfiguration von Fertigungsressourcen, um damit die Reduzierung der Entwicklungszeit und der Rüstkosten zu erreichen.
 
-![image](https://github.com/user-attachments/assets/615a4abf-eb01-4cb4-97dc-96e3c36e21a2)
+![image](https://github.com/user-attachments/assets/d3aa78bb-3b1f-4531-8882-a9596b6a32a5)
 
 <a name="_ref174024057"></a><a name="_toc174347932"></a>*Abbildung 2: PPR-Modell*
 
@@ -190,18 +196,22 @@ Im AP 1.2 „Entwicklung von Informationsmodellen und Zuweisung der Daten“ wur
 **RAMI4.0** (Reference Architectural Model for Industry 4.0) [8] ist ein Referenzarchitekturmodell, und könnte als Rahmen für die Modellierung der Konzepte innerhalb des Projekts dienen, denn durch die Nutzung internationaler Standards ermöglicht RAMI 4.0 eine nahtlose Kommunikation und Zusammenarbeit zwischen unterschiedlichen Systemen und Akteuren.
 
 Das Ergebnis der Analyse zielte darauf ab, die besten Ansätze für die Nutzung dieser Standards innerhalb des Projekts zu identifizieren.
+
 ### <a name="_toc174347905"></a>3.1 VEC und KBL
 Im nächsten Schritt des Projekts wurde eine Analyse der KBL- und VEC-Datenmodelle durchgeführt, um das optimale Modell für das Projekt auszuwählen. KBL und VEC sind standardisierte Datenformate, die entwickelt wurden, um den Austausch, die Zusammenarbeit und die Archivierung von Informationen über das physische Bordnetz im Automobilsektor zu erleichtern. Die Modelle wurden unter dem Dach der prostep ivip Association [9] in Kooperation mit dem Verband der Automobilindustrie (VDA) [10] entwickelt.
 
 Als Basis für eine Bewertung ist ein grundlegendes Verständnis der Ausrichtung von KBL & VEC, sowie deren Historie und Zusammenhänge notwendig [11]. 
 
-**KBL (Kabelbaumliste):** Die KBL entstand im Zeitraum 1999 – 2005 (erste Veröffentlichung als VDA Recommendation) mit verschiedenen Erweiterungen in den folgenden Jahren. Die Zielsetzung der KBL ist die digitale Beschreibung der Produktspezifikation eines Kabelbaums als Grundlage für den Austausch zwischen OEM und Konfektionär (vgl. [Abbildung 3](#mergeformat)).
+![image](https://github.com/user-attachments/assets/b37cbf49-6b7e-4e86-948d-1d451d7249d0)
+<a name="_toc171590447"></a></a>*Abbildung 3: KBL & VEC**
 
-**VEC (Vehicle Electric Container):** In der Anwendung der KBL zeigte sich aber auch, dass dieser spezifisches Anwendungsfall nur ein kleiner, wenngleich auch ein sehr wichtiger, Teil der in der Bordnetzentwicklung existierenden Schnittstellen und Datenaustauschszenarien ist. Da die Abgrenzung der einzelnen Schnittstellen zum Teil unternehmens- und prozess-spezifisch ist, aber die ausgetauschten Inhalte und Strukturen an vielen Stellen überlappen, wurde der VEC als einheitliche digitale Sprache in der Wertschöpfungskette „physisches Bordnetz“ entwickelt (vgl. dazu „erweiterter Scope“ in [Abbildung 3](#mergeformat)).
+**KBL (Kabelbaumliste):** Die KBL entstand im Zeitraum 1999 – 2005 (erste Veröffentlichung als VDA Recommendation) mit verschiedenen Erweiterungen in den folgenden Jahren. Die Zielsetzung der KBL ist die digitale Beschreibung der Produktspezifikation eines Kabelbaums als Grundlage für den Austausch zwischen OEM und Konfektionär (vgl. [Abbildung 4](#mergeformat)).
+
+**VEC (Vehicle Electric Container):** In der Anwendung der KBL zeigte sich aber auch, dass dieser spezifisches Anwendungsfall nur ein kleiner, wenngleich auch ein sehr wichtiger, Teil der in der Bordnetzentwicklung existierenden Schnittstellen und Datenaustauschszenarien ist. Da die Abgrenzung der einzelnen Schnittstellen zum Teil unternehmens- und prozess-spezifisch ist, aber die ausgetauschten Inhalte und Strukturen an vielen Stellen überlappen, wurde der VEC als einheitliche digitale Sprache in der Wertschöpfungskette „physisches Bordnetz“ entwickelt (vgl. dazu „erweiterter Scope“ in [Abbildung 4](#mergeformat)).
 
 ![image](https://github.com/user-attachments/assets/39dc8835-d5c1-4c90-98c9-991065332827)
 
-<a name="_ref171590447"></a><a name="_toc174347933"></a>*Abbildung 3 Vergleich Scope VEC & KBL [11]**
+<a name="_toc174347933"></a>*Abbildung 4: Vergleich Scope VEC & KBL [11]**
 
 #### <a name="_toc174347906"></a>3.1.1 Ausdrucksfähigkeit der Modelle
 Unter dem Gesichtspunkt der Ausdrucksfähigkeit der beiden Modelle ist die KBL eine echte Untermenge des VEC, d.h. alle Sachverhalte, die sich in der KBL abbilden lassen, können auch im VEC ausgedrückt werden, umgekehrt ist dies nicht der Fall. Hinweis: Diese Aussage betrifft die Ausdrucksfähigkeit der beiden Modelle. Die dafür verwenden Modellierungskonzept und Struktur, also die Syntax, sind andere. Das heißt, eine KBL-XML-Dateien ist nicht gleichzeitig auch ein gültiges VEC-XML. Lediglich die Inhalte der Datei würden sich verlustfrei auch als VEC-XML ausdrücken lassen.
@@ -239,35 +249,35 @@ Insgesamt bietet VEC eine fortschrittlichere Lösung für die Leitungssatzfertig
 Beide Modelle haben ihre Vorzüge: KBL ist weit verbreitet und hat eine etablierte Position in der Branche, während VEC eine fortschrittlichere Architektur bietet. Nach eingehender Analyse im Projekt wurde daher entschieden, sowohl das KBL- als auch das VEC-Datenmodell zu unterstützen. 
 
 ### <a name="_toc174347910"></a>3.2 ECLASS 
-Zu Beginn des Projekts wurde festgehalten, dass der ECLASS-Standard auf seine Anwendbarkeit für das Projekt geprüft werden soll.  ECLASS [7] ist ein weit verbreitetes Klassifikationssystem für Produkte und Dienstleistungen, das in verschiedenen Branchen eingesetzt wird. Die Beschreibung von Leitungssätzen erfordert detaillierte Informationen über Steckverbinder, Leitungen, Verbindungen, Isolierungen und vieles mehr. ECLASS bietet zwar eine allgemeine Struktur und einige Definitionen mit Projektbezug (Auszüge siehe [Abbildung 4](#_ref174089187) und [Abbildung 5](#_ref174089392)), aber es fehlen spezifische Attribute und Klassen, die für die detaillierte Beschreibung von Leitungssätzen geeignet sind. 
+Zu Beginn des Projekts wurde festgehalten, dass der ECLASS-Standard auf seine Anwendbarkeit für das Projekt geprüft werden soll.  ECLASS [7] ist ein weit verbreitetes Klassifikationssystem für Produkte und Dienstleistungen, das in verschiedenen Branchen eingesetzt wird. Die Beschreibung von Leitungssätzen erfordert detaillierte Informationen über Steckverbinder, Leitungen, Verbindungen, Isolierungen und vieles mehr. ECLASS bietet zwar eine allgemeine Struktur und einige Definitionen mit Projektbezug (Auszüge siehe [Abbildung 5](#_ref174089187) und [Abbildung 6](#_ref174089392)), aber es fehlen spezifische Attribute und Klassen, die für die detaillierte Beschreibung von Leitungssätzen geeignet sind. 
 
 ![image](https://github.com/user-attachments/assets/e89dc987-a3f5-4d10-bd29-c0f0232240b1)
 
-<a name="_ref174089187"></a><a name="_toc174347934"></a>*Abbildung 4: ECLASS-Klassifizierungen für KFZ-Bordnetze [7]** 
+<a name="_ref174089187"></a><a name="_toc174347934"></a>*Abbildung 5: ECLASS-Klassifizierungen für KFZ-Bordnetze [7]** 
 
 ![image](https://github.com/user-attachments/assets/c607187a-c28b-4304-a719-63af08354e31)
 
-<a name="_ref174089392"></a><a name="_toc174347935"></a>*Abbildung 5: ECLASS-Klassifizierungen für Produktionsmaschinen [7]**
+<a name="_ref174089392"></a><a name="_toc174347935"></a>*Abbildung 6: ECLASS-Klassifizierungen für Produktionsmaschinen [7]**
 
-Eine weitere Prüfung fand im TP6 “Automatisierte Verhandlungsprozesse“ statt. Dort wurde nach semantischen Referenzen für ein I4.0-Vokabular recherchiert, damit es sowohl von Menschen als auch Ressourcen interpretiert werden kann. Es wurde festgestellt, dass ECLASS derzeit keine ausreichende Überdeckung mit dem im Projekt benötigten Vokabular bietet. Um unternehmens- bzw. industrieübergreifende-Interoperabilität im Projektkontext zu erreichen, wurden daher die bereits vorhandenen semantischen Definitionen der anderen Standards als ausreichend betrachtet (OPC UA und VEC). 
+Eine weitere Prüfung fand im TP6 “Automatisierte Verhandlungsprozesse“ statt. Dort wurde nach semantischen Referenzen für ein I4.0-Vokabular recherchiert, damit es sowohl von Menschen als auch Ressourcen interpretiert werden kann. Es wurde festgestellt, dass ECLASS derzeit keine ausreichende Überdeckung mit dem im Projekt benötigten Vokabular bietet. Um unternehmens- bzw. industrieübergreifende-Interoperabilität im Projektkontext zu erreichen, wurden daher die bereits vorhandenen semantischen Definitionen der anderen Standards als ausreichend betrachtet (OPC UA und VEC). Als weitere Quelle für semantische Referenzen wäre prinzipiell auch die [DIN 72036](https://dx.doi.org/10.31030/3521962) geeignet, jedoch müsste hierfür noch eine eindeutige ID-Bildung definiert werden, z.B. in Form von IRIs (Internati-onalized Resource Identifier nach [RFC 3305](https://www.rfc-editor.org/info/rfc3305)). 
 
 Erwähnenswert in diesem Zusammenhang ist auch das „Common Data Dictionary“ der IEC [12], worin ebenfalls tendenziell für den Leitungssatz verwendbare Klassifizierungen definiert sind, z.B. „[0112/2///61360_4#AAA548 (car plug)](https://cdd.iec.ch/cdd/iec61360/iec61360.nsf/TU0/0112-2---61360_4%23AAA548)“ und [„0112/2///61360_4#AAA611 (connector tool)](https://cdd.iec.ch/cdd/iec61360/iec61360.nsf/TU0/0112-2---61360_4%23AAA611)“. 
 
 ### <a name="_toc174347911"></a><a name="_ref175664280"></a>3.3 RAMI 4.0
-Das Referenzarchitekturmodell Industrie 4.0 (kurz RAMI 4.0) ordnet verschiedene Aspekte der Produktion in einem einzigen Modell, bestehend aus einer mehrdimensionalen Struktur, die verschiedene Ebenen, Lebenszyklusphasen und Hierarchieebenen umfasst, um die Komplexität der Industrie 4.0 übersichtlich abzubilden. Es umfasst eine Kommunikationsebene, die Lebenszyklen von Anlagen und Produkten sowie Automatisierungs- und IT-Ebenen. RAMI 4.0 ist ein kubisches Schichtenmodell, das in der DIN SPEC 91345 [13] definiert ist. Die Dimensionen des Würfels beschreiben die Architektur von Assets, ihren Lebenszyklus und ihre Zuordnung zu Hierarchieebenen [8]. 
+Das Referenzarchitekturmodell Industrie 4.0 (kurz RAMI 4.0) ordnet verschiedene Aspekte der Produktion in einem einzigen Modell, bestehend aus einer mehrdimensionalen Struktur, die verschiedene Ebenen, Lebenszyklusphasen und Hierarchieebenen umfasst, um die Komplexität der Industrie 4.0 übersichtlich abzubilden. Es umfasst eine Kommunikationsebene, die Lebenszyklen von Anlagen und Produkten sowie Automatisierungs- und IT-Ebenen. RAMI 4.0 ist ein kubisches Schichtenmodell, das in der [DIN SPEC 91345](https://dx.doi.org/10.31030/2436156) [13] definiert ist. Die Dimensionen des Würfels beschreiben die Architektur von Assets, ihren Lebenszyklus und ihre Zuordnung zu Hierarchieebenen [8]. 
 
 RAMI 4.0 ist gut geeignet als übergeordneter Referenzrahmen für die Klassifikation der zu erstellenden Lösungsbestandteile im VWS4LS-Projekt. Es wurde jedoch entschieden, es nicht im Projekt zu berücksichtigen, da damit personelle Ressourcen gebunden, aber kein direkter anwendungsbezogener Mehrwert entstehen würde. 
 
 ### <a name="_toc174347912"></a>3.4 OPC UA
 **OPC UA (Open Platform Communications Unified Architecture)** ist ein Standard für eine Kommunikationsarchitektur, die für den Datenaustausch als plattformunabhängige, service-orientierte Architektur (SOA) entwickelt wurde und nicht nur den Transport von Maschinendaten, wie Regelgrößen, Messwerte, Parameter etc. ermöglicht, sondern diese auch maschinenlesbar semantisch zu beschreiben. Dabei werden nicht nur Betriebsdaten berücksichtigt, sondern auch Spezifikationen und Fähigkeiten der beteiligten Maschinen. Das ermöglicht die Kommunikation zwischen Produktionssteuerungssystemen wie MES (Manufacturing Execution Systems) und den Produktionsanlagen [14].
 
-Die OPC UA Technologie bietet grundlegende Bausteine, die eine einheitliche Basis für die Kommunikation und den Datenaustausch bereitstellen und eine einheitliche Beschreibung und Kommunikation zwischen verschiedenen Systemen ermöglicht. Einer dieser Bausteine ist bspw. das Typenschild (Machinery Nameplate) [15], um Informationen über die Maschine, ihre Funktionen und Eigenschaften bereitstellen zu können.
+Die OPC UA Technologie bietet [grundlegende Bausteine](https://reference.opcfoundation.org/), die eine einheitliche Basis für die Kommunikation und den Datenaustausch bereitstellen und eine einheitliche Beschreibung und Kommunikation zwischen verschiedenen Systemen ermöglicht. Einer dieser Bausteine ist bspw. das Typenschild ([Machinery Nameplate](https://reference.opcfoundation.org/Machinery/v101/docs/5.1/)) [15], um Informationen über die Maschine, ihre Funktionen und Eigenschaften bereitstellen zu können.
 
 ![image](https://github.com/user-attachments/assets/00511486-b155-45ed-83d9-43dba634e918)
 
-<a name="_toc174347936"></a>*Abbildung 6: OPC UA Technologie (Quelle: VDMA)*
+<a name="_toc174347936"></a>*Abbildung 7: OPC UA Technologie (Quelle: VDMA)*
 
-Im Bereich der Leitungssatzfertigung gab es bislang keine spezifische Standardisierung für OPC UA. Da die Anforderungen an die Beschreibung von Leitungssätzen komplex und spezifisch sind, würden die verfügbaren allgemeinen Companion Specifications [6] nur bedingt ausreichen. Deshalb wurde im Projekt die Entscheidung getroffen, eine Companion Specification speziell für die Leitungssatzfertigung zu entwickeln. 
+Im Bereich der Leitungssatzfertigung gab es bislang keine spezifische Standardisierung für OPC UA. Da die Anforderungen an die Beschreibung von Leitungssätzen komplex und spezifisch sind, würden [die verfügbaren allgemeinen Companion Specifications](https://reference.opcfoundation.org/) [6] nur bedingt ausreichen. Deshalb wurde im Projekt die Entscheidung getroffen, eine Companion Specification speziell für die Leitungssatzfertigung zu entwickeln. 
 
 Diese neue Companion Specification «OPC 40570: OPC UA for the Wire Harness Manufacturing Industry» [16] wird die spezifischen Anforderungen der Branche berücksichtigen und eine einheitliche Kommunikation zwischen den beteiligten Akteuren ermöglichen. 
 
@@ -303,7 +313,7 @@ Die Entwicklung des Leitungssatzes erfolgt durch den OEM (Original Equipment Man
 
 ![image](https://github.com/user-attachments/assets/e9a11a7a-63f4-48db-8800-611f5c372492)
 
-<a name="_toc174347937"></a>*Abbildung 7: Leitungssatzarchitektur. (Quelle: Eigene Darstellung)*
+<a name="_toc174347937"></a>*Abbildung 8: Leitungssatzarchitektur*
 
 Der vom OEM auf dieser Basis bereitgestellte sog. „150%-Leitungssatz“ umfasst alle möglichen Varianten für den Leitungssatz einzelner Fahrzeugmodelle. Berücksichtigt wird dabei nicht nur die Standardkonfiguration, sondern auch zusätzliche Optionen und Ausstattungsvarianten. Diese umfassen unterschiedliche Motorisierungen, Sonderausstattungen, Länderanforderungen und individuelle Kundenwünsche. Das Ergebnis ist ein umfassendes Modell, das mehr Variationen umfasst, als jemals in einem einzigen real gefertigten Leitungssatz (in Abgrenzung dazu auch als sog. „100% Leitungssatz“ bezeichnet) enthalten sein können.
 
@@ -344,46 +354,48 @@ Die so angereicherten Parameterdefinitionen wurden in die Prozessparameterliste 
 Nach der Validierung und Finalisierung wurden alle erfassten Prozesse und Prozessparameter an den VDMA zur Integration in die Companion Specification «OPC UA for the Wire Harness Manufacturing Industry» (VDMA 40570) [16] weitergegeben.
 
 ### <a name="_toc174347918"></a>5.3 Produktionsdatensatz
-Ein Datensatz für die Produktion besteht aus 5 Prozessdatenbausteinen (siehe [Abbildung 8](#_ref174346634)). Prozesse können von der Montage über das Crimpen bis hin zu Tests und Qualitätskontrollen reichen. Jeder dieser Prozesse muss klar definiert und dokumentiert sein, um eine effiziente und fehlerfreie Produktion zu gewährleisten. Nach Abschluss der Produktion wird für jeden Prozess ein Satz von Resultaten zurückgeliefert, welche die Qualität und Genauigkeit jedes einzelnen Schrittes im Produktionsprozess widerspiegeln.
+Ein Datensatz für die Produktion besteht aus 5 Prozessdatenbausteinen (siehe [Abbildung 9](#_ref174346634)). Prozesse können von der Montage über das Crimpen bis hin zu Tests und Qualitätskontrollen reichen. Jeder dieser Prozesse muss klar definiert und dokumentiert sein, um eine effiziente und fehlerfreie Produktion zu gewährleisten. Nach Abschluss der Produktion wird für jeden Prozess ein Satz von Resultaten zurückgeliefert, welche die Qualität und Genauigkeit jedes einzelnen Schrittes im Produktionsprozess widerspiegeln.
 
 ![image](https://github.com/user-attachments/assets/c9697d3a-8066-495e-bc19-a473b99a8af2)
 
-<a name="_ref174346634"></a><a name="_toc174347938"></a>*Abbildung 8: WireHarness Data Domains (Quelle: Eigene Darstellung)*
+<a name="_ref174346634"></a><a name="_toc174347938"></a>*Abbildung 9: WireHarness Data Domains*
 
-Um eine Arbeitsauftragsanforderung (Job Order Request) für einen Fertigungsauftrag zusammenzustellen ([Abbildung 9](#_ref174345828)), muss als Voraussetzung eine Artikelspezifikation gemäß dem VEC-Standard vorliegen, welcher eine einheitliche Beschreibung von Fahrzeugelektronikkomponenten erlaubt und somit die Kommunikation und den Datenaustausch zwischen verschiedenen Systemen und Partnern in der Automobilindustrie ermöglicht.
+Um eine Arbeitsauftragsanforderung (Job Order Request) für einen Fertigungsauftrag zusammenzustellen ([Abbildung 10](#_ref174345828)), muss als Voraussetzung eine Artikelspezifikation gemäß dem VEC-Standard vorliegen, welcher eine einheitliche Beschreibung von Fahrzeugelektronikkomponenten (Part Info) bereitstellt und somit die Kommunikation und den Datenaustausch zwischen verschiedenen Systemen und Partnern in der Automobilindustrie ermöglicht.
 
-Zusätzlich zur Artikeldefinition muss die Spezifikation eine Liste von Teilen enthalten, die für die Produktion benötigt werden. Dazu gehören beispielsweise Anschlüsse, Kabel, Dichtungen und weitere relevante Komponenten. 
+Zusätzlich zur Artikeldefinition muss die Spezifikation eine Liste von Teilen (Part) enthalten, die für die Produktion benötigt werden. Dazu gehören beispielsweise Anschlüsse, Kabel, Dichtungen und weitere relevante Komponenten. Das VEC-Datenmodell wird als Grundlage für die Beschreibung von Article und Part genutzt und in den OPC UA Datentypen überführt.
 
-![image](https://github.com/user-attachments/assets/d30ef32d-56ab-401e-a6a9-dc9fadc417c4)
+![image](https://github.com/user-attachments/assets/d1f2696a-dacb-4140-95f9-eaa09bbb78ef)
 
-<a name="_ref174345828"></a><a name="_toc174347939"></a>*Abbildung 9: JobOrder Request [16]**
+<a name="_ref174345828"></a><a name="_toc174347939"></a>*Abbildung 10: Zusammenhänge im Produktionsdatensatz  [16]**
 
-Neben der Teileliste ist auch eine Liste der durchzuführenden Prozesse erforderlich. Ein solcher Datensatz für die Produktion besteht aus 5 Prozessdatenbausteinen (siehe [Abbildung 8](#_ref174346634)). Die Prozesse können von der Montage über das Crimpen bis hin zu Tests und Qualitätskontrollen reichen. Jeder dieser Prozesse muss klar definiert und dokumentiert sein, um eine effiziente und fehlerfreie Produktion zu gewährleisten. Nach Abschluss der Produktion wird für jeden Prozess ein Satz von Resultaten zurückgeliefert. Diese Ergebnisse sind von entscheidender Bedeutung, da sie die Qualität und Genauigkeit jedes einzelnen Schrittes im Produktionsprozess widerspiegeln.
+Neben der Teileliste ist auch eine Liste der durchzuführenden Prozesse erforderlich. Ein solcher Datensatz für die Produktion besteht aus 5 Prozessdatenbausteinen (siehe [Abbildung 9](#_ref174346634)). Die Prozesse können von der Montage über das Crimpen bis hin zu Tests und Qualitätskontrollen reichen. Jeder dieser Prozesse muss klar definiert und dokumentiert sein, um eine effiziente und fehlerfreie Produktion zu gewährleisten. Nach Abschluss der Produktion wird für jeden Prozess ein Satz von Resultaten zurückgeliefert. Diese Ergebnisse sind von entscheidender Bedeutung, da sie die Qualität und Genauigkeit jedes einzelnen Schrittes im Produktionsprozess widerspiegeln.
 
-Schließlich wird eine Arbeitsantwort erstellt, die eine Zusammenfassung der Produktionsergebnisse enthält. Diese Zusammenfassung bietet einen Überblick über die durchgeführten Arbeiten und die erreichten Ergebnisse. Sie dient als Nachweis (sog. „Audit Trail“) für die Einhaltung der Spezifikationen und als Qualitätsdokumentation. Die Arbeitsantwort ist somit ein wesentlicher Bestandteil des gesamten Produktionsprozesses und ermöglicht eine kontinuierliche Verbesserung und Optimierung der Arbeitsabläufe.
+Schließlich wird eine Arbeitsantwort (JobResponse) erstellt, die eine Zusammenfassung der Produktionsergebnisse enthält. Diese Zusammenfassung bietet einen Überblick über die durchgeführten Arbeiten und die erreichten Ergebnisse. Sie dient als Nachweis (sog. „Audit Trail“) für die Einhaltung der Spezifikationen und als Qualitätsdokumentation. Die Arbeitsantwort ist somit ein wesentlicher Bestandteil des gesamten Produktionsprozesses und ermöglicht eine kontinuierliche Verbesserung und Optimierung der Arbeitsabläufe.
+
+Im Produktionsprozess entstehen Items als konkrete Instanzen eines Article, d.h. können eine Serien-nummer haben. Diese werden im OPC UA Adressraum als Items (Knoten) repräsentiert, welche die eigentlichen Datenpunkte (Attribute) enthalten und somit die Objekte im OPC UA Server abbilden. 
 
 ### <a name="_toc174347919"></a><a name="_ref174348579"></a>5.4 VEC als Produktdatenmodell
-[Abbildung 10](#_ref173157831) skizziert die Nutzung des VEC-Modells im Kontext des Projekts. Jede Komponente, Terminal, Wire, Connector usw. kann mit ihren technischen Attributen im VEC-Modell beschrieben werden. Unter Verwendung dieser Komponenten wird dann eine Artikelbeschreibung aufgebaut, wobei dabei jede einzelne Verwendung greifbar sein muss, da diese einerseits unterschiedliche Eigenschaften erhalten können, vergleiche bspw. die *StrippingLength* in der Grafik, oder die Länge der Leitungen. Anderseits unterscheiden die Verwendung sich im Beziehungsgeflecht, das diese mit anderen Komponenten eingehen. Vergleiche bspw. Terminal „X“ an roter bzw. grüner Leitung.
+[Abbildung 11](#_ref173157831) skizziert die Nutzung des VEC-Modells im Kontext des Projekts. Jede Komponente, Terminal, Wire, Connector usw. kann mit ihren technischen Attributen im VEC-Modell beschrieben werden. Unter Verwendung dieser Komponenten wird dann eine Artikelbeschreibung aufgebaut, wobei dabei jede einzelne Verwendung greifbar sein muss, da diese einerseits unterschiedliche Eigenschaften erhalten können, vergleiche bspw. die *StrippingLength* in der Grafik, oder die Länge der Leitungen. Anderseits unterscheiden die Verwendung sich im Beziehungsgeflecht, das diese mit anderen Komponenten eingehen. Vergleiche bspw. Terminal „X“ an roter bzw. grüner Leitung.
 
 Diese Artikelbeschreibung stellt dann das Grundgerüste für weitere Informationsinhalte dar. Diese können die Elemente der Artikelbeschreibung aus als Bezugspunkte nutzen. Beispielsweise kann die Definition von Fertigungsprozessen darüber eindeutig definieren für welches Element ein bestimmter Prozess gilt, also welche Leitung geschnitten werden soll, oder welche Leitungsende in einem Schritt abisoliert werden muss.
 
 ![image](https://github.com/user-attachments/assets/6acdb21d-323c-4405-9bfe-c94ddaac0a07)
 
-<a name="_ref173157831"></a><a name="_toc174347940"></a>*Abbildung 10: Nutzung des VEC-Modells (Quelle: Eigene Darstellung)*
+<a name="_ref173157831"></a><a name="_toc174347940"></a>*Abbildung 11: Nutzung des VEC-Modells *
 
 Da der VEC den kompletten Entwicklungsprozess des physischen Bordnetzes unterstützt ist das Modell sehr umfangreich. Für die im Projekt relevanten Anwendungsfälle werden lediglich die Bereiche „Komponentenbeschreibung“ und „Leitungssatzdefinition“ benötigt.
 
-Wie in den vorhergehenden Abschnitten beschrieben besteht ein Datensatz für die Produktion aus 5 Prozessdatenbausteinen (siehe [Abbildung 8](#_ref174346634)). Die Bausteine „Article“ und „Parts“ liegen dabei im Kern des Scopes des VEC (siehe [Abbildung 11](#_ref173873644) mit dem Beispiel eines Kontaktteils). 
+Wie in den vorhergehenden Abschnitten beschrieben besteht ein Datensatz für die Produktion aus 5 Prozessdatenbausteinen (siehe [Abbildung 9](#_ref174346634)). Die Bausteine „Article“ und „Parts“ liegen dabei im Kern des Scopes des VEC (siehe [Abbildung 12](#_ref173873644) mit dem Beispiel eines Kontaktteils). 
 
 ![image](https://github.com/user-attachments/assets/804b5044-aa64-48af-adf7-da87a3eb0615)
 
-<a name="_ref173873644"></a><a name="_toc174347941"></a>*Abbildung 11: Beispiel VEC Terminal Datamodell (Quelle: VEC Recommendation V2.1)*
+<a name="_ref173873644"></a><a name="_toc174347941"></a>*Abbildung 12: Beispiel VEC Terminal Datamodell (Quelle: VEC Recommendation V2.1)*
 
 Eine erste Bewertung der benötigten Parameter (siehe „[6.2](#_ref173142598) [Prozessliste und Parameter](#_ref173142598)“) ergab eine hohe Abdeckung der benötigten Informationen durch den VEC, und zwar sowohl für den Bereich „Parts“ als auch für den Bereich „Article“. 
 
 Eine Artikeldefinition ist mit der KBL ebenfalls grundsätzlich möglich, aber es fehlen verschiedenste Attribute, die im Kontext der Fertigung relevant sind (z.B. Abisolierlängen an Leitungsenden). Da der VEC derartige Attribute bereits enthält, wurde im Weiteren der Fokus auf den VEC gelegt, insbesondere für die Demonstratoren und die OPC UA Integration.
 
-Im Rahmen des Projekts wurden für Parameter, die im VEC-Modell als fehlend identifiziert wurden, eine Reihe von Feature-Requests) an den VEC gestellt (siehe [Abbildung 12](#_ref174022396) und dort zum heutigen Zeitpunkt auch bereits weitestgehend in der aktuellen Version 2.1.0 umgesetzt [17]:
+Im Rahmen des Projekts wurden für Parameter, die im VEC-Modell als fehlend identifiziert wurden, eine Reihe von Feature-Requests) an den VEC gestellt (siehe [Abbildung 13](#_ref174022396) und dort zum heutigen Zeitpunkt auch bereits weitestgehend in der aktuellen Version 2.1.0 umgesetzt [17]:
 
 - - Identifikation von Werkzeugen für Komponenten.
 - - Attribute für Schläuche die in der Verwendung geschlitzt werden.
@@ -393,14 +405,14 @@ Im Rahmen des Projekts wurden für Parameter, die im VEC-Modell als fehlend iden
 
 ![image](https://github.com/user-attachments/assets/6ce1c567-d881-4a38-91d8-52ec76778da6)
 
-<a name="_ref174022396"></a><a name="_toc174347942"></a>*Abbildung 12: Feature Requests an den VEC*
+<a name="_ref174022396"></a><a name="_toc174347942"></a>*Abbildung 13: Feature Requests an den VEC*
 
 ### <a name="_toc174347920"></a>5.5 OPC UA Schnittstelle
-OPC UA hat für die unterschiedlichsten Anwendungsfälle eine Reihe von sog. Companion Specifications veröffentlicht [6], von denen einige möglicherweise eine vielversprechende Basis für die im Leitungssatz-Kontext zu lösenden Herausforderungen darstellen ([Abbildung 13](#_ref174019934)). 
+OPC UA hat für die unterschiedlichsten Anwendungsfälle eine Reihe von sog. Companion Specifications veröffentlicht [6], von denen einige möglicherweise eine vielversprechende Basis für die im Leitungssatz-Kontext zu lösenden Herausforderungen darstellen ([Abbildung 14](#_ref174019934)). 
 
 ![image](https://github.com/user-attachments/assets/d580499a-d4cf-4863-934d-af255b9de39c)
 
-<a name="_ref174019934"></a><a name="_toc174347943"></a>*Abbildung 13: Relevante OPC UA Spezifikationen (Quelle: Eigene Darstellung)*
+<a name="_ref174019934"></a><a name="_toc174347943"></a>*Abbildung 14: Relevante OPC UA Spezifikationen*
 
 Die folgenden OPC UA Companion Specifications wurden als geeignete Basis für die VWS4LS-Anwendungsfälle identifiziert:
 
@@ -412,7 +424,7 @@ Die folgenden OPC UA Companion Specifications wurden als geeignete Basis für di
 
 «**OPC 10031-4: ISA-95-4 Job Control**» [20]
 
-Für die in [Abbildung 13](#_ref174019934) aufgeführten fiktiven **«OPC UA Article»** und **«OPC UA Material»** wurden in der Folge dedizierte Lösungen erarbeitet. 
+Für die in [Abbildung 14](#_ref174019934) aufgeführten fiktiven **«OPC UA Article»** und **«OPC UA Material»** wurden in der Folge dedizierte Lösungen erarbeitet. 
 
 Für eine effektive Kommunikation mit der Maschinerie über eine OPC UA-Schnittstelle müssen bestimmte Datencontainer spezifiziert werden:
 
@@ -437,7 +449,7 @@ Die OPC UA Companion Specification «**OPC 40001-1 Machinery Basic Building Bloc
 
 ![image](https://github.com/user-attachments/assets/823bd896-86e3-4c52-96d4-e44cca82819b)
 
-<a name="_toc174347944"></a>*Abbildung 14: MachineIdentificationType. (Quelle: OPC UA for Machinery [15]*)*
+<a name="_toc174347944"></a>*Abbildung 15: MachineIdentificationType. (Quelle: OPC UA for Machinery [15]*)*
 
 **Finden aller Maschinen in einem Server:** OPC UA ermöglicht es, alle Maschinen in einem Server zu finden. Dies ist besonders nützlich in großen industriellen Umgebungen, wo Hunderte oder sogar Tausende von Maschinen vorhanden sein können. Durch die Verwendung von OPC UA können Benutzer schnell und effizient alle Maschinen in einem Server lokalisieren und identifizieren.
 
@@ -449,10 +461,15 @@ Die OPC UA Companion Specification «**OPC 40001-1 Machinery Basic Building Bloc
 
 ![image](https://github.com/user-attachments/assets/f105eb83-491e-4509-b956-ef0d9c641482)
 
-<a name="_toc174347945"></a>*Abbildung 15: MachineryItemState. (Quelle: OPC UA for Machinery [15]*)*
+<a name="_toc174347945"></a>*Abbildung 16: MachineryItemState. (Quelle: OPC UA for Machinery [15]*)*
 
 #### <a name="_toc174347922"></a>5.5.2 Job Management
-Die OPC UA Companion Specifications «**OPC 10031-4: ISA-95-4 Job Control**» [20] und «**OPC 40001-3: Machinery Job Mgmt**» [18] ermöglichen eine standardisierte Verwaltung von Arbeitsaufträgen innerhalb von Maschinen und Anlagen (vgl. [Abbildung 9](#_ref174345828)). Im Folgenden sind einige Kernelemente beschrieben.
+Die OPC UA Companion Specifications «**OPC 10031-4: ISA-95-4 Job Control**» [20] und «**OPC 40001-3: Machinery Job Mgmt**» [18] ermöglichen eine standardisierte Verwaltung von Arbeitsaufträgen innerhalb von Maschinen und Anlagen (vgl. [Abbildung 10](#_ref174345828)). Im Folgenden sind einige Kernelemente beschrieben.
+
+![image](https://github.com/user-attachments/assets/be5b7f16-cb5b-40d7-a63b-1abaac9665fe)
+
+<a name="_tocAbbildung17"></a>*Abbildung 17: Relevante OPC UA Informationsmodelle*
+
 
 ##### 5.5.2.1 ISA95JobOrderReceiverObjectType
 Als Kernelement enthält *ISA95JobOrderReceiverObjectTyp* die Methoden zur Entgegennahme von Arbeitsaufträgen und optionale Definitionen zulässiger Arbeitsauftragsinformationen.
@@ -534,7 +551,7 @@ Im Rahmen von VWS4LS wurden eine Vielzahl von Arbeitsdokumenten erzeugt, in dene
 
 ![image](https://github.com/user-attachments/assets/b9557137-7aab-46ed-acf4-aa9a72e423db)
 
-<a name="_ref174093885"></a><a name="_toc174347946"></a>*Abbildung 16: VWS4LS Datenmodell. (Quelle: Eigene Darstellung)*
+<a name="_ref174093885"></a><a name="_toc174347946"></a>*Abbildung 16: VWS4LS Datenmodell. *
 
 Dieses Dokument beschreibt den Hergang der im Verlauf des Teilprojekt 1 getroffenen wesentlichen Grundsatzentscheidungen für das Gesamtprojekt VWS4LS sowie die Beiträge zur Verbesserung und Weiterentwicklung der Standards und Technologien für die Kabelbaumindustrie ([Abbildung 17](#_ref174093980)). Dazu gehören insbesondere:
 
@@ -597,25 +614,25 @@ Durch die Bemühungen in diesen Bereichen hat VWS4LS maßgeblich zur Weiterentwi
 
 [Abbildung 6: OPC UA Technologie (Quelle: VDMA)	12](#_toc174347936)
 
-[Abbildung 7: Leitungssatzarchitektur. (Quelle: Eigene Darstellung)	15](#_toc174347937)
+[Abbildung 7: Leitungssatzarchitektur. 	15](#_toc174347937)
 
-[Abbildung 8: WireHarness Data Domains (Quelle: Eigene Darstellung)	17](#_toc174347938)
+[Abbildung 8: WireHarness Data Domains 	17](#_toc174347938)
 
 [Abbildung 9: JobOrder Request \[15\]	18](#_toc174347939)
 
-[Abbildung 10: Nutzung des VEC-Modells (Quelle: Eigene Darstellung)	19](#_toc174347940)
+[Abbildung 10: Nutzung des VEC-Modells 	19](#_toc174347940)
 
 [Abbildung 11: Beispiel VEC Terminal Datamodell (Quelle: VEC Recommendation V2.1)	20](#_toc174347941)
 
 [Abbildung 12: Feature Requests an den VEC	21](#_toc174347942)
 
-[Abbildung 13: Relevante OPC UA Spezifikationen (Quelle: Eigene Darstellung)	21](#_toc174347943)
+[Abbildung 13: Relevante OPC UA Spezifikationen 	21](#_toc174347943)
 
 [Abbildung 14: MachineIdentificationType. (Quelle: OPC UA for Machinery \[14\])	23](#_toc174347944)
 
 [Abbildung 15: MachineryItemState. (Quelle: OPC UA for Machinery \[14\])	23](#_toc174347945)
 
-[Abbildung 16: VWS4LS Datenmodell. (Quelle: Eigene Darstellung)	28](#_toc174347946)
+[Abbildung 16: VWS4LS Datenmodell. 	28](#_toc174347946)
 
 [Abbildung 17: Im Rahmen von VWS4LS erstellte neue Standards	29](#_toc174347947)
 
