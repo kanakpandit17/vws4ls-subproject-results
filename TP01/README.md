@@ -203,7 +203,8 @@ Im nächsten Schritt des Projekts wurde eine Analyse der KBL- und VEC-Datenmodel
 Als Basis für eine Bewertung ist ein grundlegendes Verständnis der Ausrichtung von KBL & VEC, sowie deren Historie und Zusammenhänge notwendig [11]. 
 
 ![image](https://github.com/user-attachments/assets/b37cbf49-6b7e-4e86-948d-1d451d7249d0)
-<a name="_toc171590447"></a></a>*Abbildung 3: KBL & VEC**
+
+<a name="_toc171590447"></a></a>*Abbildung 3: KBL & VEC*
 
 **KBL (Kabelbaumliste):** Die KBL entstand im Zeitraum 1999 – 2005 (erste Veröffentlichung als VDA Recommendation) mit verschiedenen Erweiterungen in den folgenden Jahren. Die Zielsetzung der KBL ist die digitale Beschreibung der Produktspezifikation eines Kabelbaums als Grundlage für den Austausch zwischen OEM und Konfektionär (vgl. [Abbildung 4](#mergeformat)).
 
