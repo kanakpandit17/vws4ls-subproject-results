@@ -5,78 +5,50 @@
 [Zielsetzung](#zielsetzung)
 
 [AP 5.1 - Anforderungsdefinition](#ap-51---anforderungsdefinition)
-
-[5.1.1 Allgemeine Anforderungen](#511-allgemeine-anforderungen)
-
-[5.1.2 Verbundkomponenten für den Kabelbaum (AP5.2)](#512-verbundkomponenten-für-den-kabelbaum-ap52)
-
-[5.1.3 Verbundkomponenten Produktionsmittel (AP5.3)](#513-verbundkomponenten-produktionsmittel-ap53)
-
-[5.1.4 Integration der Verwaltungsschalen (AP5.4)](#514-)
-
-[5.1.5 Mapping zwischen Produktionsressource und Leitungssatz (AP5.5)](#515-)
-
-[5.1.6 Erfassung der Qualitätsdaten (AP5.6)](#516-)
+ - [5.1.1 Allgemeine Anforderungen](#511-allgemeine-anforderungen)
+ - [5.1.2 Verbundkomponenten für den Kabelbaum (AP5.2)](#512-verbundkomponenten-für-den-kabelbaum-ap52)
+ - [5.1.3 Verbundkomponenten Produktionsmittel (AP5.3)](#513-verbundkomponenten-produktionsmittel-ap53)
+ - [5.1.4 Integration der Verwaltungsschalen (AP5.4)](#514-integration-der-verwaltungsschalen-ap54)
+ - [5.1.5 Mapping zwischen Produktionsressource und Leitungssatz (AP5.5)](#515-mapping-zwischen-produktionsressource-und-leitungssatz-ap55)
+ - [5.1.6 Erfassung der Qualitätsdaten (AP5.6)](#516-erfassung-der-qualitätsdaten-ap56)
 
 [AP 5.2 - Verbundkomponente Produkt (Leitungssatz)](#ap-52---verbundkomponente-produkt-leitungssatz)
-
-[5.2.1 Zielsetzung](#521-)
-
-[5.2.2 Ermittelte Beziehungen](#_Toc178820025)
-
-[5.2.3 Typisierte Beziehungen und Merkmalsfestlegungen](#_Toc178820026)
-
-[5.2.4 Umsetzung der ermittelten Beziehungen](#_Toc178820027)
+ - [5.2.1 Zielsetzung](#521-zielsetzung)
+ - [5.2.2 Ermittelte Beziehungen](#522-ermittelte-beziehungen)
+ - [5.2.3 Typisierte Beziehungen und Merkmalsfestlegungen](523-typisierte-beziehungen-und-merkmalsfestlegungen)
+ - [5.2.4 Umsetzung der ermittelten Beziehungen](#524-umsetzung-der-ermittelten-beziehungen)
 
 [AP 5.3 - Verbundkomponente Ressource (Produktionsmittel) und VIBN](#ap-53---verbundkomponente-ressource-produktionsmittel-und-vibn)
-
-[5.3.1 Zielsetzung](#_Toc178820029)
-
-[5.3.2 Beispiel-Ressourcen](#_Toc178820030)
-
-[5.3.3 Betrachtete Use Cases](#_Toc178820031)
-
-[5.3.4 Konzept der Verbundkomponente „Ressource“](#_Toc178820032)
-
-[5.3.5 Virtuelle Inbetriebnahme](#_Toc178820033)
-
-[5.3.6 Ausblick](#536-ausblick)
+ - [5.3.1 Zielsetzung](#531-zielsetzung)
+ - [5.3.2 Beispiel-Ressourcen](#532-beispiel-ressourcen)
+ - [5.3.3 Betrachtete Use Cases](#533-betrachtete-use-cases)
+ - [5.3.4 Konzept der Verbundkomponente „Ressource“](#534-konzept-der-verbundkomponente-ressource)
+ - [5.3.5 Virtuelle Inbetriebnahme](#535-virtuelle-inbetriebnahme)
+ - [5.3.6 Ausblick](#536-ausblick)
 
 [AP 5.4 - Integration der Verwaltungsschalen](#ap-54---integration-der-verwaltungsschalen)
-
-[5.4.1 Zielsetzung](#541-zielsetzung)
-
-[5.4.2 Definition und Umsetzung der Use Cases](#_Toc178820037)
+ - [5.4.1 Zielsetzung](#541-zielsetzung)
+ - [5.4.2 Definition und Umsetzung der Use Cases](#542-definition-und-umsetzung-der-use-cases)
 
 [AP 5.5 - Mapping zwischen Produktionsressource und Leitungssatz](#ap-55---mapping-zwischen-produktionsressource-und-leitungssatz)
-
-[5.5.1 Zielsetzung](#551-zielsetzung)
-
-[5.5.2 Modellierung geforderter Fähigkeiten](#_Toc178820040)
-
-[5.5.3 Modellierung angebotener Fähigkeiten](#_Toc178820041)
-
-[5.5.4 Algorithmus zum Fähigkeitenabgleich](#_Toc178820042)
-
-[5.5.5 Anbindung von Skills](#_Toc178820043)
-
-[5.5.6 Anhang: Liste von Fähigkeiten und zugehörigen Parametern](#_Toc178820044)
+ - [5.5.1 Zielsetzung](#551-zielsetzung)
+ - [5.5.2 Modellierung geforderter Fähigkeiten](#552-modellierung-geforderter-fähigkeiten)
+ - [5.5.3 Modellierung angebotener Fähigkeiten](#553-modellierung-angebotener-fähigkeiten)
+ - [5.5.4 Algorithmus zum Fähigkeitenabgleich](#554-algorithmus-zum-fähigkeitenabgleich)
+ - [5.5.5 Anbindung von Skills](#555-anbindung-von-skills)
+ - [Anhang: Liste von Fähigkeiten und zugehörigen Parametern](#anhang-liste-von-fähigkeiten-und-zugehörigen-parametern)
 
 [AP 5.6 - Erfassung von Qualitätsdaten](#ap-56---erfassung-von-qualit%C3%A4tsdaten)
+ - [5.6.1 Zielsetzung](#561-zielsetzung)
+ - [5.6.2 Relevante Teilmodelle](#562-relevante-teilmodelle)
+ - [5.6.3 Zusammenspiel der verschiedenen Teilmodelle](#563-zusammenspiel-der-verschiedenen-teilmodelle)
+ - [5.6.4 Prototypische Implementierung](#564-prototypische-implementierung)
 
-[5.6.1 Zielsetzung](#561-zielsetzung)
+[Fazit](#Fazit)
 
-[5.6.2 Relevante Teilmodelle](#_Toc178820047)
+[Literaturverzeichnis](#Literaturverzeichnis)
 
-[5.6.3 Zusammenspiel der verschiedenen Teilmodelle](#_Toc178820048)
-
-[5.6.4 Prototypische Implementierung](#_Toc178820049)
-
-[Fazit](#fazit)
-
-[Literaturverzeichnis](#_Toc178820051)
-
-[Abbildungsverzeichnis](#_Toc178820052)
+[Abbildungsverzeichnis](#Abbildungsverzeichnis)
 
 # **TP5 - Integration der Verwaltungsschale**
 ## Zielsetzung
@@ -1296,7 +1268,7 @@ Quelle: AAS-Komponente Tier 2
 
 -   Resultat des "Approved Production Part Process", den der Tier2 durchläuft
 
-### 5.2.2 Typisierte Beziehungen und Merkmalsfestlegungen
+### 5.2.3 Typisierte Beziehungen und Merkmalsfestlegungen
 
 #### Zuordnung von Prozessschritten zu verarbeiteten Komponenten
 
@@ -1362,7 +1334,7 @@ Quelle: AAS-Komponente Tier 2
 
 -   Eigentlich nicht Teil der Verbundkomponente, da lediglich Beziehung zwischen zwei Teilmodellen des gleichen Assets; muss aber trotzdem abgebildet werden
 
-### 5.2.3 Umsetzung der ermittelten Beziehungen
+### 5.2.4 Umsetzung der ermittelten Beziehungen
 
 Um die in Abschnitt 5.2.2 ermittelten Beziehungen im Rahmen der VBK „Produkt“ abbilden zu können, müssen diese im Rahmen der entsprechenden Quell-Verwaltungsschale modelliert werden. Dabei erfordert jede der fünf in Abschnitt 5.2.2 ermittelten Kategorien von Beziehungen eine eigene Art der Umsetzung. Diese sind im Folgenden beschrieben.
 
@@ -2206,7 +2178,7 @@ Parameter:
 
 ## AP 5.6 - Erfassung von Qualitätsdaten
 
-### Zielsetzung
+### 5.6.1 Zielsetzung
 
 Das AP 5.6 befasst sich mit der Erfassung und Auswertung von Qualitätsdaten von bei der Leitungssatz-Produktion ausgeführten Prozessen. Besonderes Augenmerk wurde daraufgelegt, wie eine solche Erfassung und Auswertung vor dem Hintergrund von Verbundkomponenten erfolgen kann: Wie bereits im Rahmen der Beschreibung angebotener Fähigkeiten erläutert (s. AP5.5), führen Fertigungsmaschinen bestimmte Prozesse häufig nicht allein aus, sondern benötigen hierzu spezielle Werkzeuge. Eine Ermittlung von Qualitätsdaten vor diesem Hintergrund ist besonders herausfordernd, da (1) Maschine und Werkzeug oftmals nicht vom gleichen Hersteller stammen und (2) Werkzeuge oftmals passive Komponenten sind, welche über keine eigene Kommunikationsschnittstelle verfügen.
 
@@ -2220,7 +2192,7 @@ Als plakatives Beispiel wurde im Rahmen von AP5.6 davon ausgegangen, dass der Ap
 
 *Abbildung 1-31: Konzept Use Case "Predictive Maintenance"*
 
-### Relevante Teilmodelle
+### 5.6.2 Relevante Teilmodelle
 
 Für die Umsetzung des Use Cases „Predictive Maintenance“ wurde zunächst untersucht, welche bestehenden IDTA-Teilmodelle hierfür genutzt werden können. Dabei wurden die folgenden drei Teilmodelle als relevant eingestuft:
 
@@ -2242,7 +2214,7 @@ Für die Umsetzung des Use Cases „Predictive Maintenance“ wurde zunächst un
 
 [^15]: <https://interopera.de/>
 
-### Zusammenspiel der verschiedenen Teilmodelle
+### 5.6.3 Zusammenspiel der verschiedenen Teilmodelle
 
 Für den betrachteten Use Case spielen die in Abschnitt 5.6.2 beschriebenen Teilmodelle wie folgt zusammen: Die (Verwaltungsschale der) Maschine legt bei Ausführung eines Crimp-Prozesses im Teilmodell „Time Series Data“ des aktuell montierten Werkzeugs einen neuen Eintrag an. Der neue Eintrag enthält dabei einen gegenüber dem letzten Wert inkrementierten Zählerstand.
 
@@ -2256,7 +2228,7 @@ Die folgende Abbildung fasst die beschriebenen Zusammenhänge zusammen und zeigt
 
 *Abbildung 1-32: Zusammenhang der verschiedenen Teilmodelle*
 
-### Prototypische Implementierung
+### 5.6.4 Prototypische Implementierung
 
 Der in den bisherigen Abschnitten dieses Dokuments aufgezeigte Use Case wurde im Rahmen von AP 5.6 prototypisch umgesetzt. Hierzu wurden einerseits die entsprechenden Verwaltungsschalen und Teilmodelle aufgesetzt (vgl. Abbildung 1-32) und per Basyx[^16]-Server bereitgestellt. Darüber hinaus wurden aktive Verwaltungsschalen sowohl für eine Maschine als auch für einen Applikator aufgesetzt, um die in Abbildung 1-31 dargestellte Interaktion umsetzen zu können. Die aktiven Verwaltungsschalen wurden dabei durch zwei Node-RED[^17]-Instanzen umgesetzt, die die in Abschnitt 5.6.3 Algorithmen umsetzen. Abbildung 1-33 zeigt exemplarisch die Node-RED-Umsetzung zur Auswertung des Teilmodells „Predictive Maintenance“ inklusive der Abonnierung von Änderungen am Teilmodell „Predictive Maintenance“ per MQTT sowie der Reaktion auf entsprechende Änderungen durch Anpassen der „Remaining Useful Life“ sowie des Aufrufs eines entsprechenden Handlers bei Eintritt in ein neues „Condition Level“.
 
@@ -2270,7 +2242,7 @@ Die Konfigurationsdateien hierfür finden sich in „[basyx-predictive-maintenan
 
 *Abbildung 1-33: NodeRed-Flow zur Auswertung des Teilmodells "Predictive Maintenance"*
 
-## Fazit
+## <a name="Fazit"></a>Fazit
 
 Im Rahmen von TP5 wurde das Konzept der *Verbundkomponente* genutzt, um vernetzte Verwaltungsschalenstrukturen zu realisieren. Hierzu wurden zunächst sowohl für Produkte als auch Ressourcen relevante Beziehungen zwischen den unterschiedlichen Typen von Verwaltungsschalen analysiert sowie für jede gefundene Beziehungsart entsprechende Modellierungsmöglichkeiten ermittelt bzw. entworfen. Mithilfe dieser Modellierungsmöglichkeiten kann dann ein Netzwerk von verknüpften Verwaltungsschalen erstellt werden, welches vor allem auch die im Rahmen der anderen Teilprojekte entworfenen Verwaltungsschalen und Teilmodelle miteinander in Beziehung setzt. Ein solches Netzwerk wurde exemplarisch unter anderem für das im Rahmen des „PPR-Workshops“ definierte Beispielprodukt erstellt.
 
@@ -2283,9 +2255,10 @@ Der zweite Teil von TP5 hat sich dann mit der Schaffung bzw. dem Aufzeigen von M
 
 Besonderes Augenmerk wurde auf das Thema „Fähigkeitenabgleich“ gelegt. Entsprechende Modellierungsmöglichkeiten und Algorithmen wurden im Rahmen von AP5.5 entworfen, wobei ein besonderer Fokus auf der „gemeinsamen“ Realisierung von Fähigkeiten aus einer Kombination aus Maschine und Werkzeugt lag. Abschließend wurde im Rahmen eines „Predictive Maintenance“-Use Cases gezeigt, wie sich Mehrwerte durch eine Firmen- und VWS-übergreifende Zusammenarbeit generieren lassen.
 
-# Literaturverzeichnis
+# <a name="Literaturverzeichnis"></a>Literaturverzeichnis
 
-|-------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|||
+| :- | :- |
 | [1]   | Plattform Industrie 4.0, „Verwaltungsschale in der Praxis,“ 2021. [Online]. Available: https://industrialdigitaltwin.org/wp-content/uploads/2021/09/08_verwaltungsschale_in_der_praxis_de_2020.pdf.                                                                                       |
 | [2]   | Plattform Industrie 4.0, „Beziehungen zwischen I4.0-Komponenten – Verbundkomponenten und intelligente Produktion,“ 2017. [Online]. Available: https://www.plattform-i40.de/IP/Redaktion/DE/Downloads/Publikation/beziehungen-i40-komponenten.pdf.                                         |
 | [3]   | Industrial Digital Twin Association e.V., „IDTA 02011-1-1 Hierarchical Structures enabling Bills of Material,“ 2024 June. [Online]. Available: https://github.com/admin-shell-io/submodel-templates/tree/main/published/Hierarchical%20Structures%20enabling%20Bills%20of%20Material/1/1. |
@@ -2315,7 +2288,7 @@ Besonderes Augenmerk wurde auf das Thema „Fähigkeitenabgleich“ gelegt. Ents
 | [27]  | ECLASS e.V., „ECLASS-Standard,“ [Online]. Available: https://eclass.eu/eclass-standard/content-suche/search.                                                                                                                                                                              |
 | [28]  | Plattform Industrie 4.0, „Interoperability at Runtime - Exchanging Information via Application Programming Interfaces,“ 2021. [Online]. Available: https://www.plattform-i40.de/IP/Redaktion/EN/Downloads/Publikation/Details_of_the_Asset_Administration_Shell_Part2_V1.pdf.             |
 
-# Abbildungsverzeichnis
+# <a name="Abbildungsverzeichnis"></a>Abbildungsverzeichnis
 
 [*Abbildung 1-1: Ergebnis der Workshop-Reihe*](#_Toc178820053)
 
