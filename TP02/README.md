@@ -1,4 +1,4 @@
-# TP2 - Entwicklungsprozesse des Leitungssatzes
+# TP 2 - Entwicklungsprozesse des Leitungssatzes
 
 **Inhalt**
 
@@ -48,13 +48,13 @@
 
 -- [2.5.6 Abschlussdemonstrator](#256-abschlussdemonstrator)
 
-[2.6 Fazit](#26-fazit)
+[Fazit](#fazit)
 
 [Literaturverzeichnis](#literaturverzeichnis)
 
 [Abbildungsverzeichnis](#abbildungsverzeichnis)
 
-# TP2 - Entwicklungsprozesse des Leitungssatzes
+# 1. Zielsetzung
 
 Im Teilprojekt 2 "Entwicklungsprozesse des Leitungssatzes“ wurde die Entstehung des Digitalen Zwillings entlang der Anwendungsfälle analysiert, um die Abläufe auf die Verwaltungsschale und die Erzeugung interoperabler Daten und Formate für den gesamten weiteren Lebenszyklus auszurichten. Das Teilprojekt wurde in folgende Arbeitspakete aufgeteilt, deren Resultate hier zusammenfassend erläutert werden:
 
@@ -466,7 +466,7 @@ Das im Rahmen von AP 2.5 modellierte System wurde auf den Abschlussdemonstrator 
 3.  **Erfassung der Resultate**: Die durchgeführte Tests ermöglicht wertvolle Einblicke in die Funktionalität der Verwaltungsschale und der Teilmodelle im Zusammenspiel. Die Ergebnisse zeigten, wie gut die Teilmodelle integriert werden konnten, und identifizierten mögliche Schwachstellen oder Optimierungspotenziale.
 4.  **Optimierungsmaßnahmen**: Auf Basis der Testergebnisse wurden Anpassungen und Verbesserungen am System vorgenommen. Diese Maßnahmen dienten dazu, die Effizienz der Integration zu erhöhen und sicherzustellen, dass alle Komponenten nahtlos zusammenarbeiten.
 
-## 2.6 Fazit
+## Fazit
 
 Das übergeordnete Ziel des gesamten Vorhabens war es, eine dezentrale Datenhaltung zu ermöglichen, während gleichzeitig eine Aggregation der Komponentenverwaltungsschalen erreicht wird. Durch die erfolgreiche Umsetzung konnte dieses Ziel weitgehend realisiert werden. Die wesentlichen Ergebnisse umfassen:
 
