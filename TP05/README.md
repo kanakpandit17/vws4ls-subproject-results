@@ -18,7 +18,7 @@
 
 [1.1.6 Erfassung der Qualitätsdaten (AP5.6)](#_Toc178820022)
 
-[AP 5.2 - Verbundkomponente Produkt (Leitungssatz)](#_Toc178820023)
+[AP 5.2 - Verbundkomponente Produkt (Leitungssatz)](#ap-52---verbundkomponente-produkt-leitungssatz)
 
 [1.2.1 Zielsetzung](#_Toc178820024)
 
@@ -85,12 +85,12 @@ Im Teilprojekt 5 "Integration von Verwaltungsschalen (Verbundkomponente)" wurden
 
 Das Teilprojekt wurde in folgende Arbeitspakete aufgeteilt, deren Resultate in diesem Dokument zusammenfassend erläutert werden:
 
--   AP 5.1 – Anforderungsdefinition
--   AP 5.2 – Verbundkomponente Produkt (Leitungssatz)
+-   [AP 5.1 - Anforderungsdefinition](#ap-51---anforderungsdefinition)
+-   [AP 5.2 - Verbundkomponente Produkt (Leitungssatz)](#ap-52---verbundkomponente-produkt-leitungssatz)
 -   AP 5.3 – Verbundkomponente Ressource (Produktionsmittel) und VIBN
 -   AP 5.4 – Integration der Verwaltungsschalen
 -   AP 5.5 – Mapping zwischen Produktionsressource und Leitungssatz
--   AP 5.6 – Erfassung von Qualitätsdaten
+-   [AP 5.6 - Erfassung von Qualitätsdaten](#ap-56---erfassung-von-qualit%C3%A4tsdaten)
 
 ## AP 5.1 - Anforderungsdefinition
 
@@ -98,11 +98,11 @@ Im AP 5.1 wurden die Anforderungen an das TP5 „Integration von Verwaltungsscha
 
 Die Anforderungen wurden auf Basis einer Workshop-Reihe ermittelt, um ein gemeinsames Verständnis für den Fokus und Inhalt von TP5 zu erlangen. Das Ziel der Anforderungen ist es, sicherzustellen, dass das Teilprojekt gemäß den Bedürfnissen und Erwartungen aller Beteiligten geplant und umgesetzt wird. Sie sollen als Leitfaden für das gesamte Teilprojekt dienen und eine erfolgreiche Umsetzung gewährleisten.
 
-Die Workshops wurden auf Basis des PPR-Konzepts durchgeführt, um sicherzustellen, dass keine für die Integration von Verwaltungsschalen relevanten Beziehungen und Anforderungen übersehen werden. Das Ergebnis der Workshops ist Abbildung 12 in zu sehen.
+Die Workshops wurden auf Basis des PPR-Konzepts durchgeführt, um sicherzustellen, dass keine für die Integration von Verwaltungsschalen relevanten Beziehungen und Anforderungen übersehen werden. Das Ergebnis der Workshops ist [Abbildung 1-1](#Abbildung-1-1) in zu sehen.
 
-![Ein Bild, das Text, Screenshot, Diagramm, Design enthält. Automatisch generierte Beschreibung](media/4ce005b230d468501f0775469675213d.png)
+![image](https://github.com/user-attachments/assets/bce32381-c038-4483-83d2-75d362df7a45)
 
-*Abbildung 11: Ergebnis der Workshop-Reihe*
+<a name="Abbildung-1-1"></a>*Abbildung 1-1: Ergebnis der Workshop-Reihe*
 
 Die Workshop-Ergebnisse wurden anschließend in einem strukturierten Prozess in Anforderungen überführt und den jeweiligen Arbeitspaketen innerhalb von TP5 zugeordnet. Zu jeder Anforderung wurden darüber hinaus sogenannte „Definitions of Done“ (DoDs) formuliert, die die Überprüfbarkeit der Erfüllung einer Anforderung gewährleisten. Einen weiteren wichtigen Punkt stellte die Identifikation von Schnittstellen zu anderen Teilprojekten bzw. Arbeitsgruppen statt. Da im Rahmen von TP5 Verwaltungsschalen vorgelagerter Teilprojekte integriert werden, beschreiben diese Schnittstellen vor allem Randbedingungen an die Arbeit dieser anderen TPs.
 
@@ -513,11 +513,11 @@ Es ist zu definieren, wie mit Chargen umzugehen ist, bei denen nicht jedes einze
 
 Das AP 5.2 behandelt die Ableitung und Definition der Verbundkomponente (VBK) „Produkt“, d.h. des Leitungssatzes.
 
-Grundlage für die VBK sind dabei zunächst die relevanten Beziehungen zwischen den beteiligten Verwaltungsschalen bzw. zwischen Elementen dieser Verwaltungsschalen. Diese Beziehungen wurden im Rahmen von AP5.2 ermittelt, wobei die Analyse notwendiger Beziehungen von den Ergebnissen des PPR-Workshops ausging, in dem relevante Assets und Verwaltungsschalen (unter anderem) für die Abbildung des Leitungssatzes analysiert wurden. Abbildung 12 zeigt eine Übersicht über die relevanten Verwaltungsschalen, welche zur Analyse der Beziehungen herangezogen wurden.
+Grundlage für die VBK sind dabei zunächst die relevanten Beziehungen zwischen den beteiligten Verwaltungsschalen bzw. zwischen Elementen dieser Verwaltungsschalen. Diese Beziehungen wurden im Rahmen von AP5.2 ermittelt, wobei die Analyse notwendiger Beziehungen von den Ergebnissen des PPR-Workshops ausging, in dem relevante Assets und Verwaltungsschalen (unter anderem) für die Abbildung des Leitungssatzes analysiert wurden. [Abbildung 1-2](#Abbildung-1-2)  zeigt eine Übersicht über die relevanten Verwaltungsschalen, welche zur Analyse der Beziehungen herangezogen wurden.
 
-![Ein Bild, das Text, Screenshot, Design enthält. Automatisch generierte Beschreibung](media/58661e7803f9457cb3122057d48946ae.png)
+![image](https://github.com/user-attachments/assets/732b3315-d2ea-409f-95e3-15e0ac7e69fe)
 
-*Abbildung 12: Unterschiedliche Arten von Verwaltungsschalen als Teil der VBK „Produkt“*
+<a name="Abbildung-1-2"></a>*Abbildung 1-2: Unterschiedliche Arten von Verwaltungsschalen als Teil der VBK „Produkt“*
 
 Die verschiedenen Beziehungen zwischen den oben abgebildeten Verwaltungsschalen wurden klassifiziert (Quelle, Ziel, Kategorie, Kardinalität) und mit je einem Use Case beschrieben. Dieser Use Case zeigt jeweils auf, warum es sinnvoll ist, die entsprechende Beziehung explizit im Rahmen der VBK „Produkt“ abzubilden.
 
@@ -525,7 +525,7 @@ Abschnitt 1.2.2 führt die einzelnen Beziehungen inklusive Klassifizierung sowie
 
 ### Ermittelte Beziehungen
 
-In diesem Abschnitt werden die einzelnen Beziehungen inklusive Klassifizierung sowie zugeordnetem Use Case in Bezug auf Abbildung 12 aufgeführt.
+In diesem Abschnitt werden die einzelnen Beziehungen inklusive Klassifizierung sowie zugeordnetem Use Case in Bezug auf Abbildung 1--2 aufgeführt.
 
 #### Hierarchische Beziehungen
 
@@ -1372,11 +1372,11 @@ Zur Abbildung von hierarchischen Beziehungen bietet sich das Teilmodell „Bill 
 
 [^1]: <https://industrialdigitaltwin.org/wp-content/uploads/2023/04/IDTA-02011-1-0_Submodel_HierarchicalStructuresEnablingBoM.pdf>
 
-Abbildung 13 zeigt exemplarisch ein BOM-Modell, welche die Beziehungen „Leitungssatz enthält Komponenten“ umsetzt.
+Abbildung 1--3 zeigt exemplarisch ein BOM-Modell, welche die Beziehungen „Leitungssatz enthält Komponenten“ umsetzt.
 
-![Ein Bild, das Screenshot, Diagramm, Multimedia-Software, Design enthält. Automatisch generierte Beschreibung](media/e0c924d7ae58e7ac790993231073c1a3.png)
+![image](https://github.com/user-attachments/assets/f8abcf91-3dde-4181-974c-eae47db6bbf8)
 
-*Abbildung 13: Umsetzung hierarchischer Beziehungen mit Hilfe des BOM-Teilmodells*
+*Abbildung 1-3: Umsetzung hierarchischer Beziehungen mit Hilfe des BOM-Teilmodells*
 
 Unterschiedliche Hierarchien sollen in unterschiedlichen BOM-Teilmodellen umgesetzt werden, um für jedes Teilmodell einen klaren Fokus herzustellen. Dies bedeutet für den Leitungssatz bei einem Tier1 bspw., dass unterschiedliche BOM-Teilmodelle für die Komponentensicht (aus welchen Einzelkomponenten setzt sich der Leitungssatz zusammen), die Modulsicht (welche bestellbaren Module definiert das Produktmodell) sowie die Fertigungs-BOM (aus welchen produzierbaren Halbfabrikaten wird der Leitungssatz bzw. ein einzelnes bestellbares Modul gefertigt) existieren.
 
@@ -1390,11 +1390,11 @@ Typ-Instanz-Beziehungen können in der Verwaltungsschale nativ mit Hilfe der „
 
 Die Notwendigkeit der expliziten Modellierung von Ableitungs- bzw. Entsprechungsbeziehungen ergibt sich aus den Tatsachen, dass das gleiche Asset in der Regel bei unterschiedlichen Firmen/Tiers unter unterschiedlichen Bezeichnern/Sachnummern firmiert. Darüber hinaus kann es notwendig sein, dass jede Firma zu einem Asset (in ihrer eigenen Verwaltungsschale) eigene Daten wie z.B. spezifische Grenzwerte oder Verarbeitungsspezifikationen hinterlegen möchte.
 
-Für die Modellierung solcher Ableitungs- bzw. Entsprechungsbeziehungen bietet Version 3 des Metamodells der Verwaltungsschale2 das Konzept der „SpecificAssetID“ (s. Abbildung 14) an. Mit solchen „specific asset IDs“ können für ein Asset neben der eigentlichen assetID („GlobalAssetID“), die einem bestimmten Format unterliegen muss (IRI/IRDI), beliebig viele weitere Bezeichner ergänzt werden. Solche Bezeichner können dabei z.B. die Sachnummern sein, unter denen das Asset bei anderen Firmen geführt wird.
+Für die Modellierung solcher Ableitungs- bzw. Entsprechungsbeziehungen bietet Version 3 des Metamodells der Verwaltungsschale2 das Konzept der „SpecificAssetID“ (s. Abbildung 1-4) an. Mit solchen „specific asset IDs“ können für ein Asset neben der eigentlichen assetID („GlobalAssetID“), die einem bestimmten Format unterliegen muss (IRI/IRDI), beliebig viele weitere Bezeichner ergänzt werden. Solche Bezeichner können dabei z.B. die Sachnummern sein, unter denen das Asset bei anderen Firmen geführt wird.
 
-![Ein Bild, das Text, Screenshot, Schrift, Zahl enthält. Automatisch generierte Beschreibung](media/ba8293d1f07080f60487e26cd184c8c3.png)
+![image](https://github.com/user-attachments/assets/d29eda21-0729-4025-949b-c5c8970e8aa1)
 
-*Abbildung 14: Konzept der "Specific Asset ID" aus dem Metamodell der VWS (s. Abschnitt 5.3.4)*
+*Abbildung 1-4: Konzept der "Specific Asset ID" aus dem Metamodell der VWS (s. Abschnitt 5.3.4)*
 
 Für die konkrete Umsetzung bedeutet dies, dass
 
@@ -1403,11 +1403,11 @@ Für die konkrete Umsetzung bedeutet dies, dass
 -   das Attribut „value“ auf die entsprechende ID/Sachnummer gesetzt wird und
 -   (optional) mit Hilfe der „externalSubjectId“ explizit die referenzierte Firma ausgewiesen wird (z.B. über ihre URL).
 
-Abbildung 15 zeigt die exemplarische Umsetzung anhand einer Verwaltungsschale für einen Kontakt „MLK 1,2“ bei einem Tier1, die auf die entsprechenden Sachnummern bei zwei OEMs verweist.
+Abbildung 1-5 zeigt die exemplarische Umsetzung anhand einer Verwaltungsschale für einen Kontakt „MLK 1,2“ bei einem Tier1, die auf die entsprechenden Sachnummern bei zwei OEMs verweist.
 
-![Ein Bild, das Text, Screenshot, Zahl, Schrift enthält. Automatisch generierte Beschreibung](media/82ae87051e6badb07b252a2642020879.png)
+![image](https://github.com/user-attachments/assets/c24292fa-d500-438b-9662-422af2b2c31d)
 
-*Abbildung 15: Exemplarische Umsetzung des Sachnummern-Mapping mittels „specificAssetId“*
+*Abbildung 1-5: Exemplarische Umsetzung des Sachnummern-Mapping mittels „specificAssetId“*
 
 Neben solchen „globalen“ Äquivalenzbeziehungen zwischen Assets kann es auch noch „lokale“ Äquivalenzbeziehungen geben, die bspw. eine Äquivalenz zwischen Entitäten unterschiedlicher BOM-Teilmodelle ausdrücken. Ein Beispiel hierfür stellt die Äquivalenz zweier Leitungs-Instanzen in unterschiedlichen Halbfabrikaten dar. Solche Beziehungen lassen sich mit Hilfe von „sameAs“-Beziehungen aus dem BOM-Teilmodell beschreiben.
 
@@ -1417,11 +1417,11 @@ Die Modellierung von Freigabe-Listen ist rein mit Elementen des Metamodells der 
 
 Grundlage des Teilmodells ist, dass jede Freigabe für das Asset, welches die aktuelle Verwaltungsschale beschreibt, in einer eigenen SubmodelElementCollection beschrieben wird. Kern dieser Freigabe ist ein Verweis auf das freigegebene Asset (realisiert über eine entsprechende Referenz). Ergänzt wird diese Beschreibung der Freigabe um Metadaten (Zeitpunkt der Freigabe, Stand der Freigabe sowie Informationen über die freigebende Person). Darüber hinaus können für eine Freigabe beliebig viele Bedingungen bzw. Einschränkungen in Form sog. *ConditionSets* angegeben werden. Eine typische Einschränkung ist bspw., dass ein Produkt nicht mehr für Neuentwicklungen freigegeben ist, weil es ausläuft. Weitere Einschränkungen können bspw. länderspezifischer oder zeitlicher Natur sein.
 
-Abbildung 16 zeigt die gesamte Struktur des Teilmodells.
+Abbildung 1-6 zeigt die gesamte Struktur des Teilmodells.
 
-![Ein Bild, das Text, Screenshot, Schrift, Zahl enthält. Automatisch generierte Beschreibung](media/e7c5dfdae5bf2f65301beb6f9eb5a69a.png)
+![image](https://github.com/user-attachments/assets/ea53fe17-bc8e-499f-a2c4-8e8ff2531e19)
 
-*Abbildung 16: Teilmodell "Freigabeliste"*
+*Abbildung 1-6: Teilmodell "Freigabeliste"*
 
 #### Typisierte Beziehungen und Merkmalsfestlegungen
 
@@ -1449,17 +1449,17 @@ Im Rahmen von AP5.3 wurden insgesamt die folgenden Use Cases definiert:
 
 Verbundkomponenten betrachten den Aufbau sowie die Struktur zusammengesetzter Systeme auf Basis von Teilsystemen und Komponenten. Um die relevanten, mit Hilfe der Verwaltungsschale nachzubildenden Strukturen zu ermitteln, lohnt zunächst eine Analyse typischer, zu betrachtender Systeme. Zu diesem Zweck wurden zwei repräsentative Vertreter von Produktionsmitteln in der Domäne „Leitungssatz“ ausgewählt, die im Folgenden kurz beschrieben werden sollen.
 
-![Ein Bild, das Haushaltsgerät, Maschine enthält. Automatisch generierte Beschreibung](media/bb39a9d1097affcba7fbc71c8ce16618.png)![Ein Bild, das Maschine, Autoteile, Motor, Silber enthält. Automatisch generierte Beschreibung](media/57e8ddf99baf530acaaa26bda5cf74ed.jpeg)
+![image](https://github.com/user-attachments/assets/41ea263e-0002-4f5e-b3f4-c41d45cfb64a)
 
-*Abbildung 17: Beispiel-Ressourcen 2 – Wezag UP 150 (links) und Komax Sigma 688 (rechts)*
+*Abbildung 1-7: Beispiel-Ressourcen 2 – Wezag UP 150 (links) und Komax Sigma 688 (rechts)*
 
-Als erstes Beispiel wurde die halbautomatische hydraulische Crimpmaschine *UP 150* von Wezag ausgewählt (s. Abbildung 17, links). Diese kann per Fußschalter von einem Mitarbeiter bedient werden und Kontakte bis zu einem relativ großen Querschnitt verarbeiten. Die Maschine an sich realisiert dabei im Prinzip lediglich einen Pressvorgang – erst durch Einsatz eines Werkzeugs (Crimpgesenk) sowie eines zugehörigen Adapters wird durch den Pressvorgang ein Crimpvorgang. Crimpvorgänge können bei der Wezag UP 150 zusätzlich durch eine automatische Crimpkraftanalyse begleitet werden, durch die bspw. auf die Qualität bzw. sdas ordnungsgemäße Ausführen des Crimp-Vorgangs geschlossen werden kann.
+Als erstes Beispiel wurde die halbautomatische hydraulische Crimpmaschine *UP 150* von Wezag ausgewählt (s. Abbildung 1-7, links). Diese kann per Fußschalter von einem Mitarbeiter bedient werden und Kontakte bis zu einem relativ großen Querschnitt verarbeiten. Die Maschine an sich realisiert dabei im Prinzip lediglich einen Pressvorgang – erst durch Einsatz eines Werkzeugs (Crimpgesenk) sowie eines zugehörigen Adapters wird durch den Pressvorgang ein Crimpvorgang. Crimpvorgänge können bei der Wezag UP 150 zusätzlich durch eine automatische Crimpkraftanalyse begleitet werden, durch die bspw. auf die Qualität bzw. sdas ordnungsgemäße Ausführen des Crimp-Vorgangs geschlossen werden kann.
 
-Das zweite untersuchte Beispiel stellt die vollautomatische Sigma 688 der Firma Komax dar (s. Abbildung 17, rechts). Je nach enthaltenen Modulen kann sie unterschiedliche Fähigkeiten wie z.B. Schneiden, Abisolieren oder Crimpen realisieren und dabei vollautomatisiert komplette Chargen von Produkten herstellen. Eine Übersicht über mögliche Fähigkeiten ist in Abbildung 18 dargestellt. Zusätzlich zu den in Abbildung 18 dargestellten Fähigkeiten ergeben sich je nach verbauten Modulen noch zugehörige Prüf-/Analysefähigkeiten. So kann z.B. überprüft werden, ob bei einem Abisoliervorgang die Leitung beschädigt wurde. Analog zur oben beschriebenen UP 150 benötigt auch die Sigma 688 für das Crimpen ein entsprechendes Werkzeug, welches hier *Applikator* genannt wird.
+Das zweite untersuchte Beispiel stellt die vollautomatische Sigma 688 der Firma Komax dar (s. Abbildung 1-7, rechts). Je nach enthaltenen Modulen kann sie unterschiedliche Fähigkeiten wie z.B. Schneiden, Abisolieren oder Crimpen realisieren und dabei vollautomatisiert komplette Chargen von Produkten herstellen. Eine Übersicht über mögliche Fähigkeiten ist in Abbildung 1-8 dargestellt. Zusätzlich zu den in Abbildung 1-8 dargestellten Fähigkeiten ergeben sich je nach verbauten Modulen noch zugehörige Prüf-/Analysefähigkeiten. So kann z.B. überprüft werden, ob bei einem Abisoliervorgang die Leitung beschädigt wurde. Analog zur oben beschriebenen UP 150 benötigt auch die Sigma 688 für das Crimpen ein entsprechendes Werkzeug, welches hier *Applikator* genannt wird.
 
-![Ein Bild, das Text, Screenshot, Schrift, Zahl enthält. Automatisch generierte Beschreibung](media/ca80d365eb73089cc4d20f0205cfdb9c.png)
+![image](https://github.com/user-attachments/assets/94b181bb-9698-4bfe-a654-32aac68632ed)
 
-*Abbildung 18: Übersicht möglicher Fähigkeiten Komax Sigma 688*
+*Abbildung 1-8: Übersicht möglicher Fähigkeiten Komax Sigma 688*
 
 Für beide Maschinen gilt, dass diese für den Kunden prinzipiell eine Blackbox darstellen – der innere Aufbau ist für den Kunden folglich – mit Ausnahme der Möglichkeiten zum Montieren spezieller Werkzeuge – nicht ersichtlich und auch nicht relevant. Dies bezieht sich vor allem bei der Sigma 688 auch auf die verbauten Module: Diese werden in aller Regel einmal bei der Bestellung der Maschine ausgewählt und sind dann – für den Kunden – fest verbaut und Teil der Maschine.
 
@@ -1483,11 +1483,11 @@ Einen verwandten und doch erweiterten Use Case stellt die Bestellung einer neuen
 
 ### Konzept der Verbundkomponente „Ressource“
 
-Die in Abschnitt 1.3.3 betrachteten Use Cases fokussieren auf die Auswertung von durch eine Maschine im Verbund mit einem Werkzeug bereitgestellte Fähigkeiten. Abbildung 19 illustriert dies anhand einer Einordnung in den PPR-Kontext.
+Die in Abschnitt 1.3.3 betrachteten Use Cases fokussieren auf die Auswertung von durch eine Maschine im Verbund mit einem Werkzeug bereitgestellte Fähigkeiten. Abbildung 1-9 illustriert dies anhand einer Einordnung in den PPR-Kontext.
 
-![Ein Bild, das Text, Screenshot, Schrift, Design enthält. Automatisch generierte Beschreibung](media/f9394fe69bea0fe7ebc7c5ae31691232.png)
+![image](https://github.com/user-attachments/assets/f72bab86-4037-4b46-a67f-2c9ceb1d003c)
 
-*Abbildung 19: Einordnung in das PPR-Modell*
+*Abbildung 1-9: Einordnung in das PPR-Modell*
 
 Für die Bewertung, ob eine Maschine eine bestimmte Fähigkeit ausführen kann, spielen – neben der grundsätzlichen Eignung der Maschine für die Fähigkeit – im Wesentlichen zwei Aspekte eine Rolle:
 
@@ -1496,33 +1496,33 @@ Für die Bewertung, ob eine Maschine eine bestimmte Fähigkeit ausführen kann, 
 
 Entsprechend sind diese beiden Aspekte im Rahmen der Verbundkomponente „Ressource“ abzubilden.
 
-Für die Auswahl eines passenden Werkzeugs ist dessen formale *Freigabe* das entscheidende Kriterium. So werden z.B. am Beispiel *Crimpen* für jedes Kontaktteil durch dessen Hersteller ein oder mehrere zu nutzende Werkzeuge explizit freigegeben und damit vorgegeben. Diese Beziehungen lassen sich durch das bereits im Rahmen von AP5.2 entwickelte Teilmodell „[Freigabeliste](https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP05/Beispieldaten/SM_Template_ApprovalList.aasx)“ abbilden. Basierend auf „[Sigma688_ApprovedApplicators_Submodel_withoutFiles.aasx](https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP05/Beispieldaten/Sigma688_with_ApprovedApplicators_Submodel_without_files.aasx)“[^3] zeigt Abbildung 110 dies exemplarisch anhand des Kontaktteils MLK 14,5 der Firma Kostal: Abgebildet sind hier die Freigaben für zwei unterschiedliche Werkzeuge – zum einen ein Applikator der Firma Hanke/Demirel und zum anderen eine Hand-Crimpzange der Firma EHC.
+Für die Auswahl eines passenden Werkzeugs ist dessen formale *Freigabe* das entscheidende Kriterium. So werden z.B. am Beispiel *Crimpen* für jedes Kontaktteil durch dessen Hersteller ein oder mehrere zu nutzende Werkzeuge explizit freigegeben und damit vorgegeben. Diese Beziehungen lassen sich durch das bereits im Rahmen von AP5.2 entwickelte Teilmodell „[Freigabeliste](https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP05/Beispieldaten/SM_Template_ApprovalList.aasx)“ abbilden. Basierend auf „[Sigma688_ApprovedApplicators_Submodel_withoutFiles.aasx](https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP05/Beispieldaten/Sigma688_with_ApprovedApplicators_Submodel_without_files.aasx)“[^3] zeigt Abbildung 1-10 dies exemplarisch anhand des Kontaktteils MLK 14,5 der Firma Kostal: Abgebildet sind hier die Freigaben für zwei unterschiedliche Werkzeuge – zum einen ein Applikator der Firma Hanke/Demirel und zum anderen eine Hand-Crimpzange der Firma EHC.
 
 [^3]: <https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP05/Beispieldaten/Sigma688_ApprovedApplicators_Submodel_withoutFiles.aasx>
 
 Der zweite Aspekt – die Kompatibilität eines Werkzeugs mit einer Maschine evtl. unter Nutzung eines entsprechenden Applikators – lässt sich in zwei Teil-Aspekte aufteilen:
 
-Die aktuelle Maschinenstruktur, die eine Aussage über aktuell montierte Werkzeuge und damit über die aktuell, ohne Umbau zu realisierenden Fähigkeiten zulässt, lässt sich einfach mit Hilfe des bereits standardisierten Teilmodells „[IDTA 02011: Hierarchical Structures enabling Bills of Material](https://github.com/admin-shell-io/submodel-templates/tree/main/published/Hierarchical%20Structures%20enabling%20Bills%20of%20Material/1/1)“ (BOM) [3] abbilden. Abbildung 110 zeigt dies Anhand der Maschine *Sigma 688*, welche mit einem Crimp-Modul *C1340* ausgestattet ist, in welchem wiederum ein Werkzeug (Applikator) *Schäfer 20* montiert ist. Ob das Crimp-Modul explizit mitmodelliert wird oder nicht, ist dabei abhängig vom konkreten umzusetzenden Use Case (vgl. Abschnitt 1.3.3).
+Die aktuelle Maschinenstruktur, die eine Aussage über aktuell montierte Werkzeuge und damit über die aktuell, ohne Umbau zu realisierenden Fähigkeiten zulässt, lässt sich einfach mit Hilfe des bereits standardisierten Teilmodells „[IDTA 02011: Hierarchical Structures enabling Bills of Material](https://github.com/admin-shell-io/submodel-templates/tree/main/published/Hierarchical%20Structures%20enabling%20Bills%20of%20Material/1/1)“ (BOM) [3] abbilden. Abbildung 1-10 zeigt dies Anhand der Maschine *Sigma 688*, welche mit einem Crimp-Modul *C1340* ausgestattet ist, in welchem wiederum ein Werkzeug (Applikator) *Schäfer 20* montiert ist. Ob das Crimp-Modul explizit mitmodelliert wird oder nicht, ist dabei abhängig vom konkreten umzusetzenden Use Case (vgl. Abschnitt 1.3.3).
 
-Die Abbildung der theoretisch abbildbaren Maschinenstrukturen ist dagegen komplexer – vor allem da sich je nach konkretem Beispiel eine Vielzahl an möglichen Kombinationen ergeben können. Eine Nutzung des BOM-Teilmodells, wie für den ersten Teilaspekt vorgeschlagen, ist dabei aufgrund des hohen Modellierungsaufwands nicht sinnvoll, wie in Abbildung 112 zu sehen ist: So muss bei Einführung eines neuen Crimpmoduls explizit jeder kompatible Applikator angegeben werden bzw. bei Einführung eines neuen Applikators jedes kompatible Cirmp-Modul. Stattdessen ist eine implizite Modellierung sinnvoll, die auf einer Abbildung der – bspw. zwischen Modulen und Applikatoren genutzten – Schnittstellen basiert. Eine solche Modellierung lässt sich bspw. auf Basis der „*specificAssetId*“ umsetzen, die bereits im Rahmen von AP5.2 genutzt wurde.
+Die Abbildung der theoretisch abbildbaren Maschinenstrukturen ist dagegen komplexer – vor allem da sich je nach konkretem Beispiel eine Vielzahl an möglichen Kombinationen ergeben können. Eine Nutzung des BOM-Teilmodells, wie für den ersten Teilaspekt vorgeschlagen, ist dabei aufgrund des hohen Modellierungsaufwands nicht sinnvoll, wie in Abbildung 1-12 zu sehen ist: So muss bei Einführung eines neuen Crimpmoduls explizit jeder kompatible Applikator angegeben werden bzw. bei Einführung eines neuen Applikators jedes kompatible Cirmp-Modul. Stattdessen ist eine implizite Modellierung sinnvoll, die auf einer Abbildung der – bspw. zwischen Modulen und Applikatoren genutzten – Schnittstellen basiert. Eine solche Modellierung lässt sich bspw. auf Basis der „*specificAssetId*“ umsetzen, die bereits im Rahmen von AP5.2 genutzt wurde.
 
-![Ein Bild, das Text, Screenshot, Software, Zahl enthält. Automatisch generierte Beschreibung](media/cd7b2e6e6be99fd6f5d76faf0e09ca1d.png)
+![image](https://github.com/user-attachments/assets/9b6f6947-1b0d-48ef-84e3-c9e0228b3266)
 
-*Abbildung 110: Modellierung von Werkzeug-Freigaben am Beispiel Crimp-Kontakt*
+*Abbildung 1-10: Modellierung von Werkzeug-Freigaben am Beispiel Crimp-Kontakt*
 
 ![Ein Bild, das Text, Screenshot, Schrift, Zahl enthält. Automatisch generierte Beschreibung](media/77a0bc495ab8ab7d3dcec8e987a14e5b.png)
 
-*Abbildung 111: Abbildung der aktuellen Maschinenstruktur mit Hilfe des BOM-Teilmodells*
+*Abbildung 1-11: Abbildung der aktuellen Maschinenstruktur mit Hilfe des BOM-Teilmodells*
 
 ![Ein Bild, das Text, Screenshot, Schrift, Zahl enthält. Automatisch generierte Beschreibung](media/58e2ee5b08e2dbf8d3413a33e702e4df.png)
 
-*Abbildung 112: Abbildung potenzieller Maschinenstrukturen mit Hilfe des BOM-Teilmodells*
+*Abbildung 1-12: Abbildung potenzieller Maschinenstrukturen mit Hilfe des BOM-Teilmodells*
 
-Abbildung 113 zeigt eine mögliche Implementierung, wo die Kompatibilität sowohl zwischen Maschinen und Modulen als auch zwischen Modulen und Werkzeugen mit Hilfe von specificAssetIds „offered/requiredSlot“ abgebildet wird. Die Einführung bspw. eines neuen Werkzeugs gestaltet sich so extrem einfach, da lediglich für das Werkzeug der entsprechende „requiredSlot“ angegeben werden muss. Eine Anpassung der Verwaltungsschalen der verschiedenen Module ist nicht notwendig.
+Abbildung 1-13 zeigt eine mögliche Implementierung, wo die Kompatibilität sowohl zwischen Maschinen und Modulen als auch zwischen Modulen und Werkzeugen mit Hilfe von specificAssetIds „offered/requiredSlot“ abgebildet wird. Die Einführung bspw. eines neuen Werkzeugs gestaltet sich so extrem einfach, da lediglich für das Werkzeug der entsprechende „requiredSlot“ angegeben werden muss. Eine Anpassung der Verwaltungsschalen der verschiedenen Module ist nicht notwendig.
 
 ![Ein Bild, das Text, Software, Webseite, Computersymbol enthält. Automatisch generierte Beschreibung](media/590903961197439f4a03be99374036f8.png)
 
-*Abbildung 113: Modellierung potenzieller Maschinenstrukturen per "specificAssetId"*
+*Abbildung 1-13: Modellierung potenzieller Maschinenstrukturen per "specificAssetId"*
 
 ### Virtuelle Inbetriebnahme
 
@@ -1544,13 +1544,13 @@ Der SSP ist ein werkzeugunabhängiger Standard zur Definition kompletter Systeme
 
 #### Beispiel-Ressourcen
 
-Als exemplarisches Beispiel für die virtuelle Inbetriebnahme wurde das in Abbildung 114 dargestellte Prüfmodul von Komax Testing verwendet [(„VWS_Komax_Pruefmodul_ohne_Dateien.aasx“[^7]).](https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP05/Beispieldaten/VWS_Komax_Pruefmodul_ohne_Dateien.aasx)
+Als exemplarisches Beispiel für die virtuelle Inbetriebnahme wurde das in Abbildung 1-14 dargestellte Prüfmodul von Komax Testing verwendet [(„VWS_Komax_Pruefmodul_ohne_Dateien.aasx“[^7]).](https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP05/Beispieldaten/VWS_Komax_Pruefmodul_ohne_Dateien.aasx)
 
 [^7]: <https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP05/Beispieldaten/VWS_Komax_Pruefmodul_ohne_Dateien.aasx>
 
 ![A 3d model of a machine Description automatically generated](media/81fed18bcb205aa779da1c80c7634565.png)
 
-*Abbildung 114: Prüfmodul mit Gegenstecker (Komax Testing)*
+*Abbildung 1-14: Prüfmodul mit Gegenstecker (Komax Testing)*
 
 Prüfmodule sind mechatronische Baugruppen, die individuell für jeden Stecker und nach Anforderung angefertigt und modular in einer Prüfmaschine eingebaut werden, um vollständige Leitungssätze zu kontaktieren und prüfen. Das Prüfmodul führt diverse Bewegungen aus, die mittels pneumatischer Antriebseinheiten (bestehend aus Ventilen und Zylindern) angetrieben werden. Hierzu gehören:
 
@@ -1560,11 +1560,11 @@ Prüfmodule sind mechatronische Baugruppen, die individuell für jeden Stecker u
 
 Für diese Baugruppe wurden im Design pneumatische Einheiten von Festo eingesetzt, welche die Bewegungen ausführen.
 
-Mittels „specificAssetId“ (vgl. D5.3 Verbundkomponente Ressource (Produktionsmittel)) verweist die Verwaltungsschale des Prüfmoduls auf die in den verwendeten pneumatischen Einheiten verbauten Komponenten, sodass die zugehörigen Verwaltungsschalen eindeutig identifiziert werden können (s. Abbildung 115).
+Mittels „specificAssetId“ (vgl. D5.3 Verbundkomponente Ressource (Produktionsmittel)) verweist die Verwaltungsschale des Prüfmoduls auf die in den verwendeten pneumatischen Einheiten verbauten Komponenten, sodass die zugehörigen Verwaltungsschalen eindeutig identifiziert werden können (s. Abbildung 1-15).
 
 ![A screenshot of a computer Description automatically generated](media/81f2e96a672b2dba5f8fb5a9d7d7da4d.png)
 
-*Abbildung 115: „specificAssetId“ einer pneumatischen Komponente im Prüfmodul*
+*Abbildung 1-15: „specificAssetId“ einer pneumatischen Komponente im Prüfmodul*
 
 #### Betrachtete Use Cases
 
@@ -1586,19 +1586,19 @@ Solche Teilsysteme werden oftmals durch den Kunden über spezielle Auslegungstoo
 
 [^8]: <https://www.festo.com/de/de/s/pneumatic-sizing>
 
-Der Komponentenlieferant bzw. das genutzte Auslegungstool stellt folglich eine System-Verwaltungsschale bereit, die über das Teilmodell „[IDTA 02011: Hierarchical Structures enabling Bills of Material](https://github.com/admin-shell-io/submodel-templates/tree/main/published/Hierarchical%20Structures%20enabling%20Bills%20of%20Material/1/1)“ (BOM) eine Bill of Material beschreibt, welches die verschiedenen Komponenten-Verwaltungsschalen referenziert. Im Rahmen des betrachteten Use Cases wurden diese Verwaltungsschalen händisch erstellt, z.B. „[VWS_Festo_Kombinierte_Baugruppe.aasx](https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP05/Beispieldaten/VWS_Festo_Kombinierte_Baugruppe.aasx)“ (Abbildung 116).
+Der Komponentenlieferant bzw. das genutzte Auslegungstool stellt folglich eine System-Verwaltungsschale bereit, die über das Teilmodell „[IDTA 02011: Hierarchical Structures enabling Bills of Material](https://github.com/admin-shell-io/submodel-templates/tree/main/published/Hierarchical%20Structures%20enabling%20Bills%20of%20Material/1/1)“ (BOM) eine Bill of Material beschreibt, welches die verschiedenen Komponenten-Verwaltungsschalen referenziert. Im Rahmen des betrachteten Use Cases wurden diese Verwaltungsschalen händisch erstellt, z.B. „[VWS_Festo_Kombinierte_Baugruppe.aasx](https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP05/Beispieldaten/VWS_Festo_Kombinierte_Baugruppe.aasx)“ (Abbildung 1-16).
 
 ![Ein Bild, das Text, Software, Webseite, Computersymbol enthält. Automatisch generierte Beschreibung](media/523f408ef4ee81e13ae8cd26714a91c2.png)
 
-*Abbildung 116: Verwaltungsschale einer pneumatischen Antriebseinheit mit Bill of Material*
+*Abbildung 1-16: Verwaltungsschale einer pneumatischen Antriebseinheit mit Bill of Material*
 
 Um eine virtuelle Inbetriebnahme für das bereitgestellte Teilsystem zu ermöglichen, ist neben der BOM das Teilmodell „[IDTA 02005: Provision of Simulation Models](https://github.com/admin-shell-io/submodel-templates/tree/main/published/Provision%20of%20Simulation%20Models/1/0)“ [4] der zentrale Bestandteil dieser System-Verwaltungsschale, denn dieses ermöglicht die Bereitstellung eines Simulationsmodells für das System, welches in Folgeprozessen genutzt werden kann. Es ist dabei grundsätzlich unabhängig von der Art bzw. vom Format des bereitgestellten Simulationsmodells. Um die Verwendung dieses Modells in möglichst vielen Zielumgebungen zu ermöglichen, ist es für den Komponentenlieferanten jedoch sinnvoll, Simulationsmodelle in einem anerkannten Standardformat anzubieten. Hierbei eignen sich für Einzelkomponenten der FMI-Standard und für Verbundkomponenten der SSP-Standard.
 
-Für den betrachteten Anwendungsfall wurden zunächst die Simulationsmodelle für die Magnetventile und Zylinder auf Basis des FMI-Standards beschrieben. Darauf aufbauend, wurde eine Antriebseinheit, bestehend aus einem Magnetventil und einem Zylinder, mithilfe des SSP-Standards beschrieben. In Abbildung 117 ist das Netzwerk der FMUs in der Simulationsumgebung sowie die Beschreibung des Netzwerks im SSP-Standard.
+Für den betrachteten Anwendungsfall wurden zunächst die Simulationsmodelle für die Magnetventile und Zylinder auf Basis des FMI-Standards beschrieben. Darauf aufbauend, wurde eine Antriebseinheit, bestehend aus einem Magnetventil und einem Zylinder, mithilfe des SSP-Standards beschrieben. In Abbildung 1-17 ist das Netzwerk der FMUs in der Simulationsumgebung sowie die Beschreibung des Netzwerks im SSP-Standard.
 
 ![A screenshot of a computer program Description automatically generated](media/f8b3a307d0d862c747566fd520876f75.png)
 
-*Abbildung 117: Netzwerk aus FMU-Modellen für eine pneumatische Antriebseinheit (rechts).*
+*Abbildung 1-17: Netzwerk aus FMU-Modellen für eine pneumatische Antriebseinheit (rechts).*
 
 #### Vorgehen beim Maschinenhersteller
 
@@ -1616,7 +1616,7 @@ Für die Simulationsumgebung wurden mehrere Teilsysteme beschrieben:
 -   Kinematisches Modell basierend auf dem CAD-Modell
 -   Logisches Verhaltensmodell in Form einer SPS-Simulation
 
-Eingesetzte Werkzeuge (siehe Abbildung 118):
+Eingesetzte Werkzeuge (siehe Abbildung 1-18):
 
 -   [Siemens TIA-Portal](https://www.siemens.com/de/de/produkte/automatisierung/industrie-software/automatisierungs-software/tia-portal.html)[^9]: SPS-Programmierung.
 -   [Siemens SIMATIC S7-PLCSIM Advanced](https://xcelerator.siemens.com/global/en/all-offerings/products/s/s7-plcsim-advanced.html)[^10]: SPS-Simulation.
@@ -1636,7 +1636,7 @@ Eingesetzte Werkzeuge (siehe Abbildung 118):
 
 ![Ein Bild, das Text, Screenshot, Software, Design enthält. Automatisch generierte Beschreibung](media/1b105bc41b6410f45fb8b6b5093cfc72.png)
 
-*Abbildung 118: Eingesetzte VIBN-Tools*
+*Abbildung 1-18: Eingesetzte VIBN-Tools*
 
 #### Darstellung in der Verwaltungsschale
 
@@ -1653,7 +1653,7 @@ Damit wird UC2 erfüllt. Anhand der Stückliste sind die Antriebseinheiten auffi
 
 ![A screenshot of a computer Description automatically generated](media/cb917a8b8bd6f896fbc14f895d415d8d.png)
 
-*Abbildung 119: Simulationsmodelle in der Verwaltungsschale des Prüfmoduls*
+*Abbildung 1-19: Simulationsmodelle in der Verwaltungsschale des Prüfmoduls*
 
 ### Ausblick
 
@@ -1674,11 +1674,11 @@ Zum Aufzeigen der sich aus der verknüpften Verbundstruktur von Verwaltungsschal
 
 Darauf aufbauend behandelt dieses Dokument die Integration der Verwaltungsschalen über die verschiedenen Aspekte des PPR-Modells mit dem Ziel, eine durchgehende Erkundbarkeit der Verbundstruktur zu erreichen. Hierzu werden vier verschiedene Use Cases definiert und deren Umsetzbarkeit auf Basis der miteinander verknüpften Verwaltungsschalen analysiert.
 
-In Kooperation der Teilprojekte 2, 3 und 5 sowie des Architekturteams wurden für alle betrachteten Aspekte aus den Bereichen Produkt, Prozess und Ressource exemplarische Verwaltungsschalen für das im Rahmen des PPR-Workshop definierte Beispielprodukt angelegt und gemäß der entwickelten Konzepte miteinander verknüpft. Ein Ausschnitt aus den resultierenden Verwaltungsschalen zeigt Abbildung 120. An dieser Stelle soll dabei nicht näher auf Spezialthemen aus den einzelnen Teilprojekten bzw. Themenbereichen eingegangen werden, da diese jeweils im Rahmen der zugehörigen Arbeitspakete beschrieben sind. Stattdessen sollen im Folgenden exemplarische Use Cases sowie deren Umsetzung diskutiert werden, die die sich aus der verknüpften Verbundstruktur ergebenden Mehrwerte aufzeigen.
+In Kooperation der Teilprojekte 2, 3 und 5 sowie des Architekturteams wurden für alle betrachteten Aspekte aus den Bereichen Produkt, Prozess und Ressource exemplarische Verwaltungsschalen für das im Rahmen des PPR-Workshop definierte Beispielprodukt angelegt und gemäß der entwickelten Konzepte miteinander verknüpft. Ein Ausschnitt aus den resultierenden Verwaltungsschalen zeigt Abbildung 1-20. An dieser Stelle soll dabei nicht näher auf Spezialthemen aus den einzelnen Teilprojekten bzw. Themenbereichen eingegangen werden, da diese jeweils im Rahmen der zugehörigen Arbeitspakete beschrieben sind. Stattdessen sollen im Folgenden exemplarische Use Cases sowie deren Umsetzung diskutiert werden, die die sich aus der verknüpften Verbundstruktur ergebenden Mehrwerte aufzeigen.
 
 ![Ein Bild, das Text, Screenshot, Zahl, parallel enthält. Automatisch generierte Beschreibung](media/ea20f81d8ce917f2c9902226c8103444.png)
 
-*Abbildung 120: Ausschnitt der erstellten Verwaltungsschalen*
+*Abbildung 1-20: Ausschnitt der erstellten Verwaltungsschalen*
 
 ### Definition und Umsetzung der Use Cases
 
@@ -1690,11 +1690,11 @@ Bei der Rückverfolgbarkeit im Fehlerfall geht es darum, bei Auftreten eines Feh
 
 Eine typische Ausprägung sieht dabei wie folgt aus: Bei einem ausgelieferten Fahrzeug bzw. dem enthaltenen Leitungssatz wird ein Mangel festgestellt – bspw. eine fehlerhafte Crimpverbindung. Mögliche Fehlerursachen können hierbei eine fehlerhafte Charge einer Komponente (z.B. eines Kontaktteils) oder ein fehlerhaft ausgeführter Prozess der entsprechenden Crimp-Maschine sein. Im Folgenden geht es nun darum, die Ursache der fehlerhaften Verbindung zu ermitteln und – falls ähnliche Fehler in anderen ausgelieferten Leitungssätzen nicht ausgeschlossen werden können – die betroffenen Fahrzeuge zurückzurufen und zu kontrollieren bzw. zu reparieren. Durch eine fehlende oder mangelhafte Rückverfolgbarkeit können in diesem Fall sehr hohe Kosten entstehen, da im Zweifelsfall sehr viele Fahrzeuge zurückgerufen werden müssen. Je besser die Rückverfolgbarkeit, desto besser lässt sich der Kreis der potenziell betroffenen Fahrzeuge einschränken, die zurückgerufen werden müssen. Im Folgenden soll allgemein beschrieben werden, wie eine Rückverfolgbarkeit für das beschriebene Szenario realisiert werden kann. Eine detailliertere Beschreibung zur konkreten Umsetzung anhand zweier weiterer Use Cases wurde in der AG „Rückverfolgbarkeit“ des Architekturteams entwickelt und ist im entsprechenden Dokument zu finden.
 
-Im oben geschilderten Beispiel ist dazu die folgende „Spur“ durch das Netzwerk verknüpfter Verwaltungsschalen zu verfolgen: Zunächst ist anhand der Serien- bzw. Fahrzeugidentifikationsnummer (FIN) die zu der Produktinstanz gehörige Verwaltungsschale des Leitungssatzes zu ermitteln. In dieser Verwaltungsschale befindet sich wie in TP 2 definiert die Produktspezifikation in Form von Zeichnungen sowie eines formalen Modells (VEC bzw. KBL). Abbildung 121 zeigt exemplarisch eine solche Zeichnung eines Leitungssatzes. Anhand dieser Informationen kann dann die fehlerhafte Verbindung bzw. die betroffenen Komponenten-Vorkommen eindeutig identifiziert werden. In Abbildung 121 könnte bspw. die Crimp-Verbindung am Kontaktteil fehlerhaft sein, welches in Kammer 1 des Gehäuses „A2\*1-B“ gesteckt wird.
+Im oben geschilderten Beispiel ist dazu die folgende „Spur“ durch das Netzwerk verknüpfter Verwaltungsschalen zu verfolgen: Zunächst ist anhand der Serien- bzw. Fahrzeugidentifikationsnummer (FIN) die zu der Produktinstanz gehörige Verwaltungsschale des Leitungssatzes zu ermitteln. In dieser Verwaltungsschale befindet sich wie in TP 2 definiert die Produktspezifikation in Form von Zeichnungen sowie eines formalen Modells (VEC bzw. KBL). Abbildung 1-21 zeigt exemplarisch eine solche Zeichnung eines Leitungssatzes. Anhand dieser Informationen kann dann die fehlerhafte Verbindung bzw. die betroffenen Komponenten-Vorkommen eindeutig identifiziert werden. In Abbildung 1-21 könnte bspw. die Crimp-Verbindung am Kontaktteil fehlerhaft sein, welches in Kammer 1 des Gehäuses „A2\*1-B“ gesteckt wird.
 
 ![Ein Bild, das Text, Messschieber, Diagramm, Reihe enthält. Automatisch generierte Beschreibung](media/3d04feb8feea5b9f444ad032e8b44443.png)
 
-*Abbildung 121: Exemplarische Zeichnung Leitungssatz inkl. Komponentenbezeichnungen*
+*Abbildung 1-21: Exemplarische Zeichnung Leitungssatz inkl. Komponentenbezeichnungen*
 
 Durch die im Rahmen der AG „Verlinkung“ im Architekturteam geschaffenen Strukturen kann anschließend genau dieses Komponenten-Vorkommen bis hin zur Verwaltungsschale des Halbfabrikats verfolgt werden, im Rahmen dessen Herstellungsprozesses die entsprechende Verbindung hergestellt wurde. In dieser Verwaltungsschale finden sich wie in TP 3 definiert die Liste der bei der Herstellung des Halbfabrikats durchgeführten Prozesse sowie die im Rahmen der Prozesse verwendeten Materialien.
 
@@ -1718,13 +1718,13 @@ Heutzutage erfolgt eine solche Synchronisierung in aller Regel manuell. So werde
 
 Für eine Komponente – bspw. einen bestimmten Crimp-Kontakt – existieren in aller Regel mehrere Teile- bzw. Sachnummern: So gibt es für eine Komponente oftmals mehrere Lieferanten (Tier 2), die jeweils eine eigene Teilenummer vergeben. Darüber hinaus hat auch jeder OEM sowie jeder Konfektionär (Tier 1) eine eigene Sachnummer, unter der er die Komponente in seinem ERP-System führt. Eine Herausforderung bei der Leitungssatz-Entwicklung ist daher das sogenannte „Sachnummern-Mapping“: So erstellt bspw. der OEM eine Produktspezifikation für einen Leitungssatz und verwendet dabei seine internen Sachnummern für die verwendeten Komponenten. Anschließend wird ein Konfektionär mit der Produktion des Leitungssatzes beauftragt. Daraufhin muss dieser zunächst für jede OEM-Sachnummer seine entsprechende eigene Sachnummer ermitteln und diese in der Produktspezifikation ersetzen. Bei der anschließenden Ermittlung möglicher Lieferanten müssen wiederum für die internen Sachnummern des Konfektionärs die entsprechenden Sachnummer möglicher Zulieferer ermittelt werden.
 
-Derzeit sind solche „Mapping-Tabellen“ in aller Regel informell auf sog. „Zeichnungen“ der verschiedenen OEMs spezifiziert wie in Abbildung 122 dargestellt. Diese informellen Informationen müssen dann in einem aufwändigen Prozess häufig noch von Hand in die ERP-Systeme der verschiedenen Konfektionäre eingepflegt werden.
+Derzeit sind solche „Mapping-Tabellen“ in aller Regel informell auf sog. „Zeichnungen“ der verschiedenen OEMs spezifiziert wie in Abbildung 1-22 dargestellt. Diese informellen Informationen müssen dann in einem aufwändigen Prozess häufig noch von Hand in die ERP-Systeme der verschiedenen Konfektionäre eingepflegt werden.
 
 Im Rahmen von TP5.2 wurde daher ein Mechanismus beschrieben, wie man diese bisher informell im Rahmen von Zeichnungen ausgetauschten Informationen formal und explizit im Rahmen der entsprechenden Verwaltungsschalen abbilden kann, um somit den Prozess des Sachnummern-Mappings zu erleichtern. Dazu können in einer Verwaltungsschale bspw. einer Komponente neben der eigenen auch noch eine beliebige Anzahl „externer“ Sachnummern hinterlegt werden, wodurch der Prozess des Sachnummern-Mappings automatisiert werden kann.
 
 ![Ein Bild, das Text, Reihe, Screenshot, Zahl enthält. Automatisch generierte Beschreibung](media/91afba3f2b46239102eee3d7a81ce19a.png)
 
-*Abbildung 122: Exemplarische OEM-Komponentenspezifikation inkl. Sachnummern*
+*Abbildung 1-22: Exemplarische OEM-Komponentenspezifikation inkl. Sachnummern*
 
 #### Use Case 4: Fähigkeitenabgleich
 
@@ -1752,11 +1752,11 @@ Basierend auf diesen Informationen kann ein Fähigkeitenabgleich („Capability 
 
 Die Abbildung solcher – sowohl aktueller als auch theoretisch realisierbarer – Maschinenstrukturen wurden bereits im Rahmen von D5.3 beschrieben und können an dieser Stelle genutzt werden.
 
-Abbildung 123 zeigt diese Zusammenhänge am Beispiel eines Crimp-Prozesses. Die dargestellten Prinzipien gelten aber auch für die anderen im Rahmen von TP3 abgeleiteten Prozesse, wobei für manche Prozesse in der Regel keine Werkzeuge benötigt werden (z.B. Schneiden).
+Abbildung 1-23 zeigt diese Zusammenhänge am Beispiel eines Crimp-Prozesses. Die dargestellten Prinzipien gelten aber auch für die anderen im Rahmen von TP3 abgeleiteten Prozesse, wobei für manche Prozesse in der Regel keine Werkzeuge benötigt werden (z.B. Schneiden).
 
 ![](media/795c9156781651d6fbdddb03f5fbe1ee.png)
 
-*Abbildung 123 Capability-Matching am Beispiel eines Crimp-Prozesses*
+*Abbildung 1-23 Capability-Matching am Beispiel eines Crimp-Prozesses*
 
 Entsprechend der Abbildung werden im Rahmen dieses Dokuments zunächst in den Abschnitten 1.5.2 und 1.5.3 die Modellierung von geforderten und angebotenen Fähigkeiten diskutiert. Darauf aufbauend wird in Abschnitt 1.5.4 anschließend das Konzept für einen Algorithmus zum Fähigkeitenabgleich entwickelt. Abschließend wird in Abschnitt 0 die Frage diskutiert, wie von einer Fähigkeit auf den ausführbaren *Skill* verwiesen werden kann.
 
@@ -1768,18 +1768,18 @@ Für die Beschreibung von Fähigkeiten ist das Teilmodell „[IDTA 02020 Capabil
 
 Im Rahmen von TP5 wurde beschlossen, das im Rahmen von BaSys 4.2 entwickelte Modell als Ausgangspunkt zu nutzen und um fehlende Aspekte zu erweitern. Ein erster im Rahmen von BaSys 4.2 nicht betrachteter Aspekt ist die Unterscheidung zwischen (zur Herstellung eines Produkts) *benötigten* und (von einer Ressource) *angebotenen* Fähigkeiten. Um klarzustellen, welche Art von Fähigkeiten ein bestimmtes Teilmodell abbildet, müsste im Rahmen einer möglichen Standardisierung bei der IDTA konkrete semantische IDs (z.B. *supplementalSemanticIds*) oder zusätzliche Eigenschaften (z.B. *TypeOfCapability*) für die Unterscheidung der Fähigkeit-Arten bereitgestellt werden. Für die Zwecke dieses Dokuments wurde beschlossen, den Namen (Eigenschaft *idShort*) des entsprechenden Teilmodells entweder auf „*RequiredCapabilities*“ oder „*OfferedCapabilities*“ zu setzen, um so bereits auf den ersten Blick eine Unterscheidung zu ermöglichen.
 
-Innerhalb des Teilmodells kann dann zunächst die in BaSys 4.2 definierte Grundstruktur genutzt werden, wie exemplarisch in Abbildung 124 dargestellt. Es lassen sich folglich eine beliebige Anzahl von Fähigkeiten im Rahmen von „CapabilityContainer“-Elementen abbilden, wobei jeder dieser Container ein „Capability“-Element enthält, welches per *SemanticID* eine bestimmte Fähigkeit ausweist.
+Innerhalb des Teilmodells kann dann zunächst die in BaSys 4.2 definierte Grundstruktur genutzt werden, wie exemplarisch in Abbildung 1-24 dargestellt. Es lassen sich folglich eine beliebige Anzahl von Fähigkeiten im Rahmen von „CapabilityContainer“-Elementen abbilden, wobei jeder dieser Container ein „Capability“-Element enthält, welches per *SemanticID* eine bestimmte Fähigkeit ausweist.
 
 Für die Leitungssatz-Produktion relevanten Fähigkeiten, die im Rahmen der Zusammenarbeit mit TP3 ausgearbeitet wurden, sind entsprechende *SemanticIDs* nach dem Muster „https://arena2036.de/vws4ls/capability/1/0/\<capability-name\>“ festgelegt worden, also z.B. „https://arena2036.de/vws4ls/capability/1/0/CutCapability“. Eine vollständige Liste der definierten SemanticIDs findet sich in *  
 *
 
 *Anhang: Liste von Fähigkeiten und zugehörigen* Parametern.
 
-Für eine Fähigkeit relevante Parameter lassen sich im „*PropertySet*“ beschreiben, wie ebenfalls in Abbildung 124 zu sehen. Die im Rahmen der Zusammenarbeit mit TP3 für jede Fähigkeit abgeleiteten relevanten Parameter sind ebenfalls aufgelistet. Der für einen bestimmten Parameter relevante Wert ergibt sich dabei in aller Regel entweder aus dem Produktmodell (bspw. die Länge beim Schneiden einer Leitung) oder aus Anforderungen an die Prozessdurchführung (bspw. ob beim Abisolieren einer Leitung eine Einschneide-Überwachung durchzuführen ist).
+Für eine Fähigkeit relevante Parameter lassen sich im „*PropertySet*“ beschreiben, wie ebenfalls in Abbildung 1-24 zu sehen. Die im Rahmen der Zusammenarbeit mit TP3 für jede Fähigkeit abgeleiteten relevanten Parameter sind ebenfalls aufgelistet. Der für einen bestimmten Parameter relevante Wert ergibt sich dabei in aller Regel entweder aus dem Produktmodell (bspw. die Länge beim Schneiden einer Leitung) oder aus Anforderungen an die Prozessdurchführung (bspw. ob beim Abisolieren einer Leitung eine Einschneide-Überwachung durchzuführen ist).
 
 ![Ein Bild, das Text, Screenshot, Schrift, Zahl enthält. Automatisch generierte Beschreibung](media/458ba63d4375440110caafc264aaf9c5.png)
 
-*Abbildung 124: Exemplarisches Teilmodell "RequiredCapabilities"*
+*Abbildung 1-24: Exemplarisches Teilmodell "RequiredCapabilities"*
 
 ### Modellierung angebotener Fähigkeiten
 
@@ -1794,17 +1794,17 @@ Bei der Beschreibung geforderter Fähigkeiten werden für Parameter in aller Reg
 
 Im Gegensatz dazu kommt es bei der Beschreibung angebotener Fähigkeiten häufig vor, dass für einen Parameter kein einzelner, konkreter Wert definiert werden kann. So kann eine Schneidmaschine Leitungen in der Regel in einem bestimmten, durch die physikalischen Eigenschaften der Maschinen bestimmten, Bereich schneiden (z.B. 50 – 5000 mm).
 
-Um solche Einschränkungen beschreiben zu können, sieht das im Rahmen von BaSys 4.2 definierte Teilmodell bereits das Konzept der *Constraints* vor, die sich auf ein bestimmtes *Property* beziehen, wie in Abbildung 125 dargestellt. Die konkrete Modellierung der eigentlichen *Constraints* jedoch wurde im Rahmen von BaSys 4.2 nicht bis ins letzte Detail festgelegt, sodass entsprechende Festlegungen im Rahmen der Arbeit zu AP5.5 getroffen wurden. Die Parameter von Eigenschaften beschreiben in der Regel numerische Werte, Zeichenketten oder boolesche Werte. Dabei sind für unterschiedliche Datentypen von Parametern unterschiedliche Einschränkungen sinnvoll:
+Um solche Einschränkungen beschreiben zu können, sieht das im Rahmen von BaSys 4.2 definierte Teilmodell bereits das Konzept der *Constraints* vor, die sich auf ein bestimmtes *Property* beziehen, wie in Abbildung 1-25 dargestellt. Die konkrete Modellierung der eigentlichen *Constraints* jedoch wurde im Rahmen von BaSys 4.2 nicht bis ins letzte Detail festgelegt, sodass entsprechende Festlegungen im Rahmen der Arbeit zu AP5.5 getroffen wurden. Die Parameter von Eigenschaften beschreiben in der Regel numerische Werte, Zeichenketten oder boolesche Werte. Dabei sind für unterschiedliche Datentypen von Parametern unterschiedliche Einschränkungen sinnvoll:
 
 -   Für boolesche Werte können bei angebotenen Fähigkeiten in der Regel konkrete Werte angegeben werden (Parameter erfüllt oder nicht erfüllt) – es müssen folglich keine Einschränkungen beschrieben werden.
--   Für numerische Werte ist, wie oben beschrieben, die Vorgabe eines oberen und unteren Grenzwertes sinnvoll. Hierfür kann das AAS-Element *Range* genutzt werden (vgl. Abbildung 125).
+-   Für numerische Werte ist, wie oben beschrieben, die Vorgabe eines oberen und unteren Grenzwertes sinnvoll. Hierfür kann das AAS-Element *Range* genutzt werden (vgl. Abbildung 1-25).
 -   Für Zeichenketten ist oftmals die Vorgabe einer bestimmten Liste von Werten sinnvoll (z.B. die Liste von Teilenummern, für die ein Crimp-Gesenk verwendet werden kann). Hierzu kann das AAS-Element *SubmodelElementList* genutzt werden.
 
 Weitere Arten von *Constraints* sind theoretisch denkbar (bspw. die Vorgabe einer bestimmten *Regular Expression* für Zeichenketten), wurden im Rahmen dieses Projekts aber nicht weiter betrachtet. Das beschriebene Konzept lässt sich aber entsprechend erweitern.
 
 ![Ein Bild, das Text, Screenshot, Schrift, Zahl enthält. Automatisch generierte Beschreibung](media/95c1660ece832b6ca2ac5875c966eeb7.png)
 
-*Abbildung 125: Exemplarisches Teilmodell "OfferedCapabilities"*
+*Abbildung 1-25: Exemplarisches Teilmodell "OfferedCapabilities"*
 
 Eine Besonderheit stellen allerdings dynamische Einschränkungen dar, die nicht pauschal bspw. durch Vorgabe eines bestimmten Wertebereichs beschrieben werden können. Beispiele hierfür sind Toleranzbereiche, die sich in Abhängigkeit des geforderten Wertes ändern. So kann eine Schneidmaschine bspw. bei kleinen Schneidlängen einen geringen Toleranzbereich aufweisen, der sich aber bei größeren Längen aufweitet.
 
@@ -1812,31 +1812,31 @@ Zur Abbildung solcher komplexen Abhängigkeiten wurde zusätzlich ein *Operation
 
 #### Beschreibung zusammengesetzter Fähigkeiten
 
-Individuelle Ressourcen können ihre Fähigkeiten oftmals nicht eigenständig realisieren. So benötigt bspw. eine Crimp-Maschine ein auf das Kontaktteil zugeschnittenes Crimp-Werkzeug, um einen Crimp-Prozess auszuführen. Das Crimp-Werkzeug wiederum benötigt eine entsprechende Maschine, die es verwendet. Diese Zusammenhänge sind auf der linken Seite von Abbildung 123 dargestellt.
+Individuelle Ressourcen können ihre Fähigkeiten oftmals nicht eigenständig realisieren. So benötigt bspw. eine Crimp-Maschine ein auf das Kontaktteil zugeschnittenes Crimp-Werkzeug, um einen Crimp-Prozess auszuführen. Das Crimp-Werkzeug wiederum benötigt eine entsprechende Maschine, die es verwendet. Diese Zusammenhänge sind auf der linken Seite von Abbildung 1-23 dargestellt.
 
 Dies wirft die Frage auf, welche dieser beiden Ressourcen nun eigentlich die Fähigkeit besitzt – und folglich, in welcher Verwaltungsschale das entsprechende Fähigkeiten-Teilmodell angelegt werden sollte.
 
 ![Ein Bild, das Text, Screenshot, Schrift, Design enthält. Automatisch generierte Beschreibung](media/30a89168ca78e2cb52b05ff6b739fa24.png)
 
-*Abbildung 126. Konzept zur Modellierung zusammengesetzter Fähigkeiten*
+*Abbildung 1-26. Konzept zur Modellierung zusammengesetzter Fähigkeiten*
 
 Sowohl eine Modellierung lediglich auf Seiten der Maschine als auch eine Modellierung lediglich auf Seiten des Werkzeugs bringt dabei gravierende Nachteile mit sich, da bestimmte Parameter oftmals sowohl von Maschinen- als auch von Werkzeugseite her eingeschränkt werden. Hierdurch wird eine kombinierte Modellierung dieser Einschränkungen sehr schnell sehr komplex, da viele Abhängigkeiten berücksichtig werden müssen.
 
-Aus diesem Grund bietet es sich stattdessen an, eine geteilte Modellierung vorzunehmen. Dabei können Fähigkeiten und entsprechende Einschränkungen auf allen relevanten Ebenen modelliert werden, wie auf der rechten Seite von Abbildung 126 dargestellt.
+Aus diesem Grund bietet es sich stattdessen an, eine geteilte Modellierung vorzunehmen. Dabei können Fähigkeiten und entsprechende Einschränkungen auf allen relevanten Ebenen modelliert werden, wie auf der rechten Seite von Abbildung 1-26 dargestellt.
 
 Auf allen Ebenen können dabei die in Abschnitt 1.5.3.1 beschriebenen Konzepte genutzt werden. Einzig zur Abbildung der Notwendigkeit der Verknüpfung von Maschine und Werkzeug wird ein zusätzliches Modellierungskonzept benötigt. Hierzu kann das auch bereits in BaSys 4.2 angedachte Konzept der *CapabilityConditions* weiterentwickelt bzw. konkretisiert und eine spezielle Bedingung *RequiresToolCondition* definiert werden.
 
-Wie in Abbildung 127 dargestellt, kann mit dieser Bedingung auf Maschinenebene beschrieben werden, dass zur Ausführung einer Fähigkeit ein bestimmter Werkzeugtyp benötigt wird. Statt hier explizit – bspw. per Referenz – auf ein konkretes Werkzeug zu verweisen, was bei mehreren möglichen Werkzeugen schnell zu einer hohen Komplexität führen würde, kann dabei explizit ein Typ von Werkzeugen angegeben werden. Das in Abbildung 127 dargestellte Modell erfordert bspw. ein Werkzeug des Typen *CrimpingApplicator*.
+Wie in Abbildung 1-27 dargestellt, kann mit dieser Bedingung auf Maschinenebene beschrieben werden, dass zur Ausführung einer Fähigkeit ein bestimmter Werkzeugtyp benötigt wird. Statt hier explizit – bspw. per Referenz – auf ein konkretes Werkzeug zu verweisen, was bei mehreren möglichen Werkzeugen schnell zu einer hohen Komplexität führen würde, kann dabei explizit ein Typ von Werkzeugen angegeben werden. Das in Abbildung 1-27 dargestellte Modell erfordert bspw. ein Werkzeug des Typen *CrimpingApplicator*.
 
 ![A screenshot of a computer Description automatically generated](media/ac28482946e74c2eb0f1ff0bf09e227f.png)
 
-*Abbildung 127: Bedingung "RequiresToolCondition"*
+*Abbildung 1-27: Bedingung "RequiresToolCondition"*
 
-Auf Seiten der Werkzeuge kann der entsprechende Werkzeugtyp einfach über ein entsprechendes *Extension*-Element beschrieben werden, wie in Abbildung 128 gezeigt. Diese indirekte Modellierung erlaubt die dynamische Ermittlung möglicher Maschine-Werkzeug-Kombinationen, ohne bspw. im Voraus bereits sämtliche in einer Fabrik vorhandene Werkzeuginstanzen zu kennen.
+Auf Seiten der Werkzeuge kann der entsprechende Werkzeugtyp einfach über ein entsprechendes *Extension*-Element beschrieben werden, wie in Abbildung 1-28 gezeigt. Diese indirekte Modellierung erlaubt die dynamische Ermittlung möglicher Maschine-Werkzeug-Kombinationen, ohne bspw. im Voraus bereits sämtliche in einer Fabrik vorhandene Werkzeuginstanzen zu kennen.
 
 ![Ein Bild, das Text, Screenshot, Schrift, Zahl enthält. Automatisch generierte Beschreibung](media/b1697c4b162393f1b36aa110819386d1.png)
 
-*Abbildung 128: Beschreibung von Werkzeugtypen per "toolType"-Extension*
+*Abbildung 1-28: Beschreibung von Werkzeugtypen per "toolType"-Extension*
 
 ### Algorithmus zum Fähigkeitenabgleich
 
@@ -1876,25 +1876,25 @@ Die bisher in diesem Dokument betrachteten angebotenen *Fähigkeiten* bzw. *Capa
 
 Nachdem bspw. durch ein MES auf Basis eines Fähigkeitenabgleichs eine passende Maschine gefunden wurde, stellt sich als nächstes allerdings die Frage, wie diese Fähigkeit nun abgerufen werden kann. Es stellt sich folglich die Frage nach einer konkret ausführbaren *Fertigkeit* bzw. *Skill*.
 
-Im Rahmen von TP1 wurde zur Implementierung solcher konkret ausführbaren Fertigkeiten eine *OPC UA Companion Specification* für die Prozesse der Leitungssatz-Produktion entwickelt (OPC 40570) [6]. Wie in Abbildung 129 dargestellt, muss daher ein automatischer Übergang von der im Rahmen einer Verwaltungsschale beschriebenen Fähigkeit zu einer durch einen OPC UA-Server auf einer Maschine bereitgestellten Fertigkeit ermöglicht werden.
+Im Rahmen von TP1 wurde zur Implementierung solcher konkret ausführbaren Fertigkeiten eine *OPC UA Companion Specification* für die Prozesse der Leitungssatz-Produktion entwickelt (OPC 40570) [6]. Wie in Abbildung 1-29 dargestellt, muss daher ein automatischer Übergang von der im Rahmen einer Verwaltungsschale beschriebenen Fähigkeit zu einer durch einen OPC UA-Server auf einer Maschine bereitgestellten Fertigkeit ermöglicht werden.
 
 ![Ein Bild, das Text, Screenshot, Logo, Schrift enthält. Automatisch generierte Beschreibung](media/200335bcac6be308ee6b1d022c8ff171.png)
 
-*Abbildung 129: Zusammenhang zwischen Fähigkeit (Capability) und Fertigkeit (Skill)*
+*Abbildung 1-29: Zusammenhang zwischen Fähigkeit (Capability) und Fertigkeit (Skill)*
 
-Um eine solche automatische Durchgängigkeit realisieren zu können, bietet das im Rahmen von BaSys 4.2 entwickelte Teilmodell bereits die Möglichkeit, mit Hilfe einer *realizedBy*-Beziehung auf einen entsprechenden *Skill* zu verweisen (vgl. Abbildung 129). Im Rahmen des Teilmodells ist allerdings nicht festgelegt, wie solch ein Skill konkret aussieht.
+Um eine solche automatische Durchgängigkeit realisieren zu können, bietet das im Rahmen von BaSys 4.2 entwickelte Teilmodell bereits die Möglichkeit, mit Hilfe einer *realizedBy*-Beziehung auf einen entsprechenden *Skill* zu verweisen (vgl. Abbildung 1-29). Im Rahmen des Teilmodells ist allerdings nicht festgelegt, wie solch ein Skill konkret aussieht.
 
-Daher wurden im Rahmen von AP5.5 verschiedene bestehende und in Entwicklung befindliche Teilmodelle daraufhin analysiert, inwiefern sie eine adäquate Beschreibung des OPC UA Servers einer Maschine ermöglichen. Hierfür wurde das Teilmodell „IDTA 02017: *Asset Interface Description*„ [7] ausgewählt, welches die Beschreibung von Datenquellen ermöglicht, die von einem Asset angeboten werden. Da in der aktuellen Version 1.0 allerdings noch keine Unterstützung von OPC UA enthalten ist, wurde diese prototypisch ergänzt (vgl. Abbildung 130) – bei einer offiziellen Ergänzung in einer zukünftigen Version kann diese prototypische Umsetzung dann entsprechend ausgetauscht werden.
+Daher wurden im Rahmen von AP5.5 verschiedene bestehende und in Entwicklung befindliche Teilmodelle daraufhin analysiert, inwiefern sie eine adäquate Beschreibung des OPC UA Servers einer Maschine ermöglichen. Hierfür wurde das Teilmodell „IDTA 02017: *Asset Interface Description*„ [7] ausgewählt, welches die Beschreibung von Datenquellen ermöglicht, die von einem Asset angeboten werden. Da in der aktuellen Version 1.0 allerdings noch keine Unterstützung von OPC UA enthalten ist, wurde diese prototypisch ergänzt (vgl. Abbildung 1-30) – bei einer offiziellen Ergänzung in einer zukünftigen Version kann diese prototypische Umsetzung dann entsprechend ausgetauscht werden.
 
 Relevante Punkte für den Übergang aus der Verwaltungsschale zum OPC UA-Server sind dabei vor allem:
 
--   der Endpunkt des OPC UA-Servers (siehe Element *EndpointMetadata* in Abbildung 130),
--   dass der OPC UA-Server die oben erwähnte *Companion Specification* für die Leitungssatzproduktion umsetzt (siehe *supplementalSemanticId,* „<http://www.w3.org/2011/opc40570>“ in Abbildung 130), sowie
--   Identifizierbarkeit des für die Ausführung des Skill relevanten *Nodes* (siehe. z.B. *Node* „CutToLengthInstance01“ in Abbildung 130) – dieser ist auch gleichzeitig das Ziel der *realizedBy*-Beziehung.
+-   der Endpunkt des OPC UA-Servers (siehe Element *EndpointMetadata* in Abbildung 1-30),
+-   dass der OPC UA-Server die oben erwähnte *Companion Specification* für die Leitungssatzproduktion umsetzt (siehe *supplementalSemanticId,* „<http://www.w3.org/2011/opc40570>“ in Abbildung 1-30), sowie
+-   Identifizierbarkeit des für die Ausführung des Skill relevanten *Nodes* (siehe. z.B. *Node* „CutToLengthInstance01“ in Abbildung 1-30) – dieser ist auch gleichzeitig das Ziel der *realizedBy*-Beziehung.
 
 ![Ein Bild, das Text, Screenshot, Zahl, Software enthält. Automatisch generierte Beschreibung](media/48cadda22b2726571881e451f7816e2a.png)
 
-*Abbildung 130: Prototypische Ergänzung des AID-Teilmodells* [7] *für OPC UA*
+*Abbildung 1-30: Prototypische Ergänzung des AID-Teilmodells* [7] *für OPC UA*
 
 ### Anhang: Liste von Fähigkeiten und zugehörigen Parametern
 
@@ -2218,7 +2218,7 @@ Als plakatives Beispiel wurde im Rahmen von AP5.6 davon ausgegangen, dass der Ap
 
 ![Ein Bild, das Cartoon, Kunst, Screenshot, Grafikdesign enthält. Automatisch generierte Beschreibung](media/03cf3a0168f3120b613c2d376703c67a.png)
 
-*Abbildung 131: Konzept Use Case "Predictive Maintenance"*
+*Abbildung 1-31: Konzept Use Case "Predictive Maintenance"*
 
 ### Relevante Teilmodelle
 
@@ -2254,11 +2254,11 @@ Die folgende Abbildung fasst die beschriebenen Zusammenhänge zusammen und zeigt
 
 ![](media/ad037c63dffac9f1e46cbb28e3ba0cfd.png)
 
-*Abbildung 132: Zusammenhang der verschiedenen Teilmodelle*
+*Abbildung 1-32: Zusammenhang der verschiedenen Teilmodelle*
 
 ### Prototypische Implementierung
 
-Der in den bisherigen Abschnitten dieses Dokuments aufgezeigte Use Case wurde im Rahmen von AP 5.6 prototypisch umgesetzt. Hierzu wurden einerseits die entsprechenden Verwaltungsschalen und Teilmodelle aufgesetzt (vgl. Abbildung 132) und per Basyx[^16]-Server bereitgestellt. Darüber hinaus wurden aktive Verwaltungsschalen sowohl für eine Maschine als auch für einen Applikator aufgesetzt, um die in Abbildung 131 dargestellte Interaktion umsetzen zu können. Die aktiven Verwaltungsschalen wurden dabei durch zwei Node-RED[^17]-Instanzen umgesetzt, die die in Abschnitt 1.6.3 Algorithmen umsetzen. Abbildung 133 zeigt exemplarisch die Node-RED-Umsetzung zur Auswertung des Teilmodells „Predictive Maintenance“ inklusive der Abonnierung von Änderungen am Teilmodell „Predictive Maintenance“ per MQTT sowie der Reaktion auf entsprechende Änderungen durch Anpassen der „Remaining Useful Life“ sowie des Aufrufs eines entsprechenden Handlers bei Eintritt in ein neues „Condition Level“.
+Der in den bisherigen Abschnitten dieses Dokuments aufgezeigte Use Case wurde im Rahmen von AP 5.6 prototypisch umgesetzt. Hierzu wurden einerseits die entsprechenden Verwaltungsschalen und Teilmodelle aufgesetzt (vgl. Abbildung 1-32) und per Basyx[^16]-Server bereitgestellt. Darüber hinaus wurden aktive Verwaltungsschalen sowohl für eine Maschine als auch für einen Applikator aufgesetzt, um die in Abbildung 1-31 dargestellte Interaktion umsetzen zu können. Die aktiven Verwaltungsschalen wurden dabei durch zwei Node-RED[^17]-Instanzen umgesetzt, die die in Abschnitt 1.6.3 Algorithmen umsetzen. Abbildung 1-33 zeigt exemplarisch die Node-RED-Umsetzung zur Auswertung des Teilmodells „Predictive Maintenance“ inklusive der Abonnierung von Änderungen am Teilmodell „Predictive Maintenance“ per MQTT sowie der Reaktion auf entsprechende Änderungen durch Anpassen der „Remaining Useful Life“ sowie des Aufrufs eines entsprechenden Handlers bei Eintritt in ein neues „Condition Level“.
 
 [^16]: <https://basyx.org/>
 
@@ -2268,7 +2268,7 @@ Die Konfigurationsdateien hierfür finden sich in „[basyx-predictive-maintenan
 
 ![Ein Bild, das Text, Screenshot, Diagramm, Reihe enthält. Automatisch generierte Beschreibung](media/b01dab6a98b005b33330d5ab8fa328a3.png)
 
-*Abbildung 133: NodeRed-Flow zur Auswertung des Teilmodells "Predictive Maintenance"*
+*Abbildung 1-33: NodeRed-Flow zur Auswertung des Teilmodells "Predictive Maintenance"*
 
 ## Fazit
 
@@ -2317,69 +2317,69 @@ Besonderes Augenmerk wurde auf das Thema „Fähigkeitenabgleich“ gelegt. Ents
 
 # **Abbildungsverzeichnis**
 
-[*Abbildung 11: Ergebnis der Workshop-Reihe*](#_Toc178820053)
+[*Abbildung 1-1: Ergebnis der Workshop-Reihe*](#_Toc178820053)
 
-[*Abbildung 12: Unterschiedliche Arten von Verwaltungsschalen als Teil der VBK „Produkt“*](#_Toc178820054)
+[*Abbildung 1-2: Unterschiedliche Arten von Verwaltungsschalen als Teil der VBK „Produkt“*](#_Toc178820054)
 
-[*Abbildung 13: Umsetzung hierarchischer Beziehungen mit Hilfe des BOM-Teilmodells*](#_Toc178820055)
+[*Abbildung 1-3: Umsetzung hierarchischer Beziehungen mit Hilfe des BOM-Teilmodells*](#_Toc178820055)
 
-[*Abbildung 14: Konzept der "Specific Asset ID" aus dem Metamodell der VWS (s. Abschnitt 5.3.4)*](#_Toc178820056)
+[*Abbildung 1-4: Konzept der "Specific Asset ID" aus dem Metamodell der VWS (s. Abschnitt 5.3.4)*](#_Toc178820056)
 
-[*Abbildung 15: Exemplarische Umsetzung des Sachnummern-Mapping mittels „specificAssetId“*](#_Toc178820057)
+[*Abbildung 1-5: Exemplarische Umsetzung des Sachnummern-Mapping mittels „specificAssetId“*](#_Toc178820057)
 
-[*Abbildung 16: Teilmodell "Freigabeliste"*](#_Toc178820058)
+[*Abbildung 1-6: Teilmodell "Freigabeliste"*](#_Toc178820058)
 
-[*Abbildung 17: Beispiel-Ressourcen 2 – Wezag UP 150 (links) und Komax Sigma 688 (rechts)*](#_Toc178820059)
+[*Abbildung 1-7: Beispiel-Ressourcen 2 – Wezag UP 150 (links) und Komax Sigma 688 (rechts)*](#_Toc178820059)
 
-[*Abbildung 18: Übersicht möglicher Fähigkeiten Komax Sigma 688*](#_Toc178820060)
+[*Abbildung 1-8: Übersicht möglicher Fähigkeiten Komax Sigma 688*](#_Toc178820060)
 
-[*Abbildung 19: Einordnung in das PPR-Modell*](#_Toc178820061)
+[*Abbildung 1-9: Einordnung in das PPR-Modell*](#_Toc178820061)
 
-[*Abbildung 110: Modellierung von Werkzeug-Freigaben am Beispiel Crimp-Kontakt*](#_Toc178820062)
+[*Abbildung 1-10: Modellierung von Werkzeug-Freigaben am Beispiel Crimp-Kontakt*](#_Toc178820062)
 
-[*Abbildung 111: Abbildung der aktuellen Maschinenstruktur mit Hilfe des BOM-Teilmodells*](#_Toc178820063)
+[*Abbildung 1-11: Abbildung der aktuellen Maschinenstruktur mit Hilfe des BOM-Teilmodells*](#_Toc178820063)
 
-[*Abbildung 112: Abbildung potenzieller Maschinenstrukturen mit Hilfe des BOM-Teilmodells*](#_Toc178820064)
+[*Abbildung 1-12: Abbildung potenzieller Maschinenstrukturen mit Hilfe des BOM-Teilmodells*](#_Toc178820064)
 
-[*Abbildung 113: Modellierung potenzieller Maschinenstrukturen per "specificAssetId"*](#_Toc178820065)
+[*Abbildung 1-13: Modellierung potenzieller Maschinenstrukturen per "specificAssetId"*](#_Toc178820065)
 
-[*Abbildung 114: Prüfmodul mit Gegenstecker (Komax Testing)*](#_Toc178820066)
+[*Abbildung 1-14: Prüfmodul mit Gegenstecker (Komax Testing)*](#_Toc178820066)
 
-[*Abbildung 115: „specificAssetId“ einer pneumatischen Komponente im Prüfmodul*](#_Toc178820067)
+[*Abbildung 1-15: „specificAssetId“ einer pneumatischen Komponente im Prüfmodul*](#_Toc178820067)
 
-[*Abbildung 116: Verwaltungsschale einer pneumatischen Antriebseinheit mit Bill of Material*](#_Toc178820068)
+[*Abbildung 1-16: Verwaltungsschale einer pneumatischen Antriebseinheit mit Bill of Material*](#_Toc178820068)
 
-[*Abbildung 117: Netzwerk aus FMU-Modellen für eine pneumatische Antriebseinheit (rechts).*](#_Toc178820069)
+[*Abbildung 1-17: Netzwerk aus FMU-Modellen für eine pneumatische Antriebseinheit (rechts).*](#_Toc178820069)
 
-[*Abbildung 118: Eingesetzte VIBN-Tools*](#_Toc178820070)
+[*Abbildung 1-18: Eingesetzte VIBN-Tools*](#_Toc178820070)
 
-[*Abbildung 119: Simulationsmodelle in der Verwaltungsschale des Prüfmoduls*](#_Toc178820071)
+[*Abbildung 1-19: Simulationsmodelle in der Verwaltungsschale des Prüfmoduls*](#_Toc178820071)
 
-[*Abbildung 120: Ausschnitt der erstellten Verwaltungsschalen*](#_Toc178820072)
+[*Abbildung 1-20: Ausschnitt der erstellten Verwaltungsschalen*](#_Toc178820072)
 
-[*Abbildung 121: Exemplarische Zeichnung Leitungssatz inkl. Komponentenbezeichnungen*](#_Toc178820073)
+[*Abbildung 1-21: Exemplarische Zeichnung Leitungssatz inkl. Komponentenbezeichnungen*](#_Toc178820073)
 
-[*Abbildung 122: Exemplarische OEM-Komponentenspezifikation inkl. Sachnummern*](#_Toc178820074)
+[*Abbildung 1-22: Exemplarische OEM-Komponentenspezifikation inkl. Sachnummern*](#_Toc178820074)
 
-[*Abbildung 123 Capability-Matching am Beispiel eines Crimp-Prozesses*](#_Toc178820075)
+[*Abbildung 1-23 Capability-Matching am Beispiel eines Crimp-Prozesses*](#_Toc178820075)
 
-[*Abbildung 124: Exemplarisches Teilmodell "RequiredCapabilities"*](#_Toc178820076)
+[*Abbildung 1-24: Exemplarisches Teilmodell "RequiredCapabilities"*](#_Toc178820076)
 
-[*Abbildung 125: Exemplarisches Teilmodell "OfferedCapabilities"*](#_Toc178820077)
+[*Abbildung 1-25: Exemplarisches Teilmodell "OfferedCapabilities"*](#_Toc178820077)
 
-[*Abbildung 126. Konzept zur Modellierung zusammengesetzter Fähigkeiten*](#_Toc178820078)
+[*Abbildung 1-26. Konzept zur Modellierung zusammengesetzter Fähigkeiten*](#_Toc178820078)
 
-[*Abbildung 127: Bedingung "RequiresToolCondition"*](#_Toc178820079)
+[*Abbildung 1-27: Bedingung "RequiresToolCondition"*](#_Toc178820079)
 
-[*Abbildung 128: Beschreibung von Werkzeugtypen per "toolType"-Extension*](#_Toc178820080)
+[*Abbildung 1-28: Beschreibung von Werkzeugtypen per "toolType"-Extension*](#_Toc178820080)
 
-[*Abbildung 129: Zusammenhang zwischen Fähigkeit (Capability) und Fertigkeit (Skill)*](#_Toc178820081)
+[*Abbildung 1-29: Zusammenhang zwischen Fähigkeit (Capability) und Fertigkeit (Skill)*](#_Toc178820081)
 
-[*Abbildung 130: Prototypische Ergänzung des AID-Teilmodells* [7] *für OPC UA*](#_Toc178820082)
+[*Abbildung 1-30: Prototypische Ergänzung des AID-Teilmodells* [7] *für OPC UA*](#_Toc178820082)
 
-[*Abbildung 131: Konzept Use Case "Predictive Maintenance"*](#_Toc178820083)
+[*Abbildung 1-31: Konzept Use Case "Predictive Maintenance"*](#_Toc178820083)
 
-[*Abbildung 132: Zusammenhang der verschiedenen Teilmodelle*](#_Toc178820084)
+[*Abbildung 1-32: Zusammenhang der verschiedenen Teilmodelle*](#_Toc178820084)
 
-[*Abbildung 133: NodeRed-Flow zur Auswertung des Teilmodells "Predictive Maintenance"*](#_Toc178820085)
+[*Abbildung 1-33: NodeRed-Flow zur Auswertung des Teilmodells "Predictive Maintenance"*](#_Toc178820085)
 
