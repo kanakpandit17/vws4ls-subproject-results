@@ -6,73 +6,73 @@
 
 [AP 5.1 - Anforderungsdefinition](#ap-51---anforderungsdefinition)
 
-[1.1.1 Allgemeine Anforderungen](#_Toc178820017)
+[5.1.1 Allgemeine Anforderungen](#511-allgemeine-anforderungen)
 
-[1.1.2 Verbundkomponenten für den Kabelbaum (AP5.2)](#_Toc178820018)
+[5.1.2 Verbundkomponenten für den Kabelbaum (AP5.2)](#512-verbundkomponenten-für-den-kabelbaum-ap52)
 
-[1.1.3 Verbundkomponenten Produktionsmittel (AP5.3)](#_Toc178820019)
+[5.1.3 Verbundkomponenten Produktionsmittel (AP5.3)](#513-verbundkomponenten-produktionsmittel-ap53)
 
-[1.1.4 Integration der Verwaltungsschalen (AP5.4)](#_Toc178820020)
+[5.1.4 Integration der Verwaltungsschalen (AP5.4)](#514-)
 
-[1.1.5 Mapping zwischen Produktionsressource und Leitungssatz (AP5.5)](#_Toc178820021)
+[5.1.5 Mapping zwischen Produktionsressource und Leitungssatz (AP5.5)](#515-)
 
-[1.1.6 Erfassung der Qualitätsdaten (AP5.6)](#_Toc178820022)
+[5.1.6 Erfassung der Qualitätsdaten (AP5.6)](#516-)
 
 [AP 5.2 - Verbundkomponente Produkt (Leitungssatz)](#ap-52---verbundkomponente-produkt-leitungssatz)
 
-[1.2.1 Zielsetzung](#_Toc178820024)
+[5.2.1 Zielsetzung](#521-)
 
-[1.2.2 Ermittelte Beziehungen](#_Toc178820025)
+[5.2.2 Ermittelte Beziehungen](#_Toc178820025)
 
-[1.2.3 Typisierte Beziehungen und Merkmalsfestlegungen](#_Toc178820026)
+[5.2.3 Typisierte Beziehungen und Merkmalsfestlegungen](#_Toc178820026)
 
-[1.2.4 Umsetzung der ermittelten Beziehungen](#_Toc178820027)
+[5.2.4 Umsetzung der ermittelten Beziehungen](#_Toc178820027)
 
-[AP 5.3 - Verbundkomponente Ressource (Produktionsmittel) und VIBN](#_Toc178820028)
+[AP 5.3 - Verbundkomponente Ressource (Produktionsmittel) und VIBN](#ap-53---verbundkomponente-ressource-produktionsmittel-und-vibn)
 
-[1.3.1 Zielsetzung](#_Toc178820029)
+[5.3.1 Zielsetzung](#_Toc178820029)
 
-[1.3.2 Beispiel-Ressourcen](#_Toc178820030)
+[5.3.2 Beispiel-Ressourcen](#_Toc178820030)
 
-[1.3.3 Betrachtete Use Cases](#_Toc178820031)
+[5.3.3 Betrachtete Use Cases](#_Toc178820031)
 
-[1.3.4 Konzept der Verbundkomponente „Ressource“](#_Toc178820032)
+[5.3.4 Konzept der Verbundkomponente „Ressource“](#_Toc178820032)
 
-[1.3.5 Virtuelle Inbetriebnahme](#_Toc178820033)
+[5.3.5 Virtuelle Inbetriebnahme](#_Toc178820033)
 
-[1.3.6 Ausblick](#_Toc178820034)
+[5.3.6 Ausblick](#536-ausblick)
 
-[AP 5.4 - Integration der Verwaltungsschalen](#_Toc178820035)
+[AP 5.4 - Integration der Verwaltungsschalen](#ap-54---integration-der-verwaltungsschalen)
 
-[1.4.1 Zielsetzung](#_Toc178820036)
+[5.4.1 Zielsetzung](#541-zielsetzung)
 
-[1.4.2 Definition und Umsetzung der Use Cases](#_Toc178820037)
+[5.4.2 Definition und Umsetzung der Use Cases](#_Toc178820037)
 
-[AP 5.5 - Mapping zwischen Produktionsressource und Leitungssatz](#_Toc178820038)
+[AP 5.5 - Mapping zwischen Produktionsressource und Leitungssatz](#ap-55---mapping-zwischen-produktionsressource-und-leitungssatz)
 
-[1.5.1 Zielsetzung](#_Toc178820039)
+[5.5.1 Zielsetzung](#551-zielsetzung)
 
-[1.5.2 Modellierung geforderter Fähigkeiten](#_Toc178820040)
+[5.5.2 Modellierung geforderter Fähigkeiten](#_Toc178820040)
 
-[1.5.3 Modellierung angebotener Fähigkeiten](#_Toc178820041)
+[5.5.3 Modellierung angebotener Fähigkeiten](#_Toc178820041)
 
-[1.5.4 Algorithmus zum Fähigkeitenabgleich](#_Toc178820042)
+[5.5.4 Algorithmus zum Fähigkeitenabgleich](#_Toc178820042)
 
-[1.5.5 Anbindung von Skills](#_Toc178820043)
+[5.5.5 Anbindung von Skills](#_Toc178820043)
 
-[1.5.6 Anhang: Liste von Fähigkeiten und zugehörigen Parametern](#_Toc178820044)
+[5.5.6 Anhang: Liste von Fähigkeiten und zugehörigen Parametern](#_Toc178820044)
 
 [AP 5.6 - Erfassung von Qualitätsdaten](#ap-56---erfassung-von-qualit%C3%A4tsdaten)
 
-[1.6.1 Zielsetzung](#_Toc178820046)
+[5.6.1 Zielsetzung](#561-zielsetzung)
 
-[1.6.2 Relevante Teilmodelle](#_Toc178820047)
+[5.6.2 Relevante Teilmodelle](#_Toc178820047)
 
-[1.6.3 Zusammenspiel der verschiedenen Teilmodelle](#_Toc178820048)
+[5.6.3 Zusammenspiel der verschiedenen Teilmodelle](#_Toc178820048)
 
-[1.6.4 Prototypische Implementierung](#_Toc178820049)
+[5.6.4 Prototypische Implementierung](#_Toc178820049)
 
-[1.7 Fazit](#_Toc178820050)
+[Fazit](#fazit)
 
 [Literaturverzeichnis](#_Toc178820051)
 
@@ -87,9 +87,9 @@ Das Teilprojekt wurde in folgende Arbeitspakete aufgeteilt, deren Resultate in d
 
 -   [AP 5.1 - Anforderungsdefinition](#ap-51---anforderungsdefinition)
 -   [AP 5.2 - Verbundkomponente Produkt (Leitungssatz)](#ap-52---verbundkomponente-produkt-leitungssatz)
--   AP 5.3 – Verbundkomponente Ressource (Produktionsmittel) und VIBN
--   AP 5.4 – Integration der Verwaltungsschalen
--   AP 5.5 – Mapping zwischen Produktionsressource und Leitungssatz
+-   [AP 5.3 - Verbundkomponente Ressource (Produktionsmittel) und VIBN](#ap-53---verbundkomponente-ressource-produktionsmittel-und-vibn)
+-   [AP 5.4 - Integration der Verwaltungsschalen](#ap-54---integration-der-verwaltungsschalen)
+-   [AP 5.5 - Mapping zwischen Produktionsressource und Leitungssatz](#ap-55---mapping-zwischen-produktionsressource-und-leitungssatz)
 -   [AP 5.6 - Erfassung von Qualitätsdaten](#ap-56---erfassung-von-qualit%C3%A4tsdaten)
 
 ## AP 5.1 - Anforderungsdefinition
@@ -108,7 +108,7 @@ Die Workshop-Ergebnisse wurden anschließend in einem strukturierten Prozess in 
 
 Im Folgenden sind die einzelnen Anforderungen inklusive DoD sowie identifizierter Schnittstellen aufgeführt.
 
-### Allgemeine Anforderungen
+### 5.1.1 Allgemeine Anforderungen
 
 #### Gesamtarchitektur
 
@@ -215,7 +215,7 @@ Die Versionierung von VWS bzw. enthaltenen Daten ist zu berücksichtigen. Dies b
 
 -   Architekturteam: Versionierung von Verwaltungsschalen bzw. -inhalten
 
-### Verbundkomponenten für den Kabelbaum (AP5.2)
+### 5.1.2 Verbundkomponenten für den Kabelbaum (AP5.2)
 
 #### Produktmodell
 
@@ -287,7 +287,7 @@ Es ist zu definieren, wie Änderungen von Parametern bzw. Produktionsprozessen a
 
 -   Architekturteam: Synchronisierung von Verwaltungsschalen sowie Änderungsmanagement
 
-### Verbundkomponenten Produktionsmittel (AP5.3)
+### 5.1.3 Verbundkomponenten Produktionsmittel (AP5.3)
 
 #### Modellierung von Produktionsressourcen
 
@@ -332,7 +332,7 @@ Es ist zu prüfen, ob/wie Simulationsmodelle für Maschinen aus mehreren Simulat
 
 -   \---
 
-### Integration der Verwaltungsschalen (AP5.4)
+### 5.1.4 Integration der Verwaltungsschalen (AP5.4)
 
 #### Allgemeines
 
@@ -391,7 +391,7 @@ Es ist zu definieren, wie Daten aus dem Produktmodell (z.B. KBL/VEC) mit dem Pro
 -   TP3: Definition des Prozessmodells sowie der zugehörigen Capabilities inkl. Parametern
 -   Architekturteam: Verlinkung von Inhalten in Verwaltungsschalen
 
-### Mapping zwischen Produktionsressource und Leitungssatz (AP5.5)
+### 5.1.5 Mapping zwischen Produktionsressource und Leitungssatz (AP5.5)
 
 #### Verknüpfung von Produktionsprozess und -ressourcen
 
@@ -436,7 +436,7 @@ Die virtuelle Inbetriebnahme/Simulation der Produktion auf Basis der definierten
 
 -   \---
 
-### Erfassung der Qualitätsdaten (AP5.6)
+### 5.1.6 Erfassung der Qualitätsdaten (AP5.6)
 
 #### Teilmodelle
 
@@ -509,7 +509,7 @@ Es ist zu definieren, wie mit Chargen umzugehen ist, bei denen nicht jedes einze
 
 ## AP 5.2 - Verbundkomponente Produkt (Leitungssatz)
 
-### Zielsetzung
+### 5.2.1 Zielsetzung
 
 Das AP 5.2 behandelt die Ableitung und Definition der Verbundkomponente (VBK) „Produkt“, d.h. des Leitungssatzes.
 
@@ -521,9 +521,9 @@ Grundlage für die VBK sind dabei zunächst die relevanten Beziehungen zwischen 
 
 Die verschiedenen Beziehungen zwischen den oben abgebildeten Verwaltungsschalen wurden klassifiziert (Quelle, Ziel, Kategorie, Kardinalität) und mit je einem Use Case beschrieben. Dieser Use Case zeigt jeweils auf, warum es sinnvoll ist, die entsprechende Beziehung explizit im Rahmen der VBK „Produkt“ abzubilden.
 
-Abschnitt 1.2.2 führt die einzelnen Beziehungen inklusive Klassifizierung sowie zugeordnetem Use Case auf. Darauf aufbauend erläutert Abschnitt 0 die Umsetzung der verschiedenen Kategorien von Beziehung auf Basis der Verwaltungsschale.
+Abschnitt 5.2.2 führt die einzelnen Beziehungen inklusive Klassifizierung sowie zugeordnetem Use Case auf. Darauf aufbauend erläutert Abschnitt 0 die Umsetzung der verschiedenen Kategorien von Beziehung auf Basis der Verwaltungsschale.
 
-### Ermittelte Beziehungen
+### 5.2.2 Ermittelte Beziehungen
 
 In diesem Abschnitt werden die einzelnen Beziehungen inklusive Klassifizierung sowie zugeordnetem Use Case in Bezug auf Abbildung 1--2 aufgeführt.
 
@@ -549,8 +549,8 @@ In diesem Abschnitt werden die einzelnen Beziehungen inklusive Klassifizierung s
 
 **Kommentar:**
 
--   Inverse Beziehung zu 1.2.2.1.4
--   Analoge Beziehung zu 1.2.2.1.2, 1.2.2.1.7, 1.2.2.1.11 und 1.2.2.1.15
+-   Inverse Beziehung zu 5.2.2.1.4
+-   Analoge Beziehung zu 5.2.2.1.2, 5.2.2.1.7, 5.2.2.1.11 und 5.2.2.1.15
 
 ##### (OEM-)Leitungssatz enthält (OEM-)Komponenten
 
@@ -572,8 +572,8 @@ In diesem Abschnitt werden die einzelnen Beziehungen inklusive Klassifizierung s
 
 **Kommentar:**
 
--   Inverse Beziehung zu 1.2.2.1.4
--   Analoge Beziehung zu 1.2.2.1.1, 1.2.2.1.7, 1.2.2.1.11 und 1.2.2.1.15
+-   Inverse Beziehung zu 5.2.2.1.4
+-   Analoge Beziehung zu 5.2.2.1.1, 5.2.2.1.7, 5.2.2.1.11 und 5.2.2.1.15
 
 ##### Leitungssatz-Instanz enthält Komponenten-Instanzen
 
@@ -594,8 +594,8 @@ In diesem Abschnitt werden die einzelnen Beziehungen inklusive Klassifizierung s
 
 **Kommentar:**
 
--   Inverse Beziehung zu 1.2.2.1.6
--   Analoge Beziehung zu 1.2.2.1.8, 1.2.2.1.12 und 1.2.2.1.16
+-   Inverse Beziehung zu 5.2.2.1.6
+-   Analoge Beziehung zu 5.2.2.1.8, 5.2.2.1.12 und 5.2.2.1.16
 
 ##### Komponente wird in Leitungssatz verwendet
 
@@ -618,7 +618,7 @@ In diesem Abschnitt werden die einzelnen Beziehungen inklusive Klassifizierung s
 **Kommentar:**
 
 -   Hoher Datenpflege-Aufwand
--   Use Cases können auch über Rückwärtssuche der Beziehung 1.2.2.1.1 realisiert werden
+-   Use Cases können auch über Rückwärtssuche der Beziehung 5.2.2.1.1 realisiert werden
 
 ##### (OEM-)Komponente wird in (OEM-)Leitungssatz verwendet
 
@@ -641,7 +641,7 @@ In diesem Abschnitt werden die einzelnen Beziehungen inklusive Klassifizierung s
 **Kommentar:**
 
 -   Hoher Datenpflege-Aufwand
--   Use Cases können auch über Rückwärtssuche der Beziehung 1.2.2.1.2 realisiert werden
+-   Use Cases können auch über Rückwärtssuche der Beziehung 5.2.2.1.2 realisiert werden
 
 ##### Komponenten-Instanz wird in LS-Instanz verwendet
 
@@ -663,7 +663,7 @@ In diesem Abschnitt werden die einzelnen Beziehungen inklusive Klassifizierung s
 **Kommentar:**
 
 -   Hoher Datenpflege-Aufwand
--   Use Cases Könnte auch über Rückwärtssuche der Beziehung 1.2.2.1.3 realisiert werden
+-   Use Cases Könnte auch über Rückwärtssuche der Beziehung 5.2.2.1.3 realisiert werden
 
 ##### Leitungssatz enthält Halbfabrikate
 
@@ -685,8 +685,8 @@ In diesem Abschnitt werden die einzelnen Beziehungen inklusive Klassifizierung s
 
 **Kommentar:**
 
--   Inverse Beziehung zu 1.2.2.1.9
--   Analoge Beziehung zu 1.2.2.1.1, 1.2.2.1.2, 1.2.2.1.11 und 1.2.2.1.15
+-   Inverse Beziehung zu 5.2.2.1.9
+-   Analoge Beziehung zu 5.2.2.1.1, 5.2.2.1.2, 5.2.2.1.11 und 5.2.2.1.15
 
 ##### Leitungssatz-Instanz enthält Halbfabrikat-Instanzen
 
@@ -707,8 +707,8 @@ In diesem Abschnitt werden die einzelnen Beziehungen inklusive Klassifizierung s
 
 **Kommentar:**
 
--   Inverse Beziehung zu 1.2.2.1.9
--   Analoge Beziehung zu 1.2.2.1.3, 1.2.2.1.12 und 1.2.2.1.16
+-   Inverse Beziehung zu 5.2.2.1.9
+-   Analoge Beziehung zu 5.2.2.1.3, 5.2.2.1.12 und 5.2.2.1.16
 
 ##### Halbfabrikat wird in Leitungssatz verwendet
 
@@ -731,7 +731,7 @@ In diesem Abschnitt werden die einzelnen Beziehungen inklusive Klassifizierung s
 **Kommentar:**
 
 -   Hoher Datenpflege-Aufwand
--   Use Cases können auch über Rückwärtssuche der Beziehung 1.2.2.1.7 realisiert werden
+-   Use Cases können auch über Rückwärtssuche der Beziehung 5.2.2.1.7 realisiert werden
 
 ##### Halbfabrikat-Instanz wird in Leitungssatz-Instanz verwendet
 
@@ -753,7 +753,7 @@ In diesem Abschnitt werden die einzelnen Beziehungen inklusive Klassifizierung s
 **Kommentar:**
 
 -   Hoher Datenpflege-Aufwand
--   Use Cases können auch über Rückwärtssuche der Beziehung 1.2.2.1.8 realisiert werden
+-   Use Cases können auch über Rückwärtssuche der Beziehung 5.2.2.1.8 realisiert werden
 
 ##### Halbfabrikat enthält Halbfabrikat
 
@@ -775,8 +775,8 @@ In diesem Abschnitt werden die einzelnen Beziehungen inklusive Klassifizierung s
 
 **Kommentar:**
 
--   Inverse Beziehung zu 1.2.2.1.13
--   Analoge Beziehung zu 1.2.2.1.1, 1.2.2.1.2, 1.2.2.1.7 und 1.2.2.1.15
+-   Inverse Beziehung zu 5.2.2.1.13
+-   Analoge Beziehung zu 5.2.2.1.1, 5.2.2.1.2, 5.2.2.1.7 und 5.2.2.1.15
 
 ##### Halbfabrikat-Instanz enthält Halbfabrikat-Instanz
 
@@ -797,8 +797,8 @@ In diesem Abschnitt werden die einzelnen Beziehungen inklusive Klassifizierung s
 
 **Kommentar:**
 
--   Inverse Beziehung zu 1.2.2.1.14
--   Analoge Beziehung zu 1.2.2.1.3, 1.2.2.1.8 und 1.2.2.1.16
+-   Inverse Beziehung zu 5.2.2.1.14
+-   Analoge Beziehung zu 5.2.2.1.3, 5.2.2.1.8 und 5.2.2.1.16
 
 ##### Halbfabrikat wird in Halbfabrikat verwendet
 
@@ -821,7 +821,7 @@ In diesem Abschnitt werden die einzelnen Beziehungen inklusive Klassifizierung s
 **Kommentar:**
 
 -   Hoher Datenpflege-Aufwand
--   Use Cases können auch über Rückwärtssuche der Beziehung 1.2.2.1.11 realisiert werden
+-   Use Cases können auch über Rückwärtssuche der Beziehung 5.2.2.1.11 realisiert werden
 
 ##### Halbfabrikat-Instanz wird in Halbfabrikat-Instanz verwendet
 
@@ -843,7 +843,7 @@ In diesem Abschnitt werden die einzelnen Beziehungen inklusive Klassifizierung s
 **Kommentar:**
 
 -   Hoher Datenpflege-Aufwand
--   Use Cases können auch über Rückwärtssuche der Beziehung 1.2.2.1.12 realisiert werden
+-   Use Cases können auch über Rückwärtssuche der Beziehung 5.2.2.1.12 realisiert werden
 
 ##### Halbfabrikat enthält Komponente
 
@@ -865,8 +865,8 @@ In diesem Abschnitt werden die einzelnen Beziehungen inklusive Klassifizierung s
 
 **Kommentar:**
 
--   Inverse Beziehung zu 1.2.2.1.17
--   Analoge Beziehung zu 1.2.2.1.1, 1.2.2.1.2, 1.2.2.1.7 und 1.2.2.1.11
+-   Inverse Beziehung zu 5.2.2.1.17
+-   Analoge Beziehung zu 5.2.2.1.1, 5.2.2.1.2, 5.2.2.1.7 und 5.2.2.1.11
 
 ##### Halbfabrikat-Instanz enthält Komponenten-Instanzen
 
@@ -887,8 +887,8 @@ In diesem Abschnitt werden die einzelnen Beziehungen inklusive Klassifizierung s
 
 **Kommentar:**
 
--   Inverse Beziehung zu 1.2.2.1.18
--   Analoge Beziehung zu 1.2.2.1.3, 1.2.2.1.8 und 1.2.2.1.12
+-   Inverse Beziehung zu 5.2.2.1.18
+-   Analoge Beziehung zu 5.2.2.1.3, 5.2.2.1.8 und 5.2.2.1.12
 
 ##### Komponente wird in Halbfabrikat verwendet
 
@@ -911,7 +911,7 @@ In diesem Abschnitt werden die einzelnen Beziehungen inklusive Klassifizierung s
 **Kommentar:**
 
 -   Hoher Datenpflege-Aufwand
--   Use Cases können auch über Rückwärtssuche der Beziehung 1.2.2.1.15 realisiert werden
+-   Use Cases können auch über Rückwärtssuche der Beziehung 5.2.2.1.15 realisiert werden
 
 ##### Komponenten-Instanz wird in Halbfabrikat-Instanz verwendet
 
@@ -934,7 +934,7 @@ In diesem Abschnitt werden die einzelnen Beziehungen inklusive Klassifizierung s
 
 -   Beziehung hat die Kardinalität „1-zu-n“, da eine Komponenten-Instanz auch eine Charge repräsentieren kann
 -   Hoher Datenpflege-Aufwand
--   Use Cases können auch über Rückwärtssuche der Beziehung 1.2.2.1.16 realisiert werden
+-   Use Cases können auch über Rückwärtssuche der Beziehung 5.2.2.1.16 realisiert werden
 
 #### Typ-Instanz-Beziehungen
 
@@ -957,7 +957,7 @@ In diesem Abschnitt werden die einzelnen Beziehungen inklusive Klassifizierung s
 
 **Kommentar:**
 
--   Analoge Beziehung zu 1.2.2.2.3,  und 1.2.2.2.7
+-   Analoge Beziehung zu 5.2.2.2.3,  und 5.2.2.2.7
 
 ##### Leitungssatz-Typ hat produzierte Instanzen
 
@@ -979,10 +979,10 @@ Quelle: AAS Leitungssatz Tier 1
 
 **Kommentar:**
 
--   Inverse Beziehung zu 1.2.2.2.1
+-   Inverse Beziehung zu 5.2.2.2.1
 -   Hoher Datenpflege-Aufwand
--   Use Case Könnte auch über Rückwärtssuche der Beziehung 1.2.2.2.1 realisiert werden
--   Analog zu Beziehung 1.2.2.2.4, 1.2.2.2.6 und 1.2.2.2.8
+-   Use Case Könnte auch über Rückwärtssuche der Beziehung 5.2.2.2.1 realisiert werden
+-   Analog zu Beziehung 5.2.2.2.4, 5.2.2.2.6 und 5.2.2.2.8
 
 ##### Halbfabrikat ist Instanz aus Halbfabrikat-Typ
 
@@ -1003,7 +1003,7 @@ Quelle: AAS Leitungssatz Tier 1
 
 **Kommentar:**
 
--   Analoge Beziehung zu 1.2.2.2.1,  und 1.2.2.2.7
+-   Analoge Beziehung zu 5.2.2.2.1,  und 5.2.2.2.7
 
 ##### Halbfabrikat-Typ hat produzierte Instanzen
 
@@ -1024,10 +1024,10 @@ Quelle: AAS Leitungssatz Tier 1
 
 **Kommentar:**
 
--   Inverse Beziehung zu 1.2.2.2.3
+-   Inverse Beziehung zu 5.2.2.2.3
 -   Hoher Datenpflege-Aufwand
--   Use Case Könnte auch über Rückwärtssuche der Beziehung 1.2.2.2.3 realisiert werden
--   Analog zu Beziehung 1.2.2.2.2, 1.2.2.2.6 und 1.2.2.2.8
+-   Use Case Könnte auch über Rückwärtssuche der Beziehung 5.2.2.2.3 realisiert werden
+-   Analog zu Beziehung 5.2.2.2.2, 5.2.2.2.6 und 5.2.2.2.8
 
 ##### Komponente ist Instanz aus Komponenten-Typ
 
@@ -1048,7 +1048,7 @@ Quelle: AAS Leitungssatz Tier 1
 
 **Kommentar:**
 
--   Analoge Beziehung zu 1.2.2.2.1, 1.2.2.2.3 und 1.2.2.2.7
+-   Analoge Beziehung zu 5.2.2.2.1, 5.2.2.2.3 und 5.2.2.2.7
 
 ##### Komponenten-Typ hat produzierte Instanzen
 
@@ -1073,7 +1073,7 @@ Quelle: AAS-Komponente Tier 1
 -   Inverse Beziehung zu 
 -   Hoher Datenpflege-Aufwand
 -   Use Case Könnte auch über Rückwärtssuche der Beziehung  realisiert werden
--   Analog zu Beziehung 1.2.2.2.2, 1.2.2.2.4 und 1.2.2.2.8
+-   Analog zu Beziehung 5.2.2.2.2, 5.2.2.2.4 und 5.2.2.2.8
 
 ##### Tier2-Komponente ist Instanz aus Tier2-Komponenten-Typ
 
@@ -1094,7 +1094,7 @@ Quelle: AAS-Komponente Tier 1
 
 **Kommentar:**
 
--   Analoge Beziehung zu 1.2.2.2.1, 1.2.2.2.3 und 
+-   Analoge Beziehung zu 5.2.2.2.1, 5.2.2.2.3 und 
 
 ##### Tier2-Komponenten-Typ hat produzierte Instanzen
 
@@ -1116,10 +1116,10 @@ Quelle: AAS-Komponente Tier 2
 
 **Kommentar:**
 
--   Inverse Beziehung zu 1.2.2.2.7
+-   Inverse Beziehung zu 5.2.2.2.7
 -   Hoher Datenpflege-Aufwand
--   Use Case Könnte auch über Rückwärtssuche der Beziehung 1.2.2.2.7 realisiert werden
--   Analog zu Beziehung 1.2.2.2.2, 1.2.2.2.4 und 1.2.2.2.6
+-   Use Case Könnte auch über Rückwärtssuche der Beziehung 5.2.2.2.7 realisiert werden
+-   Analog zu Beziehung 5.2.2.2.2, 5.2.2.2.4 und 5.2.2.2.6
 
 #### Äquivalenz-/Entsprechungs-Beziehungen
 
@@ -1252,7 +1252,7 @@ Quelle: AAS-Komponente Tier 2
 **Kommentar:**
 
 -   Je nach Komponente legt der OEM entweder einen oder mehrere Lieferanten fest (s.u.), oder er überlässt die Auswahl dem Tier1
--   Analoge Beziehung zu 1.2.2.4.2
+-   Analoge Beziehung zu 5.2.2.4.2
 
 ##### Freigabe von Tier2-Komponente für Tier1-Komponente
 
@@ -1273,7 +1273,7 @@ Quelle: AAS-Komponente Tier 2
 
 **Kommentar:**
 
--   Analoge Beziehung zu 1.2.2.4.1
+-   Analoge Beziehung zu 5.2.2.4.1
 
 ##### Freigabe von OEM-Komponente für Tier2-Komponente
 
@@ -1296,7 +1296,7 @@ Quelle: AAS-Komponente Tier 2
 
 -   Resultat des "Approved Production Part Process", den der Tier2 durchläuft
 
-### Typisierte Beziehungen und Merkmalsfestlegungen
+### 5.2.2 Typisierte Beziehungen und Merkmalsfestlegungen
 
 #### Zuordnung von Prozessschritten zu verarbeiteten Komponenten
 
@@ -1339,7 +1339,7 @@ Quelle: AAS-Komponente Tier 2
 **Kommentar:**
 
 -   Eigentlich nicht Teil der Verbundkomponente, da lediglich Beziehung zwischen zwei Teilmodellen des gleichen Assets; muss aber trotzdem abgebildet werden
--   Erweiterung der Beziehung 1.2.2.2
+-   Erweiterung der Beziehung 5.2.2.2
 
 #### Required Capability resultiert aus Prozessschritt
 
@@ -1362,9 +1362,9 @@ Quelle: AAS-Komponente Tier 2
 
 -   Eigentlich nicht Teil der Verbundkomponente, da lediglich Beziehung zwischen zwei Teilmodellen des gleichen Assets; muss aber trotzdem abgebildet werden
 
-### Umsetzung der ermittelten Beziehungen
+### 5.2.3 Umsetzung der ermittelten Beziehungen
 
-Um die in Abschnitt 1.2.2 ermittelten Beziehungen im Rahmen der VBK „Produkt“ abbilden zu können, müssen diese im Rahmen der entsprechenden Quell-Verwaltungsschale modelliert werden. Dabei erfordert jede der fünf in Abschnitt 1.2.2 ermittelten Kategorien von Beziehungen eine eigene Art der Umsetzung. Diese sind im Folgenden beschrieben.
+Um die in Abschnitt 5.2.2 ermittelten Beziehungen im Rahmen der VBK „Produkt“ abbilden zu können, müssen diese im Rahmen der entsprechenden Quell-Verwaltungsschale modelliert werden. Dabei erfordert jede der fünf in Abschnitt 5.2.2 ermittelten Kategorien von Beziehungen eine eigene Art der Umsetzung. Diese sind im Folgenden beschrieben.
 
 #### Hierarchische Beziehungen
 
@@ -1425,15 +1425,15 @@ Abbildung 1-6 zeigt die gesamte Struktur des Teilmodells.
 
 #### Typisierte Beziehungen und Merkmalsfestlegungen
 
-Wie bereits im Rahmen der Definition der einzelnen Beziehungen im Rahmen von Abschnitt 1.2.3 beschrieben, sind diese Beziehungen nicht Teil der Verbundkomponente, müssen aber nichtsdestotrotz abgebildet werden. Diese Abbildung muss dabei im Rahmen des entsprechenden Teilmodells erfolgen, das die Quelle der Beziehung darstellt. Aus diesem Grund wird an dieser Stelle nicht näher auf die konkrete Umsetzung eingegangen.
+Wie bereits im Rahmen der Definition der einzelnen Beziehungen im Rahmen von Abschnitt 5.2.3 beschrieben, sind diese Beziehungen nicht Teil der Verbundkomponente, müssen aber nichtsdestotrotz abgebildet werden. Diese Abbildung muss dabei im Rahmen des entsprechenden Teilmodells erfolgen, das die Quelle der Beziehung darstellt. Aus diesem Grund wird an dieser Stelle nicht näher auf die konkrete Umsetzung eingegangen.
 
 ## AP 5.3 - Verbundkomponente Ressource (Produktionsmittel) und VIBN
 
-### Zielsetzung
+### 5.3.1 Zielsetzung
 
 Das AP 5.3 beschäftigte sich mit der Ableitung und Definition der Verbundkomponente (VBK) „Ressource“, d.h. für die Produktionsmittel.
 
-Zur Ableitung wurden zunächst zwei Beispiel-Ressourcen analysiert, die typische Vertreter der Produktionsmittel in der Domäne „Leitungssatz“ darstellen. Diese Beispiel-Ressourcen werden in Abschnitt 1.3.2 genauer vorgestellt. Basierend auf diesen Ressourcen wurden typische Use Cases analysiert, die auf Basis des Konzepts der Verbundkomponente realisiert werden können bzw. für die die Beziehungen zwischen den einzelnen Teilen der Verbundkomponente relevant sind. Diese werden in Abschnitt 1.3.3 vorgestellt. Basierend auf diesen Use Cases wurde in Abschnitt 1.3.4 das Konzept der Verbundkomponente „Ressource“ definiert.
+Zur Ableitung wurden zunächst zwei Beispiel-Ressourcen analysiert, die typische Vertreter der Produktionsmittel in der Domäne „Leitungssatz“ darstellen. Diese Beispiel-Ressourcen werden in Abschnitt 5.3.2 genauer vorgestellt. Basierend auf diesen Ressourcen wurden typische Use Cases analysiert, die auf Basis des Konzepts der Verbundkomponente realisiert werden können bzw. für die die Beziehungen zwischen den einzelnen Teilen der Verbundkomponente relevant sind. Diese werden in Abschnitt 5.3.3 vorgestellt. Basierend auf diesen Use Cases wurde in Abschnitt 5.3.4 das Konzept der Verbundkomponente „Ressource“ definiert.
 
 In Abschnitt 0 wurde das Thema „Virtuelle Inbetriebnahme“ (VIBN) als wesentlicher Bestandteil der Digitalen Fabrik für Produktionsresourcen des Leitungssatzes besprochen.
 
@@ -1445,7 +1445,7 @@ Im Rahmen von AP5.3 wurden insgesamt die folgenden Use Cases definiert:
 4.  VIBN für Antriebseinheit vom Komponentenlieferant
 5.  VIBN für Prüfmodul
 
-### Beispiel-Ressourcen
+### 5.3.2 Beispiel-Ressourcen
 
 Verbundkomponenten betrachten den Aufbau sowie die Struktur zusammengesetzter Systeme auf Basis von Teilsystemen und Komponenten. Um die relevanten, mit Hilfe der Verwaltungsschale nachzubildenden Strukturen zu ermitteln, lohnt zunächst eine Analyse typischer, zu betrachtender Systeme. Zu diesem Zweck wurden zwei repräsentative Vertreter von Produktionsmitteln in der Domäne „Leitungssatz“ ausgewählt, die im Folgenden kurz beschrieben werden sollen.
 
@@ -1463,7 +1463,7 @@ Das zweite untersuchte Beispiel stellt die vollautomatische Sigma 688 der Firma 
 
 Für beide Maschinen gilt, dass diese für den Kunden prinzipiell eine Blackbox darstellen – der innere Aufbau ist für den Kunden folglich – mit Ausnahme der Möglichkeiten zum Montieren spezieller Werkzeuge – nicht ersichtlich und auch nicht relevant. Dies bezieht sich vor allem bei der Sigma 688 auch auf die verbauten Module: Diese werden in aller Regel einmal bei der Bestellung der Maschine ausgewählt und sind dann – für den Kunden – fest verbaut und Teil der Maschine.
 
-### Betrachtete Use Cases
+### 5.3.3 Betrachtete Use Cases
 
 Bereits im letzten Abschnitt wurde die Tatsache beschrieben, dass die Maschinen zumindest für den Kunden (Leitungssatzkonfektionär) eine Blackbox darstellen. Der innere Aufbau dieser Maschinen bspw. aus unterschiedlichen Komponenten ist daher für den Hauptfokus dieses Projekts – die Auswahl und Nutzung der Maschinen durch den Kunden zur Produktion eines Leitungssatzes – nicht relevant. Eine Ausnahme stellen dabei die Möglichkeiten und Voraussetzungen zur Montage von Werkzeugen dar.
 
@@ -1475,15 +1475,15 @@ Haupt-Use Case besteht im Finden einer (beim Kunden vorhandenen) Maschine bzw. M
 
 #### UC2: Ermittlung des zur Erfüllung einer Fähigkeit notwendigen Werkzeugs
 
-Eng im Zusammenhang mit UC1 steht die Frage danach, welches Werkzeug in einer Maschine montiert werden muss, um eine bestimmte Fähigkeit ausführen zu können. Im Speziellen ist hierbei auch die Frage interessant, welcher Adapter/Modul evtl. benötigt wird, um das Werkzeug montieren zu können (vgl. Abschnitt 1.3.2).
+Eng im Zusammenhang mit UC1 steht die Frage danach, welches Werkzeug in einer Maschine montiert werden muss, um eine bestimmte Fähigkeit ausführen zu können. Im Speziellen ist hierbei auch die Frage interessant, welcher Adapter/Modul evtl. benötigt wird, um das Werkzeug montieren zu können (vgl. Abschnitt 5.3.2).
 
 #### UC3: Konfiguration und Bestellung einer Maschine
 
-Einen verwandten und doch erweiterten Use Case stellt die Bestellung einer neuen Maschine durch einen Leitungssatz-Konfektionär bei einem Maschinenlieferanten dar. Hierbei wird der Konfektionär mit einer oder mehreren benötigten Fähigkeiten an den Maschinenlieferanten herantreten, welche daraufhin alle durch ihn angebotenen Maschinentypen durchsuchen und bewerten muss. Diese Bewertung erstreckt sich dabei vor allem auch auf die möglichen Kombinationen von Maschinen mit Erweiterungsmodulen (vgl. Abschnitt 1.3.2).
+Einen verwandten und doch erweiterten Use Case stellt die Bestellung einer neuen Maschine durch einen Leitungssatz-Konfektionär bei einem Maschinenlieferanten dar. Hierbei wird der Konfektionär mit einer oder mehreren benötigten Fähigkeiten an den Maschinenlieferanten herantreten, welche daraufhin alle durch ihn angebotenen Maschinentypen durchsuchen und bewerten muss. Diese Bewertung erstreckt sich dabei vor allem auch auf die möglichen Kombinationen von Maschinen mit Erweiterungsmodulen (vgl. Abschnitt 5.3.2).
 
-### Konzept der Verbundkomponente „Ressource“
+### 5.3.4 Konzept der Verbundkomponente „Ressource“
 
-Die in Abschnitt 1.3.3 betrachteten Use Cases fokussieren auf die Auswertung von durch eine Maschine im Verbund mit einem Werkzeug bereitgestellte Fähigkeiten. Abbildung 1-9 illustriert dies anhand einer Einordnung in den PPR-Kontext.
+Die in Abschnitt 5.3.3 betrachteten Use Cases fokussieren auf die Auswertung von durch eine Maschine im Verbund mit einem Werkzeug bereitgestellte Fähigkeiten. Abbildung 1-9 illustriert dies anhand einer Einordnung in den PPR-Kontext.
 
 ![image](https://github.com/user-attachments/assets/f72bab86-4037-4b46-a67f-2c9ceb1d003c)
 
@@ -1502,7 +1502,7 @@ Für die Auswahl eines passenden Werkzeugs ist dessen formale *Freigabe* das ent
 
 Der zweite Aspekt – die Kompatibilität eines Werkzeugs mit einer Maschine evtl. unter Nutzung eines entsprechenden Applikators – lässt sich in zwei Teil-Aspekte aufteilen:
 
-Die aktuelle Maschinenstruktur, die eine Aussage über aktuell montierte Werkzeuge und damit über die aktuell, ohne Umbau zu realisierenden Fähigkeiten zulässt, lässt sich einfach mit Hilfe des bereits standardisierten Teilmodells „[IDTA 02011: Hierarchical Structures enabling Bills of Material](https://github.com/admin-shell-io/submodel-templates/tree/main/published/Hierarchical%20Structures%20enabling%20Bills%20of%20Material/1/1)“ (BOM) [3] abbilden. Abbildung 1-10 zeigt dies Anhand der Maschine *Sigma 688*, welche mit einem Crimp-Modul *C1340* ausgestattet ist, in welchem wiederum ein Werkzeug (Applikator) *Schäfer 20* montiert ist. Ob das Crimp-Modul explizit mitmodelliert wird oder nicht, ist dabei abhängig vom konkreten umzusetzenden Use Case (vgl. Abschnitt 1.3.3).
+Die aktuelle Maschinenstruktur, die eine Aussage über aktuell montierte Werkzeuge und damit über die aktuell, ohne Umbau zu realisierenden Fähigkeiten zulässt, lässt sich einfach mit Hilfe des bereits standardisierten Teilmodells „[IDTA 02011: Hierarchical Structures enabling Bills of Material](https://github.com/admin-shell-io/submodel-templates/tree/main/published/Hierarchical%20Structures%20enabling%20Bills%20of%20Material/1/1)“ (BOM) [3] abbilden. Abbildung 1-10 zeigt dies Anhand der Maschine *Sigma 688*, welche mit einem Crimp-Modul *C1340* ausgestattet ist, in welchem wiederum ein Werkzeug (Applikator) *Schäfer 20* montiert ist. Ob das Crimp-Modul explizit mitmodelliert wird oder nicht, ist dabei abhängig vom konkreten umzusetzenden Use Case (vgl. Abschnitt 5.3.3).
 
 Die Abbildung der theoretisch abbildbaren Maschinenstrukturen ist dagegen komplexer – vor allem da sich je nach konkretem Beispiel eine Vielzahl an möglichen Kombinationen ergeben können. Eine Nutzung des BOM-Teilmodells, wie für den ersten Teilaspekt vorgeschlagen, ist dabei aufgrund des hohen Modellierungsaufwands nicht sinnvoll, wie in Abbildung 1-12 zu sehen ist: So muss bei Einführung eines neuen Crimpmoduls explizit jeder kompatible Applikator angegeben werden bzw. bei Einführung eines neuen Applikators jedes kompatible Cirmp-Modul. Stattdessen ist eine implizite Modellierung sinnvoll, die auf einer Abbildung der – bspw. zwischen Modulen und Applikatoren genutzten – Schnittstellen basiert. Eine solche Modellierung lässt sich bspw. auf Basis der „*specificAssetId*“ umsetzen, die bereits im Rahmen von AP5.2 genutzt wurde.
 
@@ -1524,7 +1524,7 @@ Abbildung 1-13 zeigt eine mögliche Implementierung, wo die Kompatibilität sowo
 
 *Abbildung 1-13: Modellierung potenzieller Maschinenstrukturen per "specificAssetId"*
 
-### Virtuelle Inbetriebnahme
+### 5.3.5 Virtuelle Inbetriebnahme
 
 Die Virtuelle Inbetriebnahme (VIBN) ist ein wesentlicher Bestandteil der Digitalen Fabrik und beschreibt eine Simulationsmethodik im digitalen Engineering. Die Idee dahinter ist, dass ein virtuelles Abbild der Anlage bzw. der Maschine bereits in der frühen Phase der Entwicklung erstellt wird. Mit diesem virtuellen Abbild, dass das Verhalten der realen Anlage hinreichend gut beschreibt, wird die Steuerungstechnik bzw. der Steuerungsablauf über das Prozessdatenbild einer realen Steuerung getestet. Bei dem klassischen, sequenziellen Engineering (ohne VIBN), beispielsweise „Wasserfallmodell", werden alle Phasen nacheinander ausgeführt und Prüfungen erst bei dem Factory Acceptance Test (FAT) bzw. bei der Inbetriebnahme (IBN) durchgeführt, was generell zu einer späten Fehlererkennung führt. Eine Studie des Vereins Deutscher Werkzeugmaschinen-fabriken e.V.[^4] (VDW) besagt, dass die IBN 15 bis 25% der Gesamtdurchlaufzeit eines Anlagenprojekts ausmacht. Davon ist 90% der Zeit für die IBN von Elektronik und Steuerungstechnik aufzuwenden, wovon wiederum 70% auf Softwarefehlern beruhen. Durch die Einführung der VIBN bereits in der frühen Phase des Entwicklungsprozesses können die Tätigkeiten der Disziplinen Mechanik, Elektronik und Software stärker parallelisiert werden. Es entwickelt sich ein viel früheres Systemverständnis der Anlage. Dies ermöglicht eine frühzeitige Absicherung und Optimierung der Steuerungsprogramme und somit eine Verkürzung der Entwicklungs- und Inbetriebnahmezeiten.
 
@@ -1611,8 +1611,8 @@ Ausgangssituation für die Simulation sind mehrere Verwaltungsschalen für die E
 
 Für die Simulationsumgebung wurden mehrere Teilsysteme beschrieben:
 
--   Verhaltensmodell für Einzelkomponenten auf Basis des FMI-Standards (siehe Kapitel 1.3.5.3)
--   Verhaltensmodell für Verbundkomponenten (Netzwerk von Einzelkomponenten) auf Basis des SSP-Standards (siehe Kapitel 1.3.5.3).
+-   Verhaltensmodell für Einzelkomponenten auf Basis des FMI-Standards (siehe Kapitel 5.3.5.3)
+-   Verhaltensmodell für Verbundkomponenten (Netzwerk von Einzelkomponenten) auf Basis des SSP-Standards (siehe Kapitel 5.3.5.3).
 -   Kinematisches Modell basierend auf dem CAD-Modell
 -   Logisches Verhaltensmodell in Form einer SPS-Simulation
 
@@ -1655,7 +1655,7 @@ Damit wird UC2 erfüllt. Anhand der Stückliste sind die Antriebseinheiten auffi
 
 *Abbildung 1-19: Simulationsmodelle in der Verwaltungsschale des Prüfmoduls*
 
-### Ausblick
+### 5.3.6 Ausblick
 
 Auf Grundlage der in AP5.3 beschriebenen Lösungsansätze können Simulationsmodelle partnerübergreifend vernetzt und zu komplexen Verbundsimulationen zusammengeführt werden.
 
@@ -1663,7 +1663,7 @@ Damit Teilmodelle auch in den Simulationswerkzeugen referenziert werden können,
 
 ## AP 5.4 - Integration der Verwaltungsschalen
 
-### Zielsetzung
+### 5.4.1 Zielsetzung
 
 Zum Aufzeigen der sich aus der verknüpften Verbundstruktur von Verwaltungsschalen ergebenden Mehrwerte wurden im Rahmen von AP5.4 die folgenden vier Use Cases definiert:
 
@@ -1680,7 +1680,7 @@ In Kooperation der Teilprojekte 2, 3 und 5 sowie des Architekturteams wurden fü
 
 *Abbildung 1-20: Ausschnitt der erstellten Verwaltungsschalen*
 
-### Definition und Umsetzung der Use Cases
+### 5.4.2 Definition und Umsetzung der Use Cases
 
 Im Folgenden sollen die eingangs genannte vier Use Cases, deren Umsetzung sowie der sich ergebende Mehrwert genauer beschrieben werden.
 
@@ -1732,7 +1732,7 @@ Eine entscheidende Voraussetzung für die Produktion eines Leitungssatzes bzw. d
 
 Ein solcher Algorithmus zum Fähigkeitenabgleich wurde im Rahmen von TP5.5 entwickelt und basiert auf Informationen aus verschiedenen Verwaltungsschalen aus dem gesamten PPR-Kontext:
 
-Ausgangspunkt ist dabei die Produktspezifikation eines Halbfabrikats bzw. eines Leitungssatzes, in der die eingesetzten Komponenten sowie die benötigten Verbindungen beschrieben sind. Auf dieser Basis können anschließend die zur Herstellung des Produkts benötigten Prozesse ermittelt und in Form der sog. „Bill of Process“ beschrieben werden (s. TP 3). Für eine durchgängige Verknüpfung verweisen dabei die Prozesse auf die verarbeiteten Komponenten, wie bereits in Abschnitt 1.4.2.1 beschrieben. Für jeden Prozess wird anschließend eine sog. „Required Capability“ beschrieben, die die zur Durchführung des Prozesses benötigte Fähigkeit beschreibt. Die entsprechenden Parameter (bspw. die Leitungslänge bei einem Schneidprozess) ergibt sich dabei aus dem Prozessmodell bzw. indirekt aus der Produktspezifikation.
+Ausgangspunkt ist dabei die Produktspezifikation eines Halbfabrikats bzw. eines Leitungssatzes, in der die eingesetzten Komponenten sowie die benötigten Verbindungen beschrieben sind. Auf dieser Basis können anschließend die zur Herstellung des Produkts benötigten Prozesse ermittelt und in Form der sog. „Bill of Process“ beschrieben werden (s. TP 3). Für eine durchgängige Verknüpfung verweisen dabei die Prozesse auf die verarbeiteten Komponenten, wie bereits in Abschnitt 5.4.2.1 beschrieben. Für jeden Prozess wird anschließend eine sog. „Required Capability“ beschrieben, die die zur Durchführung des Prozesses benötigte Fähigkeit beschreibt. Die entsprechenden Parameter (bspw. die Leitungslänge bei einem Schneidprozess) ergibt sich dabei aus dem Prozessmodell bzw. indirekt aus der Produktspezifikation.
 
 Auf der anderen Seite stehen Ressourcen, die bestimmte Fähigkeiten anbieten und dabei bestimmte Randbedingungen für Parameter beschreiben (bspw. die maximal mögliche Länge bei einem Schneid-Prozess). Ein weiterer wichtiger Punkt ist die explizite Modellierung eventuell notwendiger Werkzeuge zur Durchführung eines Prozesses (z.B. eines Crimp-Applikators zum Herstellen einer Crimp-Verbindung durch eine Maschine). Hierdurch werden Ressourcen-Verwaltungsschalen im Rahmen einer Verbundkomponente miteinander verbunden.
 
@@ -1742,7 +1742,7 @@ Somit bietet der automatisierte Fähigkeitenabgleich das Potenzial für eine eff
 
 ## AP 5.5 - Mapping zwischen Produktionsressource und Leitungssatz
 
-### Zielsetzung
+### 5.5.1 Zielsetzung
 
 Das AP 5.5 befasst sich mit dem Mapping zwischen Produktionsressource und Leitungssatz, d.h. mit der automatisierten Auswahl bestimmter Produktionsressourcen zur Fertigung eines Leitungssatzes oder eines Halbfabrikats.
 
@@ -1758,9 +1758,9 @@ Abbildung 1-23 zeigt diese Zusammenhänge am Beispiel eines Crimp-Prozesses. Die
 
 *Abbildung 1-23 Capability-Matching am Beispiel eines Crimp-Prozesses*
 
-Entsprechend der Abbildung werden im Rahmen dieses Dokuments zunächst in den Abschnitten 1.5.2 und 1.5.3 die Modellierung von geforderten und angebotenen Fähigkeiten diskutiert. Darauf aufbauend wird in Abschnitt 1.5.4 anschließend das Konzept für einen Algorithmus zum Fähigkeitenabgleich entwickelt. Abschließend wird in Abschnitt 0 die Frage diskutiert, wie von einer Fähigkeit auf den ausführbaren *Skill* verwiesen werden kann.
+Entsprechend der Abbildung werden im Rahmen dieses Dokuments zunächst in den Abschnitten 5.5.2 und 5.5.3 die Modellierung von geforderten und angebotenen Fähigkeiten diskutiert. Darauf aufbauend wird in Abschnitt 5.5.4 anschließend das Konzept für einen Algorithmus zum Fähigkeitenabgleich entwickelt. Abschließend wird in Abschnitt 0 die Frage diskutiert, wie von einer Fähigkeit auf den ausführbaren *Skill* verwiesen werden kann.
 
-### Modellierung geforderter Fähigkeiten
+### 5.5.2 Modellierung geforderter Fähigkeiten
 
 Für die Beschreibung von Fähigkeiten ist das Teilmodell „[IDTA 02020 Capability Description](https://github.com/admin-shell-io/submodel-templates/tree/main/development/Capability/1/0)“ [5] bei der IDTA in Entwicklung, konnte jedoch noch nicht in VWS4LS verwendet werden. Allerdings wurde im Rahmen des Forschungsprojektes [*BaSys 4.2*](https://www.iese.fraunhofer.de/blog/basys-4-2-das-basissystem-fuer-industrie-4-0-geht-in-die-naechste-runde/)[^14] ein erster Vorschlag für ein solches Teilmodell erarbeitet, welches die generische Beschreibung von beliebigen *Capabilities* (z.B. „Cut“) und deren Parameter bzw. *Properties* (z.B. „Länge“) ermöglicht. Für *Properties* können darüber hinaus entweder feste Werte vorgegeben oder Einschränkungen formuliert werden, wobei letzteres im Rahmen von BaSys 4.2 nicht bis ins letzte Detail ausgearbeitet wurde.
 
@@ -1781,9 +1781,9 @@ Für eine Fähigkeit relevante Parameter lassen sich im „*PropertySet*“ besc
 
 *Abbildung 1-24: Exemplarisches Teilmodell "RequiredCapabilities"*
 
-### Modellierung angebotener Fähigkeiten
+### 5.5.3 Modellierung angebotener Fähigkeiten
 
-Wie bereits in Abschnitt 1.5.2 erläutert wurde, kann für die Modellierung von durch Ressourcen angebotenen Fähigkeiten grundsätzlich die gleiche Teilmodellstruktur verwendet werden. Gegenüber der Modellierung von benötigten Fähigkeiten ergeben sich hier aber vor allem zwei Unterschiede bzw. Erweiterungen, die im Folgenden genauer diskutiert werden sollen:
+Wie bereits in Abschnitt 5.5.2 erläutert wurde, kann für die Modellierung von durch Ressourcen angebotenen Fähigkeiten grundsätzlich die gleiche Teilmodellstruktur verwendet werden. Gegenüber der Modellierung von benötigten Fähigkeiten ergeben sich hier aber vor allem zwei Unterschiede bzw. Erweiterungen, die im Folgenden genauer diskutiert werden sollen:
 
 -   die Einschränkung von Eigenschaftswerten über sogenannte „*Constraints*“ und
 -   die Beschreibung von Fähigkeiten, die sich erst aus dem Zusammenschluss zweier oder mehrerer Ressourcen ergeben.
@@ -1824,7 +1824,7 @@ Sowohl eine Modellierung lediglich auf Seiten der Maschine als auch eine Modelli
 
 Aus diesem Grund bietet es sich stattdessen an, eine geteilte Modellierung vorzunehmen. Dabei können Fähigkeiten und entsprechende Einschränkungen auf allen relevanten Ebenen modelliert werden, wie auf der rechten Seite von Abbildung 1-26 dargestellt.
 
-Auf allen Ebenen können dabei die in Abschnitt 1.5.3.1 beschriebenen Konzepte genutzt werden. Einzig zur Abbildung der Notwendigkeit der Verknüpfung von Maschine und Werkzeug wird ein zusätzliches Modellierungskonzept benötigt. Hierzu kann das auch bereits in BaSys 4.2 angedachte Konzept der *CapabilityConditions* weiterentwickelt bzw. konkretisiert und eine spezielle Bedingung *RequiresToolCondition* definiert werden.
+Auf allen Ebenen können dabei die in Abschnitt 5.5.3.1 beschriebenen Konzepte genutzt werden. Einzig zur Abbildung der Notwendigkeit der Verknüpfung von Maschine und Werkzeug wird ein zusätzliches Modellierungskonzept benötigt. Hierzu kann das auch bereits in BaSys 4.2 angedachte Konzept der *CapabilityConditions* weiterentwickelt bzw. konkretisiert und eine spezielle Bedingung *RequiresToolCondition* definiert werden.
 
 Wie in Abbildung 1-27 dargestellt, kann mit dieser Bedingung auf Maschinenebene beschrieben werden, dass zur Ausführung einer Fähigkeit ein bestimmter Werkzeugtyp benötigt wird. Statt hier explizit – bspw. per Referenz – auf ein konkretes Werkzeug zu verweisen, was bei mehreren möglichen Werkzeugen schnell zu einer hohen Komplexität führen würde, kann dabei explizit ein Typ von Werkzeugen angegeben werden. Das in Abbildung 1-27 dargestellte Modell erfordert bspw. ein Werkzeug des Typen *CrimpingApplicator*.
 
@@ -1838,11 +1838,11 @@ Auf Seiten der Werkzeuge kann der entsprechende Werkzeugtyp einfach über ein en
 
 *Abbildung 1-28: Beschreibung von Werkzeugtypen per "toolType"-Extension*
 
-### Algorithmus zum Fähigkeitenabgleich
+### 5.5.4 Algorithmus zum Fähigkeitenabgleich
 
-Aufbauend auf den in den Abschnitten 1.5.2 und 1.5.3 dargelegten Konzepten zur Beschreibung von geforderten und angebotenen Fähigkeiten lässt sich nun ein Algorithmus ableiten, mit dessen Hilfe ein Fähigkeitenabgleich durchgeführt werden kann. Ein solcher Algorithmus soll dabei ermitteln, ob eine bestimmte Maschine (evtl. unter der Zuhilfenahme entsprechender Werkzeuge) in der Lage ist, eine bestimmte Fähigkeit anzubieten bzw. auszuführen.
+Aufbauend auf den in den Abschnitten 5.5.2 und 5.5.3 dargelegten Konzepten zur Beschreibung von geforderten und angebotenen Fähigkeiten lässt sich nun ein Algorithmus ableiten, mit dessen Hilfe ein Fähigkeitenabgleich durchgeführt werden kann. Ein solcher Algorithmus soll dabei ermitteln, ob eine bestimmte Maschine (evtl. unter der Zuhilfenahme entsprechender Werkzeuge) in der Lage ist, eine bestimmte Fähigkeit anzubieten bzw. auszuführen.
 
-Eingangsvoraussetzung für den Algorithmus ist folglich eine bestimmte geforderte Fähigkeit – also der Verweis auf einen *CapabilityContainer*, der Teil eines *RequiredCapability*-Teilmodells ist (vgl. Abschnitt 1.5.2) – und eine (Liste von) Maschine(n), die beurteilt werden soll – also eine bestimmte (Liste von) Asset- bzw. AAS-IDs.
+Eingangsvoraussetzung für den Algorithmus ist folglich eine bestimmte geforderte Fähigkeit – also der Verweis auf einen *CapabilityContainer*, der Teil eines *RequiredCapability*-Teilmodells ist (vgl. Abschnitt 5.5.2) – und eine (Liste von) Maschine(n), die beurteilt werden soll – also eine bestimmte (Liste von) Asset- bzw. AAS-IDs.
 
 Auf Basis dieser Informationen kann der Algorithmus dann sequenziell die folgenden Schritte ausführen bzw. Fragen beantworten:
 
@@ -1864,13 +1864,13 @@ Auf Basis dieser Informationen kann der Algorithmus dann sequenziell die folgend
 
 4.  *Welche der gefundenen Kombinationen erfüllen alle Constraints?*
 
-    Für jeden der gefundenen möglichen Montagepfade müssen abschließend noch einmal die entsprechenden *Constraints* ausgewertet werden. Ein Montagepfad muss zudem nicht immer direkt sein (Maschine ↔ Werkzeug), sondern kann eventuell Zwischenebenen besitzen (z.B. Maschine ↔ Adapter ↔ Werkzeug). Gemäß des in Abschnitt 1.5.3.2 entwickelten Konzeptes können für diese Zwischenebenen theoretisch ebenfalls Einschränkungen für die Fähigkeiten-Parameter beschrieben werden. Diese sind folglich ebenfalls gegenüber den geforderten Parametern zu prüfen.
+    Für jeden der gefundenen möglichen Montagepfade müssen abschließend noch einmal die entsprechenden *Constraints* ausgewertet werden. Ein Montagepfad muss zudem nicht immer direkt sein (Maschine ↔ Werkzeug), sondern kann eventuell Zwischenebenen besitzen (z.B. Maschine ↔ Adapter ↔ Werkzeug). Gemäß des in Abschnitt 5.5.3.2 entwickelten Konzeptes können für diese Zwischenebenen theoretisch ebenfalls Einschränkungen für die Fähigkeiten-Parameter beschrieben werden. Diese sind folglich ebenfalls gegenüber den geforderten Parametern zu prüfen.
 
 Nach durchlaufen dieser Schritte kann der Algorithmus nicht nur eine Aussage liefern, ob eine geforderte Fähigkeit von einer Maschine erfüllt werden kann oder nicht, sondern auch, welche Werkzeuge hierzu benötigt werden und wie diese Werkzeuge in die Maschine verbaut werden können. Diese Informationen können bspw. zur Planung von Rüstvorgängen durch Produktionsmitarbeiter oder zum Abgleich von vorhandenen und benötigten Maschinenstrukturen genutzt werden.
 
 Eine prototypische Implementierung des in diesem Abschnitt beschriebenen Algorithmus steht unter <https://github.com/VWS4LS/vws4ls-capability-matching> bereit.
 
-### Anbindung von Skills
+### 5.5.5 Anbindung von Skills
 
 Die bisher in diesem Dokument betrachteten angebotenen *Fähigkeiten* bzw. *Capabilities* ermöglichen eine Bewertung, ob eine bestimmte Fähigkeit von einer Ressource umgesetzt werden kann – sie stellen folglich den Einstiegspunkt bei der Suche nach Maschinen zur Umsetzung bestimmter Prozesse dar.
 
@@ -2244,7 +2244,7 @@ Für die Umsetzung des Use Cases „Predictive Maintenance“ wurde zunächst un
 
 ### Zusammenspiel der verschiedenen Teilmodelle
 
-Für den betrachteten Use Case spielen die in Abschnitt 1.6.2 beschriebenen Teilmodelle wie folgt zusammen: Die (Verwaltungsschale der) Maschine legt bei Ausführung eines Crimp-Prozesses im Teilmodell „Time Series Data“ des aktuell montierten Werkzeugs einen neuen Eintrag an. Der neue Eintrag enthält dabei einen gegenüber dem letzten Wert inkrementierten Zählerstand.
+Für den betrachteten Use Case spielen die in Abschnitt 5.6.2 beschriebenen Teilmodelle wie folgt zusammen: Die (Verwaltungsschale der) Maschine legt bei Ausführung eines Crimp-Prozesses im Teilmodell „Time Series Data“ des aktuell montierten Werkzeugs einen neuen Eintrag an. Der neue Eintrag enthält dabei einen gegenüber dem letzten Wert inkrementierten Zählerstand.
 
 Die Verwaltungsschale des Werkzeugs überwacht Änderungen in ihrem Teilmodell „IDTA 02008: Time Series Data“ [9] und aktualisiert die „Remaining Useful Live“ im Teilmodell IDTA 02048: Predictive Maintenance“ [10], welche sich aus der erwarteten Lebensdauer abzüglich des aktuellen Zählerstandes ergibt.
 
@@ -2258,7 +2258,7 @@ Die folgende Abbildung fasst die beschriebenen Zusammenhänge zusammen und zeigt
 
 ### Prototypische Implementierung
 
-Der in den bisherigen Abschnitten dieses Dokuments aufgezeigte Use Case wurde im Rahmen von AP 5.6 prototypisch umgesetzt. Hierzu wurden einerseits die entsprechenden Verwaltungsschalen und Teilmodelle aufgesetzt (vgl. Abbildung 1-32) und per Basyx[^16]-Server bereitgestellt. Darüber hinaus wurden aktive Verwaltungsschalen sowohl für eine Maschine als auch für einen Applikator aufgesetzt, um die in Abbildung 1-31 dargestellte Interaktion umsetzen zu können. Die aktiven Verwaltungsschalen wurden dabei durch zwei Node-RED[^17]-Instanzen umgesetzt, die die in Abschnitt 1.6.3 Algorithmen umsetzen. Abbildung 1-33 zeigt exemplarisch die Node-RED-Umsetzung zur Auswertung des Teilmodells „Predictive Maintenance“ inklusive der Abonnierung von Änderungen am Teilmodell „Predictive Maintenance“ per MQTT sowie der Reaktion auf entsprechende Änderungen durch Anpassen der „Remaining Useful Life“ sowie des Aufrufs eines entsprechenden Handlers bei Eintritt in ein neues „Condition Level“.
+Der in den bisherigen Abschnitten dieses Dokuments aufgezeigte Use Case wurde im Rahmen von AP 5.6 prototypisch umgesetzt. Hierzu wurden einerseits die entsprechenden Verwaltungsschalen und Teilmodelle aufgesetzt (vgl. Abbildung 1-32) und per Basyx[^16]-Server bereitgestellt. Darüber hinaus wurden aktive Verwaltungsschalen sowohl für eine Maschine als auch für einen Applikator aufgesetzt, um die in Abbildung 1-31 dargestellte Interaktion umsetzen zu können. Die aktiven Verwaltungsschalen wurden dabei durch zwei Node-RED[^17]-Instanzen umgesetzt, die die in Abschnitt 5.6.3 Algorithmen umsetzen. Abbildung 1-33 zeigt exemplarisch die Node-RED-Umsetzung zur Auswertung des Teilmodells „Predictive Maintenance“ inklusive der Abonnierung von Änderungen am Teilmodell „Predictive Maintenance“ per MQTT sowie der Reaktion auf entsprechende Änderungen durch Anpassen der „Remaining Useful Life“ sowie des Aufrufs eines entsprechenden Handlers bei Eintritt in ein neues „Condition Level“.
 
 [^16]: <https://basyx.org/>
 
@@ -2285,8 +2285,8 @@ Besonderes Augenmerk wurde auf das Thema „Fähigkeitenabgleich“ gelegt. Ents
 
 # Literaturverzeichnis
 
-| [1]   | Plattform Industrie 4.0, „Verwaltungsschale in der Praxis,“ 2021. [Online]. Available: https://industrialdigitaltwin.org/wp-content/uploads/2021/09/08_verwaltungsschale_in_der_praxis_de_2020.pdf.                                                                                       |
 |-------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [1]   | Plattform Industrie 4.0, „Verwaltungsschale in der Praxis,“ 2021. [Online]. Available: https://industrialdigitaltwin.org/wp-content/uploads/2021/09/08_verwaltungsschale_in_der_praxis_de_2020.pdf.                                                                                       |
 | [2]   | Plattform Industrie 4.0, „Beziehungen zwischen I4.0-Komponenten – Verbundkomponenten und intelligente Produktion,“ 2017. [Online]. Available: https://www.plattform-i40.de/IP/Redaktion/DE/Downloads/Publikation/beziehungen-i40-komponenten.pdf.                                         |
 | [3]   | Industrial Digital Twin Association e.V., „IDTA 02011-1-1 Hierarchical Structures enabling Bills of Material,“ 2024 June. [Online]. Available: https://github.com/admin-shell-io/submodel-templates/tree/main/published/Hierarchical%20Structures%20enabling%20Bills%20of%20Material/1/1. |
 | [4]   | Industrial Digital Twin Association e.V., „IDTA 02005 Provision of Simulation Models,“ [Online]. Available: https://github.com/admin-shell-io/submodel-templates/tree/main/published/Provision of Simulation Models/1/0.                                                                  |
@@ -2315,7 +2315,7 @@ Besonderes Augenmerk wurde auf das Thema „Fähigkeitenabgleich“ gelegt. Ents
 | [27]  | ECLASS e.V., „ECLASS-Standard,“ [Online]. Available: https://eclass.eu/eclass-standard/content-suche/search.                                                                                                                                                                              |
 | [28]  | Plattform Industrie 4.0, „Interoperability at Runtime - Exchanging Information via Application Programming Interfaces,“ 2021. [Online]. Available: https://www.plattform-i40.de/IP/Redaktion/EN/Downloads/Publikation/Details_of_the_Asset_Administration_Shell_Part2_V1.pdf.             |
 
-# **Abbildungsverzeichnis**
+# Abbildungsverzeichnis
 
 [*Abbildung 1-1: Ergebnis der Workshop-Reihe*](#_Toc178820053)
 
