@@ -76,23 +76,23 @@ Die dahinterliegenden Datensätze müssen für die Aktualisierung und Änderung 
 
 Bei der Entwicklung und Herstellung eines Leitungssatzes sind verschiedene Parteien involviert, die vom OEM über den Tier-1, bis zum Tier-2 reichen. Der der Auftraggeber ist in diesem Szenario der OEM und stellt Produktanforderungen in Form von Funktionsmodulen. Als Tier-1 werden Systemlieferanten wie Hersteller von Steuergeräten und eben auch Hersteller von Leitungssätzen bezeichnet. Der Tier-1 entwickelt den Leitungssatz anhand der vom OEM zur Verfügung gestellten Funktionen. Dabei wird im ersten Schritt eine Umschlüsselung von Funktions- in Produktionsmodule durchgeführt. Der Grund hierfür ist, dass ein Funktionsmodul, lediglich eine Funktion beschreibt aber in den seltensten Fällen auf einer Ressource produziert werden kann. Demgegenüber kann das Produktionsmodul so heruntergebrochen werden, um eine modulare Produktion zu ermöglichen. Lieferanten, die einzelne Komponenten (Stecker, Leitungen oder Terminals) für die Gesamtsystemkomponente herstellen, bezeichnet man als Tier-2. Weitere Zulieferer von indirekten Gütern oder Ressourcen werden als Tier-3 bezeichnet.
 
-In der nachfolgenden Abbildung 2-1 wird eine Vernetzung der Wertkettenteilnehmer während der Leitungssatzentwicklung aus Sicht des Konfektionärs dargestellt. Auf eine vollständige Darstellung aller Informationsflüsse wurde dabei auf Grund der Komplexität und der Übersichtlichkeit verzichtet.
+In der nachfolgenden [Abbildung 2-1](#Abbildung-2-1) wird eine Vernetzung der Wertkettenteilnehmer während der Leitungssatzentwicklung aus Sicht des Konfektionärs dargestellt. Auf eine vollständige Darstellung aller Informationsflüsse wurde dabei auf Grund der Komplexität und der Übersichtlichkeit verzichtet.
 
 Es soll gezeigt werden, dass es eine Vielzahl an Mitwirkenden und keinen allgemeingültigen Informationsfluss gibt, der sich durch eine vorgegebene Richtung sowie Reihenfolge immer gleich anwenden lässt. Zu sehen ist, dass es zwischen Tier-1 und Tier-2 einen Austausch geben kann und diese Informationen direkt zum OEM geleitet werden aber auch über einen anderen Tier zum OEM kommuniziert werden können. Des Weiteren kann es auch den Fall geben, dass Informationen eines Tier-3 dem OEM größtenteils nicht vorgelegt werden, wenn dies nicht zwingend erforderlich.
 
 ![image](https://github.com/user-attachments/assets/ed8856e0-4c92-4d70-9faf-f49433a5e53f)
 
-Abbildung 2-1: Kollaborationsbeziehungen in der Leitungssatz-Entwicklung
+<a name="Abbildung-2-1"></a>Abbildung 2-1: Kollaborationsbeziehungen in der Leitungssatz-Entwicklung
 
 Größtenteils findet die Leitungssatzentwicklung durch den Konfektionär in der IT-Systemumgebung des OEMs statt. In der Leitungssatzentwicklung ist der Tier-1 die Schnittstelle zum OEM und zu den verschiedenen Komponentenherstellern (Tier-2). Seitens des OEMs wird der Tier-1 unter anderem mit CAD-Daten von der Karosserie und einer ersten Schaltplan- bzw. Elektrologik versorgt. Diese Datenpakete beinhalten auch Informationen wie bspw. welche Komponenten ggf. bereits festgelegt sind, für welche Funktion oder Spezifikation eine bereits vorhandene Komponente verwendet werden soll oder ob ggf. eine neue Komponente entwickelt werden muss.
 
 ### 2.1.2 Datenhaltung in der Leitungssatzentwicklung
 
-Die meisten OEMs pflegen ihre eigenen Stammdaten, wie beispielsweise Teilesachnummern. Zwischen den verschiedenen Tiers und OEMs erfolgt der Austausch der Komponenten über die verschiedensten Schnittstellen und mit unterschiedlichen Datenformaten (siehe Abbildung 2-2). Darüber hinaus gibt es keine „Rückkopplung“ bei Änderungen o.ä., die für eine Synchronisation der Datensätze sorgen kann. Nach der Freigabe durch den OEM eines definierten Entwicklungsstandes wird ein filebasierter Datenstand aus den Systemlandschaften des OEMs exportiert und an den Tier-1 „übergeben“. Beim Tier-1 werden diese Daten verwendet und um Produktionsinformationen angereichert. Diese beiden Datenstände, der vom OEM und der vom Tier-1, existieren parallel und haben keine automatisierte Verlinkung oder Rückkopplung zueinander. Es entstehen somit bereits auf Stammdatenebene Datenbrüche und Inkonsistenzen bei den Datensätzen und die Anwendung der Verwaltungsschale bietet hier viel Verbesserungspotential.
+Die meisten OEMs pflegen ihre eigenen Stammdaten, wie beispielsweise Teilesachnummern. Zwischen den verschiedenen Tiers und OEMs erfolgt der Austausch der Komponenten über die verschiedensten Schnittstellen und mit unterschiedlichen Datenformaten (siehe [Abbildung 2-2](#Abbildung-2-2)). Darüber hinaus gibt es keine „Rückkopplung“ bei Änderungen o.ä., die für eine Synchronisation der Datensätze sorgen kann. Nach der Freigabe durch den OEM eines definierten Entwicklungsstandes wird ein filebasierter Datenstand aus den Systemlandschaften des OEMs exportiert und an den Tier-1 „übergeben“. Beim Tier-1 werden diese Daten verwendet und um Produktionsinformationen angereichert. Diese beiden Datenstände, der vom OEM und der vom Tier-1, existieren parallel und haben keine automatisierte Verlinkung oder Rückkopplung zueinander. Es entstehen somit bereits auf Stammdatenebene Datenbrüche und Inkonsistenzen bei den Datensätzen und die Anwendung der Verwaltungsschale bietet hier viel Verbesserungspotential.
 
 ![image](https://github.com/user-attachments/assets/bfb2d671-5a94-428c-9054-9054cbee10a0)
 
-Abbildung 2-2: Eingangs- und Ausgangsdaten im Entwicklungsprozess im Überblick
+<a name="Abbildung-2-2"></a>Abbildung 2-2: Eingangs- und Ausgangsdaten im Entwicklungsprozess im Überblick
 
 ### 2.1.3 Anwendungspotential der VWS
 
@@ -104,25 +104,25 @@ Der Einsatz von VWS hätte dabei nur bedingt Auswirkung auf die Engineering-Tool
 
 In diesem Abschnitt soll ein potenzieller Ablauf einer Kollaboration zwischen dem Konfektionär und mehreren Tier-2 dargestellt werden. Ziel ist es, aufgrund einer Anforderung, die richtige Auswahl eines Steckgehäuses durchzuführen.
 
-Annahme dabei ist, dass es ein im Catena-X Datenökosystem gehostetes zentrales Repository gibt, in dem die Catena-X-Teilnehmer „Angebote“ hinterlegen sowie „Anfragen“ für „Dienstleistungen“ stellen kann (siehe Abbildung 2-3).
+Annahme dabei ist, dass es ein im Catena-X Datenökosystem gehostetes zentrales Repository gibt, in dem die Catena-X-Teilnehmer „Angebote“ hinterlegen sowie „Anfragen“ für „Dienstleistungen“ stellen kann (siehe [Abbildung 2-3](#Abbildung-2-3)).
 
 Der Konfektionär kann dort eine Anfrage starten, die grundlegende Attribute enthält, die ein bestimmtes Produkt (z.B. Steckgehäuse) haben soll. Das Repository agiert hier also als zentrales Register für „Angebote“ und „Anfragen“.
 
 ![image](https://github.com/user-attachments/assets/560277c7-fdcc-4e33-8396-9942fa1495fb)
 
-Abbildung 2-3: Anfrage beim Komponentenhersteller stellen
+<a name="Abbildung-2-3"></a>Abbildung 2-3: Anfrage beim Komponentenhersteller stellen
 
-Im Repository wird dann nachgesehen, ob es passende Kandidaten für diese Anfrage gibt. Als Ergebnis erhält der anfragende Konfektionär eine Liste möglicher Kandidaten, hier Stecker-Hersteller A (oder auch A und B), die eine Lösung für die Anfrage bieten können (Abbildung 2-4).
+Im Repository wird dann nachgesehen, ob es passende Kandidaten für diese Anfrage gibt. Als Ergebnis erhält der anfragende Konfektionär eine Liste möglicher Kandidaten, hier Stecker-Hersteller A (oder auch A und B), die eine Lösung für die Anfrage bieten können ([Abbildung 2-4](#Abbildung-2-4)).
 
 ![image](https://github.com/user-attachments/assets/010668cf-483f-4164-8c54-720c12851625)
 
-Abbildung 2-4: Auskunft auf Anfrage
+<a name="Abbildung-2-4"></a>Abbildung 2-4: Auskunft auf Anfrage
 
-Im Anschluss, wenn der Konfektionär die Daten der Anbieter für seine Anfrage aus dem Repository zurückerhält, kann er mit den Anbietern in einen detaillierten Austausch gehen. Hierbei können dann noch weitere Bedingungen (z.B. kommerzieller Natur) abgeklärt werden, die weiter ins Detail gehen und evtl. eine Geheimhaltungsvereinbarung voraussetzen (Abbildung 2-5).
+Im Anschluss, wenn der Konfektionär die Daten der Anbieter für seine Anfrage aus dem Repository zurückerhält, kann er mit den Anbietern in einen detaillierten Austausch gehen. Hierbei können dann noch weitere Bedingungen (z.B. kommerzieller Natur) abgeklärt werden, die weiter ins Detail gehen und evtl. eine Geheimhaltungsvereinbarung voraussetzen ([Abbildung 2-5](#Abbildung-2-5)).
 
 ![image](https://github.com/user-attachments/assets/97961c11-cd57-405b-b48d-bb8bbe50f5c0)
 
-Abbildung 2-5: 2. Anfrage mit Detail-Anforderungen
+<a name="Abbildung-2-5"></a>Abbildung 2-5: 2. Anfrage mit Detail-Anforderungen
 
 Damit wäre ein repräsentatives Anwendungsszenario auf Basis einer dezentralen Datenhaltung mit Verwaltungsschalen konzeptionell grob beschrieben. Neben öffentlich einsehbaren Informationen können in einem weiteren Schritt dann detaillierte und nichtöffentliche Informationen ausgetauscht werden, zudem bleibt die Zuständigkeit für die Aktualität der Daten in der VWS weiterhin beim jeweiligen Hersteller.
 
@@ -148,27 +148,27 @@ Im AP 2.2 „Single-Point-of-Truth-Definition“ wurden Lösungsansätze für da
 
 Der SPoT bezeichnet damit die Datenquelle oder Datenquellen, aus der sämtliche angeschlossenen Systeme für eine bestimmte Prozessphase bedient werden. Im Entwicklungsprozess liegt dieser Referenzpunkt oftmals in der Datenbank des Kunden (OEM). Durch den intensiven Austausch zwischen Konfektionär, OEM und/oder Tier-1/2/3 aber liegen die aktuellen Daten bzw. Parameter nicht mehr unbedingt in der Datenbank des Kunden. Es ist dann Aufgabe des SPoT, diese Datenbeziehungen zu verwalten.
 
-Mit Einsatz der VWS bietet sich die Möglichkeit, der SPoT in einer VWS auf einem VWS-Repository oder -Speicherort zu definieren und damit die Aktualisierung und Änderung sämtlichen Dateien für beteiligten Akteure sichtbar und zugänglich zu machen. Die Implementierung der VWS könnte entweder in einem zentralen oder dezentralen Ansatz realisiert werden. Im zentralen Ansatz (siehe Abbildung 2-6) wird die VWS auf einem zentralen Repository gespeichert. Die jeweilige Akteure haben je nach Rechte-Management Leserecht auf bestimmte Teilmodelle innerhalb der VWS oder können auch Schreibrecht auf relevante Sub-Modelle besitzen, um die Daten oder Parameter zu pflegen. Diese VWS wird anschließend als de-facto SPoT eingesetzt. Die Vorteile von diesem Ansatz sind u.a. zentrale Freigaben sowie aktuelle Dateien und Parameter auf einem zentralen (festen) Speicherort. Dieser Ansatz fordert eine gute Berechtigungssteuerung, einen höheren Aufwand für den Speicherort sowie höhere Anforderungen an die Server-Performance. Diese Anforderung zeigen sich als die Nachteile von einem zentralen Ansatz.
+Mit Einsatz der VWS bietet sich die Möglichkeit, der SPoT in einer VWS auf einem VWS-Repository oder -Speicherort zu definieren und damit die Aktualisierung und Änderung sämtlichen Dateien für beteiligten Akteure sichtbar und zugänglich zu machen. Die Implementierung der VWS könnte entweder in einem zentralen oder dezentralen Ansatz realisiert werden. Im zentralen Ansatz (siehe [Abbildung 2-6](#Abbildung-2-6)) wird die VWS auf einem zentralen Repository gespeichert. Die jeweilige Akteure haben je nach Rechte-Management Leserecht auf bestimmte Teilmodelle innerhalb der VWS oder können auch Schreibrecht auf relevante Sub-Modelle besitzen, um die Daten oder Parameter zu pflegen. Diese VWS wird anschließend als de-facto SPoT eingesetzt. Die Vorteile von diesem Ansatz sind u.a. zentrale Freigaben sowie aktuelle Dateien und Parameter auf einem zentralen (festen) Speicherort. Dieser Ansatz fordert eine gute Berechtigungssteuerung, einen höheren Aufwand für den Speicherort sowie höhere Anforderungen an die Server-Performance. Diese Anforderung zeigen sich als die Nachteile von einem zentralen Ansatz.
 
 ![image](https://github.com/user-attachments/assets/bc5203c5-5c26-422a-8630-d7c36c7c207a)
 
-Abbildung 2-6: Beispiel für zentralen Ansatz
+<a name="Abbildung-2-6"></a>Abbildung 2-6: Beispiel für zentralen Ansatz
 
-Ein dezentraler Ansatz (siehe Abbildung 2-7) bildet die andere Möglichkeit, um einen SPoT zu definieren. Dabei besitzt jeder Akteur seine eigene VWS der Komponente, die lokal innerhalb der eigenen IT-Systemlandschaft gespeichert wird. Die Anforderung an die IT-Infrastruktur für diese Art von dezentralem Repository ist nicht so hoch wie beim zentralen Ansatz. Jeder Akteur kann die VWS mit relevanten Teilmodellen für den internen, als auch relevanten Teilmodelle von externen Entwicklungspartner aufbauen. Die Teilmodelle anderer Entwicklungspartner werden in der VWS eines Akteures entweder als eine Kopie oder eine Verlinkung implementiert. Die schwierigste Anforderung dieses Ansatzes ist die Synchronisierung der individuellen VWSen oder individuellen Teilmodellen von anderen Entwicklungspartnern. Jeder Data-Owner könnte sein eigenes Teilmodell auf seiner lokalen VWS ändern. Findet eine Änderung statt, dann sollte der Data-Owner diese Änderung (automatisch) mitteilen und eine (automatische) Synchronisierung für andere Entwicklungspartnern ermöglichen. Auf Grund der verteilten VWS ist die Definition des SPoT im Vergleich mit dem zentralen Ansatz nicht trivial.
+Ein dezentraler Ansatz (siehe [Abbildung 2-7](#Abbildung-2-7)) bildet die andere Möglichkeit, um einen SPoT zu definieren. Dabei besitzt jeder Akteur seine eigene VWS der Komponente, die lokal innerhalb der eigenen IT-Systemlandschaft gespeichert wird. Die Anforderung an die IT-Infrastruktur für diese Art von dezentralem Repository ist nicht so hoch wie beim zentralen Ansatz. Jeder Akteur kann die VWS mit relevanten Teilmodellen für den internen, als auch relevanten Teilmodelle von externen Entwicklungspartner aufbauen. Die Teilmodelle anderer Entwicklungspartner werden in der VWS eines Akteures entweder als eine Kopie oder eine Verlinkung implementiert. Die schwierigste Anforderung dieses Ansatzes ist die Synchronisierung der individuellen VWSen oder individuellen Teilmodellen von anderen Entwicklungspartnern. Jeder Data-Owner könnte sein eigenes Teilmodell auf seiner lokalen VWS ändern. Findet eine Änderung statt, dann sollte der Data-Owner diese Änderung (automatisch) mitteilen und eine (automatische) Synchronisierung für andere Entwicklungspartnern ermöglichen. Auf Grund der verteilten VWS ist die Definition des SPoT im Vergleich mit dem zentralen Ansatz nicht trivial.
 
 ![image](https://github.com/user-attachments/assets/0d800a71-6a61-4a9a-bb8d-d438e7af2e5c)
 
 Abbildung 2-7: Freigaben und Änderungs-Management beim dezentralen Ansatz
 
-Deshalb wurde im Rahmen dieses APs diskutiert, wie ein SPoT bei einem dezentralen Entwicklungsprozess genau definiert werden kann. Es wurde dabei festgestellt, dass der Ort des SPoT abhängig von der Phase des Lebenszyklus ist. Während der Entwicklungsphase befindet sich der SPoT auf der VWS des Kunden (OEM). In der Produktionsphase wird die VWS auf Instanz-Ebene erweitert. Während des Produktionsprozesses beim Konfektionär werden sämtliche Ist-Werte von Fertigung erfasst und in der VWS integriert. Daher befindet sich der SPoT bei dieser Lebenszyklusphase des Leitungssatzes beim Konfektionär, siehe Abbildung 2-8.
+Deshalb wurde im Rahmen dieses APs diskutiert, wie ein SPoT bei einem dezentralen Entwicklungsprozess genau definiert werden kann. Es wurde dabei festgestellt, dass der Ort des SPoT abhängig von der Phase des Lebenszyklus ist. Während der Entwicklungsphase befindet sich der SPoT auf der VWS des Kunden (OEM). In der Produktionsphase wird die VWS auf Instanz-Ebene erweitert. Während des Produktionsprozesses beim Konfektionär werden sämtliche Ist-Werte von Fertigung erfasst und in der VWS integriert. Daher befindet sich der SPoT bei dieser Lebenszyklusphase des Leitungssatzes beim Konfektionär, siehe [Abbildung 2-8](#Abbildung-2-8).
 
 ![image](https://github.com/user-attachments/assets/8f6ecf89-3714-41bc-9a9c-83de0d6d28c6)
 
-Abbildung 2-8: SPoT-Bezeichnung beim dezentralen Einsatz
+<a name="Abbildung-2-8"></a>Abbildung 2-8: SPoT-Bezeichnung beim dezentralen Einsatz
 
 ### 2.2.1 Herausforderung: Produkt mit mehreren Herstellern
 
-Eine im Leitungssatz verwendete Komponente wie z.B. ein Stecker muss nicht unbedingt nur in einem Land hergestellt werden, da auch Zulieferer mehrere Werke betreiben. In Abbildung 2-9 sind zwei mögliche Ursprungsländer für einen Stecker aufgelistet.
+Eine im Leitungssatz verwendete Komponente wie z.B. ein Stecker muss nicht unbedingt nur in einem Land hergestellt werden, da auch Zulieferer mehrere Werke betreiben. In [Abbildung 2-9](#Abbildung-2-9) sind zwei mögliche Ursprungsländer für einen Stecker aufgelistet.
 
 Bei zwei möglichen Stecker-Herstellern können folgende Szenarien eintreten:
 
@@ -177,13 +177,13 @@ Bei zwei möglichen Stecker-Herstellern können folgende Szenarien eintreten:
 
 ![image](https://github.com/user-attachments/assets/70c80b76-3c45-4590-86ba-744226096710)
 
-Abbildung 2-9: Beispiel für einen Stecker, der an zwei verschiedenen Standorten verwendet wird
+<a name="Abbildung-2-9"></a>Abbildung 2-9: Beispiel für einen Stecker, der an zwei verschiedenen Standorten verwendet wird
 
-Diese Unterschiede bilden sich in unterschiedlichen Sachnummern für ein funktional identisches Bauteil ab, was in entsprechenden Tabellen niedergelegt wird und bei Änderungen entsprechend gepflegt werden muss. Unabdingbar ist dabei, dass beide Sachnummern mit einer Freigabe belegt sind, siehe Abbildung 2-10. Hier sind die Freigaben seitens des OEM, des Herstellers und des Konfektionärs notwendig, um das entsprechende Bauteil überhaupt verwenden zu können.
+Diese Unterschiede bilden sich in unterschiedlichen Sachnummern für ein funktional identisches Bauteil ab, was in entsprechenden Tabellen niedergelegt wird und bei Änderungen entsprechend gepflegt werden muss. Unabdingbar ist dabei, dass beide Sachnummern mit einer Freigabe belegt sind, siehe [Abbildung 2-10](#Abbildung-2-10). Hier sind die Freigaben seitens des OEM, des Herstellers und des Konfektionärs notwendig, um das entsprechende Bauteil überhaupt verwenden zu können.
 
 ![image](https://github.com/user-attachments/assets/5fa0f4b5-fadb-4349-8db3-d1d7cd649025)
 
-Abbildung 2-10: Freigaben und Änderungs-Management
+<a name="Abbildung-2-10"></a>Abbildung 2-10: Freigaben und Änderungs-Management
 
 Durch dieses Mapping von Zuordnungen können die verschiedenen Teile-Bezeichnungen und Nummerierungen weitergeführt und je nach Anforderungen angepasst werden. Zudem wird eine Rückverfolgbarkeit gewährleistet und es kann für spätere Betrachtungen, wie z.B. Lieferketten-Analysen oder CO2-Footprint, eine genauere Analyse durchgeführt werden.
 
@@ -211,7 +211,7 @@ Ein Überblick des generischen Entwicklungsprozess ist in Abbildung 2-11 grafisc
 
 ![image](https://github.com/user-attachments/assets/7723f709-2bef-4a6c-a7a2-de6317ee9146)
 
-Abbildung 2-11: Überblick Teilprozesse der Leitungssatzentwicklung
+<a name="Abbildung-2-11"></a>Abbildung 2-11: Überblick Teilprozesse der Leitungssatzentwicklung
 
 Die detaillierte Ansicht der Prozessschritte ist in Abbildung 2-12 dargestellt. Als Ausgangspunkt werden ein 3D-Modell des Bauraums sowie Systemschaltpläne benötigt. Der Bauraum wird meist partitioniert, d.h. abschnittsweise, zur Verfügung gestellt, um die Datenmenge zu begrenzen. Hierfür werden einschlägige CAD-Datenformate verwendet. Die Systemschaltpläne stellen die elektrischen Daten dar, angefangen von der Verbindungsliste bis hin zum Strombedarf der einzelnen Sensoren und Aktoren. Die Entwicklung wird dann parallel auf elektrischer und mechanischer Domäne durchgeführt. In der mechanischen Domäne wird der Leitungssatz grafisch als ein „Rohr“ dargestellt, als Platzhalter für die spätere Verlegung. Der Kunde bzw. OEM und der Komponentenentwickler stellen das 3D-Teilmodell zur Verfügung. Der Leitungssatzentwickler fügt diese 3D-Teilmodelle zusammen und daraus entsteht ein 3D-Modell für den Leitungssatz. Aus der 3D-Teil-Bibliothek kann der LS-Entwickler den passenden Gegenstecker auswählen und am Ende des „Rohres“ platzieren. Neben den mechanischen Eigenschaften bietet dieser Prozessschritt auch die Möglichkeit eine sogenannte „Temperatur-Landkarte“ zu pflegen, da die Umgebungstemperatur eine große Rolle bei Dimensionierung einer Leitung spielt. Daher ist es sehr hilfreich diese Information im 3D-Modell zu integrieren. Als Zwischenergebnis aus diesem Prozess wird das 3D-Modell als *Digital Mock Up (*DMU) erzeugt. In der elektrischen Domäne wird die Information über die Bordnetz-Architektur bzw. der Systemplan vom OEM in eine spezifische Bordnetztopologie umgewandelt und als Zwischenergebnis der Kabel-Schaltplan erzeugt. Dieser Kabel-Schaltplan beinhaltet unter anderem den Typ, Querschnitt, Verortung[^5] des sog. „[Splice](https://ecad-wiki.prostep.org/specifications/vec/guidelines/component-types/splices/)“[^6] einer Leitung sowie die Anforderungen von Kontaktoberflächen.
 
@@ -221,7 +221,7 @@ Die detaillierte Ansicht der Prozessschritte ist in Abbildung 2-12 dargestellt. 
 
 ![image](https://github.com/user-attachments/assets/1cc8edee-9235-4994-8f09-0006d2b85473)
 
-Abbildung 2-12: Referenzprozess der Leitungssatz-Entwicklung
+<a name="Abbildung-2-12"></a>Abbildung 2-12: Referenzprozess der Leitungssatz-Entwicklung
 
 Nach Vorbereitung der 3D-Modelle sowie des elektrischen Schaltplans können mit der Information aus dem Schaltplan die Leitungsgruppe oder -Bündel, sowie deren Dimensionen abgeleitet werden.
 
@@ -243,7 +243,7 @@ In der nachfolgenden Abbildung 2-13 soll der beschriebene Workflow nochmals zusa
 
 ![image](https://github.com/user-attachments/assets/14d87072-e01b-44cc-8878-49810f664c35)
 
-Abbildung 2-13: Workflow Entwicklung Leitungssatz
+<a name="Abbildung-2-13"></a>Abbildung 2-13: Workflow Entwicklung Leitungssatz
 
 ### 2.3.3 Analyse und Integration der Einzelkomponenten
 
@@ -301,7 +301,7 @@ Hierfür wurden zu Beginn des Arbeitspaketes 2.4 für den Referenzprozess alle e
 
 ![image](https://github.com/user-attachments/assets/65871584-8b0a-408e-a38f-5c80cdb4eb07)
 
-Abbildung 2-14: Assets und ihre VWS im Entwicklungsprozess des Leitungssatzes
+<a name="Abbildung-2-14"></a>Abbildung 2-14: Assets und ihre VWS im Entwicklungsprozess des Leitungssatzes
 
 Es wurde ein Grad an Modularität gewählt, sodass durch die Verknüpfung von VWS, wie z. B. der Leitungssatz-Typ-VWS mit den Halbfabrikat- und Komponenten-Typ-VWS, eine Wiederverwendung ermöglicht wird. Beispielsweise kann der Fall eintreten, dass ein bestimmter Halbfabrikat-Typ für mehrere Leitungssatz-Typen Anwendung findet. Neben den Komponenten-Typen für den Leitungssatz-Typ, wurde auch dem Ressourcen-Typ eine VWS seitens des Maschinenherstellers und des Konfektionärs zugewiesen, sodass der Konfektionär noch zusätzliche ressourcenrelevante Daten speichern kann, die später bei der Wahl einer für die Produktion geeigneten Maschinen-Instanz beachtet werden müssen.
 
@@ -315,7 +315,7 @@ Ein kleiner Ausschnitt aus der Analyse für einen Komponenten-Typen (z. B. Gehä
 
 ![image](https://github.com/user-attachments/assets/269342bf-5538-4be2-843e-9043d50a8935)
 
-Abbildung 2-15: Ausschnitt aus der Anforderungsanalyse für VWS und deren Teilmodelle 
+<a name="Abbildung-2-15"></a>Abbildung 2-15: Ausschnitt aus der Anforderungsanalyse für VWS und deren Teilmodelle 
 
 Im Folgenden wird anhand des Beispiels des Komponenten-Typen näher auf die in der VWS enthaltenen Teilmodelle und ihren Zweck eingegangen. Zu den ersten oft verwendeten Teilmodellen gehören das digitale Typenschild [2], die Kontaktinformationen und die technischen Daten der Komponente. Weiterführend werden in die VWS auch die Dokumente, wie z.B. die Verarbeitungsspezifikationen, die Freigabezeichnung und die 2D-Zeichnung sowie das 3D CAD-Modell abgelegt. Zusätzlich wird das Teilmodell „Capability Description“ [3] integriert, um die von dem Komponenten-Typen geforderten Fähigkeiten aus den Verarbeitungsanforderungen in die VWS aufnehmen zu können. Da das Teilmodell sich zu diesem Zeitpunkt noch in Entwicklung befindet, wurde der aktuell verfügbare Arbeitsstand verwendet.   
 Mit den aufgezählten Teilmodellen konnten nicht alle Daten abgebildet werden. Dazu gehören das Produktmodell, welches als KBL [4] oder VEC [5] vorliegt, sowie die Vorlage für die Produktionsdaten, die erst mit der Produktion der Komponente beschrieben werden. Beide sind mit \* umklammert.  
@@ -337,7 +337,7 @@ Basierend auf der vom Leitungssatz-Typ-VWS des OEM abgeleiteten VWS zu seinem ei
 
 ![image](https://github.com/user-attachments/assets/17a06ac0-b842-471f-871f-e87814190a34)
 
-Abbildung 2-16: VWS-Schnittstellen im Entwicklungsprozess zwischen OEM und Konfektionär
+<a name="Abbildung-2-16"></a>Abbildung 2-16: VWS-Schnittstellen im Entwicklungsprozess zwischen OEM und Konfektionär
 
 ## AP 2.5 - Umsetzung Digital Twin LS
 
@@ -349,7 +349,7 @@ Um den Workflow zu verproben, wurde der Beispielleitungssatz aus dem PPR-Worksho
 
 ![image](https://github.com/user-attachments/assets/e68ddcba-a5b3-4e77-8c37-b7904351b24e)
 
-Abbildung 2-17: Beispielleitungssatz aus dem PPR-Workshop
+<a name="Abbildung-2-17"></a>Abbildung 2-17: Beispielleitungssatz aus dem PPR-Workshop
 
 Um die zuvor definierten Teilmodelle für den Entwicklungsprozess mit Leitungssatzdaten zu verproben und mit entsprechenden Daten zu befüllen, musste ein Leitungssatz im VEC-Format erstellt werden (siehe [DRX00012_0002.02_AO_2023_09_08.vec](https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP02/Beispieldaten/DRX00012_0002.02_AO_2023_09_08.vec)[^8]).
 
@@ -367,13 +367,13 @@ Als Output des Entwicklungsprozesses wird nach heutigen Stand eine 2D-Zeichung (
 
 ![image](https://github.com/user-attachments/assets/eae821d8-eec3-4149-b67c-25dcd25b4c29)
 
-Abbildung 2-18: SVG-Darstellung des Leitungssatzes
+<a name="Abbildung-2-18"></a>Abbildung 2-18: SVG-Darstellung des Leitungssatzes
 
 Die nachfolgende Abbildung 2-19 zeigt die Verbindungsliste (WIRE) und die Materialliste (BOM) für den Leitungssatz, aufgeteilt nach den jeweiligen Varianten/Modulen. Je nach Kundenanforderung müssen die WIRE und die BOM auch auf der SVG-Zeichnung dargestellt werden.
 
 ![image](https://github.com/user-attachments/assets/166434c8-a7c3-4136-a05f-668065353a1f)
 
-Abbildung 2-19: WIRE und BOM mit dargestellter Modularisierung (V1, V2 und V3)
+<a name="Abbildung-2-19"></a>Abbildung 2-19: WIRE und BOM mit dargestellter Modularisierung (V1, V2 und V3)
 
 Zu einem frühen Zeitpunkt des Projektes wurde sich darauf verständigt, das VEC-Format zur Beschreibung des Leitungssatzes zu verwenden. Hintergrund dieser Entscheidung ist, dass der VEC mehr Informationsfelder zur Beschreibung des Leitungssatzes zur Verfügung stellt.
 
@@ -392,7 +392,7 @@ Um diesen Anwendungsfall erfolgreich umsetzen zu können, sind generell folgende
 
 ### 2.5.3 Verwaltungsschalen der Komponenten
 
-Beim Stecksystem wurde der MLK 1,2 ausgewählt (Abbildung 2-20), da dieser nicht im vollen Umfang der Geheimhaltungspflicht von KOSTAL Kontakt Systeme GmbH & Co.KG unterliegt, sondern von weiteren Mitbewerbern aus dem Arbeitskreis genutzt werden kann. Die zugehörige VWS-Datei ist die „[VWS4LS_Terminal_MLK_1-2_0.5-0.75mm_2024_01.aasx](https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP02/Beispieldaten/VWS4LS_Terminal_MLK_1-2_0.5-0.75mm_2024_01.aasx)“[^9] (Abbildung 2-21).
+Beim Stecksystem wurde der MLK 1,2 ausgewählt ([Abbildung 2-20](#Abbildung-2-20)), da dieser nicht im vollen Umfang der Geheimhaltungspflicht von KOSTAL Kontakt Systeme GmbH & Co.KG unterliegt, sondern von weiteren Mitbewerbern aus dem Arbeitskreis genutzt werden kann. Die zugehörige VWS-Datei ist die „[VWS4LS_Terminal_MLK_1-2_0.5-0.75mm_2024_01.aasx](https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP02/Beispieldaten/VWS4LS_Terminal_MLK_1-2_0.5-0.75mm_2024_01.aasx)“[^9] ([Abbildung 2-21](#Abbildung-2-21)).
 
 [^9]: <https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP02/Beispieldaten/VWS4LS_Terminal_MLK_1-2_0.5-0.75mm_2024_01.aasx>
 
@@ -402,47 +402,47 @@ Für dieses Beispiel sind Terminals mit vier verschiedenen Teilenummern notwendi
 
 ![image](https://github.com/user-attachments/assets/de46d902-6503-4633-a240-902bc63a90d3)
 
-Abbildung 2-20: MLK 1,2 Terminal mit/ohne ELA (KOSTAL Kontakt Systeme GmbH & Co. KG)
+<a name="Abbildung-2-20"></a>Abbildung 2-20: MLK 1,2 Terminal mit/ohne ELA (KOSTAL Kontakt Systeme GmbH & Co. KG)
 
 Um die einzelnen Typ-Verwaltungsschalten aus Tier-2 Sicht zu erstellen, wurden als Input die Verarbeitungsspezifikationen, das Datenblatt und die dazugehörigen neutralen Kundenzeichnungen verwendet.
 
 ![image](https://github.com/user-attachments/assets/17e20481-20d3-4b84-b964-839b7138552f)
 
-Abbildung 2-21: Auszug aus einer Typ-Verwaltungsschale Terminal
+<a name="Abbildung-2-21"></a>Abbildung 2-21: Auszug aus einer Typ-Verwaltungsschale Terminal
 
 Um das PPR-Beispiel zu vervollständigen, wurden auch für das Halteteil und die Bandagierung jeweils eine entsprechende Teilenummer festgelegt.
 
-Typischerweise haben unterschiedliche Partner der Wertschöpfungskette unterschiedliche Sichtweisen auf eine Komponente. Dies fängt bei unterschiedlichen (internen) Teile- bzw. Sachnummern an und geht bis hin zu unterschiedlichen Grenzwerten für den Einsatz einer Komponente. Um dies abzubilden, wurden für jede Komponente nicht nur eine sondern jeweils drei Verwaltungsschalen inkl. zugehöriger Assets erstellt, um die unterschiedlichen Sichtweisen (OEM, Tier1, Tier2) abbilden zu können. Dabei wurde der im Rahmen von TP5.2 entwickelte Mechanismus zur Äquivalenz-Beschreibung zwischen den verschiedenen Assets genutzt. Abbildung 2-22 zeigt dies Anhand der Tier1-Verwaltungsschale für eine Komponente, welche per „*specificAssetID*“ auf die äquivalenten Assets sowohl bei einem OEM als auch bei einem Tier2 verweist. Dies erlaubt das automatische Sachnummern-Mapping, d.h. das automatische Auffinden eines äquivalenten Assets/Verwaltungsschale eines anderen Partners der Wertschöpfungskette.
+Typischerweise haben unterschiedliche Partner der Wertschöpfungskette unterschiedliche Sichtweisen auf eine Komponente. Dies fängt bei unterschiedlichen (internen) Teile- bzw. Sachnummern an und geht bis hin zu unterschiedlichen Grenzwerten für den Einsatz einer Komponente. Um dies abzubilden, wurden für jede Komponente nicht nur eine sondern jeweils drei Verwaltungsschalen inkl. zugehöriger Assets erstellt, um die unterschiedlichen Sichtweisen (OEM, Tier1, Tier2) abbilden zu können. Dabei wurde der im Rahmen von TP5.2 entwickelte Mechanismus zur Äquivalenz-Beschreibung zwischen den verschiedenen Assets genutzt. [Abbildung 2-22](#Abbildung-2-22) zeigt dies Anhand der Tier1-Verwaltungsschale für eine Komponente, welche per „*specificAssetID*“ auf die äquivalenten Assets sowohl bei einem OEM als auch bei einem Tier2 verweist. Dies erlaubt das automatische Sachnummern-Mapping, d.h. das automatische Auffinden eines äquivalenten Assets/Verwaltungsschale eines anderen Partners der Wertschöpfungskette.
 
 ![image](https://github.com/user-attachments/assets/c94c3eaf-5802-4ab1-b969-0d04bec50bfd)
 
-Abbildung 2-22: Äquivalenzbeziehungen per „spedificAssetId“
+<a name="Abbildung-2-22"></a>Abbildung 2-22: Äquivalenzbeziehungen per „spedificAssetId“
 
 ### 2.5.4 Erstellung Verbundkomponente
 
-Auf Basis der erstellten Daten für den Gesamtleitungssatz wurde anschließend die zugehörige Typ-Verwaltungsschale aus Sicht des OEM mit entsprechenden Teilmodellen (vgl. Abbildung 2-16) erstellt, die sog. „Verbundkomponente“ (VBK). Abbildung 2-23 zeigt die Verwaltungsschale „[Leitungssatz_und_Komponenten_Typ_OEM.aasx](https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP02/Beispieldaten/TP2_PPR_Beispieldaten/Leitungssatz_und_Komponenten_Typ_OEM.aasx)“[^10] sowie exemplarisch die dort enthaltene 2D-Zeichnung (vgl. Abbildung 2-18) als Teil des „*HandoverDocumentation*“-Teilmodells.
+Auf Basis der erstellten Daten für den Gesamtleitungssatz wurde anschließend die zugehörige Typ-Verwaltungsschale aus Sicht des OEM mit entsprechenden Teilmodellen (vgl. [Abbildung 2-16](#Abbildung-2-16)) erstellt, die sog. „Verbundkomponente“ (VBK). [Abbildung 2-23](#Abbildung-2-23) zeigt die Verwaltungsschale „[Leitungssatz_und_Komponenten_Typ_OEM.aasx](https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP02/Beispieldaten/TP2_PPR_Beispieldaten/Leitungssatz_und_Komponenten_Typ_OEM.aasx)“[^10] sowie exemplarisch die dort enthaltene 2D-Zeichnung (vgl. [Abbildung 2-18](#Abbildung-2-18)) als Teil des „*HandoverDocumentation*“-Teilmodells.
 
 [^10]: <https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP02/Beispieldaten/Leitungssatz_und_Komponenten_Typ_OEM.aasx>
 
 ![image](https://github.com/user-attachments/assets/68911dc0-180d-4663-a17c-863fadde66e6)
 
-Abbildung 2-23: OEM-Verwaltungsschale für den Gesamtleitungssatz
+<a name="Abbildung-2-23"></a>Abbildung 2-23: OEM-Verwaltungsschale für den Gesamtleitungssatz
 
-Durch das im Rahmen von TP5.2 sowie des Architekturteams entwickelte [VWS4LS-AASPE-Plugin](https://github.com/VWS4LS/vws4ls-aaspe-plugin)[^11] für den AASX Explorer konnte aus der importierten Produktspezifikation in Form des VEC-Modells automatisch die Product-BOM erstellt und mit den Verwaltungsschalen der Einzelkomponenten verknüpft werden. Abbildung 2-24 zeigt dies anhand der Komponente (bzw. der Komponenten-Verwendung) „A1\*1-B“, welches über die sog. *GlobalAssetId* mit dem entsprechenden Komponenten-Typ verknüpft ist.
+Durch das im Rahmen von TP5.2 sowie des Architekturteams entwickelte [VWS4LS-AASPE-Plugin](https://github.com/VWS4LS/vws4ls-aaspe-plugin)[^11] für den AASX Explorer konnte aus der importierten Produktspezifikation in Form des VEC-Modells automatisch die Product-BOM erstellt und mit den Verwaltungsschalen der Einzelkomponenten verknüpft werden. [Abbildung 2-24](#Abbildung-2-24) zeigt dies anhand der Komponente (bzw. der Komponenten-Verwendung) „A1\*1-B“, welches über die sog. *GlobalAssetId* mit dem entsprechenden Komponenten-Typ verknüpft ist.
 
 [^11]: <https://github.com/VWS4LS/vws4ls-aaspe-plugin>
 
 ![image](https://github.com/user-attachments/assets/11bca26e-8825-4c8d-801e-7b66140c9809)
 
-Abbildung 2-24:Verknüpfung Komponenten-Verwendung mit Komponenten-Typ per GlobalAssetId
+<a name="Abbildung-2-24"></a>Abbildung 2-24:Verknüpfung Komponenten-Verwendung mit Komponenten-Typ per GlobalAssetId
 
-Ebenfalls unter Zuhilfenahme des [VWS4LS-AASPE-Plugin](https://github.com/VWS4LS/vws4ls-aaspe-plugin) konnte anschließend die Ableitung der Leitungssatz-Verwaltungsschale für den Konfektionär durchgeführt werden (vgl. Abbildung 2-16). Hierbei wurden die im Rahmen des Architekturteams entwickelten Prinzipien zur Verlinkung der unterschiedlichen Sichten angewendet. So verweisen z.B. Elemente in der Produkt-BOM in der Verwaltungsschale des Konfektionärs auf die äquivalenten Elemente in der Produkt-BOM des OEMs. Diese Duplizierung mit Verlinkung ermöglicht einerseits die Nachvollziehbarkeit des Ursprungs von Komponenten, anderseits aber auch die Anpassung der Produkt-BOM durch den Konfektionär z.B. durch Ergänzen von Elementen, die vom OEM nicht betrachtet werden (Klebebänder oder andere für Produktion/Transport notwendige Komponenten).
+Ebenfalls unter Zuhilfenahme des [VWS4LS-AASPE-Plugin](https://github.com/VWS4LS/vws4ls-aaspe-plugin) konnte anschließend die Ableitung der Leitungssatz-Verwaltungsschale für den Konfektionär durchgeführt werden (vgl. [Abbildung 2-16](#Abbildung-2-16)). Hierbei wurden die im Rahmen des Architekturteams entwickelten Prinzipien zur Verlinkung der unterschiedlichen Sichten angewendet. So verweisen z.B. Elemente in der Produkt-BOM in der Verwaltungsschale des Konfektionärs auf die äquivalenten Elemente in der Produkt-BOM des OEMs. Diese Duplizierung mit Verlinkung ermöglicht einerseits die Nachvollziehbarkeit des Ursprungs von Komponenten, anderseits aber auch die Anpassung der Produkt-BOM durch den Konfektionär z.B. durch Ergänzen von Elementen, die vom OEM nicht betrachtet werden (Klebebänder oder andere für Produktion/Transport notwendige Komponenten).
 
-Auf Basis der OEM-Verwaltungsschale für den Leitungssatz-Typ konnten anschließend Schritt für Schritt benötigte Halbfabrikate abgeleitet werden. Abbildung 2-25 zeigt ein solches Halbfabrikat: eine geschnittene Leitung. Auch hier wurden wieder die im Rahmen des Architekturteams entwickelten Strukturen bzgl. der Verlinkung von Elementen angewendet. Abbildung 2-25 zeigt dies durch die Manufacturing-BOM des Halbfabrikats: Für dessen Herstellung wird lediglich eine einzige Komponente benötigt – die Leitung als Ausgangsmaterial. Diese Leitung ist jedoch über eine entsprechende *SameAs*-Beziehung aus der Manufacturing-BOM des Gesamt-Leitungssatzes referenziert, wodurch eine durchgängige Erkundbarkeit der Produktstruktur vom Gesamtleitungssatz bis hin zu den Halbfabrikaten auf den untersten Ebenen gewährleistet wird.
+Auf Basis der OEM-Verwaltungsschale für den Leitungssatz-Typ konnten anschließend Schritt für Schritt benötigte Halbfabrikate abgeleitet werden. [Abbildung 2-25](#Abbildung-2-25) zeigt ein solches Halbfabrikat: eine geschnittene Leitung. Auch hier wurden wieder die im Rahmen des Architekturteams entwickelten Strukturen bzgl. der Verlinkung von Elementen angewendet. [Abbildung 2-25](#Abbildung-2-25) zeigt dies durch die Manufacturing-BOM des Halbfabrikats: Für dessen Herstellung wird lediglich eine einzige Komponente benötigt – die Leitung als Ausgangsmaterial. Diese Leitung ist jedoch über eine entsprechende *SameAs*-Beziehung aus der Manufacturing-BOM des Gesamt-Leitungssatzes referenziert, wodurch eine durchgängige Erkundbarkeit der Produktstruktur vom Gesamtleitungssatz bis hin zu den Halbfabrikaten auf den untersten Ebenen gewährleistet wird.
 
 ![image](https://github.com/user-attachments/assets/2d41e8af-e883-484f-adb0-f1af210fc623)
 
-Abbildung 2-25: Verwaltungsschale für ein Halbfabrikat "Geschnittene Leitung"
+<a name="Abbildung-2-25"></a>Abbildung 2-25: Verwaltungsschale für ein Halbfabrikat "Geschnittene Leitung"
 
 Die Integration der verschiedenen Teilmodelle von unterschiedlichen Zulieferern in die Verwaltungsschale wurde erfolgreich in Verbindung mit der [BaSyx](https://wiki.basyx.org)[^12] Middleware umgesetzt, die als zentrale Plattform für die Verwaltung und Integration der Verwaltungsschalen diente.
 
