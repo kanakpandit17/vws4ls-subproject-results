@@ -2,71 +2,69 @@
 
 **Inhalt**
 
-[2 TP2 - Entwicklungsprozesse des Leitungssatzes](#2-tp2---entwicklungsprozesse-des-leitungssatzes)
+[AP 2.1 - Konzept kollaboratives Datenmodell](#ap-21---konzept-kollaboratives-datenmodell)
 
-[2.1 AP 2.1 - Konzept kollaboratives Datenmodell](#21-ap-21---konzept-kollaboratives-datenmodell)
+ -- [2.1.1 Kollaboration in der Leitungssatzentwicklung](#211-kollaboration-in-der-leitungssatzentwicklung)
 
-[2.1.1 Kollaboration in der Leitungssatzentwicklung](https://github.com/VWS4LS/vws4ls-subproject-results/edit/main/TP02/README.md#211-kollaboration-in-der-leitungssatzentwicklung)
+ -- [2.1.2 Datenhaltung in der Leitungssatzentwicklung](#212-datenhaltung-in-der-leitungssatzentwicklung)
 
-[2.1.2 Datenhaltung in der Leitungssatzentwicklung](#_Toc178808256)
+ -- [2.1.3 Anwendungspotential der VWS](#213-anwendungspotential-der-vws)
 
-[2.1.3 Anwendungspotential der VWS](#_Toc178808257)
+ -- [2.1.4 Fallbeispiel für den Einsatz von VWS bei der Auswahl eines Steckers](#214-fallbeispiel-f%C3%BCr-den-einsatz-von-vws-bei-der-auswahl-eines-steckers)
 
-[2.1.4 Fallbeispiel für den Einsatz von VWS bei der Auswahl eines Steckers](#_Toc178808258)
+ -- [2.1.5 Fazit](#215-fazit)
 
-[2.1.5 Fazit](#_Toc178808259)
+[AP 2.2 - Single-Point-of-Truth-Definition](#ap-22---single-point-of-truth-definition)
 
-[2.2 AP 2.2 - Single-Point-of-Truth-Definition](#_Toc178808260)
+ -- [2.2.1 Herausforderung: Produkt mit mehreren Herstellern](#221-herausforderung-produkt-mit-mehreren-herstellern)
 
-[2.2.1 Herausforderung: Produkt mit mehreren Herstellern](#_Toc178808261)
+[AP 2.3 - Prozessbeschreibung LS-Entwicklung](#ap-23---prozessbeschreibung-ls-entwicklung)
 
-[2.3 AP 2.3 - Prozessbeschreibung LS-Entwicklung](#_Toc178808262)
+ -- [2.3.1 Analyse des Entwicklungsprozesses](#231-analyse-des-entwicklungsprozesses)
 
-[2.3.1 Analyse des Entwicklungsprozesses](#_Toc178808263)
+ -- [2.3.2 Entwicklungsprozess mit der Verwaltungsschale](#_Toc178808264)
 
-[2.3.2 Entwicklungsprozess mit der Verwaltungsschale](#_Toc178808264)
+ -- [2.3.3 Analyse und Integration der Einzelkomponenten](#_Toc178808265)
 
-[2.3.3 Analyse und Integration der Einzelkomponenten](#_Toc178808265)
+ -- [2.3.4 Strukturierung der Verbundkomponente](#_Toc178808266)
 
-[2.3.4 Strukturierung der Verbundkomponente](#_Toc178808266)
+ -- [2.3.5 Anwendungsfall und Voraussetzungen](#_Toc178808267)
 
-[2.3.5 Anwendungsfall und Voraussetzungen](#_Toc178808267)
+[AP 2.4 - Teilmodelle der Verwaltungsschale](#ap-24---teilmodelle-der-verwaltungsschale)
 
-[2.4 AP 2.4 - Teilmodelle der Verwaltungsschale](#_Toc178808268)
+-- [2.4.1 Teilmodelle für die Entwicklung](#241-der-anwendungsfall)
 
-[2.4.1 Teilmodelle für die Entwicklung](#_Toc178808269)
+[AP 2.5 - Umsetzung Digital Twin LS](#ap-25---umsetzung-digital-twin-ls)
 
-[2.5 AP 2.5 - Umsetzung Digital Twin LS](#_Toc178808270)
+-- [2.5.1 Der Anwendungsfall](#251-der-anwendungsfall)
 
-[2.5.1 Der Anwendungsfall](#_Toc178808271)
+-- [2.5.2 Voraussetzungen für die Umsetzung](#_Toc178808272)
 
-[2.5.2 Voraussetzungen für die Umsetzung](#_Toc178808272)
+-- [2.5.3 Verwaltungsschalen der Komponenten](#_Toc178808273)
 
-[2.5.3 Verwaltungsschalen der Komponenten](#_Toc178808273)
+-- [2.5.4 Erstellung Verbundkomponente](#_Toc178808274)
 
-[2.5.4 Erstellung Verbundkomponente](#_Toc178808274)
+-- [2.5.5 Fähigkeitsabgleich der Produktionsmaschinen](#255-f%C3%A4higkeitsabgleich-der-produktionsmaschinen)
 
-[2.5.5 Fähigkeitsabgleich der Produktionsmaschinen](#_Toc178808275)
+-- [2.5.6 Abschlussdemonstrator](#256-abschlussdemonstrator)
 
-[2.5.6 Abschlussdemonstrator](#_Toc178808276)
+[2.6 Fazit](#26-fazit)
 
-[2.6 Fazit](#_Toc178808277)
+[Literaturverzeichnis](#literaturverzeichnis)
 
-[Literaturverzeichnis](#_Toc178808278)
+[Abbildungsverzeichnis](#abbildungsverzeichnis)
 
-[Abbildungsverzeichnis](#_Toc178808279)
-
-# 2 TP2 - Entwicklungsprozesse des Leitungssatzes
+# TP2 - Entwicklungsprozesse des Leitungssatzes
 
 Im Teilprojekt 2 "Entwicklungsprozesse des Leitungssatzes“ wurde die Entstehung des Digitalen Zwillings entlang der Anwendungsfälle analysiert, um die Abläufe auf die Verwaltungsschale und die Erzeugung interoperabler Daten und Formate für den gesamten weiteren Lebenszyklus auszurichten. Das Teilprojekt wurde in folgende Arbeitspakete aufgeteilt, deren Resultate hier zusammenfassend erläutert werden:
 
--   AP 2.1 – Konzept kollaboratives Datenmodell
--   AP 2.2 – Single-Point-of-Truth-Definition
--   AP 2.3 – Prozessbeschreibung LS-Entwicklung
--   AP 2.4 – Teilmodelle der Verwaltungsschale
--   AP 2.5 – Umsetzung Digital Twin LS
+-   [AP 2.1 - Konzept kollaboratives Datenmodell](#ap-21---konzept-kollaboratives-datenmodell)
+-   [AP 2.2 - Single-Point-of-Truth-Definition](#ap-22---single-point-of-truth-definition)
+-   [AP 2.3 - Prozessbeschreibung LS-Entwicklung](#ap-23---prozessbeschreibung-ls-entwicklung)
+-   [AP 2.4 - Teilmodelle der Verwaltungsschale](#ap-24---teilmodelle-der-verwaltungsschale)
+-   [AP 2.5 - Umsetzung Digital Twin LS](#ap-25---umsetzung-digital-twin-ls)
 
-## 2.1 AP 2.1 - Konzept kollaboratives Datenmodell
+## AP 2.1 - Konzept kollaboratives Datenmodell
 
 Im AP 2.1 "Konzept kollaboratives Datenmodell“ wurde als wesentlicher Inhalt die Datenhaltung im kollaborativen Entwicklungsprozess betrachtet und im Ergebnis ein dezentraler Ansatz als das geeignetere Konzept angesehen.
 
@@ -144,7 +142,7 @@ Ein kollaboratives Datenmodell in der Produktentwicklung besteht aus einer zentr
 
 [^3]: <https://www.vector.com/de/de/produkte/produkte-a-z/software/preevision/>
 
-## 2.2 AP 2.2 - Single-Point-of-Truth-Definition
+## AP 2.2 - Single-Point-of-Truth-Definition
 
 Im AP 2.2 „Single-Point-of-Truth-Definition“ wurden Lösungsansätze für das Datenmanagement betrachtet. Wie in AP2.1 beschrieben, ist die Entwicklung eines Leitungssatzes ein stark kollaborativer Prozess mit mehreren Akteuren. Durch die kollaborative Arbeit und die Anforderung einer dezentralen Datenhaltung in verteilten Repositories entsteht die Gefahr von Inkonsistenzen in der Datenhaltung. Damit ist es notwendig, einen Referenzpunkt festzulegen, den sog. „*Single-Point-of-Truth“* oder **SPoT** für alle Daten und Parameterwerte eines Leitungssatzes entlang seiner Wertschöpfung, um eine inkonsistente Datenhaltung in den nebeneinander existierenden Datensilos zu vermeiden.
 
@@ -189,7 +187,7 @@ Abbildung 2-10: Freigaben und Änderungs-Management
 
 Durch dieses Mapping von Zuordnungen können die verschiedenen Teile-Bezeichnungen und Nummerierungen weitergeführt und je nach Anforderungen angepasst werden. Zudem wird eine Rückverfolgbarkeit gewährleistet und es kann für spätere Betrachtungen, wie z.B. Lieferketten-Analysen oder CO2-Footprint, eine genauere Analyse durchgeführt werden.
 
-## 2.3 AP 2.3 - Prozessbeschreibung LS-Entwicklung
+## AP 2.3 - Prozessbeschreibung LS-Entwicklung
 
 Im AP 2.3 wurde eine generischer Leitungssatz-Entwicklungsprozess erarbeitet, d.h. eine vereinheitliche Beschreibung aller wesentlichen Prozessschritte und der dazugehörigen Bedarfe (Input, Output). Dazu musste der Ist-Prozess der Leitungssatz-Herstellung analysiert werden, mit den folgenden Zielsetzungen:
 
@@ -289,7 +287,7 @@ Die beschriebenen Entwicklungsprozesse werden nun durchgeführt, unter Verwendun
 
 Diese Schritte sind entscheidend, um die Verwaltungsschale als zentrales Element in der Leitungssatzentwicklung erfolgreich zu nutzen. Die integrierten und verknüpften Teilmodelle bilden eine konsistente Datenbasis, die für die gesamte Entwicklung und spätere Produktion genutzt werden kann
 
-## 2.4 AP 2.4 - Teilmodelle der Verwaltungsschale
+## AP 2.4 - Teilmodelle der Verwaltungsschale
 
 Im AP 2.4 „Teilmodelle der Verwaltungsschale“ wurden Anforderungsanalysen für die VWS-Teilmodelle der in AP 2.3 definierten LS-Prozesse durchgeführt, unter Einbeziehung jeder Komponente und jedes Prozessschrittes.
 
@@ -341,7 +339,7 @@ Basierend auf der vom Leitungssatz-Typ-VWS des OEM abgeleiteten VWS zu seinem ei
 
 Abbildung 2-16: VWS-Schnittstellen im Entwicklungsprozess zwischen OEM und Konfektionär
 
-## 2.5 AP 2.5 - Umsetzung Digital Twin LS
+## AP 2.5 - Umsetzung Digital Twin LS
 
 Im Rahmen des Arbeitspakets 2.5 „Umsetzung Digital Twin LS“ wurde das im vorherigen Arbeitspaket 2.4 definierte Vorgehen zur Erstellung der Typ-Verwaltungsschale für den Leitungssatz beim Konfektionär sowie die definierte Aufteilung der Informationen in unterschiedliche Teilmodelle auf ihre Anwendbarkeit in der Leitungssatzentwicklung erarbeitet. Im Vordergrund stand dabei die Rolle der VWS im Gesamtentwicklungsprozess, die Integration der Komponenten-Verwaltungsschalen sowie der Informationsaustausch über Unternehmensgrenzen hinweg, mit dem Ziel, den gesamten Entwicklungsablauf effizienter, transparenter und besser strukturiert zu gestalten.
 
