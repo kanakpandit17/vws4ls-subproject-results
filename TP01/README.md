@@ -6,59 +6,59 @@
 
 [2	AP 1.1 - Zielbeschreibung des Gesamtkonzepts](#_toc174347898)
 
-[2.1	Anforderungserhebung](#_toc174347899)
+-- [2.1	Anforderungserhebung](#_toc174347899)
 
-[2.2	Klassen vom Materialen](#_toc174347900)
+-- [2.2	Klassen vom Materialen](#_toc174347900)
 
-[2.3	Prozessübersicht](#_toc174347901)
+-- [2.3	Prozessübersicht](#_toc174347901)
 
-[2.4	PPR-Modell](#_toc174347902)
+-- [2.4	PPR-Modell](#_toc174347902)
 
-[2.5	Fazit](#_toc174347903)
+-- [2.5	Fazit](#_toc174347903)
 
 [3	AP 1.2 - Entwicklung von Informationsmodellen und Zuweisung der Daten](#_toc174347904)
 
-[3.1	VEC und KBL](#_toc174347905)
+-- [3.1	VEC und KBL](#_toc174347905)
 
-[3.1.1	Ausdrucksfähigkeit der Modelle](#_toc174347906)
+-- [3.1.1	Ausdrucksfähigkeit der Modelle](#_toc174347906)
 
-[3.1.2	Lebenszyklus und industrieller Einsatz](#_toc174347907)
+-- [3.1.2	Lebenszyklus und industrieller Einsatz](#_toc174347907)
 
-[3.1.3	Abdeckung Anforderungen im Kontext VWS4LS](#_toc174347908)
+-- [3.1.3	Abdeckung Anforderungen im Kontext VWS4LS](#_toc174347908)
 
-[3.1.4	Bewertung](#_toc174347909)
+-- [3.1.4	Bewertung](#_toc174347909)
 
-[3.2	ECLASS](#_toc174347910)
+-- [3.2	ECLASS](#_toc174347910)
 
-[3.3	RAMI 4.0](#_toc174347911)
+-- [3.3	RAMI 4.0](#_toc174347911)
 
-[3.4	OPC UA](#_toc174347912)
+-- [3.4	OPC UA](#_toc174347912)
 
-[3.5	Fazit](#_toc174347913)
+-- [3.5	Fazit](#_toc174347913)
 
 [4	AP 1.3 - Erfassen der Geschäftsmodelle für das Informationsmodell](#_toc174347914)
 
 [5	AP 1.4 - Beschreibung der Tiefe der Informationsmodelle](#_toc174347915)
 
-[5.1	Grundlagen](#_toc174347916)
+-- [5.1	Grundlagen](#_toc174347916)
 
-[5.2	Prozessliste und Parameter](#_toc174347917)
+-- [5.2	Prozessliste und Parameter](#_toc174347917)
 
-[5.3	Produktionsdatensatz](#_toc174347918)
+-- [5.3	Produktionsdatensatz](#_toc174347918)
 
-[5.4	VEC als Produktdatenmodell](#_toc174347919)
+-- [5.4	VEC als Produktdatenmodell](#_toc174347919)
 
-[5.5	OPC UA Schnittstelle](#_toc174347920)
+-- [5.5	OPC UA Schnittstelle](#_toc174347920)
 
-[5.5.1	Identifikation](#_toc174347921)
+-- [5.5.1	Identifikation](#_toc174347921)
 
-[5.5.2	Job Management](#_toc174347922)
+-- [5.5.2	Job Management](#_toc174347922)
 
-[5.5.3	Material und Artikel Management](#_toc174347923)
+-- [5.5.3	Material und Artikel Management](#_toc174347923)
 
-[5.5.4	ResultManagement](#_toc174347924)
+-- [5.5.4	ResultManagement](#_toc174347924)
 
-[5.6	Fazit](#_toc174347925)
+-- [5.6	Fazit](#_toc174347925)
 
 [6	AP 1.5 - Validierung der Standards](#_toc174347926)
 
@@ -71,7 +71,7 @@
 [Abkürzungsverzeichnis](#_toc174347930)
 
 
-## <a name="_toc174347897"></a><a name="_ref174348561"></a>1. Zielsetzung
+## <a name="_toc174347897"></a>>1. Zielsetzung
 Im Teilprojekts 1 „Konzept, Informationsmodelle und Produktbeschreibung“ wurden Konzepte rund um das Informationsmodell und die Produktbeschreibung der Leitungssatzherstellung für die Automobilin-dustrie mittels Verwaltungsschalen (VWS) erarbeitet.
 
 Die VWS bietet als Schlüsselkonzept der Industrie 4.0 eine standardisierte Struktur für die Beschreibung von Assets (z.B. Maschinen, Komponenten oder Software) in einer digitalen Umgebung. Damit wird ein effizienter Datenaustausch zwischen verschiedenen Systemen und Anbietern ermöglicht.
@@ -535,24 +535,25 @@ Das Ziel dieser Spezifikation ist es, alle relevanten Aspekte und Anforderungen 
 Durch die enge Zusammenarbeit mit der dem VDMA und die Integration der Erkenntnisse in die OPC UA Spezifikation wurde ein nachhaltiger Beitrag geleistet, die Industrie 4.0-Vision in der Kabelbaumindustrie voranzutreiben und eine effiziente, standardisierte Kommunikation und Datenverarbeitung in diesem Bereich zu ermöglichen.
 
 ## <a name="_toc174347926"></a>6. AP 1.5 - Validierung der Standards
-Arbeitspaket 1.5 „Validierung der Standards“ sollte sich mit der Analyse der Informationsmodelle der bestehenden Standards beschäftigen, um sicherzustellen, dass alle relevanten Daten und Informationen erfasst und in der erforderlichen Detailtiefe definiert sind.  Die detaillierten Ergebnisse der Analyse wurden zur besseren Verständlichkeit des Dokuments bereits im Kapitel 3 beschrieben, hier nochmals eine Zusammenfassung der Resultate. Ein Hauptaugenmerk lag auf KBL, VEC und OPC UA und die Granularität ihrer jeweiligen Datenstrukturen. Insbesondere wurden in diesem AP die folgenden Beiträge erarbeitet:
+Arbeitspaket 1.5 „Validierung der Standards“ sollte sich mit der Analyse der Informationsmodelle der bestehenden Standards beschäftigen, um sicherzustellen, dass alle relevanten Daten und Informationen erfasst und in der erforderlichen Detailtiefe definiert sind. Die detaillierten Ergebnisse der Analyse wurden zur besseren Verständlichkeit des Dokuments bereits im Kapitel 3 beschrieben, hier nochmals eine Zusammenfassung der Resultate. Ein Hauptaugenmerk lag auf KBL, VEC und OPC UA und die Granularität ihrer jeweiligen Datenstrukturen. Insbesondere wurden in diesem AP die folgenden Beiträge erarbeitet:
 
-**KBL und VEC**: Die bestehenden Datenmodelle wurde analysiert und für den VEC entsprechende Anpassungen und Erweiterungen vorgenommen [17], um es besser auf die Bedürfnisse der Leitungssatzindustrie abzustimmen. Diese Anpassungen umfassen sowohl strukturelle als auch funktionale Verbesserungen, um die Genauigkeit der Datenmodellierung zu erhöhen ([Abbildung 12](#_ref174022396)). Dadurch ist das VEC-Datenmodell in der aktuellen Version 2.1.0 [23] noch leistungsfähiger und anwendungsfreundlicher geworden.** Ergänzend wurde beschlossen, neben dem VEC- auch das KBL-Datenmodell zu unterstützen, da es bei mehreren OEMs etabliert ist und von bestehenden Systemen unterstützt wird.
+**KBL und VEC**: Die bestehenden Datenmodelle wurde analysiert und für den VEC entsprechende Anpassungen und Erweiterungen vorgenommen [18], um es besser auf die Bedürfnisse der Leitungssatzindustrie abzustimmen. Diese Anpassungen umfassen sowohl strukturelle als auch funktionale Verbesserungen, um die Genauigkeit der Datenmodellierung zu erhöhen (Abbildung 113](#_ref174022396)). Dadurch ist das VEC-Datenmodell in der aktuellen Version 2.1.0 [18] noch leistungsfähiger und anwendungsfreundlicher geworden. Ergänzend wurde beschlossen, neben dem VEC- auch das KBL-Datenmodell zu unterstützen, da es bei mehreren OEMs etabliert ist und von bestehenden Systemen unterstützt wird.
 
-**OPC UA:** Bestehende Bausteine wie «OPC 10031-4: ISA-95-4 Job Control» [20], «OPC 40001-3 Machinery Job Mgmt» [18] und «OPC 40001-101 Machinery Result Transfer» [16] wurden analysiert und als solide Grundlage identifiziert für die Entwicklung der neuen Companion Specification «OPC 40570: OPC UA for Wire Harness Manufacturing» [16]. Der Standard «OPC 40001-1 Machinery Basic Building Blocks» [15] bietet grundlegende Bausteine für die Maschinenidentifikation, die Überwachung von Maschinenzuständen und die präventive Wartung. Diese Bausteine ermöglichen eine einheitliche und strukturierte Darstellung von Maschineninformationen, was die Interoperabilität und Integration verschiedener Maschinen und Systeme erleichtert. «OPC 40001-3 Machinery Job Mgmt» [18] definiert die Bausteine für die Ausführung und Steuerung von Arbeitsaufträgen. Es umfasst die Verwaltung von Jobaufträgen, die Definition von Jobparametern und die Rückmeldung von Jobergebnissen, was eine effiziente Planung und Durchführung von Produktionsprozessen ermöglicht. Der Standard «OPC 40001-101 Machinery Result Transfer» [19] befasst sich mit der Übertragung von Ergebnissen und bietet Mechanismen zur Verwaltung und Übertragung von Produktionsdaten. Gemeinsam mit dem VDMA wurde im TP1 neue Companion Specification «OPC 40570: OPC UA for the Wire Harness Manufacturing Industry» [16] erarbeitet, um einen einheitlichen Standard für die Kommunikation und Interaktion zwischen verschiedenen Systemen in der Leitungssatzindustrie zu etablieren, was wiederum zu einer Umsetzung von Industrie 4.0 in Richtung einer vernetzten und intelligenten Fertigung in diesem Bereich beiträgt.
+**OPC UA:** Bestehende Bausteine wie «OPC 10031-4: ISA-95-4 Job Control» [21], «OPC 40001-3 Machinery Job Mgmt» [19] und «OPC 40001-101 Machinery Result Transfer» [16] wurden analysiert und als solide Grundlage identifiziert für die Entwicklung der neuen Companion Specification «OPC 40570: OPC UA for Wire Harness Manufacturing» [17]. Der Standard «OPC 40001-1 Machinery Basic Building Blocks» [16] bietet grundlegende Bausteine für die Maschinenidentifikation, die Überwachung von Maschinenzuständen und die präventive Wartung. Diese Bausteine ermöglichen eine einheitliche und strukturierte Darstellung von Maschineninformationen, was die Interoperabilität und Integration verschiedener Maschinen und Systeme erleichtert. «OPC 40001-3 Machinery Job Mgmt» [19] definiert die Bausteine für die Ausführung und Steuerung von Arbeitsaufträgen. Es umfasst die Verwaltung von Jobaufträgen, die Definition von Jobparametern und die Rückmeldung von Jobergebnissen, was eine effiziente Planung und Durchführung von Produktionsprozessen ermöglicht. Der Standard «OPC 40001-101 Machinery Result Transfer» [20] befasst sich mit der Übertragung von Ergebnissen und bietet Mechanismen zur Verwaltung und Übertragung von Produktionsdaten. Gemeinsam mit dem VDMA wurde im TP1 neue Companion Specification «OPC 40570: OPC UA for the Wire Harness Manufacturing Industry» [17] erarbeitet, um einen einheitlichen Standard für die Kommunikation und Interaktion zwischen verschiedenen Systemen in der Leitungssatzindustrie zu etablieren, was wiederum zu einer Umsetzung von Industrie 4.0 in Richtung einer vernetzten und intelligenten Fertigung in diesem Bereich beiträgt.
 
-**Weiterentwicklung der VWS:** Für die VWS wurde ein Konzept definiert, welches den Austausch von Informationen zwischen Produktionsunternehmen in der Leitungssatzindustrie ermöglicht. Die VWS nutzt dabei die in TP1 erarbeiteten und verbesserten Datenmodelle von VEC, OPC UA und ECLASS, um eine effiziente, modulare und standardisierte Kommunikation und Datenverarbeitung zu gewährleisten. Daraus wurden Initiativen für neue Submodelle abgeleitet und in den entsprechenden Teilprojekten erarbeitet: „IDTA 02056-1-0 Data Retention Policies“ [24] und „IDTA 02031-1-0 Bill of Process“ [25] im TP3. Im TP5 wurde der Anwendungsfall der virtuellen Inbetriebnahme (VIBN) unter Einsatz der VWS untersucht. Im TP6 wurden I4.0-Nachrichten definiert, um Synchronisation von Werten und Verhandlungsprozesse zwischen Leitungssatz-VWS zu ermöglichen.
+**Verwaltungsschale:** Für die VWS wurde ein Konzept definiert, welches den Austausch von Informationen zwischen Produktionsunternehmen in der Leitungssatzindustrie ermöglicht. Die VWS nutzt dabei die in TP1 erarbeiteten und verbesserten Datenmodelle von VEC, OPC UA und ECLASS, um eine effiziente, modulare und standardisierte Kommunikation und Datenverarbeitung zu gewährleisten. Daraus wurden Initiativen für neue Submodelle abgeleitet und in den entsprechenden Teilprojekten erarbeitet: „IDTA 02056-1-0 Data Retention Policies“ [24] und „IDTA 02031-1-0 Bill of Process“ [25] im TP3. Im TP5 wurde der Anwendungsfall der virtuellen Inbetriebnahme (VIBN) unter Einsatz der VWS untersucht. Im TP6 wurden I4.0-Nachrichten definiert, um Synchronisation von Werten und Verhandlungsprozesse zwischen Leitungssatz-VWS zu ermöglichen.
 
-**Verwendung von ECLASS**: Es wurden Definitionen und Klassifikationen recherchiert, die bereits in ECLASS vorhanden sind und potenziell für VWS4LS-Artefakte verwendet werden können. Die Beschreibung von Leitungssätzen erfordert detaillierte Informationen über Steckverbinder, Leitungen, Verbindungen, Isolierungen und vieles mehr. ECLASS bietet zwar eine allgemeine Struktur, aber es fehlen spezifische Attribute und Klassen, die für die genaue Beschreibung von Leitungssätzen geeignet sind. Deshalbwurden die bereits vorhandenen semantischen Definitionen der anderen Standards (VEC und OPC UA) als ausreichend für den Projektkontext betrachtet.
+**ECLASS**: Es wurden Definitionen und Klassifikationen recherchiert, die bereits in ECLASS vorhanden sind und potenziell für VWS4LS-Artefakte verwendet werden können. Die Beschreibung von Leitungssätzen erfordert detaillierte Informationen über Steckverbinder, Leitungen, Verbindungen, Isolierungen und vieles mehr. ECLASS bietet zwar eine allgemeine Struktur, aber es fehlen spezifische Attribute und Klassen, die für die genaue Beschreibung von Leitungssätzen geeignet sind. Deshalbwurden die bereits vorhandenen semantischen Definitionen der anderen Standards (VEC und OPC UA) als ausreichend für den Projektkontext betrachtet.
 
-**RAMI 4.0** wurde, wie schon weiter oben unter [3.3](#_ref175664280) beschrieben, als gut geeigneter übergeordneter Referenzrahmen für die Klassifikation der zu erstellenden Lösungbestandteile im VWS4LS-Projekt identifiziert. Es wurde jedoch entschieden, im Projekt keine Aufwände in diese Richtung zu investieren, da einerseits personelle Ressourcen gebunden, jedoch kein direkter anwendungsbezogener Mehrwert entstehen würde.
+**RAMI 4.0** wurde, wie schon weiter oben unter [1.2.3](#_ref175664280)  beschrieben, als gut geeigneter übergeordneter Referenzrahmen für die Klassifikation der zu erstellenden Lösungbestandteile im VWS4LS-Projekt identifiziert. Es wurde jedoch entschieden, im Projekt keine Aufwände in diese Richtung zu investieren, da einerseits personelle Ressourcen gebunden, jedoch kein direkter anwendungsbezogener Mehrwert entstehen würde.
+
 
 ## <a name="_toc174347927"></a>7. AP 1.6 - Dokumentation der Ergebnisse
 Im Rahmen von VWS4LS wurden eine Vielzahl von Arbeitsdokumenten erzeugt, in denen die Bearbeitung und Ergebnisse der einzelnen Teilprojekte und Arbeitspakete detailliert dokumentiert wurde. Zu diesen Dokumenten gehören unter anderem auch die Anforderungserhebung, die Prozess- und Parameterliste über alle Produktionsprozesse der Leitungssatzindustrie, die Betrachtungen zur Systemarchitektur sowie der Interaktionen und Schnittstellen zwischen den verschiedenen Komponenten des Systems. Dabei entstand auch ein VWS4LS-Datenmodellkonzept ([Abbildung 16](#_ref174093885)).
 
 ![image](https://github.com/user-attachments/assets/b9557137-7aab-46ed-acf4-aa9a72e423db)
 
-<a name="_ref174093885"></a><a name="_toc174347946"></a>*Abbildung 16: VWS4LS Datenmodell. *
+<a name="_ref174093885"></a><a name="_toc174347946"></a>*Abbildung 16: VWS4LS Datenmodell*
 
 Dieses Dokument beschreibt den Hergang der im Verlauf des Teilprojekt 1 getroffenen wesentlichen Grundsatzentscheidungen für das Gesamtprojekt VWS4LS sowie die Beiträge zur Verbesserung und Weiterentwicklung der Standards und Technologien für die Kabelbaumindustrie ([Abbildung 17](#_ref174093980)). Dazu gehören insbesondere:
 
