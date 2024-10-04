@@ -1,44 +1,42 @@
 # TP 8 - Data Storage Policy, Sicherheit, Anbindung an Catena-X
 ## Inhaltsverzeichnis
 
+[AP 8.1 - Technische Anforderungsanalyse](#8.1)
 
-[AP 8.1 - Technische Anforderungsanalyse](#_Toc178862254)
+[AP 8.2 - Technische Umsetzungskonzeption und Zielarchitektur](#8.2)
 
-[AP 8.2 - Technische Umsetzungskonzeption und Zielarchitektur](#_Toc178862255)
+[AP 8.3 - Vorbereitung der Anbindung an Catena-X](#8.3)
 
-[AP 8.3 - Vorbereitung der Anbindung an Catena-X](#_Toc178862256)
+- [8.3.1 Beispielprodukt: Teilleitungssatz](#8.3.1)
+- [8.3.2 Das Anwendungsszenario](#8.3.2)
+- [8.3.3 Ablauf des Szenarios](#8.3.3)
+- [8.3.4 Aufbau der technischen Infrastruktur](#8.3.4)
+- [8.3.5 Umsetzung des Use Cases](#8.3.5)
+- [8.3.6 Whitespots](#8.3.6)
 
-- [8.3.1 Beispielprodukt: Teilleitungssatz](#_Toc178862257)
-- [8.3.2 Das Anwendungsszenario](#_Toc178862258)
-- [8.3.3 Ablauf des Szenarios](#_Toc178862259)
-- [8.3.4 Aufbau der technischen Infrastruktur](#_Toc178862260)
-- [8.3.5 Umsetzung des Use Cases](#_Toc178862261)
-- [8.3.6 Whitespots](#_Toc178862262)
+[8.4 User Interfaces](#8.4)
 
-[8.4 User Interfaces](#_Toc178862263)
-
-[8.5 Ausblick](#Ausblick)
-- [8.5.1 Bewertung Status Quo](#_Toc178862265)
-- [8.5.2 Blick in die Zukunft](#_Toc178862266)
+[8.5 Ausblick](#8.5)
+- [8.5.1 Bewertung Status Quo](#8.5.1)
+- [8.5.2 Blick in die Zukunft](#8.5.2)
 
 [Literaturverzeichnis](#Literaturverzeichnis)
 
 [Abbildungsverzeichnis](#Abbildungsverzeichnis)
 
-
-## AP 8.1 - Technische Anforderungsanalyse
+<a name="8.1"></a>## AP 8.1 - Technische Anforderungsanalyse
 
 Im AP 8.1 "**Technische Anforderungsanalyse**“ sollten, ausgehend von den aktuellen Datenhaltungssituationen der Partner, Anforderungen für eine Datenhaltung im Hinblick auf die gemeinsame Nutzung entlang der Wertkette „Leitungssatz“ erarbeitet werden. Die Zielstellung des Arbeitspaketes umfasste die Definition der notwendigen Anforderungen in Bezug zu Data Governance, Data Business Policy sowie Data Storage Policy. Da eine starke inhaltliche Überschneidung gegeben war, wurde das AP 8.1 bereits im Zuge des [AP 7.1 "Anforderungserhebung"](https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP07#ap-71---anforderungserhebung) abgearbeitet und die Ergebnisse dort detailliert dokumentiert.
 
-## AP 8.2 - Technische Umsetzungskonzeption und Zielarchitektur
+<a name="8.2"></a>## AP 8.2 - Technische Umsetzungskonzeption und Zielarchitektur
 
 Im AP 8.2 „**Technische Umsetzungskonzeption und Zielarchitektur**“ sollten Lösungsansätze erforscht werden für die interoperable Nutzung von Daten der unterschiedlichen Akteure der Wertkette „Leitungssatz“ und über unterschiedliche Ablagestrukturen hinweg (On-Premises, Edge, Cloud). Als Leitbild dieser Lösungsbeschreibung wurde die übergeordnete Vision der Verwaltungsschale als Paradigma der Interoperabilität zwischen Produkt, Komponenten, Prozess und Produktion zugrunde gelegt und eine technische Anbindung mit Catena-X angestrebt. Inhaltlich wurde das AP 8.2 bereits in [AP 7.2 "Fachliche Konzeption der Daten-Policy entlang der Wertkette"](https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP07#ap-72---fachliche-konzeption-der-daten-policy-entlang-der-wertkette) erarbeitet und die Ergebnisse dort detailliert dokumentiert.
 
-## AP 8.3 - Vorbereitung der Anbindung an Catena-X
+<a name="8.3"></a>## AP 8.3 - Vorbereitung der Anbindung an Catena-X
 
 Im AP 8.3 „**Vorbereitung der Anbindung an Catena-X**“ wurde die Architektur der Catena-X-Plattform untersucht in Bezug auf Interoperabilität mit der Verwaltungsschale und eine exemplarische Implementierung eines kollaborativen Datenaustauschs anhand des nachfolgend beschriebenen Use Case über Catena-X Komponenten umgesetzt, welche den bidirektionalen Datenaustausch zwischen den Akteuren anhand eines konkreten Szenarios prototypisch demonstriert. Mit diesen nachfolgend detailliert beschriebenen Aktivitäten des AP 8.3 wurde auch das [AP 7.3 "Pilotierung und Erprobung"](https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP07#ap-73---pilotierung-und-erprobung-erstellung-implementierungsguideline) inhaltlich mit abgearbeitet.
 
-### Beispielprodukt: Teilleitungssatz
+<a name="8.3.1"></a>### 8.3.1 Beispielprodukt: Teilleitungssatz
 
 Für das Demonstrator-Anwendungsbeispiel wurde das vereinfachte Beispiel eines Leitungssatzes verwendet. Dieser besteht aus Stecker, Terminals und Leitungen. Zusätzlich soll die Möglichkeit gegeben sein, eine Auswahl zwischen zwei Varianten auszuwählen. Hierfür ist Variante 1, 2 Stecker, die Terminals und die beiden oberen Leitung in Abbildung 2, und Variante 2 enthält die beiden Stecker, die Terminals und die beiden unteren Leitungen.
 
@@ -46,7 +44,7 @@ Für das Demonstrator-Anwendungsbeispiel wurde das vereinfachte Beispiel eines L
 
 Abbildung 1-1: Vereinfachte Darstellung des Leitungssatzes
 
-### Das Anwendungsszenario
+<a name="8.3.2"></a>###  8.3.2 Das Anwendungsszenario
 
 Ein OEM sendet einen Entwicklungsauftrag für eine 150%-Leitungssatzvariante an den Tier-1. In dem Entwicklungsauftrag ist eine Liste mit zugelassenen Suppliern mit den jeweiligen Komponenten enthalten. Der Tier-1 hat anschließend die Aufgabe alle notwendigen Informationen zu den einzelnen Komponenten von den Product-Ownern (Tier-2) zu aggregieren. Hierfür müssen die richtigen Endpunkte der Tier-2 identifiziert werden. Dazu werden die im Entwicklungsauftrag seitens des OEM hinterlegten Informationen verwendet. Ziel ist es, einen vollständigen aggregierten Digitalen Zwilling beim Tier-1 zu erzeugen, der alle Produktinformationen enthält, die von den einzelnen Tier-2 für Ihr Komponenten zu Verfügung gestellt werden.
 
@@ -60,7 +58,7 @@ In diesem Szenario wird eine Wertschöpfungskette des Leitungssatzes über drei 
 
 Abbildung 1-2: Beispielhafte Darstellung der Wertschöpfungskette eines Leitungssatzes
 
-### Ablauf des Szenarios
+<a name="8.3.3"></a>### 8.3.3 Ablauf des Szenarios
 
 Die Aktionen der Akteure lassen sich grundlegend in zwei Kategorien aufteilen:
 
@@ -93,7 +91,7 @@ Mit den Informationen der Tier 2 (welche Komponenten sie anbieten) kann der Tier
 
 Abbildung 1-3: Prozessdiagramm Use Case
 
-### Aufbau der technischen Infrastruktur
+<a name="8.3.4"></a>### Aufbau der technischen Infrastruktur
 
 Bitte beachten Sie, dass die beschriebenen Links lediglich intern (innerhalb des Netzwerks, der ARENA2036) nutzbar sind.
 
@@ -1202,7 +1200,7 @@ Die Überschneidungen an äquivalenten Services, kann man auf der folgenden Abbi
 
 Abbildung 1-13: BaSyx-Integration in Use Case
 
-### Umsetzung des Use Cases
+<a name="8.3.5"></a>### 8.3.5 Umsetzung des Use Cases
 
 #### Catena-X Anforderungen an die VWS des Leitungssatzes
 
@@ -1216,11 +1214,31 @@ Im Folgenden gilt es daher zu klären, welche Unterschiede sich zwischen den IDT
 
 ##### Catena-X Aspektmodelle
 
-Catena-X beschreibt das Konzept der "[Aspektmodelle](https://catena-x.net/fileadmin/user_upload/Standard-Bibliothek/Archiv/8_PC_Semantics_v2.1/SEM-002_BAMM_PlatformCapabilitySemantics_v2.1.pdf)", um domänenspezifische Sichten oder Aspekte eines digitalen Zwillings zu definieren, die für verschiedene Anwendungsfälle innerhalb des Catena-X-Ökosystems wesentlich sind. Aspektmodelle bieten eine strukturierte Möglichkeit zur Erfassung spezifischer Geschäftsprozesse und Datenanforderungen.
+Catena-X beschreibt das Konzept der "[Aspektmodelle](https://catena-x.net/fileadmin/user_upload/Standard-Bibliothek/Archiv/8_PC_Semantics_v2.1/SEM-002_BAMM_PlatformCapabilitySemantics_v2.1.pdf)"[^1], um domänenspezifische Sichten oder Aspekte eines digitalen Zwillings zu definieren, die für verschiedene Anwendungsfälle innerhalb des Catena-X-Ökosystems wesentlich sind. Aspektmodelle bieten eine strukturierte Möglichkeit zur Erfassung spezifischer Geschäftsprozesse und Datenanforderungen.
 
-Um ein Datenmodell zu spezifizieren, wird das [Semantic Aspect Meta Model (SAMM)](https://eclipse-esmf.github.io/samm-specification/2.1.0/index.html) verwendet, welches unter Verwendung des Resource Description Format (RDF, [rdf11]) und der Terse RDF Triple Language Syntax (TTL, [turtle]) spezifiziert, zusammen mit Validierungsregeln in der Shapes Constraint Language (SHACL, [shacl]). Aspektmodelle werden ebenfalls in RDF/Turtle spezifiziert, wobei die SAMM-Semantik befolgt wird.[^11]
+[^1]: <https://catena-x.net/fileadmin/user_upload/Standard-Bibliothek/Archiv/8_PC_Semantics_v2.1/SEM-002_BAMM_PlatformCapabilitySemantics_v2.1.pdf>
 
-[^11]: https://eclipse-esmf.github.io/samm-specification/2.1.0/index.html
+Um ein Datenmodell zu spezifizieren, wird das [Semantic Aspect Meta Model](https://eclipse-esmf.github.io/samm-specification/2.1.0/index.html) (SAMM)[^2] verwendet, welches unter Verwendung des [Resource Description Format](https://www.w3.org/RDF/) (RDF)[^3] und der [Terse RDF Triple Language Syntax](https://de.wikipedia.org/wiki/Turtle_(Syntax)) (Turtle)[^4] spezifiziert, zusammen mit Validierungsregeln in der [Shapes Constraint Language](https://www.w3.org/TR/shacl/) (SHACL)[^5]. Aspektmodelle werden ebenfalls in RDF/Turtle spezifiziert, wobei die SAMM-Semantik befolgt wird.
+
+[^2]: <https://eclipse-esmf.github.io/samm-specification/2.1.0/index.html>
+
+[^3]: <https://www.w3.org/RDF/>
+
+[^4]: <https://www.w3.org/TR/2014/REC-turtle-20140225/>
+
+[^5]: <https://www.w3.org/TR/shacl/>
+
+Abbildung 914 zeigt beispielhaft die grafische Darstellung des Aspektmodells „PartTypeInformation“. Dafür kann der [Aspect Model Editor](https://eclipse-esmf.github.io/ame-guide/introduction.html) verwendet werden[^6] oder die html-Datei des semantischen Modells aus dem GitHub Repository [eclipse-tractusx](https://github.com/eclipse-tractusx/sldt-semantic-models/tree/main)[^7] geöffnet werden. In Abbildung 915 sieht man das entsprechende JSON dazu.
+
+[^6]: <https://eclipse-esmf.github.io/ame-guide/introduction.html>
+
+[^7]: <https://github.com/eclipse-tractusx/sldt-semantic-models/tree/main>
+
+
+[^5]: <https://eclipse-esmf.github.io/ame-guide/introduction.html>
+
+[^6]: <https://github.com/eclipse-tractusx/sldt-semantic-models/tree/main>
+
 
 Abbildung 1-14 zeigt beispielhaft die grafische Darstellung des Aspektmodells „PartTypeInformation“. Dafür kann der [Aspect Model Editor](https://eclipse-esmf.github.io/ame-guide/introduction.html) verwendet werden[^12] oder die html-Datei des semantischen Modells aus dem GitHub Repository [eclipse-tractusx](https://github.com/eclipse-tractusx/sldt-semantic-models/tree/main)[^13] geöffnet werden. In Abbildung 1-15 sieht man das entsprechende JSON dazu.
 
@@ -2168,7 +2186,7 @@ Der Tier 1 zieht sich die Informationen zu den autorisierten Suppliern vom OEM. 
 -   Registrieren des aggregierten Digitalen Zwillings in der DTR von „Tier 1“
 -   ContractDefinition (mit Asset & Policies) für jedes Submodel im EDC von „Tier 1“ anlegen
 
-### Whitespots
+<a name="8.3.6"></a>### 8.3.6 Whitespots
 
 Während der Bearbeitung des Projekts konnten Whitespots identifiziert werden, auf die im Folgenden eingegangen wird.
 
@@ -2289,7 +2307,7 @@ Bei BaSyx gibt es ebenfalls erhebliche Dokumentationslücken. Die Dokumentation 
 
 Diese Defizite in der Dokumentation erschweren die Implementierung und Nutzung der entsprechenden Technologien erheblich.
 
-## User Interfaces
+<a name="8.4"></a>## User Interfaces
 
 Dieses Kapitel dient zur Anforderungsaufnahme an vorhandene und zukünftig wünschenswerte Administrationsbezogene und für Anwendungsfallbezogene User Interfaces in der besprochenen digitalen Wertschöpfungskette, als rudimentäre Ideensammlung für zukünftige Umsetzungsprojekte.
 
@@ -2328,7 +2346,7 @@ Was zum jetzigen Zeitpunkt noch nicht möglich ist, ist dass eines der beiden Pr
 
 Die Open Source Software „Trace-X“ kann das, aktuell aber nur mit Catena-X standardisierten Submodels.
 
-## Ausblick
+<a name="8.5"></a>## Ausblick
 
 Im Teilprojekt 8 „**Data Storage Policy, Sicherheit, Anbindung an Catena-X**“ konnte eine Aggregation von Informationen für das Produkt Leitungssatz mittels AAS und den Catena-X Komponenten zwischen den Wertschöpfungspartnern in der Leitungssatzwertschöpfung prototypisch durchgeführt werden.
 
@@ -2346,7 +2364,7 @@ Aus technischer Sicht gibt es Herausforderungen, die in den Bereichen der Softwa
 
 Konzeptionell wird es darum gehen, den in einem Teilmodell “Sicherheit” konfigurierten Rollen und Zugriffsrechte über einen geeigneten Ansatz in dynamisch generierte Policies im Control-Plane des EDC zu generieren. Dies wir eine Überarbeitung der Architektur erfordern.
 
-### Bewertung Status Quo
+<a name="8.5.1"></a>### Bewertung Status Quo
 
 Die konzeptionellen Unterschiede zwischen den beiden Ökosystemen („AAS mit Submodellen“ und „CX-Aspektmodelle“) erfordern geeignete Definitionen, um eine nahtlose Integration zu ermöglichen. Ein wesentlicher Punkt dabei ist der Unterschied in der Handhabung der DTR (Decentralized Trusted Registry). Während beide Ökosysteme mit Submodellen und AAS (Asset Administration Shells) arbeiten, liegt der Unterschied darin, dass - anstatt auf bestehende AASen zu verweisen - in der DTR eine neue AAS (Deskriptor) angelegt wird und direkt auf bestehende Submodels verweist.
 
@@ -2356,7 +2374,7 @@ Darüber hinaus wurde in beiden Ökosystemen ein Mangel an geeigneten Benutzerob
 
 Ein ökosystemübergreifendes Konzept für Identity & Access Management (IAM) ist noch nicht ausdefiniert.
 
-### Blick in die Zukunft
+<a name="8.5.2"></a>### Blick in die Zukunft
 
 Die zukünftige Entwicklung für die Weiterentwicklung der bisherigen Arbeit hängen von einigen grundsätzlichen Entscheidungen ab:
 
