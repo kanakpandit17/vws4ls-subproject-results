@@ -1,5 +1,4 @@
 # TP 1 – Konzept, Informationsmodelle und Produktbeschreibung
-
 ## <a name="Inhalt"></a>Inhalt
 
 [1	Zielsetzung](#_toc174347897)
@@ -47,7 +46,7 @@
 [Abkürzungsverzeichnis](#_toc174347930)
 
 
-## <a name="_toc174347897"></a>>1. Zielsetzung
+## <a name="_toc174347897"></a>1. Zielsetzung
 Im Teilprojekts 1 „Konzept, Informationsmodelle und Produktbeschreibung“ wurden Konzepte rund um das Informationsmodell und die Produktbeschreibung der Leitungssatzherstellung für die Automobilin-dustrie mittels Verwaltungsschalen (VWS) erarbeitet.
 
 Die VWS bietet als Schlüsselkonzept der Industrie 4.0 eine standardisierte Struktur für die Beschreibung von Assets (z.B. Maschinen, Komponenten oder Software) in einer digitalen Umgebung. Damit wird ein effizienter Datenaustausch zwischen verschiedenen Systemen und Anbietern ermöglicht.
@@ -64,17 +63,12 @@ Durch die derartige Nutzung des Modells in Entwicklung und Fertigung soll ein ho
 
 Das Teilprojekt wurde in sechs Arbeitspakete aufgeteilt, die in den folgenden Kapiteln näher erläutert werden:
 
-[	AP 1.1 - Zielbeschreibung des Gesamtkonzepts](#_toc174347898)
-
-[	AP 1.2 - Entwicklung von Informationsmodellen und Zuweisung der Daten](#_toc174347904)
-
-[	AP 1.3 - Erfassen der Geschäftsmodelle für das Informationsmodell](#_toc174347914)
-
-[	AP 1.4 - Beschreibung der Tiefe der Informationsmodelle](#_toc174347915)
-
-[	AP 1.5 - Validierung der Standards](#_toc174347926)
-
-[	AP 1.6 - Dokumentation der Ergebnisse](#_toc174347927)
+- [	AP 1.1 - Zielbeschreibung des Gesamtkonzepts](#_toc174347898)
+- [	AP 1.2 - Entwicklung von Informationsmodellen und Zuweisung der Daten](#_toc174347904)
+- [	AP 1.3 - Erfassen der Geschäftsmodelle für das Informationsmodell](#_toc174347914)
+- [	AP 1.4 - Beschreibung der Tiefe der Informationsmodelle](#_toc174347915)
+- [	AP 1.5 - Validierung der Standards](#_toc174347926)
+- [	AP 1.6 - Dokumentation der Ergebnisse](#_toc174347927)
 
 ## <a name="_toc174347898"></a>2. AP 1.1 - Zielbeschreibung des Gesamtkonzepts
 Das Hauptziel des AP 1.1 "Zielbeschreibung des Gesamtkonzepts" war die Entwicklung eines Konzepts für die einheitliche Beschreibung der Komponenten des Leitungssatzes. Dies beinhaltet die Definition und Standardisierung der Terminologie und der Spezifikationen, die für die Beschreibung der verschiedenen Komponenten des Leitungssatzes verwendet werden.
