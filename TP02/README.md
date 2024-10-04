@@ -1,52 +1,38 @@
 # TP 2 - Entwicklungsprozesse des Leitungssatzes
-
-**Inhalt**
+## Inhalt
 
 [AP 2.1 - Konzept kollaboratives Datenmodell](#ap-21---konzept-kollaboratives-datenmodell)
 
- -- [2.1.1 Kollaboration in der Leitungssatzentwicklung](#211-kollaboration-in-der-leitungssatzentwicklung)
-
- -- [2.1.2 Datenhaltung in der Leitungssatzentwicklung](#212-datenhaltung-in-der-leitungssatzentwicklung)
-
- -- [2.1.3 Anwendungspotential der VWS](#213-anwendungspotential-der-vws)
-
- -- [2.1.4 Fallbeispiel für den Einsatz von VWS bei der Auswahl eines Steckers](#214-fallbeispiel-f%C3%BCr-den-einsatz-von-vws-bei-der-auswahl-eines-steckers)
-
- -- [2.1.5 Fazit](#215-fazit)
+ - [2.1.1 Kollaboration in der Leitungssatzentwicklung](#211-kollaboration-in-der-leitungssatzentwicklung)
+ - [2.1.2 Datenhaltung in der Leitungssatzentwicklung](#212-datenhaltung-in-der-leitungssatzentwicklung)
+ - [2.1.3 Anwendungspotential der VWS](#213-anwendungspotential-der-vws)
+ - [2.1.4 Fallbeispiel für den Einsatz von VWS bei der Auswahl eines Steckers](#214-fallbeispiel-f%C3%BCr-den-einsatz-von-vws-bei-der-auswahl-eines-steckers)
+ - [2.1.5 Fazit](#215-fazit)
 
 [AP 2.2 - Single-Point-of-Truth-Definition](#ap-22---single-point-of-truth-definition)
 
- -- [2.2.1 Herausforderung: Produkt mit mehreren Herstellern](#221-herausforderung-produkt-mit-mehreren-herstellern)
+ - [2.2.1 Herausforderung: Produkt mit mehreren Herstellern](#221-herausforderung-produkt-mit-mehreren-herstellern)
 
 [AP 2.3 - Prozessbeschreibung LS-Entwicklung](#ap-23---prozessbeschreibung-ls-entwicklung)
 
- -- [2.3.1 Analyse des Entwicklungsprozesses](#231-analyse-des-entwicklungsprozesses)
-
- -- [2.3.2 Entwicklungsprozess mit der Verwaltungsschale](#232-entwicklungsprozess-mit-der-verwaltungsschale)
-
- -- [2.3.3 Analyse und Integration der Einzelkomponenten](#233-analyse-und-integration-der-einzelkomponenten)
-
- -- [2.3.4 Strukturierung der Verbundkomponente](#234-strukturierung-der-verbundkomponente)
-
- -- [2.3.5 Anwendungsfall und Voraussetzungen](#235-anwendungsfall-und-voraussetzungen)
+ - [2.3.1 Analyse des Entwicklungsprozesses](#231-analyse-des-entwicklungsprozesses)
+ - [2.3.2 Entwicklungsprozess mit der Verwaltungsschale](#232-entwicklungsprozess-mit-der-verwaltungsschale)
+ - [2.3.3 Analyse und Integration der Einzelkomponenten](#233-analyse-und-integration-der-einzelkomponenten)
+ - [2.3.4 Strukturierung der Verbundkomponente](#234-strukturierung-der-verbundkomponente)
+ - [2.3.5 Anwendungsfall und Voraussetzungen](#235-anwendungsfall-und-voraussetzungen)
 
 [AP 2.4 - Teilmodelle der Verwaltungsschale](#ap-24---teilmodelle-der-verwaltungsschale)
 
--- [2.4.1 Teilmodelle für die Entwicklung](#241-der-anwendungsfall)
+- [2.4.1 Teilmodelle für die Entwicklung](#241)
 
 [AP 2.5 - Umsetzung Digital Twin LS](#ap-25---umsetzung-digital-twin-ls)
 
--- [2.5.1 Der Anwendungsfall](#251-der-anwendungsfall)
-
--- [2.5.2 Voraussetzungen für die Umsetzung](#252-voraussetzungen-f%C3%BCr-die-umsetzung)
-
--- [2.5.3 Verwaltungsschalen der Komponenten](#253-verwaltungsschalen-der-komponenten)
-
--- [2.5.4 Erstellung Verbundkomponente](#254-erstellung-verbundkomponente)
-
--- [2.5.5 Fähigkeitsabgleich der Produktionsmaschinen](#255-f%C3%A4higkeitsabgleich-der-produktionsmaschinen)
-
--- [2.5.6 Abschlussdemonstrator](#256-abschlussdemonstrator)
+- [2.5.1 Der Anwendungsfall](#251-der-anwendungsfall)
+- [2.5.2 Voraussetzungen für die Umsetzung](#252-voraussetzungen-f%C3%BCr-die-umsetzung)
+- [2.5.3 Verwaltungsschalen der Komponenten](#253-verwaltungsschalen-der-komponenten)
+- [2.5.4 Erstellung Verbundkomponente](#254-erstellung-verbundkomponente)
+- [2.5.5 Fähigkeitsabgleich der Produktionsmaschinen](#255-f%C3%A4higkeitsabgleich-der-produktionsmaschinen)
+- [2.5.6 Abschlussdemonstrator](#256-abschlussdemonstrator)
 
 [Fazit](#fazit)
 
@@ -54,7 +40,7 @@
 
 [Abbildungsverzeichnis](#abbildungsverzeichnis)
 
-# 1. Zielsetzung
+## 1. Zielsetzung
 
 Im Teilprojekt 2 "Entwicklungsprozesse des Leitungssatzes“ wurde die Entstehung des Digitalen Zwillings entlang der Anwendungsfälle analysiert, um die Abläufe auf die Verwaltungsschale und die Erzeugung interoperabler Daten und Formate für den gesamten weiteren Lebenszyklus auszurichten. Das Teilprojekt wurde in folgende Arbeitspakete aufgeteilt, deren Resultate hier zusammenfassend erläutert werden:
 
@@ -293,7 +279,7 @@ Im AP 2.4 „Teilmodelle der Verwaltungsschale“ wurden Anforderungsanalysen f�
 
 Der Entwicklungsprozess ist die „Wiege“ des Digitalen Zwillings. Entlang der Anwendungsfälle werden die Abläufe auf die Verwaltungsschale und die Erzeugung interoperabler Daten und Formate für den gesamten weiteren Lebenszyklus ausgerichtet. Die VWS soll dabei nicht die etablierten Daten-Formate ersetzen, wie z.B. CAD-Dateiformate, KBL, VEC etc., sondern ergänzen und die Daten vor allem automatisiert und maschinenlesbar bereitstellen. Deshalb ist es neben der Auswahl passender existierender bzw. neu zu erstellender Teilmodelle auch wichtig, anhand von Anwendungsfällen das Zusammenspiel zu betrachten. Hierbei liegt der Fokus zuerst nur auf dem Entwicklungsprozess des Leitungssatzes. Der Übergang zu Produktion und Montage (TP3 und TP4) soll im nachfolgenden AP 2.5 betrachtet werden.
 
-### 2.4.1 Teilmodelle für die Entwicklung
+<a name="241"></a>### 2.4.1 Teilmodelle für die Entwicklung
 
 Die zu lösende Fragestellung ist, welche Daten zu welchem Zeitpunkt in der Verwaltungsschale (VWS) zur Verfügung stehen bzw. stehen müssen und in wie diese strukturiert sein müssen.
 
