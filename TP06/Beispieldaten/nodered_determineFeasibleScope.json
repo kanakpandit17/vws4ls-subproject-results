@@ -1,0 +1,717 @@
+[
+    {
+        "id": "960a7f24d30f4605",
+        "type": "subflow",
+        "name": "capability-Checks",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 140,
+                "wires": [
+                    {
+                        "id": "39c267e9559089fa"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1160,
+                "y": 140,
+                "wires": [
+                    {
+                        "id": "f5e06d91db94e6c7",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [
+            {
+                "name": "aasRegistry",
+                "type": "str",
+                "value": "http://aas-registry:8080",
+                "ui": {
+                    "icon": "font-awesome/fa-folder-open-o"
+                }
+            },
+            {
+                "name": "smRegistry",
+                "type": "str",
+                "value": "http://sm-registry:8080",
+                "ui": {
+                    "icon": "font-awesome/fa-folder-open-o"
+                }
+            }
+        ],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "39c267e9559089fa",
+        "type": "split",
+        "z": "960a7f24d30f4605",
+        "name": "Split by required capability",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 250,
+        "y": 140,
+        "wires": [
+            [
+                "d7cc2e50f03c5b65"
+            ]
+        ]
+    },
+    {
+        "id": "d7cc2e50f03c5b65",
+        "type": "function",
+        "z": "960a7f24d30f4605",
+        "name": "Prepare msg for capbility-check",
+        "func": "let endpoint = new Object();\n\nendpoint.aasRegistryEndpoint = env.get(\"aasRegistry\");\nendpoint.submodelRegistryEndpoint = env.get(\"smRegistry\");\n\nmsg.payload.endpoint = endpoint;\nmsg.payload.assetKind = \"instance\";\nmsg.payload.onlyRegardMountedTools= false;\nmsg.payload.machineAasId = msg.machineAasId;\nmsg.payload.username = \"arena2036\";\nmsg.payload.password = \"VWS4LSInfr4structure\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 140,
+        "wires": [
+            [
+                "c162a26461cccd73",
+                "a7c5398542dfdc8d"
+            ]
+        ]
+    },
+    {
+        "id": "c162a26461cccd73",
+        "type": "capability-check",
+        "z": "960a7f24d30f4605",
+        "name": "",
+        "x": 780,
+        "y": 140,
+        "wires": [
+            [
+                "f5e06d91db94e6c7",
+                "c95e28e5d31c9c02"
+            ]
+        ]
+    },
+    {
+        "id": "f5e06d91db94e6c7",
+        "type": "join",
+        "z": "960a7f24d30f4605",
+        "name": "",
+        "mode": "auto",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": true,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 970,
+        "y": 140,
+        "wires": [
+            [
+                "f3ab99e82c2f61fe"
+            ]
+        ]
+    },
+    {
+        "id": "f3ab99e82c2f61fe",
+        "type": "debug",
+        "z": "960a7f24d30f4605",
+        "name": "Joint checks",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1190,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "c95e28e5d31c9c02",
+        "type": "debug",
+        "z": "960a7f24d30f4605",
+        "name": "capability-check result",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1020,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "a7c5398542dfdc8d",
+        "type": "debug",
+        "z": "960a7f24d30f4605",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 730,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "bd6aac2c90e9e4db",
+        "type": "subflow",
+        "name": "submodel by IdShort",
+        "info": "This subflow loads all submodels for a given AAS-Id and filters for a specific idShort.\r\nThe AAS-Id has to be the msg.payload.\r\nThe flow uses AAS Environments /shells endpoint to retrieve the list of submodels.\r\nThe submodels are loaded using AAS Environments /submodels endpoint.\r\nSbflow enviroment variables can be configured via subflow node:\r\n - URL to the AAS Environment Server\r\n - idShort for filtering the submodels\r\n",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "ca58227b4dcc0be9"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1680,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "41bb6d54e9474c16",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [
+            {
+                "name": "AAS_Env",
+                "type": "str",
+                "value": "http://environment:8081",
+                "ui": {
+                    "icon": "font-awesome/fa-database",
+                    "type": "input",
+                    "opts": {
+                        "types": [
+                            "str",
+                            "env"
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "SmIdShort",
+                "type": "str",
+                "value": "BillOfProcess",
+                "ui": {
+                    "icon": "font-awesome/fa-anchor",
+                    "type": "input",
+                    "opts": {
+                        "types": [
+                            "str",
+                            "env"
+                        ]
+                    }
+                }
+            }
+        ],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "ca58227b4dcc0be9",
+        "type": "function",
+        "z": "bd6aac2c90e9e4db",
+        "name": "Encode shell URL",
+        "func": "\nlet aas_env_host = env.get(\"AAS_Env\");\nconst encodeBase64Url = (string) => {\n    return Buffer.from(string).toString('base64').replace(/=/g, \"\").replace(/\\+/g, \"-\").replace(/\\//g, \"_\");\n}\n\n\nvar s = encodeBase64Url(msg.payload);\nmsg.url = aas_env_host+\"/shells/\"+s;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "URL",
+                "module": "url"
+            }
+        ],
+        "x": 220,
+        "y": 80,
+        "wires": [
+            [
+                "bc5109fc0e66ee50"
+            ]
+        ]
+    },
+    {
+        "id": "bc5109fc0e66ee50",
+        "type": "http request",
+        "z": "bd6aac2c90e9e4db",
+        "name": "Get shell",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "basic",
+        "senderr": false,
+        "headers": [],
+        "x": 440,
+        "y": 80,
+        "wires": [
+            [
+                "2a608512420691d0"
+            ]
+        ]
+    },
+    {
+        "id": "2a608512420691d0",
+        "type": "function",
+        "z": "bd6aac2c90e9e4db",
+        "name": "Get sm list",
+        "func": "msg.payload = msg.payload.submodels;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 80,
+        "wires": [
+            [
+                "f4de7438f43182f0"
+            ]
+        ]
+    },
+    {
+        "id": "f4de7438f43182f0",
+        "type": "split",
+        "z": "bd6aac2c90e9e4db",
+        "name": "Submodels",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 830,
+        "y": 80,
+        "wires": [
+            [
+                "748014d03d42f3c5"
+            ]
+        ]
+    },
+    {
+        "id": "748014d03d42f3c5",
+        "type": "function",
+        "z": "bd6aac2c90e9e4db",
+        "name": "Encode submodel URL",
+        "func": "const encodeBase64Url = (string) => {\n    return Buffer.from(string).toString('base64').replace(/=/g, \"\").replace(/\\+/g, \"-\").replace(/\\//g, \"_\");\n}\n\n\nlet aas_env_host = env.get(\"AAS_Env\");\n\nif (msg.payload.type == \"ModelReference\" && msg.payload.keys[0].type == \"Submodel\")\n{\n    msg.url = aas_env_host+\"/submodels/\" +encodeBase64Url(msg.payload.keys[0].value);\n    return msg;\n}\nelse\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 80,
+        "wires": [
+            [
+                "2ead78968989acd9"
+            ]
+        ]
+    },
+    {
+        "id": "2ead78968989acd9",
+        "type": "http request",
+        "z": "bd6aac2c90e9e4db",
+        "name": "Get submodel",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "basic",
+        "senderr": false,
+        "headers": [],
+        "x": 1300,
+        "y": 80,
+        "wires": [
+            [
+                "41bb6d54e9474c16",
+                "f7381ec5d5462faf"
+            ]
+        ]
+    },
+    {
+        "id": "41bb6d54e9474c16",
+        "type": "function",
+        "z": "bd6aac2c90e9e4db",
+        "name": "Filter for idShort",
+        "func": "let idShort = env.get(\"SmIdShort\");\nlet idShortPath = env.get(\"idShortPath\");\nif( msg.payload.idShort != idShort)\n return null;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1520,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f7381ec5d5462faf",
+        "type": "debug",
+        "z": "bd6aac2c90e9e4db",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1410,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "048dce6f7e7b57b6",
+        "type": "tab",
+        "label": "determineFeasibleScope",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "63555dde9a804340",
+        "type": "http in",
+        "z": "048dce6f7e7b57b6",
+        "name": "Method DetermineFeasibleScope",
+        "url": "/aasCommunicationManager/determineFeasibleScope",
+        "method": "post",
+        "upload": true,
+        "swaggerDoc": "",
+        "x": 190,
+        "y": 180,
+        "wires": [
+            [
+                "ad132058ba02123a",
+                "370f6be8170aede4"
+            ]
+        ]
+    },
+    {
+        "id": "68a93adb812ae433",
+        "type": "http response",
+        "z": "048dce6f7e7b57b6",
+        "name": "response",
+        "statusCode": "",
+        "headers": {},
+        "x": 1180,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "ad132058ba02123a",
+        "type": "debug",
+        "z": "048dce6f7e7b57b6",
+        "name": "Request Body Flowable",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 950,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "0943eed9e770b251",
+        "type": "subflow:bd6aac2c90e9e4db",
+        "z": "048dce6f7e7b57b6",
+        "name": "Get BillOfProcess",
+        "env": [
+            {
+                "name": "AAS_Env",
+                "value": "http://aas-env:8081",
+                "type": "str"
+            }
+        ],
+        "x": 630,
+        "y": 420,
+        "wires": [
+            [
+                "e4ce5559e803cb4f"
+            ]
+        ]
+    },
+    {
+        "id": "370f6be8170aede4",
+        "type": "function",
+        "z": "048dce6f7e7b57b6",
+        "name": "Set Product AAS-Id",
+        "func": "\n\nfor(let i = 0; i < msg.payload.length; i++)\n   {\n    if (msg.payload[i][0] === \"Machine_AAS_ID\"){\n        msg.machineAasId =   msg.payload[i][1]; \n   }\n    else if (msg.payload[i][0] === \"Product_Type_AAS_ID\"){\n        msg.productTypeAasId =   msg.payload[i][1];  \n    }\n}\n\nmsg.payload = msg.productTypeAasId;\n\n/*//msg.productTypeAasId = msg.payload.Product_Type_AAS_ID;\nmsg.productTypeAasId = msg.payload[0][1];\n//msg.machineAasId = msg.payload.Machine_AAS_ID;\nmsg.machineAasId = msg.payload[1][1];\n//msg.payload = msg.payload.Product_Type_AAS_ID;\nmsg.payload = msg.payload[0][1];*/\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 260,
+        "wires": [
+            [
+                "abeb648780bae1d7"
+            ]
+        ]
+    },
+    {
+        "id": "abeb648780bae1d7",
+        "type": "subflow:bd6aac2c90e9e4db",
+        "z": "048dce6f7e7b57b6",
+        "name": "Get RequiredCapabilities",
+        "env": [
+            {
+                "name": "AAS_Env",
+                "value": "http://aas-env:8081",
+                "type": "str"
+            },
+            {
+                "name": "SmIdShort",
+                "value": "RequiredCapabilities",
+                "type": "str"
+            }
+        ],
+        "x": 650,
+        "y": 260,
+        "wires": [
+            [
+                "fc48a07b5ec3e8a7",
+                "dc9996ccee19741b"
+            ]
+        ]
+    },
+    {
+        "id": "57bfbb8a6e4832a1",
+        "type": "debug",
+        "z": "048dce6f7e7b57b6",
+        "name": "Msg enhanced with capability infos",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "e4ce5559e803cb4f",
+        "type": "function",
+        "z": "048dce6f7e7b57b6",
+        "name": "Evaluate required processes",
+        "func": "// Evaluate capability relations\nvar capabilityRelations = new Object();\nmsg.requiredCapabilityForProcess = new Object();\n\nfor(var elem of msg.payload.submodelElements)\n{\n    if( elem.idShort == \"CapabilityRelationships\")\n    {\n        for( var relation of elem.value )\n        {\n            var firstRefLastObject = relation.first.keys.pop();\n            var requiredCapability = new Object();\n            requiredCapability.requiredCapabiltySubmodelId = relation.second.keys[0].value;\n            requiredCapability.requiredCapabilityContainerIdShortPath = \"\";\n            for (let i = 1; i < relation.second.keys.length-1; i++ )\n            {\n                requiredCapability.requiredCapabilityContainerIdShortPath += relation.second.keys[i].value;\n                if( i + 2 < relation.second.keys.length ) requiredCapability.requiredCapabilityContainerIdShortPath += \"/\";\n            } \n            //requiredCapability.propertySet = \n            capabilityRelations[firstRefLastObject.value] = requiredCapability;\n            msg.requiredCapabilityForProcess[firstRefLastObject.value] = requiredCapability.requiredCapabilityContainerIdShortPath;\n        }\n         // get idShort of process\n         //var processIdShortObject = elem.value.keys.pop();\n        msg.payload = capabilityRelations; \n         return msg;\n    }\n}\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 520,
+        "wires": [
+            [
+                "37745ab63c0bd599",
+                "43444a7a1c62c636"
+            ]
+        ]
+    },
+    {
+        "id": "830ba4272c1bd532",
+        "type": "function",
+        "z": "048dce6f7e7b57b6",
+        "name": "Evaluate capability-check result",
+        "func": "let newmsg = RED.util.cloneMessage(msg);\nlet proposals = new Array();\nlet proposal = new Object();\nproposal.StartProcess = \"\";\nproposal.ExecutedProcesses = new Array();\nproposal.EndProcess = \"\";\nproposal.Price = 0.0;\nproposal.Duration = 0;\nproposal.CarbonFootprint = 0.0;\nproposal.CapabilityCheckResults = new Object();\n\n\nconst calculateProductionTimeCutKomax = (capabilityProperties, orderSize ) => {\n    let wireMaterialSetup = 5 /*min */ * 60 /* sec */ * 1000 /* msec */;\n    let orderRelease = 1 /*min */ * 60 /* sec */ * 1000 /* msec */;\n    let setupTimePerPiece = Math.ceil((wireMaterialSetup+orderRelease) / orderSize);\n    let productionTimePerPiece = Number(capabilityProperties.WireNominalLength) * 2;\n    return setupTimePerPiece + productionTimePerPiece;\n}\n\nconst calculateProductionTimeStripKomax = (capabilityProperties, orderSize ) => {\n    let orderRelease = 1 /*min */ * 60 /* sec */ * 1000 /* msec */;\n    let setupTimePerPiece = Math.ceil((orderRelease) / orderSize);\n    let productionTimePerPiece = Number(capabilityProperties.NominalStrippingLength) * 5;\n    return setupTimePerPiece + productionTimePerPiece;\n}\n\nconst calculateProductionTimeCrimpKomax = (capabilityProperties, orderSize, toolSetupNeeded) => {\n    let terminalMaterialSetup = 5 /*min */ * 60 /* sec */ * 1000 /* msec */;\n    let orderRelease = 5 /*min */ * 60 /* sec */ * 1000 /* msec */;\n    if (toolSetupNeeded )\n    {\n        terminalMaterialSetup += 8 /*min */ * 60 /* sec */ * 1000 /* msec */;\n    }\n    let setupTimePerPiece = Math.ceil((terminalMaterialSetup + orderRelease) / orderSize);\n    let productionTimePerPiece = 300;\n    return setupTimePerPiece + productionTimePerPiece;\n}\n\nconst calculateProductionTimeCrimpWezag = (capabilityProperties, orderSize, toolSetupNeeded) => {\n    let terminalMaterialSetup = 0;\n    let orderRelease = 5 /*min */ * 60 /* sec */ * 1000 /* msec */;\n    if (toolSetupNeeded) {\n        terminalMaterialSetup += 8 /*min */ * 60 /* sec */ * 1000 /* msec */;\n    }\n    let setupTimePerPiece = Math.ceil((terminalMaterialSetup + orderRelease) / orderSize);\n    let productionTimePerPiece = 20000;\n    return setupTimePerPiece + productionTimePerPiece;\n}\n\nconst calculateProductionTime = (msg, capabilityIdShortPath, machineAasId, toolSetupNeeded) => {\n    let orderSize = 500;\n    let capabilityType = msg.capabilityTypes[ capabilityIdShortPath ];\n    // Demonstator has to Machine Types, KOMAX and WEZAG\n    // This Node Red Flow tales over the logic for both types\n    // Better identifcaion provided by AAS - Demo purpose only!\n    if( machineAasId.toUpperCase().indexOf(\"KOMAX\") > -1 )\n    {\n        switch (capabilityType )\n        {\n            case \"CutCapability\":\n                return calculateProductionTimeCutKomax(msg.capabilityProperties[capabilityIdShortPath], orderSize );\n            case \"StripCapability\":\n                return calculateProductionTimeStripKomax(msg.capabilityProperties[capabilityIdShortPath], orderSize);\n            case \"CrimpCapability\":\n                return calculateProductionTimeCrimpKomax(msg.capabilityProperties[capabilityIdShortPath], orderSize, toolSetupNeeded);\n            default:\n                return 999999;\n        }\n    }\n    else\n    {\n        switch (capabilityType) {\n            case \"CrimpCapability\":\n                return calculateProductionTimeCrimpWezag(msg.capabilityProperties[capabilityIdShortPath], toolSetupNeeded);\n            default:\n                return 999999;\n        }\n    }\n}\n\n\n\nvar bContinue = true;\n\nObject.keys(msg.payload).forEach((key)  =>  {\n    let result = msg.payload[key];\n    if( result.success && bContinue == true )\n    {\n        if (proposal.StartProcess.length > 0 )\n            proposal.ExecutedProcesses.push( key );\n        else\n            proposal.StartProcess = key;\n        proposal.Duration += calculateProductionTime(msg, msg.requiredCapabilityForProcess[key],  msg.machineAasId )\n    }\n    else \n    {\n        if (proposal.StartProcess.length > 0) bContinue = false; \n    }\n    \n    proposal.CapabilityCheckResults[key] = result;\n\n});\n\nif( proposal.ExecutedProcesses.length )\n{\n    proposal.EndProcess = proposal.ExecutedProcesses.pop();\n}\nelse\n{\n    proposal.EndProcess = proposal.StartProcess;\n}\n\nproposals.push(proposal);\nnewmsg.payload = new Object();\nnewmsg.payload.Proposals = proposals;\n\nreturn newmsg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 760,
+        "wires": [
+            [
+                "68a93adb812ae433",
+                "896abf8f34db5096"
+            ]
+        ]
+    },
+    {
+        "id": "896abf8f34db5096",
+        "type": "debug",
+        "z": "048dce6f7e7b57b6",
+        "name": "Debug Response",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "37745ab63c0bd599",
+        "type": "debug",
+        "z": "048dce6f7e7b57b6",
+        "name": "List of required processes",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 950,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "fc48a07b5ec3e8a7",
+        "type": "function",
+        "z": "048dce6f7e7b57b6",
+        "name": "Evaluate capabilities",
+        "func": "let newMsg = RED.util.cloneMessage(msg);\nlet capabilityTypes = new Object();\nlet capabilityProperties = new Object();\nlet capabilitySetIdShort = msg.payload.submodelElements[0].idShort;\n\n\n\nfor (var capabilityContainer of msg.payload.submodelElements[0].value)\n{\n    let capabilityType = new Object();\n    let propertySet = new Object();\n    for (var elem of capabilityContainer.value )\n    {\n        if (elem.modelType == \"Capability\")\n        {\n            capabilityType = elem.idShort;\n        }\n        else if( elem.idShort == \"PropertySet\")\n        {\n            for( var propertyContainer of elem.value )\n            {\n                propertySet[propertyContainer.value[0].idShort] = propertyContainer.value[0].value;\n            }\n        }\n    }\n    capabilityTypes[ capabilitySetIdShort+\"/\"+capabilityContainer.idShort ] = capabilityType;\n    capabilityProperties[capabilitySetIdShort+\"/\"+capabilityContainer.idShort] = propertySet;\n}\nnewMsg.capabilityTypes = capabilityTypes;\nnewMsg.capabilityProperties = capabilityProperties;\nnewMsg.payload = msg.productTypeAasId;\nreturn newMsg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 360,
+        "wires": [
+            [
+                "57bfbb8a6e4832a1",
+                "0943eed9e770b251"
+            ]
+        ]
+    },
+    {
+        "id": "43444a7a1c62c636",
+        "type": "subflow:960a7f24d30f4605",
+        "z": "048dce6f7e7b57b6",
+        "name": "Execute capability checks",
+        "env": [
+            {
+                "name": "aasRegistry",
+                "value": "AAS_REPO_PATH",
+                "type": "env"
+            },
+            {
+                "name": "smRegistry",
+                "value": "SUBMODEL_REPO_PATH",
+                "type": "env"
+            }
+        ],
+        "x": 650,
+        "y": 620,
+        "wires": [
+            [
+                "830ba4272c1bd532"
+            ]
+        ]
+    },
+    {
+        "id": "d3ece9e538e43a4a",
+        "type": "inject",
+        "z": "048dce6f7e7b57b6",
+        "name": "Test without request",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"Machine_AAS_ID\":\"http://smart.komaxgroup.com/aas/dd619733-cab3-4b75-aee7-dfff4d81c82e\",\"Product_Type_AAS_ID\":\"https://www.arena2036.de//aas/8074_8002_2042_7117\"}",
+        "payloadType": "json",
+        "x": 170,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dc9996ccee19741b",
+        "type": "debug",
+        "z": "048dce6f7e7b57b6",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 990,
+        "y": 260,
+        "wires": []
+    }
+]
