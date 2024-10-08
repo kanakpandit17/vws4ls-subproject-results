@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "1d5339e0-6450-4350-87d7-03f65a4fc873",
+		"name": "Arena-HMI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31545888"
+	},
+	"item": [
+		{
+			"name": "STARTED",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic YXJlbmEyMDM2OlZXUzRMU0luZnI0c3RydWN0dXJl",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\"STARTED\"",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://tractus-x-07.arena2036.de:8081/submodels/TUVTLUluZm8tU3VibW9kZWwtRGVtb25zdHJhdG9y/submodel-elements/MES_Status/$value",
+					"protocol": "https",
+					"host": [
+						"tractus-x-07",
+						"arena2036",
+						"de"
+					],
+					"port": "8081",
+					"path": [
+						"submodels",
+						"TUVTLUluZm8tU3VibW9kZWwtRGVtb25zdHJhdG9y",
+						"submodel-elements",
+						"MES_Status",
+						"$value"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CHECKED",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic YXJlbmEyMDM2OlZXUzRMU0luZnI0c3RydWN0dXJl",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\"CHECKED\"",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://tractus-x-07.arena2036.de:8081/submodels/TUVTLUluZm8tU3VibW9kZWwtRGVtb25zdHJhdG9y/submodel-elements/MES_Status/$value",
+					"protocol": "https",
+					"host": [
+						"tractus-x-07",
+						"arena2036",
+						"de"
+					],
+					"port": "8081",
+					"path": [
+						"submodels",
+						"TUVTLUluZm8tU3VibW9kZWwtRGVtb25zdHJhdG9y",
+						"submodel-elements",
+						"MES_Status",
+						"$value"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Machine IDLE",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic YXJlbmEyMDM2OlZXUzRMU0luZnI0c3RydWN0dXJl",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\"IDLE\"",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://tractus-x-07.arena2036.de:8081/submodels/aHR0cDovL2RlbW8yMDIzLnZ3czRscy5jb20vc3VibW9kZWwvT3BlcmF0aW9uYWxEYXRhLzA5ODc2NTQzMjE/submodel-elements/Status/$value",
+					"protocol": "https",
+					"host": [
+						"tractus-x-07",
+						"arena2036",
+						"de"
+					],
+					"port": "8081",
+					"path": [
+						"submodels",
+						"aHR0cDovL2RlbW8yMDIzLnZ3czRscy5jb20vc3VibW9kZWwvT3BlcmF0aW9uYWxEYXRhLzA5ODc2NTQzMjE",
+						"submodel-elements",
+						"Status",
+						"$value"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
