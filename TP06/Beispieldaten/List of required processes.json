@@ -1,0 +1,269 @@
+{
+    "payload": {
+        "CutProcess01": {
+            "requiredCapabiltySubmodelId": "https://www.arena2036.de/sm/7084_8002_2042_5688",
+            "requiredCapabilityContainerIdShortPath": "CapabilitySet/CapabilityContainer01"
+        },
+        "StripProcess01": {
+            "requiredCapabiltySubmodelId": "https://www.arena2036.de/sm/7084_8002_2042_5688",
+            "requiredCapabilityContainerIdShortPath": "CapabilitySet/CapabilityContainer02"
+        },
+        "CrimpProcess01": {
+            "requiredCapabiltySubmodelId": "https://www.arena2036.de/sm/7084_8002_2042_5688",
+            "requiredCapabilityContainerIdShortPath": "CapabilitySet/CapabilityContainer03"
+        }
+    },
+    "machineAasId": "https://finaldemo.vws4ls.com/ids/sm/2321_8080_2042_7808",
+    "productTypeAasId": "https://www.arena2036.de//aas/8074_8002_2042_7117",
+    "url": "http://aas-env:8081/submodels/aHR0cHM6Ly93d3cuYXJlbmEyMDM2LmRlL3NtLzM1NzRfODAwMl8yMDQyXzU0Njk",
+    "statusCode": 200,
+    "responseUrl": "http://aas-env:8081/submodels/aHR0cHM6Ly93d3cuYXJlbmEyMDM2LmRlL3NtLzM1NzRfODAwMl8yMDQyXzU0Njk",
+    "redirectList": [],
+    "retry": 0,
+    "parts": {
+        "parts": {
+            "id": "0817fd986842071b",
+            "type": "array",
+            "count": 4,
+            "len": 1,
+            "index": 2
+        },
+        "id": "c192693693c3a94a",
+        "type": "array",
+        "count": 4,
+        "len": 1,
+        "index": 1
+    },
+    "capabilityTypes": {
+        "CapabilitySet/CapabilityContainer01": "CutCapability",
+        "CapabilitySet/CapabilityContainer02": "StripCapability",
+        "CapabilitySet/CapabilityContainer03": "CrimpCapability"
+    },
+    "capabilityProperties": {
+        "CapabilitySet/CapabilityContainer01": {
+            "WireType": "FLR",
+            "WireCrossSectionArea": "0.5",
+            "WireNominalLength": "300"
+        },
+        "CapabilitySet/CapabilityContainer02": {
+            "NominalStrippingLength": "10",
+            "CenterStripping": "false",
+            "Layer": "false",
+            "IncisionMonitoring": "false"
+        },
+        "CapabilitySet/CapabilityContainer03": {
+            "WireType": "FLR",
+            "WireCrossSectionArea": "0.5",
+            "TerminalPartNumber": "32140734113",
+            "CrimpForceMonitoring": "false"
+        }
+    },
+    "_msgid": "e0759c4958dc713b",
+    "headers": {
+        "aas_middleware": "BaSyx",
+        "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "date": "Wed, 09 Oct 2024 15:08:29 GMT",
+        "keep-alive": "timeout=60",
+        "connection": "keep-alive",
+        "x-node-red-request-node": "658a29a1"
+    },
+    "requiredCapabilityForProcess": {
+        "CutProcess01": "CapabilitySet/CapabilityContainer01",
+        "StripProcess01": "CapabilitySet/CapabilityContainer02",
+        "CrimpProcess01": "CapabilitySet/CapabilityContainer03"
+    },
+    "req": {
+        "_events": {},
+        "_readableState": {
+            "highWaterMark": 16384,
+            "buffer": [],
+            "bufferIndex": 0,
+            "length": 0,
+            "pipes": [],
+            "awaitDrainWriters": null
+        },
+        "socket": "[internal]",
+        "httpVersionMajor": 1,
+        "httpVersionMinor": 1,
+        "httpVersion": "1.1",
+        "complete": true,
+        "rawHeaders": [
+            "Content-Type",
+            "application/json",
+            "User-Agent",
+            "Java/11.0.15",
+            "Host",
+            "node-red:1880",
+            "Accept",
+            "text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2",
+            "Connection",
+            "keep-alive",
+            "Content-Length",
+            "154"
+        ],
+        "rawTrailers": [],
+        "joinDuplicateHeaders": null,
+        "aborted": false,
+        "upgrade": false,
+        "url": "/aasCommunicationManager/determineFeasibleScope",
+        "method": "POST",
+        "statusCode": null,
+        "statusMessage": null,
+        "client": "[internal]",
+        "_consuming": true,
+        "_dumped": false,
+        "baseUrl": "",
+        "originalUrl": "/aasCommunicationManager/determineFeasibleScope",
+        "_parsedUrl": {
+            "protocol": null,
+            "slashes": null,
+            "auth": null,
+            "host": null,
+            "port": null,
+            "hostname": null,
+            "hash": null,
+            "search": null,
+            "query": null,
+            "pathname": "/aasCommunicationManager/determineFeasibleScope",
+            "path": "/aasCommunicationManager/determineFeasibleScope",
+            "href": "/aasCommunicationManager/determineFeasibleScope",
+            "_raw": "/aasCommunicationManager/determineFeasibleScope"
+        },
+        "params": {},
+        "query": {},
+        "res": "[internal]",
+        "body": [
+            [
+                "Machine_AAS_ID",
+                "https://finaldemo.vws4ls.com/ids/sm/2321_8080_2042_7808"
+            ],
+            [
+                "Product_Type_AAS_ID",
+                "https://www.arena2036.de//aas/8074_8002_2042_7117"
+            ]
+        ],
+        "_body": true,
+        "_eventsCount": 0,
+        "route": {
+            "path": "/aasCommunicationManager/determineFeasibleScope",
+            "stack": [
+                {
+                    "name": "cookieParser",
+                    "keys": [],
+                    "regexp": {
+                        "__enc__": true,
+                        "type": "regexp",
+                        "data": "/^\\/?$/i"
+                    },
+                    "method": "post"
+                },
+                {
+                    "name": "httpMiddleware",
+                    "keys": [],
+                    "regexp": {
+                        "__enc__": true,
+                        "type": "regexp",
+                        "data": "/^\\/?$/i"
+                    },
+                    "method": "post"
+                },
+                {
+                    "name": "corsHandler",
+                    "keys": [],
+                    "regexp": {
+                        "__enc__": true,
+                        "type": "regexp",
+                        "data": "/^\\/?$/i"
+                    },
+                    "method": "post"
+                },
+                {
+                    "name": "metricsHandler",
+                    "keys": [],
+                    "regexp": {
+                        "__enc__": true,
+                        "type": "regexp",
+                        "data": "/^\\/?$/i"
+                    },
+                    "method": "post"
+                },
+                {
+                    "name": "jsonParser",
+                    "keys": [],
+                    "regexp": {
+                        "__enc__": true,
+                        "type": "regexp",
+                        "data": "/^\\/?$/i"
+                    },
+                    "method": "post"
+                },
+                {
+                    "name": "urlencodedParser",
+                    "keys": [],
+                    "regexp": {
+                        "__enc__": true,
+                        "type": "regexp",
+                        "data": "/^\\/?$/i"
+                    },
+                    "method": "post"
+                },
+                {
+                    "name": "multipartParser",
+                    "keys": [],
+                    "regexp": {
+                        "__enc__": true,
+                        "type": "regexp",
+                        "data": "/^\\/?$/i"
+                    },
+                    "method": "post"
+                },
+                {
+                    "name": "rawBodyParser",
+                    "keys": [],
+                    "regexp": {
+                        "__enc__": true,
+                        "type": "regexp",
+                        "data": "/^\\/?$/i"
+                    },
+                    "method": "post"
+                },
+                {
+                    "name": "<anonymous>",
+                    "keys": [],
+                    "regexp": {
+                        "__enc__": true,
+                        "type": "regexp",
+                        "data": "/^\\/?$/i"
+                    },
+                    "method": "post"
+                },
+                {
+                    "name": "<anonymous>",
+                    "keys": [],
+                    "regexp": {
+                        "__enc__": true,
+                        "type": "regexp",
+                        "data": "/^\\/?$/i"
+                    },
+                    "method": "post"
+                }
+            ],
+            "methods": {
+                "post": true
+            }
+        },
+        "cookies": {},
+        "signedCookies": {},
+        "headers": {
+            "content-type": "application/json",
+            "user-agent": "Java/11.0.15",
+            "host": "node-red:1880",
+            "accept": "text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2",
+            "connection": "keep-alive",
+            "content-length": "154"
+        }
+    },
+    "res": {}
+}
