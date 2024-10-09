@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "70fef076-9e07-4313-9bd5-61044a389d22",
+		"name": "Validation service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5004995"
+	},
+	"item": [
+		{
+			"name": "validation-with-wrong-semantic-id",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/zhangzai/Desktop/arena/Example4DataValidationV2.json"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/arena/validation/semantic4567/attachment",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"arena",
+						"validation",
+						"semantic4567",
+						"attachment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "validation-success",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/zhangzai/Desktop/arena/Example4DataValidationV2.json"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/arena/validation/semantic1234/attachment",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"arena",
+						"validation",
+						"semantic1234",
+						"attachment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "validation-failure",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/zhangzai/Desktop/arena/Example4DataValidationV3.json"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/arena/validation/semantic1234/attachment",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"arena",
+						"validation",
+						"semantic1234",
+						"attachment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "validation-failure-structure-error",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/zhangzai/Desktop/arena/Example4DataValidationV4.json"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/arena/validation/semantic1234/attachment",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"arena",
+						"validation",
+						"semantic1234",
+						"attachment"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
