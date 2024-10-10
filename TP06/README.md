@@ -5,12 +5,12 @@ Hierzu wurde als Mechanismus zum Austausch von I4.0-Nachrichten das Konzept der 
 
 Das TP 6 ist wie folgt gegliedert:
 
--   AP 6.1 - Konzeptentwicklung für die technische und automatisierte Verhandlung
--   AP 6.2 - Verhandlungsszenarien und -strategien
--   AP 6.3 - Capabilities
--   AP 6.4 - ECLASS und Industrie 4.0-Sprache
+-   [AP 6.1 - Konzeptentwicklung für die technische und automatisierte Verhandlung](#6.1)
+-   [AP 6.2 - Verhandlungsszenarien und -strategien](#6.2)
+-   [AP 6.3 - Capabilities](#6.3)
+-   [AP 6.4 - ECLASS und Industrie 4.0-Sprache](#6.4)
 
-## AP 6.1 - Konzeptentwicklung für die technische und automatisierte Verhandlung
+## <a name="6.1"></a>AP 6.1 - Konzeptentwicklung für die technische und automatisierte Verhandlung
 
 Im AP 6.1 "**Konzeptentwicklung für die technische und automatisierte Verhandlung**“ wurde ein Konzept mit Randbedingungen für das eigenständige Entscheiden definiert und Wege für die Kommunikation und Interaktion zwischen autonomen I4.0-Komponenten aufgezeigt.
 
@@ -89,7 +89,7 @@ Die Verwaltungsschalen auf Seite der Auftragnehmer repräsentieren in diesem Kon
 
 Welche Unternehmen als Auftragnehmer in Frage kommen, ist im Vorfeld geklärt worden. Die rechtlich notwendigen Voraussetzungen, wie z.B. Abschluss eines Rahmenvertrags, der den automatisierten Verhandlungsprozess mit Delegation von Entscheidungen an die Softwareagenten regelt, werden als gegeben betrachtet. Die technisch notwendigen Kommunikationswege wurden im Vorfeld eingerichtet.
 
-Auf Seite des Auftragnehmers erfolgt jeweils eine Prüfung der technischen Machbarkeit zur Herstellung des ausgeschriebenen Produktes. Ist eine Machbarkeit nicht gegeben, wird die Ausschreibung abgelehnt und eine Absage gesendet. Ansonsten wird zur Angebotserstellung ein Preis und ein Liefertermin ermittelt. Zur Umsetzung verschiedener Auswahlstrategien auf der Auftraggeberseite könnten weitere Informationen im Angebot notwendig sein, z.B. PCF-Daten. Es ist zu prüfen, welche Lösungsvorschläge oder Spezifikationen für den Nachrichteninhalt “Angebot” bereits vorhanden sind und welche Ansätze es gibt, um geforderte Angebotsinhalte zu kommunizieren. Gegebenenfalls sind entsprechende Vorschläge in AP 6.2 zu erarbeiten.
+Auf Seite des Auftragnehmers erfolgt jeweils eine Prüfung der technischen Machbarkeit zur Herstellung des ausgeschriebenen Produktes. Ist eine Machbarkeit nicht gegeben, wird die Ausschreibung abgelehnt und eine Absage gesendet. Ansonsten wird zur Angebotserstellung ein Preis und ein Liefertermin ermittelt. Zur Umsetzung verschiedener Auswahlstrategien auf der Auftraggeberseite könnten weitere Informationen im Angebot notwendig sein, z.B. PCF-Daten. Es ist zu prüfen, welche Lösungsvorschläge oder Spezifikationen für den Nachrichteninhalt “Angebot” bereits vorhanden sind und welche Ansätze es gibt, um geforderte Angebotsinhalte zu kommunizieren. Gegebenenfalls sind entsprechende Vorschläge in [AP 6.2](#6.2) zu erarbeiten.
 
 In einer Erweiterung des Verhandlungsszenarios “Zukaufteil” sind zusätzlich für jedes Produktionslos bei Produktionsstart Schliffbilder der Crimpterminals mit Messung und Beurteilung bezüglich Einhaltung der OEM- und Herstellervorgaben gefordert. Die Übermittlung der Bilder und Messergebnisse wird innerhalb der Instanz-Verwaltungsschalen der gelieferten Produkte erwartet. Die Anforderung wird in Form einer “Required Capability” bzw. eines “Required Service” mit der Ausschreibung kommuniziert und ist bei der Überprüfung der Machbarkeit auf Auftragnehmerseite mit den eigenen Fähigkeiten abzugleichen.
 
@@ -166,7 +166,7 @@ Die Operation erhält eine Implementierung in der VWS-Middleware, welche die Nac
 *Abbildung 6-4: Ausschreibungsverfahren zwischen Auftraggeber und Auftragnehmer*
 
 Während der Verhandlung laufen sowohl auf Seite des Auftraggebers als auch auf Seite der Auftragnehmer Entscheidungsalgorithmen ab. So ist z.B. der Inhalt der Ausschreibung zu analysieren, eine technische Machbarkeit zur Umsetzung der Ausschreibung zu prüfen, ein Angebot zu erstellen, die eingegangenen Angebote zu analysieren und eine Entscheidung zur Angebotsannahme bzw.   
-\-ablehnung zu treffen. Statt diese Algorithmen in Form von Programmcode in der VWS zu hinterlegen oder in einem VWS-Repository zu implementieren, wurde im [TP 6](https://github.com/VWS4LS/vws4ls-subproject-results/tree/main/TP06) entschieden, einen sog. “[Low-Code](https://de.wikipedia.org/wiki/Low-Code-Plattform)"-Ansatz umzusetzen. Dazu ist geplant in AP 6.2 einen Demonstrator aufzubauen, der ein VWS-Repository mit einer BPMN-Workflowengine kombiniert. Die Entscheidungsalgorithmen werden in BPMN modelliert und innerhalb der Workflowengine ausgeführt. In *Abbildung 6-5* ist eine Beispielimplementierung für einen Algorithmus auf der Auftragnehmerseite des Ausschreibungsverfahrens dargestellt. Aus dem Workflow heraus können Teilmodelle bzw. -elemente der VWS abgefragt werden. Operationen, die auf die VWS aufgerufen werden, sowie Wertänderungen in der VWS können Ereignisse in der Workflowengine auslösen.
+\-ablehnung zu treffen. Statt diese Algorithmen in Form von Programmcode in der VWS zu hinterlegen oder in einem VWS-Repository zu implementieren, wurde im [TP 6](https://github.com/VWS4LS/vws4ls-subproject-results/tree/main/TP06) entschieden, einen sog. “[Low-Code](https://de.wikipedia.org/wiki/Low-Code-Plattform)"-Ansatz umzusetzen. Dazu ist geplant in [AP 6.2](#6.2) einen Demonstrator aufzubauen, der ein VWS-Repository mit einer BPMN-Workflowengine kombiniert. Die Entscheidungsalgorithmen werden in BPMN modelliert und innerhalb der Workflowengine ausgeführt. In *Abbildung 6-5* ist eine Beispielimplementierung für einen Algorithmus auf der Auftragnehmerseite des Ausschreibungsverfahrens dargestellt. Aus dem Workflow heraus können Teilmodelle bzw. -elemente der VWS abgefragt werden. Operationen, die auf die VWS aufgerufen werden, sowie Wertänderungen in der VWS können Ereignisse in der Workflowengine auslösen.
 
 ![image](https://github.com/user-attachments/assets/74b7cd9c-fd1e-45d6-a705-3ef7fcc0fe86)   
 *Abbildung 6-5: Beispielimplementierung für einen Algorithmus*
@@ -181,7 +181,7 @@ Ein erster Proof-of-Concept wurde mit der Open Source Workflow-Engine “[Flowab
 
 Durch den Einsatz der Low-Code Technologie soll eine einfache Anpassbarkeit des Verhaltensmodells der Typ 3 VWS über den gesamten Lebenszyklus des Assets hinweg gewährleistet werden. Die BPMN mit ihrer graphischen Darstellung liefert den Mehrwert einer Übersicht des Verhaltensmodells und ist insbesondere auch geeignet den aktuellen Zustand eines laufenden Verhandlungsprozesses für den Menschen zu visualisieren. Dies hat Relevanz für die Untersuchungen in Rahmen des Forschungsprojektes und es wird erwartet, dass auch im praktischen Einsatz Monitoring- und Analyseaufgaben anfallen werden, bei denen die graphische Notation unterstützt.
 
-## AP 6.2 - Verhandlungsszenarien und -strategien
+## <a name="6.2"></a>AP 6.2 - Verhandlungsszenarien und -strategien
 
 Im AP 6.2 „**Verhandlungsszenarien und -strategien**“ wurde im Wesentlichen an der technischen Umsetzung der in AP 6.1 erarbeiteten Verhandlungskonzepte und deren Erprobung an Demonstratoren gearbeitet. Ziel des Arbeitspaktes war es ursprünglich Strategien und Regeln zu definieren, die zum einen automatisierten Verhandlungsprozess verschiedener VWS zulassen und zum anderen den Entscheidungsverlauf nachvollziehbar machen. Dies wurde im Arbeitspaket erreicht, indem die Abläufe in Form von BPMN-Modellen formalisiert und in einer BPMN-Engine ausführbar gemacht wurden. Die Bearbeitung der in AP 6.1 definierten Verhandlungsszenarien zu Synchronisation und Änderungsmanagement erfolgte hauptsächlich im Rahmen des Architekturteams und die Ergebnisse sind entsprechend auch im Kapitel “Architektur AAS” dargestellt.
 
@@ -281,7 +281,7 @@ Die Implementierung der Operation newMessage, welche die in I4.0-Nachricht in de
 ![image](https://github.com/user-attachments/assets/9ccadb74-7532-4c30-9070-cb78caadb632)   
 *Abbildung 6-12: Mapping von I4.0-Nachricht zu BPMN-Ereignissen in [NodeRed](https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP06/Beispieldaten/nodered_newMessage.json)*
 
-## AP 6.3 - Capabilities
+## <a name="6.3"></a>AP 6.3 - Capabilities
 
 ### Anforderungen an den Fähigkeitenabgleich in automatisierten Verhandlungsprozessen
 
@@ -289,7 +289,7 @@ Das AP 6.3 „**Capabilities**“ wurde ursprünglich definiert, um die ein Konz
 
 In TP5 wurde ein generischer Fähigkeitenabgleich entwickelt, der es erlaubt, aus Sicht eines einzelnen Produktionsprozesses diesen Abgleich durchzuführen. Dabei werden in der VWS des Produktes modellierte, geforderte Fähigkeiten mit den in der VWS der Produktionsressource modellierenten verfügbaren Fähigkeiten abgeglichen. Der entwickelte Algorithmus liefert eine Aussage, ob für den angefragten Prozess alle Fähigkeiten abgedeckt sind und im Sonderfall des Crimpprozesses darüber hinaus eine zusätzliche Information, ob für das jeweilige zu crimpende Kontaktteil ein geeignetes Crimpwerkzeug verfügbar bzw. in der Maschine montiert ist. Das in AP 6.3 entwickelte Konzept basiert direkt auf diesem Algorithmus und den dazugehörenden Teilmodellen.
 
-Zunächst wurde in AP 6.3 analysiert welche Anforderungen an einen Fähigkeitenabgleich, die sich aus den automatisierten Verhandlungsprozesses ergeben, durch den oben beschriebenen Algorithmus nicht abgedeckt sind. Die in AP 6.1 und AP 6.2 beschriebenen Verhandlungsszenarien umfassen nicht nur die Ausführung eines einzelnen Produktionsprozesses, sondern umfassen die Herstellung eines komplexen Halbfabrikats zu dessen Herstellung mehrere Produktionsprozesse nacheinander, in einer bestimmten Reihenfolge auszuführen sind. Es ist also notwendig, den Algorithmus aus TP5 für jeden einzelnen Produktionsprozess auszuführen und die Einzelergebnisse zu einem Gesamtergebnis zusammenzuführen.
+Zunächst wurde in AP 6.3 analysiert welche Anforderungen an einen Fähigkeitenabgleich, die sich aus den automatisierten Verhandlungsprozesses ergeben, durch den oben beschriebenen Algorithmus nicht abgedeckt sind. Die in [AP 6.1](#6.1) und [AP 6.2](#6.2) beschriebenen Verhandlungsszenarien umfassen nicht nur die Ausführung eines einzelnen Produktionsprozesses, sondern umfassen die Herstellung eines komplexen Halbfabrikats zu dessen Herstellung mehrere Produktionsprozesse nacheinander, in einer bestimmten Reihenfolge auszuführen sind. Es ist also notwendig, den Algorithmus aus TP5 für jeden einzelnen Produktionsprozess auszuführen und die Einzelergebnisse zu einem Gesamtergebnis zusammenzuführen.
 
 Ein entworfenes Verhandlungsszenario sieht vor, dass von Auftraggeberseite das gesamte Produkt mit allen notwendigen Prozessen ausgeschrieben wird, aber von Auftragnehmerseite explizit Angebote erwartet werden, die nur einen Teilumfang der Prozesse beinhalten. Der Auftraggeber, kann dann Teilaufträge an verschiedene Auftragnehmer vergeben. Die Teilaufträge aneinandergekettet ergeben dann zusammen den kompletten Produktionsprozess. Aus Sicht des Fähigkeitenabgleichs bedeutet das, dass es nicht ausreichend ist, alle geforderten Produktionsprozesse zu prüfen und sobald ein Prozess nicht erfüllt werden kann, ein negatives Ergebnis zurückzumelden. Es ist vielmehr erforderlich, mögliche Teilumfänge aus der Gesamtprozesskette zu ermitteln, mit der Angabe eines Startprozesses, evtl. Zwischenschritten und einem Endprozess. Es wurde entscheiden, die Datenstruktur des Angebots so zu gestalten, dass ein Auftraggeber mehrere Teilumfänge in einer Angebotsnachricht anbieten kann.
 
@@ -305,7 +305,7 @@ Bestimmte Parameter, die bei den Bewertungsfunktionen berücksichtigt werden mü
 
 ### Implementierung des erweiterten Fähigkeitenabgleichs
 
-Der in TP 5 entwickelte Algorithmus arbeitet generisch aufgrund der Informationen, die in standardisierten Teilmodellen abgelegt sind. Der Vorteil ist, dass dieser Algorithmus direkt in Verwaltungsschalen-Middleware implementiert werden kann und dann für alle Verwaltungsschalen, die in der Middleware gehostet werden, zur Verfügung steht.
+Der in [TP 5](https://github.com/VWS4LS/vws4ls-subproject-results/edit/main/TP06/) entwickelte Algorithmus arbeitet generisch aufgrund der Informationen, die in standardisierten Teilmodellen abgelegt sind. Der Vorteil ist, dass dieser Algorithmus direkt in Verwaltungsschalen-Middleware implementiert werden kann und dann für alle Verwaltungsschalen, die in der Middleware gehostet werden, zur Verfügung steht.
 
 Die oben beschriebenen Anforderungen lassen sich jedoch mit diesem generischen Ansatz nicht oder nur schwer umsetzen. Deshalb wurde vorgeschlagen, den erweiterten Fähigkeitenabgleich individuell je Asset auf Instanzebene zu implementieren. Um Interoperabilität zu gewährleisten, wird der Fähigkeitenabgleich als Verwaltungsschalen-Operation zur Verfügung gestellt. Der Algorithmus, der in der Auftragnehmer-Verwaltungsschale die Angebotserstellung implementiert, ruft also wiederum eine Operation der eigenen Verwaltungsschale auf, um den erweiterten Fähigkeitenabgleich mit Bewertungsfunktion auszuführen.
 
@@ -485,11 +485,11 @@ VWS-Teilmodellelement NumberOfLayersSpotTape des Prozesses WireTwist in Teilmode
 **v**Rotation  
 Anzahl Umdrehungen des Wickelkopfes je Zeiteinheit. Dieser Wert wird innerhalb innerhalb der Implementierung der Operation *determineFeasibleScope* festgelegt oder ermittelt.
 
-## AP 6.4 - ECLASS und Industrie 4.0-Sprache
+## <a name="6.4"></a>AP 6.4 - ECLASS und Industrie 4.0-Sprache
 
 Das AP 6.4 „**ECLASS und Industrie 4.0-Sprache**“ wurde ursprünglich definiert, um die vorhandenen Spezifikationen zu Vokabular, Struktur der Nachrichten und Interaktionsprotokollen auf Anwendbarkeit im Kontext des Projektes zu überprüfen und aufzuzeigen, welche Erweiterungen notwendig sind, um die Anwendungsfälle aus der Domäne Leitungssatz abbilden zu können.
 
-Das in VDI/VDE 2193-2 [46] spezifizierte Interaktionsprotokoll zum Ausschreibungsverfahren konnte für die in AP 6.1 entwickelten Anwendungsfälle eingesetzt werden. Eine Anpassung oder Erweiterung des Interaktionsprotokolls war dafür nicht notwendig.
+Das in VDI/VDE 2193-2 [46] spezifizierte Interaktionsprotokoll zum Ausschreibungsverfahren konnte für die in [AP 6.1](#6.1) entwickelten Anwendungsfälle eingesetzt werden. Eine Anpassung oder Erweiterung des Interaktionsprotokolls war dafür nicht notwendig.
 
 Der Aufbau der Synchronisationsnachrichten folgt VDI/VDE 2193-1 [49] und teilt sich in Nachrichtenrahmen und Interaktionselementen mit den Nutzdaten zur Übermittlung der Wertänderungen. Die Interaktionselemente des Nachrichtenrahmens wurden wie folgt festgelegt:
 
@@ -514,7 +514,7 @@ Damit man erkennen kann, welche VWS welches Interaktionsprotokoll implementiert,
 ![image](https://github.com/user-attachments/assets/76692769-c08a-46a4-a59d-c7a274d4eabb)   
 *Abbildung 6-14: VWS-Teilmodelle für [Service-Requester](https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP06/Beispieldaten/ServiceRequester.aasx) und [Service-Provider](https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP06/Beispieldaten/ServiceProvider.aasx)*
 
-Als dritte Ebene neben Interaktionsprotokoll und Nachrichtenstruktur wurde in AP 6.4 das Vokabular der I4.0-Sprache betrachtet. Ein Abgleich von geforderten und in der Ressource verfügbaren Fähigkeiten konnte so generisch implementiert werden, dass auch ohne zusätzliche Semantik eine automatisierte Entscheidung möglich ist. Wie in AP 6.3 gezeigt ist aber eine gesamte Bewertung des Produktes bis hin zu einem Angebot in dieser generischen Form nicht mehr möglich. An dieser Stelle ist eine standardisierte Produktbeschreibung wichtig. Die semantisch eindeutig beschriebenen Teilmodellelemente sind durch das in TP 3 entwickelte Teilmodell “Bill Of Process” [26] gegeben. Allen Arbeiten an Informationsmodellen mit Bezug zum Produkt Leitungssatz lag das Modell des VEC zugrunde, das als umfassendes Datenmodell in der Branche immer noch weiterentwickelt wird. Was die Beschreibung der technischen Merkmale des Produktes Leitungssatz angeht, wurde keine Notwendigkeit erkannt, zusätzliche Semantik zu definieren.
+Als dritte Ebene neben Interaktionsprotokoll und Nachrichtenstruktur wurde in AP 6.4 das Vokabular der I4.0-Sprache betrachtet. Ein Abgleich von geforderten und in der Ressource verfügbaren Fähigkeiten konnte so generisch implementiert werden, dass auch ohne zusätzliche Semantik eine automatisierte Entscheidung möglich ist. Wie in [AP 6.3](#6.3) gezeigt ist aber eine gesamte Bewertung des Produktes bis hin zu einem Angebot in dieser generischen Form nicht mehr möglich. An dieser Stelle ist eine standardisierte Produktbeschreibung wichtig. Die semantisch eindeutig beschriebenen Teilmodellelemente sind durch das in [TP 3](https://github.com/VWS4LS/vws4ls-subproject-results/edit/main/TP03/) entwickelte Teilmodell “Bill Of Process” [26] gegeben. Allen Arbeiten an Informationsmodellen mit Bezug zum Produkt Leitungssatz lag das Modell des VEC zugrunde, das als umfassendes Datenmodell in der Branche immer noch weiterentwickelt wird. Was die Beschreibung der technischen Merkmale des Produktes Leitungssatz angeht, wurde keine Notwendigkeit erkannt, zusätzliche Semantik zu definieren.
 
 Im Kontext des unternehmensübergreifenden Verhandlungsprozesses sind jedoch zusätzliche, nicht technische Merkmale für Ausschreibung und Angebot notwendig. Hier wurde so vorgegangen, dass zunächst eine Sammlung dieser Merkmale erfolgt ist und im Anschluss im ECLASS-Katalog entsprechende Merkmale und deren eindeutige IRDI gesucht wurden. Das Ergebnis ist in nachfolgender Tabelle dargestellt.
 
