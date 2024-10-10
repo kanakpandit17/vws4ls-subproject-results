@@ -22,29 +22,24 @@
 
 [Literaturverzeichnis](#Literaturverzeichnis)
 
-[Abbildungsverzeichnis](#Abbildungsverzeichnis)
+[Fussnoten](#Fussnoten)
 
 ## <a name="8.1"></a>AP 8.1 - Technische Anforderungsanalyse
-
 Im AP 8.1 "**Technische Anforderungsanalyse**“ sollten, ausgehend von den aktuellen Datenhaltungssituationen der Partner, Anforderungen für eine Datenhaltung im Hinblick auf die gemeinsame Nutzung entlang der Wertkette „Leitungssatz“ erarbeitet werden. Die Zielstellung des Arbeitspaketes umfasste die Definition der notwendigen Anforderungen in Bezug zu Data Governance, Data Business Policy sowie Data Storage Policy. Da eine starke inhaltliche Überschneidung gegeben war, wurde das AP 8.1 bereits im Zuge des [AP 7.1 "Anforderungserhebung"](https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP07#ap-71---anforderungserhebung) abgearbeitet und die Ergebnisse dort detailliert dokumentiert.
 
 ## <a name="8.2"></a>AP 8.2 - Technische Umsetzungskonzeption und Zielarchitektur
-
 Im AP 8.2 „**Technische Umsetzungskonzeption und Zielarchitektur**“ sollten Lösungsansätze erforscht werden für die interoperable Nutzung von Daten der unterschiedlichen Akteure der Wertkette „Leitungssatz“ und über unterschiedliche Ablagestrukturen hinweg (On-Premises, Edge, Cloud). Als Leitbild dieser Lösungsbeschreibung wurde die übergeordnete Vision der Verwaltungsschale als Paradigma der Interoperabilität zwischen Produkt, Komponenten, Prozess und Produktion zugrunde gelegt und eine technische Anbindung mit Catena-X angestrebt. Inhaltlich wurde das AP 8.2 bereits in [AP 7.2 "Fachliche Konzeption der Daten-Policy entlang der Wertkette"](https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP07#ap-72---fachliche-konzeption-der-daten-policy-entlang-der-wertkette) erarbeitet und die Ergebnisse dort detailliert dokumentiert.
 
 ## <a name="8.3"></a>AP 8.3 - Vorbereitung der Anbindung an Catena-X
-
 Im AP 8.3 „**Vorbereitung der Anbindung an Catena-X**“ wurde die Architektur der Catena-X-Plattform untersucht in Bezug auf Interoperabilität mit der Verwaltungsschale und eine exemplarische Implementierung eines kollaborativen Datenaustauschs anhand des nachfolgend beschriebenen Use Case über Catena-X Komponenten umgesetzt, welche den bidirektionalen Datenaustausch zwischen den Akteuren anhand eines konkreten Szenarios prototypisch demonstriert. Mit diesen nachfolgend detailliert beschriebenen Aktivitäten des AP 8.3 wurde auch das [AP 7.3 "Pilotierung und Erprobung"](https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP07#ap-73---pilotierung-und-erprobung-erstellung-implementierungsguideline) inhaltlich mit abgearbeitet.
 
 ### <a name="8.3.1"></a>8.3.1 Beispielprodukt: Teilleitungssatz
-
 Für das Demonstrator-Anwendungsbeispiel wurde das vereinfachte Beispiel eines Leitungssatzes verwendet. Dieser besteht aus Stecker, Terminals und Leitungen. Zusätzlich soll die Möglichkeit gegeben sein, eine Auswahl zwischen zwei Varianten auszuwählen. Hierfür ist Variante 1, 2 Stecker, die Terminals und die beiden oberen Leitung in *Abbildung 8-1*, und Variante 2 enthält die beiden Stecker, die Terminals und die beiden unteren Leitungen.
 
 ![image](https://github.com/user-attachments/assets/8985f97a-a830-48b7-a9d9-1de542732ea6)   
 *Abbildung 8-1: Vereinfachte Darstellung des Leitungssatzes*
 
 ### <a name="8.3.2"></a>8.3.2 Das Anwendungsszenario
-
 Ein OEM sendet einen Entwicklungsauftrag für eine 150%-Leitungssatzvariante an den Tier-1. In dem Entwicklungsauftrag ist eine Liste mit zugelassenen Suppliern mit den jeweiligen Komponenten enthalten. Der Tier-1 hat anschließend die Aufgabe alle notwendigen Informationen zu den einzelnen Komponenten von den Product-Ownern (Tier-2) zu aggregieren. Hierfür müssen die richtigen Endpunkte der Tier-2 identifiziert werden. Dazu werden die im Entwicklungsauftrag seitens des OEM hinterlegten Informationen verwendet. Ziel ist es, einen vollständigen aggregierten Digitalen Zwilling beim Tier-1 zu erzeugen, der alle Produktinformationen enthält, die von den einzelnen Tier-2 für Ihr Komponenten zu Verfügung gestellt werden.
 
 In diesem Szenario wird eine Wertschöpfungskette des Leitungssatzes über drei Stufen abgebildet. Insgesamt werden beispielhaft fünf Teilnehmer betrachtet:
@@ -57,7 +52,6 @@ In diesem Szenario wird eine Wertschöpfungskette des Leitungssatzes über drei 
 *Abbildung 8-2: Beispielhafte Darstellung der Wertschöpfungskette eines Leitungssatzes*
 
 ### <a name="8.3.3"></a>8.3.3 Ablauf des Szenarios
-
 Die Aktionen der Akteure lassen sich grundlegend in zwei Kategorien aufteilen:
 
 1.  **Data Provisioning**
@@ -66,34 +60,27 @@ Die Aktionen der Akteure lassen sich grundlegend in zwei Kategorien aufteilen:
 Der Use Case wird in diesem Kapitel auf Business Ebene beschrieben. Die detaillierten Aktionen auf technischer Ebene zur Realisierung des Use Case-Demonstrators mit Catena-X sind im Kapitel „Umsetzung des Use Cases“ beschrieben.
 
 #### OEM: Data Provisioning
-
 Trigger für den Use Case ist die Anforderung des OEMs für einen Leitungssatz. Für unser vereinfachtes Szenario gehen wir davon aus, dass der OEM definiert, von welchem Zulieferer die Komponenten kommen sollen. Diese Anforderungen legt er in Form eines Submodels an und registriert einen Digitalen Zwilling in seiner DTR. Anschließend informiert er seinen Tier 1 (Konfektionär) über den Auftrag.
 
 #### Tier 2: Data Provisioning
-
 Die Tier 2 stellen die Informationen zu ihren Produkten in Form von Digitalen Zwillingen (AAS) bereit. Dazu erstellen sie die notwendigen Submodels. Diese werden dann zunächst in der Asset-Administration-Shell-Environment (AAS-Environment) hochgeladen. Danach werden in Catena-X entsprechende Digitale Zwillinge erstellt und in der DTR registriert.
 
 #### Tier 1: Data Consumption (vom OEM)
-
 Tier 1 greift auf die Submodelle des OEMs zu. In diesem Kontext wird davon ausgegangen, dass der Tier1 vom OEM eine Mitteilung erhält, dass ein Entwicklungsauftrag vorliegt. Er sichtet die Informationen innerhalb des Auftrags und kann anhand der enthaltenen Informationen (BPNs) die erforderlichen Endpunkte der EDCs von den entsprechenden Tier 2 herausfinden.
 
 #### Tier 1: Data Consumption (von den Tier 2)
-
 Mit den vom OEM definierten Zulieferern kann der Tier 1 die entsprechenden Endpunkte der Tier 2 herausfinden und auf die Daten zugreifen. Diese kann er im Anschluss sichten und entsprechende Komponenten für die Aggregation aussuchen.
 
 #### Tier 1: Data Provisioning
-
 Mit den Informationen der Tier 2 (welche Komponenten sie anbieten) kann der Tier 1 nun einen Leitungssatz mit den entsprechenden Komponenten darstellen. Er legt hierfür entsprechende Submodelle an und stellt die Verbindungen zu den ausgewählten Komponenten her. Daraufhin registriert er einen Digitalen Zwilling in seiner DTR mit den entsprechenden Submodels (detaillierte Beschreibung in Abschnitt 0 & 1.3.5.6.5).
 
 ![image](https://github.com/user-attachments/assets/dc9183bb-efa8-4544-a196-63af01a3b150)   
 *Abbildung 8-3: Prozessdiagramm Use Case*
 
 ### <a name="8.3.4"></a>Aufbau der technischen Infrastruktur
-
 Bitte beachten Sie, dass die beschriebenen Links lediglich intern (innerhalb des Netzwerks, der ARENA2036) nutzbar sind.
 
 #### Benötigte Komponenten/Services für Data Provisioning
-
 Wie in Abschnitt 8.3.3 beschrieben sind alle Akteure (OEM, Tier 1, Tier 2) Data Provider. Dementsprechend benötigen sie folgende Komponenten[^1] die im Catena-X Operating Model[^2] als Enablement Services klassifiziert werden:
 
 [^1]: https://eclipse-tractusx.github.io/docs-kits/kits/Digital%20Twin%20Kit/Operation%20View%20Digital%20Twin%20Kit\#deployment
@@ -103,7 +90,7 @@ Wie in Abschnitt 8.3.3 beschrieben sind alle Akteure (OEM, Tier 1, Tier 2) Data 
 | Komponente             | Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | Referenzimplementierung                         | Standardisiert in                        |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------|------------------------------------------|
 | Konnektor              | Ein Konnektor ist eine dezentrale Softwarekomponente für den Peer-to-Peer Datenaustausch zwischen zwei Datenökosystem-Teilnehmern. Er stellt die Datenendpunkte bereit und kann Nutzungsbedingungen mitgeben, interpretieren und durchsetzen.                                                                                                                                                                                                                                         | Tractus-X Eclipse Dataspace Connector (EDC)[^3] | CX-0018 Dataspace Connectivity v3.0.0    |
-| Digital Twin  Registry | Eine Registry für Digitale Zwillinge. Hier veröffentlicht ein Anbieter digitale Darstellungen (digitale Zwillinge) der Assets, über die der Teilnehmer Daten hat. Diese Daten sind in Teilmodellen gekapselt, die über Anweisungen zugänglich sind, die ein Verbraucher im Register für digitale Zwillinge (DTR) findet. Die DTR hält sich an die AssetAdministrationShellRegistryServiceSpecification[^4] und die DiscoveryServiceSpecification[^5] und enthält daher nur Metadaten. | Tractus-X Digital Twin Registry (DTR)[^6]       | CX-0002 Digital Twins in Catena-X v2.2.0 |
+| Digital Twin  Registry | Mit einer Registry für Digitale Zwillinge veröffentlicht ein Anbieter digitale Darstellungen der Assets. Diese Daten sind in Teilmodellen gekapselt, die über Anweisungen zugänglich sind, die ein Verbraucher im Register für digitale Zwillinge (DTR) findet. Die DTR hält sich an die AssetAdministrationShellRegistryServiceSpecification[^4] und die DiscoveryServiceSpecification[^5] und enthält daher nur Metadaten. | Tractus-X Digital Twin Registry (DTR)[^6]       | CX-0002 Digital Twins in Catena-X v2.2.0 |
 | Submodel Server        | Die Datenquelle, die einer Teilmenge der Submodel-API entspricht, wie sie in AAS Teil-2: Application Programming Interfaces [1] definiert ist. Sie liefert die eigentlichen Daten, nach denen der Verbraucher sucht, über einen strukturierten Endpunkt, der durch die SubmodelServiceSpecification[^7] definiert ist, und gemäß den im Repository für semantische Modelle[^8] definierten strukturierten Datenformaten.                                                              | FA³ST-Framework,  Eclipse BaSyx, AASX Server    | CX-0002 Digital Twins in Catena-X v2.2.0 |
 
 [^3]: https://github.com/eclipse-tractusx/tractusx-edc
@@ -128,7 +115,6 @@ Als Anforderung aus dem Projekt soll Eclipse BaSyx[^9] als Quelle der Submodels 
 *Abbildung 8-4: Benötigte Services eines Data Providers*
 
 #### Core Services und Onboarding Services
-
 Für den beschriebenen Use Case muss ein komplettes Catena-X Datenökosystem bereitgestellt werden. Neben den in Abschnitt 8.3.4.1 beschriebenen Enablement Services müssen daher noch Core Services und Onboarding Services bereitgestellt werden (siehe Catena-X Operating Model[^10]). Diese werden üblicherweise von einer Catena-X Operating Company bereitgestellt (z.B. Cofinity-X). Für dieses Projekt wird die Operating Company in der ARENA-X-Umgebung simuliert und die entsprechenden Services eigens aufgesetzt.
 
 [^10]: https://catenax-ev.github.io/docs/next/operating-model/what-service-map
@@ -161,7 +147,6 @@ Eine komplette Auflistung der für diesen Use Case genutzten Datenökosystem-Ser
 *Tabelle 8-2: Zusätzliche Services (Core- und Onboarding Services)*
 
 #### Weitere Services
-
 Neben den Datenökosystem-Services von Catena-X oder BaSyx wurden folgende weitere nennenswerte Services für den Betrieb benutzt. Diese befinden sich teilweise im Cluster und teilweise installiert auf der Ubuntu VM:
 
 -   Ein [nginx](https://nginx.org/en/) (HTTP/S Webserver) in Version **1.18.0**
@@ -178,29 +163,22 @@ Neben den Datenökosystem-Services von Catena-X oder BaSyx wurden folgende weite
     -   Sind für die Identity Provider Tätigkeiten im Catena-X Ökosystem nötig, um sowohl Participants als auch einzelne Services selbst zu Authentifizieren und Authorisieren
 
 #### Architektur
-
 ##### Übersicht
+Ausgehend von *Abbildung 8-5* und mit den in den Kapiteln 8.3.4.1, 8.3.4.2 & 81.3.4.3 beschriebenen benötigten Komponenten ergibt sich folgendes Gesamtarchitekturbild:
 
-Ausgehend von **Fehler! Verweisquelle konnte nicht gefunden werden.** und mit den in den Kapiteln 1.3.4.1, 1.3.4.2 & 1.3.4.3 beschriebenen benötigten Komponenten ergibt sich folgendes Gesamtarchitekturbild:
-
-![image](https://github.com/user-attachments/assets/144f2f1e-00d9-4fb3-aaa7-90806957dd5b)
-
-Abbildung 8-5: ARENA-X-VWS4LS-Architektur
+![image](https://github.com/user-attachments/assets/144f2f1e-00d9-4fb3-aaa7-90806957dd5b)   
+*Abbildung 8-5: ARENA-X-VWS4LS-Architektur*
 
 ##### Detail-Architektur
 
-![image](https://github.com/user-attachments/assets/0fc4a58f-9e22-49af-9543-d8065228d023)
-
-Abbildung 8-6: Detail-Architektur
+![image](https://github.com/user-attachments/assets/0fc4a58f-9e22-49af-9543-d8065228d023)   
+*Abbildung 8-6: Detail-Architektur*
 
 #### Installation Server
-
 Für die Installation wurde ein Ubuntu-Server mit der Version 20.04 unter dem Hostnamen https://tractus-x-06.arena2036.de mit Administrator-Rechten zur Verfügung gestellt. Die Software-Komponenten werden auf einem Minikube Kubernetes Cluster deployt. Das konkrete Deployment der Komponenten, sowie durchzuführende Aufgaben werden in den Abschnitten 1.3.4.6 und 1.3.4.7 beschrieben.
 
 ##### Entwickler-Setup
-
 Es gibt mehrere Möglichkeiten für das Entwickler-Setup auf den VMs. Für das von uns genutzte, sind mehrere Voraussetzungen zu erfüllen:
-
 -   Auf dem Entwicklerrechner muss eine X-Server Umgebung installiert sein
 -   Auf dem Entwicklerrechner muss eine DISPLAY Environment-Variable definiert sein
 -   Man muss sich mit aktiviertem X-Server Support über ssh auf die VM verbinden. Bspw. mit folgender Konfiguration in der \~/.ssh/config:
@@ -219,7 +197,6 @@ Host arena2036-06
 -   Dies kann in den folgenden Schritten nützlich sein, um bspw. von lokal auf Services zuzugreifen oder das Minikube Dashboard anzusprechen. Diese kann über den Befehl minikube dashboard --port 12345 gestartet werden
 
 ##### Nginx
-
 Die Installation der Webserver-Lösung „Nginx“ erfolgt mit dem Standard Ubuntu Package Manager „apt“:
 
 ```sudo apt install nginx```
@@ -242,8 +219,8 @@ server {
                 proxy_pass http://192.168.49.2;
   }
 ```
-###### Passwort-Schutz mit „Basic Authentification“ auf nginx
 
+###### Passwort-Schutz mit „Basic Authentification“ auf nginx
 Um einen einfachen Schutz der Infrastruktur zu haben, wurde eine „Basic Authentication“ für Nginx erstellt.
 
 Um verschlüsselte Passwörter zu definieren, muss zunächst eine Hilf-Applikation installiert werden. Dafür wird htpasswd verwendet. Für htpasswd ist eine Installation von apache2-utils erforderlich. Dies kann durch folgenden Befehle durchgeführt werden:
@@ -269,7 +246,6 @@ Die Passwörter sind in der Datei /etc/conf.d/.htpasswd hinterlegt. Hier sind pr
 ```\<USERNAME\>:\$apr1\$itGWRI3M\$bIzdT/9XJNq7QEmnt4IyD0```
 
 ###### Zertifikat
-
 Das Zertifikat wird erstellt und in Nginx hinterlegt. Ein self-signed Zertifikat erfüllt nicht alle Security-Anforderungen, aber es ermöglicht den Zugriff über https für die Subdomains mit wenig Aufwand.
 
 Das Zertifikat wird für die Domain tractus-x-06.arena2036.de, dessen Subdomains und dessen IP erstellt:
@@ -382,7 +358,6 @@ Die vollständige Liste der Hosts-Einträge für einen externen Zugriff auf trac
 ```
 
 #### Aufsetzen der Catena-X-Komponenten
-
 Als Basis für das Catena-X Deployment werden die Umbrella-Helm Charts von Tractus-X genutzt. Diese werden unter dem folgenden Repository bereitgestellt:
 
 -   <https://github.com/eclipse-tractusx/tractus-x-umbrella>
@@ -394,7 +369,6 @@ Die fertigen Konfigurationen werden auf einem separaten Fork unter folgendem Rep
 -   <https://github.com/Arena2036-Umbrella-Charts/tractus-x-umbrella-arena2036>
 
 ##### Konfiguration
-
 Für die Installation der Komponenten wurden die folgenden Änderungen an den Umbrella-Helm-Charts von Tractus-X durchgeführt.
 
 Zunächst wurde der bestehen Chart-Release unter [charts/umbrella](https://github.com/Arena2036-Umbrella-Charts/tractus-x-umbrella-arena2036/tree/vws4ls/charts/umbrella) im Repository kopiert und ein neuer Chart-Release unser [charts/umbrella-arena2036](https://github.com/Arena2036-Umbrella-Charts/tractus-x-umbrella-arena2036/tree/vws4ls/charts/umbrella-arena2036) angelegt. Die ursprüngliche Datei [values.yaml](https://github.com/Arena2036-Umbrella-Charts/tractus-x-umbrella-arena2036/blob/vws4ls/charts/umbrella-arena2036/values.yaml) wurde als Grundlage genutzt.
@@ -403,9 +377,7 @@ Die folgenden Änderungen fanden, soweit nicht anders beschrieben, in der Datei 
 
 Wenn von einer Allgemeinen Hostnamen-Anpassung die Rede ist, bezieht sich das auf das Pattern [https://\<service\>.tractus-x-06.arena2036.de]().
 
-
 ###### Zertifikate
-
 Zunächst muss das Zertifikatsmanagement angepasst werden. Dafür wurde eine ```tractus-x-06.cluster-issuear.yaml``` erstellt, die eine Kubernetes-Konfiguration beinhaltet und die auf das Cluster applied werden muss. Außerdem muss das Zertifikat und Key als Secret im Cluster angelegt werden. Die Befehle dafür sind:
 ```
 cd /etc/nginx
@@ -415,7 +387,6 @@ kubectl apply -f tractus-x-06.cluster-issuer.yaml
 ```
 
 ###### Portal
-
 -   Aktivierung des Portals
 -   Anpassung der Host-Namen für
     -   Host, Mailing, Provisioning, Frontend und Backend
@@ -426,7 +397,6 @@ kubectl apply -f tractus-x-06.cluster-issuer.yaml
 -   Konfiguration der PostgreSQL Authentifizierung
 
 ###### Central-IDP
-
 -   Aktivierung von [Central-IDP](https://github.com/gematik/ref-idp-server)
 -   Anpassung des Host-Namen für Central-IDP
 -   TLS Konfiguration für Central-IDP
@@ -437,7 +407,6 @@ kubectl apply -f tractus-x-06.cluster-issuer.yaml
 -   Konfiguration eines Admin-Users
 
 ###### Shared-IDP
-
 -   Aktivierung von Shared-IDP
 -   Anpassung des Host-Namens für Shared-IDP
 -   TLS Konfiguration für Shared -IDP
@@ -448,7 +417,6 @@ kubectl apply -f tractus-x-06.cluster-issuer.yaml
 -   Konfiguration eines Admin-Users
 
 ###### BPN-Discovery
-
 -   Aktivierung der BPN-Discovery
 -   Anpassung des Host-Namens für BPN-Discovery
 -   Ingress Konfiguration erstellen, da nicht vorhanden
@@ -457,7 +425,6 @@ kubectl apply -f tractus-x-06.cluster-issuer.yaml
 -   Konfiguration der PostgreSQL Authentifizierung
 
 ###### Discoveryfinder
-
 -   Aktivierung des Discoveryfinders
 -   Anpassung des Host-Namens für Discoveryfinder
 -   Ingress Konfiguration anpassen
@@ -467,7 +434,6 @@ kubectl apply -f tractus-x-06.cluster-issuer.yaml
 -   Konfiguration der PostgreSQL Authentifizierung
 
 ###### Self-Description
-
 -   Aktivierung des Self-Description Services
 -   Anpassung des Hostnamens für die Self-Description
 -   Ingress Konfiguration erstellen, da nicht vorhanden
@@ -478,7 +444,6 @@ kubectl apply -f tractus-x-06.cluster-issuer.yaml
     -   Anpassung des Host-Namens
 
 ###### Managed Identity Wallet
-
 -   Aktivierung des Managed-Identity-Wallets
 -   Anpassung des Hostnamens für den Managed-Idenity-Wallet
 -   Anpassung der Keycloak Konfiguration
@@ -488,7 +453,6 @@ kubectl apply -f tractus-x-06.cluster-issuer.yaml
 -   Konfiguration der PostgreSQL Authentifizierung
 
 ###### Data Seeding
-
 Das Data-Seeding besteht primär aus zwei Komponenten:
 
 -   Keycloak initialisierung
@@ -568,7 +532,6 @@ Die Management-Identity-Wallet Initialisierung sieht so aus, dass nach dem Start
 *Abbildung 8-9: Anlegen User*
 
 ###### Eclipse Dataspace Connectors
-
 Für die Eclipse-Dataspace-Connectoren und die dazu gehörigen Digital-Twin Registries, müssen die Anpassungen für die verschiedenen, im Use-Case definierten, Participants durchgeführt werden.
 
 Der folgende Abschnitt muss für unseren Use-Case für folgende Participants wiederholt werden:
@@ -724,7 +687,6 @@ spec:
 -   **Vault**: edc-tiertwonothree-vault
 
 ###### Semantic-Hub
-
 -   Aktivierung des Semantic-Hubs
 -   Anpassung des Hostnamens für den Semantic-Hubs
 -   Ingress Konfiguration erstellen, da nicht vorhanden
@@ -732,7 +694,6 @@ spec:
 -   Erstellung Keycloak-Konfiguration
 
 ###### Post-Install MIW Setup
-
 Die Post-Install MIW-Setup Template-Datei wurde ergänzt um eine Ausgabe der Keycloak Authentifizierung, um ein debuggen zu erleichtern. Die Datei ist charts/umbrella-arena2036/templates/post-install-miw-setup.yaml:
 
 TOKEN=\`cat token \| grep -o '"access_token": \*"[\^"]\*"' \| sed 's\#"access_token":"\\(.\*\\)"\#\\1\#'\` && export TOKEN
@@ -740,7 +701,6 @@ TOKEN=\`cat token \| grep -o '"access_token": \*"[\^"]\*"' \| sed 's\#"access_to
 echo "wget {{\$keycloakPath}} --header 'Content-Type: application/x-www-form-urlencoded' --post-data 'grant_type=client_credentials&client_id={{ \$miwUser }}&client_secret={{ \$miwSecret }}'"
 
 ##### Deployment
-
 Für das Deployment der für den Use-Case konfigurierten Komponenten werden folgende Schritte durchgeführt:
 
 -   Zunächst muss sichergestellt werden, dass die Schritte aus dem **Abschnitt „1.3.4.5. Installation Server“** durchgeführt wurden, da sie für die folgenden Schritte die Voraussetzung sind
@@ -780,7 +740,6 @@ Für das Deployment der für den Use-Case konfigurierten Komponenten werden folg
     helm uninstall umbrella -n umbrella
 
 ###### Service- & API-Auflistung
-
 Im Folgenden eine Auflistung der deployten Services und APIs:
 
 -   Central-IDP
@@ -864,55 +823,45 @@ Im Folgenden eine Auflistung der deployten Services und APIs:
 ##### Live-Anpassungen und Authentifizierung
 
 ###### Keycloak
-
 Da die Seeding-Daten teilweise hardcodiert sind, müssen nach dem Deployment einzelne Anpassungen durchgeführt werden.
-
 Zunächst muss der Sub-Identity-Provider für Central-IDP angepasst werden. Dies kann in der Admin-Console durchgeführt werden:
 
 [https://centralidp.tractus-x-06.arena2036.de/auth/admin/master/console/\#](https://centralidp.tractus-x-06.arena2036.de/auth/admin/master/console/)
 
-![image](https://github.com/user-attachments/assets/515f9bfb-9855-4024-b08e-2ed49409c62f)
-
-Abbildung 8-10: Anpassung Sub-Identity-Provider
+![image](https://github.com/user-attachments/assets/515f9bfb-9855-4024-b08e-2ed49409c62f)   
+*Abbildung 8-10: Anpassung Sub-Identity-Provider*
 
 Zusätzlich müssen die Redirect-URLs des Portal-Users angepasst werden:
 
-![image](https://github.com/user-attachments/assets/7f6ee3c0-4dfc-4192-bc2a-2af03caa246b)
-
-Abbildung 8-11: Anpassung Redirect-URLs des Portal-Users
+![image](https://github.com/user-attachments/assets/7f6ee3c0-4dfc-4192-bc2a-2af03caa246b)   
+*Abbildung 8-11: Anpassung Redirect-URLs des Portal-Users*
 
 Durch einen Fehler in den Seeding-Daten (ein Prozess, bei dem eine Datenbank mit einem anfänglichen Datensatz gefüllt werden), müssen außerdem mehrere Rollen für den Client sa-cl2-reg-2 hinzugefügt werden:
 
-![image](https://github.com/user-attachments/assets/0b303039-d2c7-444b-ac49-229478cca204)
-
-Abbildung 8-12: Hinzufügen Rollen
+![image](https://github.com/user-attachments/assets/0b303039-d2c7-444b-ac49-229478cca204)   
+*Abbildung 8-12: Hinzufügen Rollen*
 
 ###### Wallet
-
 -   API: <https://managed-identity-wallets.tractus-x-06.arena2036.de/api>
 ````
     wget http://centralidp.tractus-x-06.arena2036.de/auth/realms/CX-Central/protocol/openid-connect/token --header 'Content-Type: application/x-www-form-urlencoded' --post-data 'grant_type=client_credentials&client_id=sa-cl5-custodian-2&client_secret=UIqawwoohsvZ6AZOd1llLhnsUTKMWe4D'
 ````
 ###### BPN-Discovery
-
 -   API: <https://bpndiscovery.tractus-x-06.arena2036.de/bpndiscovery>
 ````
 wget -q -S -O - http://centralidp.tractus-x-06.arena2036.de/auth/realms/CX-Central/protocol/openid-connect/token --header 'Content-Type: application/x-www-form-urlencoded' --post-data 'grant_type=client_credentials&client_id=sa-cl22-01&client_secret=1yDWW7BNwouRGxYRkDmzkpzqz5FG748f'
 ````
 ###### Discoveryfinder
-
 -   API: <https://discoveryfinder.tractus-x-06.arena2036.de/discoveryfinder>
 
     wget -q -S -O - http://centralidp.tractus-x-06.arena2036.de/auth/realms/CX-Central/protocol/openid-connect/token --header 'Content-Type: application/x-www-form-urlencoded' --post-data 'grant_type=client_credentials&client_id=sa-cl21-01&client_secret=oFbXttMA7vI5MysN7AiEpobX5o3Jfbhp'
 
 ###### Portal API CentralIdp User
-
 -   API: <https://portal-backend.tractus-x-06.arena2036.de/api/administration>
 ````
 wget -q -S -O - http://centralidp.tractus-x-06.arena2036.de/auth/realms/CX-Central/protocol/openid-connect/token --header 'Content-Type: application/x-www-form-urlencoded' --post-data 'grant_type=client_credentials&client_id=sa-cl1-reg-2&client_secret=aEoUADDw2aNPa0WAaKGAyKfC80n8sKxJ'
 ````
 ###### Portal API SharedIdp User
-
 -   API: <https://portal-backend.tractus-x-06.arena2036.de/api/administration>
 ````
 wget -q -S -O - http://sharedidp.tractus-x-06.arena2036.de/auth/realms/master/protocol/openid-connect/token --header 'Content-Type: application/x-www-form-urlencoded' --post-data 'grant_type=client_credentials&client_id=sa-cl1-reg-1&client_secret=YPA1t6BMQtPtaG3fpH8Sa8Ac6KYbPUM7'
@@ -930,7 +879,6 @@ curl `
 ````
 
 #### Aufsetzen der BaSyx-Komponenten
-
 Als Basis für das BaSyx Deployment wird das Repository [eclipse-basyx/basyx-java-server-sdk (github.com)](https://github.com/eclipse-basyx/basyx-java-server-sdk) genommen. Dieses beinhaltet unter dem Pfad examples/BaSyxMinimal eine einfache Konfiguration, die für unseren Use-Case genutzt werden kann.
 
 Die Minimal Konfiguration besteht aus den folgenden Komponenten:
@@ -1139,9 +1087,8 @@ Es gibt mehrere Überschneidungen an Digital-Twin-Services in Catena-X, sowie Ba
 
 Die Überschneidungen an äquivalenten Services, kann man auf der folgenden Abbildung sehen:
 
-![image](https://github.com/user-attachments/assets/e0c7463c-9de0-4b2e-8fb3-7f442c439665)
-
-Abbildung 8-13: BaSyx-Integration in Use Case
+![image](https://github.com/user-attachments/assets/e0c7463c-9de0-4b2e-8fb3-7f442c439665)   
+*Abbildung 8-13: BaSyx-Integration in Use Case*
 
 ### <a name="8.3.5"></a>8.3.5 Umsetzung des Use Cases
 
@@ -1157,45 +1104,20 @@ Im Folgenden gilt es daher zu klären, welche Unterschiede sich zwischen den IDT
 
 ##### Catena-X Aspektmodelle
 
-Catena-X beschreibt das Konzept der "[Aspektmodelle](https://catena-x.net/fileadmin/user_upload/Standard-Bibliothek/Archiv/8_PC_Semantics_v2.1/SEM-002_BAMM_PlatformCapabilitySemantics_v2.1.pdf)"[^1], um domänenspezifische Sichten oder Aspekte eines digitalen Zwillings zu definieren, die für verschiedene Anwendungsfälle innerhalb des Catena-X-Ökosystems wesentlich sind. Aspektmodelle bieten eine strukturierte Möglichkeit zur Erfassung spezifischer Geschäftsprozesse und Datenanforderungen.
+Catena-X beschreibt das Konzept der "[Aspektmodelle](https://catena-x.net/fileadmin/user_upload/Standard-Bibliothek/Archiv/8_PC_Semantics_v2.1/SEM-002_BAMM_PlatformCapabilitySemantics_v2.1.pdf)", um domänenspezifische Sichten oder Aspekte eines digitalen Zwillings zu definieren, die für verschiedene Anwendungsfälle innerhalb des Catena-X-Ökosystems wesentlich sind. Aspektmodelle bieten eine strukturierte Möglichkeit zur Erfassung spezifischer Geschäftsprozesse und Datenanforderungen.
+Um ein Datenmodell zu spezifizieren, wird das [Semantic Aspect Meta Model](https://eclipse-esmf.github.io/samm-specification/2.1.0/index.html) (SAMM) verwendet, welches unter Verwendung des [Resource Description Format](https://www.w3.org/RDF/) (RDF) und der [Terse RDF Triple Language Syntax](https://de.wikipedia.org/wiki/Turtle_(Syntax)) (Turtle) spezifiziert, zusammen mit Validierungsregeln in der [Shapes Constraint Language](https://www.w3.org/TR/shacl/) (SHACL). Aspektmodelle werden ebenfalls in RDF/Turtle spezifiziert, wobei die SAMM-Semantik befolgt wird.
 
-[^1]: <https://catena-x.net/fileadmin/user_upload/Standard-Bibliothek/Archiv/8_PC_Semantics_v2.1/SEM-002_BAMM_PlatformCapabilitySemantics_v2.1.pdf>
-
-Um ein Datenmodell zu spezifizieren, wird das [Semantic Aspect Meta Model](https://eclipse-esmf.github.io/samm-specification/2.1.0/index.html) (SAMM)[^2] verwendet, welches unter Verwendung des [Resource Description Format](https://www.w3.org/RDF/) (RDF)[^3] und der [Terse RDF Triple Language Syntax](https://de.wikipedia.org/wiki/Turtle_(Syntax)) (Turtle)[^4] spezifiziert, zusammen mit Validierungsregeln in der [Shapes Constraint Language](https://www.w3.org/TR/shacl/) (SHACL)[^5]. Aspektmodelle werden ebenfalls in RDF/Turtle spezifiziert, wobei die SAMM-Semantik befolgt wird.
-
-[^2]: <https://eclipse-esmf.github.io/samm-specification/2.1.0/index.html>
-
-[^3]: <https://www.w3.org/RDF/>
-
-[^4]: <https://www.w3.org/TR/2014/REC-turtle-20140225/>
-
-[^5]: <https://www.w3.org/TR/shacl/>
-
-Abbildung 914 zeigt beispielhaft die grafische Darstellung des Aspektmodells „PartTypeInformation“. Dafür kann der [Aspect Model Editor](https://eclipse-esmf.github.io/ame-guide/introduction.html) verwendet werden[^6] oder die html-Datei des semantischen Modells aus dem GitHub Repository [eclipse-tractusx](https://github.com/eclipse-tractusx/sldt-semantic-models/tree/main)[^7] geöffnet werden. In Abbildung 915 sieht man das entsprechende JSON dazu.
-
-[^6]: <https://eclipse-esmf.github.io/ame-guide/introduction.html>
-
-[^7]: <https://github.com/eclipse-tractusx/sldt-semantic-models/tree/main>
-
-
-[^5]: <https://eclipse-esmf.github.io/ame-guide/introduction.html>
-
-[^6]: <https://github.com/eclipse-tractusx/sldt-semantic-models/tree/main>
-
-
-Abbildung 8-14 zeigt beispielhaft die grafische Darstellung des Aspektmodells „PartTypeInformation“. Dafür kann der [Aspect Model Editor](https://eclipse-esmf.github.io/ame-guide/introduction.html) verwendet werden[^12] oder die html-Datei des semantischen Modells aus dem GitHub Repository [eclipse-tractusx](https://github.com/eclipse-tractusx/sldt-semantic-models/tree/main)[^13] geöffnet werden. In Abbildung 8-15 sieht man das entsprechende JSON dazu.
+*Abbildung 8-14* zeigt beispielhaft die grafische Darstellung des Aspektmodells „PartTypeInformation“. Dafür kann der [Aspect Model Editor](https://eclipse-esmf.github.io/ame-guide/introduction.html) verwendet werden[^12] oder die html-Datei des semantischen Modells aus dem GitHub Repository [eclipse-tractusx](https://github.com/eclipse-tractusx/sldt-semantic-models/tree/main)[^13] geöffnet werden. *In Abbildung 8-15* sieht man das entsprechende JSON dazu.
 
 [^12]: https://eclipse-esmf.github.io/ame-guide/introduction.html
 
 [^13]: https://github.com/eclipse-tractusx/sldt-semantic-models/tree/main
 
-![image](https://github.com/user-attachments/assets/3811cffa-c61a-4735-99ab-b6084d1fbaf5)
+![image](https://github.com/user-attachments/assets/3811cffa-c61a-4735-99ab-b6084d1fbaf5)   
+*Abbildung 8-14: Grafische Darstellung des Aspektmodells PartTypeInformation.ttl*
 
-Abbildung 8-14: Grafische Darstellung des Aspektmodells PartTypeInformation.ttl
-
-![image](https://github.com/user-attachments/assets/5e2fb4ee-cfa0-49ae-b3bd-5404631563de)
-
-Abbildung 8-15: Eigenschaften eines Submodells als JSON
+![image](https://github.com/user-attachments/assets/5e2fb4ee-cfa0-49ae-b3bd-5404631563de)   
+*Abbildung 8-15: Eigenschaften eines Submodells als JSON*
 
 ##### IDTA-Submodelle
 
@@ -1232,7 +1154,7 @@ In Catena-X basieren die APIs auf den Spezifikationen der Asset Administration S
 
 ![image](https://github.com/user-attachments/assets/9e75c8aa-6fa1-445b-986f-abbe165e1ee6)
 
-Abbildung 8-16: [Tractus-X Digital Twin Registry - Asset Administration Shell Domain Model](https://github.com/eclipse-tractusx/sldt-digital-twin-registry/tree/main/docs#asset-administration-shell-domain-model) [^19]
+*Abbildung 8-16: [Tractus-X Digital Twin Registry - Asset Administration Shell Domain Model](https://github.com/eclipse-tractusx/sldt-digital-twin-registry/tree/main/docs#asset-administration-shell-domain-model) [^19]*
 
 [^19]: [https://github.com/eclipse-tractusx/sldt-digital-twin-registry/tree/main/docs\#asset-administration-shell-domain-model](https://github.com/eclipse-tractusx/sldt-digital-twin-registry/tree/main/docs#asset-administration-shell-domain-model)
 
@@ -1278,7 +1200,7 @@ Der OEM ist mit seinen Anforderungen der Trigger für einen Entwicklungsauftrag 
 
 ![image](https://github.com/user-attachments/assets/ce09139d-ae60-4976-ae68-8facc5fd613d)
 
-Abbildung 8-17: Die Anforderungen des OEM als AAS mit Submodel
+*Abbildung 8-17: Die Anforderungen des OEM als AAS mit Submodel*
 
 #### Aggregation des Digitalen Zwillings
 
@@ -1297,7 +1219,7 @@ Die eigentliche Aggregation findet über das Submodel „SingleLevelBomAsPlanned
 
 ![image](https://github.com/user-attachments/assets/0a59b3c0-6fa8-40c1-a52a-333b362d07d6)
 
-Abbildung 8-18: Zusammenbau Leitungssatz mit Stückliste
+*Abbildung 8-18: Zusammenbau Leitungssatz mit Stückliste*
 
 ##### <a name="8.3.5.4.1"></a>Zugriffskontrolle (Security)
 
@@ -1305,7 +1227,6 @@ Das Projekt VWS4LS hat die Anforderung, dass der Zugriff auf einzelne Submodels 
 
 -   Ein (externer) Benutzer möchte auf eine AAS zugreifen
 -   Das Identitätsmanagement wird von einem Identitätsanbieter (IdP) durchgeführt
-    -   
     -   Der IdP stellt ein Access Token zur Verfügung, das für den AAS-Server relevante Angaben enthält
     -   Das Token (JWT, JSON Web Token) wird vom IdP signiert
 -   Der AAS-Server vertraut dem Identity Provider
@@ -1337,11 +1258,10 @@ Folgende Dokumente adressieren bislang das Thema „Security für Verwaltungssch
 -   [Sicherer Downloadservice](https://www.plattform-i40.de/PI40/Redaktion/EN/Downloads/Publikation/secure_downloadservice.html) (12/2020)
 -   [Details of the Asset Administration Shell Part 1, Chapter 6, ABAC & RBAC](https://www.plattform-i40.de/PI40/Redaktion/DE/Downloads/Publikation/Details_of_the_Asset_Administration_Shell_Part1_V3.html) (05/2022)
 
-In „[Details of the Administration Shell](https://admin-shell-io.github.io/aas-specs-antora/IDTA-01003-a/v3.0/index.html)“ war bis V30RC02 ein Security-Konzept für sowohl RBAC als auch ABAC enthalten. Hierfür exisitert auch eine prototypische AAS-Server-Implementierung (<https://v3.admin-shell-io.com/>), siehe Abbildung 8-19, jedoch keine Benutzeroberfläche, um Zugriffsrichtlinien für AAS-Elemente zu konfigurieren.
+In „[Details of the Administration Shell](https://admin-shell-io.github.io/aas-specs-antora/IDTA-01003-a/v3.0/index.html)“ war bis V30RC02 ein Security-Konzept für sowohl RBAC als auch ABAC enthalten. Hierfür exisitert auch eine prototypische AAS-Server-Implementierung (<https://v3.admin-shell-io.com/>), siehe *Abbildung 8-19*, jedoch keine Benutzeroberfläche, um Zugriffsrichtlinien für AAS-Elemente zu konfigurieren.
 
-![image](https://github.com/user-attachments/assets/c4c7b960-224f-46ab-8dd7-3cb5c5ae2dbd)
-
-Abbildung 8-19: AAS-Security (Quelle: <https://v3.admin-shell-io.com/>)
+![image](https://github.com/user-attachments/assets/c4c7b960-224f-46ab-8dd7-3cb5c5ae2dbd)   
+*Abbildung 8-19: AAS-Security (Quelle: <https://v3.admin-shell-io.com/>)*
 
 Derzeit wird das AAS-Security-Konzept in der IDTA komplett überarbeitet und soll durch eine neue Spezifikation „Security“ ersetzt werden. Hierfür werden in der IDTA-Arbeitsgruppe vier Varianten diskutiert:
 
@@ -1352,31 +1272,28 @@ Derzeit wird das AAS-Security-Konzept in der IDTA komplett überarbeitet und sol
 
 Eine erste Version der neuen Security-Spezifikation wird für Anfang 2025 erwartet.
 
-Die generelle Zielsetzung der angestrebten Security-Spezifikation wird in der nachfolgenden Abbildung 8-20 beschrieben:
+Die generelle Zielsetzung der angestrebten Security-Spezifikation wird in der nachfolgenden *Abbildung 8-20* beschrieben:
 
 Für die technische Umsetzung wird als wesentlicher Bestandteil ein “[OpenAuth2.0 Authorization Framework](https://auth0.com/docs/authenticate/protocols/oauth#:~:text=The%20OAuth%202.0%20authorization%20framework%20is%20a%20protocol,revealing%20their%20long-term%20credentials%20or%20even%20their%20identity.)” gesehen. Für das Identitätsmanagement wird [OpenID Connect](https://openid.net/developers/how-connect-works/) vorgeschlagen. Die Kommunikation basiert dabei auf JSON Web Tokens, die Claims entsprechend eines Datenraums enthalten. Diese Claims können dann in ABAC-Security-Regeln verwendet werden und somit den Zugriff regeln. Das soll für Repository und Registry gleichermaßen gelten. Access Rules sollen auch für Properties und nicht nur für ganze Submodelle möglich sein.
 
-![image](https://github.com/user-attachments/assets/9423f866-b955-4f92-bd85-806cdf739781)
-
-Abbildung 8-20: Grundsätzliche Interaktion zwischen Konnektoren und Verwaltungsschalen
+![image](https://github.com/user-attachments/assets/9423f866-b955-4f92-bd85-806cdf739781)   
+*Abbildung 8-20: Grundsätzliche Interaktion zwischen Konnektoren und Verwaltungsschalen*
 
 *(Quelle: A. Orzelski)*
 
 ##### Security in BaSyx
 
-![image](https://github.com/user-attachments/assets/1e3d46f2-31e3-439d-9f81-50c4023f467f)
-
-Abbildung 8-21: Dataflow RBAC in BaSyx
+![image](https://github.com/user-attachments/assets/1e3d46f2-31e3-439d-9f81-50c4023f467f)   
+*Abbildung 8-21: Dataflow RBAC in BaSyx*
 
 Definitionen für eine Attribut basierende Zugriffskontrolle (Attribute Based Access Control = ABAC) sind von der IDTA derzeit noch nicht abgeschlossen. Das bedeutet, dass auf die Standardisierung von der IDTA gewartet wird, bevor eine Implementierung in BaSyx vorgenommen wird.
 
 Derzeit ist in BaSyx eine einfache rollenbasierte Zugriffskontrolle (Role Based Access Control = RBAC) implementiert. Jeder Service (AAS Discovery, AAS-Environment, AAS Concept Description etc.) benötigt eine eigene Konfigurationsdatei, welche in JSON-Format die Rollen und Rechte spezifisch für bestimmte AAS mit IDs oder Wildcards beschreibt. Hierfür existiert ein dediziertes [Konfigurationsdateiformat](https://wiki.basyx.org/en/latest/content/user_documentation/basyx_components/v2/aas_discovery/features/authorization.html#rbac-rule-configuration) sowie ein SDK-Beispiel namens „[BaSyxSecured](https://github.com/eclipse-basyx/basyx-java-server-sdk/tree/main/examples/BaSyxSecured)“, welches den Authorisierungs-Server [Keycloak](https://www.keycloak.org/docs/latest/server_admin/index.html) verwendet.
 
-In Abbildung 8-22 wird gezeigt, wie die Authentifizierung in BaSyx konzipiert wurde. In dem Szenario sind Admins für jeden Server (AAS Registry, AAS Repository und SM Repository) vorhanden sowie die Nutzer für AAS Registry, AAS Repository und Submodel Repository. Alle Nutzer authentifizieren sich mittels eines AccessToken von einen Authorisierungs-Server (hier [Keycloak](https://www.keycloak.org/)).
+In *Abbildung 8-22* wird gezeigt, wie die Authentifizierung in BaSyx konzipiert wurde. In dem Szenario sind Admins für jeden Server (AAS Registry, AAS Repository und SM Repository) vorhanden sowie die Nutzer für AAS Registry, AAS Repository und Submodel Repository. Alle Nutzer authentifizieren sich mittels eines AccessToken von einen Authorisierungs-Server (hier [Keycloak](https://www.keycloak.org/)).
 
-![image](https://github.com/user-attachments/assets/65c24ec2-2bce-4f15-93ed-53f98307a466)
-
-Abbildung 8-22: Zugriffskontrolle – Konzept für BaSyx
+![image](https://github.com/user-attachments/assets/65c24ec2-2bce-4f15-93ed-53f98307a466)   
+*Abbildung 8-22: Zugriffskontrolle – Konzept für BaSyx*
 
 ##### Security in Catena-X
 
@@ -1429,7 +1346,7 @@ Man beachte, dass das Data-Provisioning dann für alle Participants, die Daten p
 
 ![image](https://github.com/user-attachments/assets/85490bee-fa73-40d4-86d4-d542f83969c7)
 
-Abbildung 8-23: Data Provisioning
+*Abbildung 8-23: Data Provisioning*
 
 In den folgenden Schritten ist oft eine Authentifizierung mit dem Keycloak erforderlich. Für diese müssen in den entsprechenden API-Calls u.A. folgende Properties gesetzt werden, bspw. für den OEM:
 
@@ -2085,7 +2002,7 @@ Das [BaSyx-UI](https://github.com/eclipse-basyx/basyx-aas-web-ui)[^39] und Tract
 
       
 ![image](https://github.com/user-attachments/assets/5dde440d-f716-4363-9654-b31b5677c9b6)   
-*Abbildung 9 25: Darstellung „Bills of Material“ in BaSyx*
+*Abbildung 9-25: Darstellung „Bills of Material“ in BaSyx*
 
 
 [^39]: <https://github.com/eclipse-basyx/basyx-aas-web-ui>
@@ -2223,11 +2140,11 @@ Im Folgenden werden einige grundsätzlichen Überlegungen dazu erörtert. Die En
 
 Bei der 1. Frage zu den Identitäten ist mit der Einführung von SSI grundsätzlich die Nutzung verschiedener Identitäten und deren Providern möglich. Die entsprechende Weiterentwicklung des Wallets innerhalb von Tractus-X wird sehr wahrscheinlich eine Nutzung von anderen Identitäten ermöglichen. Da anderseits gerade die Leitungssatzbranche per se direkt Bestandteil der Lieferkette der Automobilindustrie ist, ist die Nutzung der von dieser bevorzugten BPNs naheliegend, solange nicht andere Identitäten z.B. durch Produktpässe über die Verwaltungsschale eingeführt werden.
 
-Bei den Fragen zu 2., 3. und 4. geht es darum, wo die Souveränität durch den Datenanbieter (Provider) konfiguriert wird. Folgende mögliche konzeptionelle Lösungsansätze für ein CX-Produktivsystem mit Anbindung an AAS-Infrastrukturen (Abbildung 8-29) kommen dabei in Frage:
+Bei den Fragen zu 2., 3. und 4. geht es darum, wo die Souveränität durch den Datenanbieter (Provider) konfiguriert wird. Folgende mögliche konzeptionelle Lösungsansätze für ein CX-Produktivsystem mit Anbindung an AAS-Infrastrukturen (*Abbildung 8-29*) kommen dabei in Frage:
 
 1.  CX-Anwendung greift direkt auf AAS zu, die Zugriffskontrolle erfolgt über die Verwaltungsschale: Die Catena-X-Infrastruktur wird ausschließlich für die Verwaltung des B2B-Workflows (Kette) über „*non-operational data*“ verwendet. Die eigentlichen Dateninhalte („*operational data*“) des/der Assets im Workflow werden in verteilten AAS-Repositories verwaltet. D.h. aus dem Catena-X-Workflow heraus wird nur eine Verlinkung auf die jeweils relevante AAS mit den Dateninhalten benötigt und bei Bedarf (z.B. Datenmanipulation) aus der CX-Anwendung auf die entsprechende AAS-Anwendungstoolkette „abgesprungen“. Die Rechteverwaltung für Submodelle und einzelne Datenpunkte findet dabei ausschließlich im AAS-Repository statt. So können die beiden Welten parallel miteinander koexistieren und interagieren, sind aber technisch stark entkoppelt.
 2.  CX-Anwendung greift über ein Aspekt-Modell des EDC auf Teilmodelle der AAS zu, die Zugriffskontrolle erfolgt nur über angepasste Policies im EDC: Grundsätzlich getrennte Datenhaltung wie oben beschrieben, aber mit Anpassung des EDC, der dann als Gateway für den Zugriff auf die AAS-Infrastruktur dient. Dies würde einen tieferen Eingriff in dem EDC-System bedeuten, könnte aber die Komplexität auf Seiten der CX-Anwendungen, die mit einer VWS-Infrastruktur interagieren möchten, deutlich verringern.
-3.  CX-Anwendung greift über ein angepasstes Asset des EDC auf die komplette AAS zu, die Zugriffskontrolle erfolgt über die AAS: Es ist eine Architekturanpassung im Control-Plane des EDC vorzunehmen, die erlaubt, dass die in einem Teilmodell “Sicherheit” konfigurierten Rollen und Zugriffsrechte über einen geeigneten Ansatz in dynamisch generierte Policies in den Control-Plane des EDC übertragen werden. Dafür wird man neben dem EDC auch die entsprechende dDTR konzeptionell erweitern müssen. Die Änderungen würde auch das Protokoll der “Vertragsaushandlung” zwischen zwei EDC betreffen das Protokoll würde die dDTR einbeziehen müssen (Abbildung 8-29).
+3.  CX-Anwendung greift über ein angepasstes Asset des EDC auf die komplette AAS zu, die Zugriffskontrolle erfolgt über die AAS: Es ist eine Architekturanpassung im Control-Plane des EDC vorzunehmen, die erlaubt, dass die in einem Teilmodell “Sicherheit” konfigurierten Rollen und Zugriffsrechte über einen geeigneten Ansatz in dynamisch generierte Policies in den Control-Plane des EDC übertragen werden. Dafür wird man neben dem EDC auch die entsprechende dDTR konzeptionell erweitern müssen. Die Änderungen würde auch das Protokoll der “Vertragsaushandlung” zwischen zwei EDC betreffen das Protokoll würde die dDTR einbeziehen müssen (*Abbildung 8-29*).
 
 ![image](https://github.com/user-attachments/assets/4bbb1602-5916-4848-884b-72ed300742c1)   
 *Abbildung 8-30: Interaktion Tractus-X und AAS via EDC*
@@ -2282,93 +2199,4 @@ Um die erkannten Mängel in den beteiligten Ökosystemen zu beseitigen, wären s
 | [28]  | ECLASS e.V., „ECLASS-Standard,“ [Online]. Available: https://eclass.eu/eclass-standard/content-suche/search.                                                                                                                                                                                                                                               |
 | [29]  | Prostep ivip, „ECAD-Wiki,“ 2023. [Online]. Available: https://ecad-wiki.prostep.org/specifications/vec/v202/component-characteristics/geometric-properties-of-connector-housings-definitions/. [Zugriff am 01 6 2023].                                                                                                                                     |
 
-
-# <a name="Abbildungsverzeichnis">Abbildungsverzeichnis
-
-[Abbildung 8-1: Vereinfachte Darstellung des Leitungssatzes](#_Toc178862270)
-
-[Abbildung 8-2: Beispielhafte Darstellung der Wertschöpfungskette eines Leitungssatzes](#_Toc178862271)
-
-[Abbildung 8-3: Prozessdiagramm Use Case](#_Toc178862272)
-
-[Abbildung 8-4: Benötigte Services eines Data Providers](#_Toc178862273)
-
-[Abbildung 8-5: ARENA-X-VWS4LS-Architektur](#_Toc178862274)
-
-[Abbildung 8-6: Detail-Architektur](#_Toc178862275)
-
-[Abbildung 8-7: Erzeuzte Security-Dateien zur Registrierung in nginx](#_Toc178862276)
-
-[Abbildung 8-8: Identity Provider](#_Toc178862277)
-
-[Abbildung 8-9: Anlegen User](#_Toc178862278)
-
-[Abbildung 8-10: Anpassung Sub-Identity-Provider](#_Toc178862279)
-
-[Abbildung 8-11: Anpassung Redirect-URLs des Portal-Users](#_Toc178862280)
-
-[Abbildung 8-12: Hinzufügen Rollen](#_Toc178862281)
-
-[Abbildung 8-13: BaSyx-Integration in Use Case](#_Toc178862282)
-
-[Abbildung 8-14: Grafische Darstellung des Aspektmodells PartTypeInformation.ttl](#_Toc178862283)
-
-[Abbildung 8-15: Eigenschaften eines Submodells als JSON](#_Toc178862284)
-
-[Abbildung 8-16: Tractus-X Digital Twin Registry - Asset Administration Shell Domain Model](#_Toc178862285)
-
-[Abbildung 8-17: Die Anforderungen des OEM als AAS mit Submodel](#_Toc178862286)
-
-[Abbildung 8-18: Zusammenbau Leitungssatz mit Stückliste](#_Toc178862287)
-
-[Abbildung 8-19: AAS-Security (Quelle: https://v3.admin-shell-io.com/)](#_Toc178862288)
-
-[Abbildung 8-20: Grundsätzliche Interaktion zwischen Konnektoren und Verwaltungsschalen](#_Toc178862289)
-
-[Abbildung 8-21: Dataflow RBAC in BaSyx](#_Toc178862290)
-
-[Abbildung 8-22: Zugriffskontrolle – Konzept für BaSyx](#_Toc178862291)
-
-[Abbildung 8-23: Data Provisioning](#_Toc178862292)
-
-[Abbildung 8-24: Data Consumption](#_Toc178862293)
-
-[Abbildung 8-25: Darstellung „Bills of Material“ in BaSyx](#Abb:8-25)
-
-[Abbildung 8-26: AASX Package Explorer](#_Toc178862294)
-
-[Abbildung 8-27: Integration des Catena-X Submodels "PartTypeInformation"](#_Toc178862295)
-
-[Abbildung 8-28: BaSyx-Frontend zeigt ProductID in AAS MES_Info (Screenshot)](#_Toc178862296)
-
-[Abbildung 8-29: BaSyx-Frontend zeigt Maintenance_Counter von Machine_1 in AAS MES_Info](#_Toc178862297)
-
-[Abbildung 8-30: Interaktion Tractus-X und AAS via EDC](#_Toc178862298)
-
-# Abkürzungsverzeichnis
-
-AAS *Asset Administration Shell, engl*. *Begriff für Verwaltungsschale*
-
-AMQP *Advanced Message Queueing Protocol*
-
-AP *Arbeitspaket*
-
-API *Application Programming Interface*, *Programmierschnittstelle*
-
-BPMN *Business Process Model and Notation*
-
-ERP *Enterprise Resource Planning*
-
-HTTP *Hypertext Transfer Protocol*
-
-MQTT *Message Queuing Telemetry Transport*
-
-OEM *Original Equipment Manufacturer*
-
-OPC UA *OPC Unified Architecture, Standard für den Datenaustausch*
-
-PCF *Product Carbon Footprint*
-
-REST *Representational State Transfer*
-
-SDK *Software Development Kit*
+# <a name="Fussnoten">Fussnoten
