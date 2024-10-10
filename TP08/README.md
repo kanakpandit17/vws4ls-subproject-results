@@ -83,7 +83,7 @@ Bitte beachten Sie, dass die beschriebenen Links lediglich intern (innerhalb des
 #### Benötigte Komponenten/Services für Data Provisioning
 Wie in Abschnitt 8.3.3 beschrieben sind alle Akteure (OEM, Tier 1, Tier 2) Data Provider. Dementsprechend benötigen sie folgende Komponenten[^1] die im Catena-X Operating Model[^2] als Enablement Services klassifiziert werden:
 
-[^1]: https://eclipse-tractusx.github.io/docs-kits/kits/Digital%20Twin%20Kit/Operation%20View%20Digital%20Twin%20Kit\#deployment
+[^1]: https://eclipse-tractusx.github.io/docs-kits/kits/Digital%20Twin%20Kit/Operation%20View%20Digital%20Twin%20Kit/#deployment
 
 [^2]: https://catenax-ev.github.io/docs/next/operating-model/what-service-map
 
