@@ -1091,9 +1091,6 @@ Die Überschneidungen an äquivalenten Services, kann man auf der folgenden Abbi
 *Abbildung 8-13: BaSyx-Integration in Use Case*
 
 ### <a name="8.3.5"></a>8.3.5 Umsetzung des Use Cases
-
-#### Catena-X Anforderungen an die VWS des Leitungssatzes
-
 Für die Modellierung der Digitalen Zwillinge wurden im Projekt VWS4LS spezifierte Submodelltemplates der IDTA verwendet.
 
 Catena-X ist hauptsächlich Use-Case getrieben. Die Use Cases beschreiben ihre Anforderungen an Submodels in sog. "Aspektmodellen". Möchte man an einem Use Case von Catena-X teilnehmen, müssen die jeweiligen [Catena-X-Standards](https://catena-x.net/de/angebote-standards/catena-x-standards) eingehalten werden. Der Standardisierungsprozess wird vom Catena-X Verein vorgenommen.
@@ -1102,7 +1099,7 @@ Beide Modellierungskonzepte zielen darauf ab, Daten und Prozesse innerhalb eines
 
 Im Folgenden gilt es daher zu klären, welche Unterschiede sich zwischen den IDTA-Submodellen und den Catena-X-Aspektmodellen ergeben und wie diese für eine Anwendung in Catena-X angepasst werden müssen.
 
-##### Catena-X Aspektmodelle
+#### Catena-X Aspektmodelle
 
 Catena-X beschreibt das Konzept der "[Aspektmodelle](https://catena-x.net/fileadmin/user_upload/Standard-Bibliothek/Archiv/8_PC_Semantics_v2.1/SEM-002_BAMM_PlatformCapabilitySemantics_v2.1.pdf)", um domänenspezifische Sichten oder Aspekte eines digitalen Zwillings zu definieren, die für verschiedene Anwendungsfälle innerhalb des Catena-X-Ökosystems wesentlich sind. Aspektmodelle bieten eine strukturierte Möglichkeit zur Erfassung spezifischer Geschäftsprozesse und Datenanforderungen.
 Um ein Datenmodell zu spezifizieren, wird das [Semantic Aspect Meta Model](https://eclipse-esmf.github.io/samm-specification/2.1.0/index.html) (SAMM) verwendet, welches unter Verwendung des [Resource Description Format](https://www.w3.org/RDF/) (RDF) und der [Terse RDF Triple Language Syntax](https://de.wikipedia.org/wiki/Turtle_(Syntax)) (Turtle) spezifiziert, zusammen mit Validierungsregeln in der [Shapes Constraint Language](https://www.w3.org/TR/shacl/) (SHACL). Aspektmodelle werden ebenfalls in RDF/Turtle spezifiziert, wobei die SAMM-Semantik befolgt wird.
@@ -1119,13 +1116,13 @@ Um ein Datenmodell zu spezifizieren, wird das [Semantic Aspect Meta Model](https
 ![image](https://github.com/user-attachments/assets/5e2fb4ee-cfa0-49ae-b3bd-5404631563de)   
 *Abbildung 8-15: Eigenschaften eines Submodells als JSON*
 
-##### IDTA-Submodelle
+#### IDTA-Submodelle
 
 Die IDTA verwendet "**Submodel Templates**", um die Darstellung von Informationen innerhalb einer Asset Administration Shell (AAS), einer digitalen Darstellung von Assets, zu standardisieren. Das Submodel-Konzept der IDTA ist breiter angelegt, um verschiedene Industriebereiche abzudecken. Die Templates definieren spezifische Datenstrukturen und Semantiken für verschiedene Arten von Informationen (z. B. technische Daten, Wartungspläne), wodurch der Austausch und die Interpretation von Daten über verschiedene Plattformen und Branchen hinweg erleichtert wird. Die Schablonen sollen die Interoperabilität erleichtern, indem sie einen gemeinsamen Rahmen bieten, der an die verschiedenen industriellen Bedürfnisse angepasst werden kann. Alle registrierten AAS Submodel Templates werden auf der [IDTA-Website](https://industrialdigitaltwin.org/en/content-hub/submodels) gelistet und im [IDTA-Github](https://github.com/admin-shell-io/submodel-templates/tree/main/published) bereitgestellt[^14].
 
 [^14]: <https://industrialdigitaltwin.org/en/content-hub/submodels>
 
-##### Verwendung von Submodel Templates der IDTA in Catena-X
+#### Verwendung von Submodel Templates der IDTA in Catena-X
 
 Catena-X schreibt dazu:
 
@@ -1144,7 +1141,7 @@ Der Catena-X-Standard [CX-0003](https://catenax-ev.github.io/docs/next/standards
 | Wenn das Projekt VWS4LS einen eigenen Use Case für Catena-X definieren möchte, sollten die verwendeten Submodelle in Catena-X gemäß des Standardisierungsprozesses standardisiert werden. Dann müssen diese dem Standard CX-0003 folgen (s.o.).  Für den Demonstrationszweck können die VWS4LS Submodelle für diesen Use Case technisch übertragen werden, entsprechen aber (außer dem Submodel „Nameplate“) nicht den Catena-X-Spezifikationen und können so nicht von Catena-X Lösungen interpretiert werden. |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
-##### Digitale Zwillinge und AAS in Catena-X
+#### Digitale Zwillinge und AAS in Catena-X
 
 In Catena-X basieren die APIs auf den Spezifikationen der Asset Administration Shell (AAS) Spezifikationen der IDTA[^17]. Um Catena-X konform zu sein, werden in der Demonstrator-Umsetzung die einzelnen Submodelle in der DTR registriert. Diese Registrierung zählt im Kontext von Catena-X als „Erschaffung eines Digitalen Zwillings“. Grundsätzlich wird zum aktuellen Entwicklungsstand nicht auf Asset-Ebene zugegriffen, sondern auf die einzelnen Submodelle, die in der DTR zu einem Asset “gebündelt“ werden können. Das JSON-Beispiel im Digital Twin KIT verdeutlicht das[^18]. Die AAS an sich wird daher nicht angesprochen. In der DTR steht lediglich der AAS-Descriptor, der wiederum die verschiedenen Submodel-Descriptoren mit den entsprechenden Endpunkten enthält.
 
@@ -1167,7 +1164,7 @@ Im [Digital Twin KIT](https://eclipse-tractusx.github.io/docs-kits/kits/Digital%
 | Als Konsequenz werden auch für den Demonstrator die Submodels als einzelne Assets angelegt. |
 |---------------------------------------------------------------------------------------------|
 
-##### Der Industry Core von Catena-X
+#### Der Industry Core von Catena-X
 
 Um zu verhindern, dass jeder Use-Case in Catena-X seine Digitalen Zwillinge unterschiedlich beschreibt, wurde der Industry Core ins Leben gerufen. „Core“ deshalb, weil er den Kern der Industrie, nämlich die Teile/Komponenten betrifft.
 
@@ -1221,7 +1218,7 @@ Die eigentliche Aggregation findet über das Submodel „SingleLevelBomAsPlanned
 
 *Abbildung 8-18: Zusammenbau Leitungssatz mit Stückliste*
 
-##### <a name="8.3.5.4.1"></a>Zugriffskontrolle (Security)
+#### <a name="8.3.5.8"></a>Zugriffskontrolle (Security)
 
 Das Projekt VWS4LS hat die Anforderung, dass der Zugriff auf einzelne Submodels beschränkt werden kann. Ergänzend zu einer „Role-Based Access Control“ (RBAC) ist also auch eine Art „[Attribute-Based Access Control](https://doi.org/10.6028/NIST.SP.800-162)“ (ABAC) [2] auf Submodell-Ebene notwendig. Hierfür werden im Folgenden mögliche Konzepte vorgestellt. Es wird dabei von folgenden Annahmen ausgegangen:
 
@@ -1329,7 +1326,7 @@ Ein Peer-to-Peer Datenaustausch in Catena-X erfolgt immer über Konnektoren, die
 [^34]: <https://github.com/eclipse-tractusx/tractusx-edc>
 
 ##### Security für dieses Projekt
-Aufgrund der Datenarchitektur von Catena-X kann jedem Submodel eine individuelle Policy zugeordnet und somit der Zugriff auf Submodel-Ebene beschränkt werden, wie es auch der Anforderung an dieses Projekt entspricht (siehe Abschnitt [Zugriffskontrolle (Security)](#8.3.5.4.1)).
+Aufgrund der Datenarchitektur von Catena-X kann jedem Submodel eine individuelle Policy zugeordnet und somit der Zugriff auf Submodel-Ebene beschränkt werden, wie es auch der Anforderung an dieses Projekt entspricht (siehe Abschnitt [Zugriffskontrolle (Security)](#8.3.5.8)).
 
 | Die Zugriffsbeschränkung für diesen demonstrativen Use Case wir mit dem Konzept der Policies nach Catena-X umgesetzt. Die anderen Konzepte (ABAC) finden sich noch in der Definition und können daher in diesem Projekt noch nicht umgesetzt werden. |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1778,7 +1775,7 @@ Die in den folgenden Abschnitten beschriebenen Testdaten werden für den Use Cas
 
 ##### Testdaten von Kostal (Terminals)
 
-| AAS                                      | Submodels                 | Benötigte Informationen                                                                                                                      |
+| [AAS](https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP08/Testdaten/Kostal/)                                      | Submodels                 | Benötigte Informationen                                                                                                                      |
 |------------------------------------------|---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | Kostal_Terminal_MLK_1-2_0,5mm_2024_01_25 | PartTypeInformation       | “catenaXId”:  „91d54b9c-d950-4309-85e0-2de72d4797eb“ “manufacturerPartId”: "32140734113 " “nameAtManufacturer”: "Kostal_MLK_1,2_32140734113" |
 |                                          | SingleLevelBomAsPlanned   | Keine ChildItems, da unbekannt                                                                                                               |
@@ -1804,7 +1801,7 @@ Die in den folgenden Abschnitten beschriebenen Testdaten werden für den Use Cas
 
 ##### Testdaten von Coroplast (Leitungen)
 
-| AAS                                    | Submodels [JSON]        | Inhalt                                                                                                                              |
+| [AAS](https://github.com/VWS4LS/vws4ls-subproject-results/tree/main/TP08/Testdaten/Coroplast)                                    | Submodels [JSON]        | Inhalt                                                                                                                              |
 |----------------------------------------|-------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Coroflex_Leitung_0,5mm²_HMI_2024_02_12 | PartTypeInformation     | “catenaXId”:  “fa120983-4d82-4f94-a06a-c6d648f5bfd9” “manufacturerPartId”: "9-2611" “nameAtManufacturer”: "COROFLEX_FLR31_0_5"      |
 |                                        | SingleLevelBomAsPlanned | Keine ChildItems, da unbekannt                                                                                                      |
@@ -1829,7 +1826,7 @@ Die in den folgenden Abschnitten beschriebenen Testdaten werden für den Use Cas
 
 | AAS                             | Submodels               | Inhalt                                                                                                                       |
 |---------------------------------|-------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| Kostal_GEHAEUSE_MLK_1-2_2024_01 | PartTypeInformation     | “catenaXId”: “18a3e5f8-cf00-491b-b690-d176cb9a5848” “manufacturerPartId”: "987-654-381” “nameAtManufacturer”: "AAS_GEHAEUSE" |
+| [Kostal_GEHAEUSE_MLK_1-2_2024_01](https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP08/Testdaten/Kostal_GEHAEUSE_MLK_1-2/Kostal_GEHAEUSE_MLK_1-2_2024_01.aasx) | PartTypeInformation     | “catenaXId”: “18a3e5f8-cf00-491b-b690-d176cb9a5848” “manufacturerPartId”: "987-654-381” “nameAtManufacturer”: "AAS_GEHAEUSE" |
 |                                 | SingleLevelBomAsPlanned | Keine ChildItems, da unbekannt                                                                                               |
 |                                 | Nameplate               | Vom Projekt vorgegeben                                                                                                       |
 |                                 | HandoverDocumentation   | Vom Projekt vorgegeben                                                                                                       |
@@ -1840,13 +1837,13 @@ Die in den folgenden Abschnitten beschriebenen Testdaten werden für den Use Cas
 
 | AAS                                 | Submodels           | Inhalt                                                                                                                          |
 |-------------------------------------|---------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| OEM_SupplierRequirements_2024_08_01 | AuthorizedSuppliers | globalAssetId: f446097f-fa75-435b-a88d-a7d80240df0e AuthorizedSuppliersList: BPNL00000003B2OM BPNL00000003CSGV BPNL00000003B5MJ |
+| [OEM_SupplierRequirements_2024_08_01](https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP08/Testdaten/OEM_SupplierRequirements_2024_08_01.aasx) | AuthorizedSuppliers | globalAssetId: f446097f-fa75-435b-a88d-a7d80240df0e AuthorizedSuppliersList: BPNL00000003B2OM BPNL00000003CSGV BPNL00000003B5MJ |
 
 ##### Aggregierte Daten von Tier 1
 
 | AAS                     | Submodels               | Inhalt                                           |                  |        |
 |-------------------------|-------------------------|--------------------------------------------------|------------------|--------|
-| ZusammenbauLeitungssatz | PartTypeInformation     | CatenaXId:  d39a99cd-e6b3-4ad1-8890-2f89b7046aa4 |                  |        |
+| [ZusammenbauLeitungssatz](https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP08/Testdaten/Tier1(Aggregation)/Tier_1_ZusammenbauLeitungssatz.aasx) | PartTypeInformation     | CatenaXId:  d39a99cd-e6b3-4ad1-8890-2f89b7046aa4 |                  |        |
 |                         | SingleLevelBomAsPlanned | CatenaXId  (Kind-Teil)                           | BPNL             | Anzahl |
 |                         |                         | fa120983-4d82-4f94-a06a-c6d648f5bfd9             | BPNL00000003B2OM | 6      |
 |                         |                         | 96be3640-cae3-495d-bd20-0c700fae6ef6             | BPNL00000003B2OM | 6      |
