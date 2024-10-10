@@ -1,0 +1,105 @@
+{
+  "idShort": "PartTypeInformation",
+  "description": [
+    {
+      "language": "en",
+      "text": "A Part Type Information represents an item in the Catena-X Bill of Material (BOM) on a type level in a specific version."
+    }
+  ],
+  "administration": {},
+  "id": "urn:samm:io.catenax.part_type_information:1.0.0#PartTypeInformation/submodel",
+  "kind": "Template",
+  "semanticId": {
+    "type": "ModelReference",
+    "keys": [
+      {
+        "type": "ConceptDescription",
+        "value": "urn:samm:io.catenax.part_type_information:1.0.0#PartTypeInformation"
+      }
+    ]
+  },
+  "submodelElements": [
+    {
+      "idShort": "catenaXId",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "Catena-X ID"
+        }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "ConceptDescription",
+            "value": "urn:samm:io.catenax.part_type_information:1.0.0#catenaXId"
+          }
+        ]
+      },
+      "valueType": "xs:string",
+      "value": "urn:uuid:d39a99cd-e6b3-4ad1-8890-2f89b7046aa4",
+      "modelType": "Property"
+    },
+    {
+      "idShort": "PartTypeInformationEntity",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "Part Type Information Entity"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Encapsulation for data related to the part type."
+        }
+      ],
+      "value": [
+        {
+          "idShort": "manufacturerPartId",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "Manufacturer Part ID"
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "ConceptDescription",
+                "value": "urn:samm:io.catenax.part_type_information:1.0.0#manufacturerPartId"
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "123-456",
+          "modelType": "Property"
+        },
+        {
+          "idShort": "nameAtManufacturer",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "Name at manufacturer"
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "ConceptDescription",
+                "value": "urn:samm:io.catenax.part_type_information:1.0.0#nameAtManufacturer"
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "value": "Leitungssatz Variante 1",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "SubmodelElementCollection"
+    }
+  ],
+  "modelType": "Submodel"
+}
