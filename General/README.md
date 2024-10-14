@@ -160,7 +160,7 @@ Aus dieser Positionierung ergaben sich für das Projekt relevante Chancen, aber 
 Im Rahmen eines projektinternen Workshops am 16.02.2023 wurde ein Big-Picture zur Orientierung für das Gesamtprojekt erstellt. Als Orientierungsrahmen diente dabei das Themenpuzzle in *Abbildung* 121. Die Teilnehmer, sowohl Experten aus dem Bereich der Leitungssatzbranche als auch aus dem Bereich der Verwaltungsschale, sollten klären, welche Lücken für die Anwendbarkeit der Verwaltungsschale in einer realen Wertkette geschlossen werden müssen und was aus Sicht der führenden Institute aus dem Bereich der Verwaltungsschalenanwendung schon möglich ist, bzw. in naher Zukunft umgesetzt werden kann.
 
 ![image](https://github.com/user-attachments/assets/1c462a99-ed29-47b9-9453-1a8c216a1b32)   
-Abbildung 121: Ausgangspunkt Big Picture Workshop – Leitfragen und Erkenntnisziele
+Abbildung 12-1: Ausgangspunkt Big Picture Workshop – Leitfragen und Erkenntnisziele
 
 Um die Ausarbeitung voranzutreiben, wurde zu Beginn als gemeinsamer Startpunkt ein konkreter Use Case festgelegt, hier der Crimp-Prozess, anhand dessen die relevanten umsetzungstechnischen Fragen an die VWS formuliert wurden.
 
@@ -171,14 +171,14 @@ Wesentliche identifizierte Kernpunkte für die architektonischen Gestaltungsfeld
 Ein typischer **zentral orientierter Architekturansatz** ist in *Abbildung* 122 dargestellt. Bei der Diskussion dieses Ansatzes wurde jedoch deutlich, dass er nicht in jeder Situation der Leitungssatzentwicklung und -produktion genutzt würde und sich außerdem die Frage stellt, wer für die Verwaltung des zentralen VWS-Repositories zuständig wäre.
 
 ![image](https://github.com/user-attachments/assets/ab7149a5-6b64-4ff8-9504-c450a8db38b5)   
-Abbildung 122: Zentrale VWS-Architektur
+Abbildung 12-2: Zentrale VWS-Architektur
 
 Bei einer **dezentralen Architektur** wird davon ausgegangen wird, dass der OEM und jeder Zulieferer ihr eigenes Repository hosten, d.h. es im System mehr als eine VWS-Registry und ein VWS-Repository gibt [2]. Jeder Auftraggeber in der Wertkette betreibt eine Registry, um es den Auftragnehmern zu ermöglichen, sich an der jeweiligen VWS des Auftraggebers anzumelden. Die resultierende IT-Architektur könnte sich wie in *Abbildung* 123 dargestellt an der entwickelten VWS-Struktur des Bordnetzes orientieren und eine entsprechende Vernetzung von VWS-Repositories und -Registries in einem vermaschten Netzwerk ergeben, in der jedes Unternehmen seine VWS anderen Unternehmen zur Verfügung stellen kann. Das geschieht über die Bereitstellung von VWS-Registries auf der Seite der Unternehmen, die Daten nach außen geben wollen. Durch entsprechende Zugriffsbeschränkungen können dann externe Unternehmen auf die für sie freigegebenen VWS zugreifen. Diese Informationen aus der Referenzierung können später für die Synchronisation genutzt werden.
 
 Anmerkung: *Abbildung* 123 zeigt die erweiterte dezentrale Architektur beispielhaft mit nur einem OEM
 
 ![image](https://github.com/user-attachments/assets/c33de2a5-2699-460b-8da9-e5c31581b0d9)   
-Abbildung 123: Dezentrale VWS-Architektur
+Abbildung 12-3: Dezentrale VWS-Architektur
 
 Bei diesem dezentralen Ansatz setzen sich die Informationen der VWS einer Leitungssatz-Komponente (LS-Komponente) also über die Hierarchiestufen mehrerer Unternehmen zusammen, deren VWS aufeinander verweisen. Beispielsweise werden die Daten für LS-Komponenten von den Komponentenherstellern initial erzeugt und später von dem Konfektionär oder OEM genutzt, jedoch mit einer reduzierten Sicht auf die Inhalte (bspw. werden lediglich Informationen wie bzw. Digital Nameplate [3] und Produktdaten [4] weitergegeben).
 
@@ -189,7 +189,7 @@ Ein wichtiger Punkt im Kontext der Architektur ist die Definition des sog. „Si
 Aus den bisherigen Ergebnissen des VWS4LS-TP2 „Entwicklung des Leitungssatzes“, geht hervor, dass der SPoT in den verschiedenen Lebenszyklen des Leitungssatzes immer bei einem anderen Teilnehmer liegt und deshalb eine entsprechende Rückverfolgbarkeit durch die Schichten gewährleistet sein muss. In der Entwicklungsphase bspw. besitzt der OEM den SPoT, während in der Produktion der Konfektionär den SPoT besitzt (*Abbildung* 124).
 
 ![image](https://github.com/user-attachments/assets/6532990c-3f7b-4c9e-841b-55957af61347)   
-Abbildung 124: Wechselnder SPoT im Lebenszyklus des Leitungssatzes
+Abbildung 12-4: Wechselnder SPoT im Lebenszyklus des Leitungssatzes
 
 Wobei sich die Frage stellt, ob diese Festlegung über alle Schichten (Tier-1 bis Tier-n) hinweg gültig ist, oder es in jeder Schicht SPoT’s geben kann, die nur an die dortige LS-Komponente gebunden sind.
 
@@ -200,7 +200,7 @@ Ist ein Schaden in der Elektronik an einem Auto aufgetreten, wendet sich der Kun
 Das Beispiel in *Abbildung* 125 verdeutlicht, wie die VWS-Struktur den Aufbau des Leitungssatzes abbildet und wo die kontextabhängigen SPoTs liegen, die zusammen ein sog. „Network of Truth“ bilden.
 
 ![image](https://github.com/user-attachments/assets/c8738dc6-4fd0-4953-95c5-b05cc06c37d2)   
-Abbildung 125: Network of Truth
+Abbildung 12-5: Network of Truth
 
 ### Gestaltungsfelder
 
@@ -242,7 +242,7 @@ Ebenso wichtig ist die Klärung, mit wem diese Inhalte geteilt werden müssen un
 Als Orientierungshilfe diente auch das PPR-Modell) [5], um festzulegen, welches Asset eine VWS erhält und wer im Lebenszyklus des Leitungssatzes Informationen dieses Assets benötigt bzw. beiträgt (*Abbildung* 126).
 
 ![image](https://github.com/user-attachments/assets/aa140b46-d5be-4f1a-bd53-df66643ef8c1)   
-Abbildung 126: Ermittlung der Assets und Nicht-Assets mit Stakeholderzuweisung
+Abbildung 12-6: Ermittlung der Assets und Nicht-Assets mit Stakeholderzuweisung
 
 Es hat sich dabei als zielführend herausgestellt, zwischen den beiden im Projekt überwiegend betrachteten Lebensphasen des Leitungssatzes zu unterscheiden: Im **Entwicklungsprozess** stehen die Typ-Beschreibungen von Modulen des Leitungssatzes im Mittelpunkt und dementsprechend deren VWS. Im **Produktionsprozess** geht es hingegen um die Instanzen der verbauten Module, also die konkreten Umsetzungen der im Entwicklungsprozess definierten Assets. Dementsprechend werden für den Produktionsprozess Verwaltungsschalen für die Instanzen von Modulen benötigt.
 
@@ -255,14 +255,14 @@ Ein Funktionsmodul lässt sich wiederum in mehrere Halbfabrikate unterteilen. Ei
 Zudem werden die **Ressourcen** mit ihren Informationen betrachtet, die im Produktionsprozess zur Herstellung des Leitungssatzes genutzt werden (siehe *Abbildung* 127).
 
 ![image](https://github.com/user-attachments/assets/e3c131f8-e4b3-49ae-9921-377fa9c85af5)   
-Abbildung 127: Modularisierung des Leitungssatzes
+Abbildung 12-7: Modularisierung des Leitungssatzes
 
 ### Verwaltungsschalen im Entwicklungsprozess
 
 Im Entwicklungsprozess des Leitungssatzes entstehen bei den verschiedenen Stakeholdern eigene VWS für ein und dasselbe Asset, was in *Abbildung* 128 schematisch dargestellt ist.
 
 ![image](https://github.com/user-attachments/assets/9d3cc8d6-cb94-4bce-8e22-e851beb28270)   
-Abbildung 128: Übersicht über VWS der jeweiligen Stakeholder im Entwicklungsprozess
+Abbildung 12-8: Übersicht über VWS der jeweiligen Stakeholder im Entwicklungsprozess
 
 Hierbei kann davon ausgegangen werden, dass die Stakeholder sowohl Asset-Informationen aus den VWS anderer Stakeholder beziehen als auch selbst Informationen zum Asset hinzufügen wollen. Deshalb wurde entschieden, die Möglichkeit der Existenz mehrerer VWS zu einem Asset zuzulassen und die Zuordnung der VWS untereinander über Versionierung und Verlinkung zu lösen.
 
@@ -271,7 +271,7 @@ Hierbei kann davon ausgegangen werden, dass die Stakeholder sowohl Asset-Informa
 Ähnlich wie im Entwicklungsprozess, gibt es auch für den Produktionsprozess des Leitungssatzes mehrere Stakeholder-spezifische VWS für ein und dasselbe Asset. Im Produktionsprozess entstehen somit mehrere VWS zu einem Asset, was in *Abbildung* 129 dargestellt ist.
 
 ![image](https://github.com/user-attachments/assets/94149cbc-7cf2-493b-bdc2-16efa15f752a)     
-Abbildung 129: Übersicht über VWS der jeweiligen Stakeholder im Produktionsprozess
+Abbildung 12-9: Übersicht über VWS der jeweiligen Stakeholder im Produktionsprozess
 
 ### Inhalte und Verknüpfung der Stakeholder-Verwaltungsschalen
 
@@ -290,7 +290,7 @@ Sowohl die VWS zu den Ressourcen-Typen, aus denen sich der Konfektionär eine Re
 Die *Abbildung* des modularen Aufbaus der Ressourcen wird in der Ressourcen-VWS mit Hilfe des Teilmodells *„*IDTA 02011*: Hierarchical Structures enabling Bills of Material“* [8] [8] vorgenommen, dass Referenzen auf die einzelnen VWS der Ressourcenmodule beinhaltet. In den Modul-VWS ist lediglich das digitale Typenschild [3] zur Identifizierung des Moduls vorhanden.
 
 ![image](https://github.com/user-attachments/assets/8154a64d-7087-427d-99a6-ef12779fbe15)   
-Abbildung 1210: VWS und deren Verknüpfung für die Ressource
+Abbildung 12-10: VWS und deren Verknüpfung für die Ressource
 
 Hat der Konfektionär mit Hilfe der VWS der Ressourcen-Typen seine Maschine im Entwicklungsprozess des Leitungssatzes konfiguriert und wurde diese errichtet, erhält der Konfektionär mit Anlieferung der Maschine auch die VWS der Ressourcen-Instanz und kann diese in seinem eigenen Repository abspeichern. Hierbei erhält der Konfektionär nur die Teilmodelle, die für ihn vom Maschinenhersteller freigegeben sind. Damit bei Änderungen durch den Maschinenhersteller auch die Informationen bei dem Konfektionär aktuell gehalten werden können, wird mit Hilfe der Verlinkung zwischen den beiden VWS der Ressourcen-Instanz eine Beziehung gelegt.
 
@@ -309,12 +309,12 @@ Im Austausch mit dem Konfektionär gibt der OEM seine VWS *OEM-Komponente* an de
 Der Werkzeughersteller, der nur an den Komponenteninformationen interessiert ist, ohne diese verändern zu wollen, kann die Informationen immer direkt vom Server des Herstellers abgreifen oder sie sich in seinem eigenen System ablegen. Der beschriebene Aufbau für den Entwicklungsprozess ist in *Abbildung* 1211 zu sehen.
 
 ![image](https://github.com/user-attachments/assets/545394a5-f9bc-47f7-af29-ad3b3aaaac14)   
-Abbildung 1211: VWS und deren Verknüpfung für die Komponente im Entwicklungsprozess
+Abbildung 12-11: VWS und deren Verknüpfung für die Komponente im Entwicklungsprozess
 
 Im **Produktionsprozess** des Leitungssatzes sind nur noch der Komponentenhersteller und Konfektionär beteiligt, weshalb sich die Systemarchitektur weniger komplex als im Entwicklungsprozess gestaltet. Jede VWS der Komponenten-Instanzen werden beim Komponentenhersteller in einem dafür vorgesehen Repository abgelegt. Bei Auslieferung der Komponente, wird eine Kopie dieser VWS an den Konfektionär übergeben und zusätzlich eine Verlinkung zwischen dem Original und der Kopie eingefügt. Eine Synchronisation der kopierten VWS ist hierbei nicht vorgesehen, da Änderungen an den Informationen zu einer bereits produzierten Komponente unwahrscheinlich sind. Prinzipiell ist jedoch eine manuelle Synchronisation möglich. Zu sehen ist der Aufbau in *Abbildung* 1212.
 
 ![image](https://github.com/user-attachments/assets/161bc4f4-d99c-410d-a78f-900019b80fbd)   
-Abbildung 1212: VWS und deren Verknüpfung für die Komponente im Produktionsprozess
+Abbildung 12-12: VWS und deren Verknüpfung für die Komponente im Produktionsprozess
 
 #### VWS für den Leitungssatz
 
@@ -327,15 +327,15 @@ In den VWS, die der Konfektionär erstellt, kommt als Teilmodell die Manufacturi
 Während des Produktionsprozesses, werden die VWS für die Instanzen aus den VWS des Leitungssatzes und seiner Funktionsmodule und Halbfabrikate aus dem Entwicklungsprozess abgeleitet und mit Instanz-Informationen angereichert. Die VWS zu den Instanzen werden in einem separaten Server gespeichert, auf den der OEM später Zugriff hat. Außer dem Produktmodell und der dazugehörigen Dokumentation, verbleiben alle weiteren Informationen bei dem Konfektionär allein. Zu sehen ist der Aufbau in *Abbildung* 1214.
 
 ![image](https://github.com/user-attachments/assets/1d410311-09fd-4b97-906d-43dc34ddf338)   
-Abbildung 1213: VWS und deren Verknüpfung für den Leitungssatz im Entwicklungsprozess
+Abbildung 12-13: VWS und deren Verknüpfung für den Leitungssatz im Entwicklungsprozess
 
 ![image](https://github.com/user-attachments/assets/5fd5b883-1f58-4a7e-a243-717123a1b88f)   
-Abbildung 1214: VWS und deren Verknüpfung für den Leitungssatz im Produktionsprozess
+Abbildung 12-14: VWS und deren Verknüpfung für den Leitungssatz im Produktionsprozess
 
 Wird mit Auslieferung des Leitungssatzes der Montageprozess für diesen angestoßen, erhält der OEM eine VWS mit lediglich dem Produktmodell und der Übergabedokumentation (siehe *Abbildung* 1215). Diese kann der OEM in seinem eigenen System ablegen. Alle anderen Informationen stehen dem OEM nicht direkt zur Verfügung. Jedoch kann der OEM in Spezialfällen einzelne dieser Informationen beim Konfektionär anfordern.
 
 ![image](https://github.com/user-attachments/assets/35b28018-d786-4160-b2ee-0915d18ed9a4)   
-Abbildung 1215: VWS und deren Verknüpfung für den Leitungssatz im Montageprozess
+Abbildung 12-15: VWS und deren Verknüpfung für den Leitungssatz im Montageprozess
 
 ## Verlinkung
 
@@ -362,7 +362,7 @@ Das Produktmodell besteht aus den folgenden Teilmodellen:
 Die *ProductSpecification*, *ProductConfigurationBoM* und *ProductBoM* werden in der Typ-Verwaltungsschale des Leitungssatzes zusammengefasst (*Abbildung* 1216).
 
 ![image](https://github.com/user-attachments/assets/45ad3fd0-0b29-4efc-b9cc-9ff57d5fb8c3)   
-Abbildung 1216: Typ-VWS des Leitungssatzes aus Sicht des OEM
+Abbildung 12-16: Typ-VWS des Leitungssatzes aus Sicht des OEM
 
 Diese VWS beschreibt den kompletten Aufbau des 150% Leitungssatzes aus Sicht des OEM. Der Konfektionär erstellt von dieser VWS eine Kopie und reichert diese mit seiner *ManufacturingBoM* an.
 
@@ -371,7 +371,7 @@ Diese VWS beschreibt den kompletten Aufbau des 150% Leitungssatzes aus Sicht des
 Die *ProductSpecification* beinhaltet eine vollständige Spezifikation des Assets als KBL-, VEC- oder vergleichbares Informationsmodell mit *Relationship*-Elementen, um Beziehungen zwischen dem Informationsmodell und anderen Teilmodellen herzustellen (*Abbildung* 1217). Es dient in erster Linie als Bindeglied zwischen Informationsfragmenten des serialisierten Informationsmodells (z.B. XML) und anderen Teilmodellen der Verwaltungsschale. Da für die *ProductSpecification* zum aktuellen Zeitpunkt keine geeignete Teilmodellvorlage der IDTA existiert, wird hilfsweise direkt die KBL- oder VEC-Datei als solche in der VWS mitgeführt. Das könnte zukünftig als Best-Practice-Ansatz in eine IDTA-Submodell-Definition übernommen.
 
 ![image](https://github.com/user-attachments/assets/cd079082-ec15-430c-8120-8420f5df7297)   
-Abbildung 1217: Teilmodell "ProductSpecification"
+Abbildung 12-17: Teilmodell "ProductSpecification"
 
 #### Teilmodell ProductBoM
 
@@ -382,14 +382,14 @@ Die *ProductBoM* beinhaltet alle Komponenten, die in einem Asset verwendet werde
 Die *ProductBoM* kann auch zusammengesetzte Komponenten enthalten. In diesem Fall besteht eine zusammengesetzte Komponente aus einer oder mehreren Teilkomponenten, die jeweils auf die Verwaltungsschalen des Komponententyps verweisen.
 
 ![image](https://github.com/user-attachments/assets/91d0072a-8dec-47da-9f3e-0719ab89684c)   
-Abbildung 1218: Teilmodell "ProductBoM"
+Abbildung 12-18: Teilmodell "ProductBoM"
 
 #### Teilmodell ProductConfigurationBoM
 
 Die *ProductConfigurationBoM* beinhaltet alle Optionen bzw. Varianten, aus denen spätere Asset-Instanzen zusammengesetzt werden können. Hierfür wird die Teilmodellvorlage „IDTA 02011: Hierarchical Structures enabling Bills of Material“verwendet und für jede Option bzw. Variante eine *Co-Managed Entity* erzeugt, die wiederum aus einer oder mehreren Halbfabrikaten oder Komponenten besteht (*Abbildung* 1219).
 
 ![image](https://github.com/user-attachments/assets/64af2df9-8176-4780-a80a-b30a3f1530c6)   
-Abbildung 1219: Teilmodell "ProductConfigurationBoM"
+Abbildung 12-19: Teilmodell "ProductConfigurationBoM"
 
 Sowohl die *ProductBoM* als auch die *ProductConfigurationBoM* werden durch die *ProductSpecification* referenziert. Des Weiteren bestehen zwischen den Entitäten der *ProductConfigurationBoM* und der *ProductBoM* *sameAs*-Beziehungen, um die semantische Äquivalenz der Komponenten eindeutig zu definieren.
 
@@ -398,7 +398,7 @@ Sowohl die *ProductBoM* als auch die *ProductConfigurationBoM* werden durch die 
 Aus den Teilmodellen *ProductSpecification*, *ProductBoM*, *ManufacturingBoM* und *ManufacturingConfigurationBoM* ergibt sich ein Gesamtmodell der Typ-Verwaltungsschale des 150% Leitungssatzes aus Sicht des Konfektionärs (*Abbildung* 1220).
 
 ![image](https://github.com/user-attachments/assets/76894c68-38b3-4e3f-acb8-4571fe927c21)   
-Abbildung 1220: Typ-VWS des Leitungssatzes aus Sicht des Konfektionärs
+Abbildung 12-20: Typ-VWS des Leitungssatzes aus Sicht des Konfektionärs
 
 Die hier dargestellte Struktur wird rekursiv für alle Halbfabrikate des Konfektionärs angewendet. Bei Halbfabrikaten ohne Varianz kann die *ManufacturingConfigurationBoM* entfallen (die *sameAs*-Beziehung zwischen Halbfabrikat der *ManufacturingBoM* und *ConfigurationElement* der *ManufacturingConfigurationBoM* des nächsten Halbfabrikats ist optional).
 
@@ -411,35 +411,35 @@ Um den Zusammenhang mit den Komponenten und Entitäten des OEM darzustellen, hin
 Sollte vom OEM keine Verwaltungsschale zur Verfügung stehen, hat der Konfektionär grundsätzlich die Möglichkeit auf diese Verknüpfungen zu verzichten und unabhängig zu agieren.
 
 ![image](https://github.com/user-attachments/assets/c913d353-831b-4871-a27b-5dde1e0f0fbc)   
-Abbildung 1221: Typ-VWS des Leitungssatzes aus Sicht des Konfektionärs
+Abbildung 12-21: Typ-VWS des Leitungssatzes aus Sicht des Konfektionärs
 
 #### Teilmodell ManufacturingBoM (Konfektionär)
 
 Die *ManufacturingBoM* beschreibt den Zusammenbau des Leitungssatzes bzw. eines Halbfabrikats aus Komponenten und Halbfabrikaten (*Abbildung* 1222). Hierfür wird die Teilmodellvorlage „IDTA 02011: Hierarchical Structures enabling Bills of Material“ [8] verwendet. Für jedes Halbfabrikat und für jede Komponente werden entsprechende *Self-Managed Entities* erzeugt. Diese verweisen auf die VWS der Halbfabrikate bzw. Komponenten.
 
 ![image](https://github.com/user-attachments/assets/959405a8-f566-47f5-8c26-187da3efbdb6)   
-Abbildung 1222: Teilmodell "ManufacturingBoM"
+Abbildung 12-22: Teilmodell "ManufacturingBoM"
 
 #### Teilmodell ManufacturingConfigurationBoM (Konfektionär)
 
 Die *ManufacturingBoM* wird mit der *ManufacturingConfigurationBoM* verlinkt, die an Stelle der *ProductConfigurationBoM* des OEM tritt (*Abbildung* 1223). Hierdurch kann von einer konkreten Leitungssatz-Konfiguration auf die notwendigen Halbfabrikate und Komponenten der *ManufacturingBoM* geschlossen werden.
 
 ![image](https://github.com/user-attachments/assets/91ff133d-2bc4-47ec-8129-4951ff142bff)   
-Abbildung 1223: Beziehungen "ManufacturingConfigurationBoM" und "ManufacturingBoM"
+Abbildung 12-23: Beziehungen "ManufacturingConfigurationBoM" und "ManufacturingBoM"
 
 #### Teilmodell ProductBoM (Konfektionär)
 
 Die *ProductBoM* des OEM bleibt weitestgehend unverändert bestehen. Der Konfektionär fügt bei Bedarf zusätzliche Komponenten hinzu und ändert die *AssetReferenzen* auf entsprechende Typ-Verwaltungsschalen seiner eigenen Komponenten, die wiederum mittels *specificAssetId* auf die Typ-Verwaltungsschalen des OEM verweisen. Des Weiteren werden *sameAs*-Beziehungen zwischen den Komponenten der *ManufacturingBoM* und der *ProductBoM* hergestellt, um semantisch klarzustellen, dass es sich hierbei um dieselbe Komponente handelt (*Abbildung* 1224).
 
 ![image](https://github.com/user-attachments/assets/cc2c0049-b6db-4756-b04c-99306791dfb5)   
-Abbildung 1224: Verlinkung mit dem Teilmodell "ProductBoM“
+Abbildung 12-24: Verlinkung mit dem Teilmodell "ProductBoM“
 
 ### Instanz-Verwaltungsschale des OEM
 
 Im Auftragsfall erzeugt der OEM eine Instanz-Verwaltungsschale des Leitungssatzes und hinterlegt eine *ConfigurationBoM* mit der gewünschten Ausstattung. Mittels *sameAs*-Beziehung werden die *Configuration*-Elemente mit den entsprechenden *Configuration*-Elementen der Typ-Verwaltungsschale verlinkt (*Abbildung* 1225).
 
 ![image](https://github.com/user-attachments/assets/4a7236c0-1744-4068-85d9-8bbfe239d50b)   
-Abbildung 1225: Verlinkung Typ/Instanz-VWS beim OEM
+Abbildung 12-25: Verlinkung Typ/Instanz-VWS beim OEM
 
 ### Instanz-Verwaltungsschale des Konfektionärs
 
@@ -452,7 +452,7 @@ Sollte vom OEM keine Verwaltungsschale zur Verfügung stehen, hat der Konfektion
 Die Zusammenhänge der verschiedenen Typ- und Instanz-Verwaltungsschalen sind in *Abbildung* 1226 dargestellt.
 
 ![image](https://github.com/user-attachments/assets/8a5f34fd-5b9b-414a-9c0e-b664713808bd)    
-Abbildung 1226: Typ- und Instanz-VWS für den Leitungssatz
+Abbildung 12-26: Typ- und Instanz-VWS für den Leitungssatz
 
 ### Verlinkung des VEC
 
@@ -498,13 +498,13 @@ Um in dieser Struktur auf das *Component*-Element zu verweisen, muss eine eindeu
 Um in der Verwaltungsschale auf das Element zu verweisen, wird die VEC-Datei zunächst als *File*-Element hinterlegt (*Abbildung* 1227). Anschließend wird ein *Entity*-Element erstellt, welches als Ankerpunkt dient und auf ein Asset verweist (*Abbildung* 1228). Zuletzt wird mittels eines *Relationship*-Elements eine Verlinkung zwischen dem *Entity*-Element und der VEC-Komponente hergestellt (*Abbildung* 1229).
 
 ![image](https://github.com/user-attachments/assets/f29b4f4c-bed9-4549-a34e-34bf95b142b5)   
-Abbildung 1227: VEC-Datei als File-Element in der Verwaltungsschale.
+Abbildung 12-27: VEC-Datei als File-Element in der Verwaltungsschale.
 
 ![image](https://github.com/user-attachments/assets/3bd75504-ebc6-4bf2-8fcb-7321855bd732)   
-Abbildung 1228: Entity-Element einer Komponente.
+Abbildung 12-28: Entity-Element einer Komponente.
 
 ![image](https://github.com/user-attachments/assets/bc9272f4-4ad9-4c0f-b02c-12dd056c4247)   
-Abbildung 1229: Relationship-Element mit FragmentReference in VEC-Datei
+Abbildung 12-29: Relationship-Element mit FragmentReference in VEC-Datei
 
 #### Verlinkung von Typinformationen
 
@@ -576,14 +576,14 @@ Die verschiedenen Änderungen sind dabei potenziell unabhängig voneinander und 
 -   **Change-Set** à Besteht aus mehreren AEMs und Bündelt diese zu einem Set
 
 ![image](https://github.com/user-attachments/assets/6f03b49f-979e-48d2-b50a-ce0be3745c64)   
-Abbildung 1230: Entwicklungsversionen und korrespondierende Change-Sets in der Produktion
+Abbildung 12-30: Entwicklungsversionen und korrespondierende Change-Sets in der Produktion
 
 Da die jeweils eingespielten Change Sets nicht direkt aufeinander aufbauen, ist die gängige semantische Versionierung mit aufsteigender Nummerierung (wie etwa 1.1.4  1.2.01.2.12.0.0) nicht anwendbar. In einem ersten Konzept sehen wir daher vor die „Versionsnummer“ als Textbaustein basierend auf den Change Sets der Releases zu gestalten, etwa durch Verkettung der Bezeichner/Versionsnummern der einzelnen im Release enthaltenen Änderungen. Diese Versionsnummer ist dann auch Teil der ID der entsprechenden Verwaltungsschale (siehe *Abbildung* 1231). *Abbildung* 1231 zeigt dabei beispielhaft drei Teilmodelle (CAD-Modell, Fähigkeiten, Prozesse). Vorteil dieses Aufbaus ist die menschenlesbare Dokumentation, die direkt von Experten der Branche verstanden werden kann.
 
 ### Versionierungskonzept der Verwaltungsschale
 
 ![image](https://github.com/user-attachments/assets/1e1d60a1-e76d-4c4b-b267-ab2d11e78e03)   
-Abbildung 1231: Vorgeschlagenes Versions-ID-Konzept
+Abbildung 12-31: Vorgeschlagenes Versions-ID-Konzept
 
 *Abbildung* 1231 zeigt auch, dass die Teilmodelle der Change Sets nicht direkt der zugehörigen VWS zugeordnet sind, sondern lediglich indirekt über Referenz-Teilmodelle. Dadurch können unveränderte Teilmodelle weiter referenziert werden in neuen Versionen des Teilmodells. Dies passt ebenfalls zur Struktur der Verwaltungsschale in Version 3, in der Teilmodelle als unabhängige Elemente eigenständig, etwa in einem Submodel Repository, existieren können. Somit ist es möglich ein Typ-Submodel, was in mehreren Verwaltungsschalen exakt gleich ist, zu referenzieren und bei Änderungen direkt alle Abhängigkeiten automatisch mitzupflegen.
 
@@ -594,12 +594,12 @@ Die Versionsnummer der Verwaltungsschalen und Teilmodelle sind dabei abhängig v
 Dateiname: Versionierung_Neu
 
 ![image](https://github.com/user-attachments/assets/6c452512-7e20-4ab7-9eae-2fc47212a4e0)   
-Abbildung 1232: Beispiel versionierter Verwaltungsschalen (Teilmodell
+Abbildung 12-32: Beispiel versionierter Verwaltungsschalen (Teilmodell
 
 Für den standardisierten Zugriff sehen wir eine Erweiterung des Discovery/Registry Service vor, der als Default immer die aktuelle Version einer gegebenen Verwaltungsschale bereithält. Somit ist kein Bruch zur Konvention der Verwaltungsschalendefinition vorhanden. Dennoch könnte eine Erweiterung der API, um ebenfalls auf die älteren Versionen zugreifen zu können, in Betracht gezogen. Dazu wird im ersten Entwurf ein URL-Parameter erprobt, welcher optional ist und bei nicht-verwendung das standardmäßige Verhalten des entsprechenden Services laut VWS-Definition bereithält.
 
 ![image](https://github.com/user-attachments/assets/e0e5d114-c47d-4cde-8efa-788ed1ed77c6)   
-Abbildung 1233: "Latest" default
+Abbildung 12-33: "Latest" default
 
 Technisch wird Git[^9] der auf einem davon abgeleiteten Mechanismus aufbauen, so dass Änderungen letzten Endes wie Patches behandelt werden und ein „Git-Branching resultieren.
 
@@ -614,7 +614,7 @@ Hier kennt die Anwendung die Asset-ID und fragt damit beim Discovery Service ab,
 Bei dieser Lösung muss ein Discovery- und ein Versionierungsservice entwickelt werden. Ein Discovery Service ist durch Version 3 der VWS allgemein vorgesehen und zuständig für das Auffinden von VWS zu einer Asset-ID bzw. das bidirektionale Mapping zwischen Asset und VWS.
 
 ![image](https://github.com/user-attachments/assets/7818a6d9-cd67-4a75-a1ef-23f018e09472)   
-Abbildung 1234: Zugriff mit Discovery und Registry
+Abbildung 12-34: Zugriff mit Discovery und Registry
 
 ### Zugriff ohne Discovery
 
@@ -623,7 +623,7 @@ In diesem Fall sendet die Anwendung ein *GET-Request* zu der Registry mit der As
 Bei dieser Lösung übernimmt die Registry die Discovery-Funktion, und hat direkte Interaktion mit dem Versionierungsservice. Für diese Variante muss eine VWS-Registry ebenfalls das Auflösen der Versionsnummer übernehmen und entsprechend erweitert werden.
 
 ![image](https://github.com/user-attachments/assets/cc05e52e-9210-4334-98f6-ed0b78720995)   
-Abbildung 1235: Zugriff ohne Discovery
+Abbildung 12-35: Zugriff ohne Discovery
 
 ### Zugriff ohne Registry
 
@@ -632,7 +632,7 @@ In dieser Variante fragt die Anwendung den Discovery Service mit der *Asset-ID* 
 Bei dieser Lösung muss die Anwendung die Logik zu Auflösung der vollständigen ID kennen, um die relevante VWS zu finden. Dies hat den Nachteil, dass die Entwickler von Anwendungen Kenntnisse über diesen Mechanismus haben müssen, um die relevante VWS zu finden.
 
 ![image](https://github.com/user-attachments/assets/a798fec3-37b3-465d-b403-40056c8bc6e3)   
-Abbildung 1236: Zugriff ohne Registry
+Abbildung 12-36: Zugriff ohne Registry
 
 ## Synchronisation
 
@@ -696,7 +696,7 @@ Folgende Informationen sind im Rahmen des Verhandlungsprozesses für die Synchro
 6.  Weitere Parameter für die Steuerung des Fehlerhandlings wie z.B. Mindestzeitintervall für die Pufferung bei fehlerhaften Zustellversuchen
 
 ![image](https://github.com/user-attachments/assets/b9dab30e-6765-4ec5-851b-860574c9bc44)   
-Abbildung 1237: VWS-Synchronisation: Teilmodell zur Konfiguration der Synchronisationsbeziehung
+Abbildung 12-37: VWS-Synchronisation: Teilmodell zur Konfiguration der Synchronisationsbeziehung
 
 Der 4. Parameter kann bei sich häufig ändernden Werten sinnvoll sein, um das Nachrichtenaufkommen zu regulieren. So kann man die Häufigkeit an die Anforderungen der Empfängerseite und an die gegebenen technischen Rahmenbedingungen der Netzwerkkommunikation anpassen. Dieser Parameter ist optional zu sehen. Erfolgt eine Änderung am Teilmodell innerhalb des Zeitintervalls wird zunächst keine Synchronisationsnachricht gesendet. Erst nachdem das Zeitintervall verstrichen ist, wird wieder eine Synchronisationsnachricht gesendet, die in einer Nachricht alle geänderten Teilmodellelemente mit dem jeweils aktuellen Wert beinhaltet.
 
@@ -723,7 +723,7 @@ Die erste Nachricht beinhaltet das komplette Teilmodell, um den *Service Request
 Die Besonderheit des Ausschreibungsverfahrens in diesem Kontext ist die Tatsache, dass nur ein *Service Provider* angefragt wird. Nur die Verwaltungsschale, die den SPoT darstellt, kann diesen Service erbringen.
 
 ![image](https://github.com/user-attachments/assets/f04d78c8-267a-4030-b978-c56ea63f2562)   
-Abbildung 1238: Interaktionsprotokoll zur VWS-Synchronisation
+Abbildung 12-38: Interaktionsprotokoll zur VWS-Synchronisation
 
 ### Senden von I4.0-Nachrichten zur Synchronisation
 
@@ -829,7 +829,7 @@ Je nachdem, ob der Änderungsbedarf durch den OEM oder von einem Tier festgestel
 In diesem Szenario stellt der OEM einen Änderungsbedarf fest und startet den Änderungsprozess. Dieser ist in 10 Einzelschritte aufgegliedert (*Abbildung* 1237):
 
 ![image](https://github.com/user-attachments/assets/fba29450-13f2-4de8-818a-e40aadb16617)   
-Abbildung 1239: Änderungsmanagement: Änderungsbedarf vom OEM.
+Abbildung 12-39: Änderungsmanagement: Änderungsbedarf vom OEM.
 
 1.  Änderungsidentifikation:
     -   Zunächst stellt der OEM einen Änderungsbedarf fest und löst damit den Änderungsprozess aus.
@@ -877,7 +877,7 @@ Abbildung 1239: Änderungsmanagement: Änderungsbedarf vom OEM.
 In diesem Szenario stellt der Tier X einen Änderungsbedarf fest und löst den Änderungsprozess aus. Dieser ist in 9 Einzelschritte mit diversen Entscheidungswegen untergliedert (*Abbildung* 1238):
 
 ![image](https://github.com/user-attachments/assets/d49e0a84-50c1-41cb-81b5-1181b792956f)   
-Abbildung 1240: Änderungsmanagement: Änderungsbedarf vom Tier X
+Abbildung 12-40: Änderungsmanagement: Änderungsbedarf vom Tier X
 
 1.  Änderungsidentifikation:
     -   Der Prozess beginnt mit der Identifikation einer notwendigen Änderung durch Tier X.
@@ -915,7 +915,7 @@ Dateiname: [Änderungsmanagement.aasx](https://github.com/VWS4LS/vws4ls-subproje
 [^12]: <https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/General/Aenderungsmanagement.aasx>
 
 ![image](https://github.com/user-attachments/assets/5c8093e0-2c83-4297-b492-c28c2720feed)   
-Abbildung 1240: ÄM_Konfigurationsobjekt
+Abbildung 12-41: ÄM_Konfigurationsobjekt
 
 #### Teilmodell EngineeringChangeRequests
 
@@ -924,7 +924,7 @@ Das Teilmodell *EngineeringChangeRequests* (
 *Abbildung* 1240) enthält eine oder mehrere *SubmodelElementCollection*, die jeweils eine Änderungsanfrage repräsentieren und eine Reihe von Eigenschaften enthält:
 
 ![image](https://github.com/user-attachments/assets/4838a297-1d51-4870-8cf4-2c568cc867e6)   
-Abbildung 1241: VWS-Änderungsmanagement: Teilmodell EngineeringChangeRequests
+Abbildung 12-42: VWS-Änderungsmanagement: Teilmodell EngineeringChangeRequests
 
 -   *Status_ECR*: beschreibt den aktuellen Bearbeitungsstatus des ECR. Initial wird der Status "in Bearbeitung" vergeben. Für den weiteren Verlauf stehen "angenommen" oder "abgelehnt" zur Verfügung.
 -   *Name_Antragsteller_ECR*: ist die verantwortliche Person für den ECR.
@@ -940,7 +940,7 @@ Abbildung 1241: VWS-Änderungsmanagement: Teilmodell EngineeringChangeRequests
 Das Teilmodell *ECP* (*Abbildung* 1241) enthält eine oder mehrere SubmodelElementCollection(s), die jeweils einen Änderungsvorschlag repräsentieren und eine Reihe von Eigenschaften enthält:
 
 ![image](https://github.com/user-attachments/assets/70d16c8f-65a0-40bd-a22e-ec6dcc83fd22)   
-Abbildung 1241: VWS-Änderungsmanagement: Teilmodell EngineeringChangeProposals
+Abbildung 12-43: VWS-Änderungsmanagement: Teilmodell EngineeringChangeProposals
 
 -   *Status_ECP*: beschreibt den aktuellen Bearbeitungsstatus des ECP. Initial wird der Status "in Bearbeitung" vergeben. Für den weiteren Verlauf stehen "angenommen" oder "abgelehnt" zur Verfügung.
 -   *zugehöriger_ECR*: verweist auf den zugehörigen Engineering Change Request (ECR), welcher diesen Vorschlag initiiert hat.
@@ -958,7 +958,7 @@ Abbildung 1241: VWS-Änderungsmanagement: Teilmodell EngineeringChangeProposals
 Das Teilmodell *ECO* (*Abbildung* 1242) enthält eine oder mehrere SubmodelElementCollection(s), die jeweils einen Änderungsauftrag repräsentieren und eine Reihe von Eigenschaften enthält:
 
 ![image](https://github.com/user-attachments/assets/004f80c3-b66a-4acc-9e33-0c7d7e0e1764)   
-Abbildung 1242: VWS-Änderungsmanagement: Teilmodell EngineeringChangeOrders
+Abbildung 12-44: VWS-Änderungsmanagement: Teilmodell EngineeringChangeOrders
 
 -   *Name_Auftragsteller*: gibt den Namen des Auftragstellers an.
 -   *zugehöriger_ECP*: verweist auf den zugehörigen ECP, welcher diesen Auftrag initiiert hat.
@@ -973,7 +973,7 @@ Abbildung 1242: VWS-Änderungsmanagement: Teilmodell EngineeringChangeOrders
 Das Teilmodell *Bezugskonfigurationen* (*Abbildung* 1243) enthält eine oder mehrere *SubmodelElementCollection*(s), die jeweils eine Bezugskonfiguration repräsentieren und eine Reihe von Eigenschaften enthält. Eine Bezugskonfiguration ist der Datenstamm (VEC, KBL, etc.), auf den eine Änderung angewendet wird.
 
 ![image](https://github.com/user-attachments/assets/35b03404-b063-4d73-b9b7-6dc41953087c)   
-Abbildung 1243: VWS-Änderungsmanagement: Teilmodell Bezugskonfiguration
+Abbildung 12-45: VWS-Änderungsmanagement: Teilmodell Bezugskonfiguration
 
 -   *Datum_Freigabe*: enthält das Datum, ab wann die Bezugskonfiguration vom OEM freigegeben ist.
 -   *Grund_für_die_Aktualisierung*: beschreibt den Grund für die Aktualisierung in menschenlesbarer Form.
@@ -1010,7 +1010,7 @@ Sobald das Produkt des Lieferanten an den Besteller übergeht, müssen die Liefe
 Diese Informationen müssen beim jeweiligen Lieferanten und Besteller in der zugehörigen Verwaltungsschale des Assets hinterlegt werden. Der Kabelkonfektionär muss für jeden Leitungssatz jede verbaute Komponente eindeutig identifizieren und in seiner Verwaltungsschale dokumentieren.
 
 ![image](https://github.com/user-attachments/assets/5de4fb70-303d-4c94-89db-b4edb7d1b33c)   
-Abbildung 1244: Rückverfolgbarkeit über mehrere Tier-Stufen
+Abbildung 12-46: Rückverfolgbarkeit über mehrere Tier-Stufen
 
 Mit diesem Ansatz wird das Szenario1 erfüllt:
 
@@ -1029,7 +1029,7 @@ Ausgehend von der Bestellung des OEM bzw. eigenen Produktionserwartungen muss de
 Die folgende *Abbildung* illustriert den Zusammenhang ausgehend von der Bestellung, die in einen Produktionsauftrag überführt wird, bis zur Lieferung.
 
 ![image](https://github.com/user-attachments/assets/d6f77249-3d53-4d39-b3d9-98e5af38aef8)   
-Abbildung 1245: Rückverfolgbarkeit beim Kabelkonfektionär
+Abbildung 12-47: Rückverfolgbarkeit beim Kabelkonfektionär
 
 Der Produktionsauftrag verweist auf eine oder mehrere Chargen, die wiederum auf ein oder mehrere Lose verweisen. Jedes Los verweist wiederum auf eine oder mehrere Produkt-Instanzen (z.B. Leitungssatz oder Komponente). Diese Aufgliederung entspricht den heutigen Produktionsbedingungen.
 
@@ -1047,10 +1047,10 @@ Um den Anforderungen für die Rückverfolgbarkeit und den damit einhergehenden A
 
 Neben den Kosten für die Datenhaltung müssen auch gesetzliche und vertragliche Anforderungen beachtet und der Nutzen der Daten bewertet werden.
 
-Für diesen Zweck wurde ein eigenes Teilmodell für die Datenvorhaltung definiert (*Abbildung 1246*) und als „IDTA 02056: *Data Retention Policies*“ [16] standardisiert. Dieses Teilmodell beschreibt die Anforderungen an eine Datenvorhaltung und lässt sich stufenweise ergänzen. So ist es beispielsweise möglich, gesetzliche Anforderungen zentral, und vertragliche Anforderungen produktspezifisch zu definieren. Auf das jeweilige Produkt werden dann alle Anforderungen angewendet.
+Für diesen Zweck wurde ein eigenes Teilmodell für die Datenvorhaltung definiert (*Abbildung 12-468) und als „IDTA 02056: *Data Retention Policies*“ [16] standardisiert. Dieses Teilmodell beschreibt die Anforderungen an eine Datenvorhaltung und lässt sich stufenweise ergänzen. So ist es beispielsweise möglich, gesetzliche Anforderungen zentral, und vertragliche Anforderungen produktspezifisch zu definieren. Auf das jeweilige Produkt werden dann alle Anforderungen angewendet.
 
 ![image](https://github.com/user-attachments/assets/d6d04498-61b1-4981-ad13-baf24a0fe8e5)   
-Abbildung 1246: Teilmodell "Data Retention Policies"
+Abbildung 12-48: Teilmodell "Data Retention Policies"
 
 Das Teilmodell wird auf Typ-Verwaltungsschalen definiert und verweist mittels semantischer IDs („SemanticIds“) auf die betroffenen Informationselemente. Anhand der „RetentionTime“ wird festgelegt, wie lange das Informationselement vorgehalten werden muss.
 
@@ -1116,98 +1116,3 @@ Zusammenfassend lässt sich sagen, dass die Modularisierung und Verlinkung die t
 | [26]  | VDI/VDE, „VDI/VDE 2193 Blatt 1 - Sprache für I4.0-Komponenten - Struktur von Nachrichten,“ 2020. [Online]. Available: https://www.vdi.de/richtlinien/details/vdivde-2193-blatt-1-sprache-fuer-i40-komponenten-struktur-von-nachrichten.                                                                                                             |
 | [27]  | Industrial Digital Twin Association e.V., „IDTA 02005 Provision of Simulation Models,“ [Online]. Available: https://github.com/admin-shell-io/submodel-templates/tree/main/published/Provision of Simulation Models/1/0.                                                                                                                            |
 | [28]  | Industrial Digital Twin Association, „IDTA 02003-1-2: Generic Frame for Technical Data for Industrial Equipment in Manufacturing,“ [Online]. Available: https://github.com/admin-shell-io/submodel-templates/tree/main/published/Technical_Data/1/2.                                                                                                |
-
-# Abbildungsverzeichnis
-
-[Abbildung 1: Big Picture Workshop - Fragen](#_Toc177793170)
-
-[Abbildung 2: Zentrale VWS-Architektur](#_Toc177793171)
-
-[Abbildung 3: Dezentrale VWS-Architektur](#_Toc177793172)
-
-[Abbildung 4: Wechselnder SPoT im Lebenszyklus des Leitungssatzes bei dezentraler Datenhaltung](#_Toc177793173)
-
-[Abbildung 5: Network of Truth](#_Toc177793174)
-
-[Abbildung 6: Ermittlung der Assets und Nicht-Assets mit Stakeholderzuweisung](#_Toc177793175)
-
-[Abbildung 7: Modularisierung des Leitungssatzes](#_Toc177793176)
-
-[Abbildung 8: Übersicht über VWS der jeweiligen Stakeholder im Entwicklungsprozess](#_Toc177793177)
-
-[Abbildung 9: Übersicht über VWS der jeweiligen Stakeholder im Produktionsprozess](#_Toc177793178)
-
-[Abbildung 10: VWS und deren Verknüpfung für die Ressource](#_Toc177793179)
-
-[Abbildung : VWS und deren Verknüpfung für die Komponente im Entwicklungsprozess](#_Toc177793180)
-
-[Abbildung 12: VWS und deren Verknüpfung für die Komponente im Produktionsprozess](#_Toc177793181)
-
-[Abbildung 13: VWS und deren Verknüpfung für den Leitungssatz im Entwicklungsprozess](#_Toc177793182)
-
-[Abbildung 14: VWS und deren Verknüpfung für den Leitungssatz im Produktionsprozess](#_Toc177793183)
-
-[Abbildung 15: VWS und deren Verknüpfung für den Leitungssatz im Montageprozess](#_Toc177793184)
-
-[Abbildung 16: Typ-VWS des Leitungssatzes aus Sicht des OEM](#_Toc177793185)
-
-[Abbildung 17: Teilmodell "ProductSpecification"](#_Toc177793186)
-
-[Abbildung 18: Teilmodell "ProductBoM"](#_Toc177793187)
-
-[Abbildung 19: Teilmodell "ProductConfigurationBoM"](#_Toc177793188)
-
-[Abbildung 20: Typ-VWS des Leitungssatzes aus Sicht des Konfektionärs](#_Toc177793189)
-
-[Abbildung 21: Typ-VWS des Leitungssatzes aus Sicht des Konfektionärs](#_Toc177793190)
-
-[Abbildung 22: Teilmodell "ManufacturingBoM"](#_Toc177793191)
-
-[Abbildung 23: Beziehungen zwischen "ManufacturingConfigurationBoM" und "ManufacturingBoM"](#_Toc177793192)
-
-[Abbildung 24: Verlinkung mit dem Teilmodell "ProductBoM“](#_Toc177793193)
-
-[Abbildung 25: Verlinkung Typ/Instanz-VWS beim OEM](#_Toc177793194)
-
-[Abbildung 26: Typ- und Instanz-VWS für den Leitungssatz](#_Toc177793195)
-
-[Abbildung 27: VEC-Datei als File-Element in der Verwaltungsschale. )](#_Toc177793196)
-
-[Abbildung 28: Entity-Element einer Komponente. )](#_Toc177793197)
-
-[Abbildung 29: Relationship-Element mit FragmentReference in VEC-Datei )](#_Toc177793198)
-
-[Abbildung 30: Entwicklungsversionen und korrespondierende Change-Sets in der Produktion](#_Toc177793199)
-
-[Abbildung 31: Vorgeschlagenes Versions-ID-Konzept](#_Toc177793200)
-
-[Abbildung 32: Beispiel versionierter Verwaltungsschalen (Teilmodell](#_Toc177793201)
-
-[Abbildung 33: "Latest" default](#_Toc177793202)
-
-[Abbildung 34: Zugriff mit Discovery und Registry](#_Toc177793203)
-
-[Abbildung 35: Zugriff ohne Discovery](#_Toc177793204)
-
-[Abbildung 36: Zugriff ohne Registry](#_Toc177793205)
-
-[Abbildung 37: Änderungsmanagement: Änderungsbedarf vom OEM.](#_Toc177793206)
-
-[Abbildung 38: Änderungsmanagement: Änderungsbedarf vom Tier X](#_Toc177793207)
-
-[Abbildung 39: ÄM_Konfigurationsobjekt).](#_Toc177793208)
-
-[Abbildung 40: VWS-Änderungsmanagement: Teilmodell EngineeringChangeRequests](#_Toc177793209)
-
-[Abbildung 41: VWS-Änderungsmanagement: Teilmodell EngineeringChangeProposals](#_Toc177793210)
-
-[Abbildung 42: VWS-Änderungsmanagement: Teilmodell EngineeringChangeOrders](#_Toc177793211)
-
-[Abbildung 43: VWS-Änderungsmanagement: Teilmodell Bezugskonfiguration](#_Toc177793212)
-
-[Abbildung 44: Rückverfolgbarkeit über mehrere Tier-Stufen](#_Toc177793213)
-
-[Abbildung 45: Rückverfolgbarkeit beim Kabelkonfektionär](#_Toc177793214)
-
-[Abbildung 46: Teilmodell "Data Retention Policies"(#_Toc177793215)
-
