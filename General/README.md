@@ -4,9 +4,9 @@ Ausformulierung der Grundbausteine für die Anwendung der VWS in der Leitungssat
 
 ## Inhalt
 
-[1 Einführung Verwaltungsschale für den Leitungssatz (VWS4LS)](#_Toc177793111)
+[1 Einführung Verwaltungsschale für den Leitungssatz (VWS4LS)](#_1)
 
-[2 Einführung Architektur](#_Toc177793112)
+[2 Einführung Architektur](#_2)
 
 [2.1 Zentrale vs. dezentrale Architektur](#zentrale-vs-dezentrale-architektur)
 
@@ -14,7 +14,7 @@ Ausformulierung der Grundbausteine für die Anwendung der VWS in der Leitungssat
 
 [2.3 Gestaltungsfelder](#gestaltungsfelder)
 
-[3 Modularisierung](#_Toc177793116)
+[3 Modularisierung](#_3)
 
 [3.1 Aufteilung des Leitungssatzes in Module](#aufteilung-des-leitungssatzes-in-module)
 
@@ -30,7 +30,7 @@ Ausformulierung der Grundbausteine für die Anwendung der VWS in der Leitungssat
 
 [3.4.3 VWS für den Leitungssatz](#vws-für-den-leitungssatz)
 
-[4 Verlinkung](#_Toc177793124)
+[4 Verlinkung](#_4)
 
 [4.1 Typ-Verwaltungsschale des OEM](#typ-verwaltungsschale-des-oem)
 
@@ -58,7 +58,7 @@ Ausformulierung der Grundbausteine für die Anwendung der VWS in der Leitungssat
 
 [4.5.2 Verlinkung von Typinformationen](#verlinkung-von-typinformationen)
 
-[5 Versionierung](#_Toc177793138)
+[5 Versionierung](#_5)
 
 [5.1 VWS-Aufbau für den Leitungssatz](#vws-aufbau-für-den-leitungssatz)
 
@@ -70,7 +70,7 @@ Ausformulierung der Grundbausteine für die Anwendung der VWS in der Leitungssat
 
 [5.5 Zugriff ohne Registry](#_Toc177793143)
 
-[6 Synchronisation](#synchronisation)
+[6 Synchronisation](#_6)
 
 [6.1 Rahmenbedingungen für den gewählten Lösungsansatz](#rahmenbedingungen-für-den-gewählten-lösungsansatz)
 
@@ -84,7 +84,7 @@ Ausformulierung der Grundbausteine für die Anwendung der VWS in der Leitungssat
 
 [6.6 Umgang mit Fehlerzuständen](#umgang-mit-fehlerzuständen)
 
-[7 Änderungsmanagement](#)
+[7 Änderungsmanagement](#_7)
 
 [7.1 Ablauf](#ablauf)
 
@@ -102,7 +102,7 @@ Ausformulierung der Grundbausteine für die Anwendung der VWS in der Leitungssat
 
 [7.2.4 Teilmodell Bezugskonfigurationen](#teilmodell-bezugskonfigurationen)
 
-[8 Rückverfolgbarkeit](#rückverfolgbarkeit)
+[8 Rückverfolgbarkeit](#_8)
 
 [8.1 Szenario 1: Rückverfolgbarkeit über mehrere Tier-Stufen](#_Toc177793161)
 
@@ -120,9 +120,9 @@ Ausformulierung der Grundbausteine für die Anwendung der VWS in der Leitungssat
 
 [9 Fazit](#fazit)
 
-[10 Literaturverzeichnis](#_Toc177793169)
+[10 Literaturverzeichnis](#literaturverzeichnis)
 
-## Einführung Verwaltungsschale für den Leitungssatz (VWS4LS)
+## <a name="_1"></a>1. Einführung Verwaltungsschale für den Leitungssatz (VWS4LS)
 
 Der Leitungssatz ist das Nervensystem des Fahrzeugs, welches Energie und Daten im gesamten Fahrzeug verteilt. Als eine der teuersten und komplexesten Einzelkomponente steht die bisherige stark manuell geprägte Wertschöpfung der Leitungssatz-Konfektion vor großen Herausforderungen. Für viele dieser Herausforderungen ist die digitale Durchgängigkeit der Prozessketten eine wesentliche Lösungsvoraussetzung – insbesondere unternehmensübergreifend. Der Beitrag von VWS4LS zur Transformation dieser Wertkette legt eine Grundlage für eine standardisierte digitale Beschreibung des Leitungssatzes, seinen Komponenten, den Maschinen, mit denen der Leitungssatz produziert wird, und die Prozesse, entlang derer die Einzelschritte verkettet werden.
 
@@ -155,7 +155,7 @@ Aus dieser Positionierung ergaben sich für das Projekt relevante Chancen, aber 
 -   Was sind die Herausforderungen des Identity Managements?
 -   
 
-## Ausgangspunkt und Leitfragen für die Konzeptentwicklung
+## <a name="_2"></a>2. Ausgangspunkt und Leitfragen für die Konzeptentwicklung
 
 Im Rahmen eines projektinternen Workshops am 16.02.2023 wurde ein Big-Picture zur Orientierung für das Gesamtprojekt erstellt. Als Orientierungsrahmen diente dabei das Themenpuzzle in *Abbildung* 121. Die Teilnehmer, sowohl Experten aus dem Bereich der Leitungssatzbranche als auch aus dem Bereich der Verwaltungsschale, sollten klären, welche Lücken für die Anwendbarkeit der Verwaltungsschale in einer realen Wertkette geschlossen werden müssen und was aus Sicht der führenden Institute aus dem Bereich der Verwaltungsschalenanwendung schon möglich ist, bzw. in naher Zukunft umgesetzt werden kann.
 
@@ -219,7 +219,7 @@ Tabelle 121: Architektonische Grundfragestellungen
 
 Diese sechs Grundbausteine werden in den Folgekapiteln besprochen und sollen anschließend den führenden VWS-Initiativen zur Verfügung gestellt und von diesen bewertet werden.
 
-## Modularisierung
+## <a name="_3"></a>3. Modularisierung
 
 Da jede VWS über spezifische Teilmodelle verfügt, befasst sich die Modularisierung mit der inhaltlichen Struktur der definierten VWS.
 
@@ -337,7 +337,7 @@ Wird mit Auslieferung des Leitungssatzes der Montageprozess für diesen angesto�
 ![image](https://github.com/user-attachments/assets/35b28018-d786-4160-b2ee-0915d18ed9a4)   
 Abbildung 12-15: VWS und deren Verknüpfung für den Leitungssatz im Montageprozess
 
-## Verlinkung
+## <a name="_4"></a>4. Verlinkung
 
 Das Produktmodell beschreibt den Aufbau des Leitungssatzes. Ausgehend von der Produktspezifikation erzeugt der OEM eine Verwaltungsschale für den sog. „150% Leitungssatz“ und verlinkt diesen mit seinen Komponenten (vgl. Kapitel 6).
 
@@ -552,7 +552,7 @@ Um die Typinformationen des VEC zu verlinken, bestehen grundsätzlich drei Mögl
 
     Hierfür wird ein eindeutiges Identifikationsmerkmal sowohl im VEC als auch in der VWS definiert, sodass diese zugeordnet werden können. Dieses Identifikationsmerkmal kann dann auch als Filterkriterium in einer VWS-Registry genutzt werden.
 
-## Versionierung
+## <a name="_5"></a>5. Versionierung
 
 Ein erster Ansatz zur Versionierung der Verwaltungsschale (VWS) wäre es, eine Versionsnummer zu den jeweiligen Verwaltungsschalen hinzuzufügen (Version/Revision) und immer auf eine spezifische Version zu verweisen. Bei Änderungen müsste dann zunächst ein manueller Eingriff erfolgen, um entlang der Lieferkette die neuen Versionen einzubinden, sofern dies notwendig oder sinnvoll ist. Dieser Ansatz kann durch die Einführung eines standardisierten Versionierungsschemas, wie zum Beispiel der semantischen Versionierung (MAJOR.MINOR.PATCH), weiter verbessert werden. Durch dieses strukturierte Schema lassen sich unterschiedliche Arten von Änderungen klar kennzeichnen: Major-Versionen signalisieren tiefgreifende Änderungen, die die Rückwärtskompatibilität brechen, während Minor-Versionen neue Funktionen hinzufügen, aber weiterhin kompatibel bleiben. Patch-Versionen hingegen beschränken sich auf Fehlerkorrekturen, ohne die Kompatibilität zu beeinflussen. Eine solche Struktur würde nicht nur die Nachvollziehbarkeit von Änderungen erhöhen, sondern auch die Implementierung von Updates in der gesamten Lieferkette erleichtern.
 
@@ -591,7 +591,7 @@ Das orange markierte Prozesse-Teilmodell in der *Abbildung* stellt eine neue Ver
 
 Die Versionsnummer der Verwaltungsschalen und Teilmodelle sind dabei abhängig von den eingepflegten Änderungspaketen. Im Beispiel in *Abbildung* 1231 wurden durch die Änderungspakete 2 und 3 alle Teilmodelle angepasst, weshalb diese als „FZGQ2-23_AEM2+3“ versioniert sind. Durch Änderungspaket 4 wurde jedoch lediglich das Teilmodell Prozesse verändert, weshalb dazu eine neue Version erstellt, und die Versionsnummer verändert wird. Keine weiteren Teilmodelle werden in ihrer Version daher die Referenz zu Änderungspaket 4 erhalten. Änderungen für etwa Fähigkeiten müssten somit im nächsten Paket (Nummer 5) enthalten sein, sodass eine inkonsistente Versionsbezeichnung (etwa durch Doppelnutzung) nicht entstehen kann. *Abbildung* 1232 zeigt Beispiele für entsprechend versionierte Verwaltungsschalen.
 
-Dateiname: Versionierung_Neu
+Dateiname: [Versionierung_neu.aasx](https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/General/Versionierung_neu.aasx)
 
 ![image](https://github.com/user-attachments/assets/6c452512-7e20-4ab7-9eae-2fc47212a4e0)   
 Abbildung 12-32: Beispiel versionierter Verwaltungsschalen (Teilmodell
@@ -634,7 +634,7 @@ Bei dieser Lösung muss die Anwendung die Logik zu Auflösung der vollständigen
 ![image](https://github.com/user-attachments/assets/a798fec3-37b3-465d-b403-40056c8bc6e3)   
 Abbildung 12-36: Zugriff ohne Registry
 
-## Synchronisation
+## <a name="_6"></a>6. Synchronisation
 
 **Synchronisation zwischen Asset und seiner Verwaltungsschale**
 
@@ -785,9 +785,7 @@ Das gleiche Vorgehen, wie beim Ausbleiben der Heartbeat-Nachricht, wendet der Re
 
 Das beschriebene Vorgehen zum Umgang mit Fehlern ist bewusst einfach gehalten, in der Hoffnung, dass dadurch möglichst viele VWS-Implementierungen das Interaktionsprotokoll zur Synchronisation unterstützen. Im Ergebnis entspricht das im Wesentlichen dem Quality of Service Level 2 (“Exactly once”) des MQTT -Protokolls. Dies ist den Diskussionen der fachlichen Anforderung an Synchronisierung geschuldet. Sollte sich später zeigen, dass es andere Anforderungen gibt, sei an dieser Stelle empfohlen sich an Definitionen und Mechanismen zu orientieren, die im Bereich der Message Broker etabliert sind.
 
-## 
-
-## Änderungsmanagement
+## <a name="_7"></a>7. Änderungsmanagement
 
 Um flexibel und effizient auf sich ändernde Anforderungen reagieren zu können, ist ein gut durchdachter Änderungsprozess entscheidend. Hierbei werden eine Reihe von grundlegenden Änderungsbedarfen unterschieden:
 
@@ -1069,7 +1067,7 @@ Die Regeln müssen durch ein automatisches System angewendet und ausgewertet wer
 
 Damit die Daten auch gelöscht werden, muss das automatische System die Verwaltungsschalen regelmäßig überprüfen und fällige Daten löschen. Hierbei sind hierarchische Strukturen zu beachten, wobei ein tieferliegendes Element später gelöscht werden sollte als ein höherliegendes Element. Beispielsweise soll ein Teilmodell nach einem Jahr, ein Element innerhalb des Teilmodells aber erst nach zwei Jahren gelöscht werden. In diesem Fall darf das Teilmodell ebenfalls erst nach zwei Jahren gelöscht werden.
 
-## Fazit
+## <a name="fazit"></a>Fazit
 
 Die umfassende Betrachtung der zentralen Architekturthemen – **Modularisierung**, **Versionierung**, **Verlinkung**, **Synchronisation**, **Änderungsmanagement** und **Rückverfolgbarkeit** – im Kontext des Leitungssatzes zeigt, wie entscheidend eine durchdachte, integrierte Strategie für das Managen von Verwaltungsschalen über den gesamten Lebenszyklus hinweg ist. Die Ergebnisse sind im Fokus des Projektes VWS4LS entstanden, in dem die Wertschöpfung des Leitungssatzes im Vordergrund steht. Dennoch wurde versucht, einen generalistischen Ansatz zu finden und die Ergebnisse für jegliche Industrie anwendbar zu machen.
 
@@ -1085,7 +1083,7 @@ Die umfassende Betrachtung der zentralen Architekturthemen – **Modularisierung
 
 Zusammenfassend lässt sich sagen, dass die Modularisierung und Verlinkung die technische Basis für die Verwaltung des Leitungssatzes legen, während Versionierung, Änderungsmanagement und Rückverfolgbarkeit wesentliche Komponenten für eine präzise, flexible und nachvollziehbare Prozesskontrolle darstellen. Die Integration dieser Konzepte in eine dezentrale Architektur ist entscheidend, um sowohl die Datenkonsistenz zu gewährleisten als auch die Akzeptanz bei den Stakeholdern zu sichern. Trotz der gut strukturierten Ansätze sind weitere Detailarbeiten und Feinabstimmungen über das Projekt VWS4LS hinaus erforderlich, um die Implementierung der VWS zu vervollständigen und zukünftige Anforderungen auch in anderen Domänen zu erfüllen.
 
-# Literaturverzeichnis
+# <a name="literaturverzeichnis"></a>Literaturverzeichnis
 
 | [1]   | „Single Point of Truth,“ [Online]. Available: https://de.wikipedia.org/wiki/Single_Point_of_Truth.                                                                                                                                                                                                                                                  |
 |-------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
