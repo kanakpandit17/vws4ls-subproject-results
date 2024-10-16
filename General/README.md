@@ -996,7 +996,7 @@ Um den Anforderungen für die Rückverfolgbarkeit und den damit einhergehenden A
 
 Neben den Kosten für die Datenhaltung müssen auch gesetzliche und vertragliche Anforderungen beachtet und der Nutzen der Daten bewertet werden.
 
-Für diesen Zweck wurde ein eigenes Teilmodell für die Datenvorhaltung definiert (*Abbildung 12-468) und als „IDTA 02056: *Data Retention Policies*“ [16] standardisiert. Dieses Teilmodell beschreibt die Anforderungen an eine Datenvorhaltung und lässt sich stufenweise ergänzen. So ist es beispielsweise möglich, gesetzliche Anforderungen zentral, und vertragliche Anforderungen produktspezifisch zu definieren. Auf das jeweilige Produkt werden dann alle Anforderungen angewendet.
+Für diesen Zweck wurde ein eigenes Teilmodell für die Datenvorhaltung definiert (*Abbildung 12-48) und als „IDTA 02056: *Data Retention Policies*“ [16] standardisiert. Dieses Teilmodell beschreibt die Anforderungen an eine Datenvorhaltung und lässt sich stufenweise ergänzen. So ist es beispielsweise möglich, gesetzliche Anforderungen zentral, und vertragliche Anforderungen produktspezifisch zu definieren. Auf das jeweilige Produkt werden dann alle Anforderungen angewendet.
 
 ![image](https://github.com/user-attachments/assets/d6d04498-61b1-4981-ad13-baf24a0fe8e5)   
 Abbildung 12-48: Teilmodell "Data Retention Policies"
