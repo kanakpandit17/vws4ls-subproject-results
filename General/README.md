@@ -8,21 +8,21 @@ Ausformulierung der Grundbausteine für die Anwendung der VWS in der Leitungssat
 
 [2 Einführung Architektur](#_2)
 
-[2.1 Zentrale vs. dezentrale Architektur](#zentrale-vs-dezentrale-architektur)
+[2.1 Zentrale vs. dezentrale Architektur](#_2.1)
 
-[2.2 Single Point of Truth](#_Toc177793114)
+[2.2 Single Point of Truth](#_2.2)
 
-[2.3 Gestaltungsfelder](#gestaltungsfelder)
+[2.3 Gestaltungsfelder](#_2.3)
 
 [3 Modularisierung](#_3)
 
 [3.1 Aufteilung des Leitungssatzes in Module](#aufteilung-des-leitungssatzes-in-module)
 
-[3.2 Verwaltungsschalen im Entwicklungsprozess](#_Toc177793118)
+[3.2 Verwaltungsschalen im Entwicklungsprozess](#_3.2)
 
-[3.3 Verwaltungsschalen im Produktionsprozess](#verwaltungsschalen-im-produktionsprozess)
+[3.3 Verwaltungsschalen im Produktionsprozess](#_3.3)
 
-[3.4 Inhalte und Verknüpfung der Stakeholder-Verwaltungsschalen](#_Toc177793120)
+[3.4 Inhalte und Verknüpfung der Stakeholder-Verwaltungsschalen](#_3.4)
 
 [3.4.1 VWS für die Ressource](#vws-für-die-ressource)
 
@@ -52,7 +52,7 @@ Ausformulierung der Grundbausteine für die Anwendung der VWS in der Leitungssat
 
 [4.4 Instanz-Verwaltungsschale des Konfektionärs](#instanz-verwaltungsschale-des-konfektionärs)
 
-[4.5 Verlinkung des VEC](#_Toc177793135)
+[4.5 Verlinkung des VEC](#_4.5)
 
 [4.5.1 Referenzieren von Informationsfragmenten des VEC](#referenzieren-von-informationsfragmenten-des-vec)
 
@@ -68,7 +68,7 @@ Ausformulierung der Grundbausteine für die Anwendung der VWS in der Leitungssat
 
 [5.4 Zugriff ohne Discovery](#zugriff-ohne-discovery)
 
-[5.5 Zugriff ohne Registry](#_Toc177793143)
+[5.5 Zugriff ohne Registry](#_5.5)
 
 [6 Synchronisation](#_6)
 
@@ -76,9 +76,9 @@ Ausformulierung der Grundbausteine für die Anwendung der VWS in der Leitungssat
 
 [6.2 Konfiguration der Synchronisationsbeziehung](#konfiguration-der-synchronisationsbeziehung)
 
-[6.3 Senden von I4.0-Nachrichten zur Synchronisation](#_Toc177793147)
+[6.3 Senden von I4.0-Nachrichten zur Synchronisation](#_6.3)
 
-[6.4 Inhalte der I4.0-Nachrichten zur Synchronisation](#_Toc177793148)
+[6.4 Inhalte der I4.0-Nachrichten zur Synchronisation](#_6.4)
 
 [6.5 Verarbeiten von I4.0-Nachrichten zur Synchronisation](#verarbeiten-von-i40-nachrichten-zur-synchronisation)
 
@@ -94,11 +94,11 @@ Ausformulierung der Grundbausteine für die Anwendung der VWS in der Leitungssat
 
 [7.2 Änderungsmanagement in der Verwaltungsschale](#änderungsmanagement-in-der-verwaltungsschale)
 
-[7.2.1 Teilmodell EngineeringChangeRequests](#_Toc177793156)
+[7.2.1 Teilmodell EngineeringChangeRequests](#_7.2.1)
 
-[7.2.2 Teilmodell EngineeringChangeProposals](#_Toc177793157)
+[7.2.2 Teilmodell EngineeringChangeProposals](#_7.2.2)
 
-[7.2.3 Teilmodell EngineeringChangeOrders](#_Toc177793158)
+[7.2.3 Teilmodell EngineeringChangeOrders](#_7.2.3)
 
 [7.2.4 Teilmodell Bezugskonfigurationen](#teilmodell-bezugskonfigurationen)
 
@@ -110,11 +110,11 @@ Ausformulierung der Grundbausteine für die Anwendung der VWS in der Leitungssat
 
 [8.1.2 Lösungsweg](#lösungsweg)
 
-[8.2 Szenario 2: Rückverfolgbarkeit beim Kabelkonfektionär](#_Toc177793164)
+[8.2 Szenario 2: Rückverfolgbarkeit beim Kabelkonfektionär](#_8.2)
 
-[8.2.1 Anforderungen](#anforderungen-1)
+[8.2.1 Anforderungen](#_8.2.1)
 
-[8.2.2 Lösungsweg](#lösungsweg-1)
+[8.2.2 Lösungsweg](#_8.2.2)
 
 [8.3 Datenvorhaltung](#datenvorhaltung)
 
@@ -166,7 +166,7 @@ Um die Ausarbeitung voranzutreiben, wurde zu Beginn als gemeinsamer Startpunkt e
 
 Wesentliche identifizierte Kernpunkte für die architektonischen Gestaltungsfelder waren zum einen die IT-Architektur bzgl. der VWS-Verwaltung, sowie der sog. „Single Point of Truth“ [1], auf welche in den Folgekapiteln näher eingegangen wird.
 
-### Zentrale vs. dezentrale Architektur
+### <a name="_2.1"></a>2.1 Zentrale vs. dezentrale Architektur
 
 Ein typischer **zentral orientierter Architekturansatz** ist in *Abbildung* 122 dargestellt. Bei der Diskussion dieses Ansatzes wurde jedoch deutlich, dass er nicht in jeder Situation der Leitungssatzentwicklung und -produktion genutzt würde und sich außerdem die Frage stellt, wer für die Verwaltung des zentralen VWS-Repositories zuständig wäre.
 
@@ -182,7 +182,7 @@ Abbildung 12-3: Dezentrale VWS-Architektur
 
 Bei diesem dezentralen Ansatz setzen sich die Informationen der VWS einer Leitungssatz-Komponente (LS-Komponente) also über die Hierarchiestufen mehrerer Unternehmen zusammen, deren VWS aufeinander verweisen. Beispielsweise werden die Daten für LS-Komponenten von den Komponentenherstellern initial erzeugt und später von dem Konfektionär oder OEM genutzt, jedoch mit einer reduzierten Sicht auf die Inhalte (bspw. werden lediglich Informationen wie bzw. Digital Nameplate [3] und Produktdaten [4] weitergegeben).
 
-### Single Point of Truth
+### <a name="_2.2"></a>2.2 Single Point of Truth
 
 Ein wichtiger Punkt im Kontext der Architektur ist die Definition des sog. „Single Point of Truth“ (SPoT) [1], also wo die aktuell gültige Version der VWS abgelegt ist, bzw. bezogen werden kann.
 
@@ -202,7 +202,7 @@ Das Beispiel in *Abbildung* 125 verdeutlicht, wie die VWS-Struktur den Aufbau de
 ![image](https://github.com/user-attachments/assets/c8738dc6-4fd0-4953-95c5-b05cc06c37d2)   
 Abbildung 12-5: Network of Truth
 
-### Gestaltungsfelder
+### <a name="_2.3"></a>2.3 Gestaltungsfelder
 
 Es wurden sechs grundsätzliche architektonische Gestaltungsfelder in Verbindung mit der VWS identifiziert, diese sind in Tabelle 121 aufgelistet.
 
@@ -257,7 +257,7 @@ Zudem werden die **Ressourcen** mit ihren Informationen betrachtet, die im Produ
 ![image](https://github.com/user-attachments/assets/e3c131f8-e4b3-49ae-9921-377fa9c85af5)   
 Abbildung 12-7: Modularisierung des Leitungssatzes
 
-### Verwaltungsschalen im Entwicklungsprozess
+### <a name="_3.2"></a>3.2 Verwaltungsschalen im Entwicklungsprozess
 
 Im Entwicklungsprozess des Leitungssatzes entstehen bei den verschiedenen Stakeholdern eigene VWS für ein und dasselbe Asset, was in *Abbildung* 128 schematisch dargestellt ist.
 
@@ -266,14 +266,14 @@ Abbildung 12-8: Übersicht über VWS der jeweiligen Stakeholder im Entwicklungsp
 
 Hierbei kann davon ausgegangen werden, dass die Stakeholder sowohl Asset-Informationen aus den VWS anderer Stakeholder beziehen als auch selbst Informationen zum Asset hinzufügen wollen. Deshalb wurde entschieden, die Möglichkeit der Existenz mehrerer VWS zu einem Asset zuzulassen und die Zuordnung der VWS untereinander über Versionierung und Verlinkung zu lösen.
 
-### Verwaltungsschalen im Produktionsprozess
+### <a name="_3.3"></a>3.3 Verwaltungsschalen im Produktionsprozess
 
 Ähnlich wie im Entwicklungsprozess, gibt es auch für den Produktionsprozess des Leitungssatzes mehrere Stakeholder-spezifische VWS für ein und dasselbe Asset. Im Produktionsprozess entstehen somit mehrere VWS zu einem Asset, was in *Abbildung* 129 dargestellt ist.
 
 ![image](https://github.com/user-attachments/assets/94149cbc-7cf2-493b-bdc2-16efa15f752a)     
 Abbildung 12-9: Übersicht über VWS der jeweiligen Stakeholder im Produktionsprozess
 
-### Inhalte und Verknüpfung der Stakeholder-Verwaltungsschalen
+### <a name="_3.4"></a>3.4 Inhalte und Verknüpfung der Stakeholder-Verwaltungsschalen
 
 Die Stakeholder-spezifischen VWS enthalten Informationen, die den Anforderungen und Erwartungen des jeweiligen Stakeholders gerecht werden. Dies können technische Spezifikationen, Sicherheitsrichtlinien, Qualitätsstandards, Produktionsinformationen, Dokumentationen und andere relevante Informationen sein, die in Form von Teilmodellen oder verlinkten proprietären Dateiformaten vorliegen. Ein Abgleich der abzubildenden Informationen mit den bereits bei der IDTA vorhandenen Teilmodellen [6], zeigt die Lücken für weiteren Entwicklungsbedarf seitens des Projektes auf. Neu zu entwickelnde Teilmodelle werden in den folgenden Abschnitten explizit genannt.
 
