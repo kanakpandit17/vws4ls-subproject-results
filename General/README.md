@@ -1,17 +1,17 @@
 # Architekturkonzepte für die AAS
 
-Ausformulierung der Grundbausteine für die Anwendung der VWS in der Leitungssatz-Wertschöpfungskette. Die Architektur-Diskussion hat sich in VWS4LS als wichtiges Querschnittsthema etabliert. Analog zu den Usecases wurde daher schon Anfang 2023 ein Architekturteam ins Leben gerufen, dessen Arbeit seitdem andauert.
+In diesem Abschnitt werden Querschnittsthemen behandelt, wie bspw. architektonische Grundbausteine für die Anwendung der VWS in der Leitungssatz-Wertschöpfungskette. Die Architektur-Diskussion hat sich in VWS4LS als wichtiges Querschnittsthema etabliert und analog zu den Usecases wurde daher schon Anfang 2023 ein Architekturteam ins Leben gerufen.
 
 ## Inhalt
 
-[1 Einführung Verwaltungsschale für den Leitungssatz (VWS4LS)](#_1)
+[1 Einführung Verwaltungsschale für den Leitungssatz (VWS4LS)](#_1)   
 
-[2 Einführung Architektur](#_2)
+[2 Einführung Architektur](#_2)   
 - [2.1 Zentrale vs. dezentrale Architektur](#_2.1)
 - [2.2 Single Point of Truth](#_2.2)
 - [2.3 Gestaltungsfelder](#_2.3)
-
-[3 Modularisierung](#_3)
+  
+[3 Modularisierung](#_3)   
 - [3.1 Aufteilung des Leitungssatzes in Module](#aufteilung-des-leitungssatzes-in-module)
 - [3.2 Verwaltungsschalen im Entwicklungsprozess](#_3.2)
 - [3.3 Verwaltungsschalen im Produktionsprozess](#_3.3)
@@ -20,7 +20,7 @@ Ausformulierung der Grundbausteine für die Anwendung der VWS in der Leitungssat
 - [3.4.2 VWS für die Komponenten](#vws-für-die-komponenten)
 - [3.4.3 VWS für den Leitungssatz](#vws-für-den-leitungssatz)
 
-[4 Verlinkung](#_4)
+[4 Verlinkung](#_4)   
 - [4.1 Typ-Verwaltungsschale des OEM](#typ-verwaltungsschale-des-oem)
 - [4.1.1 Teilmodell ProductSpecification](#teilmodell-productspecification)
 - [4.1.2 Teilmodell ProductBoM](#teilmodell-productbom)
@@ -35,14 +35,14 @@ Ausformulierung der Grundbausteine für die Anwendung der VWS in der Leitungssat
 - [4.5.1 Referenzieren von Informationsfragmenten des VEC](#referenzieren-von-informationsfragmenten-des-vec)
 - [4.5.2 Verlinkung von Typinformationen](#verlinkung-von-typinformationen)
 
-[5 Versionierung](#_5)
+[5 Versionierung](#_5)   
 - [5.1 VWS-Aufbau für den Leitungssatz](#vws-aufbau-für-den-leitungssatz)
 - [5.2 Versionierungskonzept der Verwaltungsschale](#versionierungskonzept-der-verwaltungsschale)
 - [5.3 Zugriff mit Registry und Discovery](#zugriff-mit-registry-und-discovery)
 - [5.4 Zugriff ohne Discovery](#zugriff-ohne-discovery)
 - [5.5 Zugriff ohne Registry](#_5.5)
 
-[6 Synchronisation](#_6)
+[6 Synchronisation](#_6)   
 - [6.1 Rahmenbedingungen für den gewählten Lösungsansatz](#_6.1)
 - [6.2 Konfiguration der Synchronisationsbeziehung](#_6.2)
 - [6.3 Senden von I4.0-Nachrichten zur Synchronisation](#_6.3)
@@ -50,7 +50,7 @@ Ausformulierung der Grundbausteine für die Anwendung der VWS in der Leitungssat
 - [6.5 Verarbeiten von I4.0-Nachrichten zur Synchronisation](#_6.5)
 - [6.6 Umgang mit Fehlerzuständen](#_6.6)
 
-[7 Änderungsmanagement](#_7)
+[7 Änderungsmanagement](#_7)   
 - [7.1 Ablauf](#_7.1)
 - [7.1.1 Szenario 1: Änderungsbedarf seitens des OEM](#_7.1.1)
 - [7.1.2 Szenario 2: Änderungsbedarf seitens des Tier X](#_7.1.2)
@@ -60,7 +60,7 @@ Ausformulierung der Grundbausteine für die Anwendung der VWS in der Leitungssat
 - [7.2.3 Teilmodell EngineeringChangeOrders](#_7.2.3)
 - [7.2.4 Teilmodell Bezugskonfigurationen](#_7.2.4)
 
-[8 Rückverfolgbarkeit](#_8)
+[8 Rückverfolgbarkeit](#_8)   
 - [8.1 Szenario 1: Rückverfolgbarkeit über mehrere Tier-Stufen](#_8.1)
 - [8.1.1 Anforderungen](#_8.1.1)
 - [8.1.2 Lösungsweg](#_8.1.2)
@@ -69,7 +69,7 @@ Ausformulierung der Grundbausteine für die Anwendung der VWS in der Leitungssat
 - [8.2.2 Lösungsweg](#_8.2.2)
 - [8.3 Datenvorhaltung](#_8.3)
 
-[9 Fazit](#fazit)
+[9 Fazit](#fazit)   
 
 [10 Literaturverzeichnis](#literaturverzeichnis)
 
@@ -79,15 +79,11 @@ Der Leitungssatz ist das Nervensystem des Fahrzeugs, welches Energie und Daten i
 
 Im Projekt wurden die folgenden wesentlichen Use Cases (UC) betrachtet:
 
-**UC1**: Kollaborative Entwicklung (Original Equipment Manufacturer (OEM), Konfektionär, Komponentenlieferanten)
-
-**UC2**: Berücksichtigung der automatisierten Produktionsfähigkeit im Engineering
-
-**UC3**: Automatisierung des Änderungsmanagement entlang der gesamten Wertkette
-
-**UC4**: Automatisierung von flexiblen und modularen Produktionsabläufen
-
-**UC5**: Rückverfolgung aller Komponenten, Produktions- und Qualitätsdaten
+- **UC1**: Kollaborative Entwicklung (Original Equipment Manufacturer (OEM), Konfektionär, Komponentenlieferanten)
+- **UC2**: Berücksichtigung der automatisierten Produktionsfähigkeit im Engineering
+- **UC3**: Automatisierung des Änderungsmanagement entlang der gesamten Wertkette
+- **UC4**: Automatisierung von flexiblen und modularen Produktionsabläufen
+- **UC5**: Rückverfolgung aller Komponenten, Produktions- und Qualitätsdaten
 
 VWS4LS betrat mit dieser Positionierung zumindest aus Sicht der Verwaltungsschale (VWS) wenig erschlossenes Terrain in mehrerlei Hinsicht:
 
@@ -104,7 +100,6 @@ Aus dieser Positionierung ergaben sich für das Projekt relevante Chancen, aber 
 -   Wo liegen die Digitalisierungslücken und wie können diese durch die Anwendung der VWS reduziert oder geschlossen werden?
 -   Gibt es im System nur ein einziges unternehmensübergreifendes VWS-Repository (Konsortium- oder OEM-spezifisch) oder eher ein dezentrales System, in dem jedes beteiligte Unternehmen ein eigenes VWS-Repository betreiben kann?
 -   Was sind die Herausforderungen des Identity Managements?
--   
 
 ## <a name="_2"></a>2. Ausgangspunkt und Leitfragen für die Konzeptentwicklung
 
@@ -155,9 +150,9 @@ Abbildung 12-5: Network of Truth
 
 ### <a name="_2.3"></a>2.3 Gestaltungsfelder
 
-Es wurden sechs grundsätzliche architektonische Gestaltungsfelder in Verbindung mit der VWS identifiziert, diese sind in Tabelle 121 aufgelistet.
+Es wurden sechs grundsätzliche architektonische Gestaltungsfelder in Verbindung mit der VWS identifiziert, diese sind in Tabelle 12-1 aufgelistet.
 
-Tabelle 121: Architektonische Grundfragestellungen
+Tabelle 12-1: Architektonische Grundfragestellungen
 
 | **Gestaltungsfelder für Architektur der VWS** | **Kurzerklärung**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -694,7 +689,7 @@ Die Nachricht wird wie beschrieben per Operationsaufruf zugestellt. Dafür führ
 
 Der Aufbau der Synchronisationsnachricht folgt VDI/VDE 2193-1 [15] und teilt sich in Nachrichtenrahmen und Interaktionselementen mit den Nutzdaten zur Übermittlung der Wertänderungen.
 
-Tabelle 122 Elemente des Nachrichtenrahmens
+Tabelle 12-2 Elemente des Nachrichtenrahmens
 
 | **Nachrichtenelement** | **Beschreibung**                                                                                               | **Verwendung** |
 |------------------------|----------------------------------------------------------------------------------------------------------------|----------------|
