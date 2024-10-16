@@ -6,7 +6,7 @@ In diesem Abschnitt werden Querschnittsthemen behandelt, wie bspw. architektonis
 
 [1 Einführung Verwaltungsschale für den Leitungssatz (VWS4LS)](#_1)   
 
-[2 Einführung Architektur](#_2)   
+[2 Ausgangspunkt und Leitfragen für die Konzeptentwicklung](#_2)   
 - [2.1 Zentrale vs. dezentrale Architektur](#_2.1)
 - [2.2 Single Point of Truth](#_2.2)
 - [2.3 Gestaltungsfelder](#_2.3)
