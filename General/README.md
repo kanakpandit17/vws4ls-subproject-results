@@ -7,116 +7,67 @@ Ausformulierung der Grundbausteine für die Anwendung der VWS in der Leitungssat
 [1 Einführung Verwaltungsschale für den Leitungssatz (VWS4LS)](#_1)
 
 [2 Einführung Architektur](#_2)
-
-[2.1 Zentrale vs. dezentrale Architektur](#_2.1)
-
-[2.2 Single Point of Truth](#_2.2)
-
-[2.3 Gestaltungsfelder](#_2.3)
+- [2.1 Zentrale vs. dezentrale Architektur](#_2.1)
+- [2.2 Single Point of Truth](#_2.2)
+- [2.3 Gestaltungsfelder](#_2.3)
 
 [3 Modularisierung](#_3)
-
-[3.1 Aufteilung des Leitungssatzes in Module](#aufteilung-des-leitungssatzes-in-module)
-
-[3.2 Verwaltungsschalen im Entwicklungsprozess](#_3.2)
-
-[3.3 Verwaltungsschalen im Produktionsprozess](#_3.3)
-
-[3.4 Inhalte und Verknüpfung der Stakeholder-Verwaltungsschalen](#_3.4)
-
-[3.4.1 VWS für die Ressource](#vws-für-die-ressource)
-
-[3.4.2 VWS für die Komponenten](#vws-für-die-komponenten)
-
-[3.4.3 VWS für den Leitungssatz](#vws-für-den-leitungssatz)
+- [3.1 Aufteilung des Leitungssatzes in Module](#aufteilung-des-leitungssatzes-in-module)
+- [3.2 Verwaltungsschalen im Entwicklungsprozess](#_3.2)
+- [3.3 Verwaltungsschalen im Produktionsprozess](#_3.3)
+- [3.4 Inhalte und Verknüpfung der Stakeholder-Verwaltungsschalen](#_3.4)
+- [3.4.1 VWS für die Ressource](#vws-für-die-ressource)
+- [3.4.2 VWS für die Komponenten](#vws-für-die-komponenten)
+- [3.4.3 VWS für den Leitungssatz](#vws-für-den-leitungssatz)
 
 [4 Verlinkung](#_4)
-
-[4.1 Typ-Verwaltungsschale des OEM](#typ-verwaltungsschale-des-oem)
-
-[4.1.1 Teilmodell ProductSpecification](#teilmodell-productspecification)
-
-[4.1.2 Teilmodell ProductBoM](#teilmodell-productbom)
-
-[4.1.3 Teilmodell ProductConfigurationBoM](#teilmodell-productconfigurationbom)
-
-[4.2 Typ-Verwaltungsschale (Konfektionär)](#typ-verwaltungsschale-konfektionär)
-
-[4.2.1 Teilmodell ManufacturingBoM (Konfektionär)](#teilmodell-manufacturingbom-konfektionär)
-
-[4.2.2 Teilmodell ManufacturingConfigurationBoM (Konfektionär)](#teilmodell-manufacturingconfigurationbom-konfektionär)
-
-[4.2.3 Teilmodell ProductBoM (Konfektionär)](#teilmodell-productbom-konfektionär)
-
-[4.3 Instanz-Verwaltungsschale des OEM](#instanz-verwaltungsschale-des-oem)
-
-[4.4 Instanz-Verwaltungsschale des Konfektionärs](#instanz-verwaltungsschale-des-konfektionärs)
-
-[4.5 Verlinkung des VEC](#_4.5)
-
-[4.5.1 Referenzieren von Informationsfragmenten des VEC](#referenzieren-von-informationsfragmenten-des-vec)
-
-[4.5.2 Verlinkung von Typinformationen](#verlinkung-von-typinformationen)
+- [4.1 Typ-Verwaltungsschale des OEM](#typ-verwaltungsschale-des-oem)
+- [4.1.1 Teilmodell ProductSpecification](#teilmodell-productspecification)
+- [4.1.2 Teilmodell ProductBoM](#teilmodell-productbom)
+- [4.1.3 Teilmodell ProductConfigurationBoM](#teilmodell-productconfigurationbom)
+- [4.2 Typ-Verwaltungsschale (Konfektionär)](#typ-verwaltungsschale-konfektionär)
+- [4.2.1 Teilmodell ManufacturingBoM (Konfektionär)](#teilmodell-manufacturingbom-konfektionär)
+- [4.2.2 Teilmodell ManufacturingConfigurationBoM (Konfektionär)](#teilmodell-manufacturingconfigurationbom-konfektionär)
+- [4.2.3 Teilmodell ProductBoM (Konfektionär)](#teilmodell-productbom-konfektionär)
+- [4.3 Instanz-Verwaltungsschale des OEM](#instanz-verwaltungsschale-des-oem)
+- [4.4 Instanz-Verwaltungsschale des Konfektionärs](#instanz-verwaltungsschale-des-konfektionärs)
+- [4.5 Verlinkung des VEC](#_4.5)
+- [4.5.1 Referenzieren von Informationsfragmenten des VEC](#referenzieren-von-informationsfragmenten-des-vec)
+- [4.5.2 Verlinkung von Typinformationen](#verlinkung-von-typinformationen)
 
 [5 Versionierung](#_5)
-
-[5.1 VWS-Aufbau für den Leitungssatz](#vws-aufbau-für-den-leitungssatz)
-
-[5.2 Versionierungskonzept der Verwaltungsschale](#versionierungskonzept-der-verwaltungsschale)
-
-[5.3 Zugriff mit Registry und Discovery](#zugriff-mit-registry-und-discovery)
-
-[5.4 Zugriff ohne Discovery](#zugriff-ohne-discovery)
-
-[5.5 Zugriff ohne Registry](#_5.5)
+- [5.1 VWS-Aufbau für den Leitungssatz](#vws-aufbau-für-den-leitungssatz)
+- [5.2 Versionierungskonzept der Verwaltungsschale](#versionierungskonzept-der-verwaltungsschale)
+- [5.3 Zugriff mit Registry und Discovery](#zugriff-mit-registry-und-discovery)
+- [5.4 Zugriff ohne Discovery](#zugriff-ohne-discovery)
+- [5.5 Zugriff ohne Registry](#_5.5)
 
 [6 Synchronisation](#_6)
-
-[6.1 Rahmenbedingungen für den gewählten Lösungsansatz](#rahmenbedingungen-für-den-gewählten-lösungsansatz)
-
-[6.2 Konfiguration der Synchronisationsbeziehung](#konfiguration-der-synchronisationsbeziehung)
-
-[6.3 Senden von I4.0-Nachrichten zur Synchronisation](#_6.3)
-
-[6.4 Inhalte der I4.0-Nachrichten zur Synchronisation](#_6.4)
-
-[6.5 Verarbeiten von I4.0-Nachrichten zur Synchronisation](#verarbeiten-von-i40-nachrichten-zur-synchronisation)
-
-[6.6 Umgang mit Fehlerzuständen](#umgang-mit-fehlerzuständen)
+- [6.1 Rahmenbedingungen für den gewählten Lösungsansatz](#_6.1)
+- [6.2 Konfiguration der Synchronisationsbeziehung](#_6.2)
+- [6.3 Senden von I4.0-Nachrichten zur Synchronisation](#_6.3)
+- [6.4 Inhalte der I4.0-Nachrichten zur Synchronisation](#_6.4)
+- [6.5 Verarbeiten von I4.0-Nachrichten zur Synchronisation](#_6.5)
+- [6.6 Umgang mit Fehlerzuständen](#_6.6)
 
 [7 Änderungsmanagement](#_7)
-
-[7.1 Ablauf](#ablauf)
-
-[7.1.1 Szenario 1: Änderungsbedarf seitens des OEM](#szenario-1-änderungsbedarf-seitens-des-oem)
-
-[7.1.2 Szenario 2: Änderungsbedarf seitens des Tier X](#szenario-2-änderungsbedarf-seitens-des-tier-x)
-
-[7.2 Änderungsmanagement in der Verwaltungsschale](#änderungsmanagement-in-der-verwaltungsschale)
-
-[7.2.1 Teilmodell EngineeringChangeRequests](#_7.2.1)
-
-[7.2.2 Teilmodell EngineeringChangeProposals](#_7.2.2)
-
-[7.2.3 Teilmodell EngineeringChangeOrders](#_7.2.3)
-
-[7.2.4 Teilmodell Bezugskonfigurationen](#teilmodell-bezugskonfigurationen)
+- [7.1 Ablauf](#_7.1)
+- [7.1.1 Szenario 1: Änderungsbedarf seitens des OEM](#_7.1.1)
+- [7.1.2 Szenario 2: Änderungsbedarf seitens des Tier X](#_7.1.2)
+- [7.2 Änderungsmanagement in der Verwaltungsschale](#_7.2)
+- [7.2.1 Teilmodell EngineeringChangeRequests](#_7.2.1)
+- [7.2.2 Teilmodell EngineeringChangeProposals](#_7.2.2)
+- [7.2.3 Teilmodell EngineeringChangeOrders](#_7.2.3)
+- [7.2.4 Teilmodell Bezugskonfigurationen](#_7.2.4)
 
 [8 Rückverfolgbarkeit](#_8)
-
-[8.1 Szenario 1: Rückverfolgbarkeit über mehrere Tier-Stufen](#_Toc177793161)
-
-[8.1.1 Anforderungen](#anforderungen)
-
-[8.1.2 Lösungsweg](#lösungsweg)
-
-[8.2 Szenario 2: Rückverfolgbarkeit beim Kabelkonfektionär](#_8.2)
-
-[8.2.1 Anforderungen](#_8.2.1)
-
-[8.2.2 Lösungsweg](#_8.2.2)
-
-[8.3 Datenvorhaltung](#datenvorhaltung)
+- [8.1 Szenario 1: Rückverfolgbarkeit über mehrere Tier-Stufen](#_8.1)
+- [8.1.1 Anforderungen](#_8.1.1)
+- [8.1.2 Lösungsweg](#_8.1.2)
+- [8.2 Szenario 2: Rückverfolgbarkeit beim Kabelkonfektionär](#_8.2)
+- [8.2.1 Anforderungen](#_8.2.1)
+- [8.2.2 Lösungsweg](#_8.2.2)
+- [8.3 Datenvorhaltung](#_8.3)
 
 [9 Fazit](#fazit)
 
@@ -454,7 +405,7 @@ Die Zusammenhänge der verschiedenen Typ- und Instanz-Verwaltungsschalen sind in
 ![image](https://github.com/user-attachments/assets/8a5f34fd-5b9b-414a-9c0e-b664713808bd)    
 Abbildung 12-26: Typ- und Instanz-VWS für den Leitungssatz
 
-### Verlinkung des VEC
+### <a name="_4.5"></a>4.5 Verlinkung des VEC
 
 Ziel der Verlinkung des VEC ist es, die Typ- und Instanzinformationen mit entsprechenden Assets bzw. Verwaltungsschalen zu verknüpfen, sodass der VEC in einer VWS integriert und die Notwendigkeit zur Interpretation des VEC reduziert werden kann.
 
@@ -625,7 +576,7 @@ Bei dieser Lösung übernimmt die Registry die Discovery-Funktion, und hat direk
 ![image](https://github.com/user-attachments/assets/cc05e52e-9210-4334-98f6-ed0b78720995)   
 Abbildung 12-35: Zugriff ohne Discovery
 
-### Zugriff ohne Registry
+### <a name="_5.5"></a>5.5 Zugriff ohne Registry
 
 In dieser Variante fragt die Anwendung den Discovery Service mit der *Asset-ID* nach der *VWS-ID* (*Abbildung* 1236). Die Discovery gibt der Anwendung eine *Teil-VWS-ID* zurück. Mit der Teil-VWS-ID macht die Anwendung einen *GET-Aufruf* beim Versionierungsservice, um die aktuelle VWS-Version zu bekommen, und baut die vollständige spezifische *VWS-ID* mit der Versionsnummer zusammen, bevor die Anfrage an das VWS Repository gesendet wird, sodass eine VWS statt aller vernetzter Verwaltungsschalen gefunden werden kann. Das *VWS-Repository* gibt der Anwendung somit das spezifische VWS-Objekt zurück.
 
@@ -660,13 +611,13 @@ Szenario 1: Unterschiedliche „Wahrheiten“ zum selben Asset
 
 Zum selben Asset-Typ gibt es für die Rollen im Prozess jeweils eigene Typ-Verwaltungsschalen. Diese können einerseits unterschiedliche Detailstufen darstellen (vgl. Typ Leitungssatzkomponente OEM / Tier1), aber auch voneinander abweichende Angaben definieren (vgl. Freigabebereiche für Komponenten).
 
-Szenario 2: Ableitungen
+Szenario 2: Ableitungen:
 
 Basierend auf einer VWS werden andere abgeleitete VWS erzeugt, z.B. Verwendung von Komponenten im Leitungssatz oder Ableitung von Halbfabrikaten aus der Leitungssatz-VWS. Bei beiden genannten Ableitungen handelt es sich eigentlich um die gleiche Beziehung in entgegengesetzter Richtung gedacht.
 
 In beiden Fällen ergibt sich ein Synchronisationsbedarf zwischen den abhängigen VWS und der übergeordneten VWS im Falle von Änderungen an der übergeordneten VWS. Im Folgenden wird ein Konzept für die Synchronisation schrittweise beschrieben.
 
-### Rahmenbedingungen für den gewählten Lösungsansatz
+### <a name="_6.1"></a>6.1 Rahmenbedingungen für den gewählten Lösungsansatz
 
 Bei den Überlegungen zum SPoT (siehe Kapitel 12.1.2) wurde aufgezeigt, dass eine Verteilung der Informationen über mehrere Repositories, jeweils betrieben durch verschiedene Partner der Wertschöpfungskette, angestrebt wird. Wenn man in der Praxis aber an Bibliotheken für Leitungssatzentwicklungswerkzeuge, mit mehreren tausend Komponenten von mehr als 100 verschiedenen Herstellern denkt, liegt es nahe, lokale Kopien der Verwaltungsschalen anzulegen, selbst wenn diese ein 1:1 Abbild der entfernten Verwaltungsschale sind. Dieses lokale “Caching” verringert die Antwortzeit der Systeme und erhöht die Ausfallsicherheit.
 
@@ -680,7 +631,7 @@ All dies sind mögliche Anwendungsfälle. Es ist aber immer davon auszugehen, da
 
 Es wird angenommen, dass die Synchronisationsbeziehung im Einverständnis und mit Kenntnis aller beteiligten Parteien eingerichtet wird. Das Konzept geht davon aus, dass die Empfänger aus technischer Sicht und aus Sicht einer etwaigen Berechtigungssteuerung Zugriff haben auf das führende Teilmodell der Senderseite. Dieser Zugriff ist notwendig, damit initial der Empfänger seine lokale Kopie (abhängige VWS) anlegen kann. Diese abhängige VWS wird daraufhin durch die Synchronisationsnachrichten, welche die führende Verwaltungsschale bei Wertänderungen aktiv aussendet, aktuell gehalten. Fehler in der Übertragung können einen kompletten Abgleich des Teilmodells bzw. Eine Neu-Initialisierung erforderlich machen, sodass der direkte Zugriff auf das Teilmodell durch den Empfänger auch zu einem späteren Zeitpunkt noch notwendig und sinnvoll ist.
 
-### Konfiguration der Synchronisationsbeziehung
+### <a name="_6.2"></a>6.2 Konfiguration der Synchronisationsbeziehung
 
 Es wird davon ausgegangen, dass eine Synchronisationsbeziehung immer auf Ebene ganzer Teilmodelle eingerichtet wird. Eine feinere Steuerung erhöht den Konfigurations- und Verwaltungsaufwand. Eine Synchronisation aller Teilmodelle einer Verwaltungsschale ohne Möglichkeit zu Einschränkungen scheint aus fachlicher Sicht nicht sinnvoll; es sollen selten alle Informationen zu einem Asset mit allen Partnern der Wertschöpfungskette geteilt werden.
 
@@ -725,7 +676,7 @@ Die Besonderheit des Ausschreibungsverfahrens in diesem Kontext ist die Tatsache
 ![image](https://github.com/user-attachments/assets/f04d78c8-267a-4030-b978-c56ea63f2562)   
 Abbildung 12-38: Interaktionsprotokoll zur VWS-Synchronisation
 
-### Senden von I4.0-Nachrichten zur Synchronisation
+### <a name="_6.3"></a>6.3 Senden von I4.0-Nachrichten zur Synchronisation
 
 Im TP 6 von VWS4LS wurde als Mechanismus zum Austausch von I4.0-Nachrichten das Konzept der “Operation” des Verwaltungsschalen-Metamodells vorgeschlagen [14]. Zur Implementierung eines solchen Nachrichtenaustausch wurde ein Teilmodell namens „*Message Participant*“ erarbeitet, welches eine entsprechende Operation “*newMessage*” definiert. Die Operation wird vom Sender der Nachricht aufgerufen, wobei die Operation im Teilmodell “*Message Participant*” der empfangenden Verwaltungsschale ausgeführt wird.
 
@@ -739,7 +690,7 @@ Einen Mechanismus zur Gewährleistung von Konsistenz und Transaktionssicherheit 
 
 Die Nachricht wird wie beschrieben per Operationsaufruf zugestellt. Dafür führt der *Service Provider* für die in der Konfiguration hinterlegte VWS-Id einen Discovery-Prozess bei dem ebenfalls konfigurierten VWS-Repository durch und ermittelte das “*Message Participant*”-Teilmodell. Per Rückgabewert des Operationsaufrufs wird mitgeteilt, ob die Zustellung erfolgreich war. War die Zustellung der Nachricht nicht erfolgreich, z.B. wegen temporär unterbrochener Netzwerkverbindung, puffert der *Service Provider* die Nachricht und wiederholt den Zustellversuch zu einem späteren Zeitpunkt. Gegebenenfalls ist die Konfiguration der Synchronisationsbeziehung um eine max. Anzahl an gepufferten Nachrichten, eine Höchstdauer für die Pufferung, oder eine Zeitintervall für die Wiederholungsversuche zu erweitern.
 
-### Inhalte der I4.0-Nachrichten zur Synchronisation
+### <a name="_6.4"></a>6.4 Inhalte der I4.0-Nachrichten zur Synchronisation
 
 Der Aufbau der Synchronisationsnachricht folgt VDI/VDE 2193-1 [15] und teilt sich in Nachrichtenrahmen und Interaktionselementen mit den Nutzdaten zur Übermittlung der Wertänderungen.
 
@@ -759,7 +710,7 @@ Tabelle 122 Elemente des Nachrichtenrahmens
 
 Im Bereich der Interaktionsmodelle wird zum einen die Teilmodellreferenz des geänderten Teilmodells angegeben und zum anderen als Datenelement eine Serialisierung der geänderten Teilmodellelemente. Optional kann in einem weiteren Datenelement eine Serialisierung der geänderten Teilmodellelemente mit ihren Werten vor der Änderung übertragen werden. Da es erforderlich sein kann, die vorherigen Werte je *Service Requester* zu speichern, z.B. in Verbindung mit Nutzung der minimalen Intervalle zwischen zwei Nachrichten, kann diese Speicherung zu Ressourcenproblemen beim *Service Provider* kommen. Beispiel sind begrenzte Hardwareressourcen oder eine hohe Anzahl an *Service Requester*n die mit Synchronisationsnachrichten zu versorgen sind. Aus diesem Grund wird das Datenelement mit den Vorgängerwerten als optional vorgeschlagen und wäre im Konfigurationsprozess zu vereinbaren.
 
-### Verarbeiten von I4.0-Nachrichten zur Synchronisation
+### <a name="_6.5"></a>6.5 Verarbeiten von I4.0-Nachrichten zur Synchronisation
 
 Die Zustellung der Synchronisationsnachricht erfolgt, wie oben beschrieben, über den Aufruf der entsprechenden Operation im Teilmodell „Message Participant” und nicht etwa, in dem das betroffene Element durch den *Synchronisation Message Provider* direkt im Zielteilmodell des *Synchronisation Message Requesters* geändert wird.
 
@@ -769,7 +720,7 @@ Ein komplexerer Caching-Algorithmus könnte die serialisierten Teilmodellelement
 
 Das Anwendungsgebiet ist nicht auf Caching beschränkt. Die diskutierten Anwendungsfälle aus Sicht der fachlichen Domäne Leitungssatz zeigen u.a., dass es sinnvoll ist bei den abhängigen, abgeleiteten Verwaltungsschalen eine Normierung der Daten vorzunehmen. Beispielsweise die Umrechnung von Grad Fahrenheit in Grad Celsius oder AWG-Leitungsquerschnitte in das metrische System. Aber auch komplexere Geschäftslogiken mit Fallunterscheidungen bis hin zum Durchlauf langlaufender Workflows sind denkbar. Gerade bei den langlaufenden Algorithmen taucht wieder die Problematik der Datenkonsistenz auf und die Wichtigkeit der Verarbeitungsreihenfolge. Sollte in diesem Fall ein Puffern der eingehenden Synchronisationsnachrichten notwendig sein, so ist diese auf Seite des *Synchronisation Message Requesters* zu implementieren. Das Interaktionsprotokoll sieht vor, dass der Nachrichteneingang durch den Rückgabewert der Operation bestätigt wird. Diese Bestätigung ist aber rein auf die Datenübertagung zu beziehen und nicht auf die erfolgreiche Verarbeitung der empfangenen Nachricht. Es macht keinen Sinn, einen Fehlerstatus des Operationsaufrufs zurückzumelden, weil die Nachrichtenverarbeitung nicht abgeschlossen ist oder die Inhalte aus fachlicher Sicht, also aus Sicht der Geschäftslogik, nicht akzeptiert werden. An dieser Stelle sei auf das Änderungsmanagement (Kapitel 12.5) verwiesen, welches sich mit der fachlichen Abstimmung von Änderungen beschäftigt und auf der technischen Übertragung von Wertänderungen, wie sie hier beschrieben wurde, aufsetzt.
 
-### Umgang mit Fehlerzuständen
+### <a name="_6.6"></a>6.6 Umgang mit Fehlerzuständen
 
 Wie oben beschrieben stellt der Operationsaufruf die Schnittstelle zwischen *Synchronisation Message Provider* und *Synchronisation Message Requester* dar. Der *Synchronisation Message Provider* ist dafür verantwortlich, dass der Operationsaufruf zuverlässig und in der korrekten Reihenfolge ausgeführt wird. Erst wenn der Operationsaufruf der vorhergehenden Nachricht mit erfolgreichem Rückgabestatus abgeschlossen wurde, darf der *Synchronisation Message Provider* die Nachricht als zugestellt betrachten und den Operationsaufruf für die folgenden Nachricht ausführen. Wenn ein Operationsaufruf technisch im Augenblick scheitert oder der *Synchronisation Message Requester* den Operationsaufruf mit einem Fehlerstatus quittiert, ist diese Nachricht zwischenzuspeichern und der Operationsaufruf ist, nach einem vorab vereinbarten Zeitintervall, zu wiederholen. Die Anzahl der Wiederholungen des Zustellversuchs, das Zeitintervall zwischen den Zustellversuchen, und die Obergrenze für Zeitdauer und Nachrichtenanzahl für die Zwischenspeicherung auf Providerseite sind Bestandteil der Konfiguration der Synchronisationsbeziehung. Sollte einer der Parameter überschritten werden, so werden sowohl die Zustellversuche der betreffenden Nachricht als auch die weitere Synchronisationsbeziehung durch den *Synchronisation Message Provider* beendet. Der *Synchronisation Message Provider* informiert den *Synchronisation Message Requester* durch den einmaligen Zustellversuch einer Nachricht vom Typ “Canceled”. Bei diesem Nachrichtentyp ist die Angabe der Konversation-Id verpflichtend, damit der *Synchronisation Message Requester* erkennen kann, welche Synchronisationsbeziehung abgebrochen wurde, falls er mehrere Konfigurationen beim gleichen Provider eingerichtet hat.
 
@@ -812,7 +763,7 @@ Zudem sollten für das Änderungsmanagement aktuell bestehende Prozesse in der D
 
 Ähnlich zur Versionierung in Kapitel 0 werden während des Änderungsprozesses manuelle Arbeitsschritte notwendig sein, wie z.B. das Anstoßen eines solchen Prozesses oder die Analyse der technischen Umsetzbarkeit der gewünschten Änderung.
 
-### Ablauf
+### <a name="_7.1"></a>7.1 Ablauf
 
 Die eingangs aufgeführten konkreten Änderungsbedarfe haben keinen Einfluss auf den grundsätzlichen Ablauf des Änderungsprozesses.
 
@@ -822,7 +773,7 @@ Je nachdem, ob der Änderungsbedarf durch den OEM oder von einem Tier festgestel
 
 [^11]: Omar Abdelmageed, „*Konzept zur Umsetzung eines Konfigurationsmanagements mit Hilfe der Verwaltungsschale“*, Masterarbeit, Otto-von-Guericke-Universität Magdeburg, Fakultät für Elektrotechnik und Informationstechnik, November 2023.
 
-#### Szenario 1: Änderungsbedarf seitens des OEM
+#### <a name="_7.1.1"></a>7.1.1 Szenario 1: Änderungsbedarf seitens des OEM
 
 In diesem Szenario stellt der OEM einen Änderungsbedarf fest und startet den Änderungsprozess. Dieser ist in 10 Einzelschritte aufgegliedert (*Abbildung* 1237):
 
@@ -870,7 +821,7 @@ Abbildung 12-39: Änderungsmanagement: Änderungsbedarf vom OEM.
 12. Änderung implementieren:
     -   Tier X implementiert die Änderung.
 
-#### Szenario 2: Änderungsbedarf seitens des Tier X
+#### <a name="_7.1.2"></a>7.1.2 Szenario 2: Änderungsbedarf seitens des Tier X
 
 In diesem Szenario stellt der Tier X einen Änderungsbedarf fest und löst den Änderungsprozess aus. Dieser ist in 9 Einzelschritte mit diversen Entscheidungswegen untergliedert (*Abbildung* 1238):
 
@@ -902,7 +853,7 @@ Wenn der Antrag nicht plausibel ist, wird er abgelehnt (3.2) und der Prozess end
 6.  Umsetzung der Änderung:
     -   Bei Zustimmung wird der Prozess „OEM gibt Änderungen vor“ angestoßen, wie er im vorhergehenden Kapitel beschrieben ist. (Hier in *Abbildung* 1238 dargestellt, als stilisierte Version des Prozesses.)
 
-### Änderungsmanagement in der Verwaltungsschale
+### <a name="_7.2"></a>7.2 Änderungsmanagement in der Verwaltungsschale
 
 Um das Änderungsmanagement in der Verwaltungsschale abzubilden, wird zunächst eine VWS für das Konfigurationsobjekt erzeugt (Siehe *Abbildung* 1239: ÄM_Konfigurationsobjekt
 
@@ -915,7 +866,7 @@ Dateiname: [Änderungsmanagement.aasx](https://github.com/VWS4LS/vws4ls-subproje
 ![image](https://github.com/user-attachments/assets/5c8093e0-2c83-4297-b492-c28c2720feed)   
 Abbildung 12-41: ÄM_Konfigurationsobjekt
 
-#### Teilmodell EngineeringChangeRequests
+#### <a name="_7.2.1"></a>7.2.1 Teilmodell EngineeringChangeRequests
 
 Das Teilmodell *EngineeringChangeRequests* (
 
@@ -933,7 +884,7 @@ Abbildung 12-42: VWS-Änderungsmanagement: Teilmodell EngineeringChangeRequests
 -   *zugehöriger_ECP:* verweist auf den zugehörigen ECP, wenn der ECR angenommen wurde.
 -   *Begründung_zur_Ablehnung:* enthält den Grund für die Ablehnung, wenn der ECR abgelehnt wurde.
 
-#### Teilmodell EngineeringChangeProposals
+#### <a name="_7.2.2"></a>7.2.2 Teilmodell EngineeringChangeProposals
 
 Das Teilmodell *ECP* (*Abbildung* 1241) enthält eine oder mehrere SubmodelElementCollection(s), die jeweils einen Änderungsvorschlag repräsentieren und eine Reihe von Eigenschaften enthält:
 
@@ -951,7 +902,7 @@ Abbildung 12-43: VWS-Änderungsmanagement: Teilmodell EngineeringChangeProposals
 -   *Dokumente*: kann ergänzende Dateien enthalten, wie z.B. Pläne oder technische Spezifikationen.
 -   *Begründung_zur_Ablehnung*: enthält den Ablehnungsgrund, falls der ECP abgelehnt wurde.
 
-#### Teilmodell EngineeringChangeOrders
+#### <a name="_7.2.3"></a>7.2.3 Teilmodell EngineeringChangeOrders
 
 Das Teilmodell *ECO* (*Abbildung* 1242) enthält eine oder mehrere SubmodelElementCollection(s), die jeweils einen Änderungsauftrag repräsentieren und eine Reihe von Eigenschaften enthält:
 
@@ -966,7 +917,7 @@ Abbildung 12-44: VWS-Änderungsmanagement: Teilmodell EngineeringChangeOrders
 -   *Implementierungsbericht*: enthält einen oder mehrere Berichte oder Dokumente zur Umsetzung der Änderung.
 -   *neue_Bezugskonfiguration*: verweist auf die neue Konfiguration, die nach Umsetzung der Änderung gültig ist.
 
-#### Teilmodell Bezugskonfigurationen
+#### <a name="_7.2.4"></a>7.2.4 Teilmodell Bezugskonfigurationen
 
 Das Teilmodell *Bezugskonfigurationen* (*Abbildung* 1243) enthält eine oder mehrere *SubmodelElementCollection*(s), die jeweils eine Bezugskonfiguration repräsentieren und eine Reihe von Eigenschaften enthält. Eine Bezugskonfiguration ist der Datenstamm (VEC, KBL, etc.), auf den eine Änderung angewendet wird.
 
@@ -977,21 +928,21 @@ Abbildung 12-45: VWS-Änderungsmanagement: Teilmodell Bezugskonfiguration
 -   *Grund_für_die_Aktualisierung*: beschreibt den Grund für die Aktualisierung in menschenlesbarer Form.
 -   *Dokumente*: enthält ein oder mehrere Dokumente, die den Datenstamm für die Bezugskonfiguration repräsentieren.
 
-## Rückverfolgbarkeit
+## <a name="_8"></a>8. Rückverfolgbarkeit
 
 Das Thema Rückverfolgbarkeit fokussiert sich darauf, Informationen über die gesamte Wertschöpfungskette hinweg im VWS-Ökosystem auffindbar zu machen. Dazu wurden zwei Szenarien betrachtet:
 
-### Szenario 1: Rückverfolgbarkeit über mehrere Tier-Stufen
+### <a name="_8.1"></a>8.1 Szenario 1: Rückverfolgbarkeit über mehrere Tier-Stufen
 
 Der OEM oder der Komponentenlieferant informiert den Kabelkonfektionär über eine fehlerhafte Charge. Der OEM verlangt eine Liste der betroffenen Leitungssätze, in denen Komponenten dieser Charge verbaut wurden.
 
-#### Anforderungen
+#### <a name="_8.1.1"></a>8.1.1 Anforderungen
 
 Unter Berücksichtigung einer modularen Verwaltungsschalen-Infrastruktur (vgl. Kapitel 12.2), ist eine eindeutige Identifizierung der am Herstellungsprozess beteiligten Assets über die gesamte Wertschöpfungskette unverzichtbar.
 
 Schon bei der Bestellung des OEM beim Kabelkonfektionär muss eine eindeutige Identifizierung des Assets (Fahrzeug / Leitungssatz) erfolgen. Dieselbe Anforderung gilt bei der Beschaffung von Komponenten, die der Komponentenlieferant bereitstellt und beim Kabelkonfektionär verbaut werden (vgl. *Abbildung* 1244).
 
-#### Lösungsweg
+#### <a name="_8.1.2"></a>8.1.2 Lösungsweg
 
 Für eine lückenlose Rückverfolgbarkeit müssen die Bestellinformationen eindeutig identifizierbar sein. Hierzu gehören unter anderem:
 
@@ -1014,15 +965,15 @@ Mit diesem Ansatz wird das Szenario1 erfüllt:
 
 Anhand der Chargennummer des Komponentenlieferanten kann der Kabelkonfektionär in seinen Verwaltungsschalen nachvollziehen, in welchen Leitungssätzen die Komponenten verbaut wurden, und übermittelt dem OEM die zugehörigen Bestell- bzw. Lieferinformationen (insbesondere die FIN).
 
-### Szenario 2: Rückverfolgbarkeit beim Kabelkonfektionär
+### <a name="_8.2"></a>8.2 Szenario 2: Rückverfolgbarkeit beim Kabelkonfektionär
 
 Der OEM reklamiert Leitungssätze, bei denen Schraubverbindungen Feldausfälle verursacht haben und fordert den Kabelkonfektionär dazu auf, den Schraubfall gemäß Spezifikation nachzuweisen.
 
-#### Anforderungen
+#### <a name="_8.2.1"></a>8.2.1 Anforderungen
 
 Ausgehend von der Bestellung des OEM bzw. eigenen Produktionserwartungen muss der Kabelkonfektionär eine lückenlose Rückverfolgbarkeit aller hergestellten Leitungssätze garantieren. Hierzu müssen die Chargennummern der Komponentenlieferanten sowie die Prozessdaten der Ressourcen dokumentiert und mit den Produktions-, Bestell- und Lieferdaten verknüpft werden.
 
-#### Lösungsweg
+#### <a name="_8.2.2"></a>8.2.2 Lösungsweg
 
 Die folgende *Abbildung* illustriert den Zusammenhang ausgehend von der Bestellung, die in einen Produktionsauftrag überführt wird, bis zur Lieferung.
 
@@ -1039,7 +990,7 @@ Mit diesem Ansatz wird das Szenario 2 erfüllt:
 
 Anhand der vom OEM bereitgestellten FIN kann der Kabelkonfektionär die zugehörigen Produktionsaufträge und somit die Produkt-Instanzen ermitteln. In den Produkt-Instanzen ermittelt der Kabelkonfektionär dann den geforderten Produktionsprozess für die Schraubverbindung und kann anhand der dokumentierten Prozessdaten den geforderten Nachweis erbringen.
 
-### Datenvorhaltung
+### <a name="_8.3"></a>8.3 Datenvorhaltung
 
 Um den Anforderungen für die Rückverfolgbarkeit und den damit einhergehenden Anforderungen über die Detailtiefe der Informationen gerecht zu werden, ist es notwendig viele Informationen über lange Zeiträume vorzuhalten. Die hierdurch entstehenden Datenmengen müssen begrenzt werden, um die Kosten für die Datenhaltung beherrschbar zu machen.
 
