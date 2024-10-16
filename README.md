@@ -12,3 +12,5 @@ Ebenso die in der Projektdokumntation referenzierten Artefakte wie z.B. JSON- an
 * [TP8: Data Storage Policy, Sicherheit, Anbindung an Catena-X](/TP08)
 * [TP9: Pilotierung, Erprobung, Demonstrator](/TP09)
 * [TP10: Transfer und Koordination](/TP10)
+* [Literaturverzeichnis](/General/Literaturverzeichnis.md)
+* [Autorenverzeichnis](/General/Autoren.md)
