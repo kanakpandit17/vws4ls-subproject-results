@@ -79,16 +79,16 @@ Das Template wurde in einer Excel-Datei aufgebaut und beinhaltet folgende Inform
     Eine ausführliche Beschreibung der Anforderung mit Bezug zu den jeweiligen Anwendungsfällen und wichtigen Kriterien.
 -   **PPR-Kategorie**  
     Eine Zuordnung der Anforderung in die drei Kategorien Produkt, Prozess und Ressource, wobei Prozess in die Unterkategorien Entwicklungsprozess, Produktionsprozess und Montageprozess unterteilt wurde.
--   **Wertschöpfungsstufe  
+-   **Wertschöpfungsstufe**  
     **Eine Zuordnung der Anforderung zu einer oder mehrerer Wertschöpfungsstufen, als Unterkategorisierung der PPR-Kategorien (Entwicklung, Produktion, Montage, etc.).
--   **Datenbedarf  
+-   **Datenbedarf**  
     **Daten, die für die Umsetzung der Anforderung zwingend notwendig sind.
--   **Priorisierung  
+-   **Priorisierung**  
     **Einordnung der Anforderung in die Kategorien: Muss (Gesetzlich), Soll oder Wunsch.
--   **Link zu User Story  
+-   **Link zu User Story**  
     **Wenn zu einer Anforderung noch eine User Story beschrieben wurde, konnte diese hier verlinkt werden.
--   **Unternehmen, Autor, E-Mail  
-    **Informationen zum Anforderungsersteller.
+-   **Unternehmen, Autor, E-Mail**  
+    **Informationen zum Anforderungsersteller.**
 
 Zusätzlich wurden Felder für die Teilprojekte 1-8 und den Use Cases 1-5 hinzugefügt, um die Anforderung relevanten Teilprojekten bzw. Use Cases zuordnen zu können.
 
@@ -461,8 +461,7 @@ Das Arbeitspaket 3.3 „Erforschung von Teilmodellen für Rückmeldedaten“ bes
 
 Bei der Herstellung eines Leitungssatzes werden eine Reihe von zugelieferten Rohmaterialien, Bauteilen und Halbfertigprodukten verarbeitet, die in komplexen Produktionsprozessen zum Endprodukt eines Leitungssatz in der gewünschten Variante verarbeitet werden.
 
-![Ein Bild, das Text, Diagramm, Screenshot, parallel enthält. Automatisch generierte Beschreibung](media/c8c3b371b8cf60ab71ae347355d26d99.png)
-
+![image](https://github.com/user-attachments/assets/28f73c6f-c122-48d3-adcf-aaca14af9d42)    
 *Abbildung 3-15: Produktionsprozesse beim Konfektionär*
 
 Bevor die eigentliche Kabelbaumproduktion beginnt, treffen alle notwendigen (Roh-)Materialien in der Eingangslogistik oder im Lagerbereich ein, wo diese gescannt werden. Auch findet eine Qualitätsprüfung der angelieferten Materialien statt.
@@ -479,8 +478,7 @@ Schließlich wird der Produktionsprozess abgeschlossen, so dass die Kommissionie
 
 Jeder dieser Bereiche und die Produktionsschritte benötigen und generieren Informationen über das Produkt (Bauteile, Baugruppen, Kabelbäume usw.), die Produktionsprozesse (Schneiden, Crimpen, Blockladen, Prüfen usw.) und die Produktionsressourcen (Maschinen, Werkzeuge, Bediener usw.). Für eine generalisierte Prozessbeschreibung müssen die Informationselemente in einer standardisierten Beschreibung zugänglich gemacht werden. Die in *Abbildung 3-16* dargestellte Vorgehensweise soll die Aggregation der einzelnen Attribute für die Ausführung des Prozesses aus verschiedenen Quellen verdeutlichen. Der Fokus liegt auf der Abhängigkeit der verschiedenen Bereiche.
 
-![Ein Bild, das Text, Screenshot, Schrift, Electric Blue (Farbe) enthält. Automatisch generierte Beschreibung](media/74e2d39c16a85149e5caa9af77a89b75.png)
-
+![image](https://github.com/user-attachments/assets/54e1b5fa-bf90-4f0e-86fb-7126e69f0913)   
 *Abbildung 3-16: PPR-Modell*
 
 ### Produktionsprozesse
@@ -489,12 +487,11 @@ Entsprechend der Vorhabensbeschreibung zum AP 3.3 wurden die Produktionsprozesse
 
 #### Definitionsphase der Einzelprozesse in der Produktion eines Leitungssatzes
 
-Initial wurde eine erste Auswahl an Produktionsprozessen erarbeitet, inklusive der dazugehörigen Input- und Output-Parameter. Ziel war es die relevanten Informationen zur Leitungssatzfertigung zusammen zu fassen. Ursprünglich umfasste der fertige Erstentwurf der Liste 25 Prozesse, 76 Input-Parameter und 73 Output-Parameter (*Abbildung* 117). Diese Daten sollen hier nur, als Randnotiz erwähnt werden, um später im Dokument die Entwicklung dieser Liste nachvollziehen zu können. Die abgebildete Excelliste ist in der Datei „[Initial_Process_List.xlsx](https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP03/Beispieldaten/Initial_Process_List.xlsx)“[^5] zu finden
+Initial wurde eine erste Auswahl an Produktionsprozessen erarbeitet, inklusive der dazugehörigen Input- und Output-Parameter. Ziel war es die relevanten Informationen zur Leitungssatzfertigung zusammen zu fassen. Ursprünglich umfasste der fertige Erstentwurf der Liste 25 Prozesse, 76 Input-Parameter und 73 Output-Parameter (*Abbildung* 3-17). Diese Daten sollen hier nur, als Randnotiz erwähnt werden, um später im Dokument die Entwicklung dieser Liste nachvollziehen zu können. Die abgebildete Excelliste ist in der Datei „[Initial_Process_List.xlsx](https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP03/Beispieldaten/Initial_Process_List.xlsx)“[^5] zu finden
 
 [^5]: <https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP03/Beispieldaten/Initial_Process_List.xlsx>
 
-![Ein Bild, das Text, Screenshot, Schrift, Dokument enthält. Automatisch generierte Beschreibung](media/9e5bf5382a6c17950167e2415fd88eb0.png)
-
+![image](https://github.com/user-attachments/assets/2c7ae1c9-4bba-4b3e-a823-78d67133311e)    
 *Abbildung 3-17: Initiale Prozessliste*
 
 Diese Liste bildete die Grundlage für alle nachfolgenden Aktivitäten.
@@ -503,19 +500,16 @@ Diese Liste bildete die Grundlage für alle nachfolgenden Aktivitäten.
 
 Aufbauend auf der initialen Prozessliste wurde wegen der beschränkten Übersichtlichkeit des Formates diese Liste in ein UML-Klassendiagramm übertragen (*Abbildung* 118). In mehreren Arbeitsterminen konnten weitere Prozesse mit den notwendigen Parametern angereichert werden, d.h. sowohl Soll- als auch Ist-Werte und dabei auch schon, wo es möglich war, ersten Datentypen zu den Parametern definieren.
 
-![Ein Bild, das Text, Screenshot, parallel, Diagramm enthält. Automatisch generierte Beschreibung](media/b439286afa9a9cc7fbf5cc1b941b0cc3.png)
-
+![image](https://github.com/user-attachments/assets/fde81450-2167-4c4e-b25d-ea32609125e1)   
 *Abbildung 3-18: UML-Klassendiagramm für Produktionsprozesse*
 
-Bei der Erstellung und weiteren Ausarbeitung des UML-Diagramms wurden initial zwei generische Klassen definiert (*Abbildung* 119) und in den sogenannten allgemeingültigen Bereich „Common“ überführt. Der Hintergrund dieser Vorgehensweise war, dass diese Datenmodelle für jeden Prozess relevant sind und möglichst Redundanzen bezüglich der Parameter in den Prozessdefinitionen vermieden werden sollte. Durch dieses Vorgehen konnten die jeweiligen Prozessdefinitionen auf die wesentlichen spezifischen Parameter beschränkt gehalten werden.
+Bei der Erstellung und weiteren Ausarbeitung des UML-Diagramms wurden initial zwei generische Klassen definiert (*Abbildung* 3-19) und in den sogenannten allgemeingültigen Bereich „Common“ überführt. Der Hintergrund dieser Vorgehensweise war, dass diese Datenmodelle für jeden Prozess relevant sind und möglichst Redundanzen bezüglich der Parameter in den Prozessdefinitionen vermieden werden sollte. Durch dieses Vorgehen konnten die jeweiligen Prozessdefinitionen auf die wesentlichen spezifischen Parameter beschränkt gehalten werden.
 
 Die Hauptklasse wurde „Manufacturing Process“ genannt und soll alle übergreifenden Parameter enthalten, die zur Durchführung und Dokumentation des Prozesses erforderlich sind. Dazu gehören beispielsweise Start- und Endzeit der Prozessausführung, das Ergebnis des Prozesses usw. Des Weiteren wird zwischen dem geplanten Materialeinsatz (*Consumption*) und ungeplantem Mehrverbrauch (*AdditionalConsumption*) unterschieden.
 
 Die zweite Klasse „Material Consumption“ enthält die notwendigen Informationen hinsichtlich des Materialeinsatzes, die für die Ausführung des zugehörigen Prozesses zur Erzeugung des Produktes notwendig sind, beispielsweise die Parameter Material_Id, Amount, Unit usw.
 
-| ![Ein Bild, das Text, Screenshot, Schrift enthält. Automatisch generierte Beschreibung](media/514a30522a3efe77a53bc3208f173d8b.png) | ![Ein Bild, das Text, Screenshot, Schrift enthält. Automatisch generierte Beschreibung](media/d2b6f69df2c40ad16611084bb3b4d74a.png) |
-|-------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-
+![image](https://github.com/user-attachments/assets/ad62d3a6-2f08-4eb5-a92d-8ab6dc474c0b)   
 *Abbildung 3-19: Allgemeingültige Klassen*
 
 Im weiteren Verlauf wurden das Thema „Testing“, das bis dato eher rudimentär mitgeführt wurde, im UML-Diagramm spezifischer ausgearbeitet und eingetragen. Dabei wurden verschiedene Testprozesse, die beispielsweise bei der End-of-Line-Prüfung eines Leitungssatzes anfallen können, mit den entsprechenden Parametern erarbeitet.
@@ -536,8 +530,7 @@ Zu diesem Zweck existiert der [ECLASS-Standard](https://eclass.eu/) [5] zur Klas
 
 **Unit***: Die Unit setzt eine Maßeinheit in Beziehung zur Basisdimension des zugrunde liegenden Einheitensystems.*
 
-![Ein Bild, das Diagramm enthält. Automatisch generierte Beschreibung](media/142fb115f48b52e6500dc16fa7aad3d9.png) ![Ein Bild, das Diagramm enthält. Automatisch generierte Beschreibung](media/550e1778e06f9674bafe75f73f25aa95.png)
-
+![image](https://github.com/user-attachments/assets/fd207c97-f129-4b5d-bb23-602a6bcc357d)   
 *Abbildung 3-20: ECLASS Datenmodell und Detaillierung des Properties (Quelle:* [*ECLASS*](https://eclass.eu/fileadmin/Redaktion/pdf-Dateien/Wiki/ECLASS_Technical-Specification_11_Conceptual-Data-Model_v_1.0.pdf) [6]*)*
 
 Die hierarchische Struktur, die in ECLASS verwendet wird, kann ohne großen Aufwand auf das UML-Diagramm gemappt werden. Der Fokus zu diesem Zeitpunkt lag auf den Prozessen *Common, Cut* und *Crimp*. Für diese Prozesse wurden ECLASS Klassen angelegt. Während der Übertragung mussten den einzelnen Informationselementen noch weitere Details hinzugefügt werden, um eine semantische Beschreibung zu ermöglichen:
@@ -561,11 +554,7 @@ Die im ULM-Diagramm begonnene Kategorisierung von ähnlichen Prozessen mit dem H
 
 Die Entwicklung der Darstellung und Aufbereitung der Daten zu den Prozessen, soll in der nachfolgenden *Abbildung 3-21* am Beispiel des Prozesses „Cut“ gezeigt werden.
 
-| Initiale Prozessliste ![](media/8b21e3ed17f9d19153d27dee2e11dd38.png)                                                                                           |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| UML-Diagramm ![Ein Bild, das Text, Screenshot, Schrift, Reihe enthält. Automatisch generierte Beschreibung](media/7735b36d35bbda4013c85a0519064065.png)         |
-| Finale Prozessliste ![Ein Bild, das Text, Reihe, Screenshot, Schrift enthält. Automatisch generierte Beschreibung](media/1a21aaa39dcdd094f7df9741d5ea7bc9.png)  |
-
+![image](https://github.com/user-attachments/assets/f982b575-d257-484e-b818-f87a6b9a395e)    
 *Abbildung 3-21: Entwicklung der Darstellung zu den Prozessen*
 
 Auf diese Weise wurden alle im UML-Diagramm enthaltenen Prozesse inklusive der Parameter in einem ersten Schritt in die neue Form der Prozessliste übertragen. Mit der Übernahme aus dem UML-Diagramm wurden auch die einzelnen Parameter und deren Zuordnung nochmals diskutiert und ggf. korrigiert. Zudem wurden in diesem Zuge auch fehlende Datentypen und Properties noch ergänzt.
