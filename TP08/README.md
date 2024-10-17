@@ -1,12 +1,11 @@
 # TP 8 - Data Storage Policy, Sicherheit, Anbindung an Catena-X
-## Inhaltsverzeichnis
+## Inhalt
 
 [AP 8.1 - Technische Anforderungsanalyse](#8.1)
 
 [AP 8.2 - Technische Umsetzungskonzeption und Zielarchitektur](#8.2)
 
 [AP 8.3 - Vorbereitung der Anbindung an Catena-X](#8.3)
-
 - [8.3.1 Beispielprodukt: Teilleitungssatz](#8.3.1)
 - [8.3.2 Das Anwendungsszenario](#8.3.2)
 - [8.3.3 Ablauf des Szenarios](#8.3.3)
@@ -87,9 +86,9 @@ Wie in Abschnitt 8.3.3 beschrieben sind alle Akteure (OEM, Tier 1, Tier 2) Data 
 
 [^2]: https://catenax-ev.github.io/docs/next/operating-model/what-service-map
 
-| Komponente             | Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | Referenzimplementierung                         | Standardisiert in                        |
-|------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------|------------------------------------------|
-| Konnektor              | Ein Konnektor ist eine dezentrale Softwarekomponente für den Peer-to-Peer Datenaustausch zwischen zwei Datenökosystem-Teilnehmern. Er stellt die Datenendpunkte bereit und kann Nutzungsbedingungen mitgeben, interpretieren und durchsetzen.                                                                                                                                                                                                                                         | Tractus-X Eclipse Dataspace Connector (EDC)[^3] | CX-0018 Dataspace Connectivity v3.0.0    |
+| Komponente             | Beschreibung         | Referenzimplementierung                         | Standardisiert in                        |
+|------------------------|----------------------|-------------------------------------------------|------------------------------------------|
+| Konnektor              | Ein Konnektor ist eine dezentrale Softwarekomponente für den Peer-to-Peer Datenaustausch zwischen zwei Datenökosystem-Teilnehmern. Er stellt die Datenendpunkte bereit und kann Nutzungsbedingungen mitgeben, interpretieren und durchsetzen. | Tractus-X Eclipse Dataspace Connector (EDC)[^3] | CX-0018 Dataspace Connectivity v3.0.0    |
 | Digital Twin  Registry | Mit einer Registry für Digitale Zwillinge veröffentlicht ein Anbieter digitale Darstellungen der Assets. Diese Daten sind in Teilmodellen gekapselt, die über Anweisungen zugänglich sind, die ein Verbraucher im Register für digitale Zwillinge (DTR) findet. Die DTR hält sich an die AssetAdministrationShellRegistryServiceSpecification[^4] und die DiscoveryServiceSpecification[^5] und enthält daher nur Metadaten. | Tractus-X Digital Twin Registry (DTR)[^6]       | CX-0002 Digital Twins in Catena-X v2.2.0 |
 | Submodel Server        | Die Datenquelle, die einer Teilmenge der Submodel-API entspricht, wie sie in AAS Teil-2: Application Programming Interfaces [1] definiert ist. Sie liefert die eigentlichen Daten, nach denen der Verbraucher sucht, über einen strukturierten Endpunkt, der durch die SubmodelServiceSpecification[^7] definiert ist, und gemäß den im Repository für semantische Modelle[^8] definierten strukturierten Datenformaten.                                                              | FA³ST-Framework,  Eclipse BaSyx, AASX Server    | CX-0002 Digital Twins in Catena-X v2.2.0 |
 
