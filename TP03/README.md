@@ -36,11 +36,6 @@
 
 [Literaturverzeichnis](#literaturverzeichnis)
 
-[Abbildungsverzeichnis](#abbildungsverzeichnis)
-
-[Tabellenverzeichnis](#tabellenverzeichnis)
-
-
 ## Zielsetzung
 Im Teilprojekt 3 "**Produktionsprozesse des Leitungssatzes**" wurden Konzepte und Verfahren entwickelt, welche die Informationen der Verwaltungsschalen der Produkte, Ressourcen und Prozessbeschreibungen sowie den aktuellen Anlagenzuständen kombinieren, aufbereiten und verarbeiten, um automatisiert die Produktionsmaschinen bzw. deren Montage-Skills zu konfigurieren und zu parametrieren.
 
@@ -135,8 +130,8 @@ Die gesammelten Ergebnisse finden sich in der Anforderungstabelle „[VWS4LS_AP3
 | GL_11         | DIZA-01      | Maschinenidentifikation       | Machine identification        | Um die Fehlerursache an der richtigen Maschine zu ermitteln, muss die Maschinenidentifikation bekannt sein.   | In order to determine the cause of a fault on the correct machine, the machine identification must be known.       |
 | GL_12         | BAMA-04 BeJo-01 EmDa_11 GENE-02 GENE-04 CaWe_009 HORÖ-01 ArBe-02 GENE-09 MaFe-08 CaWe_012 CaWe_013 EmDa_20 BeJo_06    | Horizontale Rückverfolgbarkeit    | Horizontal Traceability         | Für die Herstellung einer horizontalen Rückverfolgbarkeit müssen Rückmeldedaten aus dem Prozess/ von der Maschine abgefragt und in der Verwaltungsschale des hergestellten Produktes gespeichert werden. Dies gilt insbesondere für Rückmeldungen zu in dem Prozess integrierten Qualitätsüberwachungen. Bietet die Maschine eine aktive Verwaltungsschale ist es sinnvoll, wenn die Rückmelddaten darüber interaktiv abgefragt werden können, um diese Daten z.B. zur Entscheidungsfindung in Verhandlunsgprozessen zwischen Verwaltungsschalen zu nutzen. Auch das für eine Prozess verwendet Rezept soll nachvollziehbar sein.     |      |
 | GL_13         | FRST-05 DIN-N-09 DIN-N-04 JOZI-06 PEBR-01 JOZI-02 JOZI-03    | Detailierte geometrische Informationen zu Kontaktträgern und weiteren Anbauteilen (Tüllen, Clipse, Kabelführungen, Kabelbinder uws.)                           |                                                                                                | Geometrische Informationen zu Außenkonturen (Länge, Höhe, Breite) und Innenkonturen von Anbeiteilen und Kontaktträger, sowie zusätzliche konstruktive Informationen beispielsweise bei Kontakträgern Kammernkoordinaten, Stecktiefen usw.   Diese Informationen sind u.a. auch notwendig für die Konstruktion von Prüfaufnahmen  Für eine (teil-)automatisierte Ableitung des Tischlayouts muss die genaue Lage aller Stecker inklusive Einlagerichtung bekannt sein.  Für die Bereitstellung von Hilfswerkzeugen und Produktionshilfsmitteln müssen die Anbauteile (z.B. Kabelbinder) bekannt sein.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                                                                                                                                                                                        |
-| GL_14         | SEAI-01 SEAI-02 DIN-N-01 DIN-N-02 DIN-N-07 FRST-04                                                                                                              | Verarbeitungs- und Verfahrensinformation für diverse Produkttypen (Splice, UTP-verdrillte Leitung, Wicklung usw.)                                              |                                                                                                | Alle notwendigen Verarbeitungspezifikationen und dazugehörige Parameter müssen den entsprechenden Produkttypen datentechnisch zugewiesen und/oder eindeutig identifizierbar sein. Beispiele: *UTP*: Schlaglänge, Entdrilllänge, mit Wicklung gesicherte Enden usw. *Splice*: Verbinderart (End- oder Durchgangsverbinder), Verbidnugnstechnik (U-Schall, Crimp, ...), Gedichtet/Ungedichtet usw. *Wicklung*:Überlappungsgrad und -winkel von Wickelstrecken muss im Datenmodell hinterlegt werden. Zur (automatisierten) Verarbeitung wird sowohl der Überlappungsgrad als auch der Überlappungswinkel benötigt.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |                                                                                                                                                                                                                                                                                                                                                                        |
-| GL_15         | SEAI-03 FRST-03 FRST-06 WOAI-03                                                                                                                                 | Vererbung von Klassifikation, Sicherheitsrelevanz, Verbauinformation, Anforderungen usw. von Brodnetzkomponenten auf den Leitungstrang bzw. dessen Komponenten |                                                                                                | Sicherheitsanforderungen die beispielsweise aus FuSi (ISO 26262), ASPICE, Bauraum o.ä. kommen muss diese Information an die angeschlossenen Komponenten übergeben/vererbt werden, um die Komponenten richtig auszuwählen (Festlegung und Verwendung von Standard-Attributen für functional safety (FuSI) und ISO26262 relevante Umfänge). Diese Information muss auch systemübergreifend transferriert werden können. Ebenso brauchen Komponenten entsprechende Properties ob diese Anforderungen erfüllt werden. Beispiel: Steuergeräte mit entsprechenden Anforderungen müssen diese an den Leitungsstrag und dessen Komponenten vererben. FuSi-relevante Verbindungen, die über Trennstellen geführt werden, müssen diese Information an die Trennstelle übergeben. Für die Herstellung der Prüftechnik ist es wichtig die kritischen Abgriffe (z.B. Airbag) für den Test und das Layout zu haben                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                                                                                                                                                                                        |
+| GL_14         | SEAI-01 SEAI-02 DIN-N-01 DIN-N-02 DIN-N-07 FRST-04                                                                                                              | Verarbeitungs- und Verfahrensinformation für diverse Produkttypen (Splice, UTP-verdrillte Leitung, Wicklung usw.)                                              |                                                                                                | Alle notwendigen Verarbeitungspezifikationen und dazugehörige Parameter müssen den entsprechenden Produkttypen datentechnisch zugewiesen und/oder eindeutig identifizierbar sein. Beispiele: *UTP*: Schlaglänge, Entdrilllänge, mit Wicklung gesicherte Enden usw. *Splice*: Verbinderart (End- oder Durchgangsverbinder), Verbidnugnstechnik (U-Schall, Crimp, ...), Gedichtet/Ungedichtet usw. *Wicklung*:Überlappungsgrad und -winkel von Wickelstrecken muss im Datenmodell hinterlegt werden. Zur (automatisierten) Verarbeitung wird sowohl der Überlappungsgrad als auch der Überlappungswinkel benötigt.  |    |
+| GL_15         | SEAI-03 FRST-03 FRST-06 WOAI-03   | Vererbung von Klassifikation, Sicherheitsrelevanz, Verbauinformation, Anforderungen usw. von Brodnetzkomponenten auf den Leitungstrang bzw. dessen Komponenten |                                                                                                | Sicherheitsanforderungen die beispielsweise aus FuSi (ISO 26262), ASPICE, Bauraum o.ä. kommen muss diese Information an die angeschlossenen Komponenten übergeben/vererbt werden, um die Komponenten richtig auszuwählen (Festlegung und Verwendung von Standard-Attributen für functional safety (FuSI) und ISO26262 relevante Umfänge). Diese Information muss auch systemübergreifend transferriert werden können. Ebenso brauchen Komponenten entsprechende Properties ob diese Anforderungen erfüllt werden. Beispiel: Steuergeräte mit entsprechenden Anforderungen müssen diese an den Leitungsstrag und dessen Komponenten vererben. FuSi-relevante Verbindungen, die über Trennstellen geführt werden, müssen diese Information an die Trennstelle übergeben. Für die Herstellung der Prüftechnik ist es wichtig die kritischen Abgriffe (z.B. Airbag) für den Test und das Layout zu haben                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                                                                                                                                                                                        |
 | GL_16         | FRST-05 WOAI-04                                                                                                                                                 | Detaillierte Informationen zum Kontaktträger bezüglich der Kompabilität zu Terminals, EADs                                                                     |                                                                                                | Kompatibiltäten von Kontaktträgern zu Terminalsystemen inklusive der verwendbaren Einzeladerdichtungen, maximalen Leitungsdurchmesser usw. u.a. auch für die Prüftechnik relevant zur Konstruktion von Prüfadaptern                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |                                                                                                                                                                                                                                                                                                                                                                        |
 | GL_17         | FRST-05                                                                                                                                                         | Detaillierte Informationen zum Kontaktträger bezüglich der Verarbeitungsspezifikation                                                                          |                                                                                                | Für die automatisierte Fertigung werden die Ausrichung des Terminals zur Kammer des Kontaktträgers benötigt sowie Parameter für Stecktiefe, Steckkräfte usw.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |                                                                                                                                                                                                                                                                                                                                                                        |
 | GL_18         | MIBR-01                                                                                                                                                         | Position der Kontakte im Steckergehäuse                                                                                                                        |                                                                                                | Die Position der Kontakte im Steckergehäuse muss bekannt sein, damit im Fehlerfall die genaue Fehlerposition visualisiert werden kann.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |                                                                                                                                                                                                                                                                                                                                                                        |
@@ -163,7 +158,7 @@ Die gesammelten Ergebnisse finden sich in der Anforderungstabelle „[VWS4LS_AP3
 | GL_39         | MaFe-03                                                                                                                                                         | 3D-Daten (CAD-Daten) von Ressourcen                                                                                                                            |                                                                                                | Es werden die CAD-Daten der Ressourcen z.B. Greifer, Schrauber, Roboter etc. Als Datenformat wird ein Open Standard Format empfohlen, z.B. glTF, Collada etc, jedoch nicht proprietäre Formate wie JT oder 3DXML.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |                                                                                                                                                                                                                                                                                                                                                                        |
 | GL_40         | ArBe-01                                                                                                                                                         | Standardisierte Kennzeichnung der physikalischen Assets um den Bezug zur Verwaltungsschale herstellen zu können.                                               |                                                                                                | Einheitliche Beschreibung und Spezifikation von Anforderungen für die Codierung(=Kennzeichung) von Komponenten und Systemen zur Traceability zwischen den Unternehmen und auch innerhalb des Unternehmens. Aufgrund der sehr unterschiedlichen Funktionen und Geometrien der Leitungssatzkomponenten wird es notwendig sein, verschiedene Arten der physischen Kennzeichnung am Artikel zu nutzen. Die daraus resultierenden Anforderungen an die Hardware (z.B. Barcodescanner) sind zu berücksichtigen, damit erforderliche Hardware nicht dem durchgängigen Einsatz der VWS im Wege steht.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |                                                                                                                                                                                                                                                                                                                                                                        |
 | GL_41         | ArBe-04                                                                                                                                                         | Validierungsdaten für Kontaktteile für Kontakteilauswahl und Validierung der Leitunsgsatzentwicklung.                                                          |                                                                                                | Um zu überprüfen, ob die Verwendung eines Steckersystems mit dem ausgewählten Leitungsmaterial möglich ist, soll die VWS des Kontaktteils vereinheitlichte Informationen zu den freigegeben/Validierten Kombinationen enthalten (z.B. Leitermaterial, Leiteraufbau, Leitungshersteller, Querschnittsbereich).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | Freigabeinformationen des Kontakteilhersteller Freigabeinformationen des OEM Erlaubter Querschnittsbereich Erlaubte Leitungsart (Leitermaterial+Litzenaufbau) Erlaubte Leitungshersteller                                                                                                                                                                              |
-| GL_42         | SeOl-01                                                                                                                                                         | Varianten*Abbildung*                                                                                                                                           |                                                                                                | Das Datenmodell muss in der Lage sein, die Variantenvielfalt eines Leitungssatzes abzubilden. D.h. eine KBL / VEC muss maximal ausgeprägt sein, jedoch ein Kennzeichen für Varianten für Komponenten mitgeben können.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |                                                                                                                                                                                                                                                                                                                                                                        |
+| GL_42         | SeOl-01                                                                                                                                                         | Variantenabbildung                                                                                                                                           |                                                                                                | Das Datenmodell muss in der Lage sein, die Variantenvielfalt eines Leitungssatzes abzubilden. D.h. eine KBL / VEC muss maximal ausgeprägt sein, jedoch ein Kennzeichen für Varianten für Komponenten mitgeben können.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |                                                                                                                                                                                                                                                                                                                                                                        |
 | GL_43         | HeWi-01                                                                                                                                                         | Projekt IILS: TP5 - Rationalisierung EoL-Prüfung                                                                                                               |                                                                                                | Erweiterte und eindeutige Produktionsdaten müssen einem Leitungssatz zugeordnet werden können, um mithilfe dieser Daten eine EoL-Prüfung zu rationalisieren                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |                                                                                                                                                                                                                                                                                                                                                                        |
 | GL_44         | FRST-08                                                                                                                                                         | Konfigurationsinformationen an Komponenten und Leitungen                                                                                                       |                                                                                                | Wenn alle Komponenten und Leitungen eine ensprechend auswertbare Ausstattungs-/Konfigurationslogik erhalten, können Bestellungen auf Konsistenz geprüft werden und Prüfprogramme gezielter auf den spezifischen KSK erstellt werden.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                                                                                                                                                                                        |
 | GL_45         | DIN-N-06                                                                                                                                                        | Detaillierte Beschreibung der Außenkonturen vor allem bei Kreuzungen und Ausbindungen                                                                          |                                                                                                | Bei den Ausbindungen und Kreuzungen sollen die Bündeldurchmesser berücksichtigt werden und datentechnisch auswertbar sein                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |                                                                                                                                                                                                                                                                                                                                                                        |
@@ -194,23 +189,23 @@ Die gesammelten Ergebnisse finden sich in der Anforderungstabelle „[VWS4LS_AP3
 | GL_70         | GENE-01                                                                                                                                                         | Auftragsfreigabe                                                                                                                                               |                                                                                                | Als Produktionsressource möchte ich eine Freigabe für den (Wieder-)Start der Produktion eines Auftrags vom Steuerungssystem erhalten.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |                                                                                                                                                                                                                                                                                                                                                                        |
 | GL_71         | GENE-03                                                                                                                                                         | Qualitätsprüfungen anstoßen                                                                                                                                    |                                                                                                | Als Steuerungssystem (MES) möchte ich Qualitätsprüfungen anstoßen, die implementiert durch meine Ressource sind, so dass ich den Produktionsstart freigeben oder verweigern kann und Rückmeldedaten sammeln kann.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |                                                                                                                                                                                                                                                                                                                                                                        |
 | GL_72         | GENE-05                                                                                                                                                         | Schicken des Auftrages an die Maschine                                                                                                                         |                                                                                                | Als Steuerungssystem möchte ich einen Auftrag an meine Produktionsressource mit Produktspezifikation und Menge senden, so dass ich meinen Produktionsplan durchführen kann.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |                                                                                                                                                                                                                                                                                                                                                                        |
-| GL_73         | GENE-06                                                                                                                                                         | Schicken von Konfigurationsänderungen an die Maschine                                                                                                          |                                                                                                | Als Steuerungssystem möchte ich meine Produktionsressource konfigurieren (Grundeinstellungen, nicht Rezept, z.B. automatischer Werkzeugwechsel), so dass ich die Durchführung meines Produktionsplanes vorbereiten kann.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |                                                                                                                                                                                                                                                                                                                                                                        |
-| GL_74         | GENE-08                                                                                                                                                         | Abrufen von Rückmeldedaten für die Rückverfolgbarkeit                                                                                                          |                                                                                                | Als Steuerungssystem möchte ich die gemessenen Prozessparameter (Rückmeldedaten) anfragen, so dass ich Daten für die Rückverfolgbarkeit sammeln kann.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |                                                                                                                                                                                                                                                                                                                                                                        |
-| GL_75         | GENE-12                                                                                                                                                         | Abfragen von Material-Setup                                                                                                                                    |                                                                                                | Als Steuerungssystem (MES) möchte ich die eingerichteten Materialien (Artikelnummer, Chargennummer) abfragen, so dass ich über die Produktionsfreigabe entscheiden und Daten für die Rückverfogbarkeit sammeln kann.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                                                                                                                                                                                        |
-| GL_76         | GENE-15                                                                                                                                                         | Abfragen von Material-Setup                                                                                                                                    |                                                                                                | Als Produktionsressource möchte ich Informationen über das eingerichtete Material (Artikelnummer, Seriennummer, Verarbeitungsspezifikation) sammeln, so dass ich Daten für die Rückverfolgbarkeit sammeln kann und diese an andere VWS weiterleiten kann.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |                                                                                                                                                                                                                                                                                                                                                                        |
-| GL_77         | MaFe-04                                                                                                                                                         | Zugriff auf Verwaltungsschalen                                                                                                                                 |                                                                                                | Für die Produktion bzw. Montage des Kabelbaums wird ein standardisierter Zugriff auf die Verwaltungsschale benötigt, um Daten zu lesen und zu schreiben. Hierfür muss eine Kommunikationstechnolgie (z.B. REST über HTTP) zur Verfügung gestellt werden                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |                                                                                                                                                                                                                                                                                                                                                                        |
-| GL_78         | MaFe-05                                                                                                                                                         | Repository für Verwaltungsschalen                                                                                                                              |                                                                                                | Die in der Anlage zur Verfügung gestellten verwaltungsschalen müssen über eine Repository standardisiert zur Verfügung gestellt werden                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |                                                                                                                                                                                                                                                                                                                                                                        |
-| GL_79         | MaFe-06                                                                                                                                                         | Physikalische Daten von Produkten und Ressourcen                                                                                                               |                                                                                                | Es werden physikalische Daten von Produkten benötigt, insb. Masse und Trägheit                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |                                                                                                                                                                                                                                                                                                                                                                        |
-| GL_80         | MaFe-07                                                                                                                                                         | Kinematikbeschreibung von Produkteu und Ressourcen                                                                                                             |                                                                                                | Es werden die Kinematik der Ressourcen benötgit, insb. des Greifers                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |                                                                                                                                                                                                                                                                                                                                                                        |
-| GL_81         | CaWe_006                                                                                                                                                        |                                                                                                                                                                | Hardwired safe modes                                                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | As a crimp machine manufacturer, I want to have the operation modes “safe shutdown” and “local operation” to be implemented by an electrical signal connection (e.g.: “Emergency shutdown loop”) so that I can implement the safety functions by hardware elements.                                                                                                    |
-| GL_82         | CaWe_007                                                                                                                                                        |                                                                                                                                                                | Locking and unlocking machine for manual operation                                             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | As an OEM, I want to have means to lock and unlock operation of a crimp machine, which is part of a partially automated system, so that I can make sure that it will only be operated in relation to a specific manufacturing job.                                                                                                                                     |
-| GL_83         | CaWe_015                                                                                                                                                        |                                                                                                                                                                | Verify die-set and tool                                                                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | As a crimp machine manufacturer, I want to have the machine verifying that the currently loaded program can be safely executed with the installed die-set and tool so that I can prevent damage of the machine.                                                                                                                                                        |
-| GL_84         | EmDa_11                                                                                                                                                         |                                                                                                                                                                | Data access for OEMs - gather quality information                                              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | As an OEM I want to be able to identify each part of a produced harness instance (according to BOM) so that I can visualize the product                                                                                                                                                                                                                                |
-| GL_85         | RoMi_01                                                                                                                                                         |                                                                                                                                                                | Hierarchical product data model                                                                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | As an API user I want to query my product data model so that I can group the details in a hierarchical structure                                                                                                                                                                                                                                                       |
-| GL_86         | RoMi_02                                                                                                                                                         |                                                                                                                                                                | Harness as root element                                                                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | As an API user I want to access the Product data model over a Harness root element so that I have always the same entry point                                                                                                                                                                                                                                          |
-| GL_87         | RoMi_03                                                                                                                                                         |                                                                                                                                                                | Harness metadata                                                                               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | As an API user I want to access metadata for a Harness so that I can read the model identifier, Unique harness ID, and other data                                                                                                                                                                                                                                      |
-| GL_88         | MiRo-02                                                                                                                                                         |                                                                                                                                                                | Receive events from resource                                                                   |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | As a Control System I want to receive events of my production resources so that I can react to changes in my production line                                                                                                                                                                                                                                           |
-| GL_89         | MaFr-01                                                                                                                                                         |                                                                                                                                                                | Lock a resource                                                                                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | As a Control System I want to be able to reserve a resource for production exclusively                                                                                                                                                                                                                                                                                 |
+| GL_73         | GENE-06  | Schicken von Konfigurationsänderungen an die Maschine  | | Als Steuerungssystem möchte ich meine Produktionsressource konfigurieren (Grundeinstellungen, nicht Rezept, z.B. automatischer Werkzeugwechsel), so dass ich die Durchführung meines Produktionsplanes vorbereiten kann.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |                                                                                                                                                                                                                                                                                                                           |
+| GL_74         | GENE-08   | Abrufen von Rückmeldedaten für die Rückverfolgbarkeit  |               | Als Steuerungssystem möchte ich die gemessenen Prozessparameter (Rückmeldedaten) anfragen, so dass ich Daten für die Rückverfolgbarkeit sammeln kann.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |                                                                                                                                                                                                                                                                                                                                    |
+| GL_75         | GENE-12     | Abfragen von Material-Setup      |    | Als Steuerungssystem (MES) möchte ich die eingerichteten Materialien (Artikelnummer, Chargennummer) abfragen, so dass ich über die Produktionsfreigabe entscheiden und Daten für die Rückverfogbarkeit sammeln kann. |        |
+| GL_76         | GENE-15     | Abfragen von Material-Setup    |       | Als Produktionsressource möchte ich Informationen über das eingerichtete Material (Artikelnummer, Seriennummer, Verarbeitungsspezifikation) sammeln, so dass ich Daten für die Rückverfolgbarkeit sammeln kann und diese an andere VWS weiterleiten kann. |        |
+| GL_77         | MaFe-04     | Zugriff auf Verwaltungsschalen     |   | Für die Produktion bzw. Montage des Kabelbaums wird ein standardisierter Zugriff auf die Verwaltungsschale benötigt, um Daten zu lesen und zu schreiben. Hierfür muss eine Kommunikationstechnolgie (z.B. REST über HTTP) zur Verfügung gestellt werden   |      |
+| GL_78         | MaFe-05    | Die in der Anlage zur Verfügung gestellten verwaltungsschalen müssen über eine Repository standardisiert zur Verfügung gestellt werden   |     |
+| GL_79         | MaFe-06    | Physikalische Daten von Produkten und Ressourcen    |    | Es werden physikalische Daten von Produkten benötigt, insb. Masse und Trägheit    |      |
+| GL_80         | MaFe-07    | Kinematikbeschreibung von Produkteu und Ressourcen  |    | Es werden die Kinematik der Ressourcen benötgit, insb. des Greifers   |    |
+| GL_81         | CaWe_006   |        | Hardwired safe modes    |  | As a crimp machine manufacturer, I want to have the operation modes “safe shutdown” and “local operation” to be implemented by an electrical signal connection (e.g.: “Emergency shutdown loop”) so that I can implement the safety functions by hardware elements.                                                                                                    |
+| GL_82         | CaWe_007                                                                                                                                                        |                                                                                                                                                                | Locking and unlocking machine for manual operation                                             |   | As an OEM, I want to have means to lock and unlock operation of a crimp machine, which is part of a partially automated system, so that I can make sure that it will only be operated in relation to a specific manufacturing job.                                                                                                                                     |
+| GL_83         | CaWe_015                                                                                                                                                        |                                                                                                                                                                | Verify die-set and tool                                                                        |   | As a crimp machine manufacturer, I want to have the machine verifying that the currently loaded program can be safely executed with the installed die-set and tool so that I can prevent damage of the machine.                                                                                                                                                        |
+| GL_84         | EmDa_11   |     | Data access for OEMs - gather quality information      |   | As an OEM I want to be able to identify each part of a produced harness instance (according to BOM) so that I can visualize the product  |
+| GL_85         | RoMi_01   | Hierarchical product data model  |  | As an API user I want to query my product data model so that I can group the details in a hierarchical structure  |
+| GL_86         | RoMi_02   | | Harness as root element  |     | As an API user I want to access the Product data model over a Harness root element so that I have always the same entry point     |
+| GL_87         | RoMi_03   |       | Harness metadata   |    | As an API user I want to access metadata for a Harness so that I can read the model identifier, Unique harness ID, and other data    |
+| GL_88         | MiRo-02   |       | Receive events from resource  | | As a Control System I want to receive events of my production resources so that I can react to changes in my production line     |
+| GL_89         | MaFr-01   |       | Lock a resource  |    | As a Control System I want to be able to reserve a resource for production exclusively     |
 
 ## <a name="_3.2"></a>AP 3.2 - Erforschung eines Referenzmodells
 
@@ -220,7 +215,7 @@ Wertschöpfungskettenübergreifend gilt es die verschiedenen Systemlandschaften 
 
 Die wesentlichen Elemente dieses Modells beziehen sich auf die VWS für Produktionsmittel, Produktionsprozesse und der Integration der Daten-/Informationsmodelle aus TP1. Für letzteres wurde in AP3.2 noch ein Konzept namens CAD2BOP definiert, welches CAD-Daten und Parameter erfasst, die einen starken Einfluss auf eine spätere Automatisierung der Produktions- und Montageprozesse in der Wertschöpfungskette für Leitungssätze haben.
 
-### Datenfluss-Architektur
+### <a name="_3.2.1"></a>Datenfluss-Architektur
 
 Für einen unternehmensübergreifenden Datenaustausch über einen IDS wie bspw. [Catena-X](https://catena-x.net/de/) sind Konzepte für den unternehmensinternen Datenzugriff, -aggregation und -konvertierung notwendig, um alle relevanten Daten bereitstellen zu können. Hierzu wurde eine initiale High-Level Architektur entworfen, um alle Elemente für die Datengenerierung und -haltung in einem Modell zusammenzufassen (siehe dazu die grün hinterlegten Bestandteile in *Abbildung 3-2*).
 
@@ -231,7 +226,7 @@ Die unterste Ebene beschreibt den Shopfloor mit allen dazugehörigen Produktions
 
 [^3]: <https://github.com/eclipse-edc/>
 
-### Use Cases
+### <a name="_3.2.2"></a>Use Cases
 
 Aufbauend auf der High-Level Architektur wurden drei verschiedene Use Cases definiert, um die Datenflüsse im Kontext einer konkreten Anwendung darzustellen. Diese Use Cases werden in den folgenden Unterkapiteln vorgestellt.
 
@@ -276,7 +271,7 @@ Die OEE-Berechnung ist von zentralem Interesse, wenn ein Betreiber von Anlagen u
 
 In diesem Use Case kommt folgende Annahme zum Einsatz. Die “Eclipse BaSyx Data Bridge” ist im Einsatz und ermöglicht somit die Anbindung von Maschinen mit “nur” proprietären Schnittstellen. Des Weiteren wird unterstellt, dass die AAS der Maschine mit der AAS-Kopie der Ressource des Tier 1 synchronisiert ist, bzw. wird (s. 5). Ein MES muss daher nicht mehr zwingend mit der Ressource direkt kommunizieren, sondern kann über verfügbare EAI (Enterprise Application Integration) Zugang zu den benötigten Daten erhalten. Bei der Anreicherung der AAS der Ressource mit OEE-Daten ist darauf zu achten, dass auch die Ermittlung der einzelnen OEE-Bestandteile (Availability, Perfomance, Quality) transparent dargestellt wird. Sowohl in Bezug auf die Datenbasis als auch die Berechnungen.
 
-### CAD2BOP
+### <a name="_3.2.3"></a>CAD2BOP
 
 Hinter „Computer-Aided-Design to Bill-of-Process“ (CAD2BOP) steht die Erstellung eines Konzepts zur Definition von CAD-Daten und weiteren Parametern, die einen starken Einfluss auf eine spätere Automatisierung der Produktions- und Montageprozesse in der Wertschöpfungskette für Leitungssätze haben. Im Speziellen werden hier Gehäuse und Kontakte betrachtet, um den Prozess der Steckerbestückung (das sog. „Blockload“) mit Automatisierungsparametern zu unterstützen.
 
@@ -321,10 +316,7 @@ Ebenso ist das Prüfen solcher Gehäuse mit einem hohen Maß an Handarbeit verbu
 -   Die X-Achse ergibt sich aus der Rechte-Hand-Regel
 -   Um eine Orientierung im Raum zu gewährleisten, ist ein weiterer Parameter notwendig (Parameter Name: CrimpOrientation). Dazu wird der Drehwinkel der Crimpöffnung (bei F-Crimp) im Verhältnis zur Y-Achse angegeben. Ausschließlich positive Werte und analog zur Bestimmung des Drehwinkels wie beim Gehäuse (im Uhrzeigersinn). Beispiele dazu zeigen die *Abbildung 3-8*.
 
-| ![Ein Bild, das Screenshot, Text, Messschieber enthält. Automatisch generierte Beschreibung](media/94a57ac542ac4973f388b0b7314a53b7.png) | ![Ein Bild, das Maßstabsmodell, Raumschiff enthält. Automatisch generierte Beschreibung](media/e06d6467ee68c29d2802b80ba94a4303.png) |
-|------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| CrimpOrientation 270°                                                                                                                    | CrimpOrientation 0°                                                                                                                  |
-
+![image](https://github.com/user-attachments/assets/b6749920-3c60-4297-a08c-7829e199d534)   
 *Abbildung 3-8: Kontaktbeispiel 1 (Y-Achse zeigt in Richtung Primärverriegelung)*
 
 Beim Ein- /Zusammenführen des Terminals in die Gehäusekammer ist zu beachten, dass die Nullpunkte bzw. die Achsen der Nullpunkte von Gehäuse und Terminal in der Endposition nicht übereinander liegen. Die Beschreibung der Nullpunkte für Terminal und Gehäuse wurde bereits zuvor gemacht und in der *Abbildung 3-9* nochmal visuell verdeutlicht. Die Distanz zwischen den beiden Nullpunkten kann mit einem Offsetwert angegeben werden und daraus die Endposition des Terminals in der Kammer bestimmt werden.
@@ -345,8 +337,7 @@ Bei Terminals mit mehreren Primärverrastungen (Beispiel siehe *Abbildung 3-11*)
 
 Sollte bei mehreren Primärverrastungen keine Steckkompatibilität in mehreren Positionen vorhanden sein, ist die Ausrichtung der Achsensysteme, von Terminal und Gehäuse, analog wie bei Terminals mit nur einer Primärverrastung auszuführen.
 
-![](media/1e923db3be133b81086f826cf51d2776.png)![Ein Bild, das Küchenutensilien, Design enthält. Automatisch generierte Beschreibung mit mittlerer Zuverlässigkeit](media/f780cfcd22c28cf0c1ca35b2e98c3e4b.png)![Ein Bild, das Werkzeug enthält. Automatisch generierte Beschreibung](media/194b60bd066f79b65ba26f69023c5139.png)
-
+![image](https://github.com/user-attachments/assets/f546a877-9cbb-4f7f-a4a1-40f3e45a88b4)   
 *Abbildung 3-11: Kontaktbeispiele mit zwei Verriegelungen*v
 
 #### VEC als führender Standard
@@ -457,7 +448,7 @@ Unter Verwendung des VEC-Datenmodells und OPC UA-Informationsmodells OPC 10000-2
 
 Das Arbeitspaket 3.3 „Erforschung von Teilmodellen für Rückmeldedaten“ beschäftigt sich mit den Teilmodellen für Rückmeldedaten zum Abgleich der im Fertigungsprozess gemessenen Ist-Werte.
 
-### Leitungssatzproduktion
+### <a name="_3.3.1"></a>Leitungssatzproduktion
 
 Bei der Herstellung eines Leitungssatzes werden eine Reihe von zugelieferten Rohmaterialien, Bauteilen und Halbfertigprodukten verarbeitet, die in komplexen Produktionsprozessen zum Endprodukt eines Leitungssatz in der gewünschten Variante verarbeitet werden.
 
@@ -481,7 +472,7 @@ Jeder dieser Bereiche und die Produktionsschritte benötigen und generieren Info
 ![image](https://github.com/user-attachments/assets/54e1b5fa-bf90-4f0e-86fb-7126e69f0913)   
 *Abbildung 3-16: PPR-Modell*
 
-### Produktionsprozesse
+### <a name="_3.3.2"></a>Produktionsprozesse
 
 Entsprechend der Vorhabensbeschreibung zum AP 3.3 wurden die Produktionsprozesse der Leitungssatzfertigung identifiziert und dokumentiert. Nachfolgend soll die Entwicklung dieser Ausarbeitung und der dazugehörigen Ergebnisse dargestellt werden, bis hin zur finalen Version dieser Dokumentation. Im letzten Abschnitt dieses Kapitels wird noch darauf eingegangen, wie die Ausarbeitungen dazu als Basis weiterer Standardisierungsvorhaben genutzt werden konnten.
 
@@ -565,20 +556,17 @@ Nach der Übertragung der Prozesse und der dazugehörigen Daten wurden für die 
 
 Um den Reifegrad der Prozessliste weiter zu erhöhen, wurden mit den Experten auch weitere Properties zu den Parametern befüllt. Speziell ging es um die Zuordnung, ob es sich um Input- oder Output-Daten handelt. Eine weitere wichtige Eigenschaft war die Bestimmung, ob es sich bei dem entsprechenden Parameter um einen optionalen oder mandatorischen handelt, sowohl auf der Input-Seite für die Prozessausführung als auch beim Output für die Rückmeldewerte. Abschließend wurden auch nochmal der Datentyp und die entsprechende Einheit abgestimmt (*Abbildung* 122).
 
-![Ein Bild, das Text, Screenshot, Zahl, Schrift enthält. Automatisch generierte Beschreibung](media/d8baf1b09a42793d0c819f28482575e9.png)
-
+![image](https://github.com/user-attachments/assets/caaa4be9-b4b0-4e60-998d-e5a3e112595e)   
 *Abbildung 3-22: Erweiterte Properties zu den Prozessparametern*
 
 Nach der Definition aller Prozesse und der zugehörigen Parameter wurde bei der Benamung auf eine einheitliche Nomenklatur bei ähnlich zusammenhängenden Bedeutungen geachtet. Um auch die semantische Standardisierung voranzutreiben, wurden die Einheiten der Parameter mit ECLASS abgeglichen und mit verfügbaren IRDIs entsprechend verknüpft (*Abbildung 3-23*).
 
-![](media/38945adce16fbc3a6ec14b3616c68ea9.emf)
-
+![image](https://github.com/user-attachments/assets/ebfdd98a-795e-4870-91b8-50edc33de670)   
 *Abbildung 3-23: Einheiten mit den dazugehörigen ECLASS IRDIs*
 
 Nachdem die Definitionen rundum die Prozesse und Parameter abgeschlossen waren, wurde der Common-Bereich nochmals überarbeitet und die in der *Abbildung 3-24* dargestellten Kategorien inklusive der dazugehörigen Parameter definiert.
 
-![Ein Bild, das Text, Screenshot, Schrift, Zahl enthält. Automatisch generierte Beschreibung](media/6ec8c5949447223fe9480d7d634edac7.png)
-
+![image](https://github.com/user-attachments/assets/dfb7c653-b8f6-4673-92d5-3e129ab5a89b)   
 *Abbildung 3-24: Common-Bereich der finalen Prozessliste*
 
 Der Common- Bereich unterteilt sich in die Kategorien, denen das Präfix „Process“ vorangestellt ist, d.h. Informationen zu einem Prozess. Demgegenüber beziehen sich die Kategorien „**ProductionOrder**“, „**Batch**“ und „**Lot**“ auf ein Produkt, was ein End- oder Halbfabrikat sein kann. Diese Kategorien können einen aber auch mehrere Prozesse beinhalten.
@@ -618,7 +606,7 @@ Nach der Festlegung der Prozesse war außerdem eine erneute “Synchronisation�
 
 Wie auch in der Prozessliste dargestellt, sind für den Input und Output auf der OPC UA-Seite unterschiedlichste Datentypen erforderlich. Diese werden als Strukturen repräsentiert, die sowohl in Methodenaufrufen (wie „*Store*“, „*Start*“ usw.) als auch für “*ResultTransfer*” verwendet werden können. Der Aufbau dieser Datenstrukturen orientiert sich selbstverständlich an der Prozessliste und spiegelt diese wider um eine effektive Integration zwischen OPC UA “Wire Harness Manufacturing” [7] und VWS4LS zu gewährleisten.
 
-### Prozess VWS
+### <a name="_3.3.3"></a>Prozess VWS
 
 In diesem Kapitel wird die Umsetzung der Prozess VWS (siehe Datei „[AAS_Prozesse_2024_01_26_V3 - Demonstrator.aasx](https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP03/Beispieldaten/AAS_Prozesse_2024_01_26_V3%20-%20Demonstrator.aasx)“[^8]) im Kontext des PPR-Modells beschrieben. Die im vorherigen Kapitel vorgestellte Prozessliste bildete dabei die zentrale Grundlage zur Strukturierung der Prozess VWS mit ihren einzelnen Bestandteilen.
 
@@ -632,16 +620,14 @@ Grundsätzlich wurde bei der Strukturierung der VWS für die Produktion eines Le
 
 Die VWS *ProductType* ist eine VWS auf Typebene und beinhaltet alle Informationen, um das Produkt bzw. Halbfabrikat zu fertigen (*Abbildung 3-25*).
 
-![Ein Bild, das Text, Screenshot, Schrift, Reihe enthält. Automatisch generierte Beschreibung](media/352fe141a493b929427fbc619ca685d3.png)
-
+![image](https://github.com/user-attachments/assets/f991a512-aeea-4eb7-babb-869dfbcf5517)   
 *Abbildung 3-25: VWS ProductType*
 
 Die VWS *ProductType* beinhaltet die Submodelle „*ManufacturingBOM*“, „*BillOfProcess*“ und „*Required* *Capabilities*“. In der *ManufacturingBOM* werden alle notwendigen Materialien als Entities gelistet. Analog werden im Submodel *BillOfProcess* alle notwendigen Prozesse in einer SMC *ProcessSequence* aufgeführt.
 
 Die einzelnen Prozesse sind wiederum in eigenen SMCs strukturiert und besitzen eine Namenskonvention, bei der vor jedem Prozess das Präfix „Nominal“ vorangestellt wird (z.B. *NominalCutProcess01*).
 
-![Ein Bild, das Text, Screenshot, Schrift, Zahl enthält. Automatisch generierte Beschreibung](media/4908660751905dbb18b82fa2d8acdbd5.png)
-
+![image](https://github.com/user-attachments/assets/bfa46aa1-3c47-4526-a4d4-c4a45d3379f9)   
 *Abbildung 3-26: SMC Product Sequence*
 
 Die Nominalprozesse bzw. Sollprozesse beinhalten eine einheitliche Struktur mit den folgende Properties (*Abbildung* 127):
@@ -652,25 +638,22 @@ Die Nominalprozesse bzw. Sollprozesse beinhalten eine einheitliche Struktur mit 
 -   *ProcessDescription*: Prozessbeschreibung
 -   *PlannedProcessTime*: Die Planzeit des Prozesses
 
-![Ein Bild, das Text, Screenshot, Schrift, Zahl enthält. Automatisch generierte Beschreibung](media/c5255ff10c1f1a8098d6610ad95e886f.png)
-
+![image](https://github.com/user-attachments/assets/54179d4d-3fa4-4da2-bb57-98bd7a1ab40b)   
 *Abbildung 3-27: Nominalprozess Cut*
 
-Des Weiteren sind folgende SMC enthalten (*Abbildung* 128):
+Des Weiteren sind folgende SMC enthalten (*Abbildung* 3-28):
 
 -   *ProductParameters*: Listet alle Einzelmaterialien mit ihren Produkteigenschaften auf
 -   *ProcessParameters*: Beinhaltet die Prozessparameter (z.B. Schneiden auf Solllänge (*NominalLength*)
 -   *ResourceParameters*: Beinhaltet die Referenzen auf die eingesetzte Maschine und gerüstete Werkzeuge
 -   *ProcessBom*: Beinhaltet Referenzen auf alle zu verarbeitenden Materialien für den Prozess auf Planungsebene für den Materialverbrauch
 
-![Ein Bild, das Text, Screenshot, Schrift, Zahl enthält. Automatisch generierte Beschreibung](media/2f7ccaf762aec17cda89c7a35464797b.png)
-
+![image](https://github.com/user-attachments/assets/7139147d-65b4-4813-8875-b43d294934b4)   
 *Abbildung 3-28: SMC PPR, ProcessBom*
 
-Anschließend wurde innerhalb der VWS *ProductType* das Submodell „*RequiredCapabilities*“ definiert. Die Struktur folgt der offiziellen Spezifikation und unterteilt die *RequiredCapabilities* in eine SMC *CapabilitySet* und dieses wird wiederum in einem oder mehreren *CapabilityContainern* untergliedert (*Abbildung* 129). Jeder einzelne *CapabilityContainer* beinhaltet eine Capability „Cap“ mit der entsprechenden Bezeichnung und einer SMC *PropertySet*.
+Anschließend wurde innerhalb der VWS *ProductType* das Submodell „*RequiredCapabilities*“ definiert. Die Struktur folgt der offiziellen Spezifikation und unterteilt die *RequiredCapabilities* in eine SMC *CapabilitySet* und dieses wird wiederum in einem oder mehreren *CapabilityContainern* untergliedert (*Abbildung* 3-29). Jeder einzelne *CapabilityContainer* beinhaltet eine Capability „Cap“ mit der entsprechenden Bezeichnung und einer SMC *PropertySet*.
 
-![Ein Bild, das Text, Screenshot, Schrift, Zahl enthält. Automatisch generierte Beschreibung](media/4d4b204d0ba45c5c61aa2cf6d7f07f31.png)
-
+![image](https://github.com/user-attachments/assets/3e47a4c2-2137-434f-849e-72fa3bef609b)   
 *Abbildung 3-29: Required Capabilities*
 
 #### ProductionOrder
@@ -679,8 +662,7 @@ Die Instanzenebene beginnt mit der Erstellung eines konkreten Produktionsauftrag
 
 [^9]: <https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP03/Beispieldaten/AP3.5_AAS_Prozesse_2024_04_12_V3.aasx>
 
-![Ein Bild, das Text, Screenshot, Schrift, Zahl enthält. Automatisch generierte Beschreibung](media/685fdb82d9ba35abde3a5dbcb4eb3b38.png)
-
+![image](https://github.com/user-attachments/assets/f3c4ebd5-99cf-45b2-8acb-62d15e9d6d80)   
 *Abbildung 3-30: VWS ProductionOrder*
 
 Die VWS *ProductionOrder* enthält ein Submodell „*ProductionOrder*“ mit den folgenden Inhalten:
@@ -695,11 +677,10 @@ Die VWS *ProductionOrder* enthält ein Submodell „*ProductionOrder*“ mit den
 
 Die in diesem Dokument entworfenen Prozess-VWS diente als Grundlage für die Standardisierung des Submodells „IDTA 02031: *Bill of Process*“ [8].
 
-![Ein Bild, das Text, Screenshot, Schrift, Design enthält. Automatisch generierte Beschreibung](media/ac8e411aa44d7166aef71b69106fac4c.png)
-
+![image](https://github.com/user-attachments/assets/eca391ef-7c56-49e0-bff6-d40b0c1ac478)    
 Abbildung 3-31: IDTA 2031 Bill of Process
 
-### Capabilities aus Prozesssicht
+### <a name="_3.3.4"></a>Capabilities aus Prozesssicht
 
 Als typisches Muster in der konventionellen Informationsmodellierung sind nach dem PPR-Paradigma die Prozess- und Ressourcendimensionen eng miteinander verbunden. Für jeden Vorgang in einem Produktionsprozess weist die klassische Fertigungsplanung die für die Durchführung des Vorgangs am besten geeignete Maschine als Ressource zu. Daher sind Produktdesign, Fertigungsplanung und -ausführung in der konventionellen Planung oft eng miteinander gekoppelt. Um ein Szenario der flexiblen Fertigung nach den Ideen von Industrie 4.0 zu realisieren, muss diese enge Kopplung in der Planungsphase aufgelöst werden, damit die Zuordnung von Prozessen zu Ressourcen flexibel entschieden und automatisiert werden kann.
 
@@ -711,16 +692,14 @@ Um die durch eine Fähigkeit beschriebene Funktion in einem bestimmten Produktio
 
 Zusätzlich zu den funktionalen Aspekten, die durch die Fähigkeiten beschrieben werden, müssen auch weitere organisatorische und kommerzielle Aspekte, wie z.B. Zeitplanung, Qualität oder Kosten, berücksichtigt werden. Zu diesem Zweck werden im Modell erforderliche und angebotene Services (grün in *Abbildung* 132) definiert [10]. Services (Dienstleistungen) beschreiben das Angebot von Fähigkeiten in einem breiteren Rahmen größerer Lieferkettennetzwerke, die über die lokale Produktionseinrichtung hinausgehen. Daher sind Services in der Regel nicht Teil einer Ressource, sondern von übergeordneten Softwarekomponenten wie Enterprise Resource Planning (ERP)-Systemen.
 
-![Ein Bild, das Text, Reihe, Diagramm, Screenshot enthält. Automatisch generierte Beschreibung](media/b086ad7251a458c83a51bcc152ebc3d4.png)
-
+![image](https://github.com/user-attachments/assets/b3c47a89-0e82-40e2-8cbd-9be9120c496a)    
 *Abbildung 3-32: CSS-Modell* [10]
 
 #### Definition der Capabilities
 
 Im Teilprojekt 3 liegt der Fokus auf den Produktionsprozessen eines Leitungssatzes, weshalb der Bereich „Process“ und die dazugehörigen „Required Capabilities“ anhand des CSS-Modells näher analysiert wurden. Hierzu wurden an einem typischen Beispielprodukt (*Abbildung 3-33*) die „Required Capabilities“ abgeleitet, um das Matching mit den „Offered Capabilities“ durchführen zu können.
 
-![Ein Bild, das Screenshot, Reihe, Diagramm enthält. Automatisch generierte Beschreibung](media/d251354732edb0b32fda027c9aa633a5.png)
-
+![image](https://github.com/user-attachments/assets/adc2d45c-1e76-456f-9d24-7148de94d374)    
 *Abbildung 3-33: Beispielprodukt zur Ableitung der Required Capabilities*
 
 Das Beispielprodukt besteht aus einem verdrillten Leitungspaar mit jeweils einem Entdrillschutz auf jeder Seite. An beiden Enden werden Terminals gecrimpt und eine Einzelleiterdichtung angebracht. Für das Beispielprodukt wurden folgende Prozesse identifiziert, um eine Herstellung durchführen zu können:
@@ -811,12 +790,11 @@ Die notwendigen *Required Capabilities* wurden identifiziert, indem die Prozessl
 
 Die gesamte Liste der Prozesse mit den dazugehörigen Submodel Properties für die *Required Capabilities* ist im Tabellenblatt „Capabilities“ der [Prozessliste](https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP03/Beispieldaten/Prozessliste.xlsx) zu finden.
 
-### Prozesssteuerung
+### <a name="_3.3.5"></a>Prozesssteuerung
 
 Ein Job besteht aus den notwendigen Arbeitsschritten bzw. Prozessen, um einen diskreten Fertigungsschritt abzuschließen. Jeder Prozess verwendet ein Produkt und mindestens eine Ressource, die für die Ausführung des Arbeitsschritts erforderlich sind. Ziel der Prozesssteuerung ist es, die Abfolge der Einzelprozesse eines Jobs zu bestimmen. *Abbildung* 134 zeigt exemplarisch die Arbeitsschritte, die in einem fiktiven Job ausgeführt werden. Dabei werden die einzelnen Prozesse in der Regel sequenziell nacheinander abgearbeitet. Wenn die Umstände es zulassen, können einzelne Arbeitsschritte oder Teilsequenzen, bestehend aus mindestens zwei Prozessen, parallelisiert werden. Auch sind optionale Prozesse möglich, also Prozesse, die nur unter bestimmten Voraussetzungen in dem aktuellen Job ausgeführt werden. Darüber hinaus können einzelne Prozesse eines Jobs auch effektiv unabhängig voneinander sein. Beispielsweise könnte ein Prozess die Dauer eines Jobs messen und diese nach Abschluss dokumentieren.
 
-![Ein Bild, das Text, Screenshot, Diagramm, Rechteck enthält. Automatisch generierte Beschreibung](media/54374c958966c8fd3f1e5de26adbee3c.png)
-
+![image](https://github.com/user-attachments/assets/94cb679f-6435-4551-a139-8d820c46d0ad)    
 *Abbildung 3-34: Prozesssequenz*
 
 #### Problemstellung
@@ -833,18 +811,18 @@ Eine Integration der Prozesssteuerung in den digitalen Zwilling der Produktion b
 
 Zusammenfassend lässt sich sagen, dass die Herausforderungen im Produktionsprozess durch eine effiziente und flexible Prozesssteuerung gemeistert werden können. Die Integration dieser Steuerung in den digitalen Zwilling bietet dabei zusätzliche Vorteile, die zur Optimierung und Zukunftsfähigkeit der Produktion beitragen.
 
-#### ![12-Way Auto Blade Fuse Box Block Holder with LED Indicator For 12V 24V Car  Boat \| eBay](media/e67d331b8398dba884403dbab2d1f99f.jpeg)Digitale Prozess*Abbildung*
+#### Digitale Prozessabbildung
+![image](https://github.com/user-attachments/assets/cac1aa56-bd26-4ca3-a114-19ef5fe4f971)    
+Abbildung 35: Beispiel der Sicherungsbox
 
-Zunächst wurde ein digitales Prozessabbild am Beispiel einer Sicherungsbox (siehe *Abbildung 435*) erstellt. Die Sicherungsbox stellt ein überschaubar komplexes Beispiel dar, da verschiedene Prozessschritte parallel ablaufen müssen, während gleichzeitig Schritte grundsätzlich gleich sein könnten. So müssen für jede Sicherung grundsätzlich zwei Verbindungen durch Schrauben befestigt werden. Dieser Prozessschritt ist für alle Positionen gleich, erfolgt aber nicht in einer vordefinierten Reihenfolge, so dass theoretisch Position 3 vor Position 1 verschraubt werden könnte. Ebenso sind im Gesamtprozess parallele Prozesse eingearbeitet. So wird ein elektrischer Test mit jedem Schraubvorgang ausgeführt, um potenzielle Probleme frühzeitig zu erkennen, während der Gesamtprozess einen Überwachungsschritt hat, um diese Informationen zu sammeln und ggfs. zu verwerten.
+Zunächst wurde ein digitales Prozessabbild am Beispiel einer Sicherungsbox (siehe *Abbildung 3-35*) erstellt. Die Sicherungsbox stellt ein überschaubar komplexes Beispiel dar, da verschiedene Prozessschritte parallel ablaufen müssen, während gleichzeitig Schritte grundsätzlich gleich sein könnten. So müssen für jede Sicherung grundsätzlich zwei Verbindungen durch Schrauben befestigt werden. Dieser Prozessschritt ist für alle Positionen gleich, erfolgt aber nicht in einer vordefinierten Reihenfolge, so dass theoretisch Position 3 vor Position 1 verschraubt werden könnte. Ebenso sind im Gesamtprozess parallele Prozesse eingearbeitet. So wird ein elektrischer Test mit jedem Schraubvorgang ausgeführt, um potenzielle Probleme frühzeitig zu erkennen, während der Gesamtprozess einen Überwachungsschritt hat, um diese Informationen zu sammeln und ggfs. zu verwerten.
 
 *Abbildung 3-37* zeigt die einfache Übersicht zum Prozess auf der linken Seite, sowie die Erweiterung um einen Scan-Vorgang auf der rechten, welcher als Sicherheitsschritt eingebaut wird. Als Endausbau des Prozessbeispiels zeigt *Abbildung 3-37* die gesamte Prozesssequenz inkl. der parallel auszuführenden Prozesse. Ebenso sind die Aufgaben für zwei Positionen, bestehend aus einem Scan- sowie Schraub-Vorgang und dem parallel ausgeführten elektrischen Test, sequenziell dargestellt, um die rekursiven Aspekte des Prozessschrittes abzubilden. Diese drei Einzelschritte werden für jegliche Positionen ausgeführt, während der Überwachungsprozess aktiv sein muss, und können in zufälliger Reihenfolge existieren.
 
-![Ein Bild, das Screenshot, Reihe, Diagramm enthält. Automatisch generierte Beschreibung](media/3a46e24253815d81934b7277e5ec7062.png)
-
+![image](https://github.com/user-attachments/assets/c391fb2a-0a03-463d-9f53-b44982444748)    
 *Abbildung 3-36: Simple Prozesssequenz zum Schraubvorgang an zwei Positionen*
 
-![Ein Bild, das Text, Screenshot, Diagramm, Schrift enthält. Automatisch generierte Beschreibung](media/930117382fbb7e8f144dc3b2bd86cf18.png)
-
+![image](https://github.com/user-attachments/assets/4565746b-0a8d-487e-92fd-223439777207)        
 *Abbildung 3-37: Prozesssequenz am Beispiel Sicherungsbox*
 
 Die „Business Process Model and Notation“ (BPMN) ist in ISO/IEC 19510:2013 [11] standardisiert und erlaubt die grafische Modellierung komplexer Prozesse. Der Standard wird von der gemeinnützigen [Object Management Group (OMG)](https://www.omg.org/spec/BPMN) verwaltet und international in vielen Organisationen eingesetzt, da die visuelle Natur von BPMN ein besseres Verständnis komplexer Abläufe ermöglicht.
@@ -857,8 +835,7 @@ In die Struktur des BPMN-Protokolls wurden Konnektoren eingefügt, um Prozesse p
 
 Die BPMN-Struktur bringt auch Vorteile in repetitiven Aufgaben, da Prozessschritte einfach wiederholt werden können und auch Rekursive Prozesse abgebildet werden können. Dies ist im Beispiel in *Abbildung 3-38* durch die Abfrage „Schraubprozess fertig?“ gegeben, wo nach einer entsprechenden Abfrage der Daten der gleiche Schraubprozess für weitere Positionen durchlaufen werden kann, ohne den gesamten Prozess als lineare Reihenfolge durchzuplanen.
 
-![Ein Bild, das Diagramm, technische Zeichnung, Entwurf, Reihe enthält. Automatisch generierte Beschreibung](media/619cb5efd0aafbc53c3def8e863bdee1.png)
-
+![image](https://github.com/user-attachments/assets/665a60ae-4889-4c6f-b0ad-52be61cc51a8)    
 *Abbildung 3-38: Darstellung des Prozessbeispiels als BPMN*
 
 #### Prozessausführung als Teil der Produkt-Verwaltungsschale
@@ -871,8 +848,7 @@ In Verbindung mit den in TP6 entwickelten Verhandlungsprozessen werden zu jedem 
 
 *Abbildung 3-39* zeigt diese Verknüpfung zwischen den Aufgaben und jeweiligen Ressourcen anhand der vorher dargestellten Prozesse schematisch. So wird in der Prozesssequenz zunächst Position 1 von Ressource 1 gescannt und verschraubt während Ressource 3 den elektrischen Test und Ressource 5 die generelle Überwachung parallel ausführen. Anschließend werden Ressourcen 1 und 3 durch Ressourcen 2 und 4 ersetzt, um den gleichen Arbeitsschritt für Position 2 auszuführen.
 
-![A diagram of a software project Description automatically generated with medium confidence](media/076c149d36cbc76437d3a392489bbd69.png)
-
+![image](https://github.com/user-attachments/assets/e6d62f27-fec0-45b5-8762-1f110ec3809e)    
 *Abbildung 3-39: Prozesssequenz am Beispiel Sicherungsbox inkl. Ressourcenzuteilung*
 
 Grundsätzlich wurde dadurch ein direktes Mapping zwischen verfügbaren Funktionalitäten von Ressourcen und benötigten Ressourcen durch den Prozess angelegt, welches als Grundlage für komplexere und größere Prozesse genutzt werden kann. Durch die in der BPMN-Struktur vorgesehenen Prozessgruppen kann ebenfalls ein Prozess hierarchisch aufgebaut werden, um komplexe Herstellungsprozesse zu kapseln und spezifische Arbeitsschritte als Pakete zu verwenden.
@@ -883,8 +859,7 @@ Mit dem Einsatz virtueller Ressourcen, die mögliche verknüpfte Prozessschritte
 
 Neben der Ausführung der Prozesse werden die Funktionalitäten der Ressourcen genutzt, um Prozessparameter als Teil der Produkt-Verwaltungsschale zu dokumentieren. *Abbildung 3-40* zeigt dazu einen abgelaufenen Prozess in BPMN-Notation in CAMUNDA, die gewählten Pfade sind blau markiert. So ist auch in der Visualisierung erkennbar, dass ein Scan- und Schraubprozess durchgeführt wurde.
 
-![Ein Bild, das Diagramm, Reihe, Text, Schrift enthält. Automatisch generierte Beschreibung](media/ffee3ebe5e0aaf2cb64967ab7b2ef087.png)
-
+![image](https://github.com/user-attachments/assets/c36fe594-8969-463f-b14d-58f69be57306)    
 *Abbildung 3-40: Darstellung eines Prozessablaufs als BPMN*
 
 Alle Komponenten in Form der Verwaltungsschale werden genutzt, um die jeweiligen Prozessdaten, wie bspw. die Crimp-Kraft, produktgenau als Teil des digitalen Produktzwillings festzuhalten. So können Entscheidungen und auch Fehler rückverfolgbar dokumentiert bzw. Abbruchkriterien bereits im laufenden Prozess betrachtet werden. Neben der möglichst frühzeitigen Beendigung des Fertigungsprozesses im Fehlerfall, könnten diese Daten auch für weitergehende Analysen oder auch KI-Fragestellungen verwendet werden, um so die Herstellung noch weiter zu optimieren, bspw. mittels neuer und effizienterer Scheduling-Möglichkeiten eine bessere Maschinenauslastung zu erreichen.
@@ -910,15 +885,14 @@ Die Ziele des generischen Ansatzes für Datenmapping mit anschließender Validie
 -   Steigerung der Datenqualität
 -   Reduzierung des manuellen Aufwands
 
-![Ein Bild, das Text, Screenshot, Diagramm enthält. Automatisch generierte Beschreibung](media/22eb0b222ab291a23cc819889175e49a.png)
+![image](https://github.com/user-attachments/assets/606176ff-14ae-481d-8d17-53d1b82bc9ad)    
+*Abbildung 3-41: Exemplarische Darstellung des Data Mapping Services mit VWS als Zielsystem*
 
-Abbildung 3-41: Exemplarische Darstellung des Data Mapping Services mit VWS als Zielsystem
-
-*Abbildung* 141 zeigt einen fiktiven Ablauf eines typischen Anwendungsfalls. Eine aus Datenqualitätssicht unsichere Quelle, in diesem Schaubild eine Ressource, erzeugt semistrukturierte Daten in Form von einem OPC UA Nodeset (XML-Format). Bevor diese Daten in das Zielsystem (Information Storage in Form der Verwaltungsschale) weggeschrieben werden, werden diese validiert. Im positiven Fall erfolgt direkt das Persistieren im Zielsystem. Im negativen Fall erfolgt ein Mapping der Daten zur Zielstruktur. Diese Daten werden erneut validiert und im positiven Fall weggeschrieben.
+*Abbildung* 3-41 zeigt einen fiktiven Ablauf eines typischen Anwendungsfalls. Eine aus Datenqualitätssicht unsichere Quelle, in diesem Schaubild eine Ressource, erzeugt semistrukturierte Daten in Form von einem OPC UA Nodeset (XML-Format). Bevor diese Daten in das Zielsystem (Information Storage in Form der Verwaltungsschale) weggeschrieben werden, werden diese validiert. Im positiven Fall erfolgt direkt das Persistieren im Zielsystem. Im negativen Fall erfolgt ein Mapping der Daten zur Zielstruktur. Diese Daten werden erneut validiert und im positiven Fall weggeschrieben.
 
 Die Verwaltung von gültigen Strukturen der Daten von Quell- und Zielsystem erfolgt im Semantic Hub. Der Semantic Hub beinhaltet alle benötigten Konfigurationen, sowohl aus Datensicht aber auch die Systemkonfiguration von Quell und Zielsystem.
 
-### Datenvalidierung
+### <a name="_3.4.1"></a>Datenvalidierung
 
 #### Quellformate
 
@@ -927,7 +901,6 @@ In der Praxis ist eine Validierung direkt an der Maschine nicht sinnvoll. Die Vi
 Aufgrund der Tatsache das in BaSyx die Daten der Verwaltungsschale per REST API in einem JSON-Format übertragen wird, und JSON als Standard am Markt angesehen werden kann, macht es Sinn im POC die Validierung- und die Mapping Logik auf das JSON-Format zu beschränken.​
 
 Nach der Validierung wird ausschließlich das validierte/gemappte JSON zur Verfügung gestellt.
-
 ​
 
 #### Semantic Hub
@@ -942,7 +915,6 @@ Nach der Validierung wird ausschließlich das validierte/gemappte JSON zur Verf�
 -   ​Der Web-Service ist in der Lage die richtige Zielverwaltungsschale zu finden.​
 -   Der Web-Service ist in der Lage die Namen, die Struktur und den Datentyp der JSON-Objekte zu validieren.​
 -   Im Fehlerfall soll eine für das IT-System verwendbare Fehlerbeschreibung mit Fehlercode zurückgesendet werden​.
-
 ​
 
 #### Submodel InformationModelDescription für die Datenvalidierung
@@ -955,27 +927,22 @@ Das Submodel InformationModelDescription hat folgende Anforderungen zu erfüllen
 -   Die notwendigen Bearbeitungsfunktionalitäten müssen zur Verfügung stehen.
 -   Die Daten müssen persistierbar sein.
 
-    Die *Abbildung* 142 zeigt eine Resourcen VWS mit dem verlinkten Submodel *InformationModelDescription*. Das Submodel enthält die SemanticId des Informationsmodells, welche im Semantic Hub als Suchkriterium für die Beschreibung des Informationsmodells dient.
+    Die *Abbildung* 3-42 zeigt eine Resourcen VWS mit dem verlinkten Submodel *InformationModelDescription*. Das Submodel enthält die SemanticId des Informationsmodells, welche im Semantic Hub als Suchkriterium für die Beschreibung des Informationsmodells dient.
 
     Das Submodel ‚*InformationModelDescription*‘ wird offengehalten, d.h. die enthaltenen Informationen und Formate der bereitgestellten Informationsmodelle können je nach UseCase erweitert werden. Beispielhaft wurden 3 SMC *InformationModelDescriptionSets* angelegt. Mandatorisch enthält das Submodel die *ModelVersion*
 
-    Das in der *Abbildung* 143 dargestellte SMC *InformationModelDescriptionSetJSONSchema* wurde für die Benutzung der Validierung über das JSON-Format angelegt. Das JSON-Schema wurde als String Property mit SemanticId ‚*JSONSchema*‘ hinterlegt.
+    Das in der *Abbildung* 3-43 dargestellte SMC *InformationModelDescriptionSetJSONSchema* wurde für die Benutzung der Validierung über das JSON-Format angelegt. Das JSON-Schema wurde als String Property mit SemanticId ‚*JSONSchema*‘ hinterlegt.
 
-    In der *Abbildung* 144 erfolgte die Umsetzung mit der SMC *InformationModelDescriptionSetAASElement*. Die in einem Template dargestellten Properties werden ohne den eigentlichen Content dargestellt, da die Validierung nur auf die Struktur und nicht auf den Content durchgeführt wird.
+    In der *Abbildung* 3-44 erfolgte die Umsetzung mit der SMC *InformationModelDescriptionSetAASElement*. Die in einem Template dargestellten Properties werden ohne den eigentlichen Content dargestellt, da die Validierung nur auf die Struktur und nicht auf den Content durchgeführt wird.
 
-![Ein Bild, das Text, Screenshot, Zahl, Software enthält. Automatisch generierte Beschreibung](media/0eeb8cf94ac21ccb9fb25c1c0296d7a3.png)
+![image](https://github.com/user-attachments/assets/883da610-7031-4a25-b10b-396f0891c11d)    
+*Abbildung 3-42: AAS Resource mit AAS und SM*
 
-![Ein Bild, das Text, Schrift, Zahl, Reihe enthält. Automatisch generierte Beschreibung](media/e206b9df40ee9626767d90029cd61c38.png)
+![image](https://github.com/user-attachments/assets/b85cf502-4234-4af2-8c70-55f85619ca5c)    
+*Abbildung 3-43: AAS und SM und SMC InformationModelDescriptionSetJSONSchema*
 
-Abbildung 3-42: AAS Resource mit AAS und SM
-
-![Ein Bild, das Text, Schrift, Zahl, Software enthält. Automatisch generierte Beschreibung](media/268bc9c0241b00f313560d5892a82569.png)
-
-Abbildung 3-43: AAS und SM und SMC InformationModelDescriptionSetJSONSchema
-
-*![Ein Bild, das Text, Screenshot, Software, Zahl enthält. Automatisch generierte Beschreibung](media/88b0906fc4b982709bc7f80d2e6e202c.png)*
-
-Abbildung 3-44: AAS und SM und SMC InformationModelDescriptionSetAASElement
+![image](https://github.com/user-attachments/assets/3a3ea2a6-7a55-4796-b71e-0caabdec0ce9)    
+*Abbildung 3-44: AAS und SM und SMC InformationModelDescriptionSetAASElement*
 
 #### Out of Scope​
 
@@ -983,7 +950,7 @@ Abbildung 3-44: AAS und SM und SMC InformationModelDescriptionSetAASElement
 -   Die **Transformation der unterschiedlichen Maschinenschnittstellen** in das Übertragungsformat JSON ist nicht Bestandteil des Daten Mapping Konzeptes. Die Transformation kann im Demonstrator in das existierende MES-Modul eingebaut werden.​
 -   Das **Speichern** der validierten und gemappten Daten in das **Zielsystem** ist nicht Bestandteil des Konzeptes. Dies kann im Demonstrator in das existierende MES-Modul eingebaut werden.
 
-### Datenmapping
+### <a name="_3.4.2"></a>Datenmapping
 
 #### DataBridge: Keine Datensenkenzuordnung im Transformer
 
@@ -1009,86 +976,58 @@ Durch diese Pipeline wird eine reibungslose und standardisierte Kommunikation zw
 Das nachfolgend aufgeführte Beispiel zeigt die Konfiguration einer Route in der *routes.JSON*, in welcher ein Datenpunkt der Quelle *datasource* auf drei Datensenken (*sink1, sink2, sink3*) zugewiesen wird. Dabei werden in diesem Fall immer alle drei definierten Transformatoren (*transformer1, transformer2, transformer3*) durchlaufen.
 
 Datei: routes.JSON
-
+````
 [
-
-{
-
-"datasource": "mqttSource",
-
-"transformers": [
-
-"transformer1",
-
-"transformer2",
-
-"transformer3"
-
-],
-
-"datasinks": [
-
-"sink1",
-
-"sink2",
-
-"sink3" ],
-
-"trigger": "event"
-
-}
-
+	{
+		"datasource": "mqttSource",
+		"transformers": [
+			"transformer1",
+			"transformer2",
+			"transformer3"
+		],
+		"datasinks": [
+			"sink1",
+			"sink2",
+			"sink3"		],
+		"trigger": "event"
+	}
 ]
 
+![image](https://github.com/user-attachments/assets/d8474341-2cdf-4327-a2ad-c58ff763306f)    
+*Abbildung 45: Keine Datensenkenzuordnung*
+
+````
 #### DataBridge: Mit Datensenkenzuordnung im Transformer
 
 Im Unterschied zum vorangegangenen Beispiel werden nun für jede Datensenke die zu durchlaufenden Transformatoren angegeben. Im Fall von *sink3* wären dies z.B. *transformer2* und *transformer3*.
 
 Datei: routes.JSON
-
+````
 [
-
-{
-
-"datasource": "mqttSource",
-
-"transformers": [
-
-"transformer1",
-
-"transformer2",
-
-"transformer3"
-
-],
-
-"datasinks": [
-
-"sink1",
-
-"sink2",
-
-"sink3"
-
-],
-
-"datasinkMappingConfiguration":
-
-{
-
-"sink1": ["transformer1"],
-
-"sink2": ["transformer2"],
-
-"sink3": ["transformer2", "transformer3"]
-
-},
-
-"trigger": "event"
-
-}
-
+	{
+		"datasource": "mqttSource",
+		"transformers": [
+			"transformer1",
+			"transformer2",
+			"transformer3"
+		],
+		"datasinks": [
+			"sink1",
+			"sink2",
+			"sink3"
+		],
+		"datasinkMappingConfiguration":
+		{
+			"sink1": ["transformer1"],
+			"sink2": ["transformer2"],
+			"sink3": ["transformer2", "transformer3"]
+		},
+		"trigger": "event"
+	}
 ]
+````
+![image](https://github.com/user-attachments/assets/09b50280-06a2-45c2-a3cd-4d0e3610c335)    
+*Abbildung 46: Mit Datensenkenzuordnung*
 
 Wurden Routen mit Datensenken (*datasinks*) definiert, die nicht Teil der Datensenkenzuordnung (*datasinkMappingConfiguration*) sind, so durchlaufen diese keine Transformatoren und werden somit nicht innerhalb der Route modifiziert. Wurden mehr Transformatoren definiert, als in der Datensenkenzuordnung (*datasinkMappingConfiguration*) verwendet werden, dann werden diese ignoriert.
 
@@ -1096,21 +1035,19 @@ Wurden Routen mit Datensenken (*datasinks*) definiert, die nicht Teil der Datens
 
 Die Integration der Ergebnisse des Data Mapping Service in den Demonstrator des Projektes wäre möglich, indem die Maschinendaten sowohl über ein MES (Manufacturing Execution System) als auch über OPC UA Knoten ausgelesen werden. Diese Datenquellen ermöglichen es, in Echtzeit auf Produktionsdaten zuzugreifen und diese dynamisch für die weitere Verarbeitung, etwa als Teil der Prozesssteuerung, einzusetzen. Hierbei übernimmt der Data Mapping Service die Aufgabe, die Rohdaten der Maschinen in ein konsistentes, verständliches Format zu transformieren, sodass sie in den digitalen Zwillingen standardisiert abgebildet werden können. Nachfolgende *Abbildung* zeigt den Ablauf als Teil des Demonstrators.
 
-![Ein Bild, das Text, Diagramm, Screenshot, Plan enthält. Automatisch generierte Beschreibung](media/335bc0e97c740428520138b674df6376.png)
-
-Abbildung 3-48: Mögliche Datenmapping-Integration
+![image](https://github.com/user-attachments/assets/d30d628c-3611-4d80-9294-da80acd635a8)     
+*Abbildung 3-48: Mögliche Datenmapping-Integration*
 
 ## <a name="_3.5"></a>AP 3.5 - Validierung der Prinzipien
 
 Das AP3.5 „Validierung der Prinzipien“ fokussierte sich auf die systematische Erfassung, Gliederung und digitale Beschreibung der Produktionsprozesse, unter Anwendung des VWS-Teilmodells „IDTA-02031: Bill of Processes“ (BoP) [8], der dynamischen Prozessmodellierung mittels BPMN und der dynamischen Prozessteuerung mittels OPC UA [7].
 
-### Prozessablaufsteuerung für Produktionsprozesse
+### <a name="_3.5.1"></a>Prozessablaufsteuerung für Produktionsprozesse
 
-Die Produktion eines Leitungssatzes ist ein komplexer Gesamtprozess und erfordert mehrere zu berücksichtigende Teilbereiche. Sie setzt sich aus mehreren Produktionsschritten zusammen, von denen einige manuelle Tätigkeiten umfassen (siehe *Abbildung* 149).
+Die Produktion eines Leitungssatzes ist ein komplexer Gesamtprozess und erfordert mehrere zu berücksichtigende Teilbereiche. Sie setzt sich aus mehreren Produktionsschritten zusammen, von denen einige manuelle Tätigkeiten umfassen (siehe *Abbildung* 3-49).
 
-![Ein Bild, das Text, Diagramm, Screenshot, parallel enthält. Automatisch generierte Beschreibung](media/cc8a819fa39d63665b0e0b3905ef6bc7.png)
-
-Abbildung 3-49: Übersicht der Produktionsschritte in der Leitungssatzproduktion
+![image](https://github.com/user-attachments/assets/739fdada-d08b-4da5-a832-24cf950d8982)    
+*Abbildung 3-49: Übersicht der Produktionsschritte in der Leitungssatzproduktion*
 
 Bevor die eigentliche Leitungssatzproduktion beginnt, kommen alle notwendigen (Roh-)Materialien in der Eingangslogistik oder im Lagerbereich an, wo Komponenten und Rohstoffe gescannt werden.
 
@@ -1132,9 +1069,8 @@ Bevor die tatsächliche Produktion gestartet wird, befindet man sich auf der Typ
 
 Sobald ein Produktionsauftrag für einen Leitungssatz und den dazugehörigen Halbfabrikaten angelegt wurde, beginnt die Instanzebene. Das bedeutet, zu diesem Zeitpunkt wird die Produktion eines konkreten Produktes gestartet und alle relevanten Attribute durch die Verwaltungsschale dokumentiert. In der *Abbildung* 150 beschreibt die Verwaltungsschale „Batch01“ eine physische oder logische Unterteilung eines Produktionsauftrages während „Lot01“ Informationen zu allen produzierten Einheiten beinhaltet.
 
-![Ein Bild, das Text, Screenshot, Schrift, Reihe enthält. Automatisch generierte Beschreibung](media/6422579eb22d7fd914562e1968207e44.png)
-
-Abbildung 3-50: Typ- und Instanzen-AAS
+![image](https://github.com/user-attachments/assets/4843aca5-034f-4880-8ff6-e3f4384035d5)    
+*Abbildung 3-50: Typ- und Instanzen-AAS*
 
 ##### Alle Prozesse für 150%-LS und Ableitung der Fähigkeiten (Required Capabilities)
 
@@ -1146,11 +1082,10 @@ Die Daten der Verwaltungsschale für den 150%-Leitungssatz werden von dem Leitun
 
 Diese Zusammensetzung des 150%-Leitungssatz ist also die datentechnische Ausgangsbasis, aus der sich die für die Herstellung notwendigen Prozesse ableiten lassen. So impliziert bspw. ein Crimpkontaktteil an einem Leitungsende den Prozess „Crimp“ oder eine Einzeladerabdichtung an einem Leitungsende den Prozess „Seal“. Mit einer derartigen Zuordnung von Prozessen entsteht dann die Bill of Process (BoP) [8].
 
-Um einen Leitungssatz produktionsoptimiert herstellen zu können, wird neben der Zuweisung von Prozessen des 150%-Leitungssatzes beim Konfektionär eine Gliederung in Baugruppen durchgeführt, also in für die Produktion besser geeignete kleinere Einheiten. In den nachfolgenden Kapiteln wird anhand einer konkreten Baugruppe die *Abbildung* in einer Verwaltungsschale dargestellt. Die Baugruppe entspricht einer geschnittenen Einzelleitung mit Kontaktteilen auf beiden Seiten inklusive einer Einzelleitungsabdichtung (ELA) auf einer Seite (siehe *Abbildung* 151).
+Um einen Leitungssatz produktionsoptimiert herstellen zu können, wird neben der Zuweisung von Prozessen des 150%-Leitungssatzes beim Konfektionär eine Gliederung in Baugruppen durchgeführt, also in für die Produktion besser geeignete kleinere Einheiten. In den nachfolgenden Kapiteln wird anhand einer konkreten Baugruppe die *Abbildung* in einer Verwaltungsschale dargestellt. Die Baugruppe entspricht einer geschnittenen Einzelleitung mit Kontaktteilen auf beiden Seiten inklusive einer Einzelleitungsabdichtung (ELA) auf einer Seite (siehe *Abbildung* 3-51).
 
-![](media/36c238903f3fec87de10b08a69c07473.png)
-
-Abbildung 3-51: Baugruppe einer geschnittenen Einzelleitung mit Kontaktteilen inklusive ELA
+![image](https://github.com/user-attachments/assets/db82f567-c981-4134-8e5c-16aff78a7d71)    
+*Abbildung 3-51: Baugruppe einer geschnittenen Einzelleitung mit Kontaktteilen inklusive ELA*
 
 Die Prozesse, die zur Herstellung aller Module des 150% Leitungssatzes nötig sind, stellen also die Gesamtheit an benötigten Prozessfähigkeiten dar, die ein Leitungssatzkonfektionär bieten muss, um die Kabelsätze produzieren zu können. Enthält eine Baugruppe des Leitungssatzes bspw. einen Crimpkontakt an einer 4mm²-Leitung, so muss dies als Prozessfähigkeit (required capability) hervorgehen. Im Teilprojekt 5 wird das Fähigkeitenmodell inkl. Prozessfähigkeit detaillierter beschrieben, in Teilprojekt 6 die Verhandlungsprozesse.
 
@@ -1169,7 +1104,7 @@ Die sich aus den Prozessen ergebende Prozesssequenz einer Baugruppe wird später
 
 ##### Struktur eines Produktionsauftrags
 
-Für die Produktion werden Produktionsaufträge erstellt und – je nach Anforderung – in kleinere Produktionseinheiten aufgegliedert (vgl. *Abbildung* 152). Ein Produktionsauftrag beinhaltet allgemeine Kopfdaten:
+Für die Produktion werden Produktionsaufträge erstellt und – je nach Anforderung – in kleinere Produktionseinheiten aufgegliedert (vgl. *Abbildung* 3-52). Ein Produktionsauftrag beinhaltet allgemeine Kopfdaten:
 
 -   Auftragsgröße
 -   Auftragsstatus
@@ -1191,9 +1126,8 @@ Zudem verweist jede Charge auf die ausgeführten Jobs der Produkt-Instanz.
 
 Die eindeutige Identifikation der Produkte erfolgt dabei auf Chargenebene. Für Produkte, die nur als Bündel identifizierbar sind (bspw. Einzelleitung), ist die Chargengröße \>1. Für Produkte, die einzeln identifizierbar sind (bspw. Leitungssatz), ist die Chargengröße 1.
 
-![Ein Bild, das Screenshot, Text enthält. Automatisch generierte Beschreibung](media/effce2a4496ae0bd6f1dbecfb961ba2c.png)
-
-Abbildung 3-52: Struktur eines Produktionsauftrags. (Eigene Darstellung)
+![image](https://github.com/user-attachments/assets/4a5b8422-a66c-45a4-92cf-f03e71f8b60f)    
+Abbildung 3-52: Struktur eines Produktionsauftrags
 
 #### Beispiele für Produktionsaufträge
 
@@ -1221,29 +1155,25 @@ Der Produktionsauftrag wird an die Fertigung übergeben, wo die 5 Produktionsmas
 
 #### Funktionsweise eines Produktionsablaufs
 
-Grundsätzlich kann man zwischen einer Einzelteil- und einer Batchfertigung unterscheiden. Das SM ProductionOrder (Produktionsauftrag) beinhaltet hierfür die Möglichkeit über sog. BatchReferences eine Referenz auf ein zu fertigendes Batch (Batch01) zu setzen (*Abbildung* 153). An dieser Stelle ist es auch möglich den Produktionsauftrag in mehrere Batches (Batch01, Batch02, …) zu unterteilen.
+Grundsätzlich kann man zwischen einer Einzelteil- und einer Batchfertigung unterscheiden. Das SM ProductionOrder (Produktionsauftrag) beinhaltet hierfür die Möglichkeit über sog. BatchReferences eine Referenz auf ein zu fertigendes Batch (Batch01) zu setzen (*Abbildung* 3-53). An dieser Stelle ist es auch möglich den Produktionsauftrag in mehrere Batches (Batch01, Batch02, …) zu unterteilen.
 
-![Ein Bild, das Text, Screenshot, Schrift enthält. Automatisch generierte Beschreibung](media/731b531f4cae870bb2ef593ef54efd11.png)
+![image](https://github.com/user-attachments/assets/a5b08228-4019-44ac-aac7-0fdafae44b51)    
+*Abbildung 3-53: Submodel ProductionOrder*
 
-Abbildung 3-53: Submodel ProductionOrder
+Die oben beschriebene Referenz Batch01 zeigt nun auf eine Verwaltungsschale Batch01, die alle Informationen zu dem gefertigten Batch enthält (*Abbildung* 3-54). In der SMC LotReferences ist zu erkennen, dass ein Lot mit einer Referenz zu Lot01 gefertigt wurde.
 
-Die oben beschriebene Referenz Batch01 zeigt nun auf eine Verwaltungsschale Batch01, die alle Informationen zu dem gefertigten Batch enthält (*Abbildung* 154). In der SMC LotReferences ist zu erkennen, dass ein Lot mit einer Referenz zu Lot01 gefertigt wurde.
+![image](https://github.com/user-attachments/assets/ea7e292e-1b76-48a6-b4fd-a6cf4cbfa9dc)    
+*Abbildung 3-54: AAS & Submodel Batch*
 
-![Ein Bild, das Text, Screenshot, Design enthält. Automatisch generierte Beschreibung](media/e383965a34d91dac2fa16ab295c2cbc5.png)
+Die Referenz Lot01 zeigt auf die AAS Lot01, die alle Informationen zu dem gefertigten Lot enthält (*Abbildung* 3-56). Die AAS Lot01 enthält die beiden Submodels „Lot“ und „ExecutedProcesses“.
 
-Abbildung 3-54: AAS & Submodel Batch
-
-Die Referenz Lot01 zeigt auf die AAS Lot01, die alle Informationen zu dem gefertigten Lot enthält (*Abbildung* 156). Die AAS Lot01 enthält die beiden Submodels „Lot“ und „ExecutedProcesses“.
-
-![Ein Bild, das Text, Screenshot, Schrift, Reihe enthält. Automatisch generierte Beschreibung](media/e54e17186300a34fa8bda3dd5d12b9a3.png)
-
-Abbildung 3-55: AAS Lot / Submodel Lot & Exectued Processes
+![image](https://github.com/user-attachments/assets/15976fb0-1c36-41d6-bc65-84e52596e4b4)    
+*Abbildung 3-55: AAS Lot / Submodel Lot & Exectued Processes*
 
 Das Submodel Lot beinhaltet zum Lot01 diverse Properties zum Lot und eine SMC RunReferences, die Referenzen zu einzelnen Runs (Run01, Run02, Run03) enthält. Das Submodel ExecutedProcesses enthält die einzelnen referenzierten Runs in Form von SMCs. Jeder einzelne Run beschreibt ein gefertigtes Produkt innerhalb des Lots inklusive aller Produktionsprozesse und dem RunResult. Die Produktionsprozesse und deren Parameter sind Bestandteil der Prozessliste aus AP3.3 und werden dort im Ergebnisdokument detailliert beschrieben.
 
-![Ein Bild, das Text, Screenshot, Zahl, Schrift enthält. Automatisch generierte Beschreibung](media/1fb203538608d31663d087cd35814a4e.png)
-
-Abbildung 3-56: AAS & Submodel Lot
+![image](https://github.com/user-attachments/assets/37e3d2c4-dd58-4453-9430-c62568373b8a)    
+*Abbildung 3-56: AAS & Submodel Lot*
 
 Für eine Einzelteilfertigung wird ein Batch (Batch01) und in diesem Batch nur ein Lot (Lot01) verwendet. Im Lot01 definiert man für das Property „PlannedLotSize“ den Wert „1“, damit nur ein einzelnes Produkt für dieses Lot gefertigt wird. Somit lässt sich diese Struktur sowohl für Einzelteil- als auch Batchfertigung nutzen.
 
@@ -1253,11 +1183,10 @@ Das Teilmodell „Bill of Process“ (BoP) [8] spielt eine zentrale Rolle bei de
 
 Im allgemeinen Ablauf der Prozesssteuerung (siehe Kapitel 1.5.1.1) wird beschrieben, wie ausgehend von den im BoP-Teilmodell definierten Prozessschritten konkrete Arbeitsabläufe abgeleitet werden. Diese Abläufe werden durch eine detaillierte Planung und Analyse der benötigten Ressourcen, der Abhängigkeiten zwischen den Prozessschritten und der notwendigen Reihenfolge der Ausführung erstellt. Die hier beschriebenen Techniken und Methoden finden auch in der Ablaufsteuerung für parallele und sequenzielle Prozesse Anwendung.
 
-Die Handhabung von parallelen und sequenziellen Prozessen erfordert eine präzise Koordination und Abstimmung der verschiedenen Prozessschritte. Diese Prozesse werden grundsätzlich in Form eines BPMN-Diagramms (Business Process Model and Notation) abgebildet und für eine leichtere Handhabung visualisiert wie in *Abbildung* 157 dargestellt. Das Ziel ist es, auf dem bestehenden BoP-Teilmodell aufzubauen und dieses als Basis für das Zielbild der Digitalisierung mittels BPMN zu verwenden.
+Die Handhabung von parallelen und sequenziellen Prozessen erfordert eine präzise Koordination und Abstimmung der verschiedenen Prozessschritte. Diese Prozesse werden grundsätzlich in Form eines BPMN-Diagramms (Business Process Model and Notation) abgebildet und für eine leichtere Handhabung visualisiert wie in *Abbildung* 3-57 dargestellt. Das Ziel ist es, auf dem bestehenden BoP-Teilmodell aufzubauen und dieses als Basis für das Zielbild der Digitalisierung mittels BPMN zu verwenden.
 
-![A screenshot of a computer Description automatically generated](media/5d2dcf35e15c22b304fe855803d3da00.png)
-
-Abbildung 3-57: Überwachung des Schraubprozesses mit parallel abgearbeiteten Aufgaben
+![image](https://github.com/user-attachments/assets/e4f086bb-8a88-4ed5-8d1f-b1cad73ef6cd)    
+*Abbildung 3-57: Überwachung des Schraubprozesses mit parallel abgearbeiteten Aufgaben*
 
 Die Modellierung des Prozesses mithilfe von BPMN beschreibt die einzelnen Prozessschritte zunächst Abstract. Diese jeweiligen Arbeitsschritte werden durch eingehende und ausgehende „Flows“ verbunden. Konnektoren wie Parallel- oder Exklusiv-Gateways verbinden mehrere Prozessschritte und ermöglichen die Steuerung des Ablaufs.
 
@@ -1266,7 +1195,7 @@ Die Modellierung des Prozesses mithilfe von BPMN beschreibt die einzelnen Prozes
 
 Im Projekt VWS4LS werden Prozessschritte im digitalen Zwilling abgebildet und koordiniert. Dazu werden alle Schritte automatisiert mit Operationen der Verwaltungsschale verknüpft. Dies erfolgt über dynamisch festgelegte Schlüssel, welche auf Verhandlungsprozesse aus Teilprojekt 6 aufbauen sollen, um entsprechende Geräte und Aufgaben dynamisch verbinden zu können.
 
-Zusätzlich werden manuelle Teilschritte, etwa für Eingaben von Werkern, mit abgebildet. Dadurch kann etwa, wie in *Abbildung* 157 dargestellt, eine Abfrage zur Position durch den Werker behandelt werden. Automatisierte Teilschritte beinhalten Aufgaben für einen bestimmten Teilprozess wie etwa die Steuerung von Maschinen. Dabei handelt es sich um „Microservices“, welche vorher zentrale Services wie ein Manufacturing-Execution-System (MES) ersetzen und die jeweiligen Geräte mit mehr „Intelligenz“ ausstatten. Alle Prozessschritte werden automatisch angesteuert und besitzen einen Automatismus, um eine erfolgreiche (oder auch fehlerhafte) Beendigung des Schrittes zu dokumentieren und darüber zu informieren.
+Zusätzlich werden manuelle Teilschritte, etwa für Eingaben von Werkern, mit abgebildet. Dadurch kann etwa, wie in *Abbildung* 3-57 dargestellt, eine Abfrage zur Position durch den Werker behandelt werden. Automatisierte Teilschritte beinhalten Aufgaben für einen bestimmten Teilprozess wie etwa die Steuerung von Maschinen. Dabei handelt es sich um „Microservices“, welche vorher zentrale Services wie ein Manufacturing-Execution-System (MES) ersetzen und die jeweiligen Geräte mit mehr „Intelligenz“ ausstatten. Alle Prozessschritte werden automatisch angesteuert und besitzen einen Automatismus, um eine erfolgreiche (oder auch fehlerhafte) Beendigung des Schrittes zu dokumentieren und darüber zu informieren.
 
 Parallele Prozesse benötigen zusätzliche Events zur Koordination mit den anderen Prozessen. Diese Events sorgen dafür, dass alle parallellaufenden Prozesse synchronisiert sind und korrekt abgeschlossen werden können
 
@@ -1274,10 +1203,9 @@ Der Prozess selbst wird durch das Anlegen eines neuen Auftrags gestartet. Dieses
 
 #### Technische Beschreibung der Prozesssteuerung
 
-In der entwickelten prototypischen Erweiterung von [Eclipse BaSyx](https://github.com/VWS4LS/vws4ls-process-service) werden neben dem standardmäßig eingesetzten MQTT-Broker als Event-Mechanismus und der open-source BPMN-Engine Zeebe ([CAMUNDA](https://github.com/camunda)) auch zwei weitere Services, einer „ProcessFactory“, um den Prozess als dynamisches Element in Verbindung mit den Ergebnissen der Verhandlungen aus TP6 verfügbar zu machen und zu starten, und einem „WorkerManager“, um alle notwendigen Operationen der Geräte-Zwillinge (inklusive der virtuellen Geräte-Zusammenschlüssen) mit einem ausführbaren „Worker“ zu versehen. *Abbildung* 158 zeigt die dazugehörige Software-Architektur und die Interaktionen der verschiedenen Services.
+In der entwickelten prototypischen Erweiterung von [Eclipse BaSyx](https://github.com/VWS4LS/vws4ls-process-service) werden neben dem standardmäßig eingesetzten MQTT-Broker als Event-Mechanismus und der open-source BPMN-Engine Zeebe ([CAMUNDA](https://github.com/camunda)) auch zwei weitere Services, einer „ProcessFactory“, um den Prozess als dynamisches Element in Verbindung mit den Ergebnissen der Verhandlungen aus TP6 verfügbar zu machen und zu starten, und einem „WorkerManager“, um alle notwendigen Operationen der Geräte-Zwillinge (inklusive der virtuellen Geräte-Zusammenschlüssen) mit einem ausführbaren „Worker“ zu versehen. *Abbildung* 3-58 zeigt die dazugehörige Software-Architektur und die Interaktionen der verschiedenen Services.
 
-![Ein Bild, das Text, Diagramm, Screenshot, Schrift enthält. Automatisch generierte Beschreibung](media/74f5cb36ab890f8da1c6e38695defe26.png)
-
+![image](https://github.com/user-attachments/assets/3f6b9581-c995-45a4-ba46-dda5421fd448)    
 Abbildung 3-58: Architektur der Prozesssteuerung
 
 Um ein Beispiel-Szenario auszuführen, müssen zunächst die notwendigen Services auf Basis von Eclipse BaSyx erstellt werden. Im Projekt geschieht das im Rahmen von Docker-Images und dadurch Containern, die nach Ausführung alle Services der ProcessFactory und des WorkerManager verfügbar machen. Technisch wird zum Starten eines Prozesses über das Eventing-System eine „*deploy_operation*“ Nachricht versendet, welches alle registrierten Verwaltungsschalen nach ausführbaren Prozessen durchsucht und jeweils eine Start-Operation zum jeweiligen Teilmodell hinzufügt. Dadurch wird sichergestellt, dass nur beschriebene Prozesse im System ausgeführt werden können, aber auch Änderungen (inkl. Erstellen von neuen und Löschen von existierenden) an Prozessen durchgeführt werden können.
@@ -1286,23 +1214,21 @@ Gleichzeitig gibt es eine „*update_skills*“ Nachricht, welche die Worker all
 
 ##### ProcessFactory
 
-Die *ProcessFactory* als eigenständiger Service erfüllt die Aufgabe Prozesse aus Verwaltungsschalen zu erkennen und in der Verwaltungsschalenumgebung ausführbar zu machen. *Abbildung* 159 zeigt das dazugehörige Sequenzdiagramm und die Interaktion mit den BaSyx-Core-Services und der BPMN Engine selbst. So wird aus dem Digitalen Zwilling ein BPMN-Prozess-Template ausgelesen, welches zuvor aus dem BOP-Teilmodell definiert wurde, während eine *deployProcess*-Operation hinzugefügt wird, um den jeweiligen Prozess zu starten. Sobald ein Nutzer die entsprechende Operation, etwa wie im Demonstrator über das Interface des MES-Systems, startet, wird eine Instanz des Prozesses in der BPMN-Engine registriert und gestartet. Dieser Prozess greift automatisiert auf die Operationen der Geräte/Ressourcen-Verwaltungsschalen in Eclipse BaSyx über den *WorkerManager* zu.
+Die *ProcessFactory* als eigenständiger Service erfüllt die Aufgabe Prozesse aus Verwaltungsschalen zu erkennen und in der Verwaltungsschalenumgebung ausführbar zu machen. *Abbildung* 3-59 zeigt das dazugehörige Sequenzdiagramm und die Interaktion mit den BaSyx-Core-Services und der BPMN Engine selbst. So wird aus dem Digitalen Zwilling ein BPMN-Prozess-Template ausgelesen, welches zuvor aus dem BOP-Teilmodell definiert wurde, während eine *deployProcess*-Operation hinzugefügt wird, um den jeweiligen Prozess zu starten. Sobald ein Nutzer die entsprechende Operation, etwa wie im Demonstrator über das Interface des MES-Systems, startet, wird eine Instanz des Prozesses in der BPMN-Engine registriert und gestartet. Dieser Prozess greift automatisiert auf die Operationen der Geräte/Ressourcen-Verwaltungsschalen in Eclipse BaSyx über den *WorkerManager* zu.
 
-![A diagram of a process Description automatically generated](media/3b3de9fac5208fcb5b1c2df95569f900.png)
-
+![image](https://github.com/user-attachments/assets/700b544d-41d9-4502-a0c6-d647743475ad)    
 Abbildung 3-59: ProcessFactory Sequenzdiagramm
 
 Aktualisierungen der Prozesse können durch eine erneute Nachricht zum Remapping der vorhandenen Prozesse angesteuert werden.
 
 ##### WorkerManager
 
-Der WorkerManager, ähnlich zur ProcessFactory, ist ein zunächst autonomer Service auf Basis der Verwaltungsschale und der BPMN-Engine. *Abbildung* 160 zeigt auch hier ein Sequenzdiagramm zur Funktionalität des Services. Gleich zur ProcessFactory wird durch ein Event, welches automatisiert, aber auch manuell angesteuert werden kann, aus allen in BaSyx registrierten Verwaltungsschalen von Ressourcen, sofern vorhanden, ausführbare Operationen für potentielle Arbeitsschritte extrahiert. Zu jeder Operation wird automatisch ein Worker in der BPMN-Engine registriert, um nach Prozessstart automatisch die Ressource anzusteuern.
+Der WorkerManager, ähnlich zur ProcessFactory, ist ein zunächst autonomer Service auf Basis der Verwaltungsschale und der BPMN-Engine. *Abbildung* 3-60 zeigt auch hier ein Sequenzdiagramm zur Funktionalität des Services. Gleich zur ProcessFactory wird durch ein Event, welches automatisiert, aber auch manuell angesteuert werden kann, aus allen in BaSyx registrierten Verwaltungsschalen von Ressourcen, sofern vorhanden, ausführbare Operationen für potentielle Arbeitsschritte extrahiert. Zu jeder Operation wird automatisch ein Worker in der BPMN-Engine registriert, um nach Prozessstart automatisch die Ressource anzusteuern.
 
-![A screenshot of a computer Description automatically generated](media/a9abd3484bb0ceacc95cf2b5f602c589.png)
-
+![image](https://github.com/user-attachments/assets/a5e515ad-0d97-4e6a-abbc-dd181b2f8763)    
 Abbildung 3-60: WorkerManager Sequenzdiagramm
 
-### Datenmapping mit Validierung
+### <a name="_3.5.2"></aDatenmapping mit Validierung
 
 Quellsysteme im Shopfloor (z.B. Produktionsanlagen) liefern Daten unterschiedlich strukturiert, d.h. es kann sich um un- bzw. semi- strukturierte Daten handeln. Um die Konvertierung zwischen Strukturen und einem digitalen Datenthread zu gewährleisten, ist eine Validierung und ein eventuell notwendiges Mapping zwingend erforderlich. Die Validierung muss in verschiedenen Schritten der Datenerhebung und Datenverarbeitung durchgeführt werden.
 
@@ -1318,14 +1244,13 @@ Die Ziele des generischen Ansatzes für die Validierung mit Datenmapping:
 
 Die Validierung betrachtet nicht den Content der Daten.
 
-### Micro-Service „Datenvalidierung“
+### <a name="_3.5.3"></a>Micro-Service „Datenvalidierung“
 
 Der Validierungsdienst ist als REST-Service mit Patch-Endpunkt implementiert. Der Service benötigt eine JSON-Datei als Input. Das JSON wird validiert und als Ergebnis wird ein serialisiertes JSON-Objekt zurückgegeben.
 
-Die *Abbildung* 161: Testszenario Validation Service zeigt den Aufbau des Testszenarios.
+Die *Abbildung* 3-61: Testszenario Validation Service zeigt den Aufbau des Testszenarios.
 
-![Ein Bild, das Text, Screenshot, Schrift, Diagramm enthält. Automatisch generierte Beschreibung](media/720e4423dc8017d34edf5a773d4aa86e.png)
-
+![image](https://github.com/user-attachments/assets/9b18636f-90b7-4f9d-a5ac-ffb086931fd4)    
 Abbildung 3-61: Testszenario Validation Service
 
 **Input***: JSON-Datei eines Schraubprozesses*
@@ -1334,29 +1259,29 @@ Abbildung 3-61: Testszenario Validation Service
 
 Beispiel 1 (Validierung mit positiven Ergebnis):
 
-{"resultValue":true, "valueType":"boolean","message":" "}
+````{"resultValue":true, "valueType":"boolean","message":" "}````
 
 In der JSON-Zeichenkette ist der resultValue true, wenn die Validierung erfolgreich war. Der Wert von *valueType* ist per default *Boolean*. Die message ist leer, wenn der Dienst erfolgreich ausgeführt wurde
 
 Beispiel 2 (Validierung mit negativen Ergebnis):
 
-{"resultValue":false,"valueType":"boolean","message":"\$.sealing_30091.ProcessData.MaterialPressure.AV: boolean found, string expected "}
+````{"resultValue":false,"valueType":"boolean","message":"\$.sealing_30091.ProcessData.MaterialPressure.AV: boolean found, string expected "}````
 
 Die Validierung schlägt fehl, weil die JSON-Datei nicht mit dem JSON-Schema übereinstimmt. Der Dienst gibt ebenfalls 200 (HTTP_OK) zurück. Der Parameter "*resultValue*" liefert *false* zurück. Im Attribut "*message*" wird die Fehlermeldung des Validierungsdienstes angezeigt.
 
 Beispiel 3 (Semantic ID wird nicht gefunden):
 
-{"The semantic id semantic4567 is not found."}
+````{"The semantic id semantic4567 is not found."}````
 
 Wenn der Dienst mit einer nicht bekannten Semantic ID fehlschlägt, gibt der Dienst 404 mit einer Fehlermeldung zurück.
 
 Der Source Code des Web-Services und eine Installationsanleitung ist abgelegt unter <https://github.com/VWS4LS/vws4ls-data-validation/>.
 
-### Traceability
+### <a name="_3.5.4"></a>Traceability
 
 Die Rückverfolgbarkeit aller Aspekte des Leitungssatzes sind ein elementarer Bestandteil der Leitungssatzentwicklung und -produktion. Im Architekturkapitel „Rückverfolgbarkeit“ werden die Konzepte und Use Cases ausführlich beschrieben. Es wird auch auf die Einhaltung gesetzlicher Aufbewahrungsfristen sowie die Datenvorhaltung eingegangen.
 
-### Transfer in andere Produktserien
+### <a name="_3.5.5"></a> Transfer in andere Produktserien
 
 #### Coroplast
 
@@ -1364,15 +1289,13 @@ Coroplast ist auf die Herstellung von technischen Klebebändern, Kabeln und Leit
 
 Wie in *Abbildung* 162zu sehen ist, kann das Produkt Kupfer von einem unserer Lieferanten bezogen werden, während das Silikon auf unseren Maschinen hergestellt wird. Aus diesem Grund wird das Silikonprodukt als Typ dargestellt, während das Kupfer durch die Daten des Lieferanten dargestellt wird. Für die Herstellung des Kabels ist es im nächsten Schritt notwendig, das Silikon auf das Kupfer zu extrudieren. Des Weiteren ist zu erkennen, dass das Kabelprodukt aus Silikon und Kupfer besteht und als Typ definiert ist, wobei die Materialien in der Stückliste beschrieben werden.
 
-![Ein Bild, das Text, Screenshot, Diagramm, Schrift enthält. Automatisch generierte Beschreibung](media/eb9fceaecc66f033ea8f59e9eb8f8344.png)
-
-Abbildung 3-62: Repräsentation des Kabelherstellungsprozesses
+![image](https://github.com/user-attachments/assets/400dc830-eca9-4c5e-b3dd-219355d96d48)    
+*Abbildung 3-62: Repräsentation des Kabelherstellungsprozesses*
 
 Um mit der Validierung der Prinzipien fortzufahren, werden im Folgenden die Konzepte im Ökosystem Verwaltungsschale dargestellt. *Abbildung* 163, zeigt die Darstellung der wichtigsten Materialien, wobei Kabel und Silikon, wie sie von Coroplast hergestellt werden, direkt als "Typ"-Produkte dargestellt werden. Andererseits ist zu erkennen, dass der Werkstoff Kupfer, da er nicht von Coroplast hergestellt wird, aus zwei Teilmodellen besteht: technische Informationen und Lieferantendaten. Darüber hinaus ist jeder Ressource eine Verwaltungsschale zugeordnet, wie z.B. bei der Knetmaschine und der Extrusionsmaschine, die durch die technischen Spezifikationen und die Kapazitäten der jeweiligen Maschine dargestellt werden.
 
-![Ein Bild, das Text, Screenshot, Zahl, parallel enthält. Automatisch generierte Beschreibung](media/cca1c294ca9e919dc4fb40fe89c8f3da.png)
-
-Abbildung 3-63: Repräsentation des Kabelherstellungsprozesses in der VWS
+![image](https://github.com/user-attachments/assets/1a032c94-f3a4-49b3-b045-17ff14ea7db8)    
+*Abbildung 3-63: Repräsentation des Kabelherstellungsprozesses in der VWS*
 
 ##### Prototypische Implementierung zur Konzeptvalidierung
 
@@ -1395,37 +1318,34 @@ Die Quellen für die Daten in unserem System sind vielfältig. In der prototypis
 
 Für Testzwecke und zur Vereinfachung werden in unserem Prototyp Daten durch das Python-Script simuliert und erstellt.
 
-![Ein Bild, das Text, Screenshot, Diagramm, Rechteck enthält. Automatisch generierte Beschreibung](media/7f040216f42d4f8e2113324ce0c22aa1.png)
+![image](https://github.com/user-attachments/assets/e5e900ee-fed7-4490-903f-c33c2f1911b0)    
+*Abbildung 3-64: Architektur für die Konzeptvalidierung*
+
 
 ##### Anwendungsbeispiel 1
 
-Durch Erstellung einer Order mit verzeigertem Batch mit verzeigertem Lot mit Verweisen auf ein erstelltes Produkt wurde prototypisch die Produktionsplanung und das Speichern der Ergebnisse simuliert. Alle Produktionsschritte sind geloggt und im Lot in den Runs hinterlegt. *Abbildung* 167 zeigt, wie die VWS vom Lot in BaSyx aussieht. Hier ist eine Referenz auf eine VWS mit Informationen des entsprechenden Batchs zu finden. Theoretisch können hier beliebig viele Batches hinterlegt sein. In der *Abbildung* 166 ist eine VWS mit dem Batch zu sehen, in welchem wiederrum ein Verweis auf das Lot zu finden ist. Die *Abbildung* 167 zeigt das Lot mit einem Submodell für allgemeine Informationen, aber auch ein Submodell für die Runs. In Jedem Run sind alle Prozess-Steps abgebildet, die sich auch in dem Typ wiederfinden, aber nun mit realen Werten aus der Produktion.
+Durch Erstellung einer Order mit verzeigertem Batch mit verzeigertem Lot mit Verweisen auf ein erstelltes Produkt wurde prototypisch die Produktionsplanung und das Speichern der Ergebnisse simuliert. Alle Produktionsschritte sind geloggt und im Lot in den Runs hinterlegt. *Abbildung* 3-67 zeigt, wie die VWS vom Lot in BaSyx aussieht. Hier ist eine Referenz auf eine VWS mit Informationen des entsprechenden Batchs zu finden. Theoretisch können hier beliebig viele Batches hinterlegt sein. In der *Abbildung* 3-66 ist eine VWS mit dem Batch zu sehen, in welchem wiederrum ein Verweis auf das Lot zu finden ist. Die *Abbildung* 3-67 zeigt das Lot mit einem Submodell für allgemeine Informationen, aber auch ein Submodell für die Runs. In Jedem Run sind alle Prozess-Steps abgebildet, die sich auch in dem Typ wiederfinden, aber nun mit realen Werten aus der Produktion.
 
-![Ein Bild, das Text, Software, Multimedia-Software, Grafiksoftware enthält. Automatisch generierte Beschreibung](media/11764b6847a31c046c0c5b7f102a1958.png)
+![image](https://github.com/user-attachments/assets/fa065a91-2b14-43d5-acfd-9600676a125f)    
+*Abbildung 3-65: Darstellung des Produktionsauftrags in BaSyx*
 
-Abbildung 3-65: Darstellung des Produktionsauftrags in BaSyx
+![image](https://github.com/user-attachments/assets/bc1eb74d-7ceb-42bc-99d5-eaccf454a03d)    
+*Abbildung 3-66: Darstellung des Batchs in BaSyx*
 
-![Ein Bild, das Text, Software, Multimedia-Software, Grafiksoftware enthält. Automatisch generierte Beschreibung](media/3f0287ceba4e323836b6c61bd28b1121.png)
-
-Abbildung 3-66: Darstellung des Batchs in BaSyx
-
-![Ein Bild, das Text, Software, Multimedia-Software, Grafiksoftware enthält. Automatisch generierte Beschreibung](media/adb032069c86930c021be74d9ed86fcf.png)
-
-Abbildung 3-67: Darstellung des Lots in BaSyx
+![image](https://github.com/user-attachments/assets/35a7cadb-3721-417c-a5c4-e0e253c6d4fa)    
+*Abbildung 3-67: Darstellung des Lots in BaSyx*
 
 ##### Anwendungsbeispiel 2
 
-Im zweiten Anwendungsbeispiel haben wir die Rückverfolgbarkeit über mehrere Lots hinweg simuliert. Dafür haben wir die Produktion von einem Kabel, wie in *Abbildung* 168 zu finden, realisiert. Entscheidend dafür sind zwei Lots. Eines, dass die Prozessschritte beinhaltet, die zur Herstellung von dem Silikon benötigt wurden. Der Einfachheit halber ist das hier mit einem Schritt dargestellt.
+Im zweiten Anwendungsbeispiel haben wir die Rückverfolgbarkeit über mehrere Lots hinweg simuliert. Dafür haben wir die Produktion von einem Kabel, wie in *Abbildung* 3-68 zu finden, realisiert. Entscheidend dafür sind zwei Lots. Eines, dass die Prozessschritte beinhaltet, die zur Herstellung von dem Silikon benötigt wurden. Der Einfachheit halber ist das hier mit einem Schritt dargestellt.
 
-![Ein Bild, das Screenshot, Text, Software, Multimedia-Software enthält. Automatisch generierte Beschreibung](media/85c23c347f5f972325f81d78f74d0d75.png)
+![image](https://github.com/user-attachments/assets/1c5a2491-627c-4e12-b665-20201d78c9cd)    
+*Abbildung 3-68: Darstellung des Lots zur Kabelproduktion*
 
-Abbildung 3-68: Darstellung des Lots zur Kabelproduktion
+In der *Abbildung* 3-69 ist zu sehen, wir wie aus dem Silikon und einer weiteren Komponente schließlich ein Kabel hergestellt wurde. Informationen zur Chargennummer sind in der VWS von dem Produkt zu finden.
 
-In der *Abbildung* 169 ist zu sehen, wir wie aus dem Silikon und einer weiteren Komponente schließlich ein Kabel hergestellt wurde. Informationen zur Chargennummer sind in der VWS von dem Produkt zu finden.
-
-![Ein Bild, das Text, Screenshot, Software, Multimedia-Software enthält. Automatisch generierte Beschreibung](media/eac2a76292692e3aa67080fa9bccc13c.png)
-
-Abbildung 3-69: Darstellung des Lots zur Silikonproduktion
+![image](https://github.com/user-attachments/assets/8dbf06a0-380e-4816-8acb-54310f46f856)    
+*Abbildung 3-69: Darstellung des Lots zur Silikonproduktion*
 
 Stellt ein Nutzer also fest, dass bei seinem Kabel das Silikon gebrochen ist, so kann er die Chargennummer davon beim Hersteller angeben. Dieser kann schauen in welchem Lot dieses Kabel produziert wurde und anschließend die Chargennummer des Silikons herausfinden, dass verwendet wurde. Sobald diese bekannt ist, kann herausgefunden werden in welchem Lot das Silikon produziert wurde. Hier findet er alle relevanten Daten in den Prozessschritten, um nachvollziehen zu können, wie es zu der Schwäche im Material kam. Z.B. kann festgestellt werden, dass die Temperatur, während der Knetzeit lange zu hoch war, oder es kann aufgeklärt werden, dass die Materialschwäche aufgrund von fehlerhaften Komponenten entstanden ist.
 
@@ -1439,12 +1359,11 @@ KOSTAL Kontakt Systeme ist auf die Entwicklung und Produktion von Steckverbinder
 
 Der zu bewertende Anwendungsfall befasst sich mit der Bereitstellung und Produktion der Materialien, die für die Herstellung eines Kontaktes erforderlich sind.
 
-Wie in *Abbildung* 170 zu sehen ist, werden die Bänder für den Grundkörper und für die Lamelle meist von verschiedenen Lieferanten bezogen.
+Wie in *Abbildung* 3-70 zu sehen ist, werden die Bänder für den Grundkörper und für die Lamelle meist von verschiedenen Lieferanten bezogen.
 
 Für die Herstellung des Kontaktes ist es im nächsten Schritt notwendig, die Lamelle und den Grundkörper aus dem Band umzuformen sowie beide zusammen zu fügen. Beide Materialien sind in der Stückliste eindeutig beschrieben.
 
-![Ein Bild, das Text, Screenshot, Schrift, Electric Blue (Farbe) enthält. Automatisch generierte Beschreibung](media/1f0196c80876492e853eab3be67d0e2f.png)
-
+![image](https://github.com/user-attachments/assets/78fda7dc-6334-4053-9889-d4c6985174f4)    
 *Abbildung 3-70: Repräsentation des Kabelherstellungsprozesses*
 
 Um mit der Validierung der Prinzipien fortzufahren, werden im Folgenden die Konzepte im Ökosystem Verwaltungsschale dargestellt. Nachfolgend sind die wichtigsten Materialien aufgelistet, wobei von den Lieferanten der Bänder nur die technischen Informationen und Lieferantendaten übermittelt werden.
@@ -1470,25 +1389,22 @@ Product Contact
 -   Equipment
 -   Packaging
 
-Darüber hinaus ist die Ressource der Verwaltungsschale zugeordnet, die durch die technischen Spezifikationen und die Kapazitäten der jeweiligen Maschine dargestellt werden (PPS-Fertigungsauftrag, siehe *Abbildung* 171).
+Darüber hinaus ist die Ressource der Verwaltungsschale zugeordnet, die durch die technischen Spezifikationen und die Kapazitäten der jeweiligen Maschine dargestellt werden (PPS-Fertigungsauftrag, siehe *Abbildung* 3-71).
 
-![Ein Bild, das Text, Screenshot, Quittung, Zahl enthält. Automatisch generierte Beschreibung](media/0aa97edad8cb69f19e57bcf73f6669e4.png)
+![image](https://github.com/user-attachments/assets/0abfa3f1-725d-46fe-881c-73a2db590b30)    
+*Abbildung 3-71: Repräsentation des PPS-Fertigungsauftrages*
 
-Abbildung 3-71: Repräsentation des PPS-Fertigungsauftrages
-
-Das Mapping eines Fertigungsauftrags in eine AAS wird in *Abbildung* 172 schematisch dargestellt. Es wird gezeigt an welchen Stellen die einzelnen Bestandteile eines Fertigungsauftrags im pdf-Format in einer AAS („[KKS_Product_TERMINAL_SLK2.8_Type.aasx](https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP03/AP3.5/KKS_Product_TERMINAL_SLK2.8_Type.aasx)“[^12]) hinterlegt sind.
+Das Mapping eines Fertigungsauftrags in eine AAS wird in *Abbildung* 3-72 schematisch dargestellt. Es wird gezeigt an welchen Stellen die einzelnen Bestandteile eines Fertigungsauftrags im pdf-Format in einer AAS („[KKS_Product_TERMINAL_SLK2.8_Type.aasx](https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP03/AP3.5/KKS_Product_TERMINAL_SLK2.8_Type.aasx)“[^12]) hinterlegt sind.
 
 [^12]: <https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP03/AP3.5/KKS_Product_TERMINAL_SLK2.8_Type.aasx>
 
-![Ein Bild, das Text, Screenshot, Reihe, parallel enthält. Automatisch generierte Beschreibung](media/e4c8a8d79c2ea6cac6768a32b2eb9166.png)
+![image](https://github.com/user-attachments/assets/60078257-6df0-44ea-906d-83be1d10945f)    
+*Abbildung 3-72: Mapping der Daten eines beispielhaften Fertigungsauftrags in die VWS*
 
-Abbildung 3-72: Mapping der Daten eines beispielhaften Fertigungsauftrags in die VWS
-
-![Ein Bild, das Text, Screenshot, Software, Webseite enthält. Automatisch generierte Beschreibung](media/1875fdf71416176f68ff672561faeb5a.png)
-
+![image](https://github.com/user-attachments/assets/fd46c5e7-9181-4f48-8ad6-c4f857f14bb0)    
 *Abbildung 3-73: Repräsentation des Steckers (Terminal) der Verwaltungsschale*
 
-## Fazit
+## <a name="_3.6"></a>Fazit
 
 Im Rahmen des TP3 wurden verschiedene Aspekte beleuchtet, um die Produktionsprozesse für Leitungssätze zu automatisieren. Ein wichtiger Grundstein wurde mit der Prozessliste gelegt, die an verschiedenen Stellen im Gesamtprojekt genutzt werden konnte, um erstens eine Sammlung aller identifizierenten Prozesse in einer konsolidierten Liste und zweitens gemeinsam mit den dazugehörigen Parameter in feingranularer Form für eine potenzielle Automatisierung zu haben.
 
@@ -1498,22 +1414,22 @@ Ein weiterer wichtiger Baustein konnte mit der Entwicklung eines Data Mapping un
 
 Die Ergebnisse aus TP3 wurden abschließend validiert. An dieser Stelle stand die Anwendung der entwickelten Prinzipien für reale Anwendungsfälle im Vordergrund. Es konnte dadurch bspw. gezeigt werden, dass das „Bill of Process“ Teilmodell nicht nur für die Leitungssatzproduktion Anwendung finden kann, sondern auch bei der Produktherstellung von Zulieferteilen. Hierdurch konnte nachgewiesen werden, dass das Teilmodell eine generelle Anwendungsmöglichkeit für Prozesse in der Produktherstellung bietet.
 
-## Anhang: UML-Diagramm
+## <a name="_3.7"></a>Anhang: UML-Diagramm
 
-![Ein Bild, das Screenshot, Quadrat enthält. Automatisch generierte Beschreibung](media/4b994eaec67739921307a68ab19ba621.png)
+![image](https://github.com/user-attachments/assets/8ef9e761-03a0-46ab-963f-c0485297fe79)
 
-![Ein Bild, das Text, Screenshot enthält. Automatisch generierte Beschreibung](media/52d7643fc3bb802a00e685a5bd1bf8c5.png)
+![image](https://github.com/user-attachments/assets/6977bd31-a92a-4e57-9427-824c1f1d7177)
 
-![Ein Bild, das Text, Screenshot, Design enthält. Automatisch generierte Beschreibung](media/e6a9bd4427671e8a94d4280d69b920b9.png)
+![image](https://github.com/user-attachments/assets/82396890-7d66-40c4-aebd-857eee399d49)
 
-![Ein Bild, das Screenshot, Quadrat, Text enthält. Automatisch generierte Beschreibung](media/9a2255744cfea068707aa5569c526e08.png)
+![image](https://github.com/user-attachments/assets/c9902679-bfb2-43e2-b7d8-d2e899ed5d48)
 
-![Ein Bild, das Text, Screenshot, Schrift, Reihe enthält. Automatisch generierte Beschreibung](media/343dc32236a25aa0a5a68372032ab04d.png)
+![image](https://github.com/user-attachments/assets/15f0d866-359c-466e-98e7-eb15b1e5cc84)
 
 # Literaturverzeichnis
 
-| [1]   | „ETL-Prozess,“ [Online]. Available: https://de.wikipedia.org/wiki/ETL-Prozess.                                                                                                                                                                                                                                                                                                                |
-|-------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-------|--------------------------------------------------------------------------------|
+| [1]   | „ETL-Prozess,“ [Online]. Available: https://de.wikipedia.org/wiki/ETL-Prozess. |
 | [2]   | Prostep ivip, „Vehicle Electric Container (VEC),“ prostep ivip, 8 Jan 2024. [Online]. Available: https://ecad-wiki.prostep.org/specifications/vec/v210/.                                                                                                                                                                                                                                      |
 | [3]   | Prostep ivip, „ECAD-Wiki,“ 2023. [Online]. Available: https://ecad-wiki.prostep.org/specifications/vec/v202/component-characteristics/geometric-properties-of-connector-housings-definitions/. [Zugriff am 01 6 2023].                                                                                                                                                                        |
 | [4]   | OPC Foundation, „OPC 10000-210: Industrial automation - Relative Spatial Location,“ 2023. [Online]. Available: https://reference.opcfoundation.org/RSL/v100/docs/.                                                                                                                                                                                                                            |
@@ -1524,163 +1440,3 @@ Die Ergebnisse aus TP3 wurden abschließend validiert. An dieser Stelle stand di
 | [9]   | C. Diedrich, A. Belyaev, R. Blumenfeld, J. Bock, S. Grimm, J. Hermann, T. Klausmann, A. Köcher, M. Maurmaier, K. Meixner, J. Peschke, M. Schleipen, S. Schmitt, B. Schnebel, G. Stephan, M. Volkmann, A. Wannagat, K. Watson, M. Winter und P. Zimmermann, „Information Model for Capabilities, Skills & Services,“ 2022. [Online]. Available: http://dx.doi.org/10.13140/RG.2.2.30098.53440. |
 | [10]  | Plattform Industrie 4.0, „Capabilities, Skills, Services,“ 11 2022. [Online]. Available: https://www.plattform-i40.de/IP/Redaktion/DE/Downloads/Publikation/CapabilitiesSkillsServices.pdf?.                                                                                                                                                                                                  |
 | [11]  | ISO/IEC, „ISO/IEC 19510:2013: Business Process Model and Notation (BPMN),“ [Online]. Available: https://www.iso.org/standard/62652.html.                                                                                                                                                                                                                                                      |
-
-# Abbildungsverzeichnis
-
-[*Abbildung 3-1: Phasenmodell für die Anforderungsspezifikation*](#_Toc180084030)
-
-[*Abbildung 3-2: High-Level Architektur*](#_Toc180084031)
-
-[*Abbildung 3-3: Use Case Predictive Maintenance*](#_Toc180084032)
-
-[*Abbildung 3-4: Pay-per-Use: Maschinenhersteller greift auf Ressource AAS bei Kunde zu*](#_Toc180084033)
-
-[*Abbildung 3-5: OEE-Berechnung: MES greift auf Ressource AAS zu*](#_Toc180084034)
-
-[*Abbildung 3-6: Palette mit zu bestückenden Gehäusen*](#_Toc180084035)
-
-[*Abbildung 3-7: Gehäuse*](#_Toc180084036)
-
-[*Abbildung 3-8: Kontaktbeispiel 1 (Y-Achse zeigt in Richtung Primärverriegelung)*](#_Toc180084037)
-
-[*Abbildung 3-9: Definition des Nullpunkts für das Terminal und gegenüber dem Gehäuse*](#_Toc180084038)
-
-[*Abbildung 3-10: Stiftkontakt*](#_Toc180084039)
-
-[*Abbildung 3-11: Kontaktbeispiele mit zwei Verriegelungen*](#_Toc180084040)
-
-[*Abbildung 3-12: VEC-Definition für Steckrichtung und Achsensystem (Source Prostep)*](#_Toc180084041)
-
-[*Abbildung 3-13: Stiftgehäuse mit Pinbild*](#_Toc180084042)
-
-[*Abbildung 3-14: Buchsengehäuse mit Pinbild*](#_Toc180084043)
-
-[*Abbildung 3-15: Produktionsprozesse beim Konfektionär*](#_Toc180084044)
-
-[*Abbildung 3-16: PPR-Modell*](#_Toc180084045)
-
-[*Abbildung 3-17: Initiale Prozessliste*](#_Toc180084046)
-
-[*Abbildung 3-18: UML-Klassendiagramm für Produktionsprozesse*](#_Toc180084047)
-
-[*Abbildung 3-19: Allgemeingültige Klassen*](#_Toc180084048)
-
-[*Abbildung 3-20: ECLASS Datenmodell und Detaillierung des Properties (Quelle: ECLASS* [6]*)*](#_Toc180084049)
-
-[*Abbildung 3-21: Entwicklung der Darstellung zu den Prozessen*](#_Toc180084050)
-
-[*Abbildung 3-22: Erweiterte Properties zu den Prozessparametern*](#_Toc180084051)
-
-[*Abbildung 3-23: Einheiten mit den dazugehörigen ECLASS IRDIs*](#_Toc180084052)
-
-[*Abbildung 3-24: Common-Bereich der finalen Prozessliste*](#_Toc180084053)
-
-[*Abbildung 3-25: VWS ProductType*](#_Toc180084054)
-
-[*Abbildung 3-26: SMC Product Sequence*](#_Toc180084055)
-
-[*Abbildung 3-27: Nominalprozess Cut*](#_Toc180084056)
-
-[*Abbildung 3-28: SMC PPR, ProcessBom*](#_Toc180084057)
-
-[*Abbildung 3-29: Required Capabilities*](#_Toc180084058)
-
-[*Abbildung 3-30: VWS ProductionOrder*](#_Toc180084059)
-
-[Abbildung 3-31: IDTA 2031 Bill of Process](#_Toc180084060)
-
-[*Abbildung 3-32: CSS-Modell* [10]](#_Toc180084061)
-
-[*Abbildung 3-33: Beispielprodukt zur Ableitung der Required Capabilities*](#_Toc180084062)
-
-[*Abbildung 3-34: Prozesssequenz*](#_Toc180084063)
-
-[*Abbildung 3-35: Beispiel der Sicherungsbox*](#_Toc180084064)
-
-[*Abbildung 3-36: Simple Prozesssequenz zum Schraubvorgang an zwei Positionen*](#_Toc180084065)
-
-[*Abbildung 3-37: Prozesssequenz am Beispiel Sicherungsbox*](#_Toc180084066)
-
-[*Abbildung 3-38: Darstellung des Prozessbeispiels als BPMN*](#_Toc180084067)
-
-[*Abbildung 3-39: Prozesssequenz am Beispiel Sicherungsbox inkl. Ressourcenzuteilung*](#_Toc180084068)
-
-[*Abbildung 3-40: Darstellung eines Prozessablaufs als BPMN*](#_Toc180084069)
-
-[Abbildung 3-41: Exemplarische Darstellung des Data Mapping Services mit VWS als Zielsystem](#_Toc180084070)
-
-[Abbildung 3-42: AAS Resource mit AAS und SM](#_Toc180084071)
-
-[Abbildung 3-43: AAS und SM und SMC InformationModelDescriptionSetJSONSchema](#_Toc180084072)
-
-[Abbildung 3-44: AAS und SM und SMC InformationModelDescriptionSetAASElement](#_Toc180084073)
-
-[Abbildung 445: Keine Datensenkenzuordnung im Transformer](#_Toc180084074)
-
-[Abbildung 446: Mit Datensenkenzuordnung](#_Toc180084075)
-
-[Abbildung 447: Mit Datensenkenzuordnung im Transformer](#_Toc180084076)
-
-[Abbildung 3-48: Mögliche Datenmapping-Integration](#_Toc180084077)
-
-[Abbildung 3-49: Übersicht der Produktionsschritte in der Leitungssatzproduktion](#_Toc180084078)
-
-[Abbildung 3-50: Typ- und Instanzen-AAS](#_Toc180084079)
-
-[Abbildung 3-51: Baugruppe einer geschnittenen Einzelleitung mit Kontaktteilen inklusive ELA](#_Toc180084080)
-
-[Abbildung 3-52: Struktur eines Produktionsauftrags. (Eigene Darstellung)](#_Toc180084081)
-
-[Abbildung 3-53: Submodel ProductionOrder](#_Toc180084082)
-
-[Abbildung 3-54: AAS & Submodel Batch](#_Toc180084083)
-
-[Abbildung 3-55: AAS Lot / Submodel Lot & Exectued Processes](#_Toc180084084)
-
-[Abbildung 3-56: AAS & Submodel Lot](#_Toc180084085)
-
-[Abbildung 3-57: Überwachung des Schraubprozesses mit parallel abgearbeiteten Aufgaben](#_Toc180084086)
-
-[Abbildung 3-58: Architektur der Prozesssteuerung](#_Toc180084087)
-
-[Abbildung 3-59: ProcessFactory Sequenzdiagramm](#_Toc180084088)
-
-[Abbildung 3-60: WorkerManager Sequenzdiagramm](#_Toc180084089)
-
-[Abbildung 3-61: Testszenario Validation Service](#_Toc180084090)
-
-[Abbildung 3-62: Repräsentation des Kabelherstellungsprozesses](#_Toc180084091)
-
-[Abbildung 3-63: Repräsentation des Kabelherstellungsprozesses in der VWS](#_Toc180084092)
-
-[Abbildung 3-64: Architektur für die Konzeptvalidierung](#_Toc180084093)
-
-[Abbildung 3-65: Darstellung des Produktionsauftrags in BaSyx](#_Toc180084094)
-
-[Abbildung 3-66: Darstellung des Batchs in BaSyx](#_Toc180084095)
-
-[Abbildung 3-67: Darstellung des Lots in BaSyx](#_Toc180084096)
-
-[Abbildung 3-68: Darstellung des Lots zur Kabelproduktion](#_Toc180084097)
-
-[Abbildung 3-69: Darstellung des Lots zur Silikonproduktion](#_Toc180084098)
-
-[*Abbildung 3-70: Repräsentation des Kabelherstellungsprozesses*](#_Toc180084099)
-
-[Abbildung 3-71: Repräsentation des PPS-Fertigungsauftrages](#_Toc180084100)
-
-[Abbildung 3-72: Mapping der Daten eines beispielhaften Fertigungsauftrags in die VWS](#_Toc180084101)
-
-[*Abbildung 3-73: Repräsentation des Steckers (Terminal) der Verwaltungsschale*](#_Toc180084102)
-
-# Tabellenverzeichnis
-
-[Tabelle 11Vergleich zwischen initialer und finaler Prozessliste](#_Toc180082075)
-
-Abkürzungsverzeichnis
-
-CAD *Computer Aided Design*
-
-MQTT Message Queuing Telemetry Transport
-
-STEP *Standard for the Exchange of Product model data*
