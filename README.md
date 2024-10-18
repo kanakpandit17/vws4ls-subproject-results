@@ -16,7 +16,7 @@ Ebenso die in der Projektdokumentation referenzierten Artefakte wie z.B. JSON- a
 * [Abkürzungsverzeichnis](/General/Abkuerzungsverzeichnis.md)
 * [Autorenverzeichnis](/General/Autoren.md)
 
-## Liste der Subrepositories:
+## Liste der VWS4LS-Repositories
 * [https://github.com/VWS4LS/vws4ls-subproject-results] (Ergebnisdokumentation)
 * [https://github.com/VWS4LS/vws4ls-submodel-templates] (Library of submodel templates implemented in C#)
 * [https://github.com/VWS4LS/vws4ls-bidding-process] (Java)
