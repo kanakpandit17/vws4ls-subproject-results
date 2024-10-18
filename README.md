@@ -1,6 +1,9 @@
 # vws4ls-subproject-results
 Dieses Repository stellt die Ergebnis-Dokumentation zum Projekt VWS4LS bereit ([Gesamtbericht als PDF](https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/VWS4LS_Abschlussbericht_Gesamtprojekt.pdf)). 
 Ebenso die in der Projektdokumentation referenzierten Artefakte wie z.B. JSON- and AASX-Dateien.
+
+[Projektübersicht](https://github.com/VWS4LS/.github/blob/main/profile/README.md)
+
 ## Inhalt
 * [TP1: Konzept, Informationsmodelle und Produktbeschreibung](/TP01)
 * [TP2: Entwicklungsprozesse des Leitungssatzes](/TP02)
