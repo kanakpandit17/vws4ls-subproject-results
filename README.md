@@ -13,4 +13,5 @@ Ebenso die in der Projektdokumntation referenzierten Artefakte wie z.B. JSON- an
 * [TP9: Pilotierung, Erprobung, Demonstrator](/TP09)
 * [TP10: Transfer und Koordination](/TP10)
 * [Literaturverzeichnis](/General/Literaturverzeichnis.md)
+* [Abkürzungsverzeichnis](/General/Abkuerzungsverzeichnis.md)
 * [Autorenverzeichnis](/General/Autoren.md)
