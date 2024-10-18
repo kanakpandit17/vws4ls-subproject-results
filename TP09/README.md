@@ -37,7 +37,7 @@ Im AP 9.2 „**Umsetzung des physischen Demonstrators**“ wurde die Umsetzung d
 
 Die Konzeption der Demonstratoren, fing bereits kurz nach dem Start des Projektes im Dezember 2021 an und wurde über die gesamte Projektlaufzeit fortgesetzt. Insgesamt wurden 4 verschiedenen Demonstratoren entwickelt und aufgebaut, welche im Folgenden kurz beschrieben und im weiteren Verlauf des Kapitels öfter referenziert werden.
 
-### <a name="_9.2.1"></a> Demonstrator Ausbaustufe 1 (2022) – HMI 2022
+### <a name="_9.2.1"></a>9.2.1 Demonstrator Ausbaustufe 1 (2022) – HMI 2022
 
 Ziel des ersten Demonstrators war es, auf die Komplexität des Leitungssatzes aufmerksam zu machen, und erste statische Produktverwaltungsschalen selbst mittels des AASX-Package-Explorers aufzubauen.
 
@@ -51,7 +51,7 @@ Zur Präsentation erster Produktverwaltungsschalen wurden 4 ausgewählte Leitung
 ![image](https://github.com/user-attachments/assets/103720c6-9ecb-4f25-84ec-aa31ce85e053)   
 *Abbildung 9-3: Beispiel VWS-Terminal*
 
-### <a name="_9.2.2"></a> Demonstrator Ausbaustufe 2 (2023) - HMI 2023
+### <a name="_9.2.2"></a>9.2.2 Demonstrator Ausbaustufe 2 (2023) - HMI 2023
 
 ![image](https://github.com/user-attachments/assets/0363f5b3-a495-41cd-8e79-c894489f36e3)   
 *Abbildung 9-4: Projektdemonstrator mit Fokus auf der Implementierung der VWS im Produktionsprozess*
@@ -82,7 +82,7 @@ Die MES-Applikation übermittelt anschließend den Auftrag mit der entsprechende
 
 Im Arbeitspaket 9.3 „Umsetzung des digitalen Demonstrators“ wurde eine mehrstufige Demonstration der Entstehung und der Anreicherung der Verwaltungsschale entlang der Leitungssatz-Wertschöpfungskette erarbeitet. In der ersten Stufe wurde nach jedem Prozessschritt entlang des gesamten Entstehungsprozesses das Entwicklungsstadium des Assets „Leitungssatz“ (oder der Sub-Komponenten) und die dazugehörige Verwaltungsschale dargestellt
 
-### <a name="_9.3.1"></a> **Demonstrator Ausbaustufe 3 (2024) – HMI 2024**
+### <a name="_9.3.1"></a>9.3.1 Demonstrator Ausbaustufe 3 (2024) – HMI 2024
 
 Ziel der Ausbaustufe 3 war die dynamische Einbindung der Verwaltungsschalen (VWS) in einen Leitungssatzproduktionsprozess mit mehreren Produktionsressourcen. Der physische Aufbau des Demonstrators hatte sich im Vergleich zu *Kapitel 9.2* lediglich dahingehend lediglich dahingehend verändert, das eine weitere Produktionsressource nahezu nicht verändert, dass eine weitere Produktionsressource ([Komax Alpha](https://www.komaxgroup.com/de/products/crimp-to-crimp/alpha-565)) mit eingebunden wurde (siehe *Abbildung* 9-6). Der Produktionsressource ist aufgrund der Größe und Transportabilität als Simulation verfügbar und steht physisch nicht zur Verfügung. Darüber hinaus besteht der Demonstrator weiterhin aus den Grundkomponenten – MES-Applikation, Produktionsmaschine, BaSyx und den Verwaltungsschalen der Einzelkomponenten (Leitungen und Terminals).
 
@@ -109,7 +109,7 @@ Die ausgewählte Maschine auf dem Shopfloor übernimmt die Ausführung des Crimp
 
 Am Ende des Prozesses entsteht eine gecrimpte Leitung, die das Zielprodukt des Demonstrators darstellt. Dieser Ablauf verdeutlicht die enge Verzahnung von lokaler Produktion und digitaler Beschreibung sowie das Zusammenspiel zwischen physischen Produkten und ihren digitalen Abbildern.
 
-### <a name="_9.3.2"></a> Demonstrator Ausbaustufe 4 (2024) - Ergebnistagung
+### <a name="_9.3.2"></a>9.3.2 Demonstrator Ausbaustufe 4 (2024) - Ergebnistagung
 
 Ziel dieser Ausbaustufe war, den statischen Teil des Demonstrators weiter zu reduzieren und somit ein weiterer Schritt in Richtung dynamischer VWS-Nutzung einer realistischen industriellen Anwendung zu tätigen. Hierfür wurden die im Projekt entwickelten Funktionen des *Capabilitychecks ([TP05](https://github.com/VWS4LS/vws4ls-subproject-results/tree/main/TP05))*, dem *Automatisiertenverhandlungsprozess* ([TP06](https://github.com/VWS4LS/vws4ls-subproject-results/tree/main/TP06)), der *Tool-Wear Funktion* (Ansatz zur *Predictive Maintenance* durch hochzählen der Produktionszyklen) und die Submodellstruktur von *ProductionOrder/Batch/Lot* ([TP03](https://github.com/VWS4LS/vws4ls-subproject-results/tree/main/TP03)) implementiert. Somit hat sich der physische Aufbau des Demonstrators, im Vergleich zum [*Kapitel 9.3.1*](https://github.com/VWS4LS/vws4ls-subproject-results/tree/main/TP09#_9.3.1) nicht verändert, sondern die Veränderungen fanden softwareseitig statt.
 
