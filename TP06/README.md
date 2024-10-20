@@ -1,4 +1,29 @@
 # TP 6 - Automatisierte Verhandlungsprozesse
+
+## Inhalt
+
+[Zielsetzung](#zielsetzung)
+
+[AP 6.1 - Konzeptentwicklung für die technische und automatisierte Verhandlung](#_6.1)
+- [6.1.1 Definition von Anwendungsfällen](#_6.1.1)
+  - [6.1.1.1 Szenario „Order Driven Production“](#_6.1.1.1)
+  - [6.1.1.2 Szenario „Zukaufteil“](#_6.1.1.2)
+  - [6.1.1.3 Szenario „Synchronisation von Werten“](#_6.1.1.3)
+  - [6.1.1.4 Szenario „Änderungsmanagement“](#_6.1.1.4)
+- [6.1.2 Technische Umsetzung der Verhandlungskonzepte](#_6.1.2)
+
+[AP 6.2 - Verhandlungsszenarien und -strategien](#_6.2)
+
+[AP 6.3 - Capabilities](#_6.3)
+
+[AP 6.4 - ECLASS und Industrie 4.0-Sprache](#_6.4)
+
+[Fazit](#fazit)
+
+[Literaturverzeichnis](#literaturverzeichnis)
+
+## <a name="zielsetzung"></a>Zielsetzung
+
 Im TP 6 "**Automatisierte Verhandlungsprozesse“** wurde ein Konzept mit Randbedingungen für automatisierte Entscheidungen definiert und Wege für die Kommunikation und Interaktion zwischen autonomen I4.0-Komponenten (z.B. Maschine zu Maschine, Leitungssatz zu Maschine oder Leitstand (MES) zu Maschine) entwickelt. Die Verhandlung zwischen den Systemen soll autonom durch die sog. "I4.0-Komponenten" geführt werden, die anhand von Daten und Informationen Entscheidungen treffen.
 
 Hierzu wurde als Mechanismus zum Austausch von I4.0-Nachrichten das Konzept der “Operation” des Verwaltungsschalen-Metamodells vorgeschlagen.
@@ -10,19 +35,19 @@ Das TP 6 ist wie folgt gegliedert:
 -   [AP 6.3 - Capabilities](#6.3)
 -   [AP 6.4 - ECLASS und Industrie 4.0-Sprache](#6.4)
 
-## <a name="6.1"></a>AP 6.1 - Konzeptentwicklung für die technische und automatisierte Verhandlung
+## <a name="_6.1"></a>AP 6.1 - Konzeptentwicklung für die technische und automatisierte Verhandlung
 
 Im AP 6.1 "**Konzeptentwicklung für die technische und automatisierte Verhandlung**“ wurde ein Konzept mit Randbedingungen für das eigenständige Entscheiden definiert und Wege für die Kommunikation und Interaktion zwischen autonomen I4.0-Komponenten aufgezeigt.
 
 Als ein erster Ansatz der aktiven Verwaltungsschale wird die Verbindung mit dem sog. Komponentenmanager betrachtet. Der Komponentenmanager soll anhand von Algorithmen ein zielgerichtetes Verhalten einer I4.0-Komponente (VWS und dazugehörendes Asset) beschreiben. Es wird ein Vorschlag für die Umsetzung unter Verwendung von Low-Code-Plattformen skizziert.
 
-### Definition von Anwendungsfällen
+### <a name="_6.1.1"></a> 6.1.1 Definition von Anwendungsfällen
 
 Für die Arbeitspakete AP 6.1 bis AP 6.4 werden konkrete Anwendungsfälle (Szenarios) definiert, anhand derer die Verhandlungskonzepte entwickelt und soweit möglich auch mit Demonstratoren validiert werden. Die Anwendungsfälle des TP 6 weisen einen Bezug zu den Use Cases des Gesamtprojektes VWS4LS auf und greifen sowohl Anforderungen als auch Ergebnisse anderer Teilprojekte auf.
 
 Im Folgenden werden die als Anwendungsfälle ausgewählten Verhandlungsszenarien beschrieben.
 
-#### Szenario „Order Driven Production“
+#### <a name="_6.1.1.1"></a>Szenario „Order Driven Production“
 
 ##### Kontext
 
@@ -32,13 +57,13 @@ Im Sinne einer auftragsgetriebenen Produktion verhandelt die VWS des Produkts mi
 
 ##### Technische Rahmenbedingungen
 
-Für die konkrete Instanz des herzustellenden Halbfabrikats existiert eine zugehörige VWS „Produkt“ ab dem Zeitpunkt der Erstellung des Produktionsauftrags, d.h. zeitlich bevor das Asset physisch existiert. Die VWS „Produkt“ ist als proaktive VWS (Typ 3) ausgeführt, die über die Fähigkeit verfügt, im Interaktionsprotokoll Ausschreibungsverfahren nach VDI/VDE 2193-2 [46] in der Rolle des Auftraggebers (*Service Requester*) teilzunehmen.
+Für die konkrete Instanz des herzustellenden Halbfabrikats existiert eine zugehörige VWS „Produkt“ ab dem Zeitpunkt der Erstellung des Produktionsauftrags, d.h. zeitlich bevor das Asset physisch existiert. Die VWS „Produkt“ ist als proaktive VWS (Typ 3) ausgeführt, die über die Fähigkeit verfügt, im Interaktionsprotokoll Ausschreibungsverfahren nach VDI/VDE 2193-2 [1] in der Rolle des Auftraggebers (*Service Requester*) teilzunehmen.
 
 Die Produktionsressourcen zur Herstellung des Halbfabrikats sind ebenfalls durch proaktive VWS (Typ 3) repräsentiert. Diese VWS verfügen über die Fähigkeit, im Interaktionsprotokoll Ausschreibungsverfahren in der Rolle als Auftragnehmer (*Service Provider*) teilzunehmen. Es wird in Betracht gezogen, dass stellvertretend für eine oder mehrere Produktionsressourcen ein MES oder ähnliches System die Rolle als Auftragnehmer einnimmt. Dieses System verfügt dann über eine VWS-Schnittstelle.
 
 Das Auffinden der Verwaltungsschalen der in Frage kommenden Service Provider erfolgt über die Abfrage von vorab definierten VWS-Registries. An dieser Stelle ist eine Abfrage- bzw. Suchfunktion in der VWS-Registry erforderlich. Die Suchfunktion soll eine Liste von Verwaltungsschalen zurückliefern, die als Typ 3 VWS das entsprechende semantische Interaktionsprotokoll implementiert haben.
 
-Die von der gemeinnützigen [Object Management Group (OMG)](https://www.omg.org/spec/BPMN)[^1] verwaltete und in ISO/IEC 19510:2013 [37] standardisierte „[Business Process Model and Notation“](https://de.wikipedia.org/wiki/Business_Process_Model_and_Notation) (BPMN) soll für die Modellierung und Digitalisierung der Prozesse verwendet werden. Dieser Standard wird international in vielen Organisationen eingesetzt und ermöglicht durch die visuelle Natur von BPMN ein besseres Verständnis komplexer Abläufe.
+Die von der gemeinnützigen [Object Management Group (OMG)](https://www.omg.org/spec/BPMN)[^1] verwaltete und in ISO/IEC 19510:2013 [2] standardisierte „[Business Process Model and Notation“](https://de.wikipedia.org/wiki/Business_Process_Model_and_Notation) (BPMN) soll für die Modellierung und Digitalisierung der Prozesse verwendet werden. Dieser Standard wird international in vielen Organisationen eingesetzt und ermöglicht durch die visuelle Natur von BPMN ein besseres Verständnis komplexer Abläufe.
 
 [^1]: <https://www.omg.org/spec/BPMN>
 
@@ -79,7 +104,7 @@ Die im Szenario zu entwickelnden Möglichkeiten zum automatisierten Fähigkeiten
 
 Die grundlegende Modellierung von geforderten und verfügbaren Fähigkeiten in der VWS sowie ein allgemeingültiger Algorithmus zum Fähigkeitenabgleich wurden in TP 5 entwickelt. Das Datenmodell zum Produkt Leitungssatz wurde in TP 2 definiert und die Grundlage zum Abbilden der Produktionsprozesse wurde in TP 3 erarbeitet. In der automatisierten Verhandlung wird auf Daten zu Produkt, Prozess und Ressource zugegriffen, damit Algorithmen Machbarkeit und Kosten bewerten und daraus Entscheidungen ableiten können.
 
-#### Szenario „Zukaufteil“
+#### <a name="_6.1.1.2"></a>Szenario „Zukaufteil“
 
 ##### Kontext
 
@@ -126,7 +151,7 @@ Mit unternehmensübergreifenden automatisierten Verhandlungsprozessen wird insbe
 
 In [TP 8](https://github.com/VWS4LS/vws4ls-subproject-results/tree/main/TP08) werden die Grundlagen für einen sicheren Datenaustausch über Unternehmensgrenzen hinweg erarbeitet. Die dort erarbeiteten Grundlagen zur Nutzung von International Dataspaces (IDS) zum verteilten Zugriff auf Verwaltungsschalen werden als Voraussetzungen für den Zugriff auf Produktdaten und geforderte Fähigkeiten im Rahmen des Ausschreibungsverfahren angesehen. Konzepte wie Unternehmensverzeichnisse ermöglichen das Auffinden von möglichen Auftragnehmern.
 
-#### Szenario „Synchronisation von Werten“
+#### <a name="_6.1.1.3"></a>Szenario „Synchronisation von Werten“
 
 Im TP 2 wurde im Rahmen des Konzeptes “Single Point of Truth” eine Verlinkung von verschiedenen VWS zum selben Typ einer Leitungssatzkomponente definiert. Die verschiedenen VWS bilden die Sichten der verschiedenen Partner in der Wertschöpfungskette des Leitungssatzes auf dasselbe Asset, also dieselbe Komponente, ab. In dem Zusammenhang wurde auch eine technische Lösung zur Synchronisierung von Änderungen an den Teilmodellen und Teilmodellelementen zwischen den verlinkten Verwaltungsschalen gefordert.
 
@@ -137,15 +162,15 @@ Ziel ist es, für diesen Synchronisierungsvorgang ein semantisches Protokoll zwi
 
 Die empfangende VWS führt auf ihrer Seite eine Machbarkeits- oder Plausibilitätsprüfung bzgl. des neuen Zielwertes durch (siehe Komponente „Change Handler“ in *Abbildung 6-2*). Gegebenenfalls kann vor Übernahme der Wertänderung auf der Empfängerseite ein Freigabeprozess integriert werden. Erst nach erfolgreicher Machbarkeitsprüfung und ggf. erfolgter Freigabe wird die Wertänderung in der empfangenden VWS umgesetzt und es erfolgt eine Rückmeldung an die VWS, welche die Wertänderung propagiert hat. Auch im Falle, dass die Änderung in der empfangenden VWS nicht umgesetzt wird, erfolgt eine entsprechende Rückmeldung. So kann auch die aufrufende VWS eine Übersicht über den Synchronisierungszustand führen.
 
-#### Szenario „Änderungsmanagement“
+#### <a name="_6.1.1.4"></a>Szenario „Änderungsmanagement“
 
 Die in den beiden Verhandlungsszenarien zum Ausschreibungsverfahren und zur Synchronisierung erarbeiteten Mechanismen sollen verwendet werden, um die Informationsverteilung und Abstimmungsprozesse in der Erarbeitung und in der Umsetzung einer technischen Änderung am Leitungssatz zu unterstützen. Gegebenenfalls werden die Spezifikationen zu den semantischen Protokollen und zu den Nachrichten anhand dieses Szenarios noch erweitert oder verfeinert.
 
-### Technische Umsetzung der Verhandlungskonzepte
+### <a name="_6.1.2"></a> 6.1.2 Technische Umsetzung der Verhandlungskonzepte
 
 Um die Interoperabilität von I4.0-Komponenten zu realisieren, ist auch die Technologie für die Kommunikation zwischen den VWS des Typs 3 zu spezifizieren.
 
-Das Diskussionspapier der Plattform Industrie 4.0 “Verwaltungsschale in der Praxis” [38] benennt als mögliche Technologien für die Interaktion zwischen aktiven Verwaltungsschalen OPC UA sowie die Protokolle MQTT, AMQP und HTTP. Als einfachste Form der Interaktion wird der API-Zugriff einer proaktiven VWS (Typ 3) auf eine reaktive VWS (Typ 2) beschrieben.
+Das Diskussionspapier der Plattform Industrie 4.0 “Verwaltungsschale in der Praxis” [4] benennt als mögliche Technologien für die Interaktion zwischen aktiven Verwaltungsschalen OPC UA sowie die Protokolle MQTT, AMQP und HTTP. Als einfachste Form der Interaktion wird der API-Zugriff einer proaktiven VWS (Typ 3) auf eine reaktive VWS (Typ 2) beschrieben.
 
 Da für den Nachrichtenaustausch im Rahmen des semantischen Protokolls “Ausschreibungsverfahren” weder in OPC UA eine Spezifikation vorliegt noch eine auf den anderen genannten technischen Protokollen eine Spezifikation bekannt ist, wird vorgeschlagen, die [REST-API der VWS](https://github.com/admin-shell-io/aas-specs-api)[^2] auch für die horizontale Kommunikation zwischen zwei VWS vom Typ 3 zu nutzen (siehe *Abbildung 6-3*).
 
@@ -154,7 +179,7 @@ Da für den Nachrichtenaustausch im Rahmen des semantischen Protokolls “Aussch
 ![image](https://github.com/user-attachments/assets/51c35e92-589c-45a9-9d0a-5e8bb4526dce)   
 *Abbildung 6-3: Horizontale Kommunikation zwischen zwei Verwaltungsschalen vom Typ 3*
 
-“[IDTA 01002-3 Verwaltungsschale im Detail – Teil 2](https://industrialdigitaltwin.org/content-hub/aasspecifications/idta_01002-3-0-2_application_programming_interfaces)” [48] beschreibt das Konzept einer Operation, die über das Interface “Submodel” mit den Methoden “[*InvokeOperationSync*](https://app.swaggerhub.com/apis/Plattform_i40/Entire-API-Collection/V3.0.2#/Asset%20Administration%20Shell%20API/InvokeOperationSync_AAS)” oder “[*InvokeOperationAsync*](https://app.swaggerhub.com/apis/Plattform_i40/Entire-API-Collection/V3.0.2#/Asset%20Administration%20Shell%20API/InvokeOperationAsync_AAS)” aufgerufen werden kann.
+“[IDTA 01002-3 Verwaltungsschale im Detail – Teil 2](https://industrialdigitaltwin.org/content-hub/aasspecifications/idta_01002-3-0-2_application_programming_interfaces)” [5] beschreibt das Konzept einer Operation, die über das Interface “Submodel” mit den Methoden “[*InvokeOperationSync*](https://app.swaggerhub.com/apis/Plattform_i40/Entire-API-Collection/V3.0.2#/Asset%20Administration%20Shell%20API/InvokeOperationSync_AAS)” oder “[*InvokeOperationAsync*](https://app.swaggerhub.com/apis/Plattform_i40/Entire-API-Collection/V3.0.2#/Asset%20Administration%20Shell%20API/InvokeOperationAsync_AAS)” aufgerufen werden kann [4].
 
 In der REST-API wird für den Aufruf der “[*invoke*](https://app.swaggerhub.com/apis/Plattform_i40/Entire-API-Collection/V3.0.2#/Asset%20Administration%20Shell%20API/InvokeOperationSync_AAS)”-Endpunkt zur Verfügung gestellt und zum Abholen der Ergebnisse eines asynchronen Aufrufs der Endpunkt “[*operation-results*](https://app.swaggerhub.com/apis/Plattform_i40/Entire-API-Collection/V3.0.2#/Asset%20Administration%20Shell%20API/GetOperationAsyncStatus_AAS)”.
 
@@ -181,7 +206,7 @@ Ein erster Proof-of-Concept wurde mit der Open Source Workflow-Engine “[Flowab
 
 Durch den Einsatz der Low-Code Technologie soll eine einfache Anpassbarkeit des Verhaltensmodells der Typ 3 VWS über den gesamten Lebenszyklus des Assets hinweg gewährleistet werden. Die BPMN mit ihrer graphischen Darstellung liefert den Mehrwert einer Übersicht des Verhaltensmodells und ist insbesondere auch geeignet den aktuellen Zustand eines laufenden Verhandlungsprozesses für den Menschen zu visualisieren. Dies hat Relevanz für die Untersuchungen in Rahmen des Forschungsprojektes und es wird erwartet, dass auch im praktischen Einsatz Monitoring- und Analyseaufgaben anfallen werden, bei denen die graphische Notation unterstützt.
 
-## <a name="6.2"></a>AP 6.2 - Verhandlungsszenarien und -strategien
+## <a name="_6.2"></a>AP 6.2 - Verhandlungsszenarien und -strategien
 
 Im AP 6.2 „**Verhandlungsszenarien und -strategien**“ wurde im Wesentlichen an der technischen Umsetzung der in AP 6.1 erarbeiteten Verhandlungskonzepte und deren Erprobung an Demonstratoren gearbeitet. Ziel des Arbeitspaktes war es ursprünglich Strategien und Regeln zu definieren, die zum einen automatisierten Verhandlungsprozess verschiedener VWS zulassen und zum anderen den Entscheidungsverlauf nachvollziehbar machen. Dies wurde im Arbeitspaket erreicht, indem die Abläufe in Form von BPMN-Modellen formalisiert und in einer BPMN-Engine ausführbar gemacht wurden. Die Bearbeitung der in AP 6.1 definierten Verhandlungsszenarien zu Synchronisation und Änderungsmanagement erfolgte hauptsächlich im Rahmen des Architekturteams und die Ergebnisse sind entsprechend auch im Kapitel “Architektur AAS” dargestellt.
 
@@ -244,7 +269,7 @@ Die Workflowengine von Flowable generiert für jede Workflow-Instanz eine eindeu
 
 Eine Fragestellung, die es grundsätzliche zu lösen gilt, ist welche Typ-3 VWS die Ausschreibungsnachricht erhalten sollen. Damit die VWS grundsätzlich an dem Verhandlungsprozess teilnehmen kann, muss das Teilmodell *MessageParticipant* mit der Operation *newMessage* implementieren.
 
-Für den Demonstrator wird diese Fragestellung so beantwortet, dass alle in Frage kommenden VWS in einer zentralen AAS-Registry bzw. deren *MessageParticipant*-Teilmodelle in einer zentralen Submodel Registry registriert sind. Im Teilmodell *MessageParticipant* ist in einer Submodel Element List hinterlegt welche Interaktionsprotokolle und welche Rollen im Interaktionsprotokoll die jeweilige VWS unterstützt. Gesucht wird nach VWS die das Interaktionsprotokoll VDI/VDE 2193-2 [46] in der Rolle “*ServiceProvider*” unterstützen. Jede VWS auf die das zutrifft erhält die Ausschreibungsnachricht, d.h. der Workflow des *Service Requester* ruft auf jede dieser VWS die Operation “*newMessage*” mit einer Ausschreibungsnachricht auf. Eine Filterung auf die Fähigkeiten des *Service Provider* erfolgt an dieser Stelle bewusst nicht. Die Entscheidung, ob der *Service Provider* über notwendige Fähigkeiten verfügt, sollte auch auf der Seite des *Service Provider* getroffen werden. Kann der *Service Provider* das angefragte Produkt nicht herstellen bzw. keinen der angefragten Prozesse ausführen, so wird gem. Interaktionsprotokoll eine Ablehnung der Ausschreibung erwartet.
+Für den Demonstrator wird diese Fragestellung so beantwortet, dass alle in Frage kommenden VWS in einer zentralen AAS-Registry bzw. deren *MessageParticipant*-Teilmodelle in einer zentralen Submodel Registry registriert sind. Im Teilmodell *MessageParticipant* ist in einer Submodel Element List hinterlegt welche Interaktionsprotokolle und welche Rollen im Interaktionsprotokoll die jeweilige VWS unterstützt. Gesucht wird nach VWS die das Interaktionsprotokoll VDI/VDE 2193-2 [1] in der Rolle “*ServiceProvider*” unterstützen. Jede VWS auf die das zutrifft erhält die Ausschreibungsnachricht, d.h. der Workflow des *Service Requester* ruft auf jede dieser VWS die Operation “*newMessage*” mit einer Ausschreibungsnachricht auf. Eine Filterung auf die Fähigkeiten des *Service Provider* erfolgt an dieser Stelle bewusst nicht. Die Entscheidung, ob der *Service Provider* über notwendige Fähigkeiten verfügt, sollte auch auf der Seite des *Service Provider* getroffen werden. Kann der *Service Provider* das angefragte Produkt nicht herstellen bzw. keinen der angefragten Prozesse ausführen, so wird gem. Interaktionsprotokoll eine Ablehnung der Ausschreibung erwartet.
 
 ### Übergabe der I4.0-Nachrichten an BPMN-Workflows
 
@@ -281,7 +306,7 @@ Die Implementierung der Operation newMessage, welche die in I4.0-Nachricht in de
 ![image](https://github.com/user-attachments/assets/9ccadb74-7532-4c30-9070-cb78caadb632)   
 *Abbildung 6-12: Mapping von I4.0-Nachricht zu BPMN-Ereignissen in [NodeRed](https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP06/Beispieldaten/nodered_newMessage.json)*
 
-## <a name="6.3"></a>AP 6.3 - Capabilities
+## <a name="_6.3"></a>AP 6.3 - Capabilities
 
 ### Anforderungen an den Fähigkeitenabgleich in automatisierten Verhandlungsprozessen
 
@@ -485,13 +510,13 @@ VWS-Teilmodellelement NumberOfLayersSpotTape des Prozesses WireTwist in Teilmode
 **v**Rotation  
 Anzahl Umdrehungen des Wickelkopfes je Zeiteinheit. Dieser Wert wird innerhalb innerhalb der Implementierung der Operation *determineFeasibleScope* festgelegt oder ermittelt.
 
-## <a name="6.4"></a>AP 6.4 - ECLASS und Industrie 4.0-Sprache
+## <a name="_6.4"></a>AP 6.4 - ECLASS und Industrie 4.0-Sprache
 
 Das AP 6.4 „**ECLASS und Industrie 4.0-Sprache**“ wurde ursprünglich definiert, um die vorhandenen Spezifikationen zu Vokabular, Struktur der Nachrichten und Interaktionsprotokollen auf Anwendbarkeit im Kontext des Projektes zu überprüfen und aufzuzeigen, welche Erweiterungen notwendig sind, um die Anwendungsfälle aus der Domäne Leitungssatz abbilden zu können.
 
-Das in VDI/VDE 2193-2 [46] spezifizierte Interaktionsprotokoll zum Ausschreibungsverfahren konnte für die in [AP 6.1](#6.1) entwickelten Anwendungsfälle eingesetzt werden. Eine Anpassung oder Erweiterung des Interaktionsprotokolls war dafür nicht notwendig.
+Das in VDI/VDE 2193-2 [1] spezifizierte Interaktionsprotokoll zum Ausschreibungsverfahren konnte für die in [AP 6.1](#6.1) entwickelten Anwendungsfälle eingesetzt werden. Eine Anpassung oder Erweiterung des Interaktionsprotokolls war dafür nicht notwendig.
 
-Der Aufbau der Synchronisationsnachrichten folgt VDI/VDE 2193-1 [49] und teilt sich in Nachrichtenrahmen und Interaktionselementen mit den Nutzdaten zur Übermittlung der Wertänderungen. Die Interaktionselemente des Nachrichtenrahmens wurden wie folgt festgelegt:
+Der Aufbau der Synchronisationsnachrichten folgt VDI/VDE 2193-1 [5] und teilt sich in Nachrichtenrahmen und Interaktionselementen mit den Nutzdaten zur Übermittlung der Wertänderungen. Die Interaktionselemente des Nachrichtenrahmens wurden wie folgt festgelegt:
 
 | **Nachrichtenelement** | **Beschreibung**                                                                                               | **Verwendung** |
 |------------------------|----------------------------------------------------------------------------------------------------------------|----------------|
@@ -514,7 +539,7 @@ Damit man erkennen kann, welche VWS welches Interaktionsprotokoll implementiert,
 ![image](https://github.com/user-attachments/assets/76692769-c08a-46a4-a59d-c7a274d4eabb)   
 *Abbildung 6-14: VWS-Teilmodelle für [Service-Requester](https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP06/Beispieldaten/ServiceRequester.aasx) und [Service-Provider](https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP06/Beispieldaten/ServiceProvider.aasx)*
 
-Als dritte Ebene neben Interaktionsprotokoll und Nachrichtenstruktur wurde in AP 6.4 das Vokabular der I4.0-Sprache betrachtet. Ein Abgleich von geforderten und in der Ressource verfügbaren Fähigkeiten konnte so generisch implementiert werden, dass auch ohne zusätzliche Semantik eine automatisierte Entscheidung möglich ist. Wie in [AP 6.3](#6.3) gezeigt ist aber eine gesamte Bewertung des Produktes bis hin zu einem Angebot in dieser generischen Form nicht mehr möglich. An dieser Stelle ist eine standardisierte Produktbeschreibung wichtig. Die semantisch eindeutig beschriebenen Teilmodellelemente sind durch das in [TP 3](https://github.com/VWS4LS/vws4ls-subproject-results/edit/main/TP03/) entwickelte Teilmodell “Bill Of Process” [26] gegeben. Allen Arbeiten an Informationsmodellen mit Bezug zum Produkt Leitungssatz lag das Modell des VEC zugrunde, das als umfassendes Datenmodell in der Branche immer noch weiterentwickelt wird. Was die Beschreibung der technischen Merkmale des Produktes Leitungssatz angeht, wurde keine Notwendigkeit erkannt, zusätzliche Semantik zu definieren.
+Als dritte Ebene neben Interaktionsprotokoll und Nachrichtenstruktur wurde in AP 6.4 das Vokabular der I4.0-Sprache betrachtet. Ein Abgleich von geforderten und in der Ressource verfügbaren Fähigkeiten konnte so generisch implementiert werden, dass auch ohne zusätzliche Semantik eine automatisierte Entscheidung möglich ist. Wie in [AP 6.3](#6.3) gezeigt ist aber eine gesamte Bewertung des Produktes bis hin zu einem Angebot in dieser generischen Form nicht mehr möglich. An dieser Stelle ist eine standardisierte Produktbeschreibung wichtig. Die semantisch eindeutig beschriebenen Teilmodellelemente sind durch das in [TP 3](https://github.com/VWS4LS/vws4ls-subproject-results/edit/main/TP03/) entwickelte Teilmodell “Bill Of Process” [7] gegeben. Allen Arbeiten an Informationsmodellen mit Bezug zum Produkt Leitungssatz lag das Modell des VEC zugrunde, das als umfassendes Datenmodell in der Branche immer noch weiterentwickelt wird. Was die Beschreibung der technischen Merkmale des Produktes Leitungssatz angeht, wurde keine Notwendigkeit erkannt, zusätzliche Semantik zu definieren.
 
 Im Kontext des unternehmensübergreifenden Verhandlungsprozesses sind jedoch zusätzliche, nicht technische Merkmale für Ausschreibung und Angebot notwendig. Hier wurde so vorgegangen, dass zunächst eine Sammlung dieser Merkmale erfolgt ist und im Anschluss im ECLASS-Katalog entsprechende Merkmale und deren eindeutige IRDI gesucht wurden. Das Ergebnis ist in nachfolgender Tabelle dargestellt.
 
@@ -548,7 +573,7 @@ Im Kontext des unternehmensübergreifenden Verhandlungsprozesses sind jedoch zus
 
 Im Rahmen von TP 6 wurden zunächst die Vorarbeiten zur I4.0-Sprache analysiert. Obwohl die I4.0-Sprache im Hinblick auf die aktive VWS entwickelt wurde, gibt es bisher nur wenige Umsetzungen, die diese direkt in die VWS integrieren. Bisher wurden häufig agentenbasierte Ansätze gewählt, bei denen Software außerhalb der Systemgrenzen der Verwaltungsschale die Kommunikation übernimmt und Entscheidungen automatisiert. Als Kommunikationskanal kommen dabei häufig Nachrichtenprotokolle wie MQTT zum Einsatz, deren Anwendung im Zusammenhang mit der VWS derzeit nicht standardisiert ist.
 
-In TP 6 wurde zum Nachrichtenaustausch bewusst die VWS-Operation gewählt, weil diese vollständig in “Specification of the Asset Administration Shell Part 2” [48] spezifiziert ist und somit die Interoperabilität im Hinblick auf die technische Übertragung von Nachrichten zwischen verschiedenen VWS-Implementierungen gewährleistet werden kann. Der mit VDI/VDE 2193-1 [49] standardisierte Nachrichtenaufbau konnte auch in den Aufrufparametern der VWS-Operation implementiert werden.
+In TP 6 wurde zum Nachrichtenaustausch bewusst die VWS-Operation gewählt, weil diese vollständig in “Specification of the Asset Administration Shell Part 2” [5] spezifiziert ist und somit die Interoperabilität im Hinblick auf die technische Übertragung von Nachrichten zwischen verschiedenen VWS-Implementierungen gewährleistet werden kann. Der mit VDI/VDE 2193-1 [6] standardisierte Nachrichtenaufbau konnte auch in den Aufrufparametern der VWS-Operation implementiert werden.
 
 Die Nutzung der standardisierten VWS-API für den Nachrichtenaustausch bringt insbesondere im unternehmensübergreifenden Wertschöpfungsnetzwerk Vorteile. Dort, wo die Anbindung zum Lesen und Schreiben von Teilmodellen erfolgreich über Unternehmensgrenzen umgesetzt wird, können damit auch I4.0-Nachrichten ausgetauscht werden ohne zusätzliche Kommunikationskanäle einrichten und absichern zu müssen.
 
@@ -558,3 +583,15 @@ Mit dem Einsatz der “Low Code”-Systeme NodeRed und Flowable sowie deren Erwe
 
 ![image](https://github.com/user-attachments/assets/7b683743-dfa5-49f5-a939-f29c3be969f0)   
 *Abbildung 6-15: [Architektur](https://github.com/VWS4LS/vws4ls-bidding-process) für die VWS Typ 3 (“Proaktive VWS”)*
+
+## <a name="literaturverzeichnis"></a>Literaturverzeichnis
+|||
+| :- | :- |
+| [1]  | VDI/VDE, „VDI/VDE 2193 Blatt 2 - Sprache für I4.0-Komponenten - Interaktionsprotokoll für Ausschreibungsverfahren,“ 2020. [Online]. Available: https://www.vdi.de/richtlinien/details/vdivde-2193-blatt-2-sprache-fuer-i40-komponenten-interaktionsprotokoll-fuer-ausschreibungsverfahren. |
+| [2]  | ISO/IEC, „ISO/IEC 19510:2013: Business Process Model and Notation (BPMN),“ [Online]. Available: https://www.iso.org/standard/62652.html.   |
+| [3]  | Plattform Industrie 4.0, „Vertrauensinfrastrukturen,“ 03 2021. [Online]. Available: https://www.plattform-i40.de/IP/Redaktion/DE/Downloads/Publikation/Vertrauensinfrastrukturen.pdf.     |
+| [4]  | Plattform Industrie 4.0, „Verwaltungsschale in der Praxis,“ 2021. [Online]. Available: https://industrialdigitaltwin.org/wp-content/uploads/2021/09/08_verwaltungsschale_in_der_praxis_de_2020.pdf.       |
+| [5]  | Industrial Digital Twin Association e.V., „IDTA 01002-3-0-2: Specification of the Asset Administration Shell Part 2: Application Programming Interfaces,“ June 2024. [Online]. Available: https://admin-shell-io.github.io/aas-specs-antora/IDTA-01002/v3.0.2/index.html.      |
+| [6]  | VDI/VDE, „VDI/VDE 2193 Blatt 1 - Sprache für I4.0-Komponenten - Struktur von Nachrichten,“ 2020. [Online]. Available: https://www.vdi.de/richtlinien/details/vdivde-2193-blatt-1-sprache-fuer-i40-komponenten-struktur-von-nachrichten.     |
+| [7]  | Industrial Digital Twin Association e.V., „IDTA 02031-1-0 Bill of Process (WiP),“ [Online]. Available: https://industrialdigitaltwin.org/content-hub/teilmodelle.       |
+
