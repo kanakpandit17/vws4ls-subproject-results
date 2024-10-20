@@ -1,7 +1,9 @@
 # TP 2 - Entwicklungsprozesse des Leitungssatzes
 ## Inhalt
 
-[AP 2.1 - Konzept kollaboratives Datenmodell](#ap-21---konzept-kollaboratives-datenmodell)
+[Zielsetzung](#zielsetzung)
+
+[AP 2.1 - Konzept kollaboratives Datenmodell](#_2.1)
 
  - [2.1.1 Kollaboration in der Leitungssatzentwicklung](#211-kollaboration-in-der-leitungssatzentwicklung)
  - [2.1.2 Datenhaltung in der Leitungssatzentwicklung](#212-datenhaltung-in-der-leitungssatzentwicklung)
@@ -9,11 +11,11 @@
  - [2.1.4 Fallbeispiel für den Einsatz von VWS bei der Auswahl eines Steckers](#214-fallbeispiel-f%C3%BCr-den-einsatz-von-vws-bei-der-auswahl-eines-steckers)
  - [2.1.5 Fazit](#215-fazit)
 
-[AP 2.2 - Single-Point-of-Truth-Definition](#ap-22---single-point-of-truth-definition)
+[AP 2.2 - Single-Point-of-Truth-Definition](#_2.2)
 
  - [2.2.1 Herausforderung: Produkt mit mehreren Herstellern](#221-herausforderung-produkt-mit-mehreren-herstellern)
 
-[AP 2.3 - Prozessbeschreibung LS-Entwicklung](#ap-23---prozessbeschreibung-ls-entwicklung)
+[AP 2.3 - Prozessbeschreibung LS-Entwicklung](#_2.3)
 
  - [2.3.1 Analyse des Entwicklungsprozesses](#231-analyse-des-entwicklungsprozesses)
  - [2.3.2 Entwicklungsprozess mit der Verwaltungsschale](#232-entwicklungsprozess-mit-der-verwaltungsschale)
@@ -21,11 +23,11 @@
  - [2.3.4 Strukturierung der Verbundkomponente](#234-strukturierung-der-verbundkomponente)
  - [2.3.5 Anwendungsfall und Voraussetzungen](#235-anwendungsfall-und-voraussetzungen)
 
-[AP 2.4 - Teilmodelle der Verwaltungsschale](#ap-24---teilmodelle-der-verwaltungsschale)
+[AP 2.4 - Teilmodelle der Verwaltungsschale](#_2.4)
 
 - [2.4.1 Teilmodelle für die Entwicklung](#241)
 
-[AP 2.5 - Umsetzung Digital Twin LS](#ap-25---umsetzung-digital-twin-ls)
+[AP 2.5 - Umsetzung Digital Twin LS](#_2.5)
 
 - [2.5.1 Der Anwendungsfall](#251-der-anwendungsfall)
 - [2.5.2 Voraussetzungen für die Umsetzung](#252-voraussetzungen-f%C3%BCr-die-umsetzung)
@@ -38,21 +40,19 @@
 
 [Literaturverzeichnis](#literaturverzeichnis)
 
-[Abbildungsverzeichnis](#abbildungsverzeichnis)
-
-## 1. Zielsetzung
+## <a name="zielsetzung"></a>Zielsetzung
 
 Im Teilprojekt 2 "Entwicklungsprozesse des Leitungssatzes“ wurde die Entstehung des Digitalen Zwillings entlang der Anwendungsfälle analysiert, um die Abläufe auf die Verwaltungsschale und die Erzeugung interoperabler Daten und Formate für den gesamten weiteren Lebenszyklus auszurichten. Das Teilprojekt wurde in folgende Arbeitspakete aufgeteilt, deren Resultate hier zusammenfassend erläutert werden:
 
--   [AP 2.1 - Konzept kollaboratives Datenmodell](#ap-21---konzept-kollaboratives-datenmodell)
--   [AP 2.2 - Single-Point-of-Truth-Definition](#ap-22---single-point-of-truth-definition)
--   [AP 2.3 - Prozessbeschreibung LS-Entwicklung](#ap-23---prozessbeschreibung-ls-entwicklung)
--   [AP 2.4 - Teilmodelle der Verwaltungsschale](#ap-24---teilmodelle-der-verwaltungsschale)
--   [AP 2.5 - Umsetzung Digital Twin LS](#ap-25---umsetzung-digital-twin-ls)
+-   [AP 2.1 - Konzept kollaboratives Datenmodell](#_2.1)
+-   [AP 2.2 - Single-Point-of-Truth-Definition](#_2.2)
+-   [AP 2.3 - Prozessbeschreibung LS-Entwicklung](#_2.3)
+-   [AP 2.4 - Teilmodelle der Verwaltungsschale](#_2.4)
+-   [AP 2.5 - Umsetzung Digital Twin LS](#_2.5)
 
-## AP 2.1 - Konzept kollaboratives Datenmodell
+## <a name="_2.1"></a>AP 2.1 - Konzept kollaboratives Datenmodell
 
-Im AP 2.1 "Konzept kollaboratives Datenmodell“ wurde als wesentlicher Inhalt die Datenhaltung im kollaborativen Entwicklungsprozess betrachtet und im Ergebnis ein dezentraler Ansatz als das geeignetere Konzept angesehen.
+Im AP 2.1 **"Konzept kollaboratives Datenmodell“** wurde als wesentlicher Inhalt die Datenhaltung im kollaborativen Entwicklungsprozess betrachtet und im Ergebnis ein dezentraler Ansatz als das geeignetere Konzept angesehen.
 
 Denn bei der Entwicklung und Herstellung eines Leitungssatzes sind verschiedene Akteure in einem komplexen Prozess involviert. Der OEM als Fahrzeugentwickler, der Konfektionär als Koordinator der Leitungssatzentwicklung sowie die unterschiedlichen Lieferanten-Abstufungen, die sog. „Tier“. Als Tier-1 werden typischerweise Systemlieferanten wie Hersteller von Steuergeräten oder eben auch Hersteller von Leitungssätzen bezeichnet. Tier-2 bezeichnet Lieferanten von einzelne Komponenten für das Gesamtsystem. Weitere Zulieferer von indirekten Gütern oder Ressourcen werden als Tier-3 bezeichnet. Zudem muss vor einem Einsatz von Komponenten deren Freigabe vom eigentlichen Auftraggeber (hier dem OEM) eingeholt und entsprechend dokumentiert werden. Diese Akteure verteilen sich dabei auf mehrere Unternehmen, die oft auch in verschiedenen Ländern ansässig sind. Darüber hinaus sind die Informationsflüsse zwischen den Akteuren situativ geprägt und lassen sich nicht allgemeingültig definieren, was Richtung und Reihenfolge anbelangt.
 
@@ -128,9 +128,9 @@ Ein kollaboratives Datenmodell in der Produktentwicklung besteht aus einer zentr
 
 [^3]: <https://www.vector.com/de/de/produkte/produkte-a-z/software/preevision/>
 
-## AP 2.2 - Single-Point-of-Truth-Definition
+## <a name="_2.2"></a>AP 2.2 - Single-Point-of-Truth-Definition
 
-Im AP 2.2 „Single-Point-of-Truth-Definition“ wurden Lösungsansätze für das Datenmanagement betrachtet. Wie in AP2.1 beschrieben, ist die Entwicklung eines Leitungssatzes ein stark kollaborativer Prozess mit mehreren Akteuren. Durch die kollaborative Arbeit und die Anforderung einer dezentralen Datenhaltung in verteilten Repositories entsteht die Gefahr von Inkonsistenzen in der Datenhaltung. Damit ist es notwendig, einen Referenzpunkt festzulegen, den sog. „*Single-Point-of-Truth“* oder **SPoT** für alle Daten und Parameterwerte eines Leitungssatzes entlang seiner Wertschöpfung, um eine inkonsistente Datenhaltung in den nebeneinander existierenden Datensilos zu vermeiden.
+Im AP 2.2 **„Single-Point-of-Truth-Definition“** wurden Lösungsansätze für das Datenmanagement betrachtet. Wie in AP2.1 beschrieben, ist die Entwicklung eines Leitungssatzes ein stark kollaborativer Prozess mit mehreren Akteuren. Durch die kollaborative Arbeit und die Anforderung einer dezentralen Datenhaltung in verteilten Repositories entsteht die Gefahr von Inkonsistenzen in der Datenhaltung. Damit ist es notwendig, einen Referenzpunkt festzulegen, den sog. „*Single-Point-of-Truth“* oder **SPoT** für alle Daten und Parameterwerte eines Leitungssatzes entlang seiner Wertschöpfung, um eine inkonsistente Datenhaltung in den nebeneinander existierenden Datensilos zu vermeiden.
 
 Der SPoT bezeichnet damit die Datenquelle oder Datenquellen, aus der sämtliche angeschlossenen Systeme für eine bestimmte Prozessphase bedient werden. Im Entwicklungsprozess liegt dieser Referenzpunkt oftmals in der Datenbank des Kunden (OEM). Durch den intensiven Austausch zwischen Konfektionär, OEM und/oder Tier-1/2/3 aber liegen die aktuellen Daten bzw. Parameter nicht mehr unbedingt in der Datenbank des Kunden. Es ist dann Aufgabe des SPoT, diese Datenbeziehungen zu verwalten.
 
@@ -173,7 +173,7 @@ Diese Unterschiede bilden sich in unterschiedlichen Sachnummern für ein funktio
 
 Durch dieses Mapping von Zuordnungen können die verschiedenen Teile-Bezeichnungen und Nummerierungen weitergeführt und je nach Anforderungen angepasst werden. Zudem wird eine Rückverfolgbarkeit gewährleistet und es kann für spätere Betrachtungen, wie z.B. Lieferketten-Analysen oder CO2-Footprint, eine genauere Analyse durchgeführt werden.
 
-## AP 2.3 - Prozessbeschreibung LS-Entwicklung
+## <a name="_2.3"></a> AP 2.3 - Prozessbeschreibung LS-Entwicklung
 
 Im AP 2.3 wurde eine generischer Leitungssatz-Entwicklungsprozess erarbeitet, d.h. eine vereinheitliche Beschreibung aller wesentlichen Prozessschritte und der dazugehörigen Bedarfe (Input, Output). Dazu musste der Ist-Prozess der Leitungssatz-Herstellung analysiert werden, mit den folgenden Zielsetzungen:
 
@@ -273,9 +273,9 @@ Die beschriebenen Entwicklungsprozesse werden nun durchgeführt, unter Verwendun
 
 Diese Schritte sind entscheidend, um die Verwaltungsschale als zentrales Element in der Leitungssatzentwicklung erfolgreich zu nutzen. Die integrierten und verknüpften Teilmodelle bilden eine konsistente Datenbasis, die für die gesamte Entwicklung und spätere Produktion genutzt werden kann
 
-## AP 2.4 - Teilmodelle der Verwaltungsschale
+## <a name="_2.4"></a> AP 2.4 - Teilmodelle der Verwaltungsschale
 
-Im AP 2.4 „Teilmodelle der Verwaltungsschale“ wurden Anforderungsanalysen für die VWS-Teilmodelle der in AP 2.3 definierten LS-Prozesse durchgeführt, unter Einbeziehung jeder Komponente und jedes Prozessschrittes.
+Im AP 2.4 **„Teilmodelle der Verwaltungsschale“** wurden Anforderungsanalysen für die VWS-Teilmodelle der in AP 2.3 definierten LS-Prozesse durchgeführt, unter Einbeziehung jeder Komponente und jedes Prozessschrittes.
 
 Der Entwicklungsprozess ist die „Wiege“ des Digitalen Zwillings. Entlang der Anwendungsfälle werden die Abläufe auf die Verwaltungsschale und die Erzeugung interoperabler Daten und Formate für den gesamten weiteren Lebenszyklus ausgerichtet. Die VWS soll dabei nicht die etablierten Daten-Formate ersetzen, wie z.B. CAD-Dateiformate, KBL, VEC etc., sondern ergänzen und die Daten vor allem automatisiert und maschinenlesbar bereitstellen. Deshalb ist es neben der Auswahl passender existierender bzw. neu zu erstellender Teilmodelle auch wichtig, anhand von Anwendungsfällen das Zusammenspiel zu betrachten. Hierbei liegt der Fokus zuerst nur auf dem Entwicklungsprozess des Leitungssatzes. Der Übergang zu Produktion und Montage (TP3 und TP4) soll im nachfolgenden AP 2.5 betrachtet werden.
 
@@ -325,9 +325,9 @@ Basierend auf der vom Leitungssatz-Typ-VWS des OEM abgeleiteten VWS zu seinem ei
 
 <a name="Abbildung-2-16"></a>Abbildung 2-16: VWS-Schnittstellen im Entwicklungsprozess zwischen OEM und Konfektionär
 
-## AP 2.5 - Umsetzung Digital Twin LS
+## <a name="_2.5"></a> AP 2.5 - Umsetzung Digital Twin LS
 
-Im Rahmen des Arbeitspakets 2.5 „Umsetzung Digital Twin LS“ wurde das im vorherigen Arbeitspaket 2.4 definierte Vorgehen zur Erstellung der Typ-Verwaltungsschale für den Leitungssatz beim Konfektionär sowie die definierte Aufteilung der Informationen in unterschiedliche Teilmodelle auf ihre Anwendbarkeit in der Leitungssatzentwicklung erarbeitet. Im Vordergrund stand dabei die Rolle der VWS im Gesamtentwicklungsprozess, die Integration der Komponenten-Verwaltungsschalen sowie der Informationsaustausch über Unternehmensgrenzen hinweg, mit dem Ziel, den gesamten Entwicklungsablauf effizienter, transparenter und besser strukturiert zu gestalten.
+Im Rahmen des Arbeitspakets 2.5 **„Umsetzung Digital Twin LS“** wurde das im vorherigen AP 2.4 definierte Vorgehen zur Erstellung der Typ-Verwaltungsschale für den Leitungssatz beim Konfektionär sowie die definierte Aufteilung der Informationen in unterschiedliche Teilmodelle auf ihre Anwendbarkeit in der Leitungssatzentwicklung erarbeitet. Im Vordergrund stand dabei die Rolle der VWS im Gesamtentwicklungsprozess, die Integration der Komponenten-Verwaltungsschalen sowie der Informationsaustausch über Unternehmensgrenzen hinweg, mit dem Ziel, den gesamten Entwicklungsablauf effizienter, transparenter und besser strukturiert zu gestalten.
 
 ### 2.5.1 Der Anwendungsfall
 
@@ -468,83 +468,31 @@ Das übergeordnete Ziel des gesamten Vorhabens war es, eine dezentrale Datenhalt
 
 # Literaturverzeichnis
 
-|       | |
-|-------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [1]   | Industrial Digital Twin Association e.V., „Registrierte IDTA Submodelle,“ [Online]. Available: https://industrialdigitaltwin.org/en/content-hub/submodels.                                                                                                                                |
-| [2]   | Industrial Digital Twin Association e.V., „IDTA 02006-2-0 Digital Nameplate for Industrial Equipment,“ [Online]. Available: https://github.com/admin-shell-io/submodel-templates/tree/main/published/Digital%20nameplate/2/0.                                                             |
-| [3]   | Industrial Digital Twin Association e.V., „IDTA 02020-1-0 Capability Description,“ [Online]. Available: https://github.com/admin-shell-io/submodel-templates/tree/main/development/Capability/1/0.                                                                                        |
-| [4]   | Prostep ivip, „Harness Description List (KBL),“ prostep ivip, 26 Jun 2022. [Online]. Available: https://ecad-wiki.prostep.org/specifications/kbl/.                                                                                                                                        |
-| [5]   | Prostep ivip, „Vehicle Electric Container (VEC),“ prostep ivip, 8 Jan 2024. [Online]. Available: https://ecad-wiki.prostep.org/specifications/vec/v210/.                                                                                                                                  |
+|       |           |
+|-------|-----------|
+| [1]   | Industrial Digital Twin Association e.V., „Registrierte IDTA Submodelle,“ [Online]. Available: https://industrialdigitaltwin.org/en/content-hub/submodels.     |
+| [2]   | Industrial Digital Twin Association e.V., „IDTA 02006-2-0 Digital Nameplate for Industrial Equipment,“ [Online]. Available: https://github.com/admin-shell-io/submodel-templates/tree/main/published/Digital%20nameplate/2/0.      |
+| [3]   | Industrial Digital Twin Association e.V., „IDTA 02020-1-0 Capability Description,“ [Online]. Available: https://github.com/admin-shell-io/submodel-templates/tree/main/development/Capability/1/0.      |
+| [4]   | Prostep ivip, „Harness Description List (KBL),“ prostep ivip, 26 Jun 2022. [Online]. Available: https://ecad-wiki.prostep.org/specifications/kbl/.      |
+| [5]   | Prostep ivip, „Vehicle Electric Container (VEC),“ prostep ivip, 8 Jan 2024. [Online]. Available: https://ecad-wiki.prostep.org/specifications/vec/v210/.      |
 | [6]   | Industrial Digital Twin Association e.V., „IDTA 02011-1-1 Hierarchical Structures enabling Bills of Material,“ 2024 June. [Online]. Available: https://github.com/admin-shell-io/submodel-templates/tree/main/published/Hierarchical%20Structures%20enabling%20Bills%20of%20Material/1/1. |
-| [7]   | Plattform Industrie 4.0, „Interoperability at Runtime - Exchanging Information via Application Programming Interfaces,“ Plattform Industrie 4.0, Berlin, 2021.                                                                                                                            |
-| [8]   | „Verband der Automobilindustrie (VDA),“ [Online]. Available: https://www.vda.de/de.                                                                                                                                                                                                       |
-| [9]   | J. Becker, „Whitepaper KBL vs. VEC - Similarities and differences - briefy and concisely summarized,“ 16 December 2022. [Online]. Available: https://ecad-wiki.prostep.org/post/kbl-vs-vec/.                                                                                              |
-| [10]  | OPC Foundation, „OPC 40001-3: Machinery Job Mgmt,“ OPC Foundation, [Online]. Available: https://reference.opcfoundation.org/Machinery/Jobs/v100/docs/.                                                                                                                                    |
-| [11]  | OPC Foundation, „OPC 30270: Industry 4.0 Asset Administration Shell,“ [Online]. Available: https://reference.opcfoundation.org/I4AAS/v100/docs/.                                                                                                                                          |
-| [12]  | OPC Foundation, „OPC 40001-1: Machinery Basic Building Blocks,“ [Online]. Available: https://reference.opcfoundation.org/Machinery/v103/docs/.                                                                                                                                            |
-| [13]  | OPC Foundation, „OPC 40001-101: Machinery Result Transfer,“ [Online]. Available: https://reference.opcfoundation.org/Machinery/Result/v100/docs/.                                                                                                                                         |
-| [14]  | OPC Foundation, „OPC UA Nodesets,“ [Online]. Available: https://github.com/OPCFoundation/UA-Nodeset.                                                                                                                                                                                      |
-| [15]  | Platform Industrie 4.0, „RAMI 4.0: Ein Referenzarchitekturmodell als Kommunikationsgrundlage in der Industrie 4.0,“ 11 04 2022. [Online]. Available: https://www.dke.de/de/arbeitsfelder/industry/rami40.                                                                                 |
-| [16]  | OPC Foundation, „OPC 40570: OPC UA for the Wire Harness Manufacturing Industry,“ https://profiles.opcfoundation.org/workinggroup/88, WiP. [Online]. Available: https://profiles.opcfoundation.org/document/214.                                                                           |
-| [17]  | „VEC Release Notes - Version 2.1.0,“ prostep ivip, 08 01 2024. [Online]. Available: https://ecad-wiki.prostep.org/specifications/vec/v210/release-notes/.                                                                                                                                 |
-| [18]  | „VWS4LS-Github,“ ARENA2036 e.V., [Online]. Available: https://github.com/VWS4LS.                                                                                                                                                                                                          |
-| [19]  | KEBA, „OPC UA – der zentrale Standard für Industrie 4.0 im Überblick,“ [Online]. Available: https://www.keba.com/de/news/industrial-automation/ueberblick-opc-ua-zentraler-standard-industrie-4-0.                                                                                        |
-| [20]  | IEC, „IEC 61360-4 - IEC/SC 3D - Common Data Dictionary,“ [Online]. Available: https://cdd.iec.ch/cdd/iec61360/iec61360.nsf/TreeFrameset?OpenFrameSet.                                                                                                                                     |
-| [21]  | Industrial Digital Twin Association e.V. (IDTA), „IDTA 02020-1-0 Capability Description,“ [Online]. Available: https://github.com/admin-shell-io/submodel-templates/tree/main/development/Capability/1/0.                                                                                 |
-| [22]  | „Vehicle Electric Container (VEC),“ prostep ivip, 8 Jan 2024. [Online]. Available: https://ecad-wiki.prostep.org/specifications/vec/v210/.                                                                                                                                                |
-| [23]  | „Harness Description List (KBL),“ prostep ivip, 26 Jun 2022. [Online]. Available: https://ecad-wiki.prostep.org/specifications/kbl/.                                                                                                                                                      |
-| [24]  | VWS4LS Architektur-Team, „Struktur der VWS (?),“ AREAN2036 e.V., Stuttgart, 2024.                                                                                                                                                                                                         |
-| [25]  | Industrial Digital Twin Association e.V., „IDTA 02031-1-0 Bill of Process (WiP),“ [Online]. Available: https://industrialdigitaltwin.org/content-hub/teilmodelle.                                                                                                                         |
-| [26]  | Industrial Digital Twin Association e.V., „IDTA 02056-1-0 Data Retention Policies,“ June 2024. [Online]. Available: https://industrialdigitaltwin.org/wp-content/uploads/2024/06/IDTA-02056-1-0_Submodel_Data-Retention-Policies.pdf.                                                     |
-
-# Abbildungsverzeichnis
-
-[Abbildung 2-1: Kollaborationsbeziehungen in der Leitungssatz-Entwicklung](#_Toc178808280)
-
-[Abbildung 2-2: Eingangs- und Ausgangsdaten im Entwicklungsprozess im Überblick](#_Toc178808281)
-
-[Abbildung 2-3: Anfrage beim Komponentenhersteller stellen](#_Toc178808282)
-
-[Abbildung 2-4: Auskunft auf Anfrage](#_Toc178808283)
-
-[Abbildung 2-5: 2. Anfrage mit Detail-Anforderungen](#_Toc178808284)
-
-[Abbildung 2-6: Beispiel für zentralen Ansatz](#_Toc178808285)
-
-[Abbildung 2-7: Freigaben und Änderungs-Management beim dezentralen Ansatz](#_Toc178808286)
-
-[Abbildung 2-8: SPoT-Bezeichnung beim dezentralen Einsatz](#_Toc178808287)
-
-[Abbildung 2-9: Beispiel für einen Stecker, der an zwei verschiedenen Standorten verwendet wird](#_Toc178808288)
-
-[Abbildung 2-10: Freigaben und Änderungs-Management](#_Toc178808289)
-
-[Abbildung 2-11: Überblick Teilprozesse der Leitungssatzentwicklung](#_Toc178808290)
-
-[Abbildung 2-12: Referenzprozess der Leitungssatz-Entwicklung](#_Toc178808291)
-
-[Abbildung 2-13: Workflow Entwicklung Leitungssatz](#_Toc178808292)
-
-[Abbildung 2-14: Assets und ihre VWS im Entwicklungsprozess des Leitungssatzes](#_Toc178808293)
-
-[Abbildung 2-15: Ausschnitt aus der Anforderungsanalyse für VWS und deren Teilmodelle](#_Toc178808294)
-
-[Abbildung 2-16: VWS-Schnittstellen im Entwicklungsprozess zwischen OEM und Konfektionär](#_Toc178808295)
-
-[Abbildung 2-17: Beispielleitungssatz aus dem PPR-Workshop](#_Toc178808296)
-
-[Abbildung 2-18: SVG-Darstellung des Leitungssatzes](#_Toc178808297)
-
-[Abbildung 2-19: WIRE und BOM mit dargestellter Modularisierung (V1, V2 und V3)](#_Toc178808298)
-
-[Abbildung 2-20: MLK 1,2 Terminal mit/ohne ELA (KOSTAL Kontakt Systeme GmbH & Co. KG)](#_Toc178808299)
-
-[Abbildung 2-21: Auszug aus einer Typ-Verwaltungsschale Terminal](#_Toc178808300)
-
-[Abbildung 2-22: Äquivalenzbeziehungen per „spedificAssetId“](#_Toc178808301)
-
-[Abbildung 2-23: OEM-Verwaltungsschale für den Gesamtleitungssatz](#_Toc178808302)
-
-[Abbildung 2-24:Verknüpfung Komponenten-Verwendung mit Komponenten-Typ per GlobalAssetId](#_Toc178808303)
-
-[Abbildung 2-25: Verwaltungsschale für ein Halbfabrikat "Geschnittene Leitung"](#_Toc178808304)
+| [7]   | Plattform Industrie 4.0, „Interoperability at Runtime - Exchanging Information via Application Programming Interfaces,“ Plattform Industrie 4.0, Berlin, 2021.      |
+| [8]   | „Verband der Automobilindustrie (VDA),“ [Online]. Available: https://www.vda.de/de.     |
+| [9]   | J. Becker, „Whitepaper KBL vs. VEC - Similarities and differences - briefy and concisely summarized,“ 16 December 2022. [Online]. Available: https://ecad-wiki.prostep.org/post/kbl-vs-vec/.      |
+| [10]  | OPC Foundation, „OPC 40001-3: Machinery Job Mgmt,“ OPC Foundation, [Online]. Available: https://reference.opcfoundation.org/Machinery/Jobs/v100/docs/.      |
+| [11]  | OPC Foundation, „OPC 30270: Industry 4.0 Asset Administration Shell,“ [Online]. Available: https://reference.opcfoundation.org/I4AAS/v100/docs/.       |
+| [12]  | OPC Foundation, „OPC 40001-1: Machinery Basic Building Blocks,“ [Online]. Available: https://reference.opcfoundation.org/Machinery/v103/docs/.      |
+| [13]  | OPC Foundation, „OPC 40001-101: Machinery Result Transfer,“ [Online]. Available: https://reference.opcfoundation.org/Machinery/Result/v100/docs/.    |
+| [14]  | OPC Foundation, „OPC UA Nodesets,“ [Online]. Available: https://github.com/OPCFoundation/UA-Nodeset.    |
+| [15]  | Platform Industrie 4.0, „RAMI 4.0: Ein Referenzarchitekturmodell als Kommunikationsgrundlage in der Industrie 4.0,“ 11 04 2022. [Online]. Available: https://www.dke.de/de/arbeitsfelder/industry/rami40.     |
+| [16]  | OPC Foundation, „OPC 40570: OPC UA for the Wire Harness Manufacturing Industry,“ https://profiles.opcfoundation.org/workinggroup/88, WiP. [Online]. Available: https://profiles.opcfoundation.org/document/214.    |
+| [17]  | „VEC Release Notes - Version 2.1.0,“ prostep ivip, 08 01 2024. [Online]. Available: https://ecad-wiki.prostep.org/specifications/vec/v210/release-notes/.     |
+| [18]  | „VWS4LS-Github,“ ARENA2036 e.V., [Online]. Available: https://github.com/VWS4LS.      |
+| [19]  | KEBA, „OPC UA – der zentrale Standard für Industrie 4.0 im Überblick,“ [Online]. Available: https://www.keba.com/de/news/industrial-automation/ueberblick-opc-ua-zentraler-standard-industrie-4-0.   |
+| [20]  | IEC, „IEC 61360-4 - IEC/SC 3D - Common Data Dictionary,“ [Online]. Available: https://cdd.iec.ch/cdd/iec61360/iec61360.nsf/TreeFrameset?OpenFrameSet.     |
+| [21]  | Industrial Digital Twin Association e.V. (IDTA), „IDTA 02020-1-0 Capability Description,“ [Online]. Available: https://github.com/admin-shell-io/submodel-templates/tree/main/development/Capability/1/0.     |
+| [22]  | „Vehicle Electric Container (VEC),“ prostep ivip, 8 Jan 2024. [Online]. Available: https://ecad-wiki.prostep.org/specifications/vec/v210/.      |
+| [23]  | „Harness Description List (KBL),“ prostep ivip, 26 Jun 2022. [Online]. Available: https://ecad-wiki.prostep.org/specifications/kbl/. |
+| [24]  | VWS4LS Architektur-Team, „Struktur der VWS (?),“ AREAN2036 e.V., Stuttgart, 2024.   |
+| [25]  | Industrial Digital Twin Association e.V., „IDTA 02031-1-0 Bill of Process (WiP),“ [Online]. Available: https://industrialdigitaltwin.org/content-hub/teilmodelle.   |
+| [26]  | Industrial Digital Twin Association e.V., „IDTA 02056-1-0 Data Retention Policies,“ June 2024. [Online]. Available: https://industrialdigitaltwin.org/wp-content/uploads/2024/06/IDTA-02056-1-0_Submodel_Data-Retention-Policies.pdf.              |
