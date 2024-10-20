@@ -2,6 +2,8 @@
 
 ## Inhalt
 
+[Zielsetzung](#zielsetzung)
+
 [AP 3.1 - Untersuchung von Anforderungen](#_3.1)
 - [3.1.1 Vorgehen](#_3.1.1)
 - [3.1.2 Ergebnisse](#_3.1.2)
@@ -36,7 +38,7 @@
 
 [Literaturverzeichnis](#literaturverzeichnis)
 
-## Zielsetzung
+## <a name="zielsetzung"></a>Zielsetzung
 Im Teilprojekt 3 "**Produktionsprozesse des Leitungssatzes**" wurden Konzepte und Verfahren entwickelt, welche die Informationen der Verwaltungsschalen der Produkte, Ressourcen und Prozessbeschreibungen sowie den aktuellen Anlagenzuständen kombinieren, aufbereiten und verarbeiten, um automatisiert die Produktionsmaschinen bzw. deren Montage-Skills zu konfigurieren und zu parametrieren.
 
 Kernthema war daher die Erforschung eines Konzeptes bzw. Modelles, wie unter diesen Bedingungen der Digitale Zwilling des gesamten Leitungssatzes angewendet werden kann.
