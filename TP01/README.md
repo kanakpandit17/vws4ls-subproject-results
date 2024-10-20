@@ -31,9 +31,9 @@
 - [1.4.5.4	ResultManagement](#_1.4.5.4)
 - [1.4.6	Fazit](#_1.4.6)
 
-[6	AP 1.5 - Validierung der Standards](#_1.5)
+[AP 1.5 - Validierung der Standards](#_1.5)
 
-[7	AP 1.6 - Dokumentation der Ergebnisse](#_1.6)
+[AP 1.6 - Dokumentation der Ergebnisse](#_1.6)
 
 [Literaturverzeichnis](#literaturverzeichnis)
 
