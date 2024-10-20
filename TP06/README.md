@@ -47,7 +47,7 @@ Für die Arbeitspakete AP 6.1 bis AP 6.4 werden konkrete Anwendungsfälle (Szena
 
 Im Folgenden werden die als Anwendungsfälle ausgewählten Verhandlungsszenarien beschrieben.
 
-#### <a name="_6.1.1.1"></a>Szenario „Order Driven Production“
+#### <a name="_6.1.1.1"></a>6.1.1.1 Szenario „Order Driven Production“
 
 ##### Kontext
 
@@ -104,7 +104,7 @@ Die im Szenario zu entwickelnden Möglichkeiten zum automatisierten Fähigkeiten
 
 Die grundlegende Modellierung von geforderten und verfügbaren Fähigkeiten in der VWS sowie ein allgemeingültiger Algorithmus zum Fähigkeitenabgleich wurden in TP 5 entwickelt. Das Datenmodell zum Produkt Leitungssatz wurde in TP 2 definiert und die Grundlage zum Abbilden der Produktionsprozesse wurde in TP 3 erarbeitet. In der automatisierten Verhandlung wird auf Daten zu Produkt, Prozess und Ressource zugegriffen, damit Algorithmen Machbarkeit und Kosten bewerten und daraus Entscheidungen ableiten können.
 
-#### <a name="_6.1.1.2"></a>Szenario „Zukaufteil“
+#### <a name="_6.1.1.2"></a>6.1.1.2 Szenario „Zukaufteil“
 
 ##### Kontext
 
@@ -151,7 +151,7 @@ Mit unternehmensübergreifenden automatisierten Verhandlungsprozessen wird insbe
 
 In [TP 8](https://github.com/VWS4LS/vws4ls-subproject-results/tree/main/TP08) werden die Grundlagen für einen sicheren Datenaustausch über Unternehmensgrenzen hinweg erarbeitet. Die dort erarbeiteten Grundlagen zur Nutzung von International Dataspaces (IDS) zum verteilten Zugriff auf Verwaltungsschalen werden als Voraussetzungen für den Zugriff auf Produktdaten und geforderte Fähigkeiten im Rahmen des Ausschreibungsverfahren angesehen. Konzepte wie Unternehmensverzeichnisse ermöglichen das Auffinden von möglichen Auftragnehmern.
 
-#### <a name="_6.1.1.3"></a>Szenario „Synchronisation von Werten“
+#### <a name="_6.1.1.3"></a>6.1.1.3 Szenario „Synchronisation von Werten“
 
 Im TP 2 wurde im Rahmen des Konzeptes “Single Point of Truth” eine Verlinkung von verschiedenen VWS zum selben Typ einer Leitungssatzkomponente definiert. Die verschiedenen VWS bilden die Sichten der verschiedenen Partner in der Wertschöpfungskette des Leitungssatzes auf dasselbe Asset, also dieselbe Komponente, ab. In dem Zusammenhang wurde auch eine technische Lösung zur Synchronisierung von Änderungen an den Teilmodellen und Teilmodellelementen zwischen den verlinkten Verwaltungsschalen gefordert.
 
@@ -162,7 +162,7 @@ Ziel ist es, für diesen Synchronisierungsvorgang ein semantisches Protokoll zwi
 
 Die empfangende VWS führt auf ihrer Seite eine Machbarkeits- oder Plausibilitätsprüfung bzgl. des neuen Zielwertes durch (siehe Komponente „Change Handler“ in *Abbildung 6-2*). Gegebenenfalls kann vor Übernahme der Wertänderung auf der Empfängerseite ein Freigabeprozess integriert werden. Erst nach erfolgreicher Machbarkeitsprüfung und ggf. erfolgter Freigabe wird die Wertänderung in der empfangenden VWS umgesetzt und es erfolgt eine Rückmeldung an die VWS, welche die Wertänderung propagiert hat. Auch im Falle, dass die Änderung in der empfangenden VWS nicht umgesetzt wird, erfolgt eine entsprechende Rückmeldung. So kann auch die aufrufende VWS eine Übersicht über den Synchronisierungszustand führen.
 
-#### <a name="_6.1.1.4"></a>Szenario „Änderungsmanagement“
+#### <a name="_6.1.1.4"></a>6.1.1.4 Szenario „Änderungsmanagement“
 
 Die in den beiden Verhandlungsszenarien zum Ausschreibungsverfahren und zur Synchronisierung erarbeiteten Mechanismen sollen verwendet werden, um die Informationsverteilung und Abstimmungsprozesse in der Erarbeitung und in der Umsetzung einer technischen Änderung am Leitungssatz zu unterstützen. Gegebenenfalls werden die Spezifikationen zu den semantischen Protokollen und zu den Nachrichten anhand dieses Szenarios noch erweitert oder verfeinert.
 
