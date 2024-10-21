@@ -64,7 +64,7 @@
 #### <a name="_54"></a>[54]   A. M. Hosseini, T. Sauter und W. Kastner, *„Towards Adding Safety and Security Properties to the Industry 4.0 Asset Administration Shell,“* 17th IEEE International Conference on Factory Communication Systems (WFCS), 2021. [Online]. Available: https://doi.org/10.1109/WFCS46889.2021.9483606.
 
 #### <a name="_55"></a>[55]   ISO, *„ISO/IEC 27001:2022 Information security, cybersecurity and privacy protection — Information security management systems — Requirements,“* [Online]. Available: https://www.iso.org/standard/27001.                                                                                                                                                                                       
-#### <a name="_56></a>[56]   A. Bröring, A. Belyaev, H. Trsek, L. Wisniewsk und C. Diedrich, *„Secure Asset Administration Shell exchange with Distributed Ledger Technology,“* 01 2021. [Online]. Available: https://www.researchgate.net/publication/350121822_Secure_Asset_Administration_Shell_exchange_with_Distributed_Ledger_Technology.
+#### <a name="_56"></a>[56]   A. Bröring, A. Belyaev, H. Trsek, L. Wisniewsk und C. Diedrich, *„Secure Asset Administration Shell exchange with Distributed Ledger Technology,“* 01 2021. [Online]. Available: https://www.researchgate.net/publication/350121822_Secure_Asset_Administration_Shell_exchange_with_Distributed_Ledger_Technology.
 
 #### <a name="_57"></a>[57]   Plattform Industrie 4.0, *„Interoperability at Runtime - Exchanging Information via Application Programming Interfaces,“* 2021. [Online]. Available: https://www.plattform-i40.de/IP/Redaktion/EN/Downloads/Publikation/Details_of_the_Asset_Administration_Shell_Part2_V1.pdf.
 
