@@ -31,6 +31,8 @@
 - [3.5.3 Micro-Service „Datenvalidierung“](#_3.5.3)
 - [3.5.4 Traceability](#_3.5.4)
 - [3.5.5 Transfer in andere Produktserien](#_3.5.5)
+  - [3.5.5.1 Coroplast](#_3.5.5.1)
+  - [3.5.5.2 KOSTAL](#_3.5.5.2)
 
 [3.6 Fazit](#_3.6)
 
@@ -45,11 +47,11 @@ Kernthema war daher die Erforschung eines Konzeptes bzw. Modelles, wie unter die
 
 Das Teilprojekt wurde in folgende Arbeitspakete aufgeteilt, deren Resultate in diesem Dokument zusammenfassend erläutert werden:
 
--   AP 3.1 - Untersuchung von Anforderungen
--   AP 3.2 - Erforschung eines Referenzmodells
--   AP 3.3 - Erforschung von Teilmodellen für Rückmeldedaten
--   AP 3.4 - Proof of Concept
--   AP 3.5 - Validierung der Prinzipien
+-   [AP 3.1 - Untersuchung von Anforderungen](#_3.1)
+-   [AP 3.2 - Erforschung eines Referenzmodells](#_3.2)
+-   [AP 3.3 - Erforschung von Teilmodellen für Rückmeldedaten](#_3.3)
+-   [AP 3.4 - Proof of Concept](#_3.4)
+-   [AP 3.5 - Validierung der Prinzipien](#_3.5)
 
 ## <a name="_3.1"></a>AP 3.1 - Untersuchung von Anforderungen
 
@@ -281,7 +283,7 @@ Hinter „Computer-Aided-Design to Bill-of-Process“ (CAD2BOP) steht die Erstel
 
 Für die Bestückung von Gehäusen werden teilautomatisierte Maschinen verwendet (z.B. [Komax Omega Serie](https://www.komaxgroup.com/de/products/harness-manufacturing)), die dazu in der Lage sind, nach der Fertigung der Kabel und der Kontaktierung diese entsprechend in ein Gehäuse zu platzieren.
 
-Hierzu werden unbestückte Gehäuse auf einer Palette mit speziell angefertigten Halteteilen platziert (siehe *Abbildung* 16). Für jede Kammer muss der Bediener anschließend die Position, Stecktiefe, Ausrichtung der Verriegelung sowie die Steck- und Rückzugskraft anlernen. Das ist notwendig, um einen sicheren Sitz der Kontaktteile nach der Herstellung zu gewährleisten. Um einen wiederholbaren Prozess zu gewährleisten, muss der Bediener zudem jede weitere Palette nach demselben Muster bestücken.
+Hierzu werden unbestückte Gehäuse auf einer Palette mit speziell angefertigten Halteteilen platziert (siehe *Abbildung* 3-6). Für jede Kammer muss der Bediener anschließend die Position, Stecktiefe, Ausrichtung der Verriegelung sowie die Steck- und Rückzugskraft anlernen. Das ist notwendig, um einen sicheren Sitz der Kontaktteile nach der Herstellung zu gewährleisten. Um einen wiederholbaren Prozess zu gewährleisten, muss der Bediener zudem jede weitere Palette nach demselben Muster bestücken.
 
 Ebenso ist das Prüfen solcher Gehäuse mit einem hohen Maß an Handarbeit verbunden. Hier werden oft die Gegenstellen durch manuelle Vermessung der Originale hergestellt, statt sie aus bestehenden Konstruktionen abzuleiten.
 
@@ -1285,16 +1287,16 @@ Die Rückverfolgbarkeit aller Aspekte des Leitungssatzes sind ein elementarer Be
 
 ### <a name="_3.5.5"></a> Transfer in andere Produktserien
 
-#### Coroplast
+#### #### <a name="_3.5.5.1"></a>Coroplast
 
 Coroplast ist auf die Herstellung von technischen Klebebändern, Kabeln und Leitungen oder Leitungssätze spezialisiert. Zur Validierung der in dieser Arbeit vorgestellten Prinzipien soll der Prozess der Kabelherstellung dargestellt werden. Dabei soll vor allem überprüft werden, inwieweit dieses Konzept in der Praxis anwendbar ist. Der zu bewertende Anwendungsfall befasst sich mit der Bereitstellung und Produktion der Materialien, die für die Herstellung eines Kabels erforderlich sind.
 
-Wie in *Abbildung* 162zu sehen ist, kann das Produkt Kupfer von einem unserer Lieferanten bezogen werden, während das Silikon auf unseren Maschinen hergestellt wird. Aus diesem Grund wird das Silikonprodukt als Typ dargestellt, während das Kupfer durch die Daten des Lieferanten dargestellt wird. Für die Herstellung des Kabels ist es im nächsten Schritt notwendig, das Silikon auf das Kupfer zu extrudieren. Des Weiteren ist zu erkennen, dass das Kabelprodukt aus Silikon und Kupfer besteht und als Typ definiert ist, wobei die Materialien in der Stückliste beschrieben werden.
+Wie in *Abbildung* 3-62 zu sehen ist, kann das Produkt Kupfer von einem unserer Lieferanten bezogen werden, während das Silikon auf unseren Maschinen hergestellt wird. Aus diesem Grund wird das Silikonprodukt als Typ dargestellt, während das Kupfer durch die Daten des Lieferanten dargestellt wird. Für die Herstellung des Kabels ist es im nächsten Schritt notwendig, das Silikon auf das Kupfer zu extrudieren. Des Weiteren ist zu erkennen, dass das Kabelprodukt aus Silikon und Kupfer besteht und als Typ definiert ist, wobei die Materialien in der Stückliste beschrieben werden.
 
 ![image](https://github.com/user-attachments/assets/400dc830-eca9-4c5e-b3dd-219355d96d48)    
 *Abbildung 3-62: Repräsentation des Kabelherstellungsprozesses*
 
-Um mit der Validierung der Prinzipien fortzufahren, werden im Folgenden die Konzepte im Ökosystem Verwaltungsschale dargestellt. *Abbildung* 163, zeigt die Darstellung der wichtigsten Materialien, wobei Kabel und Silikon, wie sie von Coroplast hergestellt werden, direkt als "Typ"-Produkte dargestellt werden. Andererseits ist zu erkennen, dass der Werkstoff Kupfer, da er nicht von Coroplast hergestellt wird, aus zwei Teilmodellen besteht: technische Informationen und Lieferantendaten. Darüber hinaus ist jeder Ressource eine Verwaltungsschale zugeordnet, wie z.B. bei der Knetmaschine und der Extrusionsmaschine, die durch die technischen Spezifikationen und die Kapazitäten der jeweiligen Maschine dargestellt werden.
+Um mit der Validierung der Prinzipien fortzufahren, werden im Folgenden die Konzepte im Ökosystem Verwaltungsschale dargestellt. *Abbildung* 3-63, zeigt die Darstellung der wichtigsten Materialien, wobei Kabel und Silikon, wie sie von Coroplast hergestellt werden, direkt als "Typ"-Produkte dargestellt werden. Andererseits ist zu erkennen, dass der Werkstoff Kupfer, da er nicht von Coroplast hergestellt wird, aus zwei Teilmodellen besteht: technische Informationen und Lieferantendaten. Darüber hinaus ist jeder Ressource eine Verwaltungsschale zugeordnet, wie z.B. bei der Knetmaschine und der Extrusionsmaschine, die durch die technischen Spezifikationen und die Kapazitäten der jeweiligen Maschine dargestellt werden.
 
 ![image](https://github.com/user-attachments/assets/1a032c94-f3a4-49b3-b045-17ff14ea7db8)    
 *Abbildung 3-63: Repräsentation des Kabelherstellungsprozesses in der VWS*
@@ -1355,7 +1357,7 @@ Stellt ein Nutzer also fest, dass bei seinem Kabel das Silikon gebrochen ist, so
 
 Diese prototypische Implementierung ermöglicht es uns, die Funktionalität und Effizienz des Konzepts in einer realitätsnahen Umgebung zu testen. Durch die Verwendung von BaSyx und standardisierten Protokollen wie OPC-UA stellen wir sicher, dass unser System interoperabel und zukunftssicher ist. Die Flexibilität bei den Datenquellen erlaubt eine einfache Integration in bestehende Produktionsumgebungen.
 
-#### KOSTAL
+#### <a name="_3.5.5.2"></a> KOSTAL
 
 KOSTAL Kontakt Systeme ist auf die Entwicklung und Produktion von Steckverbindern spezialisiert. Zur Validierung der in dieser Arbeit vorgestellten Prinzipien soll der Prozess der Steckverbinderherstellung dargestellt werden. Dabei soll vor allem überprüft werden, inwieweit dieses Konzept in der Praxis anwendbar ist.
 
@@ -1393,7 +1395,7 @@ Product Contact
 
 Darüber hinaus ist die Ressource der Verwaltungsschale zugeordnet, die durch die technischen Spezifikationen und die Kapazitäten der jeweiligen Maschine dargestellt werden (PPS-Fertigungsauftrag, siehe *Abbildung* 3-71).
 
-![image](https://github.com/user-attachments/assets/0abfa3f1-725d-46fe-881c-73a2db590b30)    
+![image](https://github.com/user-attachments/assets/7c330c6b-f80f-4b40-b212-ad9a614600c6)       
 *Abbildung 3-71: Repräsentation des PPS-Fertigungsauftrages*
 
 Das Mapping eines Fertigungsauftrags in eine AAS wird in *Abbildung* 3-72 schematisch dargestellt. Es wird gezeigt an welchen Stellen die einzelnen Bestandteile eines Fertigungsauftrags im pdf-Format in einer AAS („[KKS_Product_TERMINAL_SLK2.8_Type.aasx](https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP03/AP3.5/KKS_Product_TERMINAL_SLK2.8_Type.aasx)“[^12]) hinterlegt sind.
