@@ -2,7 +2,7 @@
 Dieses Repository stellt die Ergebnis-Dokumentation zum Projekt VWS4LS bereit ([Gesamtbericht als PDF](VWS4LS_Abschlussbericht_Gesamtprojekt.pdf)). 
 Ebenso die in der Projektdokumentation referenzierten Artefakte wie z.B. JSON- and AASX-Dateien.
 
-[Projektübersicht](https://github.com/VWS4LS/.github/blob/main/profile/README.md)
+**[Projektübersicht](https://vws4ls.github.io/)**
 
 ## Inhalt
 * [TP1: Konzept, Informationsmodelle und Produktbeschreibung](TP01)
