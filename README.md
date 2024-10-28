@@ -1,5 +1,5 @@
 # vws4ls-subproject-results
-Dieses Repository stellt die Ergebnis-Dokumentation zum Projekt VWS4LS bereit ([Gesamtbericht als PDF](VWS4LS_Abschlussbericht_Gesamtprojekt.pdf)). 
+Dieses Repository stellt die Ergebnis-Dokumentation zum Projekt VWS4LS bereit ([Gesamtbericht als PDF](https://VWS4LS.github.io/VWS4LS_Abschlussbericht_Gesamtprojekt.pdf)). 
 Ebenso die in der Projektdokumentation referenzierten Artefakte wie z.B. JSON- and AASX-Dateien.
 
 **[Projektübersicht](https://vws4ls.github.io/)**
