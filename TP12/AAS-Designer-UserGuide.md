@@ -8,10 +8,10 @@ https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP12/Reference-Sys
 
 ## Add semantic references
 
-# to a Submodel
+### to a Submodel
 
-# to a Property
+### to a Property
 
-# to a Property Value
+### to a Property Value
 
-# to a Concept Descriptions
+### to a Concept Descriptions
