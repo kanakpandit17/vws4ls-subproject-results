@@ -4,6 +4,9 @@ info:
   description: >-
     API for accessing and managing Asset Administration Shells (AAS) and Digital Product Passports (DPP) in the Eclipse Mnestix platform.
     
+    
+    https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP12/mnestix-openapi.yaml
+    
     ## Legal Disclaimer 
 
     This work is licenced under the Creative Commons Zero Licence 
@@ -11,13 +14,12 @@ info:
     
     The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Specification.
     THIS SPECIFICATION IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SPECIFICATION OR THE USE OR OTHER DEALINGS IN THE SPECIFICATION.
-
   version: 1.0.0
   contact:
     name: XITASO Mnestix Support
     email: mnestix@xitaso.com
-    url: https://github.com/eclipse-mnestix/mnestix-browser
-   
+    url:  https://github.com/eclipse-mnestix/mnestix-browser
+
 servers:
   - url: https://vws4ls.dev.mnestix.xitaso.net
     description: VWS4LS Development Server
@@ -174,6 +176,72 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Error'
+  /{language}/settings:
+    get:
+      summary: Retrieve Settings
+      description: Retrieves user or system settings for the Mnestix platform in the specified language.
+      operationId: getSettings
+      parameters:
+        - name: language
+          in: path
+          required: true
+          schema:
+            type: string
+            enum: [de, en]
+          description: Language for the response (German or English).
+      responses:
+        '200':
+          description: Settings data
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Settings'
+        '400':
+          description: Invalid language parameter
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+  /{language}/templates:
+    get:
+      summary: Retrieve AAS Templates
+      description: Retrieves a list of predefined AAS templates for creating new assets in the specified language.
+      operationId: getTemplates
+      parameters:
+        - name: language
+          in: path
+          required: true
+          schema:
+            type: string
+            enum: [de, en]
+          description: Language for the response (German or English).
+      responses:
+        '200':
+          description: List of AAS templates
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Template'
+        '400':
+          description: Invalid language parameter
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
 components:
   schemas:
     AAS:
@@ -216,6 +284,47 @@ components:
       required:
         - idShort
         - semanticId
+    Settings:
+      type: object
+      properties:
+        userId:
+          type: string
+          description: Unique identifier for the user.
+        language:
+          type: string
+          enum: [de, en]
+          description: Preferred language for the user interface.
+        preferences:
+          type: object
+          additionalProperties: true
+          description: User-specific preferences (e.g., display options, notifications).
+        systemConfig:
+          type: object
+          additionalProperties: true
+          description: System-wide configuration settings.
+      required:
+        - userId
+        - language
+    Template:
+      type: object
+      properties:
+        templateId:
+          type: string
+          description: Unique identifier for the AAS template.
+        name:
+          type: string
+          description: Name of the template.
+        description:
+          type: string
+          description: Description of the template.
+        submodelTemplates:
+          type: array
+          items:
+            $ref: '#/components/schemas/Submodel'
+          description: List of submodel templates included in the AAS template.
+      required:
+        - templateId
+        - name
     Error:
       type: object
       properties:
