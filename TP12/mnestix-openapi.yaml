@@ -1,1 +1,230 @@
+openapi: 3.0.3
+info:
+  title: Mnestix AAS API
+  description: >-
+    API for accessing and managing Asset Administration Shells (AAS) and Digital Product Passports (DPP) in the Eclipse Mnestix platform.
+    
+    ## Legal Disclaimer 
 
+    This work is licenced under the Creative Commons Zero Licence 
+    (https://creativecommons.org/publicdomain/zero/1.0/deed.de)
+    
+    The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Specification.
+    THIS SPECIFICATION IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SPECIFICATION OR THE USE OR OTHER DEALINGS IN THE SPECIFICATION.
+
+  version: 1.0.0
+  contact:
+    name: XITASO Mnestix Support
+    email: mnestix@xitaso.com
+    url: https://github.com/eclipse-mnestix/mnestix-browser
+   
+servers:
+  - url: https://vws4ls.dev.mnestix.xitaso.net
+    description: VWS4LS Development Server
+paths:
+  /{language}/list:
+    get:
+      summary: List all Asset Administration Shells
+      description: Retrieves a list of all available AAS entries in the specified language.
+      operationId: listAAS
+      parameters:
+        - name: language
+          in: path
+          required: true
+          schema:
+            type: string
+            enum: [de, en]
+          description: Language for the response (German or English).
+      responses:
+        '200':
+          description: A list of AAS entries
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/AAS'
+        '400':
+          description: Invalid language parameter
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+  /{language}/marketplace:
+    get:
+      summary: Retrieve Marketplace Overview
+      description: Retrieves an overview of the marketplace, listing available AAS or products in the specified language.
+      operationId: getMarketplace
+      parameters:
+        - name: language
+          in: path
+          required: true
+          schema:
+            type: string
+            enum: [de, en]
+          description: Language for the response (German or English).
+      responses:
+        '200':
+          description: Marketplace overview
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/AAS'
+        '400':
+          description: Invalid language parameter
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+  /{language}/marketplace/catalog:
+    get:
+      summary: Retrieve Filtered Catalog
+      description: Retrieves a catalog of AAS filtered by manufacturer in the specified language.
+      operationId: getCatalog
+      parameters:
+        - name: language
+          in: path
+          required: true
+          schema:
+            type: string
+            enum: [de, en]
+          description: Language for the response (German or English).
+        - name: manufacturer
+          in: query
+          required: false
+          schema:
+            type: string
+          description: Filter by manufacturer name (e.g., komax, kostal).
+      responses:
+        '200':
+          description: Filtered catalog of AAS
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/AAS'
+        '400':
+          description: Invalid parameters
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+  /{language}/product/{id}:
+    get:
+      summary: Retrieve Product Details
+      description: Retrieves detailed information for a specific AAS or product by its ID in the specified language.
+      operationId: getProduct
+      parameters:
+        - name: language
+          in: path
+          required: true
+          schema:
+            type: string
+            enum: [de, en]
+          description: Language for the response (German or English).
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+          description: Base64-encoded URL identifying the AAS (e.g., aHR0cHM6Ly9hYXMua29zdGFsLmNvbS9LT1NUQUxfTUxLMTJfMDk0MDU2MDJfSE9VU0lORw).
+      responses:
+        '200':
+          description: Detailed AAS or product information
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AAS'
+        '400':
+          description: Invalid ID or language
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: Product not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+components:
+  schemas:
+    AAS:
+      type: object
+      properties:
+        id:
+          type: string
+          description: Unique identifier for the AAS (base64-encoded URL).
+        name:
+          type: string
+          description: Name of the asset or product.
+        manufacturer:
+          type: string
+          description: Manufacturer of the asset.
+        submodels:
+          type: array
+          items:
+            $ref: '#/components/schemas/Submodel'
+          description: List of submodels associated with the AAS.
+        description:
+          type: string
+          description: Description of the asset or product.
+      required:
+        - id
+        - name
+        - manufacturer
+    Submodel:
+      type: object
+      properties:
+        idShort:
+          type: string
+          description: Short identifier for the submodel.
+        semanticId:
+          type: string
+          description: Semantic identifier for the submodel.
+        properties:
+          type: object
+          additionalProperties: true
+          description: Key-value pairs of submodel properties.
+      required:
+        - idShort
+        - semanticId
+    Error:
+      type: object
+      properties:
+        code:
+          type: string
+          description: Error code.
+        message:
+          type: string
+          description: Human-readable error message.
+      required:
+        - code
+        - message
