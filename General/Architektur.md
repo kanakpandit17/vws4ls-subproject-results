@@ -33,7 +33,7 @@ In diesem Abschnitt wurden TP-übergreifende Architekturthemen dokumentiert.
 
 [1.3.4 Instanz-Verwaltungsschale des Konfektionärs](#_Toc178854299)
 
-[1.3.5 Verlinkung des VEC](#Verlinkung_des_VEC)
+[1.3.5 Verlinkung des VEC](#Verlinkung des VEC)
 
 [1.5 Versionierung](#_Toc178854301)
 
@@ -397,7 +397,7 @@ Die Zusammenhänge der verschiedenen Typ- und Instanz-Verwaltungsschalen sind in
 
 Abbildung 126: Typ- und Instanz-VWS für den Leitungssatz
 
-### <a name="Verlinkung des VEC"></a>Verlinkung_des_VEC
+### <a name="Verlinkung des VEC"></a>Verlinkung des VEC
 
 Ziel der Verlinkung des VEC ist es, die Typ- und Instanzinformationen mit entsprechenden Assets bzw. Verwaltungsschalen zu verknüpfen, sodass der VEC in einer VWS integriert und die Notwendigkeit zur Interpretation des VEC reduziert werden kann.
 
