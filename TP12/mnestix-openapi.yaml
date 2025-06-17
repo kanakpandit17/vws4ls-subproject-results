@@ -1,12 +1,15 @@
 openapi: 3.0.3
 info:
-  title: Mnestix AAS API
-  description: >-
-    API for accessing and managing Asset Administration Shells (AAS) and Digital Product Passports (DPP) in the Eclipse Mnestix platform.
-    
-    
-    https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP12/mnestix-openapi.yaml
-    
+  title: Mnestix AAS Browser
+  description: |-
+    API for managing Asset Administration Shells (AAS) and Digital Product Passports (DPP) in the Eclipse Mnestix platform.
+    This documentation is for the Eclipse Mnestix Browser Frontend.
+    Additional documentation links:
+      - [Mnestix API Swagger](https://vws4ls-api.dev.mnestix.xitaso.net/swagger/index.html)
+      - [Mnestix AAS Searcher Swagger](https://vws4ls-searcher.dev.mnestix.xitaso.net/swagger/index.html)
+      - [Mnestix AAS Searcher GraphQL](https://vws4ls-searcher.dev.mnestix.xitaso.net/graphql/)
+      - [Mnestix OpenAPI](https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP12/mnestix-openapi.yaml)
+
     ## Legal Disclaimer 
 
     This work is licenced under the Creative Commons Zero Licence 
@@ -14,326 +17,175 @@ info:
     
     The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Specification.
     THIS SPECIFICATION IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SPECIFICATION OR THE USE OR OTHER DEALINGS IN THE SPECIFICATION.
-  version: 0.0.1
+    
+  version: product-catalog
   contact:
     name: XITASO Mnestix Support
     email: mnestix@xitaso.com
-    url:  https://github.com/eclipse-mnestix/mnestix-browser
-
+    url: https://github.com/eclipse-mnestix/mnestix-browser
 servers:
   - url: https://vws4ls.dev.mnestix.xitaso.net
     description: VWS4LS Development Server
 paths:
-  /{language}/list:
+
+  /marketplace:
     get:
-      summary: List all Asset Administration Shells
-      description: Retrieves a list of all available AAS entries in the specified language.
-      operationId: listAAS
-      parameters:
-        - name: language
-          in: path
-          required: true
-          schema:
-            type: string
-            enum: [de, en]
-          description: Language for the response (German or English).
+      summary: Marketplace Overview Page
+      description: Frontend page showing a list of available AAS or products in the marketplace.
+      tags:
+        - Product Catalog
       responses:
         '200':
-          description: A list of AAS entries
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/AAS'
-        '400':
-          description: Invalid language parameter
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error'
-        '500':
-          description: Server error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error'
-  /{language}/marketplace:
+          description: Marketplace overview page loaded successfully.
+
+
+  /marketplace/catalog:
     get:
-      summary: Retrieve Marketplace Overview
-      description: Retrieves an overview of the marketplace, listing available AAS or products in the specified language.
-      operationId: getMarketplace
+      summary: Marketplace Catalog Page
+      description: Frontend page for viewing the filtered product catalog by manufacturer.
+      tags:
+        - Product Catalog
       parameters:
-        - name: language
-          in: path
-          required: true
-          schema:
-            type: string
-            enum: [de, en]
-          description: Language for the response (German or English).
-      responses:
-        '200':
-          description: Marketplace overview
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/AAS'
-        '400':
-          description: Invalid language parameter
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error'
-        '500':
-          description: Server error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error'
-  /{language}/marketplace/catalog:
-    get:
-      summary: Retrieve Filtered Catalog
-      description: Retrieves a catalog of AAS filtered by manufacturer in the specified language.
-      operationId: getCatalog
-      parameters:
-        - name: language
-          in: path
-          required: true
-          schema:
-            type: string
-            enum: [de, en]
-          description: Language for the response (German or English).
-        - name: manufacturer
+        - name: manufacturerName
           in: query
-          required: false
+          required: true
           schema:
             type: string
-          description: Filter by manufacturer name (e.g., komax, kostal).
+          description: Id of manufacturer as configured in the settings (e.g. komax, kostal, coroflex)
       responses:
         '200':
-          description: Filtered catalog of AAS
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/AAS'
-        '400':
-          description: Invalid parameters
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error'
-        '500':
-          description: Server error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error'
-  /{language}/product/{id}:
+          description: Marketplace catalog page loaded successfully.
+        '404':
+          description: Manufacturer wasn't configured.
+
+
+  /product/{base64AasId}:
     get:
-      summary: Retrieve Product Details
-      description: Retrieves detailed information for a specific AAS or product by its ID in the specified language.
-      operationId: getProduct
+      summary: Product Details Page
+      description: Frontend page for viewing details of a specific product by its base64-encoded AAS ID.
+      tags:
+        - Product Catalog
       parameters:
-        - name: language
+        - name: base64AasId
           in: path
           required: true
           schema:
             type: string
-            enum: [de, en]
-          description: Language for the response (German or English).
+          description: Base64-encoded AAS ID.
+      responses:
+        '200':
+          description: Product details page loaded successfully.
+        '404':
+          description: Product not found.
+
+
+
+  /asset:
+    get:
+      summary: Asset Resolver Page
+      description: Frontend page for resolving an Asset ID and displaying the corresponding AAS if found.
+      parameters:
+        - name: assetId
+          in: query
+          required: true
+          schema:
+            type: string
+          description: URL encoded Asset ID
+      tags:
+        - AAS Browser
+      responses:
+        '200':
+          description: Asset resolver page loaded successfully.
+        '404':
+          description: Asset not found in a configured discovery service.
+
+
+  /viewer/{base64AasId}:
+    get:
+      summary: Viewer Details Page
+      description: Frontend page for viewing details of a specific AAS by its base64-encoded AAS ID.
+      tags:
+        - AAS Browser
+      parameters:
+        - name: base64AasId
+          in: path
+          required: true
+          schema:
+            type: string
+          description: Base64-encoded AAS ID.
+      responses:
+        '200':
+          description: Viewer details page loaded successfully.
+        '404':
+          description: AAS not found.
+
+
+  /list:
+    get:
+      summary: AAS List Page
+      description: Frontend page for listing all available AAS entries.
+      tags:
+        - AAS Browser
+      responses:
+        '200':
+          description: AAS list page loaded successfully.
+
+
+  /settings:
+    get:
+      summary: Settings Page
+      description: Frontend page for viewing and editing platform settings.
+      tags:
+        - AAS Browser
+      responses:
+        '200':
+          description: Settings page loaded successfully.
+
+  /viewer/discovery:
+    get:
+      summary: Viewer Discovery Page
+      description: Frontend page that displays if an Asset is found in multiple discovery services.
+      tags:
+        - AAS Browser
+      responses:
+        '200':
+          description: Viewer discovery page loaded successfully.
+
+  /viewer/registry:
+    get:
+      summary: Viewer Registry Page
+      description: Frontend page that displays if an Asset is found in multiple registries
+      tags:
+        - AAS Browser
+      responses:
+        '200':
+          description: Viewer registry page loaded successfully.
+
+  /templates:
+    get:
+      summary: Templates List Page
+      description: Frontend page for listing all available AAS templates.
+      tags:
+        - AAS Browser
+      responses:
+        '200':
+          description: Templates list page loaded successfully.
+
+  /templates/{id}:
+    get:
+      summary: Template Details Page
+      description: Frontend page for viewing and editing details of a specific AAS template by its ID.
+      tags:
+        - AAS Browser
+      parameters:
         - name: id
           in: path
           required: true
           schema:
             type: string
-          description: Base64-encoded URL identifying the AAS (e.g., aHR0cHM6Ly9hYXMua29zdGFsLmNvbS9LT1NUQUxfTUxLMTJfMDk0MDU2MDJfSE9VU0lORw).
+          description: ID of the template
       responses:
         '200':
-          description: Detailed AAS or product information
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/AAS'
-        '400':
-          description: Invalid ID or language
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error'
+          description: Template details page loaded successfully.
         '404':
-          description: Product not found
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error'
-        '500':
-          description: Server error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error'
-  /{language}/settings:
-    get:
-      summary: Retrieve Settings
-      description: Retrieves user or system settings for the Mnestix platform in the specified language.
-      operationId: getSettings
-      parameters:
-        - name: language
-          in: path
-          required: true
-          schema:
-            type: string
-            enum: [de, en]
-          description: Language for the response (German or English).
-      responses:
-        '200':
-          description: Settings data
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Settings'
-        '400':
-          description: Invalid language parameter
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error'
-        '500':
-          description: Server error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error'
-  /{language}/templates:
-    get:
-      summary: Retrieve AAS Templates
-      description: Retrieves a list of predefined AAS templates for creating new assets in the specified language.
-      operationId: getTemplates
-      parameters:
-        - name: language
-          in: path
-          required: true
-          schema:
-            type: string
-            enum: [de, en]
-          description: Language for the response (German or English).
-      responses:
-        '200':
-          description: List of AAS templates
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/Template'
-        '400':
-          description: Invalid language parameter
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error'
-        '500':
-          description: Server error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error'
-components:
-  schemas:
-    AAS:
-      type: object
-      properties:
-        id:
-          type: string
-          description: Unique identifier for the AAS (base64-encoded URL).
-        name:
-          type: string
-          description: Name of the asset or product.
-        manufacturer:
-          type: string
-          description: Manufacturer of the asset.
-        submodels:
-          type: array
-          items:
-            $ref: '#/components/schemas/Submodel'
-          description: List of submodels associated with the AAS.
-        description:
-          type: string
-          description: Description of the asset or product.
-      required:
-        - id
-        - name
-        - manufacturer
-    Submodel:
-      type: object
-      properties:
-        idShort:
-          type: string
-          description: Short identifier for the submodel.
-        semanticId:
-          type: string
-          description: Semantic identifier for the submodel.
-        properties:
-          type: object
-          additionalProperties: true
-          description: Key-value pairs of submodel properties.
-      required:
-        - idShort
-        - semanticId
-    Settings:
-      type: object
-      properties:
-        userId:
-          type: string
-          description: Unique identifier for the user.
-        language:
-          type: string
-          enum: [de, en]
-          description: Preferred language for the user interface.
-        preferences:
-          type: object
-          additionalProperties: true
-          description: User-specific preferences (e.g., display options, notifications).
-        systemConfig:
-          type: object
-          additionalProperties: true
-          description: System-wide configuration settings.
-      required:
-        - userId
-        - language
-    Template:
-      type: object
-      properties:
-        templateId:
-          type: string
-          description: Unique identifier for the AAS template.
-        name:
-          type: string
-          description: Name of the template.
-        description:
-          type: string
-          description: Description of the template.
-        submodelTemplates:
-          type: array
-          items:
-            $ref: '#/components/schemas/Submodel'
-          description: List of submodel templates included in the AAS template.
-      required:
-        - templateId
-        - name
-    Error:
-      type: object
-      properties:
-        code:
-          type: string
-          description: Error code.
-        message:
-          type: string
-          description: Human-readable error message.
-      required:
-        - code
-        - message
+          description: Template not found.
