@@ -717,4 +717,4 @@ Abbildung 2 17: Token Exchange via Gateway
 Der Vorteil dieses Ansatzes ist es, dass der externe Anwender nur noch den Token kennen muss, welcher er bei der Authentifizierung beim externen Identity Provider bekommen hat.
 2.6.7	Ergebnis
 Die beschriebenen Methoden zum Identity- und Accessmanagement gewährleisten einen siche-ren und kontrollierten Datenaustausch und schaffen Grundlagen für zukünftige Weiterentwicklun-gen und Standardisierungen. Es wird eine solide Basis gebildet für die Integration weiterer Si-cherheitsmechanismen und die langfristige Vision einer einheitlichen und sicheren Datenarchitek-tur unterstützt.
-![image](https://github.com/user-attachments/assets/ca6eb037-6a43-45ec-9d0c-c978c27421aa)
+
