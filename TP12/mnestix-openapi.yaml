@@ -9,6 +9,7 @@ info:
       - [Mnestix AAS Searcher Swagger](https://vws4ls-searcher.dev.mnestix.xitaso.net/swagger/index.html)
       - [Mnestix AAS Searcher GraphQL](https://vws4ls-searcher.dev.mnestix.xitaso.net/graphql/)
       - [Mnestix OpenAPI](https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP12/mnestix-openapi.yaml)
+      - [Show in Swagger-Editor](https://editor.swagger.io/?url=https://raw.githubusercontent.com/VWS4LS/vws4ls-subproject-results/refs/heads/main/TP12/mnestix-openapi.yaml)
 
     ## Legal Disclaimer 
 
