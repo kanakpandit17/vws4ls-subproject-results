@@ -1,77 +1,59 @@
-# TP11: Fortsetzung der Tätigkeiten „Anbindung an Catena-X:
+# **TP11 – Anbindung an Catena-X**
 
-## Arbeitspaket 1 - Erarbeitung eines Konzepts zur Entscheidungsfindung
+Die Digitalisierung industrieller Wertschöpfungsketten erfordert standardisierte Datenmodelle sowie vertrauenswürdige Mechanismen für den Datenaustausch. Die Lückenlose digitale Abbildung und Absicherung von Datenflüssen entlang der Wertschöpfungskette ist entscheidend, um Effizienz, Rückverfolgbarkeit und Qualität sicherzustellen.
 
-1.  **Analyse des Ist-Zustands**
-    1.  Abgleich der AAS- und Aspekt-Modelle, d.h. Identifizierung von Überschneidungen, Konflikten und Lücken.
-2.  **Entwicklung der Systemarchitektur** für den modifizierten Data Provider (mit dem EDC und einer „extended dDTR“, die den Zugriff auf das Security-Teilmodell ermöglicht.). Dabei sind mindestens die folgenden Aspekte zu berücksichtigen;
-    1.  Anbindung der AAS in den EDC über die modifizierte dDTR (z.B. direkt als Asset, um eine AAS mit all ihren Submodellen direkt über den EDC ansprechen zu können.) Beinhaltet ein Re-Design hinsichtlich der notwendigen Erweiterungen der dDTR auf der Provider Seite sowie die möglichst geringe Anpassung der Policies-Engine im Control Plane des EDC.
-    2.  Beschreibung des Kommunikation-Schemas
-    3.  Spezifikation von Transformationsregeln und APIs, um die Metadaten (insbesondere Zugriffsrechte und Rollen in Policies) und Daten zwischen den Systemen/Modellen konvertieren bzw. synchronisieren zu können.
-    4.  Identitäten, in UUIDs mit dem Ziel des Single Sign On
-    5.  Ausformulierung Entscheidungsvorlage mit Summary-Whitepaper zum Ansatz (5 bis 10 Seiten.
-3.  **DOD**: **Architektur-Dokumentation** liegt vor in Form von:
-    1.  Funktionsblockschaubild
-    2.  Kommunikationsablauf und Schaubild mit Beschreibung der Schnittstellen und Formate
-    3.  Transformationsregeln und APIs
-    4.  Beschreibung der notwendigen Anpassungen in den verschiedenen Komponenten der Verwaltungsschale, ggf. Definition weiterer Properties für die AAS-Submodelle, um Versionierung, Zugriffsrechte und Workflow-Status analog zum EDC-Modell abbilden zu können
-    5.  Beschreibung der notwendigen Anpassungen in EDC, dDTR, , ggf. weiterer Komponenten
-    6.  Beschreibung des Ansatzes eines SSO
-    7.  Entscheidungsvorlage und Beschreibung der Features inkl. Abschätzung des Aufwands
-4.  **Beschreibung von Features** im Sinne einer agilen Umsetzungsvorgehensweise (Scrum) als Grundlage für die Abschätzung des Aufwands und der späteren Abarbeitung
-5.  **Meilenstein-Entscheidung:** **Technische Umsetzbarkeit**
-    1.  Gemeinsam wird der Scope des Prototyps (PoC) im Sinne eines MVP definiert.
-    2.  Und dessen Umsetzbarkeit im vorgeben Rahmen geprüft
-    3.  No-Go-/Go-Entscheidung für die softwaretechnische Implementation
+Zwei technologische Bausteine Verwaltungsschale und Eclipse-Dataspace Connector - EDC) sollen dabei gemeinsam genutzt werden, um vor allem das Accessmanagement bis auf Attributebene zu ermöglichen.
 
-## Arbeitspaket 2 - Technische Umsetzung der Systemarchitektur für die direkte Anbindung der Verwaltungsschale inkl. der Submodelle an den EDC
+-   Die VWS ermöglicht als standardisierter Digitaler Zwilling eines physischen oder virtuellen Assets eine strukturierte und semantisch beschreibbare Bereitstellung von Informationen entlang des Lebenszyklus. Über integrierte Mechanismen wie Role-Based-Access-Control (RBAC) oder Attribute-Based-Access-Control (ABAC) lassen sich differenzierte Zugriffskonzepte auf Submodelle und Datenpunkte realisieren.
+-   Der EDC wiederum stellt eine interoperable Infrastruktur für den sicheren und souveränen Austausch von Daten auf unternehmensübergreifender-Ebene bereit. Über Policies und Contract Definitions lassen sich Nutzungsbedingungen und Zugriffskontrollen entlang von Datenflüssen definieren und automatisiert durchsetzen.
 
-In diesem Arbeitspaket geht es um die Programmierung der notwendigen Modifikationen in der dDTR, der Control und ggfls. Data Plane des EDC, sowie evtl. weiterer Services, die entsprechend der Architektur und dem Ansatz des MVPs benötigt werden, sowie das Testen der Funktionalität. Abschließend sollen die standardisierungsfähigen Schnittstellen und Funktionalitäten identifiziert und beschrieben werden. Die Einzelnen Schritte sind wie folgt:
+Gerade in der Leitungssatzwertkette – mit ihren hohen Anforderungen an Variantenvielfalt, Fertigungstiefe und Lieferanteneinbindung – eröffnet die Kombination beider Technologien erhebliches Potenzial. Die VWS sorgt für semantisch konsistente Datenstrukturen auf Asset-Ebene (Produktrepräsentanz), während der EDC die kontrollierte Verteilung dieser Informationen über Unternehmensgrenzen hinweg ermöglicht. Eine koordinierte Anwendung der jeweiligen Zugriffskontrollmechanismen – also VWS-internes RBAC/ABAC und EDC-Policies – schafft dabei die Grundlage für Datensouveränität, Compliance und Effizienz in einem digitalisierten Wertschöpfungsnetzwerk.
 
-1.  **Technische Umsetzung** des Proof-of-Concepts im Demonstrator von VWS4LS):
-    1.  Implementierung des im Meilenstein definierten PoCs basierend auf den aktuellen Releases von Tractus-X und BaSyx.
-    2.  Abarbeitung der Features gemäß der Definition aus AP 1 inkl. Sicherstellung der grundlegenden Funktionsfähigkeit (Debugging)
-    3.  Regelmäßige Abstimmung mit dem AG
-2.  **Testen der Funktionalität** des Konzepts von AP 1
-    1.  Die in der Verwaltungsschale gespeicherten Zugriffsregeln werden beim Datenaustausch umgesetzt.
-    2.  Die ausgewählten Daten werden an einen Consumer-EDC ohne Modifikation übertragen.
-    3.  SSO von Tractus-X zu BaSyx funktioniert.
-3.  Ergänzend: **Impulse zur Standardisierung** bei CATENA-X und IDTA zusammenstellen, z.B.:
-    1.  Vorschläge zur Interaktion von Verwaltungsschale mit einem EDC als Standard. Erstellt werden soll ein Dokument mit der technischen Beschreibung der standardisierungsfähigen Funktionen und Schnittstellen, das als Basis für die Einreichung für Standardisierungsvorschläge in den verschiedenen Working Groups des Catena-X Network Vereins, der Eclipse Data Space Group, den EDC Upstream oder auch der ITDA dienen kann.
-    2.  Optional – Konzept und Architekturentwurf für ein KIT „AAS as a Services“
-4.  **DoD**:
-    1.  Die Anbindung der Verwaltungsschale in den EDC wurde als PoC mit dem gemeinsam definierten Produktionsumfang programmiert, getestet und ist als Projektdemonstrator vorführbar.
-    2.  Folgende Funktionalitäten wurden in Tests nachgewiesen:
-        1.  Die in der Verwaltungsschale gespeicherten Zugriffsregeln wurden beim Datenaustausch umgesetzt.
-        2.  Die ausgewählten Daten wurden an einen Consumer-EDC ohne Modifikation übertragen (Eine Rückwärtskompatibilität muss gewährleistet sein)
-        3.  SSO von Tractus-X zu BaSyx funktioniert.
-    3.  Die während des AP erstellten Artefakte (Dokumentation und Sourcecode) wurden im [VWS4LS-Github-Repo](https://github.com/orgs/VWS4LS/repositories) hinterlegt.
-    4.  Der Code wurde in Tractus-X als Fork hinterlegt.
+Aktuell fehlt es jedoch an einem ersten technischen Durchstich, wie beide Technologien mit deren jeweiligen Konzepten kombiniert angewendet werden können. Eine solche Verbindung ist essenziell, um Zugriffsrechte und Nutzungsregeln konsistent zu übertragen und in durchsetzbare Vertragsbedingungen zu überführen. Der Aufbau eines interoperablen, sicheren Datenraums entlang der Leitungssatzwertkette stellt somit nicht nur einen wichtigen Use Case dar, sondern auch ein Schlüsselszenario für die Zukunft industrieller Datenökosysteme.
 
+## Zielsetzung
 
+Die Aufgabenstellung wurde in mehrere Arbeitspakete unterteilt. Zuerst sollte ein detailliertes Konzept zur Entscheidungsfindung bezüglich der Systemarchitektur, insbesondere für den Datenaustausch auf Attribut-Ebene aus einer VWS erstellt werden.
 
-## Arbeitspaket 3 - Access-Management (IAM) VWS4LS
+Zu **AP1** (Arbeitspaket 1) gehört zunächst die Analyse der Schnittstellen zwischen VWS, Submodellen und einzelnen Attributen, da der normale Transferprozess des EDCs diesen spezifischen Schnitt nicht unterstützt. Der Fokus liegt darauf, klare Spezifikationen zu schaffen, die als Grundlage für die technischen Umsetzungen in den nachfolgenden Phasen dienen.
 
-Anforderungsanalyse: Unter der Annahme, dass der PoC aus AP 1 und 2 erfolgreich die Integration der Kernfunktionalität für die Integration der vollständigen Verwaltungsschale mit Umsetzung der in dem Security-Teilmodell gespeicherten Zugriffs- und Rollen-Regelungen gezeigt hat, geht es in diesem Arbeitspaket um die Ausarbeitung des zu Rechte-, und Rollen-Managements einschließlich des zu verwendenden Regelwerks. Abschließend ist ein Test mit dem im PoC entwickelten System vorgesehen. Die einzelnen Schritte sind:
+1.2 die IDTA entwickelt eine Spezifikation eines Security-Submodells bzw. Security-Konzepts, welches innerhalb von BaSyx umgesetzt werden soll. Dieses soll die Auswahl der Daten auf Attributebene ermöglichen. Dafür wurden Meetings für die Synchronisation zwischen Fraunhofer IESE, ARENA2036 und msg durchgeführt, um diese Konzepte mit der aktuellen Situation in Catena-X zusammenzubringen.
 
-1.  Evaluierungen zur Vorbereitung
-    1.  Evaluierung der Anforderungen an das Access-Management basierend auf den spezifischen Bedürfnissen der Projektteilnehmer über entsprechende Abfrage, den technischen Randbedingungen der Verwaltungsschale, des EDCs und PoCs sowie auf Basis externer „Good Practices“.
-    2.  Definition eines Rechte-/Rollenkonzepts für VWS4LS-Anwendungsfälle unter Verwendung vorhandenen bzw. bereits im Projekt vorgesehenen Zugriffs-Methodiken (RBAC/ABAC) der Verwaltungsschale z.B. Standard zur Security bei der IDTA, sowie der EDC-Policies.
-2.  Erstellung eines funktionalen Konzeptes
-    1.  Abbildung des Rechte-/Rollenkonzepts als Datenverwendungsrichtlinien, um den sicheren Datenaustausch und die Einhaltung von Nutzungsbeschränkungen gewährleisten.
-    2.  Untersetzung mit einer Management-Governance zur langfristigen Verwaltung und Steuerung des Access-Managements basierend auf dem Authentifizierungs- und Autorisierungsmechanismus von Catena-X mit den BPNs.
-    3.  Abbildung des Konzeptes auf die im Arbeitspaket 1 entwickelte Architektur
-    4.  Abbildung des Rechte-/Rollenkonzepts auf die Architektur, die die Integration von Verwaltungsschale und EDC ermöglicht, inklusive der Definition von organisatorischen Schnittstellen.
-    5.  Ableitung der entsprechenden notwendigen Semantiken, Attribute und Rückmeldungen („access failed because…“).
-3.  Technische Umsetzung des Proof-of-Concepts im Demonstrator von VWS4LS
-    1.  Integration des erarbeiteten Konzepts mit dem EDC, um den sicheren Datenaustausch und die Durchsetzung von Zugriffsrechten in dem Projektdemonstrator zu demonstrieren.
-    2.  Dazu Erstellung von einigen Beispiel-LS-VWSen, die zugriffsbeschränkte Submodelle enthalten.
-    3.  Testen der Ausführbarkeit der in den Beispiel-S_VWSen konfigurierten Zugriffsrechten basierend auf dem PoC mit externen Identitätsprovidern zur Authentifizierung der Teilnehmer im Datenraum.
-    4.  Validieren der Sichtbarkeiten und Zugriffsrechte von Tractus-X zu den in BaSyx gehosteten VWS, bzw. deren Submodelle oder auch einzelne Attribute.
-4.  Input sammeln für die Weiterentwicklung von BaSyx und Tractus-X, z.B.
-    1.  z.B. Darstellung der Rechte/Rollenattribute in den LS-VWS-Submodellen.
-    2.  z.B. Identifikation von Lücken in den Bestands-UIs von Tractus-X und BaSyx
-5.  DoD:
-    1.  Datenverwendungsrichtlinie und Governance als Dokument
-    2.  Beispielhafte AAS-Teilmodelle mit Zugriffsbeschränkungen können nur über eine entsprechende Authentifizierung mit den passenden Rollenrechten eingesehen oder verändert werden.
-    3.  Die während des AP erstellten Artefakte (Dokumentation und Sourcecode) wurden im VWS4LS-Github-Repo hinterlegt.
+1.3 Es soll geprüft werden, ob die für den Datenaustausch mit dem EDC gesetzten Policies dynamisch generiert werden können. Hierbei wird festgelegt, ob diese Policies durch einen externen Service, durch Integration in den EDC oder durch Einbau in eine VWS Registry generiert werden können.
+
+In **AP2** soll das Szenario implementiert und folgend die Services auf einer aktuellen Tractus-X Version (Virtuelle Maschine in der IT-Infrastruktur) deployt und erprobt werden. Dazu gehört ebenfalls die Implementierung der attribut-basierten Sicherung von Submodellen innerhalb von BaSyx.
+
+In **AP3** werden die bisherigen Arbeitspakete hinsichtlich der Security-Aspekte zusammengefasst. Im Rahmen dessen soll ein Rollen- und Rechtekonzept beschrieben werden, welches Erkenntnisse aus AP1, in Verbindung mit der Implementierung aus AP2 verbindet. Zusätzlich werden Ausblicke zur weiteren Optimierung und zu möglichen Weiterentwicklungen gegeben.
+
+## Ergebnis
+
+Das Ziel ist es zum einen eine umfassende Architektur-Dokumentation, die neben präzisen Schnittstellenbeschreibungen und erforderlichen Anpassungen an bestehenden Komponenten auch konkrete Vorschläge für ein effektives Identity- und Access-Management enthält. Diese Dokumentation bildet die Grundlage für die nachfolgenden Implementierungsschritte und agile Entwicklungsprozesse.
+
+Folgend soll als weiteres Ergebnis ein Deployment der EDCs sowie notwendiger föderierter Services aus dem Catena-X Datenökosystem stattfinden, welches die spezifizierten Anforderungen erfüllen kann. Außerdem soll das BaSyx-Deployment weiterentwickelt werden, sodass es in der Lage ist attribut-basiert Verwaltungsschalen zu sichern.
+
+Das Ziel ist die Erarbeitung einer Dokumentation zu den Arbeitspakten, die die Herangehensweise und die finalen Ergebnisse beschreibt.
+
+## Begrifflichkeiten
+
+| Begriff                     | Englischer Begriff                    | Beschreibung                                                                                                                                                                                                                          |
+|-----------------------------|---------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Authentifizierung           | Authentication                        | Der Prozess, bei dem die Identität eines Benutzers, Geräts oder Systems überprüft wird. Es geht darum, sicherzustellen, dass jemand oder etwas tatsächlich der ist, für den er sich ausgibt. Frage: „Wer bist du?“                    |
+| Autorisierung               | Authorization                         | Der Prozess, der bestimmt, welche Rechte oder Zugriffsberechtigungen ein authentifizierter Benutzer, Gerät oder System hat. Es legt fest, was jemand tun darf, nachdem seine Identität bestätigt wurde. Frage: „Was darfst du tun?“   |
+| EDC                         | EDC                                   | Der Eclipse Dataspace Connector ist eine zentrale Komponente zum sicheren, souveränen Datenaustausch, Zugriffskontrolle und Datenübertragung in föderierten Datenräumen.                                                              |
+| EDC Management API          | EDC Management API                    | REST-API zur Verwaltung von Assets, Policies, Verträgen und ihrer Verhandlung                                                                                                                                                         |
+| EDC-Protokoll               | EDC Protocol                          | Das EDC-Protokoll bezieht sich auf eine Implementierung des Dataspace Protokolls, welches durch die International Dataspaces Association (IDSA) definiert wurde                                                                       |
+| Tractus-X                   | Tractus-X                             | Referenzimplementierung der Catena-X-Dateninfrastruktur; beinhaltet zentrale Dienste wie Registries, Broker, Identity Provider, der Portal.                                                                                           |
+| Angebot                     | Offer                                 | Ein Angebot ist ein Eintrag innerhalb eines Katalogs. Er kann dazu verwendet werden, um eine Vereinbarung mit dem Austeller des Katalogs über den Zugriff auf eine Ressource zu treffen.                                              |
+| Katalog                     | Catalog                               | Der Katalog wird bei Anfrage dem externen Benutzer zur Verfügung gestellt. Er enthält verschiedene Angebote für den Zugriff auf Ressourcen des Austeller des Katalogs.                                                                |
+| Vertrag                     | Contract                              | Ein Vertrag ist die Vorstufe zu einem Angebot. Der Besitzer eine Ressource definiert im Normalfall mehrere Verträge und definiert dann Regeln, von wem und wann ein Vertrag abgerufen werden darf. Das Resultat ist dann ein Angebot. |
+| Vereinbarung                | Agreement                             | Eine Vereinbarung ist dann getroffen, wenn der Besitzer einer Ressource ein übermitteltes Angebot angenommen hat.                                                                                                                     |
+| Regel/Policy                | Policy                                | Der Zugriff auf Verträge wird über Regeln/Policies eingeschränkt.                                                                                                                                                                     |
+| Security-Submodell          | Security-Submodel                     | Teilmodell einer VWS zur Definition von Zugriffs- und Filterregeln für Daten auf Attributebene.                                                                                                                                       |
+| ABAC                        | ABAC (Attribute-Based Access Control) | Attribut-basierte Zugriffskontrollmethode, bei der Entscheidungen auf der Ebene von Attributen (z.B. Nutzerrolle, Kontext) getroffen werden.                                                                                          |
+| RBAC                        | RBAC (Role-Based Access Control)      | Rollen-basierte Zugriffskontrolle basierend auf definierten Benutzerrollen.                                                                                                                                                           |
+| Single-Sign-On              | Single-Sign-On                        | Authentifizierungsmechanismus, der den Zugriff auf mehrere Systeme mit einmaligem Login ermöglicht.                                                                                                                                   |
+| BPN                         | BPN                                   | Business Partner Number: Die BPN wird im Allgemeinen bei einer globalen Registrierungsstelle hinterlegt. Von dort kann sie dann abgerufen oder auch validiert werden.                                                                 |
+| Interner Identity Provider  | Internal Identity Provider            | Der interne Identity Provider wird vom Besitzer einer Ressource verwendet, um Access-Tokens zum Zugriff auf diese Ressource zu ermöglichen.                                                                                           |
+| Externer Identity Provider  | External Identity Provider            | Der externe Identity Provider ist eine globale Stelle die Identitäten überprüft und Tokens aufstellen kann.                                                                                                                           |
+| IDTA                        | IDTA                                  | Industrial Digital Twin Association e. V.: Verein zur Standardisierung von Digitalen Zwillingen und der VWS                                                                                                                           |
+| IDTA Security Spezifikation | IDTA Security Specification           | Mit der IDTA Security Spezifikation können Regeln definiert werden. Der primäre Einsatzzweck ist die Filterung von Daten beim Zugriff auf eine Ressource.                                                                             |

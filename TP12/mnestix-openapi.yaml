@@ -1,0 +1,192 @@
+openapi: 3.0.3
+info:
+  title: Mnestix AAS Browser
+  description: |-
+    API for managing Asset Administration Shells (AAS) and Digital Product Passports (DPP) in the Eclipse Mnestix platform.
+    This documentation is for the Eclipse Mnestix Browser Frontend.
+    Additional documentation links:
+      - [Mnestix API Swagger](https://vws4ls-api.dev.mnestix.xitaso.net/swagger/index.html)
+      - [Mnestix AAS Searcher Swagger](https://vws4ls-searcher.dev.mnestix.xitaso.net/swagger/index.html)
+      - [Mnestix AAS Searcher GraphQL](https://vws4ls-searcher.dev.mnestix.xitaso.net/graphql/)
+      - [Mnestix OpenAPI](https://github.com/VWS4LS/vws4ls-subproject-results/blob/main/TP12/mnestix-openapi.yaml)
+      - [Show in Swagger-Editor](https://editor.swagger.io/?url=https://raw.githubusercontent.com/VWS4LS/vws4ls-subproject-results/refs/heads/main/TP12/mnestix-openapi.yaml)
+
+    ## Legal Disclaimer 
+
+    This work is licenced under the Creative Commons Zero Licence 
+    (https://creativecommons.org/publicdomain/zero/1.0/deed.de)
+    
+    The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Specification.
+    THIS SPECIFICATION IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SPECIFICATION OR THE USE OR OTHER DEALINGS IN THE SPECIFICATION.
+    
+  version: product-catalog
+  contact:
+    name: XITASO Mnestix Support
+    email: mnestix@xitaso.com
+    url: https://github.com/eclipse-mnestix/mnestix-browser
+servers:
+  - url: https://vws4ls.dev.mnestix.xitaso.net
+    description: VWS4LS Development Server
+paths:
+
+  /marketplace:
+    get:
+      summary: Marketplace Overview Page
+      description: Frontend page showing a list of available AAS or products in the marketplace.
+      tags:
+        - Product Catalog
+      responses:
+        '200':
+          description: Marketplace overview page loaded successfully.
+
+
+  /marketplace/catalog:
+    get:
+      summary: Marketplace Catalog Page
+      description: Frontend page for viewing the filtered product catalog by manufacturer.
+      tags:
+        - Product Catalog
+      parameters:
+        - name: manufacturerName
+          in: query
+          required: true
+          schema:
+            type: string
+          description: Id of manufacturer as configured in the settings (e.g. komax, kostal, coroflex)
+      responses:
+        '200':
+          description: Marketplace catalog page loaded successfully.
+        '404':
+          description: Manufacturer wasn't configured.
+
+
+  /product/{base64AasId}:
+    get:
+      summary: Product Details Page
+      description: Frontend page for viewing details of a specific product by its base64-encoded AAS ID.
+      tags:
+        - Product Catalog
+      parameters:
+        - name: base64AasId
+          in: path
+          required: true
+          schema:
+            type: string
+          description: Base64-encoded AAS ID.
+      responses:
+        '200':
+          description: Product details page loaded successfully.
+        '404':
+          description: Product not found.
+
+
+
+  /asset:
+    get:
+      summary: Asset Resolver Page
+      description: Frontend page for resolving an Asset ID and displaying the corresponding AAS if found.
+      parameters:
+        - name: assetId
+          in: query
+          required: true
+          schema:
+            type: string
+          description: URL encoded Asset ID
+      tags:
+        - AAS Browser
+      responses:
+        '200':
+          description: Asset resolver page loaded successfully.
+        '404':
+          description: Asset not found in a configured discovery service.
+
+
+  /viewer/{base64AasId}:
+    get:
+      summary: Viewer Details Page
+      description: Frontend page for viewing details of a specific AAS by its base64-encoded AAS ID.
+      tags:
+        - AAS Browser
+      parameters:
+        - name: base64AasId
+          in: path
+          required: true
+          schema:
+            type: string
+          description: Base64-encoded AAS ID.
+      responses:
+        '200':
+          description: Viewer details page loaded successfully.
+        '404':
+          description: AAS not found.
+
+
+  /list:
+    get:
+      summary: AAS List Page
+      description: Frontend page for listing all available AAS entries.
+      tags:
+        - AAS Browser
+      responses:
+        '200':
+          description: AAS list page loaded successfully.
+
+
+  /settings:
+    get:
+      summary: Settings Page
+      description: Frontend page for viewing and editing platform settings.
+      tags:
+        - AAS Browser
+      responses:
+        '200':
+          description: Settings page loaded successfully.
+
+  /viewer/discovery:
+    get:
+      summary: Viewer Discovery Page
+      description: Frontend page that displays if an Asset is found in multiple discovery services.
+      tags:
+        - AAS Browser
+      responses:
+        '200':
+          description: Viewer discovery page loaded successfully.
+
+  /viewer/registry:
+    get:
+      summary: Viewer Registry Page
+      description: Frontend page that displays if an Asset is found in multiple registries
+      tags:
+        - AAS Browser
+      responses:
+        '200':
+          description: Viewer registry page loaded successfully.
+
+  /templates:
+    get:
+      summary: Templates List Page
+      description: Frontend page for listing all available AAS templates.
+      tags:
+        - AAS Browser
+      responses:
+        '200':
+          description: Templates list page loaded successfully.
+
+  /templates/{id}:
+    get:
+      summary: Template Details Page
+      description: Frontend page for viewing and editing details of a specific AAS template by its ID.
+      tags:
+        - AAS Browser
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+          description: ID of the template
+      responses:
+        '200':
+          description: Template details page loaded successfully.
+        '404':
+          description: Template not found.
